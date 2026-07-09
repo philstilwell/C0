@@ -323,7 +323,14 @@ export function C0Lab() {
 
       <header className="hero" id="top">
         <div className="hero-copy">
-          <div className="kicker"><span /> A falsifiable network-dynamics model</div>
+          <div className="kicker">
+            <span className="kicker-rule" aria-hidden="true">
+              <i className="rule-red" />
+              <i className="rule-orange" />
+              <i className="rule-violet" />
+            </span>
+            <span className="kicker-label">A falsifiable network-dynamics model</span>
+          </div>
           <h1>When does processing become <i>presence?</i></h1>
           <p className="hero-lede">
             Cø names the minimal condition that there is <em>something it is like</em> for a system.

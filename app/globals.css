@@ -67,8 +67,13 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: .15em;
   text-transform: uppercase;
 }
-.kicker { display: flex; align-items: center; gap: 10px; color: #c6c9ca; }
-.kicker span { display: inline-block; width: 24px; height: 2px; background: var(--presence); box-shadow: 9px 0 var(--broadcast), 18px 0 var(--recurrence); }
+.kicker { display: flex; align-items: center; gap: clamp(12px, 1.35vw, 20px); color: #c6c9ca; }
+.kicker-rule { display: grid; grid-template-columns: 1fr .42fr .42fr; flex: 0 0 clamp(58px, 7.2vw, 98px); gap: 0; transform: translateY(-1px); }
+.kicker-rule i { display: block; height: 2px; }
+.rule-red { background: var(--presence); }
+.rule-orange { background: var(--broadcast); }
+.rule-violet { background: var(--recurrence); }
+.kicker-label { min-width: 0; white-space: nowrap; }
 .hero h1 { max-width: 780px; margin: 28px 0 24px; font-size: clamp(57px, 7.1vw, 108px); line-height: .91; letter-spacing: -.067em; font-weight: 720; }
 .hero h1 i, .pipeline-intro h2 i { color: var(--presence); font-family: var(--serif); font-weight: 400; }
 .hero-lede { max-width: 650px; margin: 0; color: #c6c9ca; font-size: clamp(17px, 1.5vw, 21px); line-height: 1.6; }
@@ -245,6 +250,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 
 @media (max-width: 680px) {
   .topbar { min-height: 68px; }.nav-links a:not(.nav-paper) { display: none; }
+  .kicker { gap: 8px; font-size: 9px; letter-spacing: .12em; }.kicker-rule { flex-basis: 42px; }
   .hero-copy { padding-top: 70px; padding-bottom: 70px; }.hero h1 { font-size: 58px; }.hero-actions { align-items: flex-start; flex-direction: column; gap: 18px; }
   .hypothesis-card { min-height: 380px; padding: 50px 24px; }.hero-equation { gap: 5px; margin: 45px -8px 35px; font-size: 34px; }.hypothesis-notes { grid-template-columns: 1fr; }.orbit-two { display: none; }
   .lab-section, .logic-section { padding-top: 78px; padding-bottom: 70px; }.preset-row { grid-template-columns: repeat(2, 1fr); }.preset:nth-child(2n) { border-right: 0; }.preset:nth-child(3) { border-right: 1px solid #c8c9c4; }.preset:nth-child(-n+4) { border-bottom: 1px solid #c8c9c4; }

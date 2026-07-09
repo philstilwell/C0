@@ -22,6 +22,8 @@ test("server-renders the finished Cø laboratory", async () => {
   assert.match(html, /Cø \/ N\*/);
   assert.match(html, /Phenomenal Presence Lab/);
   assert.match(html, /Make the model move/);
+  assert.match(html, /kicker-rule/);
+  assert.match(html, /kicker-label/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/);
 });
 
