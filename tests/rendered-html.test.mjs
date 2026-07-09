@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 import test from "node:test";
 
 const templateRoot = new URL("../", import.meta.url);
@@ -26,8 +26,9 @@ test("server-renders the finished Cø laboratory", async () => {
 });
 
 test("keeps the model logic and GitHub Pages export explicit", async () => {
-  const [lab, config, workflow] = await Promise.all([
+  const [lab, layout, config, workflow] = await Promise.all([
     readFile(new URL("../app/C0Lab.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../next.config.ts", import.meta.url), "utf8"),
     readFile(new URL("../.github/workflows/pages.yml", import.meta.url), "utf8"),
   ]);
@@ -36,8 +37,21 @@ test("keeps the model logic and GitHub Pages export explicit", async () => {
   assert.match(lab, /Overt report available/);
   assert.doesNotMatch(lab, /View source/);
   assert.doesNotMatch(lab, /github\.com\/philstilwell\/C0/);
+  assert.match(layout, /favicon\.ico/);
+  assert.match(layout, /apple-touch-icon\.png/);
   assert.match(config, /output: "export"/);
   assert.match(workflow, /actions\/deploy-pages@v4/);
   assert.doesNotMatch(lab, /<svg/i);
   assert.ok(templateRoot);
+});
+
+test("ships the Gemini-derived favicon assets", async () => {
+  const [favicon, icon, apple] = await Promise.all([
+    stat(new URL("../public/favicon.ico", import.meta.url)),
+    stat(new URL("../public/icon.png", import.meta.url)),
+    stat(new URL("../public/apple-touch-icon.png", import.meta.url)),
+  ]);
+  assert.ok(favicon.size > 1000);
+  assert.ok(icon.size > 1000);
+  assert.ok(apple.size > 1000);
 });
