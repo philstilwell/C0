@@ -34,6 +34,8 @@ test("keeps the model logic and GitHub Pages export explicit", async () => {
   assert.match(lab, /getVerdict/);
   assert.match(lab, /indeterminate/);
   assert.match(lab, /Overt report available/);
+  assert.doesNotMatch(lab, /View source/);
+  assert.doesNotMatch(lab, /github\.com\/philstilwell\/C0/);
   assert.match(config, /output: "export"/);
   assert.match(workflow, /actions\/deploy-pages@v4/);
   assert.doesNotMatch(lab, /<svg/i);

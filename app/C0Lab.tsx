@@ -321,7 +321,7 @@ export function C0Lab() {
           </p>
           <div className="hero-actions">
             <a className="primary-action" href="#lab">Enter the lab <span>↓</span></a>
-            <a className="text-action" href={`${assetBase}/paper.pdf`}>Read the 55-page paper</a>
+            <a className="text-action" href={`${assetBase}/paper.pdf`}>Read the paper</a>
           </div>
         </div>
 
@@ -569,7 +569,6 @@ export function C0Lab() {
         <div className="footer-links">
           <a href="#top">Back to top ↑</a>
           <a href={`${assetBase}/paper.pdf`}>Read the paper ↗</a>
-          <a href="https://github.com/philstilwell/C0">View source ↗</a>
         </div>
       </footer>
     </main>
