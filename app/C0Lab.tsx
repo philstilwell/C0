@@ -275,6 +275,16 @@ export function C0Lab() {
   const failed = SIGNALS.filter((signal) => values[signal.key] < THRESHOLD).map((signal) => signal.tag);
   const verdictCopy = getVerdictCopy(verdict, failed, conflict, assessed);
   const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const baseLesson = activeProfile >= 0
+    ? PROFILES[activeProfile].lesson
+    : "You are now testing a custom profile. A positive result still requires every gate to pass without unresolved conflict.";
+  const lessonCopy = !assessed
+    ? "Viability is currently unassessed. The model keeps the case indeterminate until the system's capacity for causal, adaptive dynamics is established independently."
+    : conflict
+      ? `${SIGNALS.find((signal) => signal.key === conflict)?.tag} evidence is in conflict. The model stays indeterminate instead of selecting the favorable surrogate.`
+      : !report
+        ? "Overt report is off. The model's verdict stays tied to the causal field, not to speech, button presses, or motor output."
+        : baseLesson;
 
   const equationParts = useMemo(
     () => SIGNALS.map((signal) => ({
@@ -426,14 +436,16 @@ export function C0Lab() {
                     <span className="signal-title">
                       <b style={{ color: signal.color }}>{signal.tag}</b>
                       <span><strong>{signal.title}</strong><small>{signal.role}</small></span>
-                      <output>{values[signal.key]}</output>
+                      <output aria-live="polite">{values[signal.key]}</output>
                     </span>
                     <input
                       type="range"
                       min="0"
                       max="100"
                       value={values[signal.key]}
-                      onChange={(event) => updateSignal(signal.key, Number(event.target.value))}
+                      aria-label={`${signal.title} evidence strength`}
+                      onInput={(event) => updateSignal(signal.key, Number(event.currentTarget.value))}
+                      onChange={(event) => updateSignal(signal.key, Number(event.currentTarget.value))}
                       style={{
                         "--range-color": signal.color,
                         "--range-progress": `${values[signal.key]}%`,
@@ -448,17 +460,17 @@ export function C0Lab() {
             <div className="guardrail-controls">
               <label className="toggle-row">
                 <span><strong>Viability independently assessed</strong><small>Must be set before Cø classification.</small></span>
-                <input type="checkbox" checked={assessed} onChange={(event) => { setAssessed(event.target.checked); setActiveProfile(-1); }} />
+                <input type="checkbox" checked={assessed} onChange={(event) => setAssessed(event.target.checked)} />
                 <i aria-hidden="true" />
               </label>
               <label className="toggle-row report-toggle">
                 <span><strong>Overt report available</strong><small>Change it. The verdict does not move.</small></span>
-                <input type="checkbox" checked={report} onChange={(event) => { setReport(event.target.checked); setActiveProfile(-1); }} />
+                <input type="checkbox" checked={report} onChange={(event) => setReport(event.target.checked)} />
                 <i aria-hidden="true" />
               </label>
               <label className="select-row">
                 <span><strong>Surrogate evidence</strong><small>Disagreement beyond κᵢ forces uncertainty.</small></span>
-                <select value={conflict ?? "none"} onChange={(event) => { setConflict(event.target.value === "none" ? null : event.target.value as SignalKey); setActiveProfile(-1); }}>
+                <select value={conflict ?? "none"} onChange={(event) => setConflict(event.target.value === "none" ? null : event.target.value as SignalKey)}>
                   <option value="none">Measures agree</option>
                   <option value="n1">N₁ measures conflict</option>
                   <option value="n2">N₂ measures conflict</option>
@@ -469,7 +481,7 @@ export function C0Lab() {
 
             <div className="lesson-card">
               <span>WHY THIS CASE MATTERS</span>
-              <p>{activeProfile >= 0 ? PROFILES[activeProfile].lesson : "You are now testing a custom profile. A positive result still requires every gate to pass without unresolved conflict."}</p>
+              <p>{lessonCopy}</p>
             </div>
           </aside>
         </div>

@@ -249,7 +249,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .hypothesis-card { min-height: 380px; padding: 50px 24px; }.hero-equation { gap: 5px; margin: 45px -8px 35px; font-size: 34px; }.hypothesis-notes { grid-template-columns: 1fr; }.orbit-two { display: none; }
   .lab-section, .logic-section { padding-top: 78px; padding-bottom: 70px; }.preset-row { grid-template-columns: repeat(2, 1fr); }.preset:nth-child(2n) { border-right: 0; }.preset:nth-child(3) { border-right: 1px solid #c8c9c4; }.preset:nth-child(-n+4) { border-bottom: 1px solid #c8c9c4; }
   .lab-shell { min-height: auto; }.network-stage { min-height: 500px; }.field-label { display: none; }.verdict-card { left: 16px; right: 16px; bottom: 16px; width: auto; }
-  .equation-gates { justify-content: flex-start; }.and-mark, .implies { padding: 0 5px; }.gate { min-width: 59px; padding: 7px 6px; }
+  .equation-gates { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(13px, .35fr) minmax(54px, .8fr); gap: 3px; justify-content: stretch; padding: 10px 8px; overflow: hidden; }
+  .gate-wrap { min-width: 0; }.and-mark, .implies { padding: 0; text-align: center; }.gate, .c-gate { min-width: 0; width: 100%; padding: 7px 3px; }.gate b, .c-gate b { font-size: 17px; }.gate span, .c-gate span { font-size: 6px; letter-spacing: .04em; }
   .logic-grid { grid-template-columns: 1fr; }.logic-card { min-height: 390px; }
   .pipeline-section, .bridge-section { padding: 85px 24px; }.pipeline li { grid-template-columns: 34px 100px 1fr; gap: 8px; }
   .falsification-section { grid-template-columns: 1fr; }.falsification-copy { grid-column: auto; }.falsification-copy, .bet-card { min-height: 320px; padding: 45px 24px; }

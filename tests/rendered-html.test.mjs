@@ -35,6 +35,9 @@ test("keeps the model logic and GitHub Pages export explicit", async () => {
   assert.match(lab, /getVerdict/);
   assert.match(lab, /indeterminate/);
   assert.match(lab, /Overt report available/);
+  assert.match(lab, /aria-label=\{`\$\{signal\.title\} evidence strength`\}/);
+  assert.match(lab, /onInput=\{\(event\) => updateSignal/);
+  assert.match(lab, /lessonCopy/);
   assert.doesNotMatch(lab, /View source/);
   assert.doesNotMatch(lab, /github\.com\/philstilwell\/C0/);
   assert.match(layout, /favicon\.ico/);
