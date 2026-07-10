@@ -377,7 +377,7 @@ export function C0Lab() {
         <div className="section-heading">
           <div>
             <span className="section-index">01 / PHENOMENAL PRESENCE LAB</span>
-            <h2>Make the model move.</h2>
+            <h2>Engage the model.</h2>
           </div>
           <p>Choose a paper-derived case, then disturb the system. Watch how each condition changes the network—and why no single impressive signal is enough.</p>
         </div>
