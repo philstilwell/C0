@@ -5,8 +5,14 @@ author: "Phil Stilwell"
 date: |
   Independent Scholar  
   ORCID: 0009-0009-3725-8682  
-  Draft version 1.0, July 10, 2026
+  Version 1.1, revised July 10, 2026
 ---
+
+\begin{center}
+\textbf{A visual preview:}
+\end{center}
+
+![](visual-preview.png){width=100%}
 
 \newpage
 
@@ -65,6 +71,20 @@ Leading theories of consciousness emphasize different properties: integration, g
 
 This matters especially beyond familiar biological cases. Similarity to a known conscious system weakens as anatomy, development, embodiment, behavior, and causal organization diverge. A result may therefore be empirically precise while remaining interpretively unstable. Indeterminacy is sometimes located not in the data but in the bridge from data to consciousness.
 
+### 2.5 Four distinctions that the framework preserves
+
+The argument depends on keeping four questions apart. Their answers may interact, but no answer should silently substitute for another.
+
+First, **the state of the world is not the state of the evidence**. A system may in fact be conscious or nonconscious even when available evidence does not warrant either classification. Epistemic indeterminacy therefore does not entail that consciousness itself has an intermediate ontological status. It marks a limitation in what a specified assessment licenses.
+
+Second, **the target is not the indicator**. Behavioral command following, perturbational complexity, recurrent activity, global availability, and self-report can provide evidence for consciousness under appropriate assumptions. None is identical to phenomenal consciousness merely because it functions as a test. This target-indicator distinction is what makes false positives, false negatives, and construct-validity questions intelligible.
+
+Third, **non-detection is not negative evidence by default**. A result can fail to cross a positive threshold because the target is absent, because the measure is insensitive, because an auxiliary capacity is impaired, because the system was measured at the wrong grain, or because the test does not transfer to the case. Only some of these possibilities support a negative attribution.
+
+Fourth, **scientific classification is not practical action**. A scientific result describes what the evidence warrants. A clinical, ethical, or governance decision additionally depends on stakes, reversibility, available alternatives, and the costs of error. An indeterminate result can therefore support precaution without being relabeled positive, and it can support continued investigation without being relabeled negative.
+
+These distinctions constrain the formalism that follows. The assessment tuple keeps target, system, evidence, and validity separate. The four-outcome rule distinguishes nondiscrimination from non-applicability. The cause profile explains why a result remains unresolved. The action rule then takes scientific status as one input among others rather than disguising a decision as a discovery.
+
 ## 3. Four Outcomes, Not Two
 
 ### 3.1 The assessment tuple
@@ -85,6 +105,14 @@ where:
 
 The validity envelope includes the populations, substrates, task conditions, recording quality, system boundaries, and auxiliary capacities for which the inferential relation between \(E\) and \(C\) has been justified. A result is not simply "positive for consciousness." It is positive for a specified target, in a specified system, under an assessment whose scope is explicit.
 
+**Plain-language reading.** A consciousness result is not a property of a score in isolation. It is a claim that this test, applied to this bounded system, produced this evidence about this form of consciousness under conditions in which the test has an established meaning.
+
+**Why this matters.** The tuple blocks inferential drift. Evidence for command comprehension cannot automatically become evidence for continuous phenomenal richness; a cortical measure cannot automatically classify a whole brain-body system; and a test calibrated in responsive adults cannot automatically retain its interpretation in an organoid or artificial architecture.
+
+**Hidden assumptions being exposed.** Every application presupposes a candidate system boundary, a target construct, auxiliary capacities, and a transport claim from validation cases to the present case. Writing these elements into \(\mathcal{A}\) makes them available for criticism rather than leaving them in the background.
+
+**What would show that the tuple is inadequate.** The tuple should be expanded if two assessments with identical values for \(S\), \(C\), \(T\), \(E\), and \(\mathcal{V}\) can nevertheless warrant different classifications because of a further scientifically relevant factor. Candidate additions might include an explicit background-model term, decision context, or time-indexed history. The present five-place form is proposed as a minimum reporting structure, not as a metaphysically complete analysis of attribution.
+
 ### 3.2 A four-outcome decision rule
 
 Let \(a(T,S)\) indicate whether the test is applicable to the system and target, and let \(q(E)\) indicate whether execution and data quality meet preregistered requirements. Let \(L(E;T,C)\) represent the degree of evidential support supplied by the test, with a rule-out threshold \(\tau_-\) and rule-in threshold \(\tau_+\), where \(\tau_- < \tau_+\). Then:
@@ -103,6 +131,16 @@ This representation is schematic. \(L\) could be a likelihood ratio, posterior p
 
 Unresolved conflict among measures requires an extension. If credible measures cannot be combined without suppressing material disagreement, the output is indeterminate even when some individual measures cross \(\tau_+\) or \(\tau_-\). A battery should not be allowed to select whichever surrogate yields the preferred answer after the result is known.
 
+**Plain-language reading.** The test first has to qualify for use and produce adequate data. Only then should its evidential score be compared with a rule-in region, a rule-out region, and the interval between them. A qualified test can return a genuinely indeterminate result. A disqualified or failed test returns no licensed consciousness classification.
+
+**Role of the symbols.** The applicability gate \(a\) concerns whether \(T\) bears a validated relation to \(C\) in system \(S\). The quality gate \(q\) concerns whether the particular administration generated interpretable evidence. The score \(L\) represents evidential support, not an amount of consciousness. The thresholds \(\tau_-\) and \(\tau_+\) are decision boundaries whose justification depends on validation and acceptable error rates; they are not assumed to mark natural joints in phenomenology.
+
+**Why this matters.** A conventional binary classifier often uses one cutoff, so every observation below it is treated as negative. The two-threshold structure creates a protected region in which the evidence is valid but insufficiently discriminating. The applicability and quality gates separately prevent an invalid test from entering even that gray zone.
+
+**Assumptions and scope.** The compact rule displays scalar \(L\), but many consciousness batteries will be multivariate. Reduction to one score is legitimate only when the combination rule is validated and preregistered. Otherwise the component results and their conflicts must remain visible. Likewise, \(a\) and \(q\) may be graded in practice; their binary representation here identifies logical gates rather than requiring crude measurement.
+
+**What would count against the rule.** The framework would require revision if validated C-tests cannot sustain separable rule-in and rule-out regions, if applicability cannot be assessed independently of the desired outcome, or if the indeterminate category systematically conceals results that reliably predict the target. Evidence of that kind might favor a fully probabilistic or multidimensional output. Such a revision would change the decision implementation while preserving the central distinction between nondiscrimination and unlicensed inference.
+
 ### 3.3 Positive
 
 A positive result means that the evidence licenses attribution of the specified target under the stated model and validity envelope. It need not imply certainty, theoretical finality, or a complete explanation of experience. A positive command-following result in a behaviorally unresponsive patient can provide strong evidence of preserved awareness without revealing the character, continuity, or welfare significance of the patient's experiences. A positive result is local to the target it tests.
@@ -114,6 +152,24 @@ A negative result is stronger than failure to obtain a positive result. It asser
 > **Negative License Principle:** Absence of a consciousness indicator licenses a negative consciousness attribution only when the indicator was expected to be detectable if the target were present, the test was applicable to the system, auxiliary task demands were satisfied or controlled, data quality was adequate, and plausible alternative causes of non-detection were excluded.
 
 When these conditions are not satisfied, "not detected" should not be translated into "absent." This principle does not make negative attribution impossible. It makes its evidential burden visible.
+
+The prohibited inference and its licensed replacement can be displayed compactly. Let \(I\) be the indicator the test is designed to detect and let \(h\) state that detection conditions and auxiliary requirements are satisfied:
+
+$$
+\neg I \not\Rightarrow \neg C,
+$$
+
+but, for a test with validated rule-out performance,
+
+$$
+h \land \neg I \Rightarrow_T \text{evidence for } \neg C.
+$$
+
+**Plain-language reading.** Failure to observe an indicator does not by itself imply absence of consciousness. It becomes negative evidence only when the test should have displayed that indicator if the target were present and when the conditions needed for detection actually held.
+
+**Why the implication is indexed to \(T\).** The symbol \(\Rightarrow_T\) denotes an inference licensed by a particular validated test, not a logical entailment. A negative EEG result, behavioral result, or architectural result can be strong evidence without making consciousness logically impossible. The subscript prevents empirical support from being mistaken for definition.
+
+**What would defeat a negative classification.** Demonstrating inadequate sensitivity, unmet task demands, poor data quality, target mismatch, or a credible alternative mechanism for non-detection removes the negative license. It does not thereby establish consciousness; it changes the output to indeterminate or unlicensed, depending on whether the remaining assessment is interpretable.
 
 ### 3.5 Indeterminate
 
@@ -131,6 +187,20 @@ The distinction matters statistically and rhetorically. If unlicensed cases are 
 
 A four-outcome label is still too coarse for cumulative science. Every indeterminate or unlicensed result should be accompanied by a structured cause profile. Five dimensions capture many recurrent problems.
 
+For assessment \(\mathcal{A}\), let:
+
+$$
+P_I(\mathcal{A}) = \langle e, s, m, b, t \rangle,
+$$
+
+where \(e\) records evidential scarcity, \(s\) surrogate discordance, \(m\) model dependence, \(b\) boundary or grain sensitivity, and \(t\) transport uncertainty. Each entry may be binary for a simple registry or graded on a preregistered scale for research use.
+
+**Plain-language reading.** The four-outcome label says where the assessment stopped. The profile says why. Two systems can both receive an indeterminate result while requiring entirely different next studies.
+
+**Why this is not a consciousness score.** The entries describe limitations in an inference, not dimensions or quantities of experience. They should not be summed into a single "uncertainty number" unless an application validates such an aggregation. In particular, low values do not prove consciousness and high values do not prove its absence.
+
+**How the profile should be used.** Each nonzero entry must be supported by an auditable reason and paired with a resolution path. If the profile changes across reasonable analytic choices, that instability is itself part of the result. The profile is therefore diagnostic of the assessment process rather than decorative metadata.
+
 ### 4.1 Evidential scarcity
 
 There may be too little reliable evidence to discriminate between presence and absence. The data can be valid yet weak: a score lies between thresholds, confidence intervals span both decision regions, or repeated trials yield high variance. The appropriate response is more or better-powered measurement, not theoretical reinterpretation.
@@ -142,6 +212,20 @@ Evidential scarcity must be distinguished from a negative result. Low signal can
 Different measures intended to track the same target may conflict. Behavioral examination may indicate unresponsiveness while task-based neuroimaging indicates command following. Complexity measures may remain high while recurrent markers weaken. Two algorithms applied to the same recording may classify it differently.
 
 Discordance can be scientifically productive because it exposes differences in task demand, temporal sensitivity, construct coverage, or confounding. It should be reported rather than averaged away unless the aggregation rule was justified and preregistered. The resolution path is measurement decomposition: determine whether the surrogates truly address the same target, identify their auxiliary demands, and use interventions or repeated measures to adjudicate the conflict.
+
+A preregistered discordance rule can make this constraint explicit. Let \(z_1,\ldots,z_k\) be normalized outputs from credible surrogates intended to bear on the same target, let \(d\) be an appropriate disagreement function, and let \(\kappa\) be the maximum tolerated discordance:
+
+$$
+G(E) = \max_{j,k} d(z_j,z_k),
+\qquad
+G(E) > \kappa \Rightarrow D(\mathcal{A}) = \text{Indeterminate}.
+$$
+
+**Plain-language reading.** If the strongest disagreement among credible measures exceeds the amount accepted in advance, the battery may not select the convenient measure or conceal the conflict in an average. It returns indeterminate.
+
+**Assumptions.** The surrogates must be commensurable enough for \(d\) to be meaningful, and each must satisfy its own validity conditions. A technically failed measure should be marked unlicensed rather than counted as substantive disagreement. A justified hierarchy may also designate one measure as primary, but that hierarchy must precede the result and must explain why discordant secondary evidence does not overturn classification.
+
+**What would revise the rule.** If empirical validation shows that particular patterns of disagreement reliably predict consciousness status, those patterns should become part of a richer classifier rather than remaining automatic indeterminacy triggers. Until then, preserving disagreement is epistemically safer than post hoc aggregation.
 
 ### 4.3 Model indeterminacy
 
@@ -155,11 +239,39 @@ Measures of integration, broadcast, complexity, and recurrence depend on which p
 
 If reasonable boundary choices reverse the result, the attribution is boundary-sensitive. The appropriate response is not to select the favorable boundary after inspection. Investigators should preregister candidate boundaries, report sensitivity across them, and use perturbations to test causal autonomy. Until the attribution is stable or a principled individuation rule is supplied, the result remains indeterminate or unlicensed.
 
+Let \(\mathcal{B}\) be the preregistered set of scientifically defensible boundaries or grains, and let \(\mathcal{A}_b\) be the assessment conducted under boundary \(b\). Define the boundary-output set:
+
+$$
+O_{\mathcal{B}} = \{D(\mathcal{A}_b) : b \in \mathcal{B}\}.
+$$
+
+The classification is boundary-robust when \(|O_{\mathcal{B}}|=1\). If \(|O_{\mathcal{B}}|>1\), boundary sensitivity must be reported and the field-level result is indeterminate unless an independent individuation rule privileges one boundary.
+
+**Plain-language reading.** Reanalyze the system using every boundary that was defensible before seeing the outcome. If all choices produce the same classification, the result is robust to system individuation. If they do not, the location or extent of the candidate conscious system remains part of the unresolved question.
+
+**Why independence matters.** A boundary cannot be privileged merely because it yields the preferred consciousness result. It must be supported by causal autonomy, effective coupling, regulatory closure, perturbational evidence, or another criterion that does not presuppose the classification at issue.
+
+**Limitation.** Agreement across \(\mathcal{B}\) proves robustness only relative to the candidate set. If investigators omit a scientifically plausible boundary, \(|O_{\mathcal{B}}|=1\) can create false reassurance. The candidate set and the reasons for inclusion must therefore be public.
+
 ### 4.5 Transport indeterminacy
 
 A test validated in one domain may not preserve its meaning in another. Physiological markers calibrated in adult humans may not transfer directly to infants, nonhuman animals, damaged brains, organoids, or artificial systems. Even within humans, etiology, medication, sensory impairment, and arousal can alter test sensitivity.
 
 Transport indeterminacy is especially important in artificial consciousness. Indicator properties derived from neuroscientific theories offer a disciplined starting point (Butlin et al., 2023), but implementing an indicator is not equivalent to validating its evidential force in a new substrate. Structural or computational analogy can generate a research hypothesis without yet generating a licensed consciousness classification.
+
+Let \(P_0\) be the population or substrate in which test \(T\) was validated and \(P_1\) the target domain. A transport claim can be represented as:
+
+$$
+\operatorname{Tr}(T: P_0 \rightarrow P_1) = 1,
+$$
+
+only when the evidence-indicator relation, the indicator-target rationale, and the relevant detection conditions are sufficiently preserved. If transport has not been established, applying \(T\) in \(P_1\) may yield exploratory evidence but not a licensed positive or negative classification.
+
+**Plain-language reading.** A test does not carry its meaning merely because its code, formula, or sensor can be run on a new system. Investigators must justify why the resulting value bears the same evidential relation to consciousness in the new domain.
+
+**Three bridge requirements.** Construct preservation asks whether the test still measures the same functional or dynamical property. Causal-role preservation asks whether that property plays the same theoretically relevant role. Calibration preservation asks whether thresholds and error rates remain defensible. Failure at any bridge can produce transport indeterminacy or render the application unlicensed.
+
+**What would establish transport.** Evidence may include successful prediction in intermediate populations, mechanistic correspondence, measurement invariance, interventions showing preserved causal role, and convergence with independently motivated indicators. Surface similarity alone is insufficient, but exact material identity is not assumed.
 
 ### 4.6 A reporting template
 
@@ -245,6 +357,26 @@ Thresholds, surrogate hierarchies, conflict rules, exclusion criteria, and syste
 
 Preregistration cannot validate a poor test, but it can reveal whether certainty was earned by the protocol or manufactured after inspection.
 
+### 6.4 Resolution is source-specific
+
+Indeterminate and unlicensed results are not resolved in the same way. Let \(E'\) represent additional evidence and \(\mathcal{V}'\) an expanded or repaired validity envelope. The characteristic transitions are:
+
+$$
+\text{Indeterminate} \xrightarrow{E'} \{\text{Positive},\text{Negative},\text{Indeterminate}\},
+$$
+
+whereas:
+
+$$
+\text{Unlicensed} \xrightarrow{\mathcal{V}'} \{\text{Positive},\text{Negative},\text{Indeterminate},\text{Unlicensed}\}.
+$$
+
+**Plain-language reading.** A valid but nondiscriminating test may be resolved by more informative evidence. An unlicensed assessment first requires repair of applicability, measurement quality, target specification, boundary choice, or transport. Merely collecting more data with the same invalid procedure does not solve the problem.
+
+**Why this matters.** The distinction prevents wasteful repetition. Low statistical power calls for more observations; a broken inferential bridge calls for a different study. In the latter case, additional precision can make an invalid answer more reproducible without making it more meaningful.
+
+**Success condition.** A resolution is scientifically successful only when the new evidence or validity work addresses the recorded cause profile and the resulting classification is robust under preregistered sensitivity analysis. Changing the label without removing the stated source of indeterminacy is not resolution.
+
 ## 7. From Scientific Status to Practical Action
 
 Scientific classification and practical decision are related but distinct. A positive consciousness result normally strengthens reasons for protection. A negative result may weaken them. An indeterminate result, however, does not dictate either action or inaction. Decisions also depend on the possible magnitude of harm, reversibility, available alternatives, and the asymmetric costs of false attribution and false denial.
@@ -255,7 +387,13 @@ $$
 A^* = \arg\min_A \mathbb{E}[\Lambda(A,C) \mid D].
 $$
 
-This formula makes a simple point. Two institutions can accept the same indeterminate scientific result yet choose different actions because the stakes differ. Continuing a reversible, non-invasive measurement protocol is not equivalent to withdrawing life-sustaining treatment, exposing an animal to severe harm, scaling an organoid architecture, or deploying an artificial agent under conditions it describes as aversive. Precaution should be proportionate to both evidence and possible harm (Birch, 2024).
+**Plain-language reading.** Choose the available action with the lowest expected loss, given the scientific result and the remaining uncertainty about consciousness. The loss function includes the costs of harming a conscious system, withholding benefits, imposing unnecessary restrictions, delaying research, and making reversible or irreversible errors.
+
+**Why this matters.** Two institutions can accept the same indeterminate scientific result yet choose different actions because the stakes differ. Continuing a reversible, non-invasive measurement protocol is not equivalent to withdrawing life-sustaining treatment, exposing an animal to severe harm, scaling an organoid architecture, or deploying an artificial agent under conditions it describes as aversive. Precaution should be proportionate to both evidence and possible harm (Birch, 2024).
+
+**Assumptions and limitations.** The expression does not assume that every value can be reduced to money or that precise probabilities are available. It represents the structure of a decision: actions must be compared under uncertainty and asymmetric error costs. Institutions should disclose qualitative judgments, probability ranges, and protected values rather than hiding them inside an apparently objective number.
+
+**What the formula does not license.** A precautionary action does not upgrade \(D\) from indeterminate to positive, and a permissive action does not downgrade it to negative. New scientific classification requires new evidence, improved validity, or a justified change in the inferential model. Decision urgency cannot substitute for epistemic support.
 
 The separation also protects scientific language. Ethical precaution need not redescribe an indeterminate system as conscious. One can adopt safeguards because consciousness remains a credible possibility. Conversely, scientific indeterminacy should not be invoked as a universal veto on research. The appropriate response can range from documentation and monitoring to redesign, independent review, or temporary restriction.
 
@@ -316,6 +454,10 @@ The central claim is methodological but not modest in consequence: indeterminacy
 
 ## References
 
+\begingroup
+\small
+\setlength{\parskip}{4pt}
+
 Bayne, T., Seth, A. K., Massimini, M., Shepherd, J., Cleeremans, A., Fleming, S. M., Malach, R., Mattingley, J. B., Menon, D. K., Owen, A. M., Peters, M. A. K., Razi, A., & Mudrik, L. (2024). Tests for consciousness in humans and beyond. *Trends in Cognitive Sciences, 28*(5), 454-466. https://doi.org/10.1016/j.tics.2024.01.010
 
 Birch, J. (2022). The search for invertebrate consciousness. *Nous, 56*(1), 133-153. https://doi.org/10.1111/nous.12351
@@ -353,3 +495,5 @@ Tsuchiya, N., Wilke, M., Frassle, S., & Lamme, V. A. F. (2015). No-report paradi
 Wannez, S., Heine, L., Thonnard, M., Gosseries, O., Laureys, S., & Coma Science Group collaborators. (2017). The repetition of behavioral assessments in diagnosis of disorders of consciousness. *Annals of Neurology, 81*(6), 883-889. https://doi.org/10.1002/ana.24962
 
 Yaron, I., Melloni, L., Pitts, M., Mudrik, L., et al. (2022). The ConTraSt database for analysing and comparing empirical studies of consciousness theories. *Nature Human Behaviour, 6*, 593-604. https://doi.org/10.1038/s41562-021-01284-5
+
+\endgroup

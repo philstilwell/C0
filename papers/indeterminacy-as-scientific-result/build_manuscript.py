@@ -117,10 +117,31 @@ def style_docx() -> None:
         block.paragraph_format.space_before = Pt(6)
         block.paragraph_format.space_after = Pt(6)
 
+    if not any(paragraph.text == "A visual preview:" for paragraph in document.paragraphs):
+        for paragraph in document.paragraphs:
+            if paragraph._p.xpath(".//w:drawing"):
+                paragraph.insert_paragraph_before("A visual preview:")
+                break
+
+    for shape in document.inline_shapes:
+        if shape.type is not None:
+            shape.width = Inches(6.4)
+            shape.height = Inches(6.4 * 1536 / 2752)
+
     abstract_seen = False
     references_seen = False
     for paragraph in document.paragraphs:
-        if paragraph.text == "Abstract":
+        if paragraph.text == "A visual preview:":
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            paragraph.paragraph_format.space_before = Pt(14)
+            paragraph.paragraph_format.space_after = Pt(8)
+            for run_item in paragraph.runs:
+                run_item.font.name = "Times New Roman"
+                run_item.font.size = Pt(11)
+                run_item.font.bold = True
+                run_item.font.color.rgb = RGBColor(28, 45, 64)
+                run_item._element.rPr.rFonts.set(qn("w:eastAsia"), "Times New Roman")
+        elif paragraph.text == "Abstract":
             paragraph.paragraph_format.page_break_before = True
             abstract_seen = True
         elif paragraph.text == "References":
@@ -163,6 +184,7 @@ def main() -> None:
         "pandoc",
         str(SOURCE),
         "--from=markdown+tex_math_dollars+tex_math_single_backslash",
+        f"--resource-path={SOURCE.parent}",
         "--to=docx",
         f"--output={RAW_DOCX}",
     )
@@ -171,6 +193,7 @@ def main() -> None:
         "pandoc",
         str(SOURCE),
         "--from=markdown+tex_math_dollars+tex_math_single_backslash",
+        f"--resource-path={SOURCE.parent}",
         "--pdf-engine=xelatex",
         "-V",
         "papersize=letter",
