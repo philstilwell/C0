@@ -7,6 +7,7 @@ import subprocess
 from docx import Document
 from docx.enum.section import WD_SECTION_START
 from docx.enum.style import WD_STYLE_TYPE
+from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
@@ -20,6 +21,24 @@ DOC_OUT = ROOT / "output" / "doc" / "indeterminacy-as-a-scientific-result.docx"
 PDF_OUT = ROOT / "output" / "pdf" / "indeterminacy-as-a-scientific-result.pdf"
 RAW_DOCX = TMP / "indeterminacy-raw.docx"
 PDF_SOURCE = TMP / "indeterminacy-pdf-source.md"
+TABLE_FILTER = SOURCE.parent / "table_layout.lua"
+
+TABLE_WIDTHS = {
+    ("Question", "If no", "Output"): (0.43, 0.39, 0.18),
+    ("Field", "Required entry"): (0.27, 0.73),
+    (
+        "Term or symbol",
+        "Role in the framework",
+        "Interpretive guardrail",
+    ): (0.18, 0.34, 0.48),
+    (
+        "Stage",
+        "Required question",
+        "If the requirement passes",
+        "If it fails",
+    ): (0.16, 0.36, 0.24, 0.24),
+    ("Misuse", "Why it is invalid", "Required correction"): (0.34, 0.29, 0.37),
+}
 
 
 def run(*args: str) -> None:
@@ -47,6 +66,40 @@ def add_page_number(paragraph) -> None:
     end = OxmlElement("w:fldChar")
     end.set(qn("w:fldCharType"), "end")
     run_element.extend([begin, instruction, end])
+
+
+def set_cell_shading(cell, fill: str) -> None:
+    tc_pr = cell._tc.get_or_add_tcPr()
+    shading = tc_pr.find(qn("w:shd"))
+    if shading is None:
+        shading = OxmlElement("w:shd")
+        tc_pr.append(shading)
+    shading.set(qn("w:fill"), fill)
+    shading.set(qn("w:val"), "clear")
+
+
+def set_cell_width(cell, width_inches: float) -> None:
+    tc_pr = cell._tc.get_or_add_tcPr()
+    tc_width = tc_pr.find(qn("w:tcW"))
+    if tc_width is None:
+        tc_width = OxmlElement("w:tcW")
+        tc_pr.append(tc_width)
+    tc_width.set(qn("w:type"), "dxa")
+    tc_width.set(qn("w:w"), str(int(width_inches * 1440)))
+    cell.width = Inches(width_inches)
+
+
+def set_repeat_header(row) -> None:
+    tr_pr = row._tr.get_or_add_trPr()
+    header = OxmlElement("w:tblHeader")
+    header.set(qn("w:val"), "true")
+    tr_pr.append(header)
+
+
+def prevent_row_split(row) -> None:
+    tr_pr = row._tr.get_or_add_trPr()
+    cant_split = OxmlElement("w:cantSplit")
+    tr_pr.append(cant_split)
 
 
 def style_docx() -> None:
@@ -168,17 +221,38 @@ def style_docx() -> None:
 
     for table in document.tables:
         table.style = "Table"
-        table.autofit = True
+        table.alignment = WD_TABLE_ALIGNMENT.CENTER
+        table.autofit = False
+        table_pr = table._tbl.tblPr
+        layout = table_pr.find(qn("w:tblLayout"))
+        if layout is None:
+            layout = OxmlElement("w:tblLayout")
+            table_pr.append(layout)
+        layout.set(qn("w:type"), "fixed")
+
+        headers = tuple(cell.text.replace("\n", " ").strip() for cell in table.rows[0].cells)
+        ratios = TABLE_WIDTHS.get(headers)
+        if ratios is None:
+            ratios = tuple(1 / len(table.columns) for _ in table.columns)
+        widths = tuple(6.5 * ratio for ratio in ratios)
+
         for row_index, row in enumerate(table.rows):
-            for cell in row.cells:
+            prevent_row_split(row)
+            if row_index == 0:
+                set_repeat_header(row)
+            fill = "1C2D40" if row_index == 0 else ("EAF1F6" if row_index % 2 == 0 else "FFFFFF")
+            for column_index, cell in enumerate(row.cells):
+                set_cell_width(cell, widths[column_index])
+                set_cell_shading(cell, fill)
                 for paragraph in cell.paragraphs:
-                    paragraph.paragraph_format.space_after = Pt(2)
+                    paragraph.paragraph_format.space_after = Pt(3)
                     for run_item in paragraph.runs:
                         run_item.font.name = "Times New Roman"
                         run_item.font.size = Pt(9)
                         run_item._element.rPr.rFonts.set(qn("w:eastAsia"), "Times New Roman")
                         if row_index == 0:
                             run_item.bold = True
+                            run_item.font.color.rgb = RGBColor(255, 255, 255)
 
     document.core_properties.title = "Indeterminacy as a Scientific Result"
     document.core_properties.subject = "A Four-Outcome Framework for Consciousness Attribution"
@@ -204,6 +278,7 @@ def main() -> None:
         str(SOURCE),
         "--from=markdown+tex_math_dollars+tex_math_single_backslash",
         f"--resource-path={SOURCE.parent}",
+        f"--lua-filter={TABLE_FILTER}",
         "--to=docx",
         f"--output={RAW_DOCX}",
     )
@@ -213,6 +288,7 @@ def main() -> None:
         str(PDF_SOURCE),
         "--from=markdown+tex_math_dollars+tex_math_single_backslash",
         f"--resource-path={SOURCE.parent}",
+        f"--lua-filter={TABLE_FILTER}",
         "--pdf-engine=xelatex",
         "-V",
         "papersize=letter",
@@ -225,7 +301,7 @@ def main() -> None:
         "-V",
         "sansfont=Arial",
         "-V",
-        "header-includes=\\usepackage{graphicx}",
+        "header-includes=\\usepackage{graphicx}\\usepackage{colortbl}\\definecolor{TableHeader}{HTML}{1C2D40}\\definecolor{TableAlt}{HTML}{EAF1F6}",
         "-V",
         "linestretch=1.15",
         "-V",
