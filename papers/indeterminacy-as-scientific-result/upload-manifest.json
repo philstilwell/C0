@@ -1,0 +1,27 @@
+[
+  {
+    "sheet_row": 148,
+    "sheet_physical_row": 150,
+    "paper_name": "Indeterminacy as a Scientific Result: A Four-Outcome Framework for Consciousness Attribution",
+    "pdf_name": "indeterminacy-as-a-scientific-result.pdf",
+    "pdf_path": "/Users/philstilwell/Documents/Consciousness Model/C0/output/pdf/indeterminacy-as-a-scientific-result.pdf",
+    "repository_pdf_name": "Indeterminacy as a Scientific Result - A Four-Outcome Framework for Consciousness Attribution.pdf",
+    "abstract": "Tests for consciousness are increasingly applied where ordinary verbal report is absent, unreliable, or inapplicable: severe brain injury, infancy, nonhuman animals, neural organoids, and artificial systems. In these cases a negative test is often treated as evidence that consciousness is absent, while conflicting or non-transferable evidence is compressed into a vague category of uncertainty. Diagnostic research, three-way decision theory, and classifiers with a reject option already show why forced binary output can be misleading. Consciousness attribution adds a further problem: an assessment may be insufficiently discriminating even though valid, or it may lack a licensed interpretation altogether. This paper therefore proposes four outputs: positive, negative, indeterminate, and unlicensed. A result is indeterminate when an applicable and adequately executed assessment yields evidence that does not discriminate between presence and absence. An assessment is unlicensed when its validity conditions are not met, its target or system is inadequately specified, or its evidential interpretation has not been transported to the population or substrate. The formal rule gives validity failure precedence over evidential thresholds and gives unresolved surrogate conflict precedence over scalar aggregation. Indeterminate and unlicensed outputs additionally receive a cause profile identifying evidential scarcity, surrogate discordance, model disagreement, boundary instability, or transport failure. The framework links each unresolved output to a specific research response and separates scientific classification from precautionary action. It applies across competing theories and can be incorporated into theory-driven and theory-light consciousness tests.",
+    "interests": ["Philosophy of Mind"],
+    "keywords": [
+      "consciousness attribution",
+      "indeterminacy",
+      "C-tests",
+      "diagnostic uncertainty",
+      "disorders of consciousness",
+      "animal consciousness",
+      "artificial consciousness",
+      "precaution"
+    ],
+    "category_ids": [],
+    "year": "2026",
+    "publication_type": "article",
+    "publication_status": "unpublished",
+    "language": "en"
+  }
+]
