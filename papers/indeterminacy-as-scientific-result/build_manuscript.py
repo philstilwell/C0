@@ -19,6 +19,7 @@ TMP = ROOT / "tmp" / "docs"
 DOC_OUT = ROOT / "output" / "doc" / "indeterminacy-as-a-scientific-result.docx"
 PDF_OUT = ROOT / "output" / "pdf" / "indeterminacy-as-a-scientific-result.pdf"
 RAW_DOCX = TMP / "indeterminacy-raw.docx"
+PDF_SOURCE = TMP / "indeterminacy-pdf-source.md"
 
 
 def run(*args: str) -> None:
@@ -125,8 +126,17 @@ def style_docx() -> None:
 
     for shape in document.inline_shapes:
         if shape.type is not None:
-            shape.width = Inches(6.4)
-            shape.height = Inches(6.4 * 1536 / 2752)
+            shape.width = Inches(8.5)
+            shape.height = Inches(8.5 * 1536 / 2752)
+
+    for paragraph in document.paragraphs:
+        if paragraph._p.xpath(".//w:drawing"):
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            paragraph.paragraph_format.left_indent = Inches(-1.0)
+            paragraph.paragraph_format.right_indent = Inches(-1.0)
+            paragraph.paragraph_format.space_before = Pt(0)
+            paragraph.paragraph_format.space_after = Pt(0)
+            break
 
     abstract_seen = False
     references_seen = False
@@ -148,6 +158,9 @@ def style_docx() -> None:
             paragraph.paragraph_format.page_break_before = True
             references_seen = True
             continue
+        elif paragraph.text.startswith("Appendix ") and ":" in paragraph.text:
+            references_seen = False
+            paragraph.paragraph_format.page_break_before = True
         if references_seen and paragraph.text and paragraph.text != "References":
             paragraph.paragraph_format.left_indent = Inches(0.3)
             paragraph.paragraph_format.first_line_indent = Inches(-0.3)
@@ -180,6 +193,12 @@ def style_docx() -> None:
 def main() -> None:
     TMP.mkdir(parents=True, exist_ok=True)
     PDF_OUT.parent.mkdir(parents=True, exist_ok=True)
+    preview_path = (SOURCE.parent / "visual-preview.png").as_posix()
+    pdf_source = SOURCE.read_text(encoding="utf-8").replace(
+        "![](visual-preview.png){width=100%}",
+        f"\\noindent\\makebox[\\textwidth][c]{{\\includegraphics[width=\\paperwidth]{{{preview_path}}}}}",
+    )
+    PDF_SOURCE.write_text(pdf_source, encoding="utf-8")
     run(
         "pandoc",
         str(SOURCE),
@@ -191,7 +210,7 @@ def main() -> None:
     style_docx()
     run(
         "pandoc",
-        str(SOURCE),
+        str(PDF_SOURCE),
         "--from=markdown+tex_math_dollars+tex_math_single_backslash",
         f"--resource-path={SOURCE.parent}",
         "--pdf-engine=xelatex",
@@ -205,6 +224,8 @@ def main() -> None:
         "mainfont=Times New Roman",
         "-V",
         "sansfont=Arial",
+        "-V",
+        "header-includes=\\usepackage{graphicx}",
         "-V",
         "linestretch=1.15",
         "-V",
