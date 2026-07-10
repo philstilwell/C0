@@ -4,8 +4,7 @@ subtitle: "A Four-Outcome Framework for Consciousness Attribution"
 author: "Phil Stilwell"
 date: |
   Independent Scholar  
-  ORCID: 0009-0009-3725-8682  
-  Version 2.0, revised July 10, 2026
+  ORCID: 0009-0009-3725-8682
 ---
 
 \begin{center}
