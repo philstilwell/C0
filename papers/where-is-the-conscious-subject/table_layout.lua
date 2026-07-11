@@ -19,6 +19,19 @@ local layouts = {
   ["Architecture|Reached nodes|Functional classes|Diversity score|Availability result"] = {0.20, 0.14, 0.20, 0.16, 0.30},
 }
 
+if os.getenv("PAPER_TABLE_PROFILE") == "availability" then
+  layouts["Distinction|Does not establish|Required test"] = {0.18, 0.36, 0.46}
+  layouts["Status|Formal condition|Interpretation"] = {0.15, 0.48, 0.37}
+  layouts["Term or symbol|Definition|Guardrail"] = {0.19, 0.34, 0.47}
+  layouts["Stage|Required action|Failure output|Guardrail"] = {0.13, 0.29, 0.24, 0.34}
+  layouts["Field|Required entry"] = {0.23, 0.77}
+  layouts["Failure mode|Why spread metrics are fooled|Corrective control"] = {0.20, 0.39, 0.41}
+  layouts["Case|Candidate recipient classes|Report-independent intervention|Interpretive risk"] = {0.13, 0.29, 0.31, 0.27}
+  layouts["Recipient class|Effect LCB|Latency UCB|Selectivity|Result"] = {0.26, 0.12, 0.13, 0.12, 0.37}
+  layouts["Architecture|Reached nodes|Functional classes|Diversity score|Availability result"] = {0.21, 0.11, 0.18, 0.14, 0.36}
+  layouts["Gate|Pass rule|Fail rule|Otherwise"] = {0.17, 0.31, 0.29, 0.23}
+end
+
 local function header_key(tbl)
   if not tbl.head or not tbl.head.rows or #tbl.head.rows == 0 then
     return ""

@@ -31,6 +31,7 @@ PAPER_KEYWORDS = os.environ.get(
     "PAPER_KEYWORDS",
     "consciousness; system boundaries; dynamical autonomy; causal closure; system individuation",
 )
+PAPER_TABLE_PROFILE = os.environ.get("PAPER_TABLE_PROFILE", "")
 
 TABLE_WIDTHS = {
     ("Field", "Required entry"): (0.25, 0.75),
@@ -76,6 +77,22 @@ TABLE_WIDTHS = {
     ("Recipient class", "Effect LCB", "Latency UCB", "Selectivity", "Result"): (0.25, 0.14, 0.15, 0.16, 0.30),
     ("Architecture", "Reached nodes", "Functional classes", "Diversity score", "Availability result"): (0.20, 0.14, 0.20, 0.16, 0.30),
 }
+
+if PAPER_TABLE_PROFILE == "availability":
+    TABLE_WIDTHS.update(
+        {
+            ("Distinction", "Does not establish", "Required test"): (0.18, 0.36, 0.46),
+            ("Status", "Formal condition", "Interpretation"): (0.15, 0.48, 0.37),
+            ("Term or symbol", "Definition", "Guardrail"): (0.19, 0.34, 0.47),
+            ("Stage", "Required action", "Failure output", "Guardrail"): (0.13, 0.29, 0.24, 0.34),
+            ("Field", "Required entry"): (0.23, 0.77),
+            ("Failure mode", "Why spread metrics are fooled", "Corrective control"): (0.20, 0.39, 0.41),
+            ("Case", "Candidate recipient classes", "Report-independent intervention", "Interpretive risk"): (0.13, 0.29, 0.31, 0.27),
+            ("Recipient class", "Effect LCB", "Latency UCB", "Selectivity", "Result"): (0.26, 0.12, 0.13, 0.12, 0.37),
+            ("Architecture", "Reached nodes", "Functional classes", "Diversity score", "Availability result"): (0.21, 0.11, 0.18, 0.14, 0.36),
+            ("Gate", "Pass rule", "Fail rule", "Otherwise"): (0.17, 0.31, 0.29, 0.23),
+        }
+    )
 
 
 def run(*args: str) -> None:
