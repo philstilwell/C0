@@ -18,7 +18,7 @@ date: |
 
 ## Abstract
 
-The $N^*$ model proposes a dynamical condition for minimal phenomenal presence: under an independently assessed viability condition $V$, experience is present when integration or synergy, system-wide availability, and recurrent stability are jointly realized. That proposal deliberately leaves a deeper question open. Even if two states both satisfy the presence condition, why should one feel red rather than green, painful rather than neutral, loud rather than faint, or temporally flowing rather than static? This paper develops a dynamical-geometry extension that separates the gate for whether experience is present from the relational structure that determines what the experience is like. The presence gate remains $V\land N^*$. Phenomenal character is modeled by a bridge $Q_\Phi(G_c,\Delta)$ from a content-specific causal-trajectory geometry $G_c$ over an interval $\Delta$ into an empirically anchored quality space. $G_c$ is not a snapshot of activation or a decoder embedding. It is a perturbation-derived neighborhood containing distances among content trajectories, admissible transitions, occupancy, and temporal path structure. The bridge is licensed only when it predicts held-out phenomenal similarity and transition relations, survives coordinate changes and nuisance controls, and transports across subjects or substrates only under separate validation. The framework decomposes character into modality stratum, within-stratum location, intensity, valence, and temporal path features without assuming that all modalities share one Euclidean space. It also makes a principled limitation explicit: relational evidence identifies phenomenal character only up to transformations that preserve every measured relation. Global inversions or other automorphisms therefore remain underdetermined unless additional anchors break the symmetry. The proposal yields positive, negative, indeterminate, or unlicensed results for a specified bridge while keeping those results distinct from the presence classification. It supplies empirical protocols, synthetic examples, falsification conditions, and preregistration requirements. The result is not a completed reduction of qualia. It is a risky mapping hypothesis that connects the $N^*$ research program to phenomenal differentiation without allowing geometry alone to manufacture consciousness.
+The $N^*$ model proposes a dynamical condition for minimal phenomenal presence: under an independently assessed viability condition $V$, experience is present when integration or synergy, system-wide availability, and recurrent stability are jointly realized. That proposal deliberately leaves a deeper question open. Even if two states both satisfy the presence condition, why should one feel red rather than green, painful rather than neutral, loud rather than faint, or temporally flowing rather than static? This paper develops a dynamical-geometry extension that separates the gate for whether experience is present from the relational structure that determines what the experience is like. The presence gate remains $V\land N^*$. Phenomenal character is modeled by a licensed map $Q_\Phi(G_c,\Delta)$ built from a bridge $F_\Phi$ between content-specific causal-trajectory geometry $G_c$ and an independently anchored quality space. $G_c$ is not a snapshot of activation or a decoder embedding. It is a perturbation-derived neighborhood containing distances among content trajectories, admissible transitions, occupancy, and temporal path structure. The bridge is licensed only when it predicts held-out phenomenal similarity, transition relations, and intervention-induced deformations; survives coordinate changes and nuisance controls; and transports across subjects or substrates only under separate validation. The framework decomposes character into modality stratum, within-stratum location, intensity, valence, and temporal path features without assuming that all modalities share one Euclidean space. It also makes a principled limitation explicit: relational evidence identifies phenomenal character only up to transformations that preserve every measured relation. Global inversions or other automorphisms therefore remain underdetermined unless additional anchors break the symmetry. The proposal yields supported, refuted, indeterminate, or unlicensed results for a specified bridge while keeping those results distinct from the presence classification. It supplies empirical protocols, synthetic examples, falsification conditions, and preregistration requirements. The result is not a completed reduction of qualia. It is a risky mapping hypothesis that connects the $N^*$ research program to phenomenal differentiation without allowing geometry alone to manufacture consciousness.
 
 **Keywords:** phenomenal consciousness; phenomenal presence; phenomenal character; quality spaces; representational geometry; causal dynamics; neural manifolds; structuralism; qualia; similarity; valence; temporal experience
 
@@ -48,7 +48,7 @@ $$
 \text{phenomenal character}=Q_\Phi(G_c,\Delta).
 $$
 
-The first expression asks whether phenomenal attribution is licensed. The second asks where an admitted content lies in a structured phenomenal domain and how it moves there through time. $G_c$ denotes content-specific causal-trajectory geometry, $\Delta$ the evaluation interval, and $Q_\Phi$ a bridge indexed by a declared mapping specification $\Phi$.
+The first expression asks whether phenomenal attribution is licensed. The second asks where an admitted content lies in a structured phenomenal domain and how it moves there through time. $G_c$ denotes content-specific causal-trajectory geometry, $\Delta$ the evaluation interval, $F_\Phi$ the fitted bridge, and $Q_\Phi$ the resulting symmetry-qualified character map under declared specification $\Phi$.
 
 The central thesis is:
 
@@ -62,7 +62,7 @@ The paper makes seven linked contributions.
 
 1. It distinguishes the truth conditions and evidence for phenomenal presence from those for phenomenal character.
 2. It defines $G_c$ as a perturbation-derived geometry of causal trajectories rather than an activation map or arbitrary latent embedding.
-3. It gives $Q_\Phi$ a substantive bridge principle based on held-out preservation of phenomenal distances, neighborhoods, and transitions.
+3. It gives $F_\Phi$ a substantive bridge test based on held-out preservation of phenomenal distances, neighborhoods, transitions, and intervention-induced deformations.
 4. It treats modality, similarity, intensity, valence, and temporal character as different structural features rather than one undifferentiated coordinate vector.
 5. It blocks unconscious representational geometry from counting as phenomenal by requiring the independent presence gate.
 6. It identifies phenomenal character only up to empirically unbroken quality-space symmetries, making inversion and transport limits explicit.
@@ -75,6 +75,10 @@ This is a theoretical and methodological proposal. It does not claim that every 
 The boundary paper requires system individuation before consciousness measurement (Stilwell, 2026c). The availability paper defines $N_2$ as counterfactual causal reach rather than report or observed spread (Stilwell, 2026d). The indeterminacy paper distinguishes valid nondiscrimination from failed interpretability (Stilwell, 2026b). The present paper inherits all three constraints.
 
 **Annotation.** A quality map cannot borrow a boundary from one system, presence evidence from another, and content geometry from a third. Nor may a failed bridge be converted into evidence that no experience occurred. Presence and character outputs remain indexed to the same candidate, grain, content family, regime, and interval.
+
+![The two-layer inference architecture. A positive presence result licenses entry into the character-mapping stage; it does not determine character by itself. Independently estimated causal and phenomenal structures are paired only through declared anchors, the bridge is trained and tested out of sample, and the final attribution remains limited by validity failures and surviving symmetries.](inference-architecture.png){width=100%}
+
+The schematic makes the inferential separation visible. The causal geometry and the phenomenal anchor structure are constructed from different evidence streams. Their correspondence is a hypothesis tested by the bridge, not an identity inserted during preprocessing.
 
 ## 2. Two Explananda, Two Kinds of Error
 
@@ -184,11 +188,11 @@ Let the preregistered character-mapping specification be
 
 $$
 \Theta_Q=(S,g,\mathcal R,\Delta,\mathcal C,\mathcal A,\mathcal Y,
-d_G,\mathcal E,\delta_Q,\mathcal T_Q,\Phi,
-\tau_B,\rho_H,\rho_T,\rho_S,\beta).
+d_G,\mathcal E,\iota,\delta_Q,\mathcal T_Q,\Phi,
+\tau_B,\tau_D,\rho_H,\rho_D,\rho_T,\rho_S,\beta).
 $$
 
-**Term-by-term annotation.** $S$ is the boundary-qualified system; $g$ is the grain; $\mathcal R$ is the operating regime; $\Delta$ is the temporal window; $\mathcal C$ is the content family; $\mathcal A$ is the admissible intervention family; $\mathcal Y$ is the set of native system readouts; and $d_G$ is the causal-trajectory distance. $\mathcal E$ is the anchor experience family; $\delta_Q$ is the independently estimated phenomenal dissimilarity relation; and $\mathcal T_Q$ contains phenomenal transition relations. $\Phi$ declares the bridge model, nuisance controls, and allowed invariances. $\tau_B$ is the maximum bridge distortion; $\rho_H$ is minimum held-out predictive performance; $\rho_T$ is minimum transport performance; $\rho_S$ is minimum specification stability; and $\beta$ declares the uncertainty procedure.
+**Term-by-term annotation.** $S$ is the boundary-qualified system; $g$ is the grain; $\mathcal R$ is the operating regime; $\Delta$ is the temporal window; $\mathcal C$ is the content family; $\mathcal A$ is the admissible intervention family; $\mathcal Y$ is the set of native system readouts; and $d_G$ is the causal-trajectory dissimilarity. $\mathcal E$ is the anchor experience family; $\iota$ is the preregistered correspondence between anchor contents and anchor experiences; $\delta_Q$ is the independently estimated phenomenal dissimilarity relation; and $\mathcal T_Q$ contains phenomenal transition relations. $\Phi$ declares the feature operator, bridge model, nuisance controls, and allowed invariances. $\tau_B$ is the maximum bridge distortion; $\tau_D$ is the maximum deformation-prediction loss; $\rho_H$ is minimum held-out predictive performance; $\rho_D$ is minimum deformation-direction agreement; $\rho_T$ is minimum transport performance; $\rho_S$ is minimum specification stability; and $\beta$ declares the uncertainty procedure.
 
 Every term is frozen before the critical bridge test. Changing the content family, metric, embedding dimension, or anchor set after seeing the fit creates a new specification and requires a new evaluation.
 
@@ -222,6 +226,16 @@ $$
 
 **Annotation.** The signature records distributions of content-specific effects across the candidate system. It can include route dependence, latency, recurrence, and cross-recipient effects. Source-only leakage, stimulus energy, motor preparation, and generic arousal are removed or explicitly modeled as nuisance variables.
 
+Let $\nu_c$ be the frozen sampling distribution over admissible interventions for content $c$. Define the intervention-mixture signature and trajectory law
+
+$$
+z(c)=\int_{\mathcal A_c}z(c,a)\,d\nu_c(a),
+\qquad
+\mathsf X_c=\operatorname{Law}_{a\sim\nu_c}\!\left(x_c^a\right).
+$$
+
+**Annotation.** $z(c)$ is a mixture of response distributions, not an average activation vector. $\mathsf X_c$ retains variation in full trajectories under the same frozen intervention weights. This prevents the analyst from selecting whichever perturbation happens to best match the phenomenal anchors.
+
 ### 4.4 The causal-trajectory geometry $G_c$
 
 For contents $c_i,c_j\in\mathcal C_P$, define
@@ -230,10 +244,10 @@ $$
 d_G(c_i,c_j)=
 \sum_{k=1}^{K}w_k
 D_k\!\left(z_k(c_i),z_k(c_j)\right)
-+\omega\,D_{\mathrm{path}}\!\left(x_{c_i},x_{c_j}\right).
++\omega\,D_{\mathrm{path}}\!\left(\mathsf X_{c_i},\mathsf X_{c_j}\right).
 $$
 
-**Annotation.** $D_k$ compares intervention distributions in recipient or role class $k$; $w_k$ are preregistered weights that sum to one; and $D_{\mathrm{path}}$ compares trajectory shape, including timing, direction, dwell, and recurrence. $\omega$ controls the contribution of temporal path structure. The metric is cross-validated and must satisfy declared reliability and nuisance-invariance tests.
+**Annotation.** $D_k$ compares intervention distributions in recipient or role class $k$; $w_k$ are preregistered weights that sum to one; and $D_{\mathrm{path}}$ compares trajectory laws, including timing, direction, dwell, and recurrence. $\omega$ controls the contribution of temporal path structure. The resulting $d_G$ is initially a dissimilarity. It is called a metric only if symmetry, identity, and triangle diagnostics pass; otherwise the analysis retains a graph, directed dissimilarity, or pseudometric representation rather than forcing metric structure.
 
 Here $z_k(c)$ is the preregistered distributional summary of $z_k(c,a)$ over admissible $a\in\mathcal A_c$, using fixed intervention weights. It is not the maximum effect selected after inspecting the quality-space fit.
 
@@ -259,6 +273,16 @@ the radius-$r$ causal neighborhood of $c$ within the frozen content family.
 
 ### 4.5 The empirical quality space
 
+Let $\mathcal C_A\subseteq\mathcal C_P$ be the anchor contents and define the preregistered correspondence
+
+$$
+\iota:\mathcal C_A\rightarrow\mathcal E,
+\qquad
+c_i\mapsto e_i.
+$$
+
+**Annotation.** $\iota$ links a content contrast used in the causal experiment to the experience sampled by the phenomenal measures. It does not make the two geometries agree. The causal signatures and phenomenal relations are estimated from separate observations, preferably with separate trials, personnel, preprocessing, and final-test partitions. If the content-to-experience correspondence is ambiguous, the affected anchor is indeterminate rather than silently reassigned.
+
 For anchor experiences $e_i,e_j\in\mathcal E$, let
 
 $$
@@ -279,7 +303,15 @@ Quality spaces are not new. Perceptual discrimination and similarity have long b
 
 ### 4.6 The dynamical-geometry bridge
 
-Let $F_\Phi$ map causal-geometry features into a candidate quality space. Fit it on training anchors by minimizing
+Let $\psi_\Phi(G_c,\Delta)$ be the preregistered feature representation of a content neighborhood over the evaluation interval, and let $F_\Phi$ map those features into a candidate quality space:
+
+$$
+q_c=F_\Phi\!\left(\psi_\Phi(G_c,\Delta)\right).
+$$
+
+**Annotation.** $\psi_\Phi$ may expose distances, transition statistics, occupancy, topology, and path features, but its dimension and preprocessing are frozen inside $\Phi$. This equation makes the shorthand $Q_\Phi(G_c,\Delta)$ explicit: the bridge acts on a declared representation of the content's causal neighborhood, not on an undefined geometry object.
+
+Fit $F_\Phi$ on training anchors by minimizing
 
 $$
 \widehat F_\Phi
@@ -295,7 +327,10 @@ with
 
 $$
 \delta_F(c_i,c_j)
-:=\delta_Q\!\left(F(z(c_i)),F(z(c_j))\right),
+:=\delta_Q\!\left(
+F(\psi_\Phi(G_{c_i},\Delta)),
+F(\psi_\Phi(G_{c_j},\Delta))
+\right),
 $$
 
 and
@@ -304,25 +339,27 @@ $$
 \mathcal L_{\mathrm{metric}}(F)
 =\sum_{i<j}v_{ij}
 \left[
-\delta_Q(e_i,e_j)-\delta_F(c_i,c_j)
+\delta_Q(\iota(c_i),\iota(c_j))-\delta_F(c_i,c_j)
 \right]^2.
 $$
 
-**Term-by-term annotation.** $F$ is the candidate bridge; $\delta_F$ is the quality-space distance between the images of two causal signatures; and $v_{ij}$ weights reliable anchor pairs. A preregistered monotone calibration $h_\Phi(d_G)$ may be included inside the parameterization of $F$, but it may not be selected on final-test pairs. $\mathcal L_{\mathrm{transition}}$ penalizes failures to preserve transition order, adjacency, direction, or hysteresis; and $\mathcal L_{\mathrm{invariance}}$ penalizes sensitivity to nuisance changes, coordinate rotations, sensor relabeling, and matched-energy controls. $\lambda_T$ and $\lambda_I$ are fixed before testing.
+**Term-by-term annotation.** $F$ is the candidate bridge; $\delta_F$ is the quality-space distance between the images of two causal neighborhoods; $\iota(c_i)$ and $\iota(c_j)$ are independently measured anchor experiences; and $v_{ij}$ weights reliable anchor pairs. A preregistered monotone calibration $h_\Phi(d_G)$ may be included inside the parameterization of $F$, but it may not be selected on final-test pairs. $\mathcal L_{\mathrm{transition}}$ penalizes failures to preserve transition order, adjacency, direction, or hysteresis; and $\mathcal L_{\mathrm{invariance}}$ penalizes sensitivity to nuisance changes, coordinate rotations, sensor relabeling, and matched-energy controls. $\lambda_T$ and $\lambda_I$ are fixed before testing.
 
 The central bridge hypothesis is
 
 $$
 H_Q:
 \quad
-\operatorname{Rel}\!\left(Q_\Phi(G_c,\Delta)\right)
+\operatorname{Rel}\!\left(
+\{F_\Phi(\psi_\Phi(G_c,\Delta)):c\in\mathcal C_{\mathrm{test}}\}
+\right)
 \approx
-\operatorname{Rel}\!\left(\chi_c\right)
+\operatorname{Rel}\!\left(\iota(\mathcal C_{\mathrm{test}})\right)
 $$
 
-for held-out contents and admissible geometry-altering interventions.
+for held-out anchor contents $\mathcal C_{\mathrm{test}}\subseteq\mathcal C_A$ and admissible geometry-altering interventions.
 
-**Plain-language reading.** The map succeeds only if the relations predicted from causal dynamics match independently measured phenomenal relations outside the data used to fit the bridge. A high in-sample correlation is insufficient.
+**Plain-language reading.** The empirical test compares predicted relations with independently measured held-out phenomenal relations; it does not compare a model with an inaccessible, presupposed $\chi_c$. The broader metaphysical hypothesis is that the same bridge tracks phenomenal character beyond the anchor cases. A high in-sample correlation is insufficient for either claim.
 
 Held-out bridge performance is
 
@@ -339,12 +376,16 @@ $$
 If every measured relation in $\mathcal Q$ is preserved by a transformation $a\in\operatorname{Aut}(\mathcal Q)$, the data cannot distinguish $q$ from $a(q)$. Therefore the warranted attribution is
 
 $$
-Q_\Phi(G_c,\Delta)=[q_c]_{\operatorname{Aut}(\mathcal Q)},
+Q_\Phi(G_c,\Delta)
+=
+\left[
+F_\Phi\!\left(\psi_\Phi(G_c,\Delta)\right)
+\right]_{\operatorname{Aut}(\mathcal Q)},
 $$
 
 not an absolutely labeled point.
 
-**Annotation.** $\operatorname{Aut}(\mathcal Q)$ is the set of structure-preserving automorphisms of the measured quality space. The brackets denote the orbit of $q_c$ under those transformations. If an exact red-green permutation preserves all measured similarities, transitions, valence links, memory relations, and causal roles, the present evidence cannot identify which member is absolutely red. Additional asymmetrical anchors may reduce the orbit, but they do not do so by assertion.
+**Annotation.** $\operatorname{Aut}(\mathcal Q)$ is the set of automorphisms preserving every declared part of the measured quality structure, including reliable distances, transition relations, orientation or valence anchors, and any transport-relevant roles. The brackets denote the orbit of $q_c$ under those transformations. If an exact red-green permutation preserves all measured similarities, transitions, valence links, memory relations, and causal roles, the present evidence cannot identify which member is absolutely red. Additional asymmetrical anchors may reduce the orbit, but they do not do so by assertion.
 
 This is the framework's answer to the inversion problem. It neither declares inversion impossible nor treats it as a reason to abandon empirical structure. It states the residual underdetermination precisely.
 
@@ -371,7 +412,7 @@ $$
 Two trajectories can pass through the same state-space region while differing in order, speed, or history. Let the mapped path be
 
 $$
-q_c(t)=Q_\Phi(G_c,t),\qquad t\in[0,\Delta].
+q_c(t)=F_\Phi\!\left(\psi_\Phi(G_c,t)\right),\qquad t\in[0,\Delta].
 $$
 
 Define a temporal profile
@@ -386,18 +427,68 @@ $$
 \right).
 $$
 
-**Annotation.** The terms represent phenomenal-rate candidates, path curvature, dwell duration, history dependence, and event ordering. They are not read directly from clock time. Their phenomenal interpretation requires anchors such as judgments of succession, apparent continuity, duration discrimination, temporal binding, or transition asymmetry. $N_3$ supplies recurrent stability for presence; $\Pi_c$ differentiates how an admitted experience unfolds.
+**Annotation.** The terms represent phenomenal-rate candidates, path curvature, dwell duration, history dependence, and event ordering. In a differentiable stratum, $\|\dot q_c\|$ is the metric derivative and $\kappa$ is path curvature. On a graph or discrete transition system, they are replaced by preregistered edge-rate, turning-cost, and sequence statistics. They are not read directly from clock time. Their phenomenal interpretation requires anchors such as judgments of succession, apparent continuity, duration discrimination, temporal binding, or transition asymmetry. $N_3$ supplies recurrent stability for presence; $\Pi_c$ differentiates how an admitted experience unfolds.
 
-### 4.10 Mapping outcomes
+### 4.10 The geometry-changing intervention test
+
+For a baseline condition $0$ and held-out admissible intervention $a$, define the observed phenomenal deformation and bridge-predicted deformation for anchor pair $(i,j)$:
+
+$$
+\Delta_Q^a(i,j)
+=
+\delta_Q^a(\iota(c_i),\iota(c_j))
+-
+\delta_Q^0(\iota(c_i),\iota(c_j)),
+$$
+
+$$
+\widehat{\Delta}_Q^a(i,j)
+=
+\delta_Q\!\left(F_\Phi(\psi_\Phi(G_{c_i}^a,\Delta)),F_\Phi(\psi_\Phi(G_{c_j}^a,\Delta))\right)
+-
+\delta_Q\!\left(F_\Phi(\psi_\Phi(G_{c_i}^0,\Delta)),F_\Phi(\psi_\Phi(G_{c_j}^0,\Delta))\right).
+$$
+
+Aggregate deformation error is
+
+$$
+\mathcal L_D
+=
+\sum_{a,i<j}u_{aij}
+\left[
+\Delta_Q^a(i,j)-\widehat{\Delta}_Q^a(i,j)
+\right]^2.
+$$
+
+Direction agreement is
+
+$$
+A_D
+=
+\frac{
+\sum_{a,i<j}u_{aij}
+\mathbf 1\!\left[
+\operatorname{sgn}(\Delta_Q^a(i,j))
+=
+\operatorname{sgn}(\widehat{\Delta}_Q^a(i,j))
+\right]
+}{
+\sum_{a,i<j}u_{aij}
+}.
+$$
+
+**Term-by-term annotation.** Superscripts $0$ and $a$ denote baseline and intervention conditions; $G_c^a$ is re-estimated from the perturbed causal trajectories; $\Delta_Q^a$ is the independently observed change in phenomenal relation; and $\widehat{\Delta}_Q^a$ is the change predicted by the frozen bridge. The weights $u_{aij}$ are fixed from reliability estimates, not prediction success. $A_D$ is the weighted fraction of nonzero relations whose predicted contraction or expansion has the correct sign; ties and a minimum-change tolerance are handled by the preregistered uncertainty procedure. A causal-bridge claim requires the upper uncertainty bound on $\mathcal L_D$ to remain below $\tau_D$, the lower bound on $A_D$ to exceed $\rho_D$, and nuisance-only models to perform worse. This test requires no inverse of $F_\Phi$ and can therefore be used when the bridge is many-to-one.
+
+### 4.11 Mapping outcomes
 
 The bridge test returns one of four results.
 
 | Status | Formal condition | Interpretation |
 |---|---|---|
-| Supported | Presence positive; validity gates pass; distortion upper bound $\leq\tau_B$; held-out performance lower bound $\geq\rho_H$; stability passes. | The specified causal geometry predicts the measured phenomenal relations. |
-| Refuted | Test valid and held-out upper bound falls below $\rho_H$, or distortion lower bound exceeds $\tau_B$. | This mapping principle fails for the declared domain. |
+| Supported | Presence positive; validity gates pass; distortion upper bound $\leq\tau_B$; held-out performance lower bound $\geq\rho_H$; stability passes; deformation test passes when a causal claim is made. | The specified causal geometry predicts the measured phenomenal relations. |
+| Refuted | Test valid and held-out upper bound falls below $\rho_H$, distortion lower bound exceeds $\tau_B$, or a valid deformation test contradicts the predicted direction or magnitude. | This mapping principle fails for the declared domain. |
 | Indeterminate | Valid intervals straddle thresholds, credible bridge families disagree, or anchor coverage is insufficient. | The evidence bears on the bridge but does not settle it. |
-| Unlicensed | Presence, boundary, intervention, anchor, measurement, or transport validity fails. | No interpretable phenomenal mapping result is available. |
+| Unlicensed | Presence, boundary, intervention, anchor, or measurement validity fails; transport validity fails when cross-system use is claimed. | No interpretable phenomenal mapping result is available for the affected claim. |
 
 **Annotation.** "Refuted" targets $Q_\Phi$, not the existence of experience. A present experience can refute a proposed geometry. "Unlicensed" is a failure of interpretation, not a negative result. These distinctions inherit the four-outcome framework developed for consciousness attribution (Stilwell, 2026b).
 
@@ -406,6 +497,8 @@ The bridge test returns one of four results.
 ### 5.1 Freeze presence independently
 
 The candidate system, grain, regime, content family, and $N^*$ measures are preregistered first. Character data may not be used to expand the boundary or rescue a failed presence component. This ordering prevents a vivid quality space from substituting for the presence test.
+
+Inferential independence does not require entirely different instruments. The same recording may contribute to $N_1$, $N_2$, or $N_3$ and later to $G_c$, but the presence thresholds, boundary, preprocessing, and inclusion decisions must be frozen before the character fit is inspected. Shared data therefore create a declared dependence to be propagated in uncertainty estimates, not permission to tune the gate toward the best bridge.
 
 ### 5.2 Build phenomenal anchors
 
@@ -426,6 +519,8 @@ Fit $F_\Phi$ on a declared anchor subset. Any dimension reduction, monotone warp
 ### 5.5 Test held-out contents and interventions
 
 The strongest test is not whether causal and phenomenal spaces correlate at baseline. It is whether a preregistered intervention changes $G_c$ in a way that predicts a specific change in independently measured phenomenal relations.
+
+The deformation quantities in Section 4.10 make that requirement operational. Baseline fit and intervention fit are reported separately so that a bridge cannot conceal a failed causal prediction inside a good aggregate similarity score.
 
 Examples include:
 
@@ -503,7 +598,7 @@ $N_3$ asks whether a content is recurrently stable enough to be present. $\Pi_c$
 
 A conscious scene can contain color, sound, bodily feeling, and thought together. It does not follow that all qualities occupy one homogeneous metric space. The global structure may be a stratified or fibered space: modality-specific quality spaces linked by synchrony, spatial co-location, causal binding, attention, and cross-modal prediction.
 
-The bridge should therefore report which cross-modal relations are well-defined. If participants cannot make stable similarity judgments between a color and a pain, the model should not invent a distance. Unity of presence is supplied by the jointly realized $N^*$ system; phenomenal character can remain internally heterogeneous.
+The bridge should therefore report which cross-modal relations are well-defined. If participants cannot make stable similarity judgments between a color and a pain, the model should not invent a distance. A jointly realized $N^*$ result licenses a common conscious bearer under the presence model; it does not by itself prove that every admitted quality belongs to one commensurable metric space. Phenomenal character can remain internally heterogeneous.
 
 ## 7. Relation to Neighboring Theories
 
@@ -521,7 +616,7 @@ Population activity often occupies low-dimensional manifolds whose geometry refl
 
 ### 7.4 Integrated information theory
 
-IIT explicitly connects phenomenal structure to causal structure. The present proposal shares the demand for structure-preserving explanation but does not derive quality from a maximally irreducible cause-effect structure, identify intrinsic causal power with consciousness, or use one integration measure as both presence and character. $N_1$ is one conjunct of the presence gate; $Q_\Phi$ is separately tested against content-specific phenomenal relations.
+IIT 4.0 explicitly claims to address both why experience is present and why it has a particular quality by identifying phenomenal structure with a substrate's unfolded cause-effect structure (Albantakis et al., 2023). The present proposal shares the demand for structure-preserving explanation but does not derive quality from a maximally irreducible cause-effect structure, identify intrinsic causal power with consciousness, or let the same theoretical identity establish both presence and character. $N_1$ is one conjunct of the presence gate; $F_\Phi$ is a separately estimated bridge tested against content-specific phenomenal anchors and interventions.
 
 ### 7.5 Global workspace and higher-order theories
 
@@ -572,7 +667,7 @@ The correct response is revision or rejection of $Q_\Phi$, not post hoc redefini
 
 ### Objection 1: This simply renames neural geometry as qualia
 
-It would if the map were asserted by resemblance. The proposal instead separates predictor and target geometries, requires intervention-sensitive causal structure, and tests held-out phenomenal relations. A neural manifold is a candidate vehicle; a quality space is an independently estimated phenomenal target; $Q_\Phi$ is the risky bridge between them.
+It would if the map were asserted by resemblance. The proposal instead separates predictor and target geometries, requires intervention-sensitive causal structure, and tests held-out phenomenal relations. A neural manifold is a candidate vehicle; a quality space is an independently estimated phenomenal target; $F_\Phi$ is the risky bridge between them.
 
 ### Objection 2: Similarity judgments are cognitive reports
 
@@ -588,7 +683,7 @@ The proposal uses a bounded causal neighborhood and declared transition family. 
 
 ### Objection 5: The presence gate prejudges which geometry matters
 
-The gate does not select the winning geometry. It determines when phenomenal interpretation is licensed. Competing causal geometries within a positive state remain open to comparison. Without a gate, any sophisticated unconscious representation could be mislabeled phenomenal.
+The gate does not select the winning geometry. It determines when phenomenal interpretation is licensed. Competing causal geometries within a positive state remain open to comparison. When the same recordings inform both stages, the anti-double-dipping rule freezes every gate decision before bridge fitting and propagates shared uncertainty. Without a gate, any sophisticated unconscious representation could be mislabeled phenomenal.
 
 ### Objection 6: Valence is not geometry
 
@@ -626,7 +721,7 @@ Finally, even a perfect structure-preserving bridge would not by itself establis
 
 The $N^*$ research program should not ask one formalism to do two jobs. $V\land N^*$ is a proposal about the conditions under which experience is present. It does not by itself explain why admitted experiences differ. Phenomenal differentiation requires a second layer.
 
-This paper proposes that layer as $Q_\Phi(G_c,\Delta)$: a validated bridge from content-specific causal-trajectory geometry to structured phenomenal character. The geometry includes distances, transitions, occupancy, and temporal paths. The quality space is independently anchored. The bridge must predict held-out relations and intervention-induced deformations, survive nuisance and coordinate changes, and earn every transport beyond its calibration domain.
+This paper proposes that layer as $Q_\Phi(G_c,\Delta)$: a symmetry-qualified character map built from a validated bridge between content-specific causal-trajectory geometry and structured phenomenal anchors. The geometry includes distances, transitions, occupancy, and temporal paths. The quality space is independently anchored. The bridge must predict held-out relations and intervention-induced deformations, survive nuisance and coordinate changes, and earn every transport beyond its calibration domain.
 
 The proposal is deliberately limited. It identifies character up to unbroken relational symmetries and does not claim to close the explanatory gap. Yet that limitation is informative. It separates what the evidence can determine from what remains underdetermined, turns a promissory gesture toward quality spaces into a falsifiable research program, and allows the core model to retain a clear division of labor:
 
@@ -640,13 +735,15 @@ $$
 
 ## References
 
+Albantakis, L., Barbosa, L., Findlay, G., Grasso, M., Haun, A. M., Marshall, W., Mayner, W. G. P., Zaeemzadeh, A., Boly, M., Juel, B. E., Sasai, S., Fujii, K., David, I., Hendren, J., Lang, J. P., & Tononi, G. (2023). Integrated information theory (IIT) 4.0: Formulating the properties of phenomenal existence in physical terms. *PLoS Computational Biology, 19*(10), e1011465. <https://doi.org/10.1371/journal.pcbi.1011465>
+
 Block, N. (1995). On a confusion about a function of consciousness. *Behavioral and Brain Sciences, 18*(2), 227-247. <https://doi.org/10.1017/S0140525X00038188>
 
 Block, N., & Fodor, J. A. (1972). What psychological states are not. *The Philosophical Review, 81*(2), 159-181. <https://doi.org/10.2307/2183997>
 
 Brouwer, G. J., & Heeger, D. J. (2009). Decoding and reconstructing color from responses in human visual cortex. *Journal of Neuroscience, 29*(44), 13992-14003. <https://doi.org/10.1523/JNEUROSCI.3577-09.2009>
 
-Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Mind, 104*(414), 200-219. <https://doi.org/10.1093/mind/104.414.200>
+Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of Consciousness Studies, 2*(3), 200-219. <https://consc.net/papers/facing.html>
 
 Clark, A. (1993). *Sensory qualities*. Clarendon Press.
 
@@ -701,15 +798,22 @@ Zhou, Y., Smith, B. H., & Sharpee, T. O. (2018). Hyperbolic geometry of the olfa
 | $N^*$ | $N_1\land N_2\land N_3$ presence bundle | All conjuncts use the same system, content, grain, and interval. |
 | $\Theta_Q$ | Complete character-mapping specification | Freeze it before the critical bridge test. |
 | $\mathcal C_P$ | Contents with positive presence results | Decodability alone does not admit a content. |
+| $\mathcal C_A$ | Positively licensed contents used as phenomenal anchors | Training and final-test subsets must be separated. |
 | $x_c^a(t)$ | Content trajectory under admissible intervention $a$ | Preserve system identity, viability, regime, and content fidelity. |
 | $z(c,a)$ | Distributional causal response signature | Remove source leakage, arousal, and report preparation. |
-| $d_G$ | Distance between content-specific causal trajectories | Cross-validate the metric and its weights. |
+| $\nu_c,\mathsf X_c$ | Frozen intervention mixture and resulting trajectory law | Do not select perturbations by their eventual bridge fit. |
+| $d_G$ | Dissimilarity between content-specific causal trajectories | Call it a metric only after metric diagnostics pass. |
 | $G_c$ | Causal neighborhood of content $c$ | An isolated activation vector is insufficient. |
 | $\mathcal Q$ | Empirically anchored quality-space structure | Do not assume one global Euclidean space. |
+| $\iota$ | Preregistered anchor-content to anchor-experience correspondence | Ambiguous pairings are indeterminate, not reassigned after fitting. |
+| $\psi_\Phi$ | Frozen feature operator applied to $G_c$ | Its dimension and preprocessing are selected inside training data. |
 | $\delta_Q$ | Phenomenal dissimilarity relation | Estimate from converging measures, not one report task. |
-| $F_\Phi,Q_\Phi$ | Candidate bridge from causal to phenomenal structure | Require held-out prediction and intervention sensitivity. |
+| $F_\Phi$ | Candidate bridge from causal to phenomenal structure | Require held-out prediction and intervention sensitivity. |
+| $Q_\Phi$ | Symmetry-qualified character map induced by $F_\Phi$ | Return an equivalence class when measured structure leaves labels underdetermined. |
 | $\delta_F$ | Quality-space distance induced by the fitted bridge | Must be evaluated on held-out anchor pairs. |
 | $H_B$ | Held-out bridge performance | Compare against preregistered null models. |
+| $\mathcal L_D,A_D$ | Held-out deformation error and direction agreement | Report separately from baseline bridge fit. |
+| $\tau_D,\rho_D$ | Deformation-error and direction-agreement thresholds | Required when the bridge is claimed to be causally sensitive. |
 | $R_T$ | Cross-system transport performance | No transport without target anchors or causal-role validation. |
 | $R_S$ | Stability across reasonable mapping specifications | Do not report only the most favorable boundary, metric, or bridge. |
 | $\operatorname{Aut}(\mathcal Q)$ | Structure-preserving transformations of the quality space | Report residual inversion or permutation uncertainty. |
@@ -722,7 +826,7 @@ Zhou, Y., Smith, B. H., & Sharpee, T. O. (2018). Hyperbolic geometry of the olfa
 |---|---|---|---|
 | 1. Freeze bearer | Archive $S,g,\mathcal R,\Delta$ and the boundary result. | Unlicensed | Do not select the bearer from the best quality fit. |
 | 2. Gate presence | Evaluate $V\land N^*$ for each target content or content family. | Negative, indeterminate, or unlicensed presence | Geometry alone never establishes phenomenality. |
-| 3. Build anchors | Estimate $\delta_Q,\mathcal T_Q$ from converging phenomenal measures. | Anchor-indeterminate | Split anchor construction from final testing. |
+| 3. Build anchors | Freeze $\iota$ and estimate $\delta_Q,\mathcal T_Q$ from converging phenomenal measures. | Anchor-indeterminate | Split anchor construction from final testing. |
 | 4. Define interventions | Freeze $\mathcal A$, content-fidelity tests, and nuisance controls. | Intervention-unlicensed | No new decoder, route, or operating regime. |
 | 5. Estimate $G_c$ | Construct causal distances, transitions, paths, and occupancy. | Geometry-indeterminate | Decoding accuracy is not a geometry license. |
 | 6. Fit bridge | Train $F_\Phi$ only on declared anchors. | Model-selection failure | Keep hyperparameter search inside training data. |
@@ -737,12 +841,12 @@ Zhou, Y., Smith, B. H., & Sharpee, T. O. (2018). Hyperbolic geometry of the olfa
 
 1. Freeze the boundary-qualified system and presence specification.
 2. Identify the positively admitted content family $\mathcal C_P$.
-3. Collect split-sample phenomenal anchors and declare their uncertainty.
+3. Freeze the anchor correspondence $\iota$, collect split-sample phenomenal anchors, and declare their uncertainty.
 4. Specify content-preserving interventions and nuisance controls.
 5. Estimate causal response signatures and trajectory geometry.
 6. Fit the bridge on training anchors only.
 7. Predict held-out phenomenal distances, neighborhoods, and transitions.
-8. Test predicted deformations under geometry-changing interventions.
+8. Test $\widehat{\Delta}_Q^a$ against observed $\Delta_Q^a$ under geometry-changing interventions.
 9. Compute the automorphism orbit for every attributed quality point.
 10. Validate transport before applying the map outside the anchor domain.
 11. Issue supported, refuted, indeterminate, or unlicensed bridge results.
@@ -756,13 +860,13 @@ Zhou, Y., Smith, B. H., & Sharpee, T. O. (2018). Hyperbolic geometry of the olfa
 | Candidate bearer | Boundary, interfaces, grain, regime, interval, and boundary-confidence result. |
 | Presence gate | Measures and thresholds for $V,N_1,N_2,N_3$, including uncertainty rules. |
 | Content family | Contents, controls, contrast structure, and exclusion criteria. |
-| Phenomenal anchors | Similarity, confusion, adaptation, generalization, transition, and matching measures. |
+| Phenomenal anchors | Anchor correspondence $\iota$ plus similarity, confusion, adaptation, generalization, transition, and matching measures. |
 | Anchor split | Training, validation, and final test partitions plus repeated-measure reliability. |
 | Interventions | Content manipulation, magnitude, timing, route, safety, and regime-preservation tests. |
 | Causal readouts | Native variables, recipient classes, latency, recurrence, and source-leakage controls. |
 | Geometry | $d_G$, path metric, transition family, occupancy, dimension, topology, and reliability. |
-| Bridge family | $F_\Phi$, $h_\Phi$, losses, regularization, invariances, and null models. |
-| Thresholds | $\tau_B,\rho_H,\rho_T,\rho_S$ and uncertainty level $\beta$. |
+| Bridge family | $\psi_\Phi,F_\Phi$, $h_\Phi$, losses, regularization, invariances, and null models. |
+| Thresholds | $\tau_B,\tau_D,\rho_H,\rho_D,\rho_T,\rho_S$ and uncertainty level $\beta$. |
 | Symmetry audit | Allowed coordinate transformations and method for estimating $\operatorname{Aut}(\mathcal Q)$. |
 | Temporal character | Path features, temporal anchors, resolution, and ordering tests. |
 | Transport | Source and target anchors, alignment procedure, causal-role equivalence, and stopping rule. |
@@ -781,7 +885,7 @@ Zhou, Y., Smith, B. H., & Sharpee, T. O. (2018). Hyperbolic geometry of the olfa
 | Is $G_c$ causal? | Perturbations and route tests change predicted signatures. | Correlational evidence only. |
 | Is the phenomenal target reliable? | Anchor measures converge within tolerance. | Quality space indeterminate. |
 | Is the bridge out-of-sample? | Held-out contents and relations exceed $\rho_H$. | In-sample fit rejected as evidence. |
-| Does geometry deformation predict quality deformation? | Direction and magnitude agree within preregistered bounds. | Causal bridge refuted or indeterminate. |
+| Does geometry deformation predict quality deformation? | $\mathcal L_D\leq\tau_D$ and $A_D\geq\rho_D$ within uncertainty bounds. | Causal bridge refuted or indeterminate. |
 | Are nuisance models weaker? | Stimulus, report, arousal, semantics, and SNR nulls lose. | Bridge specificity fails. |
 | Is the attribution symmetry-aware? | Automorphism orbit is reported. | Absolute label overclaimed. |
 | Is transport validated? | Target anchors and causal roles yield $R_T\geq\rho_T$. | Cross-system use unlicensed. |
@@ -795,23 +899,23 @@ Assume six color-like anchor contents $c_1,\ldots,c_6$ arranged phenomenally on 
 
 | Test item | Phenomenal relation | Predicted distance | Absolute error | Result |
 |---|---:|---:|---:|---|
-| $c_1$-$c_2$ | .18 | .20 | .02 | Local neighbor preserved. |
-| $c_1$-$c_4$ | .91 | .86 | .05 | Opposed relation preserved. |
-| $c_2$-$c_3$ | .22 | .27 | .05 | Local neighbor preserved. |
-| $c_2$-$c_5$ | .84 | .80 | .04 | Distant relation preserved. |
-| $c_3$-$c_6$ | .79 | .63 | .16 | Miss exceeds pairwise tolerance. |
+| $c_1$-$c_2$ | 0.18 | 0.20 | 0.02 | Local neighbor preserved. |
+| $c_1$-$c_4$ | 0.91 | 0.86 | 0.05 | Opposed relation preserved. |
+| $c_2$-$c_3$ | 0.22 | 0.27 | 0.05 | Local neighbor preserved. |
+| $c_2$-$c_5$ | 0.84 | 0.80 | 0.04 | Distant relation preserved. |
+| $c_3$-$c_6$ | 0.79 | 0.63 | 0.16 | Miss exceeds pairwise tolerance. |
 
-Suppose the preregistered null-model loss is $.24$ and the bridge test loss is $.07$. Then
+Suppose the preregistered null-model loss is $0.24$, the bridge test loss is $0.07$, and $\varepsilon=0$ for this illustration. Then
 
 $$
-H_B=1-\frac{.07}{.24}=.708.
+H_B=1-\frac{0.07}{0.24}=0.708.
 $$
 
-If the one-sided lower bound is $.66$ and $\rho_H=.60$, held-out performance passes. The missed $c_3$-$c_6$ relation remains reported and motivates a local-model check; it is not deleted because the aggregate gate passed.
+If the one-sided lower bound is $0.66$ and $\rho_H=0.60$, held-out performance passes. The missed $c_3$-$c_6$ relation remains reported and motivates a local-model check; it is not deleted because the aggregate gate passed.
 
 ### Appendix E.2 Geometry-changing intervention
 
-An adaptation intervention is predicted to contract the $c_1$-$c_2$ phenomenal distance from $.18$ to $.11$ and expand $c_1$-$c_6$ from $.25$ to $.39$. Observed held-out values are $.13$ and $.36$. A stimulus-distance model predicts no change. If the confidence intervals exclude zero change and include the preregistered bridge predictions, the result supports causal sensitivity of the map.
+An adaptation intervention is predicted to contract the $c_1$-$c_2$ phenomenal distance from $0.18$ to $0.11$ and expand $c_1$-$c_6$ from $0.25$ to $0.39$. Observed held-out values are $0.13$ and $0.36$. A stimulus-distance model predicts no change. If the confidence intervals exclude zero change, include the preregistered bridge predictions, and satisfy $\tau_D$ and $\rho_D$, the result supports causal sensitivity of the map.
 
 ### Appendix E.3 Symmetry result
 
@@ -855,10 +959,10 @@ Every published $Q_\Phi$ result should preserve:
 4. the intervention family, route checks, and regime diagnostics;
 5. the causal response variables and trajectory-construction method;
 6. the metric, topology, transition, occupancy, and temporal-path specifications for $G_c$;
-7. all phenomenal anchor measures, reliability estimates, and conflicts;
+7. the frozen anchor correspondence $\iota$, all phenomenal anchor measures, reliability estimates, and conflicts;
 8. the train, validation, and final test splits;
-9. the bridge family, losses, regularization, and null models;
-10. held-out pairwise, neighborhood, transition, and deformation predictions;
+9. the feature operator $\psi_\Phi$, bridge family, losses, regularization, and null models;
+10. held-out pairwise, neighborhood, transition, and deformation predictions, including $\mathcal L_D$ and direction agreement;
 11. nuisance-model and coordinate-invariance results;
 12. the estimated automorphism group and each reported equivalence class;
 13. transport anchors, alignment, and $R_T$ when cross-system claims are made;
