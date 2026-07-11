@@ -76,6 +76,11 @@ TABLE_WIDTHS = {
     ("Case", "Candidate recipient classes", "Report-independent intervention", "Interpretive risk"): (0.15, 0.27, 0.30, 0.28),
     ("Recipient class", "Effect LCB", "Latency UCB", "Selectivity", "Result"): (0.25, 0.14, 0.15, 0.16, 0.30),
     ("Architecture", "Reached nodes", "Functional classes", "Diversity score", "Availability result"): (0.20, 0.14, 0.20, 0.16, 0.30),
+    ("Presence result", "Character-map result", "Licensed conclusion", "Prohibited conclusion"): (0.15, 0.17, 0.35, 0.33),
+    ("Character feature", "Geometric or dynamical representation", "Required guardrail"): (0.18, 0.43, 0.39),
+    ("Validity question", "Pass evidence", "Failure consequence"): (0.28, 0.39, 0.33),
+    ("Test item", "Phenomenal relation", "Predicted distance", "Absolute error", "Result"): (0.20, 0.15, 0.18, 0.13, 0.34),
+    ("Domain", "Promising structure", "Main confound", "Required extension"): (0.16, 0.31, 0.24, 0.29),
 }
 
 if PAPER_TABLE_PROFILE == "availability":
@@ -91,6 +96,21 @@ if PAPER_TABLE_PROFILE == "availability":
             ("Recipient class", "Effect LCB", "Latency UCB", "Selectivity", "Result"): (0.26, 0.12, 0.13, 0.12, 0.37),
             ("Architecture", "Reached nodes", "Functional classes", "Diversity score", "Availability result"): (0.21, 0.11, 0.18, 0.14, 0.36),
             ("Gate", "Pass rule", "Fail rule", "Otherwise"): (0.17, 0.31, 0.29, 0.23),
+        }
+    )
+
+if PAPER_TABLE_PROFILE == "character":
+    TABLE_WIDTHS.update(
+        {
+            ("Presence result", "Character-map result", "Licensed conclusion", "Prohibited conclusion"): (0.14, 0.16, 0.37, 0.33),
+            ("Character feature", "Geometric or dynamical representation", "Required guardrail"): (0.17, 0.45, 0.38),
+            ("Status", "Formal condition", "Interpretation"): (0.15, 0.47, 0.38),
+            ("Term or symbol", "Definition", "Guardrail"): (0.18, 0.35, 0.47),
+            ("Stage", "Required action", "Failure output", "Guardrail"): (0.12, 0.31, 0.23, 0.34),
+            ("Field", "Required entry"): (0.22, 0.78),
+            ("Validity question", "Pass evidence", "Failure consequence"): (0.27, 0.40, 0.33),
+            ("Test item", "Phenomenal relation", "Predicted distance", "Absolute error", "Result"): (0.18, 0.15, 0.18, 0.13, 0.36),
+            ("Domain", "Promising structure", "Main confound", "Required extension"): (0.15, 0.32, 0.23, 0.30),
         }
     )
 
