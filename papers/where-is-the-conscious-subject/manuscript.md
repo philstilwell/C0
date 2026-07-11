@@ -8,6 +8,8 @@ date: |
   July 10, 2026
 ---
 
+[**C0 - Central Paper and Related Publications**](https://philstilwell.github.io/C0/)
+
 \begin{center}
 \textbf{A visual preview:}
 \end{center}

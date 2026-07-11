@@ -282,7 +282,11 @@ def style_docx() -> None:
     abstract_seen = False
     references_seen = False
     for paragraph in document.paragraphs:
-        if paragraph.text == "A visual preview:":
+        if paragraph.text == "C0 - Central Paper and Related Publications":
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            paragraph.paragraph_format.space_before = Pt(3)
+            paragraph.paragraph_format.space_after = Pt(8)
+        elif paragraph.text == "A visual preview:":
             paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
             paragraph.paragraph_format.space_before = Pt(14)
             paragraph.paragraph_format.space_after = Pt(8)

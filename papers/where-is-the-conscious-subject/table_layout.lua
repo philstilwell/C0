@@ -49,6 +49,18 @@ local function style_row(row, latex)
   return row
 end
 
+function Para(paragraph)
+  if FORMAT:match("latex")
+      and pandoc.utils.stringify(paragraph.content)
+        == "C0 - Central Paper and Related Publications" then
+    return {
+      pandoc.RawBlock("latex", "\\begin{center}"),
+      paragraph,
+      pandoc.RawBlock("latex", "\\end{center}"),
+    }
+  end
+end
+
 function Table(tbl)
   local key = header_key(tbl)
   local widths = layouts[key]
