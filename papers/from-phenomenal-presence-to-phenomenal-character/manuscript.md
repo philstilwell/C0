@@ -76,7 +76,9 @@ The boundary paper requires system individuation before consciousness measuremen
 
 **Annotation.** A quality map cannot borrow a boundary from one system, presence evidence from another, and content geometry from a third. Nor may a failed bridge be converted into evidence that no experience occurred. Presence and character outputs remain indexed to the same candidate, grain, content family, regime, and interval.
 
-![The two-layer inference architecture. A positive presence result licenses entry into the character-mapping stage; it does not determine character by itself. Independently estimated causal and phenomenal structures are paired only through declared anchors, the bridge is trained and tested out of sample, and the final attribution remains limited by validity failures and surviving symmetries.](inference-architecture.png){width=100%}
+![](inference-architecture.png){width=100%}
+
+*Figure 1. The two-layer inference architecture. A positive presence result licenses entry into the character-mapping stage; it does not determine character by itself. Independently estimated causal and phenomenal structures are paired only through declared anchors, the bridge is trained and tested out of sample, and the final attribution remains limited by validity failures and surviving symmetries.*
 
 The schematic makes the inferential separation visible. The causal geometry and the phenomenal anchor structure are constructed from different evidence streams. Their correspondence is a hypothesis tested by the bridge, not an identity inserted during preprocessing.
 
@@ -133,8 +135,6 @@ P(S,c_i)=P(S,c_j)=1.
 $$
 
 The presence gate prevents a decoder, embedding, or similarity matrix from manufacturing consciousness. Geometry becomes phenomenal geometry only when its bearer and content satisfy the independent gate and the bridge is licensed.
-
-\newpage
 
 ### 2.4 The two-layer error matrix
 
