@@ -102,14 +102,14 @@ if PAPER_TABLE_PROFILE == "availability":
 if PAPER_TABLE_PROFILE == "character":
     TABLE_WIDTHS.update(
         {
-            ("Presence result", "Character-map result", "Licensed conclusion", "Prohibited conclusion"): (0.14, 0.16, 0.37, 0.33),
+            ("Presence result", "Character-map result", "Licensed conclusion", "Prohibited conclusion"): (0.15, 0.18, 0.35, 0.32),
             ("Character feature", "Geometric or dynamical representation", "Required guardrail"): (0.17, 0.45, 0.38),
             ("Status", "Formal condition", "Interpretation"): (0.15, 0.47, 0.38),
-            ("Term or symbol", "Definition", "Guardrail"): (0.18, 0.35, 0.47),
-            ("Stage", "Required action", "Failure output", "Guardrail"): (0.12, 0.31, 0.23, 0.34),
+            ("Term or symbol", "Definition", "Guardrail"): (0.20, 0.34, 0.46),
+            ("Stage", "Required action", "Failure output", "Guardrail"): (0.15, 0.30, 0.22, 0.33),
             ("Field", "Required entry"): (0.22, 0.78),
-            ("Validity question", "Pass evidence", "Failure consequence"): (0.27, 0.40, 0.33),
-            ("Test item", "Phenomenal relation", "Predicted distance", "Absolute error", "Result"): (0.18, 0.15, 0.18, 0.13, 0.36),
+            ("Validity question", "Pass evidence", "Failure consequence"): (0.29, 0.42, 0.29),
+            ("Test item", "Phenomenal relation", "Predicted distance", "Absolute error", "Result"): (0.14, 0.16, 0.17, 0.14, 0.39),
             ("Domain", "Promising structure", "Main confound", "Required extension"): (0.15, 0.32, 0.23, 0.30),
         }
     )

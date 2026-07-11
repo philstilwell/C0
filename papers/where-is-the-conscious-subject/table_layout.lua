@@ -32,6 +32,18 @@ if os.getenv("PAPER_TABLE_PROFILE") == "availability" then
   layouts["Gate|Pass rule|Fail rule|Otherwise"] = {0.17, 0.31, 0.29, 0.23}
 end
 
+if os.getenv("PAPER_TABLE_PROFILE") == "character" then
+  layouts["Presence result|Character-map result|Licensed conclusion|Prohibited conclusion"] = {0.15, 0.18, 0.35, 0.32}
+  layouts["Character feature|Geometric or dynamical representation|Required guardrail"] = {0.17, 0.45, 0.38}
+  layouts["Status|Formal condition|Interpretation"] = {0.15, 0.47, 0.38}
+  layouts["Term or symbol|Definition|Guardrail"] = {0.20, 0.34, 0.46}
+  layouts["Stage|Required action|Failure output|Guardrail"] = {0.15, 0.30, 0.22, 0.33}
+  layouts["Field|Required entry"] = {0.22, 0.78}
+  layouts["Validity question|Pass evidence|Failure consequence"] = {0.29, 0.42, 0.29}
+  layouts["Test item|Phenomenal relation|Predicted distance|Absolute error|Result"] = {0.14, 0.16, 0.17, 0.14, 0.39}
+  layouts["Domain|Promising structure|Main confound|Required extension"] = {0.15, 0.32, 0.23, 0.30}
+end
+
 local function header_key(tbl)
   if not tbl.head or not tbl.head.rows or #tbl.head.rows == 0 then
     return ""
