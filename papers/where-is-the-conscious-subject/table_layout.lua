@@ -11,6 +11,12 @@ local layouts = {
   ["Candidate or test|Autonomy/role result|Interpretation"] = {0.24, 0.32, 0.44},
   ["Candidate|||Limiting role interval|Decision"] = {0.15, 0.16, 0.17, 0.22, 0.30},
   ["Gate|Pass rule|Fail rule|Otherwise"] = {0.16, 0.29, 0.28, 0.27},
+  ["Distinction|Does not establish|Required test"] = {0.22, 0.34, 0.44},
+  ["Term or symbol|Definition|Guardrail"] = {0.22, 0.34, 0.44},
+  ["Failure mode|Why spread metrics are fooled|Corrective control"] = {0.23, 0.37, 0.40},
+  ["Case|Candidate recipient classes|Report-independent intervention|Interpretive risk"] = {0.15, 0.27, 0.30, 0.28},
+  ["Recipient class|Effect LCB|Latency UCB|Selectivity|Result"] = {0.25, 0.14, 0.15, 0.16, 0.30},
+  ["Architecture|Reached nodes|Functional classes|Diversity score|Availability result"] = {0.20, 0.14, 0.20, 0.16, 0.30},
 }
 
 local function header_key(tbl)

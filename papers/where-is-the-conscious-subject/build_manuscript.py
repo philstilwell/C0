@@ -2,6 +2,7 @@
 """Build polished DOCX and PDF artifacts from manuscript.md."""
 
 from pathlib import Path
+import os
 import subprocess
 
 from docx import Document
@@ -14,14 +15,22 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 
-ROOT = Path(__file__).resolve().parents[2]
-SOURCE = Path(__file__).with_name("manuscript.md")
+ROOT = Path(os.environ.get("PAPER_ROOT", Path(__file__).resolve().parents[2]))
+SOURCE = Path(os.environ.get("PAPER_SOURCE", Path(__file__).with_name("manuscript.md")))
 TMP = ROOT / "tmp" / "docs"
-DOC_OUT = ROOT / "output" / "doc" / "where-is-the-conscious-subject.docx"
-PDF_OUT = ROOT / "output" / "pdf" / "where-is-the-conscious-subject.pdf"
-RAW_DOCX = TMP / "conscious-subject-raw.docx"
-PDF_SOURCE = TMP / "conscious-subject-pdf-source.md"
-TABLE_FILTER = SOURCE.parent / "table_layout.lua"
+OUTPUT_STEM = os.environ.get("PAPER_OUTPUT_STEM", "where-is-the-conscious-subject")
+DOC_OUT = ROOT / "output" / "doc" / f"{OUTPUT_STEM}.docx"
+PDF_OUT = ROOT / "output" / "pdf" / f"{OUTPUT_STEM}.pdf"
+RAW_DOCX = TMP / f"{OUTPUT_STEM}-raw.docx"
+PDF_SOURCE = TMP / f"{OUTPUT_STEM}-pdf-source.md"
+TABLE_FILTER = Path(os.environ.get("PAPER_TABLE_FILTER", SOURCE.parent / "table_layout.lua"))
+PAPER_HEADER = os.environ.get("PAPER_HEADER", "WHERE IS THE CONSCIOUS SUBJECT?")
+PAPER_TITLE = os.environ.get("PAPER_TITLE", "Where Is the Conscious Subject?")
+PAPER_SUBJECT = os.environ.get("PAPER_SUBJECT", "A Dynamical Criterion for System Boundaries")
+PAPER_KEYWORDS = os.environ.get(
+    "PAPER_KEYWORDS",
+    "consciousness; system boundaries; dynamical autonomy; causal closure; system individuation",
+)
 
 TABLE_WIDTHS = {
     ("Field", "Required entry"): (0.25, 0.75),
@@ -60,6 +69,12 @@ TABLE_WIDTHS = {
         "Decision",
     ): (0.15, 0.16, 0.17, 0.22, 0.30),
     ("Gate", "Pass rule", "Fail rule", "Otherwise"): (0.16, 0.29, 0.28, 0.27),
+    ("Distinction", "Does not establish", "Required test"): (0.22, 0.34, 0.44),
+    ("Term or symbol", "Definition", "Guardrail"): (0.22, 0.34, 0.44),
+    ("Failure mode", "Why spread metrics are fooled", "Corrective control"): (0.23, 0.37, 0.40),
+    ("Case", "Candidate recipient classes", "Report-independent intervention", "Interpretive risk"): (0.15, 0.27, 0.30, 0.28),
+    ("Recipient class", "Effect LCB", "Latency UCB", "Selectivity", "Result"): (0.25, 0.14, 0.15, 0.16, 0.30),
+    ("Architecture", "Reached nodes", "Functional classes", "Diversity score", "Availability result"): (0.20, 0.14, 0.20, 0.16, 0.30),
 }
 
 
@@ -191,7 +206,7 @@ def style_docx() -> None:
         section.header_distance = Inches(0.35)
         section.footer_distance = Inches(0.35)
         header = section.header.paragraphs[0]
-        header.text = "WHERE IS THE CONSCIOUS SUBJECT?"
+        header.text = PAPER_HEADER
         header.alignment = WD_ALIGN_PARAGRAPH.RIGHT
         header.runs[0].font.name = "Times New Roman"
         header.runs[0].font.size = Pt(9)
@@ -378,12 +393,10 @@ def style_docx() -> None:
                             run_item.bold = True
                             run_item.font.color.rgb = RGBColor(255, 255, 255)
 
-    document.core_properties.title = "Where Is the Conscious Subject?"
-    document.core_properties.subject = "A Dynamical Criterion for System Boundaries"
+    document.core_properties.title = PAPER_TITLE
+    document.core_properties.subject = PAPER_SUBJECT
     document.core_properties.author = "Phil Stilwell"
-    document.core_properties.keywords = (
-        "consciousness; system boundaries; dynamical autonomy; causal closure; system individuation"
-    )
+    document.core_properties.keywords = PAPER_KEYWORDS
     DOC_OUT.parent.mkdir(parents=True, exist_ok=True)
     document.save(DOC_OUT)
 
