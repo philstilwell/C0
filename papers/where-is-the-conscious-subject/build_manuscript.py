@@ -103,6 +103,49 @@ def set_cell_width(cell, width_inches: float) -> None:
     cell.width = Inches(width_inches)
 
 
+def set_cell_margins(cell, *, top: int, bottom: int, start: int = 90, end: int = 90) -> None:
+    """Set cell insets in twentieths of a point (DXA)."""
+    tc_pr = cell._tc.get_or_add_tcPr()
+    tc_mar = tc_pr.find(qn("w:tcMar"))
+    if tc_mar is None:
+        tc_mar = OxmlElement("w:tcMar")
+        tc_pr.append(tc_mar)
+    for side, value in (("top", top), ("bottom", bottom), ("start", start), ("end", end)):
+        margin = tc_mar.find(qn(f"w:{side}"))
+        if margin is None:
+            margin = OxmlElement(f"w:{side}")
+            tc_mar.append(margin)
+        margin.set(qn("w:w"), str(value))
+        margin.set(qn("w:type"), "dxa")
+
+
+def add_word_math_label(paragraph, base: str, subscript: str) -> None:
+    """Add a compact math-like label using ordinary Word runs."""
+    base_run = paragraph.add_run(base)
+    base_run.italic = True
+    subscript_run = paragraph.add_run(subscript)
+    subscript_run.font.subscript = True
+
+
+def replace_g1_header_math(table) -> None:
+    """Avoid dark OMML equations on the navy DOCX header background."""
+    metric_specs = ((1, "J", "self"), (2, "A", "Θ"))
+    for column_index, base, subscript in metric_specs:
+        cell = table.rows[0].cells[column_index]
+        cell.text = ""
+        paragraph = cell.paragraphs[0]
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        add_word_math_label(paragraph, base, subscript)
+
+    profile_cell = table.rows[0].cells[3]
+    profile_cell.text = ""
+    paragraph = profile_cell.paragraphs[0]
+    paragraph.add_run("Role profile\n(")
+    for index, subscript in enumerate(("I", "A", "R", "V")):
+        add_word_math_label(paragraph, "F", subscript)
+        paragraph.add_run(", " if index < 3 else ")")
+
+
 def set_repeat_header(row) -> None:
     tr_pr = row._tr.get_or_add_trPr()
     header = OxmlElement("w:tblHeader")
@@ -249,6 +292,8 @@ def style_docx() -> None:
         if ratios is None:
             ratios = tuple(1 / len(table.columns) for _ in table.columns)
         widths = tuple(6.5 * ratio for ratio in ratios)
+        if headers == ("Regime and candidate", "", "", "Role profile", "Boundary result"):
+            replace_g1_header_math(table)
 
         for row_index, row in enumerate(table.rows):
             prevent_row_split(row)
@@ -258,8 +303,13 @@ def style_docx() -> None:
             for column_index, cell in enumerate(row.cells):
                 set_cell_width(cell, widths[column_index])
                 set_cell_shading(cell, fill)
+                if row_index == 0:
+                    set_cell_margins(cell, top=100, bottom=55)
                 for paragraph in cell.paragraphs:
                     paragraph.paragraph_format.space_after = Pt(3)
+                    if row_index == 0:
+                        paragraph.paragraph_format.line_spacing = 0.94
+                        paragraph.paragraph_format.space_after = Pt(1)
                     for run_item in paragraph.runs:
                         run_item.font.name = "Times New Roman"
                         run_item.font.size = Pt(9)

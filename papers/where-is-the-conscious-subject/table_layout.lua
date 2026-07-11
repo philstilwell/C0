@@ -67,7 +67,7 @@ function Table(tbl)
     for i, row in ipairs(tbl.head.rows) do
       tbl.head.rows[i] = style_row(
         row,
-        "\\cellcolor{TableHeader}\\color{white}\\bfseries{}"
+        "\\cellcolor{TableHeader}\\color{white}\\bfseries{}\\setstretch{0.94}\\rule{0pt}{2.75ex}"
       )
     end
 
@@ -76,7 +76,7 @@ function Table(tbl)
       for i, row in ipairs(body.head) do
         body.head[i] = style_row(
           row,
-          "\\cellcolor{TableHeader}\\color{white}\\bfseries{}"
+          "\\cellcolor{TableHeader}\\color{white}\\bfseries{}\\setstretch{0.94}\\rule{0pt}{2.75ex}"
         )
       end
       for i, row in ipairs(body.body) do
