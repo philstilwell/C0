@@ -18,9 +18,9 @@ date: |
 
 ## Abstract
 
-Theories of consciousness often require a content to become globally available, yet availability is commonly inferred from overt report, executive use, widespread activation, or information detected at many recording sites. These indicators can dissociate. Report adds planning and motor demands; activity can spread passively; anatomical extent can increase without functional reach; and a content can be causally available to a subsystem that remains quiescent in the current task. This paper develops a report-independent criterion for the broadcast-availability condition $N_2$ in the $N^*$ model of minimal phenomenal presence. A content is system-wide available when content-specific interventions show that it could modulate a preregistered set of functionally distinct recipient classes within bounded latency, across nearby admissible contexts, while preserving the candidate system's operating regime. The criterion measures counterfactual causal availability rather than current activation. Functional diversity is defined from independently estimated causal response repertoires rather than anatomical distance, verbal labels, or node count. Content selectivity, route dependence, matched-energy controls, report-channel ablation, and executive-channel ablation distinguish broadcast from diffusion and availability from access. The framework permits posterior or subcortical availability when the required causal diversity is realized, but does not treat widespread arousal, seizure propagation, a message bus, or passive fan-out as sufficient. It returns positive, negative, indeterminate, or unlicensed component results and specifies what each result licenses. Applications to no-report perception, locked-in states, dreaming, infancy, nonhuman animals, disorders of consciousness, split brains, and artificial architectures show how the criterion changes experimental design. The proposal does not establish that availability is sufficient for consciousness. It clarifies one necessary conjunct so that $N_2$ neither collapses into global neuronal workspace theory nor expands into unconstrained spread.
+Theories of consciousness often require a content to become globally available, yet availability is commonly inferred from overt report, executive use, widespread activation, or information detected at many recording sites. These indicators can dissociate. Report adds planning and motor demands; activity can spread passively; anatomical extent can increase without functional reach; and a content can be causally available to a subsystem that remains quiescent in the current task. This paper develops a report-independent criterion for the broadcast-availability condition $N_2$ in the $N^*$ model of minimal phenomenal presence. A content is system-wide available when content-specific interventions show that it could modulate a preregistered set of functionally distinct recipient classes within bounded latency, across a nontrivial mass of nearby admissible contexts, while preserving the candidate system's operating regime. A preparation-burden bound prevents the test from installing the very access machinery it purports to detect, and context-robustness rules prevent one unusually favorable setup from manufacturing a positive result. The criterion measures counterfactual causal availability rather than current activation. Functional diversity is defined from independently estimated causal response repertoires rather than anatomical distance, verbal labels, or node count. Content selectivity, route dependence, matched-energy controls, source-leakage controls, report-channel ablation, and executive-channel ablation distinguish broadcast from diffusion and availability from access. The framework permits posterior or subcortical availability when the required causal diversity is realized, but does not treat widespread arousal, seizure propagation, a message bus, or passive fan-out as sufficient. It returns positive, negative, indeterminate, or unlicensed component results and specifies what each result licenses. Applications to no-report perception, locked-in states, dreaming, infancy, nonhuman animals, disorders of consciousness, split brains, and artificial architectures show how the criterion changes experimental design. The proposal does not establish that availability is sufficient for consciousness. It clarifies one necessary conjunct so that $N_2$ neither collapses into global neuronal workspace theory nor expands into unconstrained spread.
 
-**Keywords:** consciousness; no-report paradigms; causal availability; broadcast; functional diversity; counterfactual intervention; global workspace; posterior cortex; thalamus; artificial consciousness
+**Keywords:** consciousness; no-report paradigms; system-wide availability; causal availability; broadcast; functional diversity; counterfactual intervention; context robustness; global workspace; posterior cortex; thalamocortical systems; artificial consciousness
 
 ## 1. Introduction: Availability Is Not an Output
 
@@ -146,10 +146,11 @@ Let a preregistered availability specification be
 
 $$
 \Theta_A=(S,g,\Delta,\mathcal R,c,c_0,\mathcal M,\mathcal U,\mathcal I,d,
-\boldsymbol\epsilon,\lambda,\alpha,m,\eta,s,r,\beta).
+\Gamma,\gamma,\boldsymbol\nu,\rho_U,\boldsymbol\epsilon,\lambda,
+\alpha,m,\eta,s,r,\beta).
 $$
 
-**Term-by-term annotation.** $S$ is the boundary-qualified candidate system; $g$ is its grain; $\Delta$ is the evaluation horizon; $\mathcal R$ is the operating regime; $c$ is the target content and $c_0$ a matched control; $\mathcal M$ is the frozen recipient-class family; $\mathcal U$ is the admissible nearby-context family; $\mathcal I$ is the intervention family; $d$ is the response-distance function; $\boldsymbol\epsilon$ contains class-specific causal-effect thresholds; $\lambda$ is the maximum latency; $\alpha$ is weighted coverage; $m$ is the minimum number of distinct classes; $\eta$ is the diversity threshold; $s$ and $r$ are content-selectivity and routing thresholds; and $\beta$ fixes the uncertainty procedure.
+**Term-by-term annotation.** $S$ is the boundary-qualified candidate system; $g$ is its grain; $\Delta$ is the evaluation horizon; $\mathcal R$ is the operating regime; $c$ is the target content and $c_0$ a matched control; $\mathcal M$ is the frozen recipient-class family; $\mathcal U$ is the candidate nearby-context family; $\mathcal I$ is the intervention family; and $d$ is the response-distance function. $\Gamma$ measures the burden of preparing a context and $\gamma$ is its maximum admissible value. $\boldsymbol\nu=(\nu_1,\ldots,\nu_K)$ contains preregistered context distributions and $\rho_U$ is the minimum context mass on which a recipient must remain reachable. $\boldsymbol\epsilon$ contains class-specific causal-effect thresholds; $\lambda$ is the maximum latency; $\alpha$ is weighted coverage; $m$ is the minimum number of distinct classes; $\eta$ is the diversity threshold; $s$ and $r$ are content-selectivity and routing thresholds; and $\beta$ fixes the uncertainty procedure.
 
 No term may be selected after inspecting the final $N_2$ outcome. If $S$ is unstable or unlicensed, the availability result is also unlicensed because "system-wide" lacks a stable referent.
 
@@ -175,7 +176,19 @@ $$
 
 ### 4.3 Content-specific causal modulation
 
-Let $X_c$ denote the content-bearing state variables for $c$. For recipient class $\mathcal C_k$, admissible context $u\in\mathcal U_k$, and latency $\tau$, define
+Let $u_0$ be the naturally realized or experimentally standard baseline context. For class $k$, define the admissible subset
+
+$$
+\mathcal U_k^\gamma=\left\{u\in\mathcal U_k:
+\Gamma(u,u_0)\leq\gamma,
+\operatorname{Regime}(u)=\mathcal R,
+\operatorname{NewRoute}(u)=0
+\right\}.
+$$
+
+**Annotation.** $\Gamma$ is a preregistered burden functional over preparation time, training, energy, controller involvement, and structural change. It is calibrated to the system under study rather than compared raw across organisms and machines. The regime term requires the same relevant arousal, viability, and dynamical mode; the final term prohibits installing a new communication route. If $\mathcal U_k^\gamma$ is empty or cannot be validated, the counterfactual claim for class $k$ is unlicensed, not negative.
+
+Let $X_c$ denote the content-bearing state variables for $c$. For recipient class $\mathcal C_k$, admissible context $u\in\mathcal U_k^\gamma$, and latency $\tau$, define
 
 $$
 E_{k,u}(c,\tau)=d_k\!\left(
@@ -184,21 +197,24 @@ P(Y_{k,t+\tau}\mid do(X_{c,t}=x_{c_0}),do(U=u),\mathcal R)
 \right).
 $$
 
-**Annotation.** The two intervention arms differ in content while matching intensity, duration, spatial support, and nonspecific state change. $d_k$ can be a distributional, decoding, state-transition, or causal-response distance validated for that recipient class. The effect concerns the recipient's internal state. It does not require a report, choice, memory trace, or motor action.
+**Annotation.** The two intervention arms differ in content while matching intensity, duration, spatial support, and nonspecific state change. A separate source-fidelity check must verify that the manipulation preserves the intended $c$ versus $c_0$ contrast; otherwise the intervention creates an uninterpretable signal rather than testing availability. $d_k$ can be a distributional, decoding, state-transition, or causal-response distance validated for that recipient class. The effect concerns a class-native internal state transition. It does not require a report, choice, memory trace, or motor action.
+
+The directly manipulated dimensions of $X_c$ are excluded from $Y_k$. A source module may count as a recipient only when an independently defined, downstream role is measured with source-only leakage controls and held-out preprocessing. This blocks the trivial result in which the intervention is rediscovered at its own injection site.
 
 The use of $do(\cdot)$ makes the causal claim explicit: the target is a contrast between intervention distributions, not a conditional association in observed data (Pearl, 2009).
 
 The class-level effect and latency are
 
 $$
-E_k^*(c)=\max_{u\in\mathcal U_k}\max_{0\leq\tau\leq\Delta}E_{k,u}(c,\tau),
+E_k^*(c)=\max_{u\in\mathcal U_k^\gamma}\max_{0\leq\tau\leq\Delta}E_{k,u}(c,\tau),
 $$
 
 $$
-L_k(c)=\min\left\{\tau:\exists u\in\mathcal U_k, E_{k,u}(c,\tau)\geq\epsilon_k\right\}.
+L_k(c)=\min\left\{\tau:\exists u\in\mathcal U_k^\gamma,
+E_{k,u}(c,\tau)\geq\epsilon_k\right\}.
 $$
 
-**Annotation.** The maximization does not permit arbitrary task construction. $\mathcal U_k$ contains only preregistered nearby contexts whose preparation cost is below a bound $\gamma$, that preserve $\mathcal R$, and that do not install new routing machinery. The latency clock begins at the content intervention, not at a later report cue. If no qualifying effect occurs, $L_k=\infty$.
+**Annotation.** The maxima summarize the best response within the already bounded family; they do not by themselves establish robust availability. Section 4.6 adds a minimum context-mass gate so that a single convenient setup cannot carry the result. The latency clock begins at the content intervention, not at a later report cue. If no qualifying effect occurs, $L_k=\infty$.
 
 ### 4.4 Why actual activation is neither necessary nor sufficient
 
@@ -211,6 +227,10 @@ A_k(c,t)=1\ \nRightarrow\ E_k^*(c)\geq\epsilon_k.
 $$
 
 **Annotation.** The first non-implication permits a currently idle but causally reachable recipient. The second blocks common input, arousal, and passive spread from counting as broadcast. Both claims are empirical: interventions determine which side applies in a particular system.
+
+![](activation-availability-matrix.png){width=88%}
+
+**Figure 1. Activation and causal availability are logically independent.** Observed activity can accompany genuine broadcast or nonspecific spread, while inactivity can conceal either latent causal reach or genuine isolation. Only intervention-supported reach distinguishes the right-hand cases from the left-hand cases.
 
 ### 4.5 Content selectivity and routing evidence
 
@@ -230,24 +250,53 @@ $$
 
 **Annotation.** $\varepsilon$ prevents division by zero and is fixed in advance. A high value indicates that the nominated causal route carries the content-specific effect. A low value can indicate an incorrect route model, redundant unblocked routes, or nonspecific common drive. Redundant architectures require blocking a sufficient route family rather than one arbitrarily chosen edge.
 
+For the robustness calculation below, $\operatorname{Sel}_{k,u}$ and $\operatorname{Route}_{k,u}$ denote these same quantities estimated within context $u$ rather than after maximizing across contexts. This forces effect, speed, selectivity, and route support to concur in the contexts that carry the positive result.
+
 ### 4.6 Recipient qualification
+
+Let $L_{k,u}$ be the earliest qualifying latency in context $u$, and let $\nu_k(u)\geq0$ be a preregistered context weight with $\sum_{u\in\mathcal U_k^\gamma}\nu_k(u)=1$. Define context robustness
+
+$$
+\begin{aligned}
+G^E_{k,u}(c)&=\mathbf 1\!\left[
+\operatorname{LCB}_{1-\beta}\!\left(\max_{\tau\leq\Delta}E_{k,u}(c,\tau)\right)
+\geq\epsilon_k\right],\\
+G^L_{k,u}(c)&=\mathbf 1\!\left[
+\operatorname{UCB}_{1-\beta}(L_{k,u})\leq\lambda\right],\\
+G^S_{k,u}(c)&=\mathbf 1\!\left[
+\operatorname{LCB}_{1-\beta}(\operatorname{Sel}_{k,u})\geq s\right],\\
+G^R_{k,u}(c)&=\mathbf 1\!\left[
+\operatorname{LCB}_{1-\beta}(\operatorname{Route}_{k,u})\geq r\right],\\
+R_{U,k}(c)&=\sum_{u\in\mathcal U_k^\gamma}\nu_k(u)
+G^E_{k,u}(c)G^L_{k,u}(c)G^S_{k,u}(c)G^R_{k,u}(c).
+\end{aligned}
+$$
+
+**Term-by-term annotation.** $G^E$, $G^L$, $G^S$, and $G^R$ are binary context-level gates for effect, latency, selectivity, and route dependence. Their product is one only when all four properties concur in the same context. $R_{U,k}$ is therefore the preregistered probability mass of admissible contexts in which class $k$ is detectably, timely, selectively, and route-supportedly reachable. The weights may encode natural context prevalence or an explicitly justified experimental mixture, but they cannot be fitted to the critical result. This gate does not demand response in every state; it demands that reach not depend on one cherry-picked preparation or on different contexts satisfying different parts of the rule.
 
 Using one-sided uncertainty bounds, recipient class $k$ qualifies when
 
 $$
 a_k(c)=\mathbf 1\!\left[
-\operatorname{LCB}_{1-\beta}(E_k^*)\geq\epsilon_k,
-\operatorname{UCB}_{1-\beta}(L_k)\leq\lambda,
-\operatorname{LCB}_{1-\beta}(\operatorname{Sel}_k)\geq s,
-\operatorname{LCB}_{1-\beta}(\operatorname{Route}_k)\geq r
+\begin{gathered}
+\operatorname{LCB}_{1-\beta}(E_k^*)\geq\epsilon_k
+{}\land{}\operatorname{UCB}_{1-\beta}(L_k)\leq\lambda\\
+{}\land{}\operatorname{LCB}_{1-\beta}(\operatorname{Sel}_k)\geq s
+{}\land{}\operatorname{LCB}_{1-\beta}(\operatorname{Route}_k)\geq r\\
+{}\land{}\operatorname{LCB}_{1-\beta}(R_{U,k})\geq\rho_U
+\end{gathered}
 \right].
 $$
 
-**Annotation.** All four gates must pass. Effect without speed is not timely availability; speed without content selectivity is compatible with a pulse; selectivity without routing evidence can be correlational; routing without a recipient effect does not show availability. If an interval straddles a threshold, the class is unresolved rather than failed.
+**Annotation.** All five gates must pass. Effect without speed is not timely availability; speed without content selectivity is compatible with a pulse; selectivity without routing evidence can be correlational; routing without a recipient effect does not show availability; and a pass confined to one negligible context is too fragile to support a system-wide counterfactual. If an interval straddles a threshold, the class is unresolved rather than failed.
 
 ### 4.7 Coverage and functional diversity
 
 Let preregistered class weights satisfy $w_k>0$ and $\sum_k w_k=1$. Weights cannot be proportional to node count alone. Define weighted coverage and class count:
+
+![](functional-diversity-contrast.png){width=64%}
+
+**Figure 2. Functional globality is not a node-count statistic.** A large homogeneous fan-out can fail because it realizes only one causal response repertoire. A smaller network can pass the diversity requirement when it reaches several independently calibrated recipient classes.
 
 $$
 C_A(c)=\sum_{k=1}^{K}w_k a_k(c),
@@ -322,9 +371,9 @@ The $N_2$ assessment returns one of four results:
 | Status | Formal condition | Interpretation |
 |---|---|---|
 | Positive | Every required lower or upper bound clears its gate, including reduced-family tests. | Counterfactual system-wide availability is supported for this content and specification. |
-| Negative | The test is valid and an upper bound falls below at least one necessary coverage, class-count, diversity, or reduced-family gate. | Evidence supports failure of $N_2$ under this specification. |
+| Negative | The test is valid and an upper bound falls below at least one necessary recipient, context-robustness, coverage, class-count, diversity, or reduced-family gate. | Evidence supports failure of $N_2$ under this specification. |
 | Indeterminate | Valid estimates straddle thresholds, credible surrogates conflict, or perturbation coverage is insufficient to discriminate. | The evidence bears on $N_2$ but does not settle it. |
-| Unlicensed | Boundary, content intervention, recipient taxonomy, regime preservation, or transport validity fails. | No interpretable $N_2$ result is available. |
+| Unlicensed | Boundary, source fidelity, recipient taxonomy, admissible-context, regime-preservation, intervention, or transport validity fails. | No interpretable $N_2$ result is available. |
 
 **Annotation.** A negative component result is not automatically a negative consciousness result outside the $N^*$ model. Indeterminate is not halfway positive. Unlicensed is not evidence of absence. The output must carry its target, system, content, grain, horizon, and intervention coverage.
 
@@ -344,11 +393,11 @@ Estimate causal response repertoires on calibration data and freeze the class ta
 
 ### 5.4 Stage 4: Declare nearby admissible contexts
 
-Specify which local readiness probes are allowed, their preparation costs, and how regime preservation will be tested. Exclude contexts that add a new controller, require long retraining, or make report the only measurable output.
+Specify which local readiness probes are allowed, the burden functional $\Gamma$, the maximum burden $\gamma$, and how regime preservation will be tested. Freeze the context weights $\nu_k$ and robustness threshold $\rho_U$ before the critical test. Exclude contexts that add a new controller, require long retraining, or make report the only measurable output.
 
 ### 5.5 Stage 5: Run matched content interventions
 
-Estimate content effects and latency for every recipient class. Match energy, duration, source support, and global state. Include shuffled-content, common-input, and passive-propagation controls.
+Verify that the source intervention preserves the intended content contrast, then estimate content effects, latency, and context robustness for every recipient class. Match energy, duration, source support, and global state. Exclude directly manipulated source dimensions from recipient readouts. Include shuffled-content, common-input, source-leakage, and passive-propagation controls.
 
 ### 5.6 Stage 6: Test routes
 
@@ -404,6 +453,8 @@ A shared memory, message bus, or attention cache does not establish broadcast. T
 
 Workspace theories emphasize broad availability to specialized processors (Baars, 1988; Dehaene & Changeux, 2011; Mashour et al., 2020). The present account inherits the pressure toward cross-system availability but does not identify $N_2$ with a specific workspace architecture, late ignition signature, prefrontal location, or reportability. It can be implemented by a workspace, but a workspace label does not automatically satisfy it.
 
+Recent multiscale syntheses likewise emphasize that consciousness theories must connect mechanisms across cellular, circuit, and systems levels (Storm et al., 2024). The present criterion contributes a cross-level test: any proposed implementation must connect a content-bearing source to class-native causal responses without substituting anatomical scale for functional reach.
+
 This difference matters empirically. The 2025 adversarial collaboration found content information and sustained activity distributed across visual, temporal, and inferior frontal regions, with results that did not cleanly vindicate all preregistered predictions of either GNWT or IIT (Cogitate Consortium et al., 2025). A criterion stated in causal and functional terms can survive localization revisions while remaining falsifiable.
 
 ### 7.2 Access consciousness
@@ -413,6 +464,8 @@ Block's distinction between phenomenal and access consciousness motivates the co
 ### 7.3 No-report paradigms
 
 No-report designs reduce some confounds but do not provide direct access to consciousness. Involuntary indicators can themselves have false positives, and contrasts can change attention or expectation. Report contrasts have also shifted the interpretation of late signals such as P3 and gamma activity toward post-perceptual processing in some paradigms (Pitts et al., 2014). The proposed framework treats no-report markers as content-indexing evidence and adds causal perturbation. It therefore neither treats reports as constitutive nor treats their absence as methodological purity.
+
+Perturbational state measures such as the perturbational complexity index demonstrate that behavior-independent causal assays are feasible (Casali et al., 2013). They remain state-level measures, however; $N_2$ additionally requires a controlled content contrast and recipient-resolved causal reach.
 
 ### 7.4 Network communication and controllability
 
@@ -445,6 +498,7 @@ The criterion should be calibrated against contrasts designed to separate its co
 4. Some posterior or thalamocortical architectures will pass without prefrontal recipients, while others will fail because their effects are homogeneous or arousal-only.
 5. Systems with many redundant nodes will not gain availability merely through finer parcellation.
 6. Artificial architectures with a message bus but no content-sensitive subscribers will fail despite total fan-out.
+7. Availability estimates that rely on one rare readiness context will fail the context-robustness gate even when their maximum effect is large.
 
 ### 8.3 What would count against the criterion
 
@@ -455,6 +509,7 @@ The proposal would be weakened if any of the following patterns proved robust:
 - results changed arbitrarily with small reasonable changes in recipient taxonomy;
 - report or executive classes were always necessary for a positive result despite preserved no-report consciousness evidence;
 - admissible interventions could not be distinguished from interventions that create a new state or content;
+- positive results depended systematically on low-prevalence, high-burden, or outcome-selected contexts;
 - functional repertoire distance failed to predict any meaningful recipient difference.
 
 ### 8.4 Reliability and sensitivity
@@ -514,26 +569,31 @@ Reports are powerful calibration evidence in cooperative adults, but physical al
 
 The full standard is appropriate for strong system-wide claims. Partial studies can estimate one gate, but they should say so. A cheap proxy should not inherit the interpretation of a causal criterion without validation.
 
+### Objection 11: One favorable context can always be found
+
+Not under the confirmatory rule. Contexts must be declared independently, fall below the preparation-burden bound, preserve the operating regime, and receive weights before the critical result is inspected. A recipient must remain timely and effective across at least $\rho_U$ of that context mass. A large maximum effect in one negligible setup is reported descriptively but cannot qualify the class.
+
 ## 10. Recommendations
 
 1. Replace claims of "global activation" with explicit causal availability claims or more modest descriptive language.
 2. Freeze the candidate system before computing reach.
 3. Define the target content and matched control independently of report-related activity.
 4. Build recipient classes from independent causal repertoires, not node labels or anatomical distance.
-5. Use content-preserving perturbations with energy, common-input, and shuffled-content controls.
-6. Report effect, latency, selectivity, and route evidence for every recipient class.
-7. Weight functional classes rather than raw nodes and report class-count plus diversity-evenness gates.
-8. Recompute the result without report and executive classes.
-9. Permit posterior and subcortical architectures, but apply identical causal standards.
-10. Stress-test grain, taxonomy, thresholds, and intervention design.
-11. Return indeterminate or unlicensed when the evidence or interpretation fails.
-12. Keep the $N_2$ result separate from the final $N^*$ and consciousness classifications.
+5. Bound context preparation explicitly and require robustness across a preregistered context distribution.
+6. Use content-preserving perturbations with energy, common-input, source-leakage, and shuffled-content controls.
+7. Report effect, latency, selectivity, route, and context-robustness evidence for every recipient class.
+8. Weight functional classes rather than raw nodes and report class-count plus diversity-evenness gates.
+9. Recompute the result without report and executive classes.
+10. Permit posterior and subcortical architectures, but apply identical causal standards.
+11. Stress-test grain, taxonomy, thresholds, contexts, and intervention design.
+12. Return indeterminate or unlicensed when the evidence or interpretation fails.
+13. Keep the $N_2$ result separate from the final $N^*$ and consciousness classifications.
 
 ## 11. Conclusion
 
 System-wide availability should not be read off a button press, a frontal activation, a colorful whole-brain map, or the number of nodes reached by a signal. Each can be useful evidence; none defines the property. Availability is a causal disposition of a bounded, organized system. It concerns whether a content could make a timely, content-specific difference across a functionally diverse set of recipients under nearby admissible conditions.
 
-The proposed criterion gives that idea empirical structure. It freezes the system and recipient taxonomy, estimates class-specific intervention effects and latency, tests content selectivity and causal routes, aggregates over functional rather than anatomical diversity, and removes report and executive dependence from the positive rule. It permits nonexecutive, posterior, and subcortical implementations without granting any of them automatic success. It also preserves negative, indeterminate, and unlicensed outcomes.
+The proposed criterion gives that idea empirical structure. It freezes the system and recipient taxonomy, bounds the cost of nearby contexts, requires reach across a nontrivial preregistered context mass, verifies source fidelity, estimates class-specific intervention effects and latency, tests content selectivity and causal routes, aggregates over functional rather than anatomical diversity, and removes report and executive dependence from the positive rule. It permits nonexecutive, posterior, and subcortical implementations without granting any of them automatic success. It also preserves negative, indeterminate, and unlicensed outcomes.
 
 This sharpening makes $N_2$ riskier and therefore more useful. If conscious contents systematically fail the criterion, broadcast availability is too strong. If unconscious diffusion repeatedly passes, it is too weak. If report or executive access proves unavoidable, the model must acknowledge that burden. A component of a consciousness theory should not be protected by ambiguity. It should expose exactly what the world would have to show.
 
@@ -541,39 +601,41 @@ This sharpening makes $N_2$ riskier and therefore more useful. If conscious cont
 
 Baars, B. J. (1988). *A cognitive theory of consciousness*. Cambridge University Press.
 
-Block, N. (1995). On a confusion about a function of consciousness. *Behavioral and Brain Sciences, 18*(2), 227-247. https://doi.org/10.1017/S0140525X00038188
+Block, N. (1995). On a confusion about a function of consciousness. *Behavioral and Brain Sciences, 18*(2), 227-247. <https://doi.org/10.1017/S0140525X00038188>
 
-Casali, A. G., Gosseries, O., Rosanova, M., Boly, M., Sarasso, S., Casali, K. R., Casarotto, S., Bruno, M.-A., Laureys, S., Tononi, G., & Massimini, M. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. *Science Translational Medicine, 5*(198), 198ra105. https://doi.org/10.1126/scitranslmed.3006294
+Casali, A. G., Gosseries, O., Rosanova, M., Boly, M., Sarasso, S., Casali, K. R., Casarotto, S., Bruno, M.-A., Laureys, S., Tononi, G., & Massimini, M. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. *Science Translational Medicine, 5*(198), 198ra105. <https://doi.org/10.1126/scitranslmed.3006294>
 
-Cai, W., Ryali, S., Pasumarthy, R., Talasila, V., & Menon, V. (2021). Dynamic causal brain circuits during working memory and their functional controllability. *Nature Communications, 12*, 3314. https://doi.org/10.1038/s41467-021-23509-x
+Cai, W., Ryali, S., Pasumarthy, R., Talasila, V., & Menon, V. (2021). Dynamic causal brain circuits during working memory and their functional controllability. *Nature Communications, 12*, 3314. <https://doi.org/10.1038/s41467-021-23509-x>
 
-Cogitate Consortium. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature, 642*, 133-142. https://doi.org/10.1038/s41586-025-08888-1
+Cogitate Consortium. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature, 642*, 133-142. <https://doi.org/10.1038/s41586-025-08888-1>
 
-Dehaene, S., & Changeux, J.-P. (2011). Experimental and theoretical approaches to conscious processing. *Neuron, 70*(2), 200-227. https://doi.org/10.1016/j.neuron.2011.03.018
+Dehaene, S., & Changeux, J.-P. (2011). Experimental and theoretical approaches to conscious processing. *Neuron, 70*(2), 200-227. <https://doi.org/10.1016/j.neuron.2011.03.018>
 
-Frassle, S., Sommer, J., Jansen, A., Naber, M., & Einhauser, W. (2014). Binocular rivalry: Frontal activity relates to introspection and action but not to perception. *Journal of Neuroscience, 34*(5), 1738-1747. https://doi.org/10.1523/JNEUROSCI.4403-13.2014
+Frassle, S., Sommer, J., Jansen, A., Naber, M., & Einhauser, W. (2014). Binocular rivalry: Frontal activity relates to introspection and action but not to perception. *Journal of Neuroscience, 34*(5), 1738-1747. <https://doi.org/10.1523/JNEUROSCI.4403-13.2014>
 
-Gu, S., Pasqualetti, F., Cieslak, M., Telesford, Q. K., Yu, A. B., Kahn, A. E., Medaglia, J. D., Vettel, J. M., Miller, M. B., Grafton, S. T., & Bassett, D. S. (2015). Controllability of structural brain networks. *Nature Communications, 6*, 8414. https://doi.org/10.1038/ncomms9414
+Gu, S., Pasqualetti, F., Cieslak, M., Telesford, Q. K., Yu, A. B., Kahn, A. E., Medaglia, J. D., Vettel, J. M., Miller, M. B., Grafton, S. T., & Bassett, D. S. (2015). Controllability of structural brain networks. *Nature Communications, 6*, 8414. <https://doi.org/10.1038/ncomms9414>
 
-Guimera, R., & Amaral, L. A. N. (2005). Functional cartography of complex metabolic networks. *Nature, 433*, 895-900. https://doi.org/10.1038/nature03288
+Guimera, R., & Amaral, L. A. N. (2005). Functional cartography of complex metabolic networks. *Nature, 433*, 895-900. <https://doi.org/10.1038/nature03288>
 
-Lamme, V. A. F. (2006). Towards a true neural stance on consciousness. *Trends in Cognitive Sciences, 10*(11), 494-501. https://doi.org/10.1016/j.tics.2006.09.001
+Kapoor, V., Dwarakanath, A., Safavi, S., Werner, J., Besserve, M., Panagiotaropoulos, T. I., & Logothetis, N. K. (2022). Decoding internally generated transitions of conscious contents in the prefrontal cortex without subjective reports. *Nature Communications, 13*, 1535. <https://doi.org/10.1038/s41467-022-28897-2>
 
-Luo, Z., Peng, K., Liang, Z., Cai, S., Xu, C., Li, D., Hu, Y., Zhou, C., et al. (2025). Mapping effective connectivity by virtually perturbing a surrogate brain. *Nature Methods, 22*, 1376-1385. https://doi.org/10.1038/s41592-025-02654-x
+Kronemer, S. I., Aksen, M., Ding, J. Z., Ryu, J. H., Xin, Q., Ding, Z., Prince, J. S., Kwon, H., Khalaf, A., Forman, S., et al. (2022). Human visual consciousness involves large-scale cortical and subcortical networks independent of task report and eye movement activity. *Nature Communications, 13*, 7342. <https://doi.org/10.1038/s41467-022-35117-4>
 
-Lyu, D., Stiger, J. R., Lusk, Z., Buch, V., et al. (2025). Mapping human thalamocortical connectivity with electrical stimulation and recording. *Nature Neuroscience, 28*, 1797-1809. https://doi.org/10.1038/s41593-025-02009-x
+Lamme, V. A. F. (2006). Towards a true neural stance on consciousness. *Trends in Cognitive Sciences, 10*(11), 494-501. <https://doi.org/10.1016/j.tics.2006.09.001>
 
-Mashour, G. A., Roelfsema, P. R., Changeux, J.-P., & Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. *Neuron, 105*(5), 776-798. https://doi.org/10.1016/j.neuron.2020.01.026
+Luo, Z., Peng, K., Liang, Z., Cai, S., Xu, C., Li, D., Hu, Y., Zhou, C., et al. (2025). Mapping effective connectivity by virtually perturbing a surrogate brain. *Nature Methods, 22*, 1376-1385. <https://doi.org/10.1038/s41592-025-02654-x>
 
-Kronemer, S. I., Aksen, M., Ding, J. Z., Ryu, J. H., Xin, Q., Ding, Z., Prince, J. S., Kwon, H., Khalaf, A., Forman, S., et al. (2022). Human visual consciousness involves large scale cortical and subcortical networks independent of task report and eye movement activity. *Nature Communications, 13*, 7342. https://doi.org/10.1038/s41467-022-35117-4
+Lyu, D., Stiger, J. R., Lusk, Z., Buch, V., et al. (2025). Mapping human thalamocortical connectivity with electrical stimulation and recording. *Nature Neuroscience, 28*, 1797-1809. <https://doi.org/10.1038/s41593-025-02009-x>
 
-Pearl, J. (2009). *Causality: Models, reasoning, and inference* (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511803161
+Mashour, G. A., Roelfsema, P. R., Changeux, J.-P., & Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. *Neuron, 105*(5), 776-798. <https://doi.org/10.1016/j.neuron.2020.01.026>
 
-Pitts, M. A., Padwal, J., Fennelly, D., Martinez, A., & Hillyard, S. A. (2014). Gamma band activity and the P3 reflect post-perceptual processes, not visual awareness. *Frontiers in Psychology, 5*, 1078. https://doi.org/10.3389/fpsyg.2014.01078
+Pearl, J. (2009). *Causality: Models, reasoning, and inference* (2nd ed.). Cambridge University Press. <https://doi.org/10.1017/CBO9780511803161>
 
-Redinbaugh, M. J., Phillips, J. M., Kambi, N. A., Mohanta, S., Andryk, S., Dooley, G. L., Afrasiabi, M., Raz, A., & Saalmann, Y. B. (2020). Thalamus modulates consciousness via layer-specific control of cortex. *Neuron, 106*(1), 66-75.e12. https://doi.org/10.1016/j.neuron.2020.01.005
+Pitts, M. A., Padwal, J., Fennelly, D., Martinez, A., & Hillyard, S. A. (2014). Gamma band activity and the P3 reflect post-perceptual processes, not visual awareness. *Frontiers in Psychology, 5*, 1078. <https://doi.org/10.3389/fpsyg.2014.01078>
 
-Solomon, E. A., Kragel, J. E., Gross, R., Lega, B., Sperling, M. R., Worrell, G., Sheth, S. A., Zaghloul, K. A., Jobst, B. C., Stein, J. M., et al. (2018). Medial temporal lobe functional connectivity predicts stimulation-induced theta power. *Nature Communications, 9*, 4437. https://doi.org/10.1038/s41467-018-06876-w
+Redinbaugh, M. J., Phillips, J. M., Kambi, N. A., Mohanta, S., Andryk, S., Dooley, G. L., Afrasiabi, M., Raz, A., & Saalmann, Y. B. (2020). Thalamus modulates consciousness via layer-specific control of cortex. *Neuron, 106*(1), 66-75.e12. <https://doi.org/10.1016/j.neuron.2020.01.005>
+
+Solomon, E. A., Kragel, J. E., Gross, R., Lega, B., Sperling, M. R., Worrell, G., Sheth, S. A., Zaghloul, K. A., Jobst, B. C., Stein, J. M., et al. (2018). Medial temporal lobe functional connectivity predicts stimulation-induced theta power. *Nature Communications, 9*, 4437. <https://doi.org/10.1038/s41467-018-06876-w>
 
 Stilwell, P. (2026a). *C0 as N\*: A minimal network-dynamics model of phenomenal consciousness* [Manuscript].
 
@@ -581,11 +643,9 @@ Stilwell, P. (2026b). *Indeterminacy as a scientific result: A four-outcome fram
 
 Stilwell, P. (2026c). *Where is the conscious subject? A dynamical criterion for system boundaries* [Manuscript].
 
-Storm, J. F., Klink, P. C., Aru, J., Senn, W., Goebel, R., Pigorini, A., Avanzini, P., Vanduffel, W., Roelfsema, P. R., Massimini, M., Larkum, M. E., & Pennartz, C. M. A. (2024). An integrative, multiscale view on neural theories of consciousness. *Neuron, 112*(10), 1531-1552. https://doi.org/10.1016/j.neuron.2024.02.004
+Storm, J. F., Klink, P. C., Aru, J., Senn, W., Goebel, R., Pigorini, A., Avanzini, P., Vanduffel, W., Roelfsema, P. R., Massimini, M., Larkum, M. E., & Pennartz, C. M. A. (2024). An integrative, multiscale view on neural theories of consciousness. *Neuron, 112*(10), 1531-1552. <https://doi.org/10.1016/j.neuron.2024.02.004>
 
-Tsuchiya, N., Wilke, M., Frassle, S., & Lamme, V. A. F. (2015). No-report paradigms: Extracting the true neural correlates of consciousness. *Trends in Cognitive Sciences, 19*(12), 757-770. https://doi.org/10.1016/j.tics.2015.10.002
-
-Kapoor, V., Dwarakanath, A., Safavi, S., Werner, J., Besserve, M., Panagiotaropoulos, T. I., & Logothetis, N. K. (2022). Decoding internally generated transitions of conscious contents in the prefrontal cortex without subjective reports. *Nature Communications, 13*, 1535. https://doi.org/10.1038/s41467-022-28897-2
+Tsuchiya, N., Wilke, M., Frassle, S., & Lamme, V. A. F. (2015). No-report paradigms: Extracting the true neural correlates of consciousness. *Trends in Cognitive Sciences, 19*(12), 757-770. <https://doi.org/10.1016/j.tics.2015.10.002>
 
 **Central paper and related publications:** <https://philstilwell.github.io/C0/>
 
@@ -597,12 +657,16 @@ Kapoor, V., Dwarakanath, A., Safavi, S., Werner, J., Besserve, M., Panagiotaropo
 | $c,c_0$ | Target content and matched control content | Must not differ only in report demand or stimulation energy. |
 | $\Theta_A$ | Complete availability specification | No post-result choice of boundary, classes, contexts, or thresholds. |
 | $\mathcal M$ | Independently individuated recipient-class family | Classes are based on causal repertoires, not labels or parcel count. |
-| $\mathcal U$ | Nearby admissible context family | Cannot install new routing machinery or change the operating regime. |
+| $\mathcal U_k^\gamma$ | Burden-bounded admissible contexts for class $k$ | Cannot install new routing machinery or change the operating regime. |
+| $\Gamma,\gamma$ | Context-preparation burden and its maximum | Time, training, energy, control, and structural change are declared before testing. |
+| $\nu_k,\rho_U$ | Context weights and minimum robust context mass | Prevent a single favorable setup from carrying the result. |
 | $E_{k,u}$ | Content-specific causal effect on recipient class $k$ | Internal modulation is sufficient; behavior is not required. |
 | $L_k$ | Earliest qualifying recipient latency | Measured from content intervention, not report cue. |
 | $\operatorname{Sel}_k$ | Effect beyond matched null interventions | Blocks energy spread and common drive. |
 | $\operatorname{Route}_k$ | Effect lost under matched route interruption | Requires adequate coverage of redundant routes. |
-| $a_k$ | Recipient qualification indicator | Effect, latency, selectivity, and route gates all apply. |
+| $G^E,G^L,G^S,G^R$ | Context-level effect, latency, selectivity, and route gates | Their product requires all four properties in the same context. |
+| $R_{U,k}$ | Context robustness for recipient $k$ | Uses frozen context weights; outcome-selected contexts are prohibited. |
+| $a_k$ | Recipient qualification indicator | Effect, latency, selectivity, route, and context-robustness gates all apply. |
 | $C_A$ | Weighted functional-class coverage | Weights cannot reward sheer node count. |
 | $K_A$ | Number of qualifying recipient classes | Prevents one class from passing alone. |
 | $H_A$ | Evenness of effect across qualifying classes | Prevents token threshold crossings around one dominant recipient. |
@@ -614,10 +678,10 @@ Kapoor, V., Dwarakanath, A., Safavi, S., Werner, J., Besserve, M., Panagiotaropo
 | Stage | Required action | Failure output | Guardrail |
 |---|---|---|---|
 | 1. Freeze system | Archive $S,g,\Delta,\mathcal R$ and interfaces. | Unlicensed | Do not select the system from the broadcast result. |
-| 2. Define content | Specify $c,c_0$ and content-bearing variables. | Content-indeterminate | Do not localize only from report activity. |
+| 2. Define content | Specify $c,c_0$, content-bearing variables, and source-fidelity checks. | Content-indeterminate or unlicensed | Do not localize only from report activity or count injection-site leakage. |
 | 3. Calibrate classes | Estimate independent causal repertoires and freeze $\mathcal M$. | Taxonomy-unlicensed | Do not multiply classes by reparcellation. |
-| 4. Lock contexts | Declare $\mathcal U$, preparation cost, and regime tests. | Counterfactual-unlicensed | No new controller, long retraining, or report-only probe. |
-| 5. Intervene | Estimate $E_k^*,L_k$ with matched controls. | Effect negative or indeterminate | Match energy, support, duration, and global state. |
+| 4. Lock contexts | Declare $\mathcal U_k^\gamma,\Gamma,\gamma,\nu_k,\rho_U$, and regime tests. | Counterfactual-unlicensed | No new controller, long retraining, outcome-selected context, or report-only probe. |
+| 5. Intervene | Estimate $E_k^*,L_k,R_{U,k}$ with matched controls. | Effect or robustness negative/indeterminate | Match energy, support, duration, and global state. |
 | 6. Test specificity | Estimate $\operatorname{Sel}_k$ and common-input controls. | Diffusion-compatible | Widespread activation alone never passes. |
 | 7. Test routes | Interrupt route families with support replacement. | Route negative or indeterminate | Preserve local excitability and account for redundancy. |
 | 8. Aggregate | Compute $C_A,K_A,H_A$. | Coverage/diversity negative or indeterminate | Weight functional classes, not raw nodes. |
@@ -630,13 +694,14 @@ Kapoor, V., Dwarakanath, A., Safavi, S., Werner, J., Besserve, M., Panagiotaropo
 1. Freeze the boundary-qualified system and analysis specification.
 2. Split calibration and critical-test data.
 3. Build recipient classes from calibration interventions that exclude the target content.
-4. Define matched target and control interventions plus nearby admissible contexts.
-5. Estimate class-specific content effects and latency with uncertainty.
-6. Estimate selectivity against matched nulls and route dependence under interruption.
-7. Mark a class qualifying only when every class-level gate passes.
-8. Compute weighted coverage, class count, and diversity evenness.
-9. Repeat after excluding report and executive classes.
-10. Stress-test reasonable specifications and issue the four-outcome result.
+4. Define matched target and control interventions; validate source fidelity and leakage controls.
+5. Freeze burden-bounded contexts, context weights, and the robustness threshold.
+6. Estimate class-specific content effects, latency, and context robustness with uncertainty.
+7. Estimate selectivity against matched nulls and route dependence under interruption.
+8. Mark a class qualifying only when every class-level gate passes.
+9. Compute weighted coverage, class count, and diversity evenness.
+10. Repeat after excluding report and executive classes.
+11. Stress-test reasonable specifications and issue the four-outcome result.
 
 ## Appendix C: Preregistration template
 
@@ -644,10 +709,10 @@ Kapoor, V., Dwarakanath, A., Safavi, S., Werner, J., Besserve, M., Panagiotaropo
 |---|---|
 | Consciousness target | Minimal phenomenal presence, content consciousness, access, or another explicit target. |
 | Candidate system | Frozen boundary, interfaces, grain, horizon, and boundary-confidence status. |
-| Content contrast | Target $c$, control $c_0$, localization method, and equivalence controls. |
+| Content contrast | Target $c$, control $c_0$, localization method, source-fidelity test, source-leakage exclusion, and equivalence controls. |
 | Operating regime | State, task, arousal, viability, stationarity, and exclusion conditions. |
 | Recipient taxonomy | Calibration interventions, repertoire variables, clustering method, $\xi$, reliability, and held-out rule. |
-| Admissible contexts | Recipient readiness probes, preparation-cost bound $\gamma$, and regime-preservation tests. |
+| Admissible contexts | Recipient readiness probes, burden functional $\Gamma$, bound $\gamma$, context weights $\nu_k$, robustness threshold $\rho_U$, and regime-preservation tests. |
 | Content interventions | Source variables, magnitude, duration, support, safety, and matched-energy design. |
 | Response metrics | Class-specific $Y_k,d_k,\epsilon_k$ and measurement validity. |
 | Temporal parameters | $\Delta,\lambda$, sampling resolution, and latency uncertainty. |
@@ -673,6 +738,8 @@ Kapoor, V., Dwarakanath, A., Safavi, S., Werner, J., Besserve, M., Panagiotaropo
 | Executive bottleneck | One controller touches every module and creates apparent globality. | Executive-excluded recomputation and route interruption. |
 | Report preparation | Memory, decision, and motor signals inflate reach. | No-report condition and report-channel exclusion. |
 | Message duplication | A token is copied to idle or identical subscribers. | Require content-sensitive module-specific transitions. |
+| Context shopping | One rare or engineered preparation produces a large maximum effect. | Freeze $\mathcal U_k^\gamma$, $\nu_k$, and $\rho_U$ before the critical test. |
+| Source leakage | The injected content is decoded from the manipulated dimensions themselves. | Exclude source dimensions from recipient readouts and use held-out source-only controls. |
 
 ## Appendix E: Case-analysis matrix
 
@@ -693,7 +760,7 @@ The following values are illustrative one-sided confidence bounds, not empirical
 
 ### Appendix F.1 Recipient-level decision table
 
-Assume $\epsilon_k=.20$, $\lambda=180$ ms, $s=.10$, and $r=.45$.
+Assume $\epsilon_k=.20$, $\lambda=180$ ms, $s=.10$, $r=.45$, and $\rho_U=.70$. Unless otherwise noted, each qualifying class also has a context-robustness lower bound at or above $.70$.
 
 | Recipient class | Effect LCB | Latency UCB | Selectivity | Result |
 |---|---:|---:|---:|---|
@@ -726,15 +793,21 @@ Suppose an unperturbed no-report trial activates only two of five recipient clas
 
 Suppose $C_A\in[.61,.69]$ with $\alpha=.65$, $K_A=4$, $H_A=.81$, and both reduced-family tests otherwise pass. The result is indeterminate, not positive by the point estimate and not negative by the lower bound. More targeted perturbations should reduce uncertainty in the classes carrying the largest weight.
 
+### Appendix F.5 Context robustness and preparation burden
+
+Suppose a candidate recipient has a large effect in four preregistered contexts. Baseline ($\nu=.45$), a mild readiness cue ($\nu=.30$), and a low-demand sensory context ($\nu=.15$) are all below $\gamma$; the first two pass effect and latency gates, while the third is unresolved. A newly trained controller context would pass strongly but exceeds $\gamma$ and is excluded before weights are normalized. The qualifying admissible mass is therefore $.45+.30=.75$. If the lower bound on $R_{U,k}$ is $.71$ and $\rho_U=.70$, the recipient passes. If the same effect appeared only in a rare context with $\nu=.08$, the large maximum $E_k^*$ would be reported, but the recipient would fail context robustness.
+
 ## Appendix G: Formal decision rules at a glance
 
 | Gate | Pass rule | Fail rule | Otherwise |
 |---|---|---|---|
-| Test validity | Boundary, content, taxonomy, intervention, and regime checks all pass. | Any required interpretation condition fails. | Unlicensed. |
+| Test validity | Boundary, content, source fidelity, taxonomy, context, intervention, and regime checks all pass. | Any required interpretation condition fails. | Unlicensed. |
+| Context admissibility | $\Gamma(u,u_0)\leq\gamma$; regime preserved; no new route. | Burden exceeds $\gamma$ or the context changes regime/routing. | Context excluded or unlicensed. |
 | Recipient effect | $\operatorname{LCB}(E_k^*)\geq\epsilon_k$. | $\operatorname{UCB}(E_k^*)<\epsilon_k$. | Recipient effect indeterminate. |
 | Latency | $\operatorname{UCB}(L_k)\leq\lambda$. | $\operatorname{LCB}(L_k)>\lambda$. | Latency indeterminate. |
 | Selectivity | $\operatorname{LCB}(\operatorname{Sel}_k)\geq s$. | $\operatorname{UCB}(\operatorname{Sel}_k)<s$. | Diffusion conflict or indeterminate. |
 | Route | $\operatorname{LCB}(\operatorname{Route}_k)\geq r$. | $\operatorname{UCB}(\operatorname{Route}_k)<r$ with adequate route coverage. | Route indeterminate. |
+| Context robustness | $\operatorname{LCB}(R_{U,k})\geq\rho_U$. | $\operatorname{UCB}(R_{U,k})<\rho_U$. | Robustness indeterminate. |
 | Coverage | $\operatorname{LCB}(C_A)\geq\alpha$. | $\operatorname{UCB}(C_A)<\alpha$. | Coverage indeterminate. |
 | Class count | At least $m$ classes pass all gates. | Fewer than $m$ could pass even at upper bounds. | Class-count indeterminate. |
 | Diversity | $\operatorname{LCB}(H_A)\geq\eta$. | $\operatorname{UCB}(H_A)<\eta$. | Diversity indeterminate. |
@@ -751,6 +824,8 @@ Suppose $C_A\in[.61,.69]$ with $\alpha=.65$, $K_A=4$, $H_A=.81$, and both reduce
 - "A signal reached many nodes, therefore it reached many functions."
 - "The system has a message bus, therefore every message is globally available."
 - "One executive accessed the content, therefore the rest of the system could."
+- "A recipient responded in one engineered context, therefore the content was generally available to it."
+- "The intervention was decoded at its injection site, therefore a recipient was reached."
 - "The intervention produced a global state, therefore the pre-intervention content was available."
 - "An $N_2$ test was unlicensed, therefore the content was unavailable."
 - "$N_2$ was positive, therefore the system was conscious."
@@ -763,13 +838,14 @@ Every published $N_2$ result should preserve:
 2. the target and control contents plus localization evidence;
 3. the calibration data and recipient-class construction;
 4. native response variables and effect metrics for every class;
-5. admissible contexts and preparation-cost justification;
-6. intervention magnitude, support, timing, and regime diagnostics;
-7. matched-energy, shuffled-content, common-input, and arousal controls;
-8. class-specific effect, latency, selectivity, and route intervals;
-9. class weights, coverage, count, and diversity calculations;
-10. report- and executive-excluded results;
-11. rejected and unresolved classes with reasons;
-12. sensitivity across grains, taxonomies, estimators, and thresholds;
-13. the four-outcome component result and scope limitation;
-14. the separate later $N^*$ or consciousness classification, if any.
+5. admissible contexts, burden functional, context weights, and preparation-cost justification;
+6. source-fidelity and source-leakage checks;
+7. intervention magnitude, support, timing, and regime diagnostics;
+8. matched-energy, shuffled-content, common-input, and arousal controls;
+9. class-specific effect, latency, selectivity, route, and context-robustness intervals;
+10. class weights, coverage, count, and diversity calculations;
+11. report- and executive-excluded results;
+12. rejected and unresolved classes with reasons;
+13. sensitivity across grains, taxonomies, estimators, contexts, and thresholds;
+14. the four-outcome component result and scope limitation;
+15. the separate later $N^*$ or consciousness classification, if any.

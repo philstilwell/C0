@@ -17,7 +17,7 @@ os.environ.update(
         "PAPER_HEADER": "CONSCIOUSNESS WITHOUT REPORT",
         "PAPER_TITLE": "Consciousness Without Report",
         "PAPER_SUBJECT": "What System-Wide Availability Actually Requires",
-        "PAPER_KEYWORDS": "consciousness; no-report paradigms; causal availability; broadcast; functional diversity; counterfactual intervention",
+        "PAPER_KEYWORDS": "consciousness; no-report paradigms; system-wide availability; causal availability; broadcast; counterfactual intervention; functional diversity; context robustness; global workspace; posterior cortex; thalamocortical systems; artificial consciousness",
     }
 )
 
