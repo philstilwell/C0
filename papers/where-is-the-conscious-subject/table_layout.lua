@@ -3,12 +3,14 @@
 local layouts = {
   ["Field|Required entry"] = {0.25, 0.75},
   ["Status|Formal condition|Interpretation"] = {0.20, 0.30, 0.50},
-  ["Term or symbol|Role in the framework|Interpretive guardrail"] = {0.18, 0.30, 0.52},
+  ["Term or symbol|Role in the framework|Interpretive guardrail"] = {0.22, 0.28, 0.50},
   ["Stage|Required action|Failure output|Guardrail"] = {0.12, 0.30, 0.20, 0.38},
   ["Case|Competing boundaries|Decisive perturbation|Likely error if boundary is assumed"] = {0.15, 0.24, 0.27, 0.34},
   ["Misuse|Why invalid|Required correction"] = {0.26, 0.35, 0.39},
   ["Regime and candidate|||Role profile|Boundary result"] = {0.17, 0.085, 0.085, 0.28, 0.38},
   ["Candidate or test|Autonomy/role result|Interpretation"] = {0.24, 0.32, 0.44},
+  ["Candidate|||Limiting role interval|Decision"] = {0.15, 0.16, 0.17, 0.22, 0.30},
+  ["Gate|Pass rule|Fail rule|Otherwise"] = {0.16, 0.29, 0.28, 0.27},
 }
 
 local function header_key(tbl)
@@ -55,6 +57,9 @@ function Table(tbl)
   -- narrow metric columns are applied in both LaTeX and DOCX builds.
   if not widths and key:sub(1, #"Regime and candidate|") == "Regime and candidate|" then
     widths = {0.17, 0.085, 0.085, 0.28, 0.38}
+  end
+  if not widths and key:sub(1, #"Candidate|") == "Candidate|" and key:match("Limiting role interval") then
+    widths = {0.15, 0.16, 0.17, 0.22, 0.30}
   end
   if widths then
     for i, width in ipairs(widths) do

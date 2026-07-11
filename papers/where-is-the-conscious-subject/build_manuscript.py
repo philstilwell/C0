@@ -30,7 +30,7 @@ TABLE_WIDTHS = {
         "Term or symbol",
         "Role in the framework",
         "Interpretive guardrail",
-    ): (0.18, 0.30, 0.52),
+    ): (0.22, 0.28, 0.50),
     (
         "Stage",
         "Required action",
@@ -52,6 +52,14 @@ TABLE_WIDTHS = {
         "Boundary result",
     ): (0.17, 0.085, 0.085, 0.28, 0.38),
     ("Candidate or test", "Autonomy/role result", "Interpretation"): (0.24, 0.32, 0.44),
+    (
+        "Candidate",
+        "interval",
+        "interval",
+        "Limiting role interval",
+        "Decision",
+    ): (0.15, 0.16, 0.17, 0.22, 0.30),
+    ("Gate", "Pass rule", "Fail rule", "Otherwise"): (0.16, 0.29, 0.28, 0.27),
 }
 
 
@@ -146,6 +154,19 @@ def replace_g1_header_math(table) -> None:
         paragraph.add_run(", " if index < 3 else ")")
 
 
+def replace_g3_header_math(table) -> None:
+    """Render G.3 metric headers as styleable Word runs."""
+    for column_index, base, subscript, suffix in (
+        (1, "A", "Θ", " interval"),
+        (2, "J", "self", " interval"),
+    ):
+        cell = table.rows[0].cells[column_index]
+        cell.text = ""
+        paragraph = cell.paragraphs[0]
+        add_word_math_label(paragraph, base, subscript)
+        paragraph.add_run(suffix)
+
+
 def set_repeat_header(row) -> None:
     tr_pr = row._tr.get_or_add_trPr()
     header = OxmlElement("w:tblHeader")
@@ -234,19 +255,29 @@ def style_docx() -> None:
                 paragraph.insert_paragraph_before("A visual preview:")
                 break
 
-    for shape in document.inline_shapes:
+    for shape_index, shape in enumerate(document.inline_shapes):
         if shape.type is not None:
-            shape.width = Inches(8.5)
-            shape.height = Inches(8.5 * 1536 / 2752)
+            aspect_ratio = shape.height / shape.width
+            target_width = 8.5 if shape_index == 0 else 6.5
+            shape.width = Inches(target_width)
+            shape.height = Inches(target_width * aspect_ratio)
 
-    for paragraph in document.paragraphs:
-        if paragraph._p.xpath(".//w:drawing"):
+    drawing_paragraphs = [
+        paragraph for paragraph in document.paragraphs if paragraph._p.xpath(".//w:drawing")
+    ]
+    for drawing_index, paragraph in enumerate(drawing_paragraphs):
+        if drawing_index == 0:
             paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
             paragraph.paragraph_format.left_indent = Inches(-1.0)
             paragraph.paragraph_format.right_indent = Inches(-1.0)
             paragraph.paragraph_format.space_before = Pt(0)
             paragraph.paragraph_format.space_after = Pt(0)
-            break
+        else:
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            paragraph.paragraph_format.left_indent = Inches(0)
+            paragraph.paragraph_format.right_indent = Inches(0)
+            paragraph.paragraph_format.space_before = Pt(6)
+            paragraph.paragraph_format.space_after = Pt(6)
 
     abstract_seen = False
     references_seen = False
@@ -276,6 +307,21 @@ def style_docx() -> None:
             paragraph.paragraph_format.first_line_indent = Inches(-0.3)
             paragraph.paragraph_format.space_after = Pt(8)
 
+    # Keep the compact algorithm genuinely compact so it remains a single,
+    # readable unit instead of leaving its final steps alone on a new page.
+    in_compact_algorithm = False
+    for paragraph in document.paragraphs:
+        if paragraph.text == "Appendix B.1 Compact algorithm":
+            in_compact_algorithm = True
+            continue
+        if paragraph.text == "Appendix C: Preregistration template":
+            in_compact_algorithm = False
+        if in_compact_algorithm and paragraph.text:
+            paragraph.paragraph_format.line_spacing = 0.95
+            paragraph.paragraph_format.space_after = Pt(1)
+            for run_item in paragraph.runs:
+                run_item.font.size = Pt(9.5)
+
     for table in document.tables:
         table.style = "Table"
         table.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -294,6 +340,14 @@ def style_docx() -> None:
         widths = tuple(6.5 * ratio for ratio in ratios)
         if headers == ("Regime and candidate", "", "", "Role profile", "Boundary result"):
             replace_g1_header_math(table)
+        elif headers == (
+            "Candidate",
+            "interval",
+            "interval",
+            "Limiting role interval",
+            "Decision",
+        ):
+            replace_g3_header_math(table)
 
         for row_index, row in enumerate(table.rows):
             prevent_row_split(row)
