@@ -8,8 +8,6 @@ date: |
   July 10, 2026
 ---
 
-[**C0 - Central Paper and Related Publications**](https://philstilwell.github.io/C0/)
-
 \begin{center}
 \textbf{A visual preview:}
 \end{center}
@@ -865,6 +863,8 @@ Storm, J. F., Klink, P. C., Aru, J., Senn, W., Goebel, R., Pigorini, A., Avanzin
 Thompson, E., & Varela, F. J. (2001). Radical embodiment: Neural dynamics and consciousness. *Trends in Cognitive Sciences, 5*(10), 418-425. https://doi.org/10.1016/S1364-6613(00)01750-2
 
 VanRullen, R., & Kanai, R. (2021). Deep learning and the global workspace theory. *Trends in Neurosciences, 44*(9), 692-704. https://doi.org/10.1016/j.tins.2021.04.005
+
+**Central paper and related publications:** <https://philstilwell.github.io/C0/>
 
 ## Appendix A: Glossary and notation
 

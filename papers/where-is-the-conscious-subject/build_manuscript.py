@@ -282,11 +282,7 @@ def style_docx() -> None:
     abstract_seen = False
     references_seen = False
     for paragraph in document.paragraphs:
-        if paragraph.text == "C0 - Central Paper and Related Publications":
-            paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            paragraph.paragraph_format.space_before = Pt(3)
-            paragraph.paragraph_format.space_after = Pt(8)
-        elif paragraph.text == "A visual preview:":
+        if paragraph.text == "A visual preview:":
             paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
             paragraph.paragraph_format.space_before = Pt(14)
             paragraph.paragraph_format.space_after = Pt(8)
@@ -307,9 +303,15 @@ def style_docx() -> None:
             references_seen = False
             paragraph.paragraph_format.page_break_before = True
         if references_seen and paragraph.text and paragraph.text != "References":
-            paragraph.paragraph_format.left_indent = Inches(0.3)
-            paragraph.paragraph_format.first_line_indent = Inches(-0.3)
-            paragraph.paragraph_format.space_after = Pt(8)
+            if paragraph.text.startswith("Central paper and related publications:"):
+                paragraph.paragraph_format.left_indent = Inches(0)
+                paragraph.paragraph_format.first_line_indent = Inches(0)
+                paragraph.paragraph_format.space_before = Pt(10)
+                paragraph.paragraph_format.space_after = Pt(8)
+            else:
+                paragraph.paragraph_format.left_indent = Inches(0.3)
+                paragraph.paragraph_format.first_line_indent = Inches(-0.3)
+                paragraph.paragraph_format.space_after = Pt(8)
 
     # Keep the compact algorithm genuinely compact so it remains a single,
     # readable unit instead of leaving its final steps alone on a new page.
