@@ -50,7 +50,7 @@ TABLE_WIDTHS = {
         "",
         "Role profile",
         "Boundary result",
-    ): (0.20, 0.09, 0.09, 0.27, 0.35),
+    ): (0.17, 0.085, 0.085, 0.28, 0.38),
     ("Candidate or test", "Autonomy/role result", "Interpretation"): (0.24, 0.32, 0.44),
 }
 

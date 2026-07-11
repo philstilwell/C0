@@ -7,6 +7,14 @@ date: |
   ORCID: 0009-0009-3725-8682
 ---
 
+\begin{center}
+\textbf{A visual preview:}
+\end{center}
+
+![](visual-preview.png){width=100%}
+
+\newpage
+
 ## Abstract
 
 Theories of consciousness commonly measure integration, availability, recurrence, complexity, or causal power in a candidate system. Yet these quantities are not defined until investigators decide which variables belong to the system, at what spatial and temporal grain, and across which interval. Different boundaries can reverse the result. A hemisphere, thalamocortical network, brain, brain-body loop, human dyad, organoid-computer assembly, or distributed artificial architecture may each appear integrated or fragmented depending on which nodes are admitted. This paper argues that system individuation must therefore precede consciousness measurement and cannot be selected retrospectively to improve a preferred score. It proposes a boundary-first criterion: at a preregistered grain and horizon, generate candidate systems using consciousness-independent evidence of dynamical autonomy; then identify the inclusion-minimal candidate or candidates that jointly realize the target roles of integration, availability, recurrence, and viability. Strict causal closure is treated as a limiting case. Open biological and artificial systems instead qualify through sufficient autonomy: their endogenous dynamics must make a substantial difference to their own future organization, external dependence must remain below a declared tolerance, and apparent closure must survive perturbation, replacement, and boundary-sensitivity tests. The procedure distinguishes constitutive components from inputs, outputs, and enabling supports; returns multiple candidates when the data support multiple subjects; and returns boundary indeterminacy when reasonable specifications yield incompatible partitions. Applications to split brains, cortical-subcortical organization, brain-body loops, coupled agents, organoid-computer systems, and distributed artificial intelligence show how the criterion changes empirical practice. The proposal does not infer consciousness from autonomy. It supplies the prior individuation step required before a theory-specific consciousness test can be interpreted.

@@ -7,7 +7,7 @@ local layouts = {
   ["Stage|Required action|Failure output|Guardrail"] = {0.12, 0.30, 0.20, 0.38},
   ["Case|Competing boundaries|Decisive perturbation|Likely error if boundary is assumed"] = {0.15, 0.24, 0.27, 0.34},
   ["Misuse|Why invalid|Required correction"] = {0.26, 0.35, 0.39},
-  ["Regime and candidate|||Role profile|Boundary result"] = {0.20, 0.09, 0.09, 0.27, 0.35},
+  ["Regime and candidate|||Role profile|Boundary result"] = {0.17, 0.085, 0.085, 0.28, 0.38},
   ["Candidate or test|Autonomy/role result|Interpretation"] = {0.24, 0.32, 0.44},
 }
 
@@ -50,6 +50,12 @@ end
 function Table(tbl)
   local key = header_key(tbl)
   local widths = layouts[key]
+  -- Math-only headers stringify differently across Pandoc output targets.
+  -- Identify the G.1 table by its stable textual prefix so the intended
+  -- narrow metric columns are applied in both LaTeX and DOCX builds.
+  if not widths and key:sub(1, #"Regime and candidate|") == "Regime and candidate|" then
+    widths = {0.17, 0.085, 0.085, 0.28, 0.38}
+  end
   if widths then
     for i, width in ipairs(widths) do
       local alignment = tbl.colspecs[i][1]
