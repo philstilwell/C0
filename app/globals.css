@@ -268,3 +268,134 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
+
+/* Research constellation */
+.constellation-page { overflow: hidden; background: var(--ink); }
+.constellation-topbar { position: relative; }
+.constellation-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.16fr) minmax(330px, .84fr);
+  min-height: 500px;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 78% 18%, rgba(183,119,255,.16), transparent 23%),
+    radial-gradient(circle at 11% 92%, rgba(76,161,255,.13), transparent 30%),
+    #090c0f;
+}
+.constellation-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .27;
+  background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to right, black 30%, transparent 88%);
+}
+.constellation-hero-copy { position: relative; z-index: 1; align-self: center; max-width: 900px; padding: 84px clamp(28px, 6vw, 104px); }
+.constellation-kicker, .constellation-section-heading > div > span, .constellation-routes-copy > span, .constellation-synthesis-copy > span, .constellation-closing > p {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 0;
+  color: #aeb3b4;
+  font: 700 10px/1.2 var(--mono);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.constellation-kicker > span { width: 48px; height: 2px; background: linear-gradient(90deg, var(--presence) 0 54%, var(--broadcast) 54% 78%, var(--recurrence) 78%); }
+.constellation-hero h1 { max-width: 790px; margin: 27px 0 24px; font-size: clamp(54px, 6.6vw, 100px); line-height: .9; letter-spacing: -.068em; font-weight: 730; }
+.constellation-hero h1 i { color: var(--presence); font-family: var(--serif); font-weight: 400; }
+.constellation-hero-copy > p:not(.constellation-kicker) { max-width: 695px; margin: 0; color: #c6c9ca; font-size: clamp(16px, 1.45vw, 20px); line-height: 1.62; }
+.constellation-hero-actions { display: flex; align-items: center; gap: 26px; margin-top: 38px; }
+.constellation-primary-action { display: inline-flex; align-items: center; gap: 34px; padding: 15px 17px 15px 20px; border-radius: 4px; background: var(--presence); color: #1a0806; font-size: 12px; font-weight: 800; transition: transform .2s ease, background .2s ease; }
+.constellation-primary-action span { font-size: 17px; }.constellation-primary-action:hover { transform: translateY(-2px); background: #ff776b; }
+.constellation-text-action { padding-bottom: 5px; border-bottom: 1px solid #5f6468; color: #e1e3e2; font-size: 12px; font-weight: 650; }
+.constellation-thesis {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: 62px clamp(34px, 4.5vw, 76px);
+  border-left: 1px solid var(--line);
+  background: linear-gradient(145deg, rgba(255,89,73,.08), transparent 38%), rgba(6,9,12,.42);
+}
+.constellation-thesis::before { content: ""; width: 52px; height: 52px; margin-bottom: 26px; border: 1px solid rgba(255,255,255,.26); border-radius: 50%; background: radial-gradient(circle at 36% 38%, var(--presence) 0 7%, transparent 8%), radial-gradient(circle at 68% 34%, var(--broadcast) 0 6%, transparent 7%), radial-gradient(circle at 55% 70%, var(--recurrence) 0 7%, transparent 8%); box-shadow: 0 0 0 14px rgba(255,255,255,.025), 0 0 42px rgba(183,119,255,.15); }
+.constellation-thesis > span { color: #9ea3a6; font: 700 9px var(--mono); letter-spacing: .14em; }.constellation-thesis b { max-width: 360px; margin: 17px 0 17px; color: #fffaf1; font: 400 clamp(31px, 3vw, 48px)/1.03 var(--serif); letter-spacing: -.035em; }.constellation-thesis p { max-width: 380px; margin: 0; color: #abb0b2; font-size: 13px; line-height: 1.65; }
+
+.constellation-map-section { padding: 112px clamp(22px, 5.8vw, 104px) 70px; background: var(--paper); color: var(--ink); }
+.constellation-section-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(270px, .55fr); gap: 60px; align-items: end; max-width: 1450px; margin: 0 auto 54px; }
+.constellation-section-heading > div > span, .constellation-routes-copy > span, .constellation-synthesis-copy > span { color: #757c7f; }
+.constellation-section-heading h2, .constellation-routes-copy h2, .constellation-synthesis-copy h2 { max-width: 800px; margin: 15px 0 0; font-size: clamp(42px, 5.3vw, 78px); line-height: .94; letter-spacing: -.06em; }
+.constellation-section-heading > p { max-width: 490px; margin: 0; color: #5f676a; font-size: 15px; line-height: 1.7; }
+.constellation-map {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    ". boundary ."
+    "availability core indeterminacy"
+    ". character .";
+  grid-template-columns: minmax(180px, 1fr) minmax(235px, 1.08fr) minmax(180px, 1fr);
+  grid-template-rows: 1fr 1.08fr 1fr;
+  align-items: center;
+  gap: 18px;
+  max-width: 1450px;
+  min-height: 680px;
+  margin: 0 auto;
+  padding: 58px clamp(10px, 4vw, 62px);
+  border: 1px solid #b9bbb5;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(7,9,11,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7,9,11,.045) 1px, transparent 1px),
+    radial-gradient(circle at center, rgba(255,89,73,.09), transparent 26%),
+    #e9e6df;
+  background-size: 38px 38px, 38px 38px, auto, auto;
+}
+.map-axis { position: absolute; z-index: 0; background: linear-gradient(90deg, transparent, rgba(35,41,43,.28) 12%, rgba(35,41,43,.42) 50%, rgba(35,41,43,.28) 88%, transparent); pointer-events: none; }
+.map-axis-horizontal { top: 50%; left: 6%; right: 6%; height: 1px; }.map-axis-vertical { top: 6%; bottom: 6%; left: 50%; width: 1px; background: linear-gradient(0deg, transparent, rgba(35,41,43,.28) 12%, rgba(35,41,43,.42) 50%, rgba(35,41,43,.28) 88%, transparent); }
+.constellation-node {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 156px;
+  padding: 20px 21px 18px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #c2c3bd;
+  background: rgba(255,253,247,.95);
+  color: #22282a;
+  box-shadow: 0 12px 24px rgba(14,18,18,.07);
+  transition: transform .23s ease, box-shadow .23s ease, border-color .23s ease;
+}
+.constellation-node:hover { z-index: 2; transform: translateY(-5px); border-color: currentColor; box-shadow: 0 18px 31px rgba(14,18,18,.15); }.constellation-node:focus-visible { z-index: 3; }
+.constellation-node .node-index { color: #6f7778; font: 700 8px var(--mono); letter-spacing: .12em; }.constellation-node strong { margin: 10px 0 7px; font-size: 21px; letter-spacing: -.045em; line-height: 1; }.constellation-node > span:not(.node-index) { color: #535b5c; font-size: 11px; line-height: 1.4; }.constellation-node em { margin-top: 15px; color: currentColor; font: 700 9px var(--mono); letter-spacing: .05em; font-style: normal; text-transform: uppercase; }
+.node-core { grid-area: core; min-height: 210px; padding: 28px; border-color: rgba(255,89,73,.65); background: #171112; color: var(--presence); box-shadow: 0 18px 45px rgba(117,29,22,.22); }.node-core .node-index { color: #d1918b; }.node-core strong { color: #fff7ee; font: 400 39px/.9 var(--serif); letter-spacing: -.05em; }.node-core > span:not(.node-index) { color: #dfc3bd; font-size: 12px; }.node-core em { color: #ff9a90; }
+.node-boundary { grid-area: boundary; color: #2b8b83; }.node-availability { grid-area: availability; color: #bd6f24; }.node-indeterminacy { grid-area: indeterminacy; color: #8163c6; }.node-character { grid-area: character; color: #4d80c2; }
+.map-center-note { position: absolute; right: 18px; bottom: 14px; margin: 0; color: #7d8381; font: 600 8px/1.4 var(--mono); letter-spacing: .04em; text-transform: uppercase; }
+.constellation-map-legend { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1450px; margin: 20px auto 0; padding: 20px 0 0; border-top: 1px solid #c4c4be; }
+.constellation-map-legend > div { display: flex; gap: 9px; color: #6c7374; font-size: 10px; line-height: 1.5; }.constellation-map-legend strong { color: #2f3536; }.legend-dot { display: block; flex: 0 0 8px; width: 8px; height: 8px; margin-top: 3px; border-radius: 50%; }.boundary-dot { background: #2b8b83; }.availability-dot { background: var(--broadcast); }.indeterminacy-dot { background: var(--recurrence); }.character-dot { background: var(--integration); }
+
+.constellation-routes-section { display: grid; grid-template-columns: minmax(260px, .68fr) minmax(0, 1.32fr); gap: clamp(45px, 7vw, 138px); padding: 115px clamp(24px, 6vw, 108px); background: #0c1013; }
+.constellation-routes-copy { max-width: 555px; }.constellation-routes-copy h2, .constellation-synthesis-copy h2 { color: #fffaf1; }.constellation-routes-copy > p { margin: 24px 0 0; color: #9da3a5; font-size: 14px; line-height: 1.7; }
+.constellation-routes { border-top: 1px solid var(--line); }.constellation-routes article { display: grid; grid-template-columns: 135px minmax(145px, .64fr) minmax(0, 1.26fr); gap: 22px; align-items: baseline; padding: 31px 0; border-bottom: 1px solid var(--line); }.constellation-routes article > span { color: #737a7d; font: 700 9px var(--mono); letter-spacing: .11em; }.constellation-routes h3 { margin: 0; color: #f8f5ed; font-size: 19px; letter-spacing: -.04em; line-height: 1.1; }.constellation-routes p { grid-column: 2 / -1; margin: 0; color: #a6abad; font-size: 12px; line-height: 1.6; }.constellation-routes p a { color: var(--presence); border-bottom: 1px solid rgba(255,89,73,.45); }.constellation-routes article > div { grid-column: 2 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: #c6cbcc; font: 600 9px/1.5 var(--mono); text-transform: uppercase; }.constellation-routes i { color: var(--presence); font-style: normal; }
+
+.constellation-papers-section { padding: 116px clamp(22px, 5.8vw, 104px); background: #dedbd3; color: var(--ink); }.paper-list-heading { margin-bottom: 50px; }.constellation-paper-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 1450px; margin: 0 auto; border-top: 1px solid #afb1ac; border-left: 1px solid #afb1ac; }.constellation-paper-card { position: relative; display: flex; min-height: 475px; padding: clamp(24px, 3vw, 42px); flex-direction: column; overflow: hidden; border-right: 1px solid #afb1ac; border-bottom: 1px solid #afb1ac; background: rgba(255,253,247,.44); }.constellation-paper-card::before { content: ""; position: absolute; right: -56px; bottom: -56px; width: 180px; height: 180px; border: 1px solid currentColor; border-radius: 50%; opacity: .13; }.constellation-paper-card.core { grid-column: span 2; min-height: 430px; background: #171112; color: #ffb9b1; }.constellation-paper-card.core::before { width: 280px; height: 280px; color: var(--presence); opacity: .28; }.constellation-paper-card.boundary { color: #277e78; }.constellation-paper-card.availability { color: #bd6f24; }.constellation-paper-card.indeterminacy { color: #8064bc; }.constellation-paper-card.character { color: #477ab9; }
+.paper-card-topline { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 14px; color: currentColor; font: 700 9px var(--mono); letter-spacing: .12em; }.paper-card-topline > span:last-child { color: #787f80; }.core .paper-card-topline > span:last-child { color: #ba9793; }.constellation-paper-card h3 { position: relative; z-index: 1; max-width: 790px; margin: 34px 0 23px; color: #202628; font: 400 clamp(26px, 2.55vw, 42px)/1.02 var(--serif); letter-spacing: -.04em; }.core h3 { color: #fff8ee; max-width: 900px; }.paper-card-question, .paper-card-protects { position: relative; z-index: 1; display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 15px 0; border-top: 1px solid rgba(50,56,58,.2); }.core .paper-card-question, .core .paper-card-protects { border-color: rgba(255,255,255,.16); }.paper-card-question span, .paper-card-protects span { color: #737a7c; font: 700 8px/1.4 var(--mono); letter-spacing: .1em; }.core .paper-card-question span, .core .paper-card-protects span { color: #b99b97; }.paper-card-question p, .paper-card-protects p { margin: 0; color: #3e484a; font-size: 13px; line-height: 1.5; }.core .paper-card-question p, .core .paper-card-protects p { color: #e5cfca; }.paper-card-contribution { position: relative; z-index: 1; max-width: 700px; margin: 6px 0 21px; color: #596264; font-size: 13px; line-height: 1.65; }.core .paper-card-contribution { color: #d6bab5; }.paper-card-relation { position: relative; z-index: 1; max-width: 760px; margin: auto 0 23px; color: #646d6f; font-size: 11px; line-height: 1.55; }.core .paper-card-relation { color: #c5a7a1; }.constellation-paper-card > a { position: relative; z-index: 1; display: inline-flex; align-self: flex-start; gap: 19px; padding: 10px 0 4px; border-bottom: 1px solid currentColor; color: currentColor; font: 700 10px var(--mono); letter-spacing: .04em; text-transform: uppercase; }.constellation-paper-card > a span { font-size: 13px; }
+
+.constellation-synthesis { display: grid; grid-template-columns: minmax(270px, .65fr) minmax(0, 1.35fr); gap: clamp(45px, 7vw, 135px); padding: 118px clamp(24px, 6vw, 108px); background: #101519; }.constellation-synthesis-copy { max-width: 550px; }.constellation-synthesis-copy > p { margin: 24px 0 0; color: #959c9f; font-size: 14px; line-height: 1.7; }.constellation-matrix { align-self: center; border-top: 1px solid var(--line); }.matrix-row { display: grid; grid-template-columns: .72fr 1fr 1.18fr; gap: 20px; padding: 19px 0; border-bottom: 1px solid var(--line); color: #a5aaac; font-size: 11px; line-height: 1.5; }.matrix-row b { color: #f3eee7; font-size: 12px; }.matrix-head { color: #70777a; font: 700 8px var(--mono); letter-spacing: .1em; text-transform: uppercase; }.matrix-row.core b { color: #ff9c91; }.matrix-row.boundary b { color: #61b8b0; }.matrix-row.availability b { color: #ffae65; }.matrix-row.indeterminacy b { color: #b99af5; }.matrix-row.character b { color: #7bb4ff; }
+
+.constellation-closing { display: flex; min-height: 450px; padding: 96px clamp(24px, 8vw, 150px); flex-direction: column; align-items: flex-start; justify-content: center; background: radial-gradient(circle at 75% 45%, rgba(255,89,73,.14), transparent 31%), #400f0d; }.constellation-closing > p { color: #d88d87; }.constellation-closing h2 { max-width: 1040px; margin: 21px 0 38px; color: #fff8ed; font: 400 clamp(37px, 5.2vw, 76px)/.98 var(--serif); letter-spacing: -.055em; }.constellation-closing .constellation-primary-action { background: #fff2e4; }.constellation-closing .constellation-primary-action:hover { background: white; }
+.constellation-footer { background: #07090b; }
+
+@media (max-width: 1050px) {
+  .constellation-hero { grid-template-columns: 1fr; }.constellation-thesis { min-height: 300px; border-top: 1px solid var(--line); border-left: 0; }.constellation-section-heading { grid-template-columns: 1fr; gap: 24px; }.constellation-map { grid-template-columns: minmax(150px, 1fr) minmax(215px, 1.05fr) minmax(150px, 1fr); }.constellation-map-legend { grid-template-columns: repeat(2, 1fr); }.constellation-routes-section, .constellation-synthesis { grid-template-columns: 1fr; gap: 48px; }.constellation-routes-copy, .constellation-synthesis-copy { max-width: 680px; }
+}
+
+@media (max-width: 720px) {
+  .constellation-nav-links a:not(.nav-paper) { display: none; }.constellation-hero-copy { padding-top: 72px; padding-bottom: 70px; }.constellation-hero h1 { font-size: 57px; }.constellation-hero-actions { align-items: flex-start; flex-direction: column; gap: 19px; }.constellation-thesis { min-height: 280px; padding: 45px 24px; }.constellation-thesis::before { width: 44px; height: 44px; margin-bottom: 20px; }.constellation-thesis b { font-size: 35px; }
+  .constellation-map-section, .constellation-papers-section { padding-top: 78px; padding-bottom: 58px; }.constellation-map { display: flex; min-height: 0; padding: 16px; flex-direction: column; gap: 11px; background-size: 30px 30px; }.map-axis, .map-center-note { display: none; }.constellation-node { width: 100%; min-height: 138px; }.node-core { order: -1; min-height: 185px; }.constellation-map-legend { grid-template-columns: 1fr; gap: 10px; }.constellation-routes-section, .constellation-synthesis { padding: 78px 24px; }.constellation-routes article { grid-template-columns: 1fr; gap: 12px; }.constellation-routes p, .constellation-routes article > div { grid-column: 1; }.constellation-routes article { padding: 25px 0; }
+  .constellation-paper-grid { grid-template-columns: 1fr; }.constellation-paper-card, .constellation-paper-card.core { grid-column: auto; min-height: 0; }.constellation-paper-card { padding: 27px 22px; }.constellation-paper-card h3 { margin: 27px 0 20px; font-size: 30px; }.paper-card-question, .paper-card-protects { grid-template-columns: 1fr; gap: 6px; }.paper-card-relation { margin-top: 25px; }.matrix-row { grid-template-columns: 1fr; gap: 6px; padding: 16px 0; }.matrix-head { display: none; }.matrix-row > span::before { display: block; margin-bottom: 2px; color: #747b7d; font: 700 7px var(--mono); letter-spacing: .08em; text-transform: uppercase; }.matrix-row > span:nth-child(2)::before { content: "Adds"; }.matrix-row > span:nth-child(3)::before { content: "Prevents"; }.constellation-closing { min-height: 400px; padding: 78px 24px; }.constellation-closing h2 { font-size: 41px; }
+}

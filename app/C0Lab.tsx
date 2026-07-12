@@ -317,6 +317,7 @@ export function C0Lab() {
         <div className="nav-links">
           <a href="#lab">Run the model</a>
           <a href="#logic">Read the logic</a>
+          <a href={`${assetBase}/constellation/`}>Constellation</a>
           <a className="nav-paper" href={`${assetBase}/paper.pdf`}>Paper ↗</a>
         </div>
       </nav>
@@ -587,6 +588,7 @@ export function C0Lab() {
         </div>
         <div className="footer-links">
           <a href="#top">Back to top ↑</a>
+          <a href={`${assetBase}/constellation/`}>Research constellation</a>
           <a href={`${assetBase}/paper.pdf`}>Read the paper ↗</a>
         </div>
       </footer>

@@ -4,12 +4,12 @@ import test from "node:test";
 
 const templateRoot = new URL("../", import.meta.url);
 
-async function render() {
+async function render(path = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
   return worker.fetch(
-    new Request("http://localhost/", { headers: { accept: "text/html" } }),
+    new Request(`http://localhost${path}`, { headers: { accept: "text/html" } }),
     { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
     { waitUntil() {}, passThroughOnException() {} },
   );
@@ -50,6 +50,20 @@ test("keeps the model logic and GitHub Pages export explicit", async () => {
   assert.ok(templateRoot);
 });
 
+test("server-renders the five-paper research constellation", async () => {
+  const response = await render("/constellation/");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /One core claim/);
+  assert.match(html, /Four ways to keep it honest/);
+  assert.match(html, /Where Is the Conscious Subject/);
+  assert.match(html, /Consciousness Without Report/);
+  assert.match(html, /Indeterminacy as a Scientific Result/);
+  assert.match(html, /From Phenomenal Presence to Phenomenal Character/);
+  assert.match(html, /Cø as N\*/);
+  assert.match(html, /papers\/where-is-the-conscious-subject\.pdf/);
+});
+
 test("ships the Gemini-derived favicon assets", async () => {
   const [favicon, icon, apple] = await Promise.all([
     stat(new URL("../public/favicon.ico", import.meta.url)),
@@ -59,4 +73,14 @@ test("ships the Gemini-derived favicon assets", async () => {
   assert.ok(favicon.size > 1000);
   assert.ok(icon.size > 1000);
   assert.ok(apple.size > 1000);
+});
+
+test("ships the four companion paper PDFs", async () => {
+  const files = await Promise.all([
+    stat(new URL("../public/papers/where-is-the-conscious-subject.pdf", import.meta.url)),
+    stat(new URL("../public/papers/consciousness-without-report.pdf", import.meta.url)),
+    stat(new URL("../public/papers/indeterminacy-as-a-scientific-result.pdf", import.meta.url)),
+    stat(new URL("../public/papers/from-phenomenal-presence-to-phenomenal-character.pdf", import.meta.url)),
+  ]);
+  files.forEach((file) => assert.ok(file.size > 1_000_000));
 });
