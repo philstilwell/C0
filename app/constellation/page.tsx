@@ -10,6 +10,7 @@ const papers = [
     title: "Cø as N*: A Minimal Network-Dynamics Model of Phenomenal Consciousness",
     question: "When is there something it is like for a system?",
     contribution: "States the exposed conjunction: viability plus integration, availability, and recurrent stability are jointly necessary and sufficient for minimal phenomenal presence.",
+    explanation: "The paper begins by narrowing the explanandum. Cø does not stand for intelligence, access consciousness, flexible behavior, or verbal report; it stands for the minimal fact that there is something it is like for a system. It then treats viability (V), integration or synergy (N₁), system-wide availability (N₂), and recurrent stability (N₃) as conditions that must be jointly realized by the same candidate system, for the same content, within a bounded time window. The payoff is a claim that can fail in two directions: a viable N* bundle without presence, or presence where one of the required conditions is genuinely absent.",
     protects: "Presence is not inferred from report, intelligence, or one impressive metric.",
     relation: "The conceptual center. The other papers specify its scope, its evidence, its epistemic discipline, and its extension to character.",
     href: `${assetBase}/paper.pdf`,
@@ -22,6 +23,7 @@ const papers = [
     title: "Where Is the Conscious Subject? A Dynamical Criterion for System Boundaries",
     question: "Which candidate system is actually being tested?",
     contribution: "Makes system individuation a prior dynamical task: fix an independently motivated, inclusion-minimal candidate before measuring consciousness-relevant properties.",
+    explanation: "This paper addresses a prior question that is often smuggled past a measurement: where does the relevant system begin and end? Rather than selecting a boundary because it produces an attractive score, it asks investigators to generate candidate systems from independently motivated signs of dynamical autonomy and then identify the smallest candidate that jointly realizes the relevant profile. That order matters. V and N* are properties of a system, so a test of phenomenal presence has no stable target until the candidate system has been fixed before the desired verdict is known.",
     protects: "A consciousness measure cannot rescue an unspecified or cherry-picked system boundary.",
     relation: "It supplies the S in which V and N* are evaluated. It is a precondition for applying the core model, not an extra conjunct.",
     href: `${assetBase}/papers/where-is-the-conscious-subject.pdf`,
@@ -34,6 +36,7 @@ const papers = [
     title: "Consciousness Without Report: What System-Wide Availability Actually Requires",
     question: "What would make a content available without requiring a report?",
     contribution: "Operationalizes N₂ through content-specific causal interventions, distinct functional recipient classes, bounded latency, and robustness checks.",
+    explanation: "The paper turns N₂ from a loose image of information spreading through a brain into an experimentally discriminating causal requirement. The relevant content must be able to modulate multiple preregistered functional recipient classes in a content-specific way, on an appropriate time scale, and with enough contextual robustness to show that the effect is not a transient correlation or indiscriminate diffusion. Overt report is deliberately excluded as a requirement: speech and button presses can be evidence, but availability must be demonstrated by the causal work the content can do throughout the candidate system.",
     protects: "Diffuse activity, verbal behavior, and mere access are not quietly treated as system-wide availability.",
     relation: "It gives the core model one of its gates a sharper experimental meaning: availability is a causal role, not a behavioral proxy.",
     href: `${assetBase}/papers/consciousness-without-report.pdf`,
@@ -46,6 +49,7 @@ const papers = [
     title: "Indeterminacy as a Scientific Result: A Four-Outcome Framework for Consciousness Attribution",
     question: "What does the available evidence actually license?",
     contribution: "Separates positive, negative, indeterminate, and unlicensed outcomes, so a measurement gap remains visible rather than being converted into a verdict.",
+    explanation: "This paper makes room for the most scientifically valuable answer in hard cases: not yet determined. It separates a positive attribution, a negative attribution, an indeterminate result, and an unlicensed result, depending on whether the required prerequisites were met, the evidence converges, and the relevant comparison is actually within the reach of the study. The framework does not dilute the core hypothesis; it protects it from overextension. A precise theory can coexist with a disciplined refusal to pretend that incomplete, conflicting, or scope-mismatched evidence has already settled the case.",
     protects: "Unknown is not silently collapsed into absent; a theory's sharpness is not confused with an experiment's reach.",
     relation: "It governs how evidence about the core model is reported whenever prerequisites, measures, or conflicts remain unresolved.",
     href: `${assetBase}/papers/indeterminacy-as-a-scientific-result.pdf`,
@@ -58,6 +62,7 @@ const papers = [
     title: "From Phenomenal Presence to Phenomenal Character: A Dynamical-Geometry Extension of the N* Model",
     question: "If presence obtains, what is the experience like?",
     contribution: "Extends the minimal presence gate toward a mapping from content-specific causal-trajectory geometry to an independently anchored space of phenomenal qualities.",
+    explanation: "The core model intentionally answers only whether minimal phenomenal presence is predicted. This extension asks a distinct question: why should one present episode feel visual rather than auditory, red rather than blue, sharp rather than diffuse? Its proposal is that content-specific causal trajectories may have a geometry that can be mapped, under independent anchoring and validation constraints, to a structured quality space. The result is not a decorative add-on to Cø: it preserves the minimal criterion while opening a separate, more demanding research program on the organization of phenomenal character.",
     protects: "A criterion for presence is not mistaken for an explanation of phenomenal character.",
     relation: "It begins where the core model deliberately stops: with the structure of a present experience rather than the fact of presence alone.",
     href: `${assetBase}/papers/from-phenomenal-presence-to-phenomenal-character.pdf`,
@@ -196,6 +201,7 @@ export default function ConstellationPage() {
               <h3>{paper.title}</h3>
               <div className="paper-card-question"><span>THE QUESTION</span><p>{paper.question}</p></div>
               <p className="paper-card-contribution">{paper.contribution}</p>
+              <div className="paper-card-explanation"><span>THE EXPLANATION</span><p>{paper.explanation}</p></div>
               <div className="paper-card-protects"><span>WHAT IT PREVENTS</span><p>{paper.protects}</p></div>
               <p className="paper-card-relation"><b>In the constellation:</b> {paper.relation}</p>
               <a href={paper.href}>Read the paper <span>↗</span></a>

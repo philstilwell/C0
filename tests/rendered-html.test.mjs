@@ -62,6 +62,8 @@ test("server-renders the five-paper research constellation", async () => {
   assert.match(html, /From Phenomenal Presence to Phenomenal Character/);
   assert.match(html, /Cø as N\*/);
   assert.match(html, /papers\/where-is-the-conscious-subject\.pdf/);
+  assert.match(html, /THE EXPLANATION/);
+  assert.match(html, /The paper begins by narrowing the explanandum/);
 });
 
 test("ships the Gemini-derived favicon assets", async () => {

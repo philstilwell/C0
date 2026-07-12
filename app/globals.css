@@ -332,6 +332,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .constellation-section-heading > p { max-width: 490px; margin: 0; color: #5f676a; font-size: 15px; line-height: 1.7; }
 .constellation-map {
   position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-areas:
     ". boundary ."
@@ -342,10 +343,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   align-items: center;
   gap: 18px;
   max-width: 1450px;
-  min-height: 680px;
+  min-height: 696px;
   margin: 0 auto;
-  padding: 58px clamp(10px, 4vw, 62px);
-  border: 1px solid #b9bbb5;
+  padding: 66px clamp(18px, 4vw, 70px);
+  border: 1px solid rgba(123,128,124,.52);
+  border-radius: 34px;
   overflow: hidden;
   background:
     linear-gradient(rgba(7,9,11,.045) 1px, transparent 1px),
@@ -353,30 +355,35 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     radial-gradient(circle at center, rgba(255,89,73,.09), transparent 26%),
     #e9e6df;
   background-size: 38px 38px, 38px 38px, auto, auto;
+  box-shadow: 0 28px 70px rgba(34,38,36,.14), inset 0 1px rgba(255,255,255,.72);
 }
-.map-axis { position: absolute; z-index: 0; background: linear-gradient(90deg, transparent, rgba(35,41,43,.28) 12%, rgba(35,41,43,.42) 50%, rgba(35,41,43,.28) 88%, transparent); pointer-events: none; }
-.map-axis-horizontal { top: 50%; left: 6%; right: 6%; height: 1px; }.map-axis-vertical { top: 6%; bottom: 6%; left: 50%; width: 1px; background: linear-gradient(0deg, transparent, rgba(35,41,43,.28) 12%, rgba(35,41,43,.42) 50%, rgba(35,41,43,.28) 88%, transparent); }
+.constellation-map::before { content: ""; position: absolute; z-index: -1; width: 48%; aspect-ratio: 1; left: 26%; top: 26%; border-radius: 50%; background: radial-gradient(circle, rgba(255,89,73,.13), rgba(255,157,67,.04) 42%, transparent 69%); filter: blur(7px); }
+.map-axis { position: absolute; z-index: 0; border-radius: 999px; background: linear-gradient(90deg, transparent, rgba(35,41,43,.22) 12%, rgba(35,41,43,.4) 50%, rgba(35,41,43,.22) 88%, transparent); box-shadow: 0 0 14px rgba(60,66,66,.12); pointer-events: none; }
+.map-axis-horizontal { top: 50%; left: 8%; right: 8%; height: 1px; }.map-axis-vertical { top: 8%; bottom: 8%; left: 50%; width: 1px; background: linear-gradient(0deg, transparent, rgba(35,41,43,.22) 12%, rgba(35,41,43,.4) 50%, rgba(35,41,43,.22) 88%, transparent); }
 .constellation-node {
   position: relative;
   z-index: 1;
   display: flex;
-  min-height: 156px;
-  padding: 20px 21px 18px;
+  min-height: 162px;
+  padding: 23px 24px 21px;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #c2c3bd;
-  background: rgba(255,253,247,.95);
+  border: 1px solid rgba(139,144,140,.5);
+  border-radius: 22px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255,255,253,.98), rgba(248,246,240,.94));
   color: #22282a;
-  box-shadow: 0 12px 24px rgba(14,18,18,.07);
-  transition: transform .23s ease, box-shadow .23s ease, border-color .23s ease;
+  box-shadow: 0 14px 30px rgba(14,18,18,.09), inset 0 1px rgba(255,255,255,.9);
+  transition: transform .23s ease, box-shadow .23s ease, border-color .23s ease, background .23s ease;
 }
-.constellation-node:hover { z-index: 2; transform: translateY(-5px); border-color: currentColor; box-shadow: 0 18px 31px rgba(14,18,18,.15); }.constellation-node:focus-visible { z-index: 3; }
-.constellation-node .node-index { color: #6f7778; font: 700 8px var(--mono); letter-spacing: .12em; }.constellation-node strong { margin: 10px 0 7px; font-size: 21px; letter-spacing: -.045em; line-height: 1; }.constellation-node > span:not(.node-index) { color: #535b5c; font-size: 11px; line-height: 1.4; }.constellation-node em { margin-top: 15px; color: currentColor; font: 700 9px var(--mono); letter-spacing: .05em; font-style: normal; text-transform: uppercase; }
-.node-core { grid-area: core; min-height: 210px; padding: 28px; border-color: rgba(255,89,73,.65); background: #171112; color: var(--presence); box-shadow: 0 18px 45px rgba(117,29,22,.22); }.node-core .node-index { color: #d1918b; }.node-core strong { color: #fff7ee; font: 400 39px/.9 var(--serif); letter-spacing: -.05em; }.node-core > span:not(.node-index) { color: #dfc3bd; font-size: 12px; }.node-core em { color: #ff9a90; }
+.constellation-node::before { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(130deg, rgba(255,255,255,.58), transparent 34%); pointer-events: none; }.constellation-node > * { position: relative; z-index: 1; }
+.constellation-node:hover { z-index: 2; transform: translateY(-7px) scale(1.012); border-color: currentColor; box-shadow: 0 22px 40px rgba(14,18,18,.16), inset 0 1px rgba(255,255,255,.92); }.constellation-node:focus-visible { z-index: 3; }
+.constellation-node .node-index { color: #6f7778; font: 700 8px var(--mono); letter-spacing: .12em; }.constellation-node strong { margin: 12px 0 8px; font-size: 22px; letter-spacing: -.05em; line-height: 1; }.constellation-node > span:not(.node-index) { color: #535b5c; font-size: 11px; line-height: 1.4; }.constellation-node em { margin-top: 17px; color: currentColor; font: 700 9px var(--mono); letter-spacing: .05em; font-style: normal; text-transform: uppercase; }
+.node-core { grid-area: core; min-height: 220px; padding: 31px; border-color: rgba(255,89,73,.72); border-radius: 28px; background: radial-gradient(circle at 74% 15%, rgba(255,89,73,.15), transparent 36%), #171112; color: var(--presence); box-shadow: 0 22px 50px rgba(117,29,22,.24), inset 0 1px rgba(255,255,255,.1); }.node-core::before { background: linear-gradient(135deg, rgba(255,255,255,.06), transparent 34%); }.node-core .node-index { color: #d1918b; }.node-core strong { color: #fff7ee; font: 400 40px/.9 var(--serif); letter-spacing: -.05em; }.node-core > span:not(.node-index) { color: #dfc3bd; font-size: 12px; }.node-core em { color: #ff9a90; }
 .node-boundary { grid-area: boundary; color: #2b8b83; }.node-availability { grid-area: availability; color: #bd6f24; }.node-indeterminacy { grid-area: indeterminacy; color: #8163c6; }.node-character { grid-area: character; color: #4d80c2; }
-.map-center-note { position: absolute; right: 18px; bottom: 14px; margin: 0; color: #7d8381; font: 600 8px/1.4 var(--mono); letter-spacing: .04em; text-transform: uppercase; }
-.constellation-map-legend { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1450px; margin: 20px auto 0; padding: 20px 0 0; border-top: 1px solid #c4c4be; }
-.constellation-map-legend > div { display: flex; gap: 9px; color: #6c7374; font-size: 10px; line-height: 1.5; }.constellation-map-legend strong { color: #2f3536; }.legend-dot { display: block; flex: 0 0 8px; width: 8px; height: 8px; margin-top: 3px; border-radius: 50%; }.boundary-dot { background: #2b8b83; }.availability-dot { background: var(--broadcast); }.indeterminacy-dot { background: var(--recurrence); }.character-dot { background: var(--integration); }
+.map-center-note { position: absolute; z-index: 1; right: 22px; bottom: 16px; margin: 0; color: #7d8381; font: 600 8px/1.4 var(--mono); letter-spacing: .04em; text-transform: uppercase; }
+.constellation-map-legend { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 1450px; margin: 20px auto 0; padding: 0; }
+.constellation-map-legend > div { display: flex; gap: 9px; min-height: 60px; padding: 13px 14px; border: 1px solid rgba(161,164,158,.58); border-radius: 14px; background: rgba(255,253,247,.5); color: #6c7374; font-size: 10px; line-height: 1.5; }.constellation-map-legend strong { color: #2f3536; }.legend-dot { display: block; flex: 0 0 8px; width: 8px; height: 8px; margin-top: 3px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(255,255,255,.55); }.boundary-dot { background: #2b8b83; }.availability-dot { background: var(--broadcast); }.indeterminacy-dot { background: var(--recurrence); }.character-dot { background: var(--integration); }
 
 .constellation-routes-section { display: grid; grid-template-columns: minmax(260px, .68fr) minmax(0, 1.32fr); gap: clamp(45px, 7vw, 138px); padding: 115px clamp(24px, 6vw, 108px); background: #0c1013; }
 .constellation-routes-copy { max-width: 555px; }.constellation-routes-copy h2, .constellation-synthesis-copy h2 { color: #fffaf1; }.constellation-routes-copy > p { margin: 24px 0 0; color: #9da3a5; font-size: 14px; line-height: 1.7; }
@@ -384,6 +391,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 
 .constellation-papers-section { padding: 116px clamp(22px, 5.8vw, 104px); background: #dedbd3; color: var(--ink); }.paper-list-heading { margin-bottom: 50px; }.constellation-paper-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 1450px; margin: 0 auto; border-top: 1px solid #afb1ac; border-left: 1px solid #afb1ac; }.constellation-paper-card { position: relative; display: flex; min-height: 475px; padding: clamp(24px, 3vw, 42px); flex-direction: column; overflow: hidden; border-right: 1px solid #afb1ac; border-bottom: 1px solid #afb1ac; background: rgba(255,253,247,.44); }.constellation-paper-card::before { content: ""; position: absolute; right: -56px; bottom: -56px; width: 180px; height: 180px; border: 1px solid currentColor; border-radius: 50%; opacity: .13; }.constellation-paper-card.core { grid-column: span 2; min-height: 430px; background: #171112; color: #ffb9b1; }.constellation-paper-card.core::before { width: 280px; height: 280px; color: var(--presence); opacity: .28; }.constellation-paper-card.boundary { color: #277e78; }.constellation-paper-card.availability { color: #bd6f24; }.constellation-paper-card.indeterminacy { color: #8064bc; }.constellation-paper-card.character { color: #477ab9; }
 .paper-card-topline { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 14px; color: currentColor; font: 700 9px var(--mono); letter-spacing: .12em; }.paper-card-topline > span:last-child { color: #787f80; }.core .paper-card-topline > span:last-child { color: #ba9793; }.constellation-paper-card h3 { position: relative; z-index: 1; max-width: 790px; margin: 34px 0 23px; color: #202628; font: 400 clamp(26px, 2.55vw, 42px)/1.02 var(--serif); letter-spacing: -.04em; }.core h3 { color: #fff8ee; max-width: 900px; }.paper-card-question, .paper-card-protects { position: relative; z-index: 1; display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 15px 0; border-top: 1px solid rgba(50,56,58,.2); }.core .paper-card-question, .core .paper-card-protects { border-color: rgba(255,255,255,.16); }.paper-card-question span, .paper-card-protects span { color: #737a7c; font: 700 8px/1.4 var(--mono); letter-spacing: .1em; }.core .paper-card-question span, .core .paper-card-protects span { color: #b99b97; }.paper-card-question p, .paper-card-protects p { margin: 0; color: #3e484a; font-size: 13px; line-height: 1.5; }.core .paper-card-question p, .core .paper-card-protects p { color: #e5cfca; }.paper-card-contribution { position: relative; z-index: 1; max-width: 700px; margin: 6px 0 21px; color: #596264; font-size: 13px; line-height: 1.65; }.core .paper-card-contribution { color: #d6bab5; }.paper-card-relation { position: relative; z-index: 1; max-width: 760px; margin: auto 0 23px; color: #646d6f; font-size: 11px; line-height: 1.55; }.core .paper-card-relation { color: #c5a7a1; }.constellation-paper-card > a { position: relative; z-index: 1; display: inline-flex; align-self: flex-start; gap: 19px; padding: 10px 0 4px; border-bottom: 1px solid currentColor; color: currentColor; font: 700 10px var(--mono); letter-spacing: .04em; text-transform: uppercase; }.constellation-paper-card > a span { font-size: 13px; }
+.paper-card-explanation { position: relative; z-index: 1; margin: 0 0 19px; padding: 17px 18px; border: 1px solid rgba(50,56,58,.16); border-radius: 13px; background: rgba(255,253,247,.5); }.paper-card-explanation span { display: block; margin-bottom: 8px; color: #737a7c; font: 700 8px/1.4 var(--mono); letter-spacing: .1em; }.paper-card-explanation p { max-width: 800px; margin: 0; color: #4e5859; font-size: 12px; line-height: 1.67; }.core .paper-card-explanation { border-color: rgba(255,255,255,.14); background: rgba(255,255,255,.055); }.core .paper-card-explanation span { color: #bd9c97; }.core .paper-card-explanation p { color: #e4ccc7; }
 
 .constellation-synthesis { display: grid; grid-template-columns: minmax(270px, .65fr) minmax(0, 1.35fr); gap: clamp(45px, 7vw, 135px); padding: 118px clamp(24px, 6vw, 108px); background: #101519; }.constellation-synthesis-copy { max-width: 550px; }.constellation-synthesis-copy > p { margin: 24px 0 0; color: #959c9f; font-size: 14px; line-height: 1.7; }.constellation-matrix { align-self: center; border-top: 1px solid var(--line); }.matrix-row { display: grid; grid-template-columns: .72fr 1fr 1.18fr; gap: 20px; padding: 19px 0; border-bottom: 1px solid var(--line); color: #a5aaac; font-size: 11px; line-height: 1.5; }.matrix-row b { color: #f3eee7; font-size: 12px; }.matrix-head { color: #70777a; font: 700 8px var(--mono); letter-spacing: .1em; text-transform: uppercase; }.matrix-row.core b { color: #ff9c91; }.matrix-row.boundary b { color: #61b8b0; }.matrix-row.availability b { color: #ffae65; }.matrix-row.indeterminacy b { color: #b99af5; }.matrix-row.character b { color: #7bb4ff; }
 
