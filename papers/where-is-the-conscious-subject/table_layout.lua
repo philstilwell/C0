@@ -44,6 +44,17 @@ if os.getenv("PAPER_TABLE_PROFILE") == "character" then
   layouts["Domain|Promising structure|Main confound|Required extension"] = {0.15, 0.32, 0.23, 0.30}
 end
 
+if os.getenv("PAPER_TABLE_PROFILE") == "ablation" then
+  layouts["Ablation type|Operation|Question answered|What it cannot establish alone"] = {0.15, 0.29, 0.29, 0.27}
+  layouts["Status|Formal or evidential condition|Licensed interpretation"] = {0.14, 0.53, 0.33}
+  layouts["Term or symbol|Definition|Guardrail"] = {0.18, 0.37, 0.45}
+  layouts["Stage|Required action|Circularity blocked|Failure output"] = {0.12, 0.28, 0.38, 0.22}
+  layouts["Field|Required entry"] = {0.23, 0.77}
+  layouts["Audit question|Pass evidence|Failure consequence"] = {0.30, 0.46, 0.24}
+  layouts["Case|V|N1|N2|N3|Diagnostic status"] = {0.13, 0.08, 0.08, 0.08, 0.08, 0.55}
+  layouts["Component|Apparent ablation|Principal confound|Required control"] = {0.12, 0.24, 0.30, 0.34}
+end
+
 local function header_key(tbl)
   if not tbl.head or not tbl.head.rows or #tbl.head.rows == 0 then
     return ""

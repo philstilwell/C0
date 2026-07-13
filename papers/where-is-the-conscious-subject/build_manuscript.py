@@ -114,6 +114,20 @@ if PAPER_TABLE_PROFILE == "character":
         }
     )
 
+if PAPER_TABLE_PROFILE == "ablation":
+    TABLE_WIDTHS.update(
+        {
+            ("Ablation type", "Operation", "Question answered", "What it cannot establish alone"): (0.15, 0.29, 0.29, 0.27),
+            ("Status", "Formal or evidential condition", "Licensed interpretation"): (0.14, 0.53, 0.33),
+            ("Term or symbol", "Definition", "Guardrail"): (0.18, 0.37, 0.45),
+            ("Stage", "Required action", "Circularity blocked", "Failure output"): (0.12, 0.28, 0.38, 0.22),
+            ("Field", "Required entry"): (0.23, 0.77),
+            ("Audit question", "Pass evidence", "Failure consequence"): (0.30, 0.46, 0.24),
+            ("Case", "V", "N1", "N2", "N3", "Diagnostic status"): (0.13, 0.08, 0.08, 0.08, 0.08, 0.55),
+            ("Component", "Apparent ablation", "Principal confound", "Required control"): (0.12, 0.24, 0.30, 0.34),
+        }
+    )
+
 
 def run(*args: str) -> None:
     subprocess.run(args, check=True)
