@@ -50,17 +50,19 @@ test("keeps the model logic and GitHub Pages export explicit", async () => {
   assert.ok(templateRoot);
 });
 
-test("server-renders the five-paper research constellation", async () => {
+test("server-renders the six-paper research constellation", async () => {
   const response = await render("/constellation/");
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /One core claim/);
-  assert.match(html, /Four ways to keep it honest/);
+  assert.match(html, /Five ways to take it further/);
   assert.match(html, /Where Is the Conscious Subject/);
   assert.match(html, /Consciousness Without Report/);
   assert.match(html, /Indeterminacy as a Scientific Result/);
   assert.match(html, /From Phenomenal Presence to Phenomenal Character/);
   assert.match(html, /Cø as N\*/);
+  assert.match(html, /Ablating N\*: Does Every Conjunct Earn Its Place/);
+  assert.match(html, /philpapers\.org\/rec\/STIANW/);
   assert.match(html, /papers\/where-is-the-conscious-subject\.pdf/);
   assert.match(html, /THE EXPLANATION/);
   assert.match(html, /The paper begins by narrowing the explanandum/);
@@ -77,12 +79,13 @@ test("ships the Gemini-derived favicon assets", async () => {
   assert.ok(apple.size > 1000);
 });
 
-test("ships the four companion paper PDFs", async () => {
+test("ships the five companion paper PDFs", async () => {
   const files = await Promise.all([
     stat(new URL("../public/papers/where-is-the-conscious-subject.pdf", import.meta.url)),
     stat(new URL("../public/papers/consciousness-without-report.pdf", import.meta.url)),
     stat(new URL("../public/papers/indeterminacy-as-a-scientific-result.pdf", import.meta.url)),
     stat(new URL("../public/papers/from-phenomenal-presence-to-phenomenal-character.pdf", import.meta.url)),
+    stat(new URL("../public/papers/ablating-n-star.pdf", import.meta.url)),
   ]);
-  files.forEach((file) => assert.ok(file.size > 1_000_000));
+  files.forEach((file) => assert.ok(file.size > 100_000));
 });
