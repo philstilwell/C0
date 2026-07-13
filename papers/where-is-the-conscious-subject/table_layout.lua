@@ -51,7 +51,7 @@ if os.getenv("PAPER_TABLE_PROFILE") == "ablation" then
   layouts["Stage|Required action|Circularity blocked|Failure output"] = {0.12, 0.28, 0.38, 0.22}
   layouts["Field|Required entry"] = {0.23, 0.77}
   layouts["Audit question|Pass evidence|Failure consequence"] = {0.30, 0.46, 0.24}
-  layouts["Case|V|N1|N2|N3|Diagnostic status"] = {0.13, 0.08, 0.08, 0.08, 0.08, 0.55}
+  layouts["Case|V|N1|N2|N3|Diagnostic status"] = {0.11, 0.07, 0.07, 0.07, 0.07, 0.61}
   layouts["Component|Apparent ablation|Principal confound|Required control"] = {0.12, 0.24, 0.30, 0.34}
 end
 
@@ -102,6 +102,12 @@ function Table(tbl)
   end
   if not widths and key:sub(1, #"Candidate|") == "Candidate|" and key:match("Limiting role interval") then
     widths = {0.15, 0.16, 0.17, 0.22, 0.30}
+  end
+  -- Appendix E.1 uses four math-only component headers whose stringified
+  -- forms vary across Pandoc targets. Its textual edge headers are stable.
+  if not widths and os.getenv("PAPER_TABLE_PROFILE") == "ablation"
+      and key:sub(1, #"Case|") == "Case|" and key:match("Diagnostic status$") then
+    widths = {0.11, 0.07, 0.07, 0.07, 0.07, 0.61}
   end
   if widths then
     for i, width in ipairs(widths) do

@@ -123,7 +123,7 @@ if PAPER_TABLE_PROFILE == "ablation":
             ("Stage", "Required action", "Circularity blocked", "Failure output"): (0.12, 0.28, 0.38, 0.22),
             ("Field", "Required entry"): (0.23, 0.77),
             ("Audit question", "Pass evidence", "Failure consequence"): (0.30, 0.46, 0.24),
-            ("Case", "V", "N1", "N2", "N3", "Diagnostic status"): (0.13, 0.08, 0.08, 0.08, 0.08, 0.55),
+            ("Case", "V", "N1", "N2", "N3", "Diagnostic status"): (0.11, 0.07, 0.07, 0.07, 0.07, 0.61),
             ("Component", "Apparent ablation", "Principal confound", "Required control"): (0.12, 0.24, 0.30, 0.34),
         }
     )
@@ -372,12 +372,16 @@ def style_docx() -> None:
             if paragraph.text.startswith("Central paper and related publications:"):
                 paragraph.paragraph_format.left_indent = Inches(0)
                 paragraph.paragraph_format.first_line_indent = Inches(0)
-                paragraph.paragraph_format.space_before = Pt(10)
-                paragraph.paragraph_format.space_after = Pt(8)
+                paragraph.paragraph_format.space_before = Pt(4 if PAPER_TABLE_PROFILE == "ablation" else 10)
+                paragraph.paragraph_format.space_after = Pt(4 if PAPER_TABLE_PROFILE == "ablation" else 8)
             else:
                 paragraph.paragraph_format.left_indent = Inches(0.3)
                 paragraph.paragraph_format.first_line_indent = Inches(-0.3)
-                paragraph.paragraph_format.space_after = Pt(8)
+                paragraph.paragraph_format.space_after = Pt(2 if PAPER_TABLE_PROFILE == "ablation" else 8)
+            if PAPER_TABLE_PROFILE == "ablation":
+                paragraph.paragraph_format.line_spacing = 1.0
+                for run_item in paragraph.runs:
+                    run_item.font.size = Pt(7.5)
 
     # Keep the compact algorithm genuinely compact so it remains a single,
     # readable unit instead of leaving its final steps alone on a new page.
@@ -389,10 +393,10 @@ def style_docx() -> None:
         if paragraph.text == "Appendix C: Preregistration template":
             in_compact_algorithm = False
         if in_compact_algorithm and paragraph.text:
-            paragraph.paragraph_format.line_spacing = 0.95
-            paragraph.paragraph_format.space_after = Pt(1)
+            paragraph.paragraph_format.line_spacing = 0.9 if PAPER_TABLE_PROFILE == "ablation" else 0.95
+            paragraph.paragraph_format.space_after = Pt(0 if PAPER_TABLE_PROFILE == "ablation" else 1)
             for run_item in paragraph.runs:
-                run_item.font.size = Pt(9.5)
+                run_item.font.size = Pt(8.75 if PAPER_TABLE_PROFILE == "ablation" else 9.5)
 
     for table in document.tables:
         table.style = "Table"
@@ -407,6 +411,18 @@ def style_docx() -> None:
 
         headers = tuple(cell.text.replace("\n", " ").strip() for cell in table.rows[0].cells)
         ratios = TABLE_WIDTHS.get(headers)
+        if (
+            ratios is None
+            and PAPER_TABLE_PROFILE == "ablation"
+            and len(headers) == 6
+            and headers[0] == "Case"
+            and headers[-1] == "Diagnostic status"
+        ):
+            # Pandoc/Word can serialize the four math-only component headers
+            # differently (for example, N1, N 1, or an OMML placeholder).
+            # The stable textual edge columns identify Appendix E.1 without
+            # depending on those serialization details.
+            ratios = (0.11, 0.07, 0.07, 0.07, 0.07, 0.61)
         if ratios is None:
             ratios = tuple(1 / len(table.columns) for _ in table.columns)
         widths = tuple(6.5 * ratio for ratio in ratios)
@@ -438,7 +454,10 @@ def style_docx() -> None:
                         paragraph.paragraph_format.space_after = Pt(1)
                     for run_item in paragraph.runs:
                         run_item.font.name = "Times New Roman"
-                        run_item.font.size = Pt(9)
+                        if PAPER_TABLE_PROFILE == "ablation" and headers == ("Term or symbol", "Definition", "Guardrail"):
+                            run_item.font.size = Pt(8.25)
+                        else:
+                            run_item.font.size = Pt(9)
                         run_item._element.rPr.rFonts.set(qn("w:eastAsia"), "Times New Roman")
                         if row_index == 0:
                             run_item.bold = True
