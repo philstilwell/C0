@@ -87,6 +87,20 @@ const papers = [
     recordHref: "https://philpapers.org/rec/STIANW",
     tone: "audit",
   },
+  {
+    id: "schematic",
+    index: "07",
+    type: "THE INTELLIGIBILITY BRIDGE",
+    title: "Reading Consciousness from the Schematic: Structural Legibility in the N* Model",
+    question: "Can phenomenal necessity be read from the organization rather than appended as a black-box rule?",
+    contribution: "Defines schematic legibility: a trained reader reconstructs a bearer, unity, system-level availability, temporal presence, and realized operation before applying the exposed identity hypothesis.",
+    explanation: "The core biconditional says that viable N* dynamics are necessary and sufficient for minimal phenomenal presence. This paper asks whether that necessity must remain opaque. Using an electrical schematic as its governing analogy, it argues that an expert-readable model can make an operating state conceptually visible through component semantics, compositional inference, and a localized fault map. The same explanatory form is available to N*: the candidate boundary fixes the bearer, N₁ supplies unity, N₂ supplies system-level causal presence, N₃ supplies bounded temporal presence, and V supplies actual operation. The result is not a visual proof of consciousness. It is a disciplined account of what it would mean for the identity to become structurally intelligible rather than merely asserted.",
+    protects: "A reliable biconditional is not mistaken for an explanation, and conceptual intelligibility is not mistaken for independent confirmation.",
+    relation: "The program’s interpretive bridge. It shows how the core claim and its companion disciplines can form an expert-readable phenomenal schematic.",
+    href: `${assetBase}/papers/consciousness-in-the-schematic.pdf`,
+    recordHref: undefined,
+    tone: "schematic",
+  },
 ] as const;
 
 const paperById = Object.fromEntries(papers.map((paper) => [paper.id, paper]));
@@ -94,10 +108,10 @@ const paperById = Object.fromEntries(papers.map((paper) => [paper.id, paper]));
 export const metadata: Metadata = {
   title: "The Cø / N* research constellation",
   description:
-    "Six complementary papers on phenomenal presence, system boundaries, availability without report, component necessity, scientific indeterminacy, and phenomenal character.",
+    "Seven complementary papers on phenomenal presence, system boundaries, availability without report, component necessity, scientific indeterminacy, phenomenal character, and structural intelligibility.",
   openGraph: {
     title: "The Cø / N* research constellation",
-    description: "One core model, five complementary papers, and a shared discipline of falsifiability.",
+    description: "One core model, six complementary papers, and a shared discipline of falsifiability.",
   },
 };
 
@@ -107,7 +121,7 @@ function MapNode({ id }: { id: keyof typeof paperById }) {
   return (
     <a className={`constellation-node node-${paper.tone}`} href={paper.recordHref ?? paper.href} aria-label={`Read ${paper.title}${paper.recordHref ? " on PhilPapers" : " PDF"}`}>
       <span className="node-index">{paper.index} / {paper.type}</span>
-      <strong>{id === "core" ? "Cø as N*" : id === "boundary" ? "Boundaries" : id === "availability" ? "Availability" : id === "indeterminacy" ? "Indeterminacy" : id === "ablation" ? "Ablation audit" : "Character"}</strong>
+      <strong>{id === "core" ? "Cø as N*" : id === "boundary" ? "Boundaries" : id === "availability" ? "Availability" : id === "indeterminacy" ? "Indeterminacy" : id === "ablation" ? "Ablation audit" : id === "schematic" ? "Schematic legibility" : "Character"}</strong>
       <span>{paper.question}</span>
       <em>{paper.recordHref ? "View on PhilPapers ↗" : "Read paper ↗"}</em>
     </a>
@@ -130,12 +144,13 @@ export default function ConstellationPage() {
 
       <header className="constellation-hero" id="top">
         <div className="constellation-hero-copy">
-          <p className="constellation-kicker"><span aria-hidden="true" /> SIX PAPERS, ONE RESEARCH PROGRAM</p>
-          <h1>One core claim.<br /><i>Five ways to take it further.</i></h1>
+          <p className="constellation-kicker"><span aria-hidden="true" /> SEVEN PAPERS, ONE RESEARCH PROGRAM</p>
+          <h1>One core claim.<br /><i>Six ways to take it further.</i></h1>
           <p>
             The Cø / N* papers do not compete to explain consciousness. They divide the work: identify the
             system, define one key causal condition, state a falsifiable criterion for presence, discipline the
-            verdict, audit whether each conjunct earns its place, and then ask about the character of what is present.
+            verdict, audit whether each conjunct earns its place, ask about the character of what is present,
+            and make the resulting necessity structurally intelligible.
           </p>
           <div className="constellation-hero-actions">
             <a href="#map" className="constellation-primary-action">Explore the constellation <span>↓</span></a>
@@ -145,7 +160,7 @@ export default function ConstellationPage() {
         <aside className="constellation-thesis" aria-label="The shared scientific commitment">
           <span>SHARED COMMITMENT</span>
           <b>Make every inference earn its scope.</b>
-          <p>Each paper prevents a different shortcut: an unfixed system, a weak availability proxy, an untested conjunct, a forced binary verdict, or an unexplained leap from presence to character.</p>
+          <p>Each paper prevents a different shortcut: an unfixed system, a weak availability proxy, an untested conjunct, a forced binary verdict, an unexplained leap from presence to character, or an opaque identity treated as already intelligible.</p>
         </aside>
       </header>
 
@@ -155,10 +170,10 @@ export default function ConstellationPage() {
             <span>01 / THE RESEARCH MAP</span>
             <h2 id="map-heading">A constellation, not a stack.</h2>
           </div>
-          <p>The central paper supplies the minimal criterion. Five companion papers fix its scope, sharpen its evidence, audit its necessities, discipline its verdicts, and extend its explanatory reach.</p>
+          <p>The central paper supplies the minimal criterion. Six companion papers fix its scope, sharpen its evidence, audit its necessities, discipline its verdicts, extend its explanatory reach, and make its necessity readable.</p>
         </div>
 
-        <div className="constellation-map" aria-label="A visual map of the six complementary papers">
+        <div className="constellation-map" aria-label="A visual map of the seven complementary papers">
           <div className="map-axis map-axis-horizontal" aria-hidden="true" />
           <div className="map-axis map-axis-vertical" aria-hidden="true" />
           <MapNode id="boundary" />
@@ -167,7 +182,8 @@ export default function ConstellationPage() {
           <MapNode id="indeterminacy" />
           <MapNode id="character" />
           <MapNode id="ablation" />
-          <p className="map-center-note">Every node is a paper. The audit band tests the core’s internal necessity claims.</p>
+          <MapNode id="schematic" />
+          <p className="map-center-note">Every node is a paper. The lower bands test necessity and make its organization legible.</p>
         </div>
 
         <div className="constellation-map-legend" aria-label="How to read the research map">
@@ -176,12 +192,13 @@ export default function ConstellationPage() {
           <div><b className="legend-dot indeterminacy-dot" /> <span><strong>After measurement</strong> — report what the evidence warrants.</span></div>
           <div><b className="legend-dot character-dot" /> <span><strong>Beyond minimal presence</strong> — model the structure of experience.</span></div>
           <div><b className="legend-dot audit-dot" /> <span><strong>Across the model</strong> — test whether each conjunct earns its place.</span></div>
+          <div><b className="legend-dot schematic-dot" /> <span><strong>Through the model</strong> — read phenomenal necessity from the organized roles.</span></div>
         </div>
       </section>
 
       <section className="constellation-routes-section" id="how-they-fit" aria-labelledby="routes-heading">
         <div className="constellation-routes-copy">
-          <span>02 / THREE WAYS THROUGH</span>
+          <span>02 / FOUR WAYS THROUGH</span>
           <h2 id="routes-heading">The papers meet different needs at different moments.</h2>
           <p>The core model is the conceptual center, but research does not always begin there. Choose the route that matches the question in front of you.</p>
         </div>
@@ -204,13 +221,19 @@ export default function ConstellationPage() {
             <p>Move from the core criterion to the dynamical-geometry extension, where content-specific causal structure is asked to bear explanatory weight for phenomenal character.</p>
             <div><b>Cø as N*</b><i>→</i><b>Phenomenal character</b></div>
           </article>
+          <article>
+            <span>ROUTE D / UNDERSTAND</span>
+            <h3>Why should the necessity be intelligible?</h3>
+            <p>Read the core biconditional through the schematic paper, which turns a black-box guarantee into a role-by-role, counterfactually inspectable organization.</p>
+            <div><b>Cø as N*</b><i>→</i><b>Schematic legibility</b></div>
+          </article>
         </div>
       </section>
 
       <section className="constellation-papers-section" aria-labelledby="papers-heading">
         <div className="constellation-section-heading paper-list-heading">
           <div>
-            <span>03 / SIX DISTINCT JOBS</span>
+            <span>03 / SEVEN DISTINCT JOBS</span>
             <h2 id="papers-heading">What each paper contributes.</h2>
           </div>
           <p>Read horizontally for the local question; read vertically to see the shared commitment to explicit scope, causal evidence, component-level testing, and falsifiable claims.</p>
@@ -248,12 +271,13 @@ export default function ConstellationPage() {
           <div className="matrix-row indeterminacy" role="row"><b role="cell">Indeterminacy</b><span role="cell">Four outcome classes for constrained attribution.</span><span role="cell">“No evidence is evidence of no consciousness.”</span></div>
           <div className="matrix-row character" role="row"><b role="cell">Phenomenal character</b><span role="cell">A geometry-based extension beyond minimal presence.</span><span role="cell">“Presence already explains what the experience is like.”</span></div>
           <div className="matrix-row audit" role="row"><b role="cell">Ablating N*</b><span role="cell">A component-level necessity audit with held-out anchors.</span><span role="cell">“A conjunct tracks the state, so it must be necessary.”</span></div>
+          <div className="matrix-row schematic" role="row"><b role="cell">Schematic legibility</b><span role="cell">An expert-readable route from organized roles to phenomenal presence.</span><span role="cell">“A guaranteed output is already an intelligible identity.”</span></div>
         </div>
       </section>
 
       <section className="constellation-closing">
         <p>THE PROGRAM IN ONE SENTENCE</p>
-        <h2>Specify the system, test the causal conditions, state only what the evidence licenses, and then ask what the present dynamics are like from within.</h2>
+        <h2>Specify the system, test the causal conditions, state only what the evidence licenses, and make the phenomenal organization readable rather than opaque.</h2>
         <a href={`${assetBase}/`} className="constellation-primary-action">Return to the interactive model <span>→</span></a>
       </section>
 
@@ -261,7 +285,7 @@ export default function ConstellationPage() {
         <div className="footer-mark">Cø<span>/N*</span></div>
         <div>
           <p>A connected research program on phenomenal presence and its limits.</p>
-          <small>Five papers by Phil Stilwell · 2026</small>
+          <small>Seven papers by Phil Stilwell · 2026</small>
         </div>
         <div className="footer-links">
           <a href="#top">Back to top ↑</a>
