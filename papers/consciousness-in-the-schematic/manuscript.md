@@ -20,13 +20,13 @@ date: |
 
 ## Abstract
 
-The $N^*$ model proposes that minimal phenomenal presence, $C_0$, obtains exactly when an independently individuated and viable candidate system realizes integration or synergy ($N_1$), report-independent system-wide availability ($N_2$), and recurrent stability ($N_3$). Even if this biconditional is granted, a lacuna appears to remain: is the necessity of consciousness only a black-box rule attached to the dynamics, or can a competent observer understand why the organization is consciousness-producing? This paper develops the latter possibility through the analogy of an electrical schematic. An engineer can inspect a diagram and infer a lamp's illumination or a motor's operation because the symbols have learned component semantics, their organization supports a state-by-state derivation, and alterations have localized counterfactual consequences. The output is not visually contained in the ink, and the diagram alone does not validate the component laws; nevertheless, the outcome is structurally legible. The paper argues that $N^*$ has the same explanatory form when read under its constitutive hypothesis. System individuation supplies a bearer, $N_1$ supplies unity, $N_2$ supplies system-level causal presence, $N_3$ supplies bounded temporal presence, and $V$ supplies realized operation. A trained reader can therefore pass through an explicit role vector rather than an uninterpreted lookup from a score to a phenomenal label. The proposal defines schematic legibility through compositional readout, counterfactual fault localization, and evidential independence; distinguishes intelligibility from proof; and answers objections involving circularity, zombies, functional-role substitution, and the disanalogy between mature electrical theory and consciousness science. The conclusion is conditional but substantive: if $C_0=V\land N^*$ is true as a constitutive identity, consciousness is not merely guaranteed somewhere behind the model. It is readable from the organization in the way an operating state is readable from a well-understood schematic.
+The $N^*$ model proposes that minimal phenomenal presence, $C_0$, obtains exactly when an independently individuated and viable candidate system realizes integration or synergy ($N_1$), report-independent system-wide availability ($N_2$), and recurrent stability ($N_3$). Even if this biconditional is granted, a lacuna appears to remain: is the necessity of consciousness only a black-box rule attached to the dynamics, or can a competent observer understand why the organization is the phenomenal state rather than a merely correlated producer of it? This paper develops the latter possibility through the analogy of an electrical schematic. An engineer can inspect a diagram and infer a lamp's illumination or a motor's operation because the symbols have learned component semantics, their organization supports a state-by-state derivation, and alterations have localized counterfactual consequences. The output is not visually contained in the ink, and the diagram alone does not validate the component laws; nevertheless, the outcome is structurally legible. The paper argues that $N^*$ has the same explanatory form when read under its constitutive hypothesis. System individuation supplies a bearer, $N_1$ supplies unity, $N_2$ supplies system-level causal presence, $N_3$ supplies bounded temporal presence, and $V$ supplies realized operation. A trained reader can therefore pass through an explicit role vector rather than an uninterpreted lookup from a score to a phenomenal label. The proposal defines schematic legibility through compositional readout, counterfactual fault localization, and evidential independence; distinguishes intelligibility from proof; and answers objections involving circularity, zombies, functional-role substitution, and the disanalogy between mature electrical theory and consciousness science. The conclusion is conditional but substantive: if $C_0=V\land N^*$ is true as a constitutive identity, consciousness is not merely guaranteed somewhere behind the model. It is readable from the organization in the way an operating state is readable from a well-understood schematic.
 
 **Keywords:** phenomenal consciousness; phenomenal presence; $N^*$ model; explanatory gap; mechanistic explanation; schematic representation; structural intelligibility; constitutive identity; functionalism; qualia
 
 ## 1. The Lacuna: Necessity Without Intelligibility
 
-The $N^*$ research program advances a deliberately strong hypothesis about minimal phenomenal presence:
+The $N^*$ research program advances a deliberately strong hypothesis about minimal phenomenal presence (Stilwell, 2026a):
 
 $$
 C_0(S,c;\mathcal R,\Delta)
@@ -34,7 +34,9 @@ C_0(S,c;\mathcal R,\Delta)
 V(S;\mathcal R,\Delta)\land N_1(S,c)\land N_2(S,c)\land N_3(S,c).
 $$
 
-**Annotation.** $S$ is a boundary-qualified candidate system; $c$ is a content or content-bearing state; $\mathcal R$ is the operating regime; $\Delta$ is the evaluation interval; $V$ is independent viability; $N_1$ is integration or synergy; $N_2$ is counterfactual system-wide availability; $N_3$ is recurrent stability; and $C_0$ is the fact that there is something it is like for $S$ to undergo the state. The biconditional is an empirical and constitutive hypothesis, not a label generated from the right-hand side.
+**Annotation.** $S$ is a boundary-qualified candidate system; $c$ is a content or content-bearing state; $\mathcal R$ is the operating regime; $\Delta$ is the evaluation interval; $V$ is independent viability; $N_1$ is integration or synergy; $N_2$ is counterfactual system-wide availability; $N_3$ is recurrent stability; and $C_0$ is the fact that there is something it is like for $S$ to undergo the state. The biconditional is an empirical and constitutive hypothesis, not a label generated from the right-hand side. For readability, the role terms suppress the frozen specification $\Theta$; each is evaluated for the same boundary, regime, grain, interval, interventions, thresholds, and uncertainty policy.
+
+The target is phenomenal rather than access consciousness: the minimal what-it-is-like fact, not reportability or flexible control (Nagel, 1974; Block, 1995).
 
 The companion papers make the hypothesis progressively more disciplined. They require the candidate system to be individuated before consciousness is measured, specify availability without reducing it to report, preserve indeterminate and unlicensed outcomes, map phenomenal character only after the presence gate is passed, and audit each conjunct against rivals that omit it (Stilwell, 2026b, 2026c, 2026d, 2026e, 2026f). Those steps address scope, measurement, evidence, extension, and component necessity.
 
@@ -100,7 +102,7 @@ The schematic has two readings. A merely classificatory reading asks whether eve
 | $N_1$ | The content is realized as an irreducibly joint state rather than a heap of independent local events. | The frozen candidate no longer supplies one unified content; smaller or fragmented candidates may need separate evaluation. |
 | $N_2$ | The content is causally available across functionally diverse recipients of the same candidate without requiring report. | The content remains an isolated local event, passive diffusion, or an output-specific artifact. |
 | $N_3$ | The content is maintained through bounded recurrent dynamics long enough to constitute a temporally present state. | The event is an evanescent feedforward transition or an unbounded pathological fixation. |
-| $C_0$ | The role-complete organization is, under the constitutive hypothesis, minimal phenomenal presence for $S$. | A valid $V\land N^*$ case without independent evidence of presence challenges sufficiency. |
+| $C_0$ | The role-complete organization is, under the constitutive hypothesis, minimal phenomenal presence for $S$. | A valid $V\land N^*$ case with independent evidence against presence challenges sufficiency. |
 
 The table is not a verbal redescription pasted onto otherwise unrelated measures. Each role has an independent operational program and a characteristic failure mode. Integration must exceed reducible aggregation. Availability must survive report-channel removal and diffusion controls. Recurrence must be content-relevant and bounded. Viability must be assessed before the consciousness verdict. The boundary must not be chosen to maximize the eventual score.
 
@@ -126,7 +128,7 @@ Descriptions of consciousness often use phrases such as "available to the system
 
 This prior individuation is part of what makes the schematic readable. An engineer cannot infer a circuit state without knowing which elements compose the circuit and which are inputs, loads, supports, or environmental conditions. Likewise, an $N^*$ reader cannot infer a system-level state while moving the system boundary separately for integration, availability, and recurrence. $B_S$ fixes the entity whose organization is being mentally run.
 
-### 3.2 Unity, systemic presence, and temporal presence
+### 3.2 Unity, system-level presence, and temporal presence
 
 The three $N^*$ conjuncts answer different structural questions.
 
@@ -216,7 +218,9 @@ The schematic analogy clarifies three increasingly strong theoretical positions.
 | Black-box law | $V\land N^*$ reliably guarantees $C_0$. | Consciousness is necessary given the law, but the transition from dynamics to presence is opaque. |
 | Constitutive schematic | $C_0$ is the role-complete $V\land N^*$ organization of a boundary-qualified system. | The reader reconstructs the minimal phenomenal profile and can localize how changes alter or defeat it. |
 
-The third position is the intended strong reading. It treats $C_0=V\land N^*$ as a candidate theoretical identity discovered and tested a posteriori, not as a dictionary definition. If true, the identity is stronger than regular co-occurrence. A system could not retain the complete constitutive organization while lacking the state that organization constitutes.
+The third position is the intended strong reading. It treats $C_0=V\land N^*$ as a candidate theoretical identity discovered and tested a posteriori, not as a dictionary definition (Kripke, 1980). If true, the identity is stronger than regular co-occurrence. A system could not retain the complete constitutive organization while lacking the state that organization constitutes.
+
+This is a metaphysical identity claim, not an assertion that phenomenal vocabulary is analytically derivable from nonphenomenal vocabulary. Schematic legibility concerns trained recognition under an empirically licensed identity.
 
 This resembles other expert inferences only at the level of explanatory form. A circuit's operating state becomes necessary relative to component laws and boundary conditions. A molecule's behavior becomes intelligible relative to a structural and dynamical model. In each case, the observer learns to see a macrostate in an organized base rather than waiting for an extra event to be added. The $N^*$ proposal says that minimal phenomenal presence should become similarly recognizable in a particular causal organization.
 
@@ -268,7 +272,7 @@ But the imagined duplicate cannot be established merely by repeating that no obs
 
 ### Objection 4: Consciousness cannot be observed from outside
 
-This objection equivocates between observing that an episode exists and undergoing the episode. Suppose measurements establish that $S$ is active, boundary-qualified, viable, integrated, system-wide available, and recurrently stable under a frozen specification. If $H_{C_0}$ is true, those measurements disclose the state constitutive of phenomenal presence. The observer can therefore see that $S$ is phenomenally experiencing by reading its realized organization, just as an engineer sees that a powered circuit is in the state that illuminates its lamp. The phenomenology is not a second event hidden behind the measured organization.
+This objection equivocates between observing that an episode exists and undergoing the episode. Suppose measurements establish that $S$ is active, boundary-qualified, viable, integrated, system-wide available, and recurrently stable under a frozen specification. If $H_{C_0}$ is true and independently licensed, those measurements disclose the state constitutive of phenomenal presence. The observer can therefore observe that phenomenal experience is occurring in $S$ by reading its realized organization, just as an engineer observes that a powered circuit is in the state that illuminates its lamp. The phenomenology is not a second event hidden behind the measured organization.
 
 What the observer does not acquire is $S$'s first-person acquaintance with the episode. Formally,
 
@@ -336,11 +340,11 @@ Block, N. (1995). On a confusion about a function of consciousness. *Behavioral 
 
 Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of Consciousness Studies, 2*(3), 200–219.
 
-Craver, C. F. (2007). *Explaining the brain: Mechanisms and the mosaic unity of neuroscience*. Oxford University Press.
+Craver, C. F. (2007). *Explaining the brain: Mechanisms and the mosaic unity of neuroscience*. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199299317.001.0001
 
 Kripke, S. A. (1980). *Naming and necessity*. Harvard University Press.
 
-Levine, J. (1983). Materialism and qualia: The explanatory gap. *Pacific Philosophical Quarterly, 64*(4), 354–361.
+Levine, J. (1983). Materialism and qualia: The explanatory gap. *Pacific Philosophical Quarterly, 64*(4), 354–361. https://doi.org/10.1111/j.1468-0114.1983.tb00207.x
 
 Machamer, P., Darden, L., & Craver, C. F. (2000). Thinking about mechanisms. *Philosophy of Science, 67*(1), 1–25. https://doi.org/10.1086/392759
 
