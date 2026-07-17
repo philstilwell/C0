@@ -64,7 +64,9 @@ test("server-renders the seven-paper research constellation", async () => {
   assert.match(html, /Ablating N\*: Does Every Conjunct Earn Its Place/);
   assert.match(html, /Reading Consciousness from the Schematic/);
   assert.match(html, /philpapers\.org\/rec\/STIANW/);
+  assert.match(html, /philpapers\.org\/rec\/STIRCF/);
   assert.match(html, /papers\/where-is-the-conscious-subject\.pdf/);
+  assert.match(html, /papers\/consciousness-in-the-schematic\.pdf/);
   assert.match(html, /THE EXPLANATION/);
   assert.match(html, /The paper begins by narrowing the explanandum/);
 });

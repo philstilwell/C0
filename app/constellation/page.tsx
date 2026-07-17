@@ -98,7 +98,7 @@ const papers = [
     protects: "A reliable biconditional is not mistaken for an explanation, and conceptual intelligibility is not mistaken for independent confirmation.",
     relation: "The program’s interpretive bridge. It shows how the core claim and its companion disciplines can form an expert-readable phenomenal schematic.",
     href: `${assetBase}/papers/consciousness-in-the-schematic.pdf`,
-    recordHref: undefined,
+    recordHref: "https://philpapers.org/rec/STIRCF",
     tone: "schematic",
   },
 ] as const;
