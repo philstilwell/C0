@@ -18,7 +18,9 @@ os.environ.update(
         "PAPER_TITLE": "Reading Consciousness from the Schematic",
         "PAPER_SUBJECT": "Structural Legibility in the N* Model",
         "PAPER_KEYWORDS": "phenomenal consciousness; phenomenal presence; N* model; explanatory gap; mechanistic explanation; schematic representation; structural intelligibility; constitutive identity",
-        "PAPER_PREVIEW_PAGE_BREAK": "1",
+        "PAPER_PREVIEW_PAGE_BREAK": "0",
+        "PAPER_COMPACT_TITLE": "1",
+        "PAPER_PREVIEW_DOCX_WIDTH": "7.5",
     }
 )
 

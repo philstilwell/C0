@@ -8,8 +8,6 @@ date: |
   July 16, 2026
 ---
 
-\newpage
-
 \begin{center}
 \textbf{A visual preview:}
 \end{center}

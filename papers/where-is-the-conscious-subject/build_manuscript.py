@@ -33,6 +33,8 @@ PAPER_KEYWORDS = os.environ.get(
 )
 PAPER_TABLE_PROFILE = os.environ.get("PAPER_TABLE_PROFILE", "")
 PAPER_PREVIEW_PAGE_BREAK = os.environ.get("PAPER_PREVIEW_PAGE_BREAK", "0") == "1"
+PAPER_COMPACT_TITLE = os.environ.get("PAPER_COMPACT_TITLE", "0") == "1"
+PAPER_PREVIEW_DOCX_WIDTH = float(os.environ.get("PAPER_PREVIEW_DOCX_WIDTH", "8.5"))
 
 TABLE_WIDTHS = {
     ("Field", "Required entry"): (0.25, 0.75),
@@ -278,22 +280,24 @@ def style_docx() -> None:
     title = document.styles["Title"]
     set_font(title, "Times New Roman", 22, bold=True)
     title.font.color.rgb = RGBColor(28, 45, 64)
-    title.paragraph_format.space_before = Pt(80)
+    title.paragraph_format.space_before = Pt(18 if PAPER_COMPACT_TITLE else 80)
     title.paragraph_format.space_after = Pt(8)
 
     subtitle = document.styles["Subtitle"]
     set_font(subtitle, "Times New Roman", 14, italic=True)
     subtitle.font.color.rgb = RGBColor(66, 77, 88)
-    subtitle.paragraph_format.space_after = Pt(28)
+    subtitle.paragraph_format.space_after = Pt(8 if PAPER_COMPACT_TITLE else 28)
 
     if "Author" in document.styles:
         author = document.styles["Author"]
         set_font(author, "Times New Roman", 12)
-        author.paragraph_format.space_after = Pt(8)
+        author.paragraph_format.space_after = Pt(4 if PAPER_COMPACT_TITLE else 8)
     if "Date" in document.styles:
         date = document.styles["Date"]
         set_font(date, "Times New Roman", 10)
         date.paragraph_format.line_spacing = 1.15
+        if PAPER_COMPACT_TITLE:
+            date.paragraph_format.space_after = Pt(0)
 
     heading_specs = {
         "Heading 1": (15, 12, 6),
@@ -326,7 +330,7 @@ def style_docx() -> None:
     for shape_index, shape in enumerate(document.inline_shapes):
         if shape.type is not None:
             aspect_ratio = shape.height / shape.width
-            target_width = 8.5 if shape_index == 0 else 6.5
+            target_width = PAPER_PREVIEW_DOCX_WIDTH if shape_index == 0 else 6.5
             shape.width = Inches(target_width)
             shape.height = Inches(target_width * aspect_ratio)
 
@@ -336,8 +340,9 @@ def style_docx() -> None:
     for drawing_index, paragraph in enumerate(drawing_paragraphs):
         if drawing_index == 0:
             paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            paragraph.paragraph_format.left_indent = Inches(-1.0)
-            paragraph.paragraph_format.right_indent = Inches(-1.0)
+            preview_overhang = max(0.0, (PAPER_PREVIEW_DOCX_WIDTH - 6.5) / 2)
+            paragraph.paragraph_format.left_indent = Inches(-preview_overhang)
+            paragraph.paragraph_format.right_indent = Inches(-preview_overhang)
             paragraph.paragraph_format.space_before = Pt(0)
             paragraph.paragraph_format.space_after = Pt(0)
         else:
