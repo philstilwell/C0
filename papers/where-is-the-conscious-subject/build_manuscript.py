@@ -32,6 +32,7 @@ PAPER_KEYWORDS = os.environ.get(
     "consciousness; system boundaries; dynamical autonomy; causal closure; system individuation",
 )
 PAPER_TABLE_PROFILE = os.environ.get("PAPER_TABLE_PROFILE", "")
+PAPER_PREVIEW_PAGE_BREAK = os.environ.get("PAPER_PREVIEW_PAGE_BREAK", "0") == "1"
 
 TABLE_WIDTHS = {
     ("Field", "Required entry"): (0.25, 0.75),
@@ -350,6 +351,9 @@ def style_docx() -> None:
     for paragraph in document.paragraphs:
         if paragraph.text == "A visual preview:":
             paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            if PAPER_PREVIEW_PAGE_BREAK:
+                paragraph.paragraph_format.page_break_before = True
+                paragraph.paragraph_format.keep_with_next = True
             paragraph.paragraph_format.space_before = Pt(14)
             paragraph.paragraph_format.space_after = Pt(8)
             for run_item in paragraph.runs:

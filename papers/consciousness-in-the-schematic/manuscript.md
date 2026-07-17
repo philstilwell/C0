@@ -10,6 +10,14 @@ date: |
 
 \newpage
 
+\begin{center}
+\textbf{A visual preview:}
+\end{center}
+
+![](visual-preview.png){width=100%}
+
+\newpage
+
 ## Abstract
 
 The $N^*$ model proposes that minimal phenomenal presence, $C_0$, obtains exactly when an independently individuated and viable candidate system realizes integration or synergy ($N_1$), report-independent system-wide availability ($N_2$), and recurrent stability ($N_3$). Even if this biconditional is granted, a lacuna appears to remain: is the necessity of consciousness only a black-box rule attached to the dynamics, or can a competent observer understand why the organization is consciousness-producing? This paper develops the latter possibility through the analogy of an electrical schematic. An engineer can inspect a diagram and infer a lamp's illumination or a motor's operation because the symbols have learned component semantics, their organization supports a state-by-state derivation, and alterations have localized counterfactual consequences. The output is not visually contained in the ink, and the diagram alone does not validate the component laws; nevertheless, the outcome is structurally legible. The paper argues that $N^*$ has the same explanatory form when read under its constitutive hypothesis. System individuation supplies a bearer, $N_1$ supplies unity, $N_2$ supplies system-level causal presence, $N_3$ supplies bounded temporal presence, and $V$ supplies realized operation. A trained reader can therefore pass through an explicit role vector rather than an uninterpreted lookup from a score to a phenomenal label. The proposal defines schematic legibility through compositional readout, counterfactual fault localization, and evidential independence; distinguishes intelligibility from proof; and answers objections involving circularity, zombies, functional-role substitution, and the disanalogy between mature electrical theory and consciousness science. The conclusion is conditional but substantive: if $C_0=V\land N^*$ is true as a constitutive identity, consciousness is not merely guaranteed somewhere behind the model. It is readable from the organization in the way an operating state is readable from a well-understood schematic.
