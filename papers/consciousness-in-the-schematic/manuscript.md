@@ -234,11 +234,19 @@ These limits keep the schematic proposal from becoming a visual version of stipu
 
 ## 7. Objections and Replies
 
+Several objections trade on an ambiguity in "observing consciousness." Let $A$ be an observer, $S$ another boundary-qualified system, and $q_S$ the token phenomenal character of one episode in $S$. Three epistemic relations must be distinguished:
+
+1. $A$ observes that $S$ instantiates the organization constitutive of $C_0$;
+2. $A$ infers features of $q_S$ from reports, behavior, interventions, and a licensed character map; and
+3. $A$ undergoes $q_S$ from $S$'s first-person position.
+
+The first is the central observational ambition of the presence model. The second is the more limited ambition of the phenomenal-character extension. The third is neither required by the theory nor a coherent general standard for third-person science. It asks an observer not merely to detect another episode but to become acquainted with it as the subject whose episode it is.
+
 ### Objection 1: The schematic contains consciousness only because the theory puts it there
 
 The constitutive hypothesis is indeed required. No arrangement of uninterpreted marks entails phenomenality. But this is also true of ordinary schematics: without component semantics, a lamp symbol is only a mark. The relevant question is whether the semantics merely append an output label or expose an organized role profile. $N^*$ does the latter by separating bearer, viability, unity, availability, and temporal maintenance, each with independent tests and failure modes.
 
-The identity hypothesis is not thereby proven. It is made nonopaque.
+The identity hypothesis is not thereby proven. It is made nonopaque. If the identity is independently supported, observing an active system realize the complete schematic is not observing a nonphenomenal mechanism plus an invisible phenomenal addition. It is observing the phenomenal episode under its causal-dynamical description. The schematic does not insert an unobserved output after the physical story; it identifies which organized physical state is the episode.
 
 ### Objection 2: Availability and unity smuggle phenomenality into functional language
 
@@ -246,21 +254,43 @@ $N_1$ and $N_2$ are operationalized causally without using a consciousness verdi
 
 ### Objection 3: A physical duplicate without experience remains conceivable
 
-The zombie intuition challenges the truth or necessity of the identity, not the internal legibility of the proposal. A reader can understand exactly what $N^*$ predicts and still reject it. If a genuine viable $N^*$ duplicate without $C_0$ could be independently established, the sufficiency direction would fail. If the identity is true, however, the alleged duplicate omits a state while stipulating that its complete constitutive basis remains. The dispute is then about whether the basis is constitutive, not about whether the theory offers only a black-box correlation.
+The zombie intuition challenges the truth or necessity of the identity, not the internal legibility of the proposal. A reader can understand exactly what $N^*$ predicts and still reject it. If a genuine viable $N^*$ duplicate without $C_0$ could be independently established, the sufficiency direction would fail.
 
-### Objection 4: Electrical outcomes are publicly observable; consciousness is not
+But the imagined duplicate cannot be established merely by repeating that no observer has first-person access to it. That absence of access holds for ordinary conscious others as well. If the identity is true, observing the full realized $N^*$ organization is observing $C_0$, although it is not undergoing the candidate's experience. The alleged zombie then removes a state while stipulating that its complete constitutive realization remains. The dispute is about whether the organization is constitutive, not about whether the observer can privately sample the candidate's phenomenology.
 
-The epistemic asymmetry is real. Illumination and rotation can be measured more directly than phenomenal presence in nonreporting systems. That difference weakens validation, but it does not erase explanatory structure. The $N^*$ program responds by using convergent independent anchors, no-report cases, held-out tests, and explicit indeterminate or unlicensed outputs. The schematic can be readable even where the final verdict remains empirically unresolved.
+### Objection 4: Consciousness cannot be observed from outside
 
-### Objection 5: Experts often misread schematics
+This objection equivocates between observing that an episode exists and undergoing the episode. Suppose measurements establish that $S$ is active, boundary-qualified, viable, integrated, system-wide available, and recurrently stable under a frozen specification. If $H_{C_0}$ is true, those measurements disclose the state constitutive of phenomenal presence. The observer can therefore see that $S$ is phenomenally experiencing by reading its realized organization, just as an engineer sees that a powered circuit is in the state that illuminates its lamp. The phenomenology is not a second event hidden behind the measured organization.
+
+What the observer does not acquire is $S$'s first-person acquaintance with the episode. Formally,
+
+$$
+\operatorname{Observe}_A[C_0(S)]
+\not\Rightarrow
+\operatorname{Undergo}_A[q_S].
+$$
+
+This implication fails without making the observation defective. Scientific observation routinely identifies what state a system is in without reproducing that state in the observer. Here the difference is especially important because first-person acquaintance is indexed to the bearer. The observer sees the occurrence under a causal-dynamical mode of presentation; $S$ undergoes the same occurrence under its phenomenal mode of presentation.
+
+The epistemic asymmetry therefore concerns modes of access, not whether anything observable warrants the claim that phenomenology is occurring. Before the identity is well supported, $N^*$ measurements are candidate evidence for consciousness. After it is independently supported, observation of the realized organization is observation of consciousness under the theory's public description.
+
+### Objection 5: Without access to the actual experience, the attribution cannot be verified
+
+The demand for "the actual experience" can mean two things. It may mean sufficiently strong evidence about whether $S$ experiences and how its experience is structured. That is a legitimate demand, answered imperfectly by calibrated report, behavior, causal perturbation, convergent anchors, no-report cases, and the quality-space bridge. The result may still be indeterminate or unlicensed.
+
+Or it may mean that $A$ must literally experience $S$'s token episode as $S$ experiences it. That demand is incoherent while $A$ and $S$ are stipulated to remain numerically distinct experiencers. If $A$ undergoes a merely qualitatively identical episode, it remains $A$'s episode rather than $S$'s. If the episode is numerically the same token with the same first-person bearer, then the assumed boundary between two independent subjects has changed: the case is no longer one experiencer observing the private episode of another. It has become a problem of shared, overlapping, or re-individuated subjecthood.
+
+Thus, no possible experiment could satisfy the strongest version of the demand while preserving the situation it was meant to test. Requiring token-identical first-person acquaintance would make knowledge of every other mind impossible by definition. The appropriate scientific requirement is not that one experiencer become another, but that public evidence reliably identify when another system instantiates the organization constitutive of experience and constrain what can responsibly be inferred about its character.
+
+### Objection 6: Experts often misread schematics
 
 Yes. Readability is not infallibility. A schematic may omit a parasitic path, use a component outside its range, or idealize away a decisive condition. The corresponding response is to state the boundary, validity envelope, tolerances, and uncertainty rule. A theory becomes more trustworthy by making its possible misreadings diagnosable.
 
-### Objection 6: Role completeness is still only functionalism
+### Objection 7: Role completeness is still only functionalism
 
 The proposal is a physicalist, information-dynamical form of functionalism, but not unrestricted input-output functionalism. The roles require effective causal realization, a frozen system boundary, bounded temporal dynamics, and substrate-appropriate viability. A lookup table, behavioral imitation, or merely isomorphic diagram does not qualify. Critics may still deny that any causal-role identity captures phenomenality. The schematic paper does not settle that larger metaphysical dispute; it specifies the strongest intelligible version of the $N^*$ claim within it.
 
-### Objection 7: The circuit analogy exaggerates the maturity of the theory
+### Objection 8: The circuit analogy exaggerates the maturity of the theory
 
 The analogy concerns a target epistemic state, not present evidential parity. Electrical component laws are mature; the $N^*$ identity and its operationalizations are not. The research program succeeds only if training on its constructs eventually supports reliable readout, intervention, fault diagnosis, and transport across cases. Failure to achieve that competence would count against the claim of schematic legibility.
 
@@ -283,6 +313,8 @@ The familiar complaint against reductive materialism is that no inventory of phy
 The $N^*$ program proposes a different kind of physical description. It first identifies a candidate causal individual. It then asks whether a content is irreducibly integrated, counterfactually available across that individual, recurrently maintained, and actually realized in a viable regime. The character extension asks how the admitted content occupies and moves through a structured causal geometry. These are not independent signs placed near an occult phenomenal event. On the constitutive reading, they are the schematic organization of the event.
 
 An electrical expert sees more than ink because a schematic has component semantics, operating conditions, compositional consequences, and a fault map. In the same way, a trained $N^*$ reader should see more than a conjunction of scores. The reader should reconstruct a bearer, a unified system-level content, a bounded temporal presence, and a realized operating episode; predict what disappears when a role is removed; and know where evidence ends and the identity hypothesis begins.
+
+The observer need not undergo the candidate's experience in order to observe that experience is occurring. What remains private is first-person acquaintance with the token episode, not necessarily the fact that the episode is instantiated. Asking for more would ask one experiencer to experience another's numerically distinct experience while both remain distinct experiencers. That is not a higher evidential standard. It is a contradiction in the specification of the test.
 
 The resulting claim is neither that visualization proves consciousness nor that the hard problem has been dissolved by analogy. It is more precise:
 
