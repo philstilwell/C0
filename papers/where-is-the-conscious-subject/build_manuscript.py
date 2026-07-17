@@ -36,6 +36,7 @@ PAPER_PREVIEW_PAGE_BREAK = os.environ.get("PAPER_PREVIEW_PAGE_BREAK", "0") == "1
 
 TABLE_WIDTHS = {
     ("Field", "Required entry"): (0.25, 0.75),
+    ("Element", "Schematic reading", "Failure made visible"): (0.10, 0.45, 0.45),
     ("Status", "Formal condition", "Interpretation"): (0.20, 0.30, 0.50),
     (
         "Term or symbol",

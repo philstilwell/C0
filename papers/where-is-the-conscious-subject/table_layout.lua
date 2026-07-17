@@ -2,6 +2,7 @@
 
 local layouts = {
   ["Field|Required entry"] = {0.25, 0.75},
+  ["Element|Schematic reading|Failure made visible"] = {0.10, 0.45, 0.45},
   ["Status|Formal condition|Interpretation"] = {0.20, 0.30, 0.50},
   ["Term or symbol|Role in the framework|Interpretive guardrail"] = {0.22, 0.28, 0.50},
   ["Stage|Required action|Failure output|Guardrail"] = {0.12, 0.30, 0.20, 0.38},
