@@ -359,3 +359,5 @@ Stilwell, P. (2026d). *Consciousness without report: What system-wide availabili
 Stilwell, P. (2026e). *From phenomenal presence to phenomenal character: A dynamical-geometry extension of the N\* model* [Manuscript].
 
 Stilwell, P. (2026f). *Ablating N\*: Does every conjunct earn its place?* [Manuscript].
+
+**Central paper and related publications:** <https://philstilwell.github.io/C0/>
