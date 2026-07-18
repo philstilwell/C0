@@ -120,11 +120,13 @@ def set_paragraph_shading(paragraph, fill: str) -> None:
 def style_document() -> None:
     document = Document(RAW_DOCX)
     document.core_properties.title = "Teaching Cø / N*: A Graduate Instructor's Manual"
-    document.core_properties.subject = "Lecture notes, theory placement, validation arguments, and teaching materials"
+    document.core_properties.subject = (
+        "Expanded lecture notes, theory placement, collaborative exercises, validation arguments, and teaching materials"
+    )
     document.core_properties.author = "Based on the Cø / N* research program of Phil Stilwell"
     document.core_properties.keywords = (
         "consciousness; phenomenal presence; N*; teacher manual; graduate course; "
-        "integration; availability; recurrence; system boundaries; indeterminacy"
+        "integration; availability; recurrence; system boundaries; indeterminacy; collaborative learning"
     )
 
     settings = document.settings._element
@@ -233,7 +235,7 @@ def style_document() -> None:
             or (text.startswith("Appendix ") and not text.startswith("Appendix A."))
         ):
             paragraph.paragraph_format.page_break_before = True
-        if paragraph.style.name == "Heading 2" and text.startswith("5. The 14-session sequence"):
+        if paragraph.style.name == "Heading 2" and text.startswith("6. The 14-session sequence"):
             paragraph.paragraph_format.page_break_before = True
         if paragraph.style.name == "Heading 3" and text == "Capstone rubric":
             paragraph.paragraph_format.page_break_before = True
