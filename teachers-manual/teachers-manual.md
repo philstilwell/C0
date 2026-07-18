@@ -36,10 +36,10 @@ lang: en-US
 | [Appendix B](#appendix-b) | Problem sets, answer guides, rubrics, and collaborative assessment | 108 |
 | [Appendix C](#appendix-c) | Capstone preregistration, staged peer review, and rubric | 114 |
 | [Appendix D](#appendix-d) | Nine reusable instructor worksheets | 121 |
-| [Appendix E](#appendix-e) | Six progressive-disclosure collaborative case packets | 125 |
-| [Appendix F](#appendix-f) | Glossary and notation guardrails | 129 |
-| [Appendix G](#appendix-g) | Primary corpus and selected contextual readings | 135 |
-| [Appendix H](#appendix-h) | Session-ready synthetic materials, instructor keys, scaling, and accessible delivery alternatives | 138 |
+| [Appendix E](#appendix-e) | Six progressive-disclosure collaborative case packets | 130 |
+| [Appendix F](#appendix-f) | Glossary and notation guardrails | 134 |
+| [Appendix G](#appendix-g) | Primary corpus and selected contextual readings | 140 |
+| [Appendix H](#appendix-h) | Session-ready synthetic materials, instructor keys, scaling, and accessible delivery alternatives | 143 |
 
 \newpage
 
@@ -3674,7 +3674,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 
 ## Appendix D. Reusable Instructor Worksheets {#appendix-d}
 
+These nine worksheets are reusable analytic records rather than session-specific handouts. Print or distribute each worksheet as a separate page, select only the forms needed for the assigned task, and preserve completed copies as part of the course's reasoning and revision record. The short introduction above each form states its proper use and the inference it is designed to discipline.
+
 ### Worksheet 1. Complete case-classification record
+
+Use this form after a team has received the complete evidence set for a case. It forces students to keep the target, candidate boundary, component results, evidential license, final scientific output, and any practical action separate. During progressive disclosure, record provisional judgments on Worksheet 8 and transfer only the final licensed result here.
 
 | Field | Entry |
 |---|---|
@@ -3691,7 +3695,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 | Most informative next study |  |
 | Separate practical-action note |  |
 
+\newpage
+
 ### Worksheet 2. Theory-comparison grid
+
+Use this grid before asking which theory a case favors. Students must compare matched explananda and current, versioned rivals; an ordinary agreement case is not enough. Require a diagnostic case and a direct falsifier for both sides before permitting an overall comparative judgment.
 
 | Question | Cø / N* | Rival theory |
 |---|---|---|
@@ -3706,7 +3714,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 | Unique diagnostic case |  |  |
 | Direct falsifier |  |  |
 
+\newpage
+
 ### Worksheet 3. Boundary audit
+
+Use this form whenever the identity, scale, or persistence of the candidate system is contestable. Complete candidate discovery and identification assumptions before inspecting consciousness-linked component outcomes. If a reasonable specification changes the result, record the reversal rather than selecting the favorable boundary.
 
 | Step | Required record |
 |---|---|
@@ -3724,7 +3736,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 | Stability | Cross-specification mapping and result |
 | Boundary status | Unique, multiple, nested, none, or indeterminate |
 
+\newpage
+
 ### Worksheet 4. Component-necessity audit
+
+Use this form to test whether one conjunct earns its place against a frozen full model and a declared ablated rival. Keep profile-level diagnostic disagreement distinct from final bearer-output disagreement, and verify anchor independence before interpreting predictive improvement. A coupled or unlicensed intervention is not evidence of selective necessity.
 
 | Question | Entry |
 |---|---|
@@ -3741,7 +3757,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 | Specification stability |  |
 | Status: indispensable, redundant, coupled, indeterminate, unlicensed |  |
 
+\newpage
+
 ### Worksheet 5. Phenomenal-character bridge
+
+Use this form only after the presence gate has produced a licensed positive result. The worksheet tests whether independently measured phenomenal relations track the candidate's causal geometry and its deformations. A failed or symmetry-limited bridge leaves phenomenal presence intact while restricting the character claim.
 
 | Field | Entry |
 |---|---|
@@ -3758,7 +3778,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 | Transport license |  |
 | Bridge outcome |  |
 
+\newpage
+
 ### Worksheet 6. Schematic-legibility check
+
+Use this checklist to assess whether a model can be reconstructed, applied, criticized, and fault-localized by readers who did not design it. Evaluate each condition on held-out material under frozen role definitions. Schematic legibility supports public teachability and error diagnosis; it does not by itself confirm the theory.
 
 | Condition | Evidence |
 |---|---|
@@ -3769,7 +3793,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 | Teachability | Independent readers agree on held-out cases |
 | Transport | The role profile survives materially different realizations when appropriate |
 
+\newpage
+
 ### Worksheet 7. Collaborative argument map
+
+Use this form to prepare a structured controversy, skeptical panel, or adversarial design review. Teams reconstruct the strongest available argument and rival before recording diagnostic disagreement, outcome rules, and revision commitments. Collect individual confidence judgments privately before and after discussion so group convergence does not erase dissent.
 
 | Field | Entry |
 |---|---|
@@ -3786,7 +3814,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 | Residual conceptual or metaphysical pressure |  |
 | Individual pre- and post-discussion confidence |  |
 
+\newpage
+
 ### Worksheet 8. Progressive evidence record
+
+Use one row immediately after each evidence release and before the next reveal is distributed. Teams must state whether their update reflects a change in the system evidence or only a change in the license to infer from it. The final row should explain the complete revision path, not merely repeat the final verdict.
 
 | Evidence round | Provisional output | What changed? | System change or license change? | Next discriminating evidence |
 |---|---|---|---|---|
@@ -3796,7 +3828,11 @@ Score each dimension at one of four anchored levels: **complete and executable**
 | Validity, conflict, and anchors |  |  |  |  |
 | Final |  |  |  |  |
 
+\newpage
+
 ### Worksheet 9. Peer-review disposition log
+
+Use this log whenever another team, reviewer, or skeptical panel comments on a design. Every criticism receives a classification and an explicit disposition: accepted criticisms must produce a visible protocol change, while rejected criticisms require a substantive reason. Retain the log with the revised artifact so that improvement remains auditable.
 
 | Criticism | Source role or team | Fatal, strengthening, or optional | Accepted? | Protocol change or reason for rejection |
 |---|---|---|---|---|

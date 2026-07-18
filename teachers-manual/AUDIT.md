@@ -193,7 +193,7 @@ The repository README now links directly to the manual, student pack, individual
 
 | Field | Verified value |
 |---|---|
-| Build timestamp | 2026-07-18T22:35:47.043445+00:00 |
+| Build timestamp | 2026-07-18T22:49:15.118470+00:00 |
 | Manifest | schema 2, edition 2.1 |
 | Corpus baseline | Core v2.0 (2026-07-08) plus repository companion manuscripts (2026-07-18) |
 | Python | 3.12.13 |
@@ -208,14 +208,14 @@ The repository README now links directly to the manual, student pack, individual
 
 | Artifact | Pages | Bytes | SHA-256 |
 |---|---:|---:|---|
-| Instructor manual PDF | 176 | 4,525,802 | `901cf07add066797254cf53f22ed0faa984d451d574a5a4bffc5cfd7b451cc98` |
-| Instructor manual DOCX | — | 5,838,204 | `d70b6cee0a0af3900acd95a0562aa93ec18c29a03890e6ababd5682d8fdd99b9` |
-| Student base PDF | 27 | 610,483 | `82a76a08249b6da1d0b24700adb7fd40053998763468a3f3adfa7b0031febda8` |
-| Student base DOCX | — | 44,406 | `dd0b0edabb8267e4fd040ec340ffd596e6e67d3b151815dff4b64e0ea72d374c` |
-| Reveal master PDF | 52 | 357,954 | `87a386ca27b4c4dfe68dedc6857f290c9d5438afac2fdddb41541d6885263dd2` |
-| Reveal master DOCX | — | 25,466 | `91b0752bb288fee4b71a9f16c98ee7f14dabaf1d32bc5aa986c6bae83f91d6ae` |
+| Instructor manual PDF | 181 | 4,536,576 | `423280794101eebee66fc35336baf0fd70882ff78a54febe48d1a4cfe221f900` |
+| Instructor manual DOCX | — | 5,839,891 | `1962b4c376b61827c3419f29e4f9247d1c323712bc5e5e688367f5ab12cbddda` |
+| Student base PDF | 27 | 610,483 | `565de788ec73c8269bdc3de0c05a62b76ff0ecf73f98435eae06fe1ca767759b` |
+| Student base DOCX | — | 44,405 | `edbfee0c440718a328cd46a1ff96b8846b81b555d0ea5b92b3fbc6f1fdd70092` |
+| Reveal master PDF | 52 | 357,954 | `aa5ae4503fb546307c8f95fb2e7049f12ee1c3ad0078f676e9692d77116a4c6d` |
+| Reveal master DOCX | — | 25,465 | `cea860e97c17be25a1ae5305927a3743ac124e673c6f10d749a3226737f95187` |
 
-The three master PDFs total **255 inspected pages**. The individual reveal directory contains exactly **50 additional one-page PDFs**; every file hash matches its manifest record.
+The three master PDFs total **260 inspected pages**. The individual reveal directory contains exactly **50 additional one-page PDFs**; every file hash matches its manifest record.
 
 ### Audience and content checks
 
@@ -241,11 +241,11 @@ The three master PDFs total **255 inspected pages**. The individual reveal direc
 | Fonts | Requested Liberation families present; all font programs embedded and Unicode-mapped |
 | Visible source artifacts | None detected |
 | Blank/near-blank pages | None |
-| Page rendering | 176/176 instructor, 27/27 student, and 52/52 reveal pages rendered at 100 dpi |
+| Page rendering | 181/181 instructor, 27/27 student, and 52/52 reveal pages rendered at 100 dpi |
 | Edge-ink scan | No ink within 8 px of a page edge; minimum instructor left/top/right/bottom margins were 77/30/49/42 px |
 | Human visual audit | Every rendered page inspected; no clipped text, table, figure, or formula; no unacceptable overlap or stranded heading |
 
-The visual audit found one readable but crowded capstone pipeline. It was replaced with a shorter shared-foundation branch diagram and the affected pages, contents table, and complete PDFs were rebuilt and reinspected.
+The visual audit found one readable but crowded capstone pipeline. It was replaced with a shorter shared-foundation branch diagram and the affected pages, contents table, and complete PDFs were rebuilt and reinspected. A subsequent worksheet-layout pass placed Worksheets 1–9 on dedicated pages 121–129, added an explanatory introduction above every form, expanded writable rows where appropriate, updated all downstream contents references, and reran the complete visual and integrity audit.
 
 ## 5. Residual limitations and recommendations
 

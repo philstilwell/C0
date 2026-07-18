@@ -5,12 +5,12 @@
     "body": "Liberation Serif",
     "display": "Liberation Sans"
   },
-  "generated_at_utc": "2026-07-18T22:35:47.043445+00:00",
+  "generated_at_utc": "2026-07-18T22:49:15.118470+00:00",
   "outputs": {
     "instructor": {
       "files": {
-        "output/doc/teaching-c0-n-star-manual.docx": "d70b6cee0a0af3900acd95a0562aa93ec18c29a03890e6ababd5682d8fdd99b9",
-        "output/pdf/teaching-c0-n-star-manual.pdf": "901cf07add066797254cf53f22ed0faa984d451d574a5a4bffc5cfd7b451cc98"
+        "output/doc/teaching-c0-n-star-manual.docx": "1962b4c376b61827c3419f29e4f9247d1c323712bc5e5e688367f5ab12cbddda",
+        "output/pdf/teaching-c0-n-star-manual.pdf": "423280794101eebee66fc35336baf0fd70882ff78a54febe48d1a4cfe221f900"
       },
       "generated_markdown_sha256": "95584ab01364561c038f662857b0d2ec2c5681d5ceda95388f231cfabfebd090",
       "included_block_ids": [
@@ -124,8 +124,8 @@
     },
     "reveal": {
       "files": {
-        "output/doc/c0-n-star-instructor-controlled-reveal-sheets.docx": "91b0752bb288fee4b71a9f16c98ee7f14dabaf1d32bc5aa986c6bae83f91d6ae",
-        "output/pdf/c0-n-star-instructor-controlled-reveal-sheets.pdf": "87a386ca27b4c4dfe68dedc6857f290c9d5438afac2fdddb41541d6885263dd2"
+        "output/doc/c0-n-star-instructor-controlled-reveal-sheets.docx": "cea860e97c17be25a1ae5305927a3743ac124e673c6f10d749a3226737f95187",
+        "output/pdf/c0-n-star-instructor-controlled-reveal-sheets.pdf": "aa5ae4503fb546307c8f95fb2e7049f12ee1c3ad0078f676e9692d77116a4c6d"
       },
       "generated_markdown_sha256": "21c66eac61062afb9bdd0a11b1cc5fbf98442f936a2a5fb34dda487911dc6f1d",
       "included_block_ids": [
@@ -183,8 +183,8 @@
     },
     "student": {
       "files": {
-        "output/doc/c0-n-star-student-session-resource-pack.docx": "dd0b0edabb8267e4fd040ec340ffd596e6e67d3b151815dff4b64e0ea72d374c",
-        "output/pdf/c0-n-star-student-session-resource-pack.pdf": "82a76a08249b6da1d0b24700adb7fd40053998763468a3f3adfa7b0031febda8"
+        "output/doc/c0-n-star-student-session-resource-pack.docx": "edbfee0c440718a328cd46a1ff96b8846b81b555d0ea5b92b3fbc6f1fdd70092",
+        "output/pdf/c0-n-star-student-session-resource-pack.pdf": "565de788ec73c8269bdc3de0c05a62b76ff0ecf73f98435eae06fe1ca767759b"
       },
       "generated_markdown_sha256": "2750b0129a196b1e3902eba93efc75474858a1570e5a8c7ec9e9dc5e6285b6fb",
       "included_block_ids": [
@@ -235,8 +235,8 @@
     "instructor": {
       "alt_text_count": 10,
       "bookmarks": 405,
-      "docx_bytes": 5838204,
-      "docx_paragraphs": 2199,
+      "docx_bytes": 5839891,
+      "docx_paragraphs": 2209,
       "docx_tables": 102,
       "font_report": {
         "all_embedded": true,
@@ -264,14 +264,14 @@
       "internal_links": 27,
       "media_count": 5,
       "near_blank_pages": [],
-      "pages": 176,
-      "pdf_bytes": 4525802,
+      "pages": 181,
+      "pdf_bytes": 4536576,
       "pdf_outline_entries": 405
     },
     "reveal": {
       "alt_text_count": 0,
       "bookmarks": 51,
-      "docx_bytes": 25466,
+      "docx_bytes": 25465,
       "docx_paragraphs": 119,
       "docx_tables": 6,
       "font_report": {
@@ -317,7 +317,7 @@
     "student": {
       "alt_text_count": 0,
       "bookmarks": 54,
-      "docx_bytes": 44406,
+      "docx_bytes": 44405,
       "docx_paragraphs": 239,
       "docx_tables": 18,
       "font_report": {
@@ -708,10 +708,10 @@
     "papers/from-phenomenal-presence-to-phenomenal-character/inference-architecture.png": "ae8b0006d448e190b0f0385823f92dfe993e94f998b9192b04090feabcc7caad",
     "papers/where-is-the-conscious-subject/boundary-first-workflow.png": "5beb853f9180b341bd49087e295fadf0edc72567c07f77c6b45421f89456f323",
     "teachers-manual/README.md": "eafbf76fb9e9b456974ac15feafddfecb7331c9cc0827dfb69cb5d2333f81f71",
-    "teachers-manual/build_teachers_manual.py": "196ed156b189070aa18be7d1f96a04f0bc3e7e90519b1fb252136bfe8f79a4bf",
+    "teachers-manual/build_teachers_manual.py": "12311e423daf77ed3ff7b8b0466bbc221ecc8256f1dc2a25eb3d38147bd0a91a",
     "teachers-manual/requirements-teachers-manual.txt": "2d2cfcf730a433d8b5e3b37cdde8eb2af3f67f2ceec91d6d32daabca7d6b0319",
     "teachers-manual/session-resource-pack.md": "456176d40127bd0e6893748099ac17ef9a6868da93d4e62332f162608e0e2ec5",
-    "teachers-manual/teachers-manual.md": "473deace3a706332ef000a06740ad40a3a9cfec20b90bea0be1f1934e0557507"
+    "teachers-manual/teachers-manual.md": "5945bdc4bbd5c4652a86f2de8e3e1ad5be65465864010c3327d599ac3e8fd994"
   },
   "tools": {
     "libreoffice": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",

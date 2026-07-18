@@ -18,7 +18,7 @@ import tempfile
 from zipfile import ZipFile
 
 from docx import Document
-from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_TABLE_ALIGNMENT
+from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_ROW_HEIGHT_RULE, WD_TABLE_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
@@ -603,8 +603,20 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
         block.paragraph_format.space_before = Pt(7)
         block.paragraph_format.space_after = Pt(7)
 
+    worksheet_intro_pending = False
     for paragraph in document.paragraphs:
         text = paragraph.text.strip()
+        if (
+            audience == "instructor"
+            and paragraph.style.name == "Heading 3"
+            and text.startswith("Worksheet ")
+        ):
+            if not text.startswith("Worksheet 1."):
+                paragraph.paragraph_format.page_break_before = True
+            worksheet_intro_pending = True
+        elif worksheet_intro_pending and text:
+            paragraph.paragraph_format.keep_with_next = True
+            worksheet_intro_pending = False
         if (
             audience == "reveal"
             and paragraph.style.name == "Heading 2"
@@ -641,11 +653,39 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
         if not table.rows:
             continue
         is_contents = table.cell(0, 0).text.strip() == "Part or session"
+        header_signature = tuple(cell.text.strip() for cell in table.rows[0].cells)
+        worksheet_row_heights = {
+            ("Field", "Entry"): 0.48,
+            ("Question", "Cø / N*", "Rival theory"): 0.62,
+            ("Step", "Required record"): 0.42,
+            ("Question", "Entry"): 0.48,
+            ("Condition", "Evidence"): 0.72,
+            (
+                "Evidence round",
+                "Provisional output",
+                "What changed?",
+                "System change or license change?",
+                "Next discriminating evidence",
+            ): 0.88,
+            (
+                "Criticism",
+                "Source role or team",
+                "Fatal, strengthening, or optional",
+                "Accepted?",
+                "Protocol change or reason for rejection",
+            ): 1.18,
+        }
+        worksheet_row_height = (
+            worksheet_row_heights.get(header_signature) if audience == "instructor" else None
+        )
         if is_contents and len(table.columns) == 3:
             table.autofit = False
         repeat_table_header(table.rows[0])
         for row_index, row in enumerate(table.rows):
             prevent_row_split(row)
+            if worksheet_row_height is not None and row_index > 0:
+                row.height = Inches(worksheet_row_height)
+                row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
             for column_index, cell in enumerate(row.cells):
                 if is_contents and len(row.cells) == 3:
                     cell.width = (Inches(2.0), Inches(4.25), Inches(0.5))[column_index]
