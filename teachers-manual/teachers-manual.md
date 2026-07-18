@@ -1,8 +1,9 @@
 ---
 title: "Teaching Cø / N*: A Graduate Instructor's Manual"
 subtitle: "Expanded lecture notes, comparative theory placement, collaborative learning, validation arguments, and course materials for the network-dynamics theory of phenomenal consciousness"
-author: "Based on the Cø / N* research program of Phil Stilwell"
-date: "Instructor edition - July 18, 2026"
+author: "Phil Stilwell"
+date: "Audited instructor edition 2.1 - July 18, 2026"
+version: "2.1"
 lang: en-US
 ---
 
@@ -10,42 +11,45 @@ lang: en-US
 
 # Contents
 
-| Part or session | Focus |
-|---|---|
-| Part I. Course Architecture | Theory in one page, theory placement, outcomes, collaboration framework, format, and sequence |
-| Session 1 | The explanandum and the theory landscape |
-| Session 2 | The core biconditional and network-dynamics model |
-| Session 3 | Where is the conscious subject? |
-| Session 4 | Viability and integration: realization and unity |
-| Session 5 | Consciousness without report: system-wide availability |
-| Session 6 | Recurrent stability and temporal presence |
-| Session 7 | What does the evidence license? |
-| Session 8 | Does every conjunct earn its place? |
-| Session 9 | From phenomenal presence to phenomenal character |
-| Session 10 | Reading consciousness from the schematic |
-| Session 11 | Biological and clinical applications |
-| Session 12 | Nonhuman animals, organoids, and artificial systems |
-| Session 13 | Differentiation, validation, and the strongest objections |
-| Session 14 | Capstone adversarial research design |
-| Part III. Instructor Argument Bank | Nine core arguments, collaborative argument clinics, validation program, and objection matrix |
-| Part IV. Reproducible Course Materials | Instructor-ready assessment and collaboration resources |
-| Appendix A | Corpus-to-course concept coverage audit |
-| Appendix B | Problem sets, answer guides, rubrics, and collaborative assessment |
-| Appendix C | Capstone preregistration, staged peer review, and rubric |
-| Appendix D | Nine reusable instructor worksheets |
-| Appendix E | Six progressive-disclosure collaborative case packets |
-| Appendix F | Glossary and notation guardrails |
-| Appendix G | Primary corpus and selected contextual readings |
+| Part or session | Focus | PDF page |
+|---|---|---:|
+| [Preface](#preface) | Purpose, instructor stance, notation, and use of the resource pack | 3 |
+| [Part I. Course Architecture](#part-i) | Theory in one page, theory placement, outcomes, collaboration framework, format, and sequence | 5 |
+| [Part II. Lecture Notes and Teaching Materials](#part-ii) | Fourteen complete graduate-seminar sessions | 17 |
+| [Session 1](#session-1) | The explanandum and the theory landscape | 17 |
+| [Session 2](#session-2) | The core biconditional and network-dynamics model | 22 |
+| [Session 3](#session-3) | Where is the conscious subject? | 29 |
+| [Session 4](#session-4) | Viability and integration: realization and unity | 36 |
+| [Session 5](#session-5) | Consciousness without report: system-wide availability | 41 |
+| [Session 6](#session-6) | Recurrent stability and temporal presence | 48 |
+| [Session 7](#session-7) | What does the evidence license? | 53 |
+| [Session 8](#session-8) | Does every conjunct earn its place? | 59 |
+| [Session 9](#session-9) | From phenomenal presence to phenomenal character | 66 |
+| [Session 10](#session-10) | Reading consciousness from the schematic | 72 |
+| [Session 11](#session-11) | Biological and clinical applications | 77 |
+| [Session 12](#session-12) | Nonhuman animals, organoids, and artificial systems | 82 |
+| [Session 13](#session-13) | Differentiation, validation, and the strongest objections | 87 |
+| [Session 14](#session-14) | Capstone adversarial research design | 93 |
+| [Part III. Instructor Argument Bank](#part-iii) | Nine core arguments, collaborative argument clinics, validation program, and objection matrix | 98 |
+| [Part IV. Reproducible Course Materials](#part-iv) | Instructor-ready assessment and collaboration resources | 104 |
+| [Appendix A](#appendix-a) | Corpus-to-course concept coverage audit | 104 |
+| [Appendix B](#appendix-b) | Problem sets, answer guides, rubrics, and collaborative assessment | 108 |
+| [Appendix C](#appendix-c) | Capstone preregistration, staged peer review, and rubric | 114 |
+| [Appendix D](#appendix-d) | Nine reusable instructor worksheets | 121 |
+| [Appendix E](#appendix-e) | Six progressive-disclosure collaborative case packets | 125 |
+| [Appendix F](#appendix-f) | Glossary and notation guardrails | 129 |
+| [Appendix G](#appendix-g) | Primary corpus and selected contextual readings | 135 |
+| [Appendix H](#appendix-h) | Session-ready synthetic materials, instructor keys, scaling, and accessible delivery alternatives | 138 |
 
 \newpage
 
-# Preface
+# Preface {#preface}
 
-This manual is designed to help an instructor teach a new theory without either oversimplifying it or treating its central claims as already established. The Cø / N* research program proposes a precise candidate account of minimal phenomenal presence and then surrounds that core claim with methodological disciplines: fix the candidate system before measuring it; distinguish causal availability from report; separate scientific indeterminacy from invalid inference; audit every conjunct against simpler rivals; extend presence to phenomenal character only through an independently tested bridge; and explain what it would mean for the model to become structurally intelligible.
+This manual is designed to help an instructor teach a new theory without either oversimplifying it or treating its central claims as already established. The Cø / N* research program proposes a precise candidate account of minimal phenomenal presence and then surrounds that core claim with methodological disciplines: generate and freeze candidate systems before inspecting consciousness outcomes, then determine the final theory-relative boundary on held-out role evidence; distinguish causal availability from report; separate scientific indeterminacy from invalid inference; audit every conjunct against simpler rivals; extend presence to phenomenal character only through an independently tested bridge; and explain what it would mean for the model to become structurally intelligible.
 
 The intended audience is graduate students in philosophy of mind, consciousness science, cognitive neuroscience, complex systems, artificial intelligence, or philosophy of science. The register assumes intellectual maturity but not prior allegiance to a particular consciousness theory. Mathematical expressions are used to make commitments visible. Every formal claim should be translated into plain language, linked to a scientific purpose, and paired with a failure condition.
 
-The manual supports a 14-session seminar. A shorter course can use Sessions 1, 2, 3, 5, 7, 8, 9, 10, and 13 as a nine-session core. A four-session workshop can use Sessions 1-2, 3-6 as a single component session, 7-8, and 9-14 as a synthesis session. Each full session contains:
+The manual supports a 14-session seminar. A nine-session core can use Sessions 1, 2, 3, 5, 7, 8, 9, 10, and 13 only if the viability and integration insert from Session 4 is moved into Session 2 and the recurrence insert from Session 6 is moved into Session 5. A four-session workshop requires the condensed schedule in Part I; merely assigning Sessions 3-6 or 9-14 as one meeting would not be a supported implementation. Each full session contains:
 
 - learning objectives;
 - instructor preparation;
@@ -63,6 +67,8 @@ The manual treats the seven papers as one research constellation rather than sev
 
 The expanded lecture notes are an instructor resource bank, not a script that must be read in full during one meeting. The timed plan identifies the material to emphasize in a 110-minute seminar. Worked examples can be assigned before class, moved to a discussion section, or used as replacement material when students need a slower formal explanation. Protect the collaborative block: it is where students demonstrate that they can apply the distinctions rather than merely recognize them.
 
+Appendix H supplies the synthetic cards, profiles, matrices, result variants, and instructor keys required by the session exercises. It is deliberately separated from the conceptual exposition so that an instructor can release student-facing evidence progressively without exposing the key. Every synthetic value is pedagogical rather than an empirical estimate.
+
 ## Instructor stance
 
 Teach the theory in the conditional and adversarial mood. Students should be able to state what the model claims, why each element is included, what would count for and against it, and where its present evidence is incomplete. A successful course does not produce automatic agreement with the theory. It produces readers capable of evaluating it fairly and designing studies that could genuinely change its status.
@@ -78,15 +84,17 @@ Use four recurring questions:
 
 The papers use both Cø and $C_0$ for minimal phenomenal presence. This manual uses **Cø** in prose and $C_0$ in formulas. The three components are written $N_1$, $N_2$, and $N_3$. The bundle is $N^*=N_1\land N_2\land N_3$. Viability is $V$. A positive classification is never treated as a direct observation of another subject's phenomenology; it is a licensed scientific attribution under a declared model and validity envelope.
 
+The source corpus reuses a few letters in local contexts. This manual reserves $\mathsf V_G$ and $\mathsf E_G$ for graph vertices and edges so that $\mathcal V$ can denote a validity envelope and $E$ assessment evidence. Report $R$ and attention or task access $A$ belong to the core-model context; a removed component set $A$ belongs only to grouped ablation. The symbols $D,C,F,E$ denote decomposable semantics, compositional readout, fault localization, and evidential independence only inside the schematic-legibility criterion. Likewise, observational universe $\Omega$ differs from route robustness $\Omega_k$; preparation burden $\Gamma$ differs from diagnostic coverage $\Gamma_k$; and temporal character $\Pi_c$ differs from positive-specification support $\Pi_k^+$. State the prose label whenever a symbol changes namespace. Appendix F supplies the full crosswalk.
+
 \newpage
 
-# Part I. Course Architecture
+# Part I. Course Architecture {#part-i}
 
 ## 1. The theory in one page
 
 The target is **minimal phenomenal presence**: the fact that there is something it is like for a candidate system to undergo a state. The target does not require verbal report, explicit attention, intelligence, self-reflection, autobiographical memory, or metacognitive ownership.
 
-The core conjecture is:
+The source corpus states the core profile conjecture as:
 
 $$
 H_{C_0}:\qquad
@@ -95,34 +103,70 @@ V(S;\mathcal R,\Delta)\land
 \Longleftrightarrow C_0(S,c;\mathcal R,\Delta).
 $$
 
-In plain language: for a boundary-qualified candidate system $S$, content $c$, operating regime $\mathcal R$, and evaluation interval $\Delta$, minimal phenomenal presence obtains exactly when the system is independently viable and realizes integration or synergy, report-independent system-wide availability, and recurrent stability together.
+In plain language: for a candidate system $S$, content $c$, operating regime $\mathcal R$, and evaluation interval $\Delta$, the source identifies minimal phenomenal presence with joint viability, integration or synergy, report-independent system-wide availability, and recurrent stability. The displayed formula suppresses the boundary-selection step, which matters whenever a role-complete candidate contains a smaller role-complete candidate.
 
 The components divide explanatory labor:
 
 | Element | Role | Question answered | Characteristic false positive blocked |
 |---|---|---|---|
-| Boundary qualification $B_S$ | Bearer | What system is being tested? | A score calculated over a convenient or shifting node set |
+| Test-referent qualification $S\in\mathcal P_\Theta$ | Bearer for component and biconditional tests | What stable causally admissible system is being tested? | A score calculated over a convenient or shifting node set |
 | $V$ | Realized operation | Can the candidate sustain the relevant dynamics in this regime? | An inert diagram, failed preparation, or out-of-domain application |
 | $N_1$ | Unity | Is the content irreducibly joint rather than an aggregate of independent events? | Coactivation, common drive, or a heap of local signals |
 | $N_2$ | System-level availability | Can the content causally modulate functionally diverse recipients without report being required? | Passive diffusion, output behavior, or mere widespread activation |
 | $N_3$ | Temporal presence | Is the content maintained through bounded recurrent dynamics? | An evanescent feedforward transient or pathological fixation |
 | $C_0$ | Phenomenal presence | Is there something it is like for the candidate in this state? | Confusing presence with access, report, or character |
 
-The biconditional is intentionally risky. Its sufficiency direction is challenged by a viable system that passes all three conditions while strong independent evidence counts against phenomenal presence:
+**Bearer-complete synthesis convention.** Reading the core, boundary, and ablation papers together exposes a necessary refinement. In the next equations, the predicates are underlying theoretical properties, not thresholded observations or database labels. First define the ontic bundle profile on every causally admissible referent $S\in\mathcal P_{\Theta,\mathrm{ont}}$:
 
 $$
-V\land N^*\land\neg C_0.
+H_*^{\mathrm{ont}}(S,c)=V^{\mathrm{ont}}(S)\land N_1^{\mathrm{ont}}(S,c)\land N_2^{\mathrm{ont}}(S,c)\land N_3^{\mathrm{ont}}(S,c).
 $$
 
-Its necessity direction is challenged by a well-supported conscious case in which one or more conditions are genuinely absent at the correct boundary, grain, regime, and time window:
+Then define the ontic positive-bearer set for content $c$:
 
 $$
-C_0\land\neg(V\land N^*).
+\mathcal B_{\min,\Theta,\mathrm{ont}}^+(c)=
+\operatorname{Min}_{\subseteq}
+\{S\in\mathcal P_{\Theta,\mathrm{ont}}:H_*^{\mathrm{ont}}(S,c)=1\},
+$$
+
+The bearer-complete ontological hypothesis applies only where the bearer relation is resolved - a unique minimum or a plurality that clears the declared separability criterion:
+
+$$
+\operatorname{Resolved}_B(c;\Theta)
+\Rightarrow
+\left[
+C_0(S,c;\Theta)
+\Longleftrightarrow
+S\in\mathcal B_{\min,\Theta,\mathrm{ont}}^+(c)
+\right].
+$$
+
+Evidence yields estimates $\widehat H_*$, $\widehat{\mathcal P}_\Theta$, and $\widehat{\mathcal B}_{\min,\Theta}^+$ plus positive, negative, indeterminate, or unlicensed statuses. Candidate reliability, $R_B$ stability, mappings, uncertainty, and separability license those estimates; they do not define the ontic target. If plural minima fail separability, the current program withholds subject attribution rather than deleting, merging, or selecting candidates by fiat. Failure to establish a pass never by itself becomes ontic nonmembership. A negative model prediction requires a licensed decisive component failure or a decisive minimality result on a resolved bearer domain. An indeterminate or unlicensed component or boundary leaves attribution unresolved.
+
+A licensed decisive failure of $V$ or one $N_i$ on a stable $\widehat{\mathcal P}_\Theta$ referent supports a negative bundle profile and blocks estimated positive-bearer membership; it does not retroactively erase the referent. Conversely, an estimated all-pass profile is not yet a positive subject attribution if a qualifying proper subsystem removes $S$ under inclusion-minimality. The larger system may contain a positive bearer without itself being that bearer. Requiring positive-bearer membership before permitting a negative or single-failure audit would be circular, while attributing $C_0$ to every all-pass member of $\mathcal P_\Theta$ would violate minimality. This bearer-complete formulation is therefore a synthesis convention and a needed amendment where the source papers otherwise pull in different directions. Later equations suppress the "ont" tag for readability; an unhatted $\mathcal B_{\min,\Theta}^+$ denotes the resolved minimal ontic bearer relation, while a hatted symbol denotes its evidence-relative estimate.
+
+Because $\mathcal B_{\min,\Theta}^+(c)$ is content-indexed, it first selects a bearer for a content or episode; it does not silently settle co-consciousness or diachronic subject identity. $C_0(S,c_i)$ and $C_0(S,c_j)$ support one subject across contents only when the same mapped minimal bearer persists or a preregistered joint-content rule passes. A study whose target is an episode-wide bearer should instead declare a content family $\mathcal C$ and an aggregation rule before defining $\mathcal B^+(\mathcal C,\Delta)$. This guardrail prevents simultaneous contents from fragmenting or merging subjects merely because they were analyzed one at a time.
+
+The bearer-complete biconditional is intentionally risky. Its sufficiency direction is challenged when a candidate survives every positive-bearer rule while strong independent evidence counts against phenomenal presence:
+
+$$
+\operatorname{Resolved}_B(c;\Theta)
+\land S\in\mathcal B_{\min,\Theta}^+(c)
+\land\neg C_0(S,c;\Theta).
+$$
+
+Its necessity direction is challenged by a well-supported case of $C_0(S,c)$ in which $S$ does not enter the positive-bearer set when $\Theta$, the $\mathcal P_\Theta$ candidate lattice, grain, regime, and time window are frozen and the bearer output is recomputed. A licensed component failure is one route to that nonmembership:
+
+$$
+C_0(S,c;\Theta)
+\land\operatorname{Resolved}_B(c;\Theta)
+\land S\notin\mathcal B_{\min,\Theta}^+(c).
 $$
 
 The research program adds six disciplines around this hypothesis:
 
-1. **Boundary first:** identify and freeze a sufficiently autonomous, inclusion-minimal candidate before applying the consciousness measure.
+1. **Boundary first:** use consciousness-independent discovery evidence to propose and freeze a stable causally admissible test-referent family; evaluate every referent's bundle profile on held-out evidence; then apply inclusion-minimality, separability, and stability to the all-pass set before any positive subject attribution. Candidate identity is upstream; positive-bearer status remains explicitly theory-relative.
 2. **Availability without report:** define $N_2$ through content-specific causal reach across functionally distinct recipients, not through speech, button presses, diffusion, or node count.
 3. **Four evidential outcomes:** distinguish positive, negative, indeterminate, and unlicensed results.
 4. **Component audit:** require every conjunct to outperform a leave-one-out rival on cases where the models actually disagree, using independent held-out anchors.
@@ -139,9 +183,9 @@ In the Closer To Truth taxonomy supplied with the project, its primary home is *
 
 | Theory family | What Cø / N* accepts | What it rejects or tests | Relation to the model |
 |---|---|---|---|
-| Integrated Information Theory (IIT) | Unity, irreducible joint structure, and the need to specify a causal complex | Integration alone as sufficient; use of the final consciousness quantity to select its own bearer | $N_1$ inherits the integration pressure but is only one conjunct |
-| Global Workspace / Global Neuronal Workspace (GWT/GNWT) | Broad availability to diverse processors | Report as constitutive, fixed prefrontal dominance, and observed ignition as sufficient | $N_2$ generalizes availability into a report-independent causal role |
-| Recurrent Processing Theory (RPT) | Feedback and temporal stabilization | Local recurrence alone as sufficient | $N_3$ makes recurrence necessary but joins it to unity and availability |
+| Integrated Information Theory (IIT) | Unity, irreducible joint structure, and the need to specify a causal complex | The present program does not treat integration as sufficient or use a theory-specific consciousness quantity as its independent candidate-generation rule | $N_1$ inherits the integration pressure but is only one conjunct; exact contrasts depend on the IIT version and measure |
+| Global Workspace / Global Neuronal Workspace (GWT/GNWT) | Broad availability to diverse processors | The model tests rather than assumes whether availability requires report-capable or executive recipients, a fixed anatomical locus, or one observed ignition signature | $N_2$ isolates availability as a report- and executive-independent causal role; overlap and divergence are version-specific |
+| Recurrent Processing Theory (RPT) | Feedback and temporal stabilization | Versions that treat local recurrence by itself as sufficient | $N_3$ makes recurrence necessary but joins it to unity and availability |
 | Predictive Processing / Free Energy | Hierarchical inference, precision, and self-organizing dynamics as possible implementations | Inference or error minimization as identical to consciousness | A potential implementation language for all three components |
 | Higher-Order and Metacognitive theories | Self-representation can enrich consciousness and support report | A higher-order representation as necessary for minimal $C_0$ | Placed at enriched consciousness $C_1$, not the minimal gate |
 | Attention Schema and self-model theories | Internal models can shape control, availability, and self-attribution | A self-model as an unstated minimal conjunct | Optional contributor to $N_2$ or $C_1$ unless evidence requires more |
@@ -156,6 +200,8 @@ In the Closer To Truth taxonomy supplied with the project, its primary home is *
 | Extended-mind and group-mind approaches | The skull is not an a priori causal boundary | Any reliable coupling, tool, or communication channel as part of one subject | Requires constitutive contribution, autonomy, minimality, and separability |
 | Electromagnetic or synchrony theories | Temporally coordinated distributed dynamics may help realize $N_1$ or $N_3$ | A field, frequency band, or synchrony relation as the identity condition | Weak implementation adjacency only |
 | Dualism, idealism, quantum, and anomalous theories | No core commitment is borrowed | Nonphysical substances, consciousness as fundamental reality, quantum collapse, or anomalous access | Outside the model's intended taxonomy |
+
+The principal anchors for this teaching placement are Albantakis et al. (2023) for IIT 4.0, Mashour et al. (2020) for GNWT, Lamme (2006) for recurrent processing, Fleming and Shea (2024) for quality-space computation, Friston et al. (2021) for Markov-blanket approaches, Butlin et al. (2023) and Bayne et al. (2024) for theory-derived consciousness indicators, and the landscape reviews by Seth and Bayne (2022), Storm et al. (2024), and Mudrik et al. (2025). The table is a target-and-pressure map, not a substitute for those sources. Before an adversarial comparison, freeze an exact dated version and attach a supporting section or page citation.
 
 The most important teaching point is that Cø / N* is a **mid-level bridge theory**. It is not a metaphysical solution to why experience exists, not a theory of report, not a complete model of self-consciousness, and not initially a full theory of phenomenal character. It proposes a causal-dynamical identity for minimal phenomenal presence and a disciplined research program for testing and extending that identity.
 
@@ -172,7 +218,9 @@ By the end of the course, students should be able to:
 7. use the diagnostic-set theorem to determine whether a study can identify component necessity;
 8. explain the two-layer architecture for phenomenal presence and phenomenal character;
 9. formulate the strongest objections to the theory and identify which are conceptual, empirical, or metaphysical;
-10. design an adversarial, preregisterable study whose result could support, revise, or refute part of the program.
+10. design an adversarial, preregisterable study whose result could support, revise, or refute part of the program;
+11. collaborate in versioned model reconstruction, adversarial criticism, dissent-preserving revision, and auditable synthesis; and
+12. separate scientific classification from clinical, ethical, or precautionary action while explaining how values and asymmetric losses affect decisions.
 
 ## 4. Suggested course format and assessment
 
@@ -192,6 +240,57 @@ By the end of the course, students should be able to:
 | Capstone preregistration and oral defense | 25% | Design and defend a falsifiable study or conceptual audit |
 
 **Seminar norm:** every positive claim must name its scope; every negative claim must state its negative-license conditions; every comparison must distinguish different explananda; and every proposed test must identify the case on which rival models disagree.
+
+### Assessment deployment specifications
+
+The following is a recommended adoption-ready specification. Instructors may change lengths or due dates, but should preserve the distinction between individual and shared evidence of learning. The problem sets in Appendix B are formative by default and do not add a seventh weighted category.
+
+| Assessment | Submission specification | Schedule and permitted collaboration | Feedback and revision rule |
+|---|---|---|---|
+| Weekly analytic memos | Ten individual memos of 500-700 words; each reconstructs one claim, identifies an auxiliary assumption, and states a licensed falsifier | One after each of Sessions 1-10; discussion is allowed, but prose and final argument are individual; score the best eight | Use the analytic-writing rubric; return one misconception code and one next-step prompt; one memo may be revised after feedback |
+| Theory-comparison brief | Individual 1,500-2,000-word matched-target comparison using the exact Cø / N* claim and one dated, source-cited rival version | Proposal after Session 4; final after Session 6; peer source-checking is allowed | Require a version card, one agreement case, one diagnostic disagreement, and symmetric revision rules; one focused revision is permitted |
+| Collaborative case portfolio | Four shared artifacts plus a 250-350-word individual addendum for each; at least one artifact must address character or schematic legibility | Select artifacts from Sessions 3, 5, 7, and one of 9, 10, 12, or 13; revise two after cross-team review | Grade 60% shared scientific product, 25% individual accountability, and 15% documented collaborative process using Appendix B |
+| Boundary and classification practicum | Individual 75-minute analysis of a previously unseen synthetic case using Worksheets 1 and 3 | Administer after Session 7; no collaboration during the practicum | Return a row-level disposition showing the first invalid or indeterminate inference; allow a short correction memo for partial recovery |
+| Adversarial ablation critique | Individual 2,000-2,500-word critique of a published or supplied study proposal, including diagnostic coverage, independence, selectivity, and a repaired design | Source selected by Session 7; peer red-team review after Session 8; final after Session 10 | Grade the original diagnosis and the quality of the repair; require a response-to-review log |
+| Capstone preregistration and defense | Team protocol of 3,500-5,000 words or equivalent registered-report format, plus individual defense and collaboration record | Individual seed after Session 7; provisional teams after Session 8; track selection after Session 9; staged reviews through Session 14 | Use the track rules and rubric in Appendix C; publish question domains, permit preparation time and a short written supplement, and assess individual as well as team mastery |
+
+### Constructive-alignment map
+
+| Course outcome | Principal instruction and practice | Direct assessment evidence | Minimum satisfactory evidence |
+|---:|---|---|---|
+| 1 | Sessions 1, 7, and 9; target sorting | Memo; Problem Set 1; practicum | Keeps presence, access, report, wakefulness, and character distinct throughout one case |
+| 2 | Session 2; component-matrix jigsaw | Memo; Problem Set 1; capstone | States both biconditional directions and a licensed threat to each |
+| 3 | Sessions 3-6; boundary and single-failure laboratories | Practicum; case portfolio | Applies boundary, viability, and all three components to the same candidate, content, regime, grain, and interval |
+| 4 | Sessions 1 and 13; versioned rival-prediction laboratory | Theory-comparison brief | Compares exact versions at a matched explanandum and identifies a genuine disagreement case |
+| 5 | Sessions 3 and 7; boundary hearing and evidence tribunal | Practicum; portfolio | Applies precedence correctly and never turns boundary failure into a negative consciousness result |
+| 6 | Session 8; ablation laboratory | Ablation critique | Distinguishes criterion, mechanism, and measurement ablation and limits each conclusion accordingly |
+| 7 | Session 8; diagnostic-set analysis | Problem Set 2; ablation critique | Locates the disagreement region, estimates coverage, and identifies prohibited dual use |
+| 8 | Session 9; bridge construction and break test | Required portfolio artifact or capstone track | Preserves the presence gate and distinguishes baseline fit from held-out causal deformation |
+| 9 | Sessions 10 and 13; identity tribunal and argument clinic | Memo; comparison brief; oral defense | Steelmans the objection, gives the best reply, and records the residual empirical or metaphysical pressure |
+| 10 | Session 14; adversarial preregistration studio | Capstone | Freezes target, rivals, licenses, outcomes, and revisions before the decisive result |
+| 11 | Every collaborative block; rotating roles and disposition logs | Portfolio and capstone collaboration record | Makes an identifiable contribution, improves a rival, responds to criticism, and preserves material dissent |
+| 12 | Sessions 7, 11, and 12; loss-sensitive decision exercises | Practicum, portfolio, or capstone action note | Holds the scientific result fixed while deriving action from explicit stakes, losses, and reversibility |
+
+### Timing, scale, and technical readiness
+
+Each 110-minute plan is a ceiling on elapsed time. Apply this course-wide clock unless a session explicitly replaces it: **minutes 55-60 are a protected break**, and the **five minutes immediately before the exit-ticket block are protected contingency**. The teaching move whose printed span contains either reserve is shortened by that amount; no new content is introduced during a reserve. Omit the Appendix H extension first, then move the final plenary comparison to homework if another five minutes are needed. Never take time from private commitment, group revision, the break, or the exit ticket. The four-session workshop table already places its own break, so its printed clock supersedes this rule. If discussion is unusually productive, preserve the durable artifact and move plenary synthesis to the next session's opening retrieval exercise.
+
+For classes above twenty-four, run duplicate parallel panels and sample one artifact from each panel for plenary comparison. For seminars below eight, assign one case per pair, combine role responsibilities, and use the instructor or a rotating student as the external rival. In Session 14, use parallel panels, a poster defense, or a recorded five-minute presentation with scheduled questioning; one twenty-four-minute plenary defense block is suitable only for a very small seminar.
+
+Before Session 2, use the quantitative on-ramp in Appendix F as a low-stakes diagnostic. Students need qualitative command of conjunctions, causal graphs, intervals, equivalence, held-out testing, and relational invariance. Calculation beyond the supplied formula sheet is an extension unless the course has an explicit quantitative prerequisite. Pair philosophical, empirical, and computational expertise without making one student the permanent translator.
+
+Treat each session's **Required** list as the must-read ceiling, normally 60-75 minutes for a heterogeneous graduate cohort. When a list spans several papers, distribute it by jigsaw exactly as specified rather than requiring every student to read every section. **Recommended** readings are should-read or reference material unless the instructor replaces part of the primary corpus with them. Begin each class by answering the reading question printed in that session. Philosophy students may use the causal and interval primers; empirical students may use the logic and argument-map primers; computational students may use the phenomenology and measurement-validity primers.
+
+**Supported four-meeting workshop:**
+
+| Meeting | 110-minute core sequence | Material moved to prework or reference |
+|---|---|---|
+| 1. Target and hypothesis | 0-20 target ladder; 20-40 biconditional; 40-45 break; 45-70 $V,N_1,N_2,N_3$ division of labor; 70-95 component matrix; 95-105 sharp-law discussion; 105-110 exit | Full landscape table and extended worked cases |
+| 2. Bearer and components | 0-20 boundary sequence; 20-35 $V/N_1$; 35-50 refined $N_2$; 50-55 break; 55-70 $N_3$; 70-98 single-failure jigsaw; 98-105 debrief; 105-110 exit | Detailed clinical and substrate cases |
+| 3. Evidence and necessity | 0-25 four outcomes; 25-45 diagnostic-set theorem and firewall; 45-50 break; 50-78 evidence tribunal; 78-98 ablation audit; 98-105 debrief; 105-110 exit | Full assessment bank and grouped-ablation extensions |
+| 4. Character, explanation, and differentiation | 0-20 character bridge; 20-35 schematic legibility; 35-40 break; 40-60 exact rival versions; 60-88 prediction laboratory; 88-100 adversarial-design sketch; 100-105 commitments; 105-110 exit | Capstone, biological applications, and transport dossiers |
+
+The workshop is an orientation, not a substitute for the capstone course. Use the corresponding **core** cards in Appendix H and give participants the omitted case packets as follow-up resources.
 
 ## 5. Collaborative learning architecture
 
@@ -242,6 +341,14 @@ Require students to criticize a claim at its strongest plausible interpretation.
 
 Because the course includes disorders of consciousness, animal welfare, and possible artificial consciousness, remind students that intellectual disagreement need not imply indifference to affected beings. Scientific classification and practical precaution are separated analytically so that both can be discussed more responsibly. Students may analyze a sensitive clinical case through a written role rather than personal disclosure.
 
+### Accessible and flexible participation
+
+Provide every card, envelope, matrix, figure, and role sheet in accessible digital text at the same time as the physical version. Use staged file permissions or numbered LMS releases to preserve progressive disclosure. Never encode status by color alone: pair color with a label, line pattern, symbol, or position. Read equations aloud in plain language, provide editable tables rather than image-only data, caption audiovisual material, and supplement each figure with a description of the inferential relationship it is intended to show.
+
+Movement-based voting and "positions around the room" always have a seated or digital equivalent. A student may make the private commitment through text, speech, or an accessible form; report through a spokesperson, shared document, or brief recording; and supplement a sampled oral defense with a short written response. Publish oral-defense question domains and allow quiet preparation time before answering. Assess the quality of the reasoning, not speed, eye contact, handwriting, mobility, or spontaneous public performance.
+
+Stable-team reshuffling is the default, not an inflexible rule. Preserve a team or role when an accommodation, communication access, anxiety, sensory processing, or accessibility technology makes continuity materially important. In remote delivery, use captioned breakout rooms, one versioned shared worksheet per team, private precommitment forms, and a visible release schedule. The resource pack gives a nonverbal or asynchronous alternative for every session and explicit role combinations for three-, four-, and five-person teams.
+
 ### Individual accountability within group work
 
 At the end of each major exercise, collect three items:
@@ -268,7 +375,7 @@ Then model a calibrated verdict. Use phrases such as **supported under the decla
 | Session | Central question | Main paper contribution |
 |---|---|---|
 | 1. The explanandum and landscape | What exactly is the theory trying to explain? | Core scope and theory placement |
-| 2. The core biconditional | What does $V\land N^*\Longleftrightarrow C_0$ commit us to? | Core model, logic, temporal grain, falsifiers |
+| 2. The core biconditional | How does the source profile formula become a bearer-complete $C_0$ claim? | Core model, boundary refinement, logic, temporal grain, falsifiers |
 | 3. Where is the subject? | Which system is the bearer of the proposed state? | Boundary-first criterion |
 | 4. Viability and integration | What makes the organization real and unified? | $V$ and $N_1$ |
 | 5. Availability without report | What does system-wide availability actually require? | Full $N_2$ operationalization |
@@ -284,9 +391,9 @@ Then model a calibrated verdict. Use phrases such as **supported under the decla
 
 \newpage
 
-# Part II. Lecture Notes and Teaching Materials
+# Part II. Lecture Notes and Teaching Materials {#part-ii}
 
-## Session 1. The Explanandum and the Theory Landscape
+## Session 1. The Explanandum and the Theory Landscape {#session-1}
 
 ### Learning objectives
 
@@ -325,6 +432,8 @@ Stress that the ordering is conceptual rather than a proven biological hierarchy
 
 Cø / N* fixes its initial target at level 2: minimal phenomenal presence. This is what allows it to treat report, attention, metacognition, and intelligence as evidence or enrichment rather than as constituents. The move creates a burden: if minimal presence is defined too thinly, critics may say that the theory evades the most interesting features of consciousness. The proper response is not that richer features do not matter. It is that distinct explananda should be modeled in distinct layers and connected explicitly.
 
+**Resolution convention.** In formal applications, $C_0(S,c;\Theta)$ is token- or content-indexed: it concerns phenomenal presence of the specified content-bearing state. A broader claim that $S$ has any phenomenal episode during $\Delta$ requires explicit quantification over a preregistered content or state family. A positive result for one $c$ does not establish continuous or globally rich experience; a negative result for one $c$ does not establish that no other content is present. Thus the theory's general explanandum is minimal phenomenal presence, while an experimental verdict is normally local to a specified token or content-bearing state.
+
 Now situate the main theory families by the pressure they place on an adequate account:
 
 - IIT says unity and intrinsic causal structure matter.
@@ -349,7 +458,7 @@ Students often understand the target ladder abstractly but collapse it as soon a
 
 | Observation | Directly supports | Additional bridge needed for $C_0$ | Rival interpretation to keep live |
 |---|---|---|---|
-| A behaviorally unresponsive patient follows commands by modulating imagery-related activity | Comprehension, task maintenance, volitional imagery, and covert command following in the tested runs | The capacities are present only if there is phenomenal presence, or the full $V\land N^*$ profile is independently supported | The task could be performed by nonphenomenal control; false positives or sensory misunderstanding must be assessed |
+| A behaviorally unresponsive patient follows commands by modulating imagery-related activity | Comprehension, task maintenance, volitional imagery, and covert command following in the tested runs | The capacities are present only if there is phenomenal presence, or the full $V\land N^*$ profile and resolved minimal positive-bearer membership are independently supported | The task could be performed by nonphenomenal control; false positives or sensory misunderstanding must be assessed |
 | A stimulus category is decoded from early visual activity without report | Content-specific neural information is present in the measured population | The decoded representation participates in the organization claimed to constitute presence | Unconscious representations can be decodable; the signal may reflect feedforward registration only |
 | A fluent AI says that it has a rich inner life and accurately discusses consciousness theory | Linguistic competence, self-description, context use, and perhaps a functional self-model | The running candidate has a qualified boundary, viability, integration, causal availability, recurrence, and a licensed transport bridge | Training-data imitation, policy optimization, or an external orchestration loop may explain the behavior |
 
@@ -388,11 +497,11 @@ Finish with the one-line label: **physicalist + information-dynamical + function
 
 **Purpose.** Students learn that one observation can be relevant to several consciousness questions without directly answering all of them. The task separates the evidential target from the conclusion a researcher may wish to draw.
 
-**Setup.** Give every team the following six claims on separate cards: "The patient can follow a command in motor imagery"; "The stimulus identity can be decoded from V1"; "The subject says that the pain is unpleasant"; "A recurrent loop persists for 250 ms"; "The model represents its own uncertainty"; and "The system is awake but behaviorally unresponsive." Add two blank cards on which the team must invent difficult cases.
+**Setup.** Give every team the six core claims on separate cards: "The patient can follow a command in motor imagery"; "The stimulus identity can be decoded from V1"; "The subject says that the pain is unpleasant"; "A recurrent loop persists for 250 ms"; "The model represents its own uncertainty"; and "The system is awake but behaviorally unresponsive." Keep Appendix H Cards 7-8 and one blank mixed-target card as extension material; they do not belong in the core twenty-four-minute block.
 
 **Roles and procedure.** The model reconstructer lays out six columns: wakefulness, $C_0$, content presence, access, $C_1$, and phenomenal character. The validity auditor places each card first under the target to which it bears most directly and lists its auxiliary demands. The adversarial rival moves one card to the strongest alternative interpretation and explains the possible confound. The reporter then records the strongest licensed conclusion and one illicit stronger inference for every card. After twelve minutes, pair teams and ask them to challenge two placements without merely appealing to intuition.
 
-**Deliverable.** Each team submits a target-evidence-inference grid containing: direct target, possible relevance to $C_0$, auxiliary capacities, alternative explanation, strongest licensed conclusion, and forbidden inference. The two invented cases must be difficult because they mix targets, not because they omit all information.
+**Deliverable.** Each team submits a six-row core target-evidence-inference grid containing: direct target, possible relevance to $C_0$, auxiliary capacities, alternative explanation, strongest licensed conclusion, and forbidden inference. If the extension is assigned, students append Cards 7-8 and one invented case. The invented case must be difficult because it mixes targets, not because it omits all information.
 
 **Debrief.** Compare the imagery-command and recurrent-loop cards. The first is behaviorally silent but depends on comprehension, task maintenance, and imagery control; the second is mechanistically suggestive but may occur in an isolated nonconscious circuit. Ask which case tempts students to infer too much and why. Conclude that evidence can be strong without being constitutive and mechanistic without being sufficient.
 
@@ -420,17 +529,17 @@ In three sentences, state the target of Cø / N*, name one neighboring theory th
 
 ### Readings
 
-**Required:** Stilwell, *Cø as N\**,* Sections 1-3 and 15; the project taxonomy note.
+**Required:** Stilwell, *Cø as N\**, Sections 1-3 and 15; the taxonomy placement and comparison table in Part I of this manual. Ask: Which target does the model claim, and which familiar consciousness capacities does it deliberately exclude?
 
 **Recommended:** Block (1995); Seth and Bayne (2022); Storm et al. (2024).
 
 \newpage
 
-## Session 2. The Core Biconditional and Network-Dynamics Model
+## Session 2. The Core Biconditional and Network-Dynamics Model {#session-2}
 
 ### Learning objectives
 
-Students should be able to read the central formula in both directions, distinguish structural, functional, and effective connectivity, explain the role of temporal grain, and identify a valid sufficiency or necessity threat.
+Students should be able to read the source profile formula and bearer-complete formulation in both directions, distinguish structural, functional, and effective connectivity, explain the role of temporal grain, and identify a valid sufficiency or necessity threat.
 
 ### Instructor preparation
 
@@ -450,7 +559,7 @@ Assign Sections 4-14 and Appendices A-C of the core paper. Prepare the interacti
 
 ### Lecture notes
 
-Write the model twice:
+Write the source profile model and the bearer-complete synthesis separately:
 
 $$
 N^*:=N_1\land N_2\land N_3
@@ -459,26 +568,41 @@ $$
 and
 
 $$
-H_{C_0}:V\land N^*\Longleftrightarrow C_0.
+H_*^{\mathrm{ont}}(S,c):=V^{\mathrm{ont}}(S)\land N^{*,\mathrm{ont}}(S,c),
 $$
 
-The first line defines the bundle. The second is a hypothesis about consciousness. This distinction is crucial. The theory may stipulate what the notation $N^*$ abbreviates, but it cannot stipulate that $N^*$ is consciousness and then cite the abbreviation as empirical evidence.
+$$
+\mathcal B_{\min,\Theta,\mathrm{ont}}^+(c)=
+\operatorname{Min}_{\subseteq}
+\{S\in\mathcal P_{\Theta,\mathrm{ont}}:H_*^{\mathrm{ont}}(S,c)=1\},
+\qquad
+\operatorname{Resolved}_B(c;\Theta)\Rightarrow
+\left[
+C_0(S,c;\Theta)\Longleftrightarrow
+S\in\mathcal B_{\min,\Theta,\mathrm{ont}}^+(c)
+\right].
+$$
+
+The first line defines the three-component bundle. The second gives the underlying all-pass profile. The third makes the source's suppressed bearer step explicit. It applies only after a unique minimum or separable plurality resolves the bearer relation; nonseparable plural minima remain boundary-indeterminate. These are hypotheses about consciousness and its bearer, not definitions that can validate themselves. Experiments estimate the terms with hats and apply the four evidential outcomes; a missing estimated pass is not an ontic failure. The theory may stipulate what $N^*$ abbreviates, but it cannot stipulate that every all-pass candidate is a subject and then cite the abbreviation as empirical evidence.
 
 Review the two directions:
 
 $$
-V\land N^*\Rightarrow C_0
+\operatorname{Resolved}_B(c;\Theta)\land
+S\in\mathcal B_{\min,\Theta,\mathrm{ont}}^+(c)
+\Rightarrow C_0(S,c;\Theta)
 $$
 
-is the sufficiency claim. A strong counterexample is a boundary-qualified, viable system that robustly passes $N_1$, $N_2$, and $N_3$ while independent evidence strongly supports absence of phenomenal presence.
+is the bearer-complete sufficiency claim. A strong counterexample is an inclusion-minimal, stable all-pass bearer whose independently licensed evidence strongly supports absence of phenomenal presence.
 
 $$
-C_0\Rightarrow V\land N^*
+C_0(S,c;\Theta)\land\operatorname{Resolved}_B(c;\Theta)
+\Rightarrow S\in\mathcal B_{\min,\Theta,\mathrm{ont}}^+(c)
 $$
 
-is the necessity claim. A strong counterexample is a case of phenomenal presence with one component genuinely below threshold after boundary, viability, measurement, transport, and auxiliary-demand issues have been controlled.
+is the bearer-complete necessity claim. A strong counterexample is a case of phenomenal presence for $S,c$ despite licensed nonmembership after the positive-bearer set is recomputed under frozen $\Theta$ and $\mathcal P_\Theta$ referents. A genuine component failure after test-referent, viability, measurement, transport, and auxiliary-demand control is one especially diagnostic route; a nonminimal larger container is not a counterexample merely because it has an all-pass profile.
 
-Move to the graph framework $G=(\mathcal V,E)$. Nodes can be neurons, populations, regions, subcortical nuclei, bodily control variables, or computational modules. Edges should represent effective causal influence, not merely anatomical connection or statistical correlation. Structural connectivity asks what pathways exist. Functional connectivity asks which variables covary. Effective connectivity asks what makes a directed difference to what.
+Move to the graph framework $G=(\mathsf V_G,\mathsf E_G)$. The vertex set $\mathsf V_G$ can contain neurons, populations, regions, subcortical nuclei, bodily control variables, or computational modules. Edges in $\mathsf E_G$ should represent effective causal influence, not merely anatomical connection or statistical correlation. Structural connectivity asks what pathways exist. Functional connectivity asks which variables covary. Effective connectivity asks what makes a directed difference to what. The graph notation is namespaced so $\mathcal V$ remains reserved for the validity envelope and $E$ for assessment evidence.
 
 The theory is dynamical. Every conclusion is indexed to a time window $\Delta$. Integration, availability, and recurrence must hold for the same candidate, content, grain, regime, and interval. Students should reject a study that measures integration over the whole brain at one second, availability over frontoparietal cortex at 300 ms, and recurrence within visual cortex at 100 ms, then combines the results as though one system satisfied $N^*$.
 
@@ -491,14 +615,33 @@ Explain each role in one phrase:
 
 None is sufficient alone. High integration can remain local or unstable. Broad broadcast can be diffuse, homogeneous, or feedforward. Recurrence can occur in an isolated loop. Viability without the three roles merely shows that the system can operate.
 
-Introduce thresholding carefully. Measures can be continuous while the hypothesis uses a thresholded decision rule. The parameters $\tau_1,\theta,\alpha,\lambda,t_{\min},t_{\max},f,$ and $\kappa_i$ are paradigm-specific hypotheses, not universal constants or natural joints in phenomenology. Their legitimacy depends on preregistration, calibration, uncertainty bounds, held-out validation, and sensitivity analysis.
+Distinguish the underlying condition $V$ from the status of its assessment. If a fixed candidate is validly shown to lack $V$, and the hypothesis is licensed in that regime, the left-hand side is false and the model predicts no $C_0$. In practice, many apparent viability failures also destroy the boundary, operating regime, or interpretability of the $N_i$ measures. Those assessments are unlicensed rather than licensed negatives. **$V$ failed**, **$V$ is indeterminate**, and **the $V$ test is unlicensed** must never be interchanged.
+
+Introduce thresholding carefully. Measures can be continuous while the hypothesis uses a thresholded decision rule. Every component, coverage, latency, dwell, conflict, and robustness threshold is a paradigm-specific hypothesis, not a universal constant or natural joint in phenomenology. Introduce each symbol only with the gate it controls. Its legitimacy depends on preregistration, calibration, uncertainty bounds, held-out validation, and sensitivity analysis.
+
+Add an operational-lineage note for $N_2$. The core paper's initial hub scaffold is:
+
+$$
+\exists H\subseteq\mathsf V_G\quad\text{such that}\quad
+\min_{v\in H}\operatorname{PC}(v)\geq\theta,
+$$
+
+$$
+\frac{|\operatorname{Reach}_\Delta(c;H)|}{|\mathsf V_G|}\geq\alpha
+\qquad\text{and}\qquad
+\operatorname{latency}_\Delta(c;H)\leq\lambda.
+$$
+
+Here $H$ is a candidate hub or backbone set, $\operatorname{PC}$ is participation across declared modules, $\operatorname{Reach}_\Delta$ counts nodes reached by content $c$ within the window, $\alpha$ is the required reach fraction, and $\lambda$ is the latency ceiling. This makes the core commitment visible: broad-enough content reach through a cross-module backbone, quickly enough, without requiring a prefrontal hub.
+
+The availability companion treats node fraction and participation as vulnerable proxies: parcellation can inflate reach, diffusion can mimic broadcast, one recipient type can dominate, and actual activation can be mistaken for counterfactual availability. Its current expanded criterion therefore replaces raw node reach with independently calibrated recipient classes, content-specific interventions, preparation burden, selectivity, route dependence, context robustness, weighted coverage, class count, effect evenness, and report- and executive-excluded recomputation. Teach the expanded rule as the operative specification and the core equations as a historical proxy family, not as additional gates. The symbol $\theta$ belongs only to the original participation-coefficient gate and drops out. The companion deliberately reuses $\alpha$ for **weighted functional-class coverage** rather than raw node-reach fraction, and retains $\lambda$ as a latency ceiling applied at recipient qualification rather than whole-backbone reach. State these local meanings whenever presenting the lineage; $\alpha$ also denotes autonomy in the boundary paper's separate namespace.
 
 The surrogate-conflict rule is a scientific refusal to cherry-pick. If credible preregistered measures of one component disagree beyond tolerance, that component becomes indeterminate. This does not weaken the underlying biconditional. It distinguishes a sharp ontological hypothesis from a limited experiment.
 
 Work through five cases:
 
-1. **Ordinary waking perception:** likely $V+$ and $N^*+$ for the dominant content; predicted $C_0$.
-2. **Locked-in syndrome:** motor report fails, but $V$ and $N^*$ may remain; predicted $C_0$ if the causal bundle passes.
+1. **Ordinary waking perception:** likely $V+$ and $N^*+$ for the dominant content; $C_0(S,c)$ is predicted only if the candidate also survives minimality and the bearer relation is resolved.
+2. **Locked-in syndrome:** motor report fails, but $V$ and $N^*$ may remain; $C_0(S,c)$ is predicted if the causal bundle, inclusion-minimality, stability, and bearer-resolution rules pass.
 3. **Deep anesthesia:** viability in the biological sense may persist while the relevant dynamical regime and multiple $N_i$ collapse; $C_0$ not predicted for that window.
 4. **Message-bus AI:** widespread copied tokens do not establish $N_1$, content-sensitive $N_2$, $N_3$, or substrate-appropriate $V$; likely unlicensed or negative component results rather than an immediate consciousness verdict.
 5. **Conflicting integration metrics:** no positive $N^*$ classification even if one metric is high; return indeterminate.
@@ -509,11 +652,11 @@ End by emphasizing the model's exclusions. It does not infer consciousness from 
 
 First contrast a noncompensatory conjunction with a weighted score. If a toy system has normalized values $N_1=.98$, $N_2=.95$, and $N_3=.20$, an average score can exceed a permissive threshold. The conjunction does not allow excellence in unity and availability to compensate for failed temporal presence. This is not a mathematical necessity; it is a substantive commitment of the theory.
 
-Use the following compact truth table, assuming the candidate boundary qualifies and the licensed viability result is $V=1$:
+Use the following compact truth table for a stable causally admissible referent $S\in\mathcal P_\Theta$, assuming the licensed viability result is $V=1$. The table classifies the bundle profile; an all-pass row supports positive $C_0(S,c)$ only if $S$ also survives inclusion-minimality and the positive-boundary rules:
 
 | $N_1$ | $N_2$ | $N_3$ | $N^*$ | Model prediction |
 |---:|---:|---:|---:|---|
-| 1 | 1 | 1 | 1 | $C_0$ predicted |
+| 1 | 1 | 1 | 1 | Positive bundle profile; $C_0(S,c)$ predicted only if the bearer relation is resolved and $S\in\mathcal B_{\min,\Theta}^+(c)$ |
 | 0 | 1 | 1 | 0 | $C_0$ not predicted; diagnostic for $N_1$ if the case is independently anchored |
 | 1 | 0 | 1 | 0 | $C_0$ not predicted; diagnostic for $N_2$ if the failure is licensed |
 | 1 | 1 | 0 | 0 | $C_0$ not predicted; diagnostic for $N_3$ if encoding and report confounds are controlled |
@@ -522,7 +665,7 @@ Use the following compact truth table, assuming the candidate boundary qualifies
 
 Then separate four levels of claim:
 
-1. **Ontological hypothesis:** $V\land N^*\Longleftrightarrow C_0$.
+1. **Ontological hypothesis:** the source proposes $V\land N^*\Longleftrightarrow C_0$ at profile level; on a resolved bearer domain, the synthesis adds $C_0(S,c)\Longleftrightarrow S\in\mathcal B_{\min,\Theta}^+(c)$.
 2. **Component criterion:** for example, $N_2$ requires sufficiently diverse, content-specific causal availability.
 3. **Surrogate:** a particular intervention-derived reach score estimates that role in one paradigm.
 4. **Experimental verdict:** the score and uncertainty pass, fail, conflict, or cannot be interpreted in this case.
@@ -542,6 +685,8 @@ Walk through this illustrative record. Thresholds and values are pedagogical onl
 The bundle is indeterminate despite three positive gates and one high $N_1$ measure. Choosing surrogate A after seeing the result would be cherry-picking. The next study should adjudicate the construct or measurement genealogy, not simply add more cases to the same unresolved aggregate.
 
 Finally, explain auxiliary hypotheses symmetrically. Boundary validity, content fidelity, transport, measurement sensitivity, and intervention selectivity can block a purported counterexample. They cannot become costless rescue clauses. A credible program preregisters them, reports their failure rates, and revises when the same auxiliary repeatedly shields the theory from diagnostic cases.
+
+**Critical reading of the core paper's exclusion events.** The core paper lists PCI or complexity collapse, absent late recurrent markers, failed cross-module decoding, and surrogate conflict alongside a claimed positive profile. Treat the first three as early operational consistency checks, not automatically independent $C_0$ falsifiers. Each bears on the biconditional only after its component interpretation, target, boundary, timing, and validity are established; a failed cross-module decoder, for example, may be an invalid $N_2$ surrogate rather than evidence of phenomenal absence. The fourth item is now a protocol violation under the refined policy: credible conflict beyond tolerance blocks a positive component and bundle result. It cannot simultaneously be counted as a valid $N^*+$ sufficiency counterexample. A genuine sufficiency threat requires a resolved inclusion-minimal positive bearer plus independently licensed negative evidence that is not merely another reading of the same component measures.
 
 ### Display plan
 
@@ -568,11 +713,11 @@ Draw a four-gate pipeline terminating in $C_0$, with a separate side arrow label
 
 **Purpose.** Students translate the biconditional into a decision procedure while keeping boundary, measurement quality, and ontological interpretation separate.
 
-**Setup.** Prepare five one-page case profiles: an ordinary positive case; a licensed $N_2$ failure with every other gate retained; a case with unassessed viability; a case in which two credible $N_1$ surrogates conflict; and a case whose selected boundary changes across reasonable specifications. Assign one profile to each home team and provide a partially completed matrix. Each profile should include uncertainty intervals rather than only binary values.
+**Setup.** Prepare five one-page case profiles: an ordinary all-pass case that also survives inclusion-minimality; a licensed $N_2$ failure with every other gate retained on a stable $\mathcal P_\Theta$ referent; a case with unassessed viability; a case in which two credible $N_1$ surrogates conflict; and a case with no stable or mappable member of $\mathcal P_\Theta$ across reasonable specifications. Assign one profile to each home team and provide a partially completed matrix. Each profile should include uncertainty intervals rather than only binary values.
 
-**Jigsaw phase.** In each home team, assign one student to $B_S$ and $V$, one to $N_1$, one to $N_2$, and one to $N_3$ plus the final logic. Component experts have four minutes with peers from other teams to agree on the minimum information required for their column. They return to teach their home team, not merely announce a value.
+**Jigsaw phase.** In each home team, assign one student to $\mathcal P_\Theta$ referent qualification, $\mathcal B^+$ adjudication, and $V$; one to $N_1$; one to $N_2$; and one to $N_3$ plus the final logic. Component experts have four minutes with peers from other teams to agree on the minimum information required for their column. They return to teach their home team, not merely announce a value. The boundary expert must report the upstream test-referent license separately from the downstream positive-bearer result.
 
-**Decision phase.** The team completes columns for applicability, validity, estimate and interval, gate status, surrogate conflict, full-model prediction, evidential outcome, and ontological caution. For the component-failure case, the team must write both: "the model predicts no $C_0$ in this specified case" and "the experiment does not directly observe absence of $C_0$." For the boundary-unstable case, students must explain why calculating every component cannot repair the upstream license failure.
+**Decision phase.** The team completes columns for applicability, validity, estimate and interval, gate status, surrogate conflict, full-model prediction, evidential outcome, and ontological caution. For the component-failure case, the team must write both: "the model predicts no $C_0$ in this specified case" and "the experiment does not directly observe absence of $C_0$." For the referent-unstable case, students must explain why calculating every component cannot repair the upstream license failure. Contrast it with low $R_B$ for final positive-bearer membership: when a stable $\mathcal P_\Theta$ referent exists, component evidence may remain licensed even though the positive subject-boundary output is indeterminate.
 
 **Deliverable.** Submit the completed matrix plus one genuine threat to an assigned direction of the biconditional. The threat must specify candidate, content, regime, interval, and independent anchor pattern. Collect the two directions across the class rather than requiring both from every team.
 
@@ -601,13 +746,13 @@ Give one sufficiency threat and one necessity threat. For each, name one conditi
 
 ### Readings
 
-**Required:** Stilwell, *Cø as N\**,* Sections 4-14 and Appendices A-C.
+**Required:** Stilwell, *Cø as N\**, Sections 4-14 and Appendices A-C. Ask: Which observation threatens sufficiency, which threatens necessity, and which only challenges a surrogate?
 
 **Recommended:** Casali et al. (2013); Doerig et al. (2021); Cogitate Consortium (2025).
 
 \newpage
 
-## Session 3. Where Is the Conscious Subject?
+## Session 3. Where Is the Conscious Subject? {#session-3}
 
 ### Learning objectives
 
@@ -617,7 +762,7 @@ Students should be able to explain why every system-level measure is boundary-re
 
 Assign *Where Is the Conscious Subject?*, Sections 1-5 and 7, plus one worked application from Section 6. Display the existing boundary-first workflow figure.
 
-![Boundary-first workflow and prohibited feedback](../papers/where-is-the-conscious-subject/boundary-first-workflow.png){width=95%}
+![Figure 1. Boundary-first workflow and prohibited feedback. Source: Stilwell, *Where Is the Conscious Subject?*, companion-manuscript project figure.](../papers/where-is-the-conscious-subject/boundary-first-workflow.png){width=95%}
 
 ### Timed plan
 
@@ -633,7 +778,7 @@ Assign *Where Is the Conscious Subject?*, Sections 1-5 and 7, plus one worked ap
 
 ### Lecture notes
 
-Start with a two-module system. Measured separately, each module may have high integration and recurrence but low reach. Measured together, reach may rise while normalized integration falls. Nothing physical changed; only the modeled boundary did. Therefore the proper notation is $N_i(S;g,\Delta,\mathcal I)$, not a boundary-free $N_i$.
+Start with a two-module system. Measured separately, each module may have high integration and recurrence but low reach. Measured together, reach may rise while normalized integration falls. Nothing physical changed; only the modeled boundary did. Therefore a boundary-sensitive indicator should be written $M_i(S,c;g,\mathcal R,\Delta,\mathcal I)$ rather than as a boundary-free score. $M_i$ denotes an estimator or indicator; $N_i$ denotes the component construct it is intended to assess. Component claims remain indexed to content, regime, grain, and horizon even when prose suppresses those arguments.
 
 State the methodological rule:
 
@@ -645,7 +790,7 @@ $$
 S^{\mathrm{post}}=\arg\max_{S\subseteq\Omega}M_C(S).
 $$
 
-The alternative uses discovery evidence to propose candidates and held-out evidence to apply theory-specific roles. Candidate generation may use causal community detection, effective connectivity, perturbational clustering, or Markov-blanket proposals. None of those methods by itself proves consciousness.
+The alternative separates three evidential functions: discovery evidence proposes candidates; boundary-adjudication evidence estimates causal admissibility and certifies stable $\mathcal P_\Theta$ referents without using role outcomes; and final held-out role evidence estimates $V,N_1,N_2,N_3$ and constructs $\mathcal B^+$. Candidate generation may use causal community detection, effective connectivity, perturbational clustering, or Markov-blanket proposals. None of those methods by itself proves consciousness. When three fixed sets are infeasible, preregistered cross-fitting must preserve the same functional separation in every fold.
 
 Present the Dynamical Subject Criterion:
 
@@ -659,7 +804,27 @@ $$
 A_\Theta(S)=\frac{J_{\mathrm{self}}(S)}{J_{\mathrm{self}}(S)+J_{\mathrm{in}}(S)+\varepsilon}.
 $$
 
-A high ratio is not enough if both causal effects are trivial, so require $J_{\mathrm{self}}\geq\sigma$. Autonomy nominates a bearer; it is not a consciousness score.
+A high ratio is not enough if both causal effects are trivial, so require $J_{\mathrm{self}}\geq\sigma$. Autonomy admits a possible $\mathcal P_\Theta$ test referent; it neither selects a positive bearer nor supplies a consciousness score.
+
+Define the estimands through matched future-trajectory contrasts. Write $P_S^\Delta(\cdot\mid x,e)$ for the distribution of $S$'s trajectory over $\Delta$ after setting the candidate state to $x$ and the admissible external context to $e$. Then:
+
+$$
+J_{\mathrm{self}}(S)=
+\mathbb E_{(x,x',e)\sim\mu_{\mathrm{self}}}
+\left[d\!\left(P_S^\Delta(\cdot\mid x,e),P_S^\Delta(\cdot\mid x',e)\right)\right],
+$$
+
+$$
+J_{\mathrm{in}}(S)=
+\mathbb E_{(x,e,e')\sim\mu_{\mathrm{in}}}
+\left[d\!\left(P_S^\Delta(\cdot\mid x,e),P_S^\Delta(\cdot\mid x,e')\right)\right].
+$$
+
+$J_{\mathrm{self}}$ varies matched internal states while holding external context fixed; $J_{\mathrm{in}}$ varies matched external contexts while holding the candidate state fixed. Both compare distributions of future trajectories with the same oriented, calibrated distance $d$.
+
+The ratio has no licensed empirical interpretation without identification assumptions. Every boundary study must state: **intervention support or positivity** (the sampled contrasts cover the declared intervention domain); **consistency** (the intervention label maps to the same operation for relevant units); **causal-model adequacy** (the modeled adjustment and interference structure is defensible); **measurement reliability** (trajectory and intervention variables are estimated well enough for the confidence rule); and **regime stability** (the intervention does not silently move the system outside the declared $\mathcal R$ during $\Delta$). A crossed numerical threshold with a failed assumption is unlicensed or indeterminate, not a boundary pass.
+
+Internal and external perturbations also require comparable budgets. Orient and calibrate the trajectory distance $d$ to a common scale, match scientifically relevant perturbation magnitudes and sampling effort, and normalize for candidate dimension, intervention count, and aggregation. Use dimension-matched null systems, per-variable or otherwise justified normalization, and held-out forecast checks. If candidate rankings reverse across defensible normalizations or because one side received stronger interventions, the boundary result is nonrobust.
 
 Second, **role completeness**. Frozen causally admissible candidates are evaluated for integration, availability, recurrence, and viability using uncertainty-aware thresholds. The same candidate must realize all roles. A role-indeterminate candidate is not silently treated as a failure or redrawn until it passes.
 
@@ -671,6 +836,8 @@ $$
 
 This rule is set-theoretic, not a contest for the fewest nodes. It prevents a whole brain, organism, dyad, or data center from winning merely by containing a smaller role-complete candidate. At different grains or horizons, nested candidates can remain in an indexed hierarchy; they should not be forced into direct subset comparison without a mapping.
 
+Keep the two stages visible. $\mathcal P_\Theta$ supplies stable causally admissible referents for every component and biconditional test. $\mathcal Q_\Theta$ and $\mathcal B_\Theta$ report which referents also satisfy every positive role and survive inclusion-minimality. A licensed single-role failure therefore yields "stable referent, failed component, no positive-bearer membership" rather than "the system disappeared." Only failure to establish a stable member of $\mathcal P_\Theta$ makes the bearer itself unlicensed. This distinction is what permits the boundary procedure and the ablation paper's diagnostic single-failure cases to coexist without circularity.
+
 Explain the replacement test. Removal alone confuses constitution with dependence. Oxygen delivery is necessary for continuing brain function, but over a subsecond window its generic support may be externally replaced without changing the fast neural role profile. That supports an enabling interpretation. By contrast, replacing a patterned thalamic loop with constant drive may fail to restore availability and recurrence; that supports a constitutive interpretation.
 
 Use three categories:
@@ -679,7 +846,30 @@ Use three categories:
 - **Interface:** it transmits bounded input or output while the candidate preserves autonomous role completeness.
 - **Enabling support:** generic replacement restores the role profile within tolerance.
 
-Then explain the possible boundary outputs:
+For pairwise separability, let $L_{i\rightarrow j}\in[0,1]$ be the normalized loss in $S_j$'s role profile after interrupting the specific $S_i\rightarrow S_j$ coupling while restoring generic background support:
+
+$$
+\operatorname{Sep}_\Theta(S_i,S_j)
+=1-\max\{L_{i\rightarrow j},L_{j\rightarrow i}\}.
+$$
+
+A multiple-candidate result requires $\operatorname{Sep}_\Theta(S_i,S_j)\geq\kappa$ for **every** reported pair. A failed pair returns unresolved overlap or boundary indeterminacy; it does not prove that one larger subject exists.
+
+Formalize removal and generic replacement for a variable $z\notin S$ with the role-profile distance $d_F$:
+
+$$
+K_z^{\mathrm{remove}}(S)=
+d_F\!\left(\mathbf F_\Theta(S),\mathbf F_\Theta(S\mid do(z=z_0))\right),
+$$
+
+$$
+K_z^{\mathrm{generic}}(S)=
+d_F\!\left(\mathbf F_\Theta(S),\mathbf F_\Theta(S\mid do(z\leftarrow r_z))\right).
+$$
+
+$K_z^{\mathrm{remove}}$ tests whether $z$ matters; $K_z^{\mathrm{generic}}$ tests whether its **specific** dynamics remain necessary after $r_z$ restores generic support. If $\operatorname{LCB}_{1-\beta}(K_z^{\mathrm{generic}})>\eta_F$, replacement demonstrably fails and supports constitution. If $\operatorname{UCB}_{1-\beta}(K_z^{\mathrm{generic}})\leq\eta_F$, recovery within tolerance supports enabling status. Intermediate intervals are constitutive-status indeterminate. A bounded channel compatible with preserved autonomous role completeness is classified as an interface.
+
+Then explain the possible positive-boundary and mapping outputs:
 
 1. unique stable candidate;
 2. multiple stable, pairwise separable candidates;
@@ -687,15 +877,19 @@ Then explain the possible boundary outputs:
 4. no decisively qualifying candidate; or
 5. boundary-indeterminate.
 
-The distinction between "no qualifying candidate" and "boundary-indeterminate" matters. In the first, decisive tests find none within the declared universe and proposal family. In the second, confidence intervals, mappings, candidate reliability, or separability remain unresolved. Neither automatically means no consciousness. Without a stable bearer, a system-level consciousness inference is normally unlicensed.
+The distinction between "no role-complete positive candidate" and "boundary-indeterminate" matters. In the first, decisive tests find no member of $\mathcal B_\Theta$ within the declared universe and proposal family; the record must still distinguish licensed component failure from absence of any causally admissible referent. In the second, confidence intervals, mappings, candidate reliability, or separability remain unresolved. Neither automatically means global absence of consciousness. Without a stable causally admissible test referent in $\mathcal P_\Theta$, a system-level component or consciousness inference is unlicensed.
 
-Apply the method to split brains. Do not count subjects from the corpus callosum alone. Test left, right, and residual whole-system candidates. Ask whether each side retains endogenous capacity and role completeness, whether subcortical loops preserve a joint candidate, and whether perturbing one side leaves the other stable. Multiple subjects are supported only if multiple inclusion-minimal candidates are pairwise separable under intervention.
+Separate two robustness questions. $R_C(S)$ is the reliability with which one proposed candidate clears autonomy and endogenous-capacity requirements across discovery resamples and declared nuisance variants. $R_B(S)$ is the stability of the finally selected boundary across reasonable grains, horizons, estimators, thresholds, and explicit cross-specification mappings. A candidate can have high $R_C$ yet low $R_B$: it can be estimated reliably inside one specification but lose final boundary status under another defensible specification.
+
+When multiplicity is possible, report uncertainty as data. Let $p_j$ be the weighted frequency with which mapped candidate class $[S_j]$ appears across the preregistered specification neighborhood. Because one specification can select several candidates, the $p_j$ values need not sum to one and are not posterior probabilities. Let $q_k$ instead record the weighted frequency of each complete mapped boundary outcome, such as one candidate, two candidates, or none; the exhaustive $q_k$ values do sum to one. $R_B$, $p_j$, and $q_k$ answer stability questions that a single preferred node set conceals.
+
+Apply the method to split brains. Do not count subjects from the corpus callosum alone. Test left, right, and residual whole-system candidates. Ask whether each side retains endogenous capacity and role completeness, whether subcortical loops preserve a joint candidate, and whether perturbing one side leaves the other stable. Multiple positive-bearer candidates are supported only if the inclusion-minimal members have adequate candidate reliability and boundary stability and are pairwise separable under intervention.
 
 Apply it to distributed AI. Product names are not boundaries. A model call, persistent memory, scheduler, tools, evaluators, and human interventions may form different causal units at different runtime horizons. Service ablations, memory substitution, state resets, and controller perturbations determine which components are constitutive, enabling, or environmental. Shared storage and API connectivity do not establish one subject.
 
 ### Worked teaching sequence: a candidate lattice
 
-Use an illustrative split system with preregistered thresholds $A_\Theta\geq.70$ and $J_{\mathrm{self}}\geq.10$. The numbers are not proposed biological constants; they make the selection logic visible.
+Use an illustrative split system with preregistered thresholds $A_\Theta\geq.70$ and $J_{\mathrm{self}}\geq.10$. The numbers are not proposed biological constants; they make the selection logic visible. For this logic demonstration only, treat the displayed values as exact population estimands. A real analysis applies one-sided confidence bounds: lower bounds must clear pass thresholds and upper bounds must clear fail regions.
 
 | Candidate | $J_{\mathrm{self}}$ | $J_{\mathrm{in}}$ | $A_\Theta$ | Role complete? | Initial result |
 |---|---:|---:|---:|---|---|
@@ -705,18 +899,21 @@ Use an illustrative split system with preregistered thresholds $A_\Theta\geq.70$
 | Whole system $S_W$ | .64 | .25 | .72 | Yes | Qualifies before minimality |
 | System plus apparatus $S_E$ | .66 | .70 | .49 | Yes on raw role scores | Fails autonomy |
 
-This table demonstrates why a ratio alone is inadequate: the tiny sensor cluster has the highest autonomy ratio but negligible endogenous effect and no role completeness. It also shows what inclusion-minimality does. Because $S_L$ and $S_R$ are qualifying proper subsets of $S_W$, the whole system is not retained at the same specification. If interrupting specific left-right coupling leaves each side's role profile within equivalence bounds, the result supports multiple pairwise separable candidate bearers. If interruption collapses both, the apparent two-candidate interpretation weakens.
+This table demonstrates why a ratio alone is inadequate: the tiny sensor cluster has the highest autonomy ratio but negligible endogenous effect and no role completeness. It also shows what inclusion-minimality does. For this toy case, stipulate that $S_L$ and $S_R$ clear the preregistered $R_C$ candidate-reliability and $R_B$ boundary-stability thresholds. Because they are qualifying proper subsets of $S_W$, the whole system is not retained at the same specification. If interrupting specific left-right coupling also leaves each side's role profile within equivalence bounds, the result supports multiple stable, pairwise separable positive-bearer candidates. If reliability, stability, or interruption fails, the multiple-candidate conclusion weakens or becomes indeterminate.
 
 Now reveal that the role scores were computed before the candidates were frozen. Ask students to identify the circularity. The correct sequence is:
 
 1. use discovery data to propose $S_C,S_L,S_R,S_W,$ and $S_E$;
-2. freeze candidates, grain, horizon, autonomy rules, and mappings;
-3. use held-out perturbations to test admissibility, role completeness, minimality, and separability; and
-4. only then apply the consciousness-linked inference.
+2. freeze candidates, grain, horizon, autonomy rules, mappings, and the three-way data split or cross-fitting plan;
+3. use disjoint boundary-adjudication perturbations to test admissibility and freeze the stable $\mathcal P_\Theta$ test referents without inspecting role outcomes;
+4. use the final held-out role set to evaluate component failures and, for all-pass candidates, apply role completeness, minimality, stability, and separability to construct $\mathcal B_\Theta$; and
+5. issue the target-specific positive, negative, indeterminate, or unlicensed result without redrawing the referent.
 
 Compare six boundary notions. Anatomy supplies a convenient node set. Statistical communities supply covariance structure. Markov blankets nominate conditional-independence partitions. Organismic accounts emphasize self-maintenance. Causal boundaries identify endogenous difference-making units. Subject boundaries add the full admissibility, role, and minimality criteria. Earlier notions can propose candidates, but no proposal method is allowed to validate itself by the final consciousness score.
 
-Temporal persistence requires an additional mapping. A candidate at $t_1$ and one at $t_2$ count as stages of one persisting bearer only if their causal organization, memory or state continuity, and boundary mapping satisfy a declared identity rule. Rapidly changing membership need not imply a new subject at every millisecond, but neither may personal persistence be assumed from a stable product label or organism name.
+**Instructor extension, not part of the present episode-boundary criterion.** A diachronic identity theory would require an additional mapping among candidates at $t_1,t_2,$ and later times, potentially involving causal organization, memory or state continuity, embodiment, and social criteria. The current criterion does not settle personal persistence. Rapidly changing membership need not be described as a new subject at every millisecond, but persistence may not be inferred from a stable product label or organism name alone.
+
+Teach the boundary criterion's own failure conditions. Weaken or revise it if autonomy-first discovery repeatedly misses known causal units; if $J_{\mathrm{self}}$ and $J_{\mathrm{in}}$ are not robust even in benchmark systems; if matched replacement systematically misclassifies known constituents and supports; if inclusion-minimality discards an independently validated larger organization at the same mapped scale; if candidate identities remain radically unstable under reasonable frozen choices; or if a retrospective score-maximizing selector predicts held-out outcomes better without evidence of overfit or target leakage. Evaluate the method with candidate recall, false nomination, calibration, held-out role prediction, boundary reproducibility, and intervention efficiency. A boundary rule is an empirical method, not an immunity clause.
 
 ### Display plan
 
@@ -724,9 +921,14 @@ Use the following sequence:
 
 $$
 \Omega\rightarrow\mathcal G_\Theta\rightarrow\mathcal P_\Theta
+\begin{cases}
+\rightarrow\text{licensed component and negative tests},\\
 \rightarrow\mathcal Q_\Theta\rightarrow\mathcal B_\Theta
-\rightarrow\text{consciousness test}.
+\rightarrow\text{positive-bearer inference}.
+\end{cases}
 $$
+
+Read the sequence aloud: declared universe $\Omega$; proposed candidate family $\mathcal G_\Theta$; stable causally admissible referents $\mathcal P_\Theta$; then one branch for licensed component and negative tests and another through the held-out role-complete family $\mathcal Q_\Theta$ to the inclusion-minimal positive-boundary set $\mathcal B_\Theta$.
 
 Label the forbidden arrow from final consciousness score back to candidate selection.
 
@@ -751,11 +953,11 @@ Label the forbidden arrow from final consciousness score back to candidate selec
 
 **Case pool.** Assign one case to each team: a patient on cardiopulmonary support; a brain-computer interface; an organoid coupled to a recurrent digital controller; a tightly coordinated two-agent conversation; or an AI service with a base model, persistent memory, scheduler, tools, and human oversight. Give a common observation window and require teams to state when a different horizon would change the candidates.
 
-**Preparation.** Within each team, the candidate advocate proposes two or three plausible boundaries. The autonomy auditor evaluates endogenous and inbound causal influence. The constitution specialist designs removal and generic-replacement tests. The reporter applies role completeness, inclusion-minimality, stability, and separability. Every proposal must list omitted variables and interfaces.
+**Preparation.** Within each team, the candidate advocate proposes two or three plausible boundaries. The autonomy auditor evaluates endogenous and inbound causal influence, the five identification assumptions, matched intervention budgets, and candidate-size normalization. The constitution specialist designs removal and generic-replacement tests. The reporter applies role completeness, inclusion-minimality, stability, and separability. Every proposal must list omitted variables and interfaces.
 
-**Hearing.** Pair teams. One presents its preferred boundary in four minutes; the other serves as an independent panel and asks only causal questions: What is imposed from outside? Which support can be generically replaced? Does a proper subsystem remain role-complete? What perturbation would distinguish one bearer from two? The presenting team then issues one of five statuses: unique, multiple, nested, none, or indeterminate. It must state what the result does **not** yet establish about consciousness.
+**Hearing.** Pair teams and run two reciprocal eight-minute rounds. In each round, one team presents its preferred boundary for three minutes; the other serves as an independent panel for three minutes and asks only causal questions: What is imposed from outside? Do internal and external interventions have support and matched budgets? Does the candidate ranking survive size normalization and a dimension-matched null? Which support can be generically replaced? Does a proper subsystem remain role-complete? What perturbation would distinguish one bearer from two? The presenting team uses the final two minutes to issue unique, multiple, none, or boundary-indeterminate at the fixed horizon and to state what the result does **not** establish about consciousness. **Nested** is available only in the mapped cross-horizon extension, not as a fifth same-specification status.
 
-**Deliverable.** Submit a one-page boundary docket containing the observational universe, candidate family, grain and horizon, autonomy evidence, replacement test, qualifying subsets, separability result, boundary status, and most informative next perturbation.
+**Deliverable.** Submit a one-page boundary docket containing the observational universe, candidate family, grain and horizon, autonomy evidence, support / consistency / causal-model / reliability / regime assumptions, intervention-budget and size-comparability checks, replacement test, qualifying subsets, separability result, boundary status, and most informative next perturbation.
 
 **Debrief.** Put the same case at two horizons on the board. Show how a ventilator can be an enabling support over seconds yet indispensable to longer-horizon biological viability, or how persistent memory can be an interface for a single model call but a constituent of an agent-scale process. Boundary indexing is principled when declared prospectively; it is evasive when changed only after seeing the consciousness score.
 
@@ -767,7 +969,7 @@ Use a sixteen-minute fishbowl. The first inner circle has five minutes to addres
 2. What evidence would distinguish multiple subjects from a nested hierarchy at different grains?
 3. How should temporally changing boundaries relate to persistence of a subject?
 
-Reserve four minutes for each circle to contribute to a consensus-with-dissent statement and two minutes for report-out. The statement includes one case where minimality clarifies the bearer and one where it leaves the bearer legitimately unresolved.
+Reserve four minutes total, two per circle, to contribute to a consensus-with-dissent statement, then two minutes for report-out. The statement includes one case where minimality clarifies the bearer and one where it leaves the bearer legitimately unresolved.
 
 ### Common misconceptions
 
@@ -782,13 +984,13 @@ State one boundary reversal and one intervention that could discriminate the riv
 
 ### Readings
 
-**Required:** Stilwell, *Where Is the Conscious Subject?*, Sections 1-5 and one application from Section 6.
+**Required:** Stilwell, *Where Is the Conscious Subject?*, Sections 1-5 and 7, plus one application from Section 6. Ask: Which part of the boundary sequence is consciousness-independent, and which part remains theory-relative?
 
 **Recommended:** Albantakis et al. (2023) on exclusion; Friston et al. (2021) on Markov blankets; Moreno and Mossio (2015) on autonomy.
 
 \newpage
 
-## Session 4. Viability and Integration: Realization and Unity
+## Session 4. Viability and Integration: Realization and Unity {#session-4}
 
 ### Learning objectives
 
@@ -829,9 +1031,11 @@ Use three contrasts.
 
 **Redundancy versus synergy.** Redundant channels each carry the same information; synergistic organization contains information available only from the joint state. The XOR example is useful because neither input alone predicts the output, while the pair does.
 
-Explain why $N_1$ is not simply IIT. IIT treats intrinsic integrated information as central to both phenomenal existence and structure. Cø / N* extracts a unity pressure without adopting IIT's full axiomatic identity or treating integration as sufficient. In the present program, high $N_1$ can occur without consciousness when $N_2$ or $N_3$ fails. The empirical question is whether integration adds indispensable discrimination once the other conditions are preserved.
+Explain why $N_1$ is not simply IIT. IIT 4.0 treats intrinsic information and irreducible cause-effect structure as central to phenomenal existence and structure (Albantakis et al., 2023). Cø / N* extracts a unity pressure without adopting IIT's full axiomatic identity or treating $N_1$ as sufficient. In the present program, high $N_1$ can occur without a positive presence prediction when $N_2$ or $N_3$ fails. The empirical question is whether integration adds indispensable discrimination once the other conditions are preserved.
 
 Now introduce $V$. Viability answers whether the candidate is in an operating regime capable of realizing and sustaining the measured organization. In biological systems, relevant indicators may include arousal-system integrity, metabolic support, perturbational responsiveness, noise bounds, effective coupling, and recovery capacity. In artificial systems, viability may concern persistence of the relevant control organization, energy and hardware support, state retention, scheduler continuity, and robustness across the declared runtime. Biological survival is not the universal definition.
+
+Because effective coupling, recovery, and state retention can share causes with $N_2$ or $N_3$ measures, $V$ needs discriminant validity. Its frozen decision rule must establish operating-regime interpretability independently rather than merely restating the component scores. Shared causes should be modeled; duplicate predictors or outcome-defined viability rules should be removed or merged. Otherwise $V$ becomes a redundant conjunct or a rescue clause rather than an independent realization condition.
 
 $V$ is dangerous because it could explain away any counterexample. The safeguards are:
 
@@ -842,7 +1046,7 @@ $V$ is dangerous because it could explain away any counterexample. The safeguard
 5. version any revised viability rule and test it prospectively; and
 6. penalize a theory that requires a bespoke new definition for every adverse case.
 
-Clarify the relation between boundary and viability. Boundary qualification says what unit is eligible to be tested. Viability says whether that unit is actually operating in the relevant regime. Neither is itself phenomenal evidence. A stable boundary can exist in a nonviable preparation, and a viable organism can contain no boundary-qualified role-complete candidate at a particular grain.
+Clarify the relation between test-referent qualification and viability. $\mathcal P_\Theta$ says what causally admissible unit is eligible to be tested. Viability says whether that unit is actually operating in the relevant regime. Neither is itself phenomenal evidence. A stable $\mathcal P_\Theta$ referent can exist in a nonviable preparation; because $V$ is part of $H_*$, such a referent cannot enter $\mathcal B^+$ for that regime. Conversely, a viable organism can contain no role-complete positive bearer at a particular grain.
 
 The key integration audit asks whether a valid case can occupy:
 
@@ -850,7 +1054,7 @@ $$
 V=1,\quad N_1=0,\quad N_2=1,\quad N_3=1.
 $$
 
-Such a case is difficult because interventions that reduce synergy often also disrupt availability or recurrence. The proper outcome may be **causally coupled**, not a forced verdict about necessity. Promising designs preserve local information and aggregate activity while perturbing cross-module timing, effective coupling, or causal coordination. Required controls include common-drive models, SNR matching, source reconstruction, boundary stability, and direct verification that $N_2$, $N_3$, and $V$ remain within equivalence bands.
+Such a case is difficult because interventions that reduce synergy often also disrupt availability or recurrence. The proper outcome may be **causally coupled**, not a forced verdict about necessity. Promising designs preserve local information and aggregate activity while perturbing cross-module timing, effective coupling, or causal coordination. Required controls include common-drive models, SNR matching, source reconstruction, stability of the frozen $\mathcal P_\Theta$ referent and its cross-condition mapping, and direct verification that $N_2$, $N_3$, and $V$ remain within equivalence bands. Final positive-bearer membership is recomputed after the manipulation and may legitimately be lost or shifted; requiring it to remain fixed would make a successful single-failure test impossible by definition.
 
 Use the phrase **unity without overclaiming**. $N_1$ does not prove a subject, because subject individuation comes first. It does not prove presence, because the other gates matter. It does not determine character, because the character bridge is separate. It claims only that irreducibly joint realization is a necessary part of a present content.
 
@@ -863,7 +1067,7 @@ Begin with a contrast table.
 | Core concern | Can this candidate actually sustain the relevant regime over the declared horizon? | Is the content realized as an irreducibly joint causal event? |
 | Typical evidence | physiological stability, causal responsiveness, state retention, recovery, scheduler continuity | perturbational dependence, causal-cut sensitivity, synergy, nonfactorizable joint influence |
 | Common false positive | an inert formal description or failing preparation is treated as a realized system | common input, duplicated information, coactivation, or raw complexity is treated as unity |
-| Inferential role | licenses application of the dynamical test | supplies one necessary phenomenal-presence gate |
+| Inferential role | supplies one underlying conjunct when validly assessed; the assessment can separately be indeterminate or unlicensed | supplies one necessary phenomenal-presence gate |
 | Failure does not show | that the substrate type can never realize consciousness | that the candidate lacks all complex or useful processing |
 
 Use XOR to illustrate synergy without phenomenological inflation. Let independent fair inputs $X$ and $Y$ determine $Z=X\oplus Y$.
@@ -930,7 +1134,7 @@ Beside them write: **$V$ licenses the regime; $N_1$ tests unity.**
 
 **Debrief.** Compare designs that reduce statistical dependence with designs that change causal synergy. Ask whether local information and aggregate activity were preserved. Stress that an intervention named "integration disruption" earns no special evidential status until its selectivity is demonstrated.
 
-### Collaborative discussion: What kind of unity does $N_1$ buy?
+### Collaborative discussion: What kind of unity does N1 integration buy?
 
 Run a structured controversy. One side argues that irreducible joint information is a plausible necessary condition for a unified experience; the other argues that it is a measure of complex coordinated processing that may be neither necessary nor phenomenally specific. Switch sides, then require a synthesis answering:
 
@@ -944,7 +1148,7 @@ The synthesis must name a result that would support each revision. A bare appeal
 
 - **"More integration means more consciousness."** The theory states a thresholded necessary role, not a general consciousness quantity.
 - **"PCI is $N_1$."** PCI is one candidate surrogate and may reflect multiple constructs.
-- **"A viable system is a conscious candidate."** It is only in an interpretable operating regime.
+- **"A viable system is a conscious candidate."** A licensed $V+$ result establishes only one underlying conjunct. A licensed $V-$ result makes the model predict no $C_0$ for the fixed referent; an indeterminate or unlicensed $V$ assessment supports neither conclusion.
 - **"Failure to selectively ablate $N_1$ confirms it."** It may show causal coupling or inadequate intervention.
 
 ### Exit ticket
@@ -953,13 +1157,13 @@ Explain why a highly correlated network can fail $N_1$, and state one rule that 
 
 ### Readings
 
-**Required:** Stilwell, *Cø as N\**,* Sections 6 and 10-12; Stilwell, *Ablating N\**,* Sections 8.1 and 8.4.
+**Required:** Stilwell, *Cø as N\**, Sections 6 and 10-12; Stilwell, *Ablating N\**, Sections 8.1 and 8.4. Ask: What evidence distinguishes realized viability from irreducibly joint content?
 
-**Recommended:** Albantakis et al. (2023); Casali et al. (2013); selected work on synergy and partial information decomposition.
+**Recommended:** Albantakis et al. (2023); Casali et al. (2013); Storm et al. (2024).
 
 \newpage
 
-## Session 5. Consciousness Without Report: System-Wide Availability
+## Session 5. Consciousness Without Report: System-Wide Availability {#session-5}
 
 ### Learning objectives
 
@@ -969,9 +1173,9 @@ Students should be able to preserve the six central distinctions in the $N_2$ pa
 
 Assign *Consciousness Without Report*, Sections 1-5, 7-9, and Appendices D and H. Display both existing contrast figures.
 
-![Activation and causal availability are logically independent](../papers/consciousness-without-report/activation-availability-matrix.png){width=86%}
+![Figure 2. Activation and causal availability are logically independent. Source: Stilwell, *Consciousness Without Report*, companion-manuscript project figure.](../papers/consciousness-without-report/activation-availability-matrix.png){width=86%}
 
-![Functional globality is not a node-count statistic](../papers/consciousness-without-report/functional-diversity-contrast.png){width=64%}
+![Figure 3. Functional globality is not a node-count statistic. Source: Stilwell, *Consciousness Without Report*, companion-manuscript project figure.](../papers/consciousness-without-report/functional-diversity-contrast.png){width=64%}
 
 ### Timed plan
 
@@ -1004,7 +1208,7 @@ The proposed criterion is:
 
 Break this into the design sequence.
 
-First, freeze the boundary-qualified system, content contrast, grain, time horizon, and operating regime. "Global" is always global relative to that candidate.
+First, freeze the $\mathcal P_\Theta$ test referent, content contrast, grain, time horizon, and operating regime. "Global" is always global relative to that candidate; final $\mathcal B^+$ status is adjudicated after its profile is measured.
 
 Second, build recipient classes independently of the target content. Provisional modules are grouped by their causal response repertoires under calibration interventions. Two parcels count as different recipient classes only if their response repertoires differ reliably. Different anatomical names are not enough.
 
@@ -1034,7 +1238,7 @@ This does not require destructive lesions. The study can omit report by design, 
 
 Explain posterior and subcortical possibilities. The theory is anatomically flexible but causally strict. A posterior-dominant visual network can pass if it reaches genuinely distinct sensory, spatial, orienting, affective, or visuomotor classes with timely, content-specific, route-supported effects. A thalamic pulse that merely changes arousal fails content selectivity. Prefrontal activity can count when it plays a qualifying role, but it is not mandatory by fiat.
 
-Use the four component outputs. **Positive** means every validity and causal gate passes. **Negative** means the test is licensed and an upper uncertainty bound falls below a required gate. **Indeterminate** means valid evidence straddles thresholds, conflicts, or lacks discriminating coverage. **Unlicensed** means the boundary, content, recipient taxonomy, context, intervention, regime, source fidelity, or transport interpretation failed.
+Use the four component outputs. **Positive** means the specification is valid and every required aggregate, uncertainty, stability, and reduced-family gate passes. Individual classes not needed for coverage, count, and diversity may fail or remain unresolved, but they remain visible in the record. **Negative** is direction-specific: an upper bound must fall below a minimum effect, selectivity, context, coverage, diversity, or reduced-family gate; latency fails only when its **lower** bound exceeds the ceiling; route evidence is negative only when its upper bound falls below the route threshold under adequate redundant-route coverage; and class count is negative only when fewer than $m$ classes could pass even at their upper bounds. **Indeterminate** is required when valid bounds straddle, route-family coverage is inadequate, the possible class count is unresolved, credible surrogates conflict, or discriminating coverage is insufficient. **Unlicensed** means the test referent, content, recipient taxonomy, context, intervention, regime, source fidelity, or transport interpretation failed.
 
 ### Worked teaching sequence: six ways availability can collapse
 
@@ -1055,11 +1259,30 @@ Work through an illustrative recipient ledger with frozen weights. A class quali
 |---|---:|---|---:|---|---|
 | Sensory comparison | .25 | $+.18\ [.14,.22]$ | 85 ms | Yes / yes / yes | Qualifies |
 | Value updating | .20 | $+.12\ [.08,.16]$ | 110 ms | Yes / yes / yes | Qualifies |
-| Memory indexing | .20 | $+.04\ [-.01,.09]$ | 125 ms | Unresolved / yes / yes | Indeterminate |
+| Memory indexing | .20 | $+.04\ [.00,.09]$ | 125 ms | Effect threshold $.05$ unresolved / yes / yes | Indeterminate |
 | Orienting / visuomotor | .20 | $+.15\ [.10,.20]$ | 95 ms | Yes / yes / yes | Qualifies |
 | Report preparation | .15 | $+.20\ [.16,.24]$ | 160 ms | Yes / no / yes | Fails |
 
-The qualifying weight is $.65$ across three distinct classes. Renormalized qualifying shares are $.385,.308,.308$, giving normalized Shannon evenness $H_A\approx.99$. If the preregistered coverage threshold is $.60$, minimum class count is three, latency ceilings are 180 ms, and minimum evenness is $.80$, the full-family aggregate is positive despite one indeterminate and one failed class. In this toy taxonomy, report removal excludes the $.15$ report class; renormalized qualifying coverage is $.65/.85=.765$, so $N_2^{-R}$ remains positive. Executive removal excludes memory indexing and report preparation; the three qualifying nonexecutive classes exhaust the remaining $.65$ weight, so $N_2^{-E}$ is also positive after the preregistered renormalization. The unresolved and failed classes remain visible. If qualifying weight had been concentrated in executive subclasses, the reduced-family result could fail even when the full aggregate passed.
+The qualifying weight is $.65$ across three distinct classes. Effect evenness uses both class weight and effect magnitude. For qualifying classes, define
+
+$$
+p_k=\frac{w_kE_k^*a_k}{\sum_jw_jE_j^*a_j},
+\qquad
+H_A=-\frac{\sum_{k:a_k=1}p_k\log p_k}{\log K_A},
+$$
+
+with $H_A=0$ when fewer than two classes qualify. Treating the listed point estimates as exact for this arithmetic illustration gives normalized effect shares $(.455,.242,.303)$ and $H_A\approx.968$. If the preregistered coverage threshold is $.60$, minimum class count is three, latency ceiling is 180 ms, and minimum evenness is $.80$, the full-family aggregate is positive despite one indeterminate and one failed class. A real analysis must propagate uncertainty or provide a lower confidence bound for $H_A$ rather than treating point estimates as exact. In this toy taxonomy, report removal excludes the $.15$ report class; renormalized qualifying coverage is $.65/.85=.765$, so $N_2^{-R}$ remains positive. Executive removal excludes memory indexing and report preparation; the three qualifying nonexecutive classes exhaust the remaining $.65$ weight, so $N_2^{-E}$ is also positive after the preregistered renormalization. The unresolved and failed classes remain visible. If qualifying weight had been concentrated in executive subclasses, the reduced-family result could fail even when the full aggregate passed.
+
+Finally report availability stability across the preregistered specification neighborhood:
+
+$$
+R_A(c)=\sum_{\Theta'\in\mathcal N(\Theta_A)}w(\Theta')
+\mathbf 1\!\left[N_2(c;\Theta')=N_2(c;\Theta_A)\right].
+$$
+
+$R_A$ asks how often the same $N_2$ outcome survives reasonable changes in grain, recipient clustering, estimator, latency bound, and intervention design, under weights frozen before inspection. A nominal positive or negative with low $R_A$ is fragile; incommensurable mappings are reported rather than forced into agreement.
+
+Freeze a stability threshold $\rho_A$ before adjudication. A stable component result requires $R_A(c)\geq\rho_A$ across valid mappings. If $R_A(c)<\rho_A$ with adequate specification coverage, report a fragile or indeterminate $N_2$ result rather than selecting the favorable specification; if mappings are not commensurable or coverage is inadequate, report that limitation instead of calculating forced agreement.
 
 Use a causal-evidence ladder:
 
@@ -1071,21 +1294,22 @@ Use a causal-evidence ladder:
 
 Not every experiment must reach the top rung, but the conclusion must match the rung achieved. A large decoding effect cannot be described as proven broadcast.
 
-Finally, differentiate Cø / N* from a standard GNWT claim prospectively. Look for a case in which content-specific causal reach among diverse posterior, subcortical, affective, orienting, or visuomotor recipients passes while report and executive families do not. Cø / N* can count that as positive $N_2$. A version of GNWT requiring a particular frontoparietal ignition or executive access should not. If the theories make identical predictions after their terms are operationalized, the disagreement is terminological rather than diagnostic.
+Finally, differentiate Cø / N* from an exact GNWT version prospectively (Mashour et al., 2020). Look for a case in which content-specific causal reach among diverse posterior, subcortical, affective, orienting, or visuomotor recipients passes while report and executive families do not. Cø / N* can count that as positive $N_2$. A GNWT version requiring a particular workspace ignition or executive-access pattern should not; motor report loss alone does not settle its prediction. If the theories make identical predictions after their terms are operationalized, the disagreement is terminological rather than diagnostic.
+
+State the availability paper's direct challenge patterns. $N_2$ should be revised if robust independently anchored conscious contents remain local-only under licensed tests; if unconscious diffusion, seizure, or feedforward cases pass every content, route, diversity, context, and reduced-family control; if reasonable frozen recipient taxonomies arbitrarily reverse results; if report or executive classes are always required despite credible no-report evidence; if the intervention needed to reveal availability creates a new state or architecture; if positive results depend on rare, high-burden, or outcome-selected contexts; or if repertoire distance repeatedly predicts no meaningful difference in recipient function. These are threats to the criterion or its operationalization, not invitations to rename a failed case after inspection.
 
 ### Display plan
 
 On the board, use the pipeline:
 
 $$
+\begin{aligned}
 \text{content fidelity}
-\rightarrow
-\text{effect + latency + selectivity + route + context}
-\rightarrow
-\text{coverage + count + diversity}
-\rightarrow
-(-R,-E)
+&\rightarrow \text{effect + latency + selectivity + route + context}\\
+&\rightarrow \text{coverage + count + diversity}
+\rightarrow (-R,-E)
 \rightarrow N_2.
+\end{aligned}
 $$
 
 ### Slide sequence
@@ -1141,13 +1365,13 @@ State one case of activation without availability and one case of availability w
 
 ### Readings
 
-**Required:** Stilwell, *Consciousness Without Report*, Sections 1-5, 7-9, and Appendices D and H.
+**Required:** Stilwell, *Consciousness Without Report*, Sections 1-5, 7-9, and Appendices D and H. Ask: Why can one recipient fail while the aggregate remains positive, and what do the reduced-family tests protect?
 
 **Recommended:** Tsuchiya et al. (2015); Mashour et al. (2020); Kronemer et al. (2022); Cogitate Consortium (2025).
 
 \newpage
 
-## Session 6. Recurrent Stability and Temporal Presence
+## Session 6. Recurrent Stability and Temporal Presence {#session-6}
 
 ### Learning objectives
 
@@ -1155,7 +1379,7 @@ Students should be able to distinguish recurrence from persistence and report-re
 
 ### Instructor preparation
 
-Assign Section 8 of the core paper, Sections 8.3 and 9.3 of *Ablating N\**,* and Sections 4.9 and 6.5 of the phenomenal-character paper. Prepare timelines for feedforward sweep, recurrent stabilization, working-memory maintenance, and motor report.
+Assign Section 8 of the core paper, Sections 8.3 and 9.3 of *Ablating N\**, and Sections 4.9 and 6.5 of the phenomenal-character paper. Prepare timelines for feedforward sweep, recurrent stabilization, working-memory maintenance, and motor report.
 
 ### Timed plan
 
@@ -1193,9 +1417,9 @@ $N_3$ is content-indexed. A globally recurrent or oscillatory state with no vali
 
 An estimator for dwell might use survival time before trajectory autocorrelation drops below a frozen fraction, a metastable hidden-state plateau, recurrent effective connectivity, or causal-loop response under perturbation. None is automatically $N_3$. The measure must track content-relevant feedback rather than generic slow activity.
 
-Explain the relationship to Recurrent Processing Theory. RPT provides the strongest neighboring pressure: feedback within sensory systems may be central to conscious perception. Cø / N* accepts recurrence as necessary for temporal presence but denies that a stable local loop is sufficient. A recurrent process that is causally isolated or unintegrated fails $N_2$ or $N_1$.
+Explain the relationship to Recurrent Processing Theory. RPT supplies the neighboring pressure that feedback within sensory systems may be central to conscious perception (Lamme, 2006). Cø / N* accepts recurrence as necessary for temporal presence but denies that a stable local loop is sufficient. A recurrent process that is causally isolated or unintegrated fails $N_2$ or $N_1$. No-report contrasts also caution that late activity can reflect post-perceptual processing rather than awareness itself (Pitts et al., 2014).
 
-The selective test for $N_3$ is unusually time-sensitive. An early perturbation may prevent encoding, thereby reducing content fidelity rather than recurrence. A late perturbation may disrupt report or memory after the phenomenal interval. The intervention must target recurrent return paths or effective gain during the preregistered stabilization window while preserving initial content information, integration, causal reach, viability, boundary, and operating regime.
+The selective test for $N_3$ is unusually time-sensitive. An early perturbation may prevent encoding, thereby reducing content fidelity rather than recurrence. A late perturbation may disrupt report or memory after the phenomenal interval. The intervention must target recurrent return paths or effective gain during the preregistered stabilization window while preserving initial content information, integration, causal reach, viability, the frozen $\mathcal P_\Theta$ referent's autonomy and cross-condition mapping, and the operating regime. The post-intervention positive-bearer set is an outcome to recompute, not an identity condition to hold fixed.
 
 Feedforward architectures with long time constants are powerful adversarial cases. If a strictly feedforward system can match every independent anchor assigned to recurrent stabilization, the theory must explain why loop structure rather than temporal persistence is necessary. This is a direct differentiating test between a causal-topology claim and a duration claim.
 
@@ -1223,7 +1447,7 @@ Give students two systems with identical observable dwell of 240 ms. System R re
 Now show how timing changes the inference. Suppose feedforward identity information emerges at 60 ms, proposed recurrent stabilization occupies 110-220 ms, memory maintenance begins near 260 ms, and report preparation begins near 340 ms.
 
 - A perturbation at 40-90 ms risks destroying encoding and is not selective for $N_3$.
-- A perturbation at 140-180 ms can test the return pathway if $N_1$, $N_2$, content fidelity, $V$, and boundary remain stable.
+- A perturbation at 140-180 ms can test the return pathway if $N_1$, $N_2$, content fidelity, $V$, and the frozen $\mathcal P_\Theta$ referent and mapping remain stable.
 - A perturbation at 360 ms primarily tests report or late memory, not the proposed phenomenal interval.
 - A rescue that restores the specific return path and the predicted anchor pattern is more informative than nonspecific recovery.
 
@@ -1257,7 +1481,7 @@ Draw a timeline with four colored bands: feedforward encoding, recurrent stabili
 
 **Roles and procedure.** The temporal modeler proposes $t_{min}$, $t_{max}$, and the stabilization interval. The perturbation specialist selects the pathway, duration, and intensity of an intervention. The retained-component auditor specifies how initial content information, $N_1$, $N_2$, $V$, boundary, and regime remain within equivalence bands. The rival advocate designs both a purely feedforward long-time-constant model and a late report-disruption account.
 
-Teams place an early, target, late, sham, and rescue intervention on the timeline. They predict the full anchor vector for each condition. The target manipulation is unlicensed if it prevents encoding, changes content identity, globally suppresses the system, or overlaps only with post-perceptual report. The late control must disrupt report while sparing the proposed phenomenal interval.
+Each team places and analyzes only its assigned pair of early, target, late, sham, or rescue conditions. It predicts the supplied component-and-report profile for that pair and states which causal comparison the partial evidence can and cannot identify. After all teams commit, the instructor releases the complete synthesis table and the class places all five interventions on the timeline. The target manipulation is unlicensed if it prevents encoding, changes content identity, globally suppresses the system, or overlaps only with post-perceptual report. The late control must disrupt report while sparing the proposed phenomenal interval. The packet does not supply an independent anchor battery, so this exercise licenses intervention-structure analysis rather than a complete anchor-relative necessity claim.
 
 **Deliverable.** Submit an annotated causal timeline, predicted component table, temporal selectivity argument, rescue prediction, and a statement of what result favors recurrence over mere duration. Cross-team reviewers identify one timing ambiguity that could reverse the inference.
 
@@ -1270,7 +1494,7 @@ In a fishbowl, the inner circle compares recurrence with a strictly feedforward 
 1. Could recurrence be a common biological implementation without being substrate-general necessity?
 2. Does an upper dwell bound belong to consciousness, healthy cognitive flexibility, or only the operational test?
 3. How should a recurrently stabilized but apparently contentless state be classified?
-4. What distinguishes the $N_3$ presence gate from the temporal path $Pi_c$ of phenomenal character?
+4. What distinguishes the $N_3$ presence gate from the temporal path $\Pi_c$ of phenomenal character?
 
 End with one discriminating intervention rather than a verbal definition.
 
@@ -1287,13 +1511,13 @@ Give one experimental difference between recurrent stability and slow feedforwar
 
 ### Readings
 
-**Required:** Stilwell, *Cø as N\**,* Section 8; Stilwell, *Ablating N\**,* Sections 8.3 and 9.3; Stilwell, *From Phenomenal Presence to Phenomenal Character*, Sections 4.9 and 6.5.
+**Required:** Stilwell, *Cø as N\**, Section 8; Stilwell, *Ablating N\**, Sections 8.3 and 9.3; Stilwell, *From Phenomenal Presence to Phenomenal Character*, Sections 4.9 and 6.5. Ask: Which intervention distinguishes causal recurrence from slow feedforward persistence without targeting report?
 
-**Recommended:** Lamme (2006); Pitts et al. (2014); selected work on metastability and recurrent effective connectivity.
+**Recommended:** Lamme (2006); Pitts et al. (2014); Storm et al. (2024).
 
 \newpage
 
-## Session 7. What Does the Evidence License?
+## Session 7. What Does the Evidence License? {#session-7}
 
 ### Learning objectives
 
@@ -1312,7 +1536,7 @@ Assign *Indeterminacy as a Scientific Result*, Sections 1-4 and 6-9. Prepare fou
 | 30-45 min | Identical-score examples and test-performance reporting |
 | 45-72 min | Collaborative evidence tribunal |
 | 72-89 min | Structured hearing: Does indeterminacy protect the theory? |
-| 89-104 min | Cause profiles, science-action separation, and failure budgets |
+| 89-104 min | Cause profiles, science-action separation, and synthesis |
 | 104-110 min | Exit ticket |
 
 ### Lecture notes
@@ -1336,13 +1560,13 @@ D(\mathcal A)=
 \begin{cases}
 \text{Unlicensed},&a=0\text{ or }q=0,\\
 \text{Indeterminate},&a=1,q=1,c=1,\\
-\text{Positive},&a=1,q=1,c=0,L\geq\tau_+,\\
-\text{Negative},&a=1,q=1,c=0,L\leq\tau_-,\\
-\text{Indeterminate},&a=1,q=1,c=0,\tau_-<L<\tau_+.
+\text{Positive},&a=1,q=1,c=0,\operatorname{LB}(L)\geq\tau_+,\\
+\text{Negative},&a=1,q=1,c=0,\operatorname{UB}(L)<\tau_-,\\
+\text{Indeterminate},&a=1,q=1,c=0\text{ and neither threshold rule passes}.
 \end{cases}
 $$
 
-$a$ is applicability, $q$ execution and data quality, $c$ unresolved credible-surrogate conflict, and $L$ a validated evidence grade or score. Validity and quality are checked before evidential strength. Conflict is checked before aggregation. Only a licensed, adequately executed, nonconflicted assessment reaches the rule-in and rule-out thresholds.
+$a$ is applicability, $q$ execution and data quality, $c$ unresolved credible-surrogate conflict, and $L$ a validated evidence grade or score with uncertainty bounds. Validity and quality are checked before evidential strength. Conflict is checked before aggregation. Only a licensed, adequately executed, nonconflicted assessment reaches the rule-in and rule-out thresholds. Equality at the positive threshold passes; equality at the negative threshold does not count as a licensed rule-out.
 
 Define the four outcomes precisely.
 
@@ -1350,6 +1574,8 @@ Define the four outcomes precisely.
 - **Negative:** an applicable, sufficiently sensitive, adequately executed test yields evidence in a validated rule-out region.
 - **Indeterminate:** the assessment is valid and informative but does not discriminate enough, either because evidence lies in the gray zone or credible surrogates or models remain unresolved.
 - **Unlicensed:** a condition required to interpret the assessment failed. This is a meta-output about the procedure, not negative evidence about the system.
+
+An unlicensed result is local unless the frozen battery makes it contagious. Quarantine the failed measure, then apply the prospective aggregation rule to the remaining independently validated evidence. If that evidence still constitutes a complete battery, it may yield its own outcome. If the failed measure was the sole estimator of a required component, or if removing it invalidates the combination rule, the bundle remains unlicensed. Analysts may not decide this dependence after seeing which quarantine produces the preferred verdict.
 
 Teach the Positive License Principle. An impressive marker supports consciousness only when its target relevance and specificity are validated, the test is applicable, quality is adequate, and credible nonconscious or artifactual explanations are controlled. Complexity, self-report, recurrent activity, or flexible behavior is not a default positive.
 
@@ -1363,6 +1589,22 @@ $$
 
 where $e$ is evidential scarcity, $s$ surrogate discordance, $m$ model dependence, $b$ boundary or grain sensitivity, and $t$ transport uncertainty. The entries diagnose the inference, not the quantity or dimensions of experience.
 
+**Notation warning.** Symbols in this corpus are locally scoped. Here $m$ means model dependence and $s$ means surrogate discordance; in the availability criterion, $m$ can denote the minimum recipient-class count and $s$ a selectivity threshold. Always write the prose label with the symbol on first use, and never carry a local meaning into another protocol without redefining it.
+
+Make model and boundary dependence visible as output sets. For a frozen assessment $\mathcal A$ and a declared family of live inferential models $\mathfrak M$, write
+
+$$
+O_M(\mathcal A)=\{D_m(\mathcal A):m\in\mathfrak M\}.
+$$
+
+For a declared, mapped candidate-boundary family $\mathfrak B$, write
+
+$$
+O_B(\mathcal A)=\{D(\mathcal A;B):B\in\mathfrak B\}.
+$$
+
+An internally determinate model or boundary can still participate in comparative indeterminacy when $|O_M|>1$ or $|O_B|>1$. The sets expose disagreement; they are not posterior probabilities, and analysts may not shrink either family after seeing which member yields the preferred result.
+
 Match each cause to a research response:
 
 | Cause | What it means | Proper next step |
@@ -1371,7 +1613,7 @@ Match each cause to a research response:
 | Surrogate discordance | Credible measures conflict | Decompose constructs, trace auxiliary demands, repeat or intervene to adjudicate |
 | Model indeterminacy | Live inferential models yield different outputs | Design a discriminating prediction or justify model weighting |
 | Boundary / grain | Reasonable system definitions reverse the result | Perform independent causal individuation and boundary perturbation |
-| Transport | The indicator-target bridge may not carry to the new domain | Establish construct, causal-role, and calibration preservation |
+| Transport | The indicator-target bridge may not carry to the new domain | Establish construct, causal-role, calibration, and boundary / regime preservation |
 
 Explain resolution asymmetry. Indeterminate evidence can be resolved by more informative evidence. Unlicensed assessment first requires repair of its applicability, quality, target, boundary, or transport. More data from the same invalid procedure can produce a highly reproducible nonanswer.
 
@@ -1396,7 +1638,7 @@ The equal score does not imply equal evidence. Assessment A may enter the rule-i
 
 Clarify rule-in and rule-out asymmetry. A highly specific marker can support a positive when credible nonconscious causes of the effect have been controlled. A negative needs strong sensitivity under the actual conditions, adequate detection opportunity, satisfied auxiliary task demands, and a validated rule-out region. A test can be useful for positive detection while being unsafe for negative exclusion.
 
-Use a small performance report. Out of 100 applicable target cases, a tool classifies 30 positive and 20 negative, returns 25 indeterminate, and finds 25 assessments unlicensed. Its coverage is $(30+20)/100=.50$, $r_I=.25$, and $r_U=.25$. If 5 of the 50 classified cases disagree with a defensible independent reference, selective risk is $.10$. A second tool that classifies only 20 easy cases with no observed errors has lower measured selective risk but only $.20$ coverage. It is not automatically the better general test.
+Use a small performance report. Out of 100 attempted assessments in the target cohort, a tool classifies 30 positive and 20 negative, returns 25 indeterminate, and finds 25 assessments unlicensed. Its coverage is $(30+20)/100=.50$, $r_I=.25$, and $r_U=.25$. If 5 of the 50 classified cases disagree with a defensible independent reference, selective risk is $.10$. A second tool that classifies only 20 easy cases with no observed errors has lower measured selective risk but only $.20$ coverage. It is not automatically the better general test.
 
 Now distinguish case-level and field-level indeterminacy. One theory may confidently classify a case positive and another negative because they assign different constitutive roles to the same data. Each internal verdict can be determinate while comparative adjudication remains model-indeterminate until a diagnostic prediction or justified model weighting is available.
 
@@ -1429,13 +1671,13 @@ Beside it write: **Unlicensed is not weak evidence; it is failed interpretabilit
 
 **Purpose.** Students practice the four-outcome framework as a rule-governed classification system and learn that uncertainty, invalidity, and negative evidence demand different responses.
 
-**Case packet.** Prepare five variants of one locked-in patient assessment: a valid strong positive; a valid score in the gray zone; credible EEG and imaging surrogates that conflict; poor hearing during a command-following task; and a new neural measure with no validation in severe injury. Assign one variant to each team and provide a partially completed decision form. Add evidence on stakes and reversibility, but instruct teams not to use it in the scientific verdict.
+**Case packet.** Prepare six variants of one severe-injury patient assessment: a valid strong positive; a valid score in the gray zone; credible EEG and imaging surrogates that conflict; poor hearing during a command-following task; a new neural measure with no validation in severe injury; and a licensed strong negative with a fair detection opportunity. With four teams, assign the positive, gray-zone, invalid-route, and licensed-negative variants so all four outcomes appear; use the conflict and transport variants as extensions. With six teams, assign all six. Provide a partially completed decision form. Add evidence on stakes and reversibility, but instruct teams not to use it in the scientific verdict. Under the simplified one-unit trial cost and twenty-unit missed-command loss, action favors the reversible trial only when the decision maker's probability of genuine command following exceeds $.05$; because no probability is supplied, teams must state rather than discover that action premise.
 
 **Tribunal roles.** A positive advocate states the strongest positive license. A negative advocate states the strongest negative license and rule-out region. A validity officer audits applicability, quality, boundary, transport, and auxiliary demands. A chair assigns the outcome and cause profile, records dissent, and recommends the next study. Rotate roles in the next tribunal exercise rather than forcing multiple cases into this block.
 
 For each assigned case, advocates have ninety seconds; the validity officer then rules which evidence is admissible. The chair must choose positive, negative, indeterminate, or unlicensed and complete $\langle e,s,m,b,t\rangle$. "Indeterminate" is not allowed when the assessment is invalid; "unlicensed" is not allowed merely because the result is inconvenient. After the scientific verdict, the group writes a separate practical recommendation using the supplied loss structure.
 
-**Deliverable.** Each team submits one outcome record with decisive rule, cause profile, confidence statement, practical-action note, and smallest informative next study. The instructor combines the five records into a class table during debrief. Every record must say whether simply collecting more of the same data would help.
+**Deliverable.** Each team submits one outcome record with decisive rule, cause profile, confidence statement, practical-action note, and smallest informative next study. The instructor combines the records into an assigned-case table during debrief. Every record must say whether simply collecting more of the same data would help. Only when C and E are also completed should students construct the six-variant table and calculate decisive classification coverage, indeterminate rate, and unlicensed rate; none of those classroom fractions is a population estimate.
 
 **Debrief.** Ask groups to defend the difference between a score in the gray zone and a test administered through an unavailable sensory channel. More precision may resolve the first; the second requires a different assessment. Then compare scientific and clinical recommendations to show why precaution does not turn an indeterminate result into a positive one.
 
@@ -1447,7 +1689,16 @@ Use a structured hearing. Half the class argues that four outcomes create escape
 2. Can a field-level comparison be indeterminate while one theory gives confident case-level verdicts?
 3. What maximum unresolved-output rate would make a proposed C-test scientifically unhelpful?
 
-The final synthesis must include a **failure budget**: a preregistered rate or pattern of unresolved cases that triggers revision of measures, boundary rules, or the theory.
+The in-class synthesis must include a **failure budget**: a preregistered rate or pattern of unresolved cases that triggers revision of measures, boundary rules, or the theory. For extension or homework, audit the four-outcome framework itself against six prospective failure patterns:
+
+1. independent reviewers cannot reliably distinguish indeterminate from unlicensed cases even with complete records;
+2. four outcomes improve neither calibration, error detection, nor interpretive accuracy over a simpler three-outcome rule;
+3. cause profiles do not predict efficient resolution or reduce wasteful repetition;
+4. indeterminate systematically absorbs cases that validated evidence can safely classify;
+5. applicability, conflict, or transport objections appear only after an adverse result and repeatedly rescue a favored theory; or
+6. protocol burden exceeds epistemic benefit even in high-stakes or cross-domain uses.
+
+As the extension, select the strongest two failure patterns and specify an inter-rater study, retrospective reanalysis, prospective preregistration, three-versus-four-outcome comparison of coverage and error, or resolution-time / follow-up-efficiency measure that could test them. Structured abstention is a method to validate, not an exemption from validation.
 
 ### Common misconceptions
 
@@ -1462,13 +1713,13 @@ Write one case that is indeterminate and one that is unlicensed. State why colle
 
 ### Readings
 
-**Required:** Stilwell, *Indeterminacy as a Scientific Result*, Sections 1-4 and 6-9.
+**Required:** Stilwell, *Indeterminacy as a Scientific Result*, Sections 1-4 and 6-9. Ask: Which defect makes a result unlicensed rather than indeterminate, and what repair follows?
 
 **Recommended:** Bayne et al. (2024); Chow (1970); Shinkins et al. (2013); Birch (2024).
 
 \newpage
 
-## Session 8. Does Every Conjunct Earn Its Place?
+## Session 8. Does Every Conjunct Earn Its Place? {#session-8}
 
 ### Learning objectives
 
@@ -1476,9 +1727,9 @@ Students should be able to prove the diagnostic-set result informally, determine
 
 ### Instructor preparation
 
-Assign *Ablating N\**,* Sections 1-8 and 10, plus Appendices B and G. Display the existing anti-circularity figure.
+Assign *Ablating N\**, Sections 1-8 and 10, plus Appendices B and G. Display the existing anti-circularity figure.
 
-![Anti-circularity architecture for component audits](../papers/ablating-n-star/anti-circularity-firewall.png){width=95%}
+![Figure 4. Anti-circularity architecture for component audits. Source: Stilwell, *Ablating N\**, companion-manuscript project figure.](../papers/ablating-n-star/anti-circularity-firewall.png){width=95%}
 
 ### Timed plan
 
@@ -1516,17 +1767,27 @@ $$
 
 The proof is simple. If the full conjunction is true, the ablated conjunction must be true. Disagreement therefore occurs only when the full model is false and the ablated model true. That requires every retained term to pass and the omitted term to fail. No observation outside this cell can discriminate the two rules on that case.
 
+This theorem is exact for the **profile rules** $M_*$ and $M_{-k}$ on frozen members of $\mathcal P_\Theta$; it is not by itself an exact theorem about final subject bearers. For each rival $m$, propagate its profile through the full frozen candidate lattice:
+
+$$
+\mathcal B_m^+(c)=
+\operatorname{Min}_{\subseteq}
+\{S\in\mathcal P_\Theta:M_m(S,c)=1\},
+$$
+
+and then apply the same stability, mapping, and separability licenses. A member of $\mathcal D_k$ somewhere in the lattice is necessary for $\mathcal B_*^+$ and $\mathcal B_{-k}^+$ to differ, but it is not sufficient: that candidate may remain nonminimal under both. Conversely, deleting $k$ can make a smaller candidate pass and thereby remove a larger all-pass candidate from the ablated bearer set, even though the larger candidate is not itself in $\mathcal D_k$. A diagnostic-case audit therefore tests the factorization of $H_*$ unless it also recomputes and compares the rival bearer-output sets. Do not advertise a profile-level component result as a complete subject-boundary result.
+
 Empirical measures are uncertain, so use a conservative diagnostic region. The upper bound of $X_k$ must fall below its threshold, and the lower bounds of every retained component must clear their thresholds. Threshold-straddling cases do not become diagnostic by point estimate. The diagnostic margin records distance from the nearest relevant threshold.
 
-Diagnostic coverage $\Gamma_k$ reports how much of the target distribution occupies the discriminating region. A strong effect in a rare engineered cell does not establish broad necessity. An empty or tiny diagnostic set means necessity is underidentified, not confirmed.
+Profile diagnostic coverage $\Gamma_k$ reports how much of the target distribution occupies the profile-level discriminating region. A strong effect in a rare engineered cell does not establish broad necessity. An empty or tiny diagnostic set means profile-level necessity is underidentified, not confirmed. A bearer-complete audit must additionally report **bearer-output disagreement coverage**: the target-distribution mass on which $\mathcal B_*^+(c)$ and $\mathcal B_{-k}^+(c)$ differ after lattice recomputation and licensing. Large $\Gamma_k$ can coexist with little or no bearer-output disagreement when diagnostic candidates are consistently nonminimal.
 
 Now address the missing consciousness oracle. The audit must never define labels from $N^*$ and then use those labels to show that removing $N_k$ worsens performance. Install the firewall:
 
-1. Treat $C_0\Longleftrightarrow V\land N^*$ as a hypothesis, never a database definition.
+1. Treat the source profile identity and the resolved-domain bearer-complete $C_0(S,c)\Longleftrightarrow S\in\mathcal B_{\min,\Theta}^+(c)$ as hypotheses, never database definitions.
 2. Separate the component stream $X$ from an independently constructed anchor vector $Y$.
 3. Split development, calibration, and final adjudication evidence.
 4. Prohibit one measure from constructing a component and validating that component's necessity in the same fold.
-5. Freeze boundary, grain, content, regime, interval, thresholds, interventions, anchor battery, translation rule, scoring rule, and sensitivity neighborhood.
+5. Freeze the candidate lattice, $\mathcal P_\Theta$ referents and cross-condition mappings, grain, content, regime, interval, thresholds, interventions, anchor battery, translation rule, scoring rule, and sensitivity neighborhood; recompute each rival's $\mathcal B_m^+$ rather than freezing the result.
 6. Compare full and ablated models only on held-out diagnostic cases.
 
 An anchor vector may contain calibrated reports, discrimination, metacognitive structure, physiological relations, perturbational signatures validated outside the critical contrast, and theory-light clinical outcomes. It is not an oracle and must preserve disagreement. The audit supports a conjunct only relative to the declared anchors, target population, and rival class.
@@ -1537,27 +1798,102 @@ $$
 \Delta_k=R_k(-k)-R_k(*).
 $$
 
-Positive $\Delta_k$ favors retention; negative values favor removal; intervals spanning the minimum meaningful effect remain indeterminate.
+The sign of $\Delta_k$ is descriptive, not a verdict. Classify the component as **indispensable** only when $\operatorname{LB}_\beta(\Delta_k)>\delta_k^{\min}$ and the other licenses pass. Classify it as **redundant or empirically equivalent** only when $\operatorname{UB}_\beta(\Delta_k)<\delta_k^{\min}$ under adequate diagnostic coverage, matched model flexibility, transport parity, and no compensatory retuning; a negative interval then strengthens the removal case. Otherwise the comparison is indeterminate or belongs to another audit status.
 
 Distinguish three ablations:
 
 | Type | What is removed | Inference |
 |---|---|---|
 | Criterion ablation | A term from the decision rule | Incremental predictive discrimination |
-| Mechanism ablation | A proposed physical realization | Causal contribution, only if selectivity and identity are preserved |
+| Mechanism ablation | A proposed physical realization | Causal contribution, only if selectivity and frozen $\mathcal P_\Theta$ referent identity are preserved |
 | Measurement ablation | A sensor, estimator, feature family, or pipeline | Robustness to measurement choice |
 
-A lesion called "recurrence ablation" may reduce integration, availability, arousal, and the candidate boundary. Its name does not establish selectivity. A licensed mechanism ablation must move the target component by a minimum amount while retained components stay within equivalence bands and the boundary and viability remain licensed.
+A lesion called "recurrence ablation" may reduce integration, availability, arousal, and the candidate's causal admissibility. Its name does not establish selectivity. A licensed mechanism ablation must move the target component by a minimum amount while retained components stay within equivalence bands and the frozen $\mathcal P_\Theta$ referent remains autonomous, causally admissible, and mappable across conditions and $V$ remains licensed. Recompute $\mathcal B_m^+$ after the manipulation and report loss, replacement, or unresolved multiplicity as a bearer-level result.
+
+Make the mechanism audit formal. To avoid collision with the availability criterion's recipient indicator $a_k$, write an intervention intended to reduce component $k$ as $\iota_k\in\mathcal I_k$. Its matched-control change vector is:
+
+$$
+\boldsymbol\delta(\iota_k)=
+(\Delta s_0,\Delta s_1,\Delta s_2,\Delta s_3),
+$$
+
+where the four scores correspond to $(V,N_1,N_2,N_3)$. A conservative selectivity license is:
+
+$$
+\Lambda_k^{\mathrm{sel}}(\iota_k)=
+\mathbf 1[\Delta s_k\leq-\eta_k]
+\prod_{j\neq k}\mathbf 1[\Delta s_j\in\mathcal E_j]
+\mathbf 1[V\text{ remains licensed}]
+\mathbf 1[S\in\mathcal P_\Theta\text{ remains autonomous and mappable}],
+$$
+
+where $\eta_k$ is the minimum intended reduction and each $\mathcal E_j$ is the preregistered equivalence interval for a retained component. In data analysis, the relevant uncertainty interval for every $\Delta s_j$ must satisfy the indicator; a point estimate inside the margin is not enough. Positive-bearer membership is deliberately absent from $\Lambda_k^{\mathrm{sel}}$: it is recomputed as an outcome. The symbol also avoids collision with the availability paper's latency variable $L_k$.
+
+For a preregistered scalar summary $g$ of the independent anchor vector, the licensed causal contrast is:
+
+$$
+\psi_k=
+\mathbb E\!\left[
+g(Y^{\iota_k})-g(Y^{\iota_0})
+\ \middle|\
+\Lambda_k^{\mathrm{sel}}(\iota_k)=1,
+x\in\widetilde{\mathcal D}_k
+\right],
+$$
+
+with $\iota_0$ the matched control. Its sign and minimum magnitude must be frozen. $\psi_k$ is a contrast in an evidential anchor summary among licensed diagnostic cases, not an average treatment effect on directly observed consciousness.
+
+Name the two robustness summaries. For the preregistered measurement-route removal family $\mathcal R_k$,
+
+$$
+\Omega_k=\Pr_{r\in\mathcal R_k}
+\left[
+\operatorname{status}\!\left(\widehat X_k^{(-r)}\right)
+=
+\operatorname{status}(\widehat X_k)
+\right].
+$$
+
+$\Omega_k$ is how often the component classification survives removal of a plausible sensor, estimator, feature, or preprocessing route. It is not the probability that consciousness survives physical deletion. Across the frozen reasonable-specification family $\mathfrak S$,
+
+$$
+\Pi_k^+=\frac{1}{|\mathfrak S|}
+\sum_{\vartheta\in\mathfrak S}
+\mathbf 1\!\left[
+\operatorname{LB}_{\beta}(\Delta_{k,\vartheta})>\delta_k^{\min}
+\right].
+$$
+
+$\Pi_k^+$ is the fraction of specifications whose lower risk-advantage bound clears the meaningful-effect margin. It is a stability summary, not a posterior probability of metaphysical necessity; always report the distribution and the choices that reverse status.
 
 Teach the five audit outcomes:
 
 - **Indispensable:** adequate coverage and a stable, meaningful held-out advantage, with a selective license when causal necessity is claimed.
-- **Redundant:** valid diagnostic cases exist and the ablated model is equivalent or better without compensatory retuning.
+- **Redundant:** valid diagnostic cases exist and the ablated model is equivalent or better with matched flexibility, transports at least as well, and requires no compensatory retuning.
 - **Causally coupled:** the target component cannot be varied without moving retained components, despite valid intervention and measurement.
 - **Indeterminate:** coverage is weak, intervals straddle, anchors conflict, or rivals tie.
 - **Unlicensed:** boundary, viability, intervention, measurement, independence, or transport failed.
 
-Finally, explain grouped ablation. One-at-a-time deletion tests weak minimality. Components can be jointly redundant or interact. For a removed set $A$, compare the full model with $M_{-A}$ on cases where every retained term passes and at least one removed term fails. Strong empirical minimality requires the full model to outperform every preregistered proper submodel, with multiplicity control and matched flexibility. It still does not establish sufficiency against unrelated nonconjunctive theories.
+Finally, explain grouped ablation. One-at-a-time deletion tests weak minimality. Components can be jointly redundant or interact. For a nonempty removed set $A\subseteq\{0,1,2,3\}$:
+
+$$
+M_{-A}(x)=\bigwedge_{j\notin A}X_j(x),
+$$
+
+$$
+\mathcal D_A=
+\left\{x:
+\bigwedge_{j\notin A}X_j(x)=1
+\land
+\bigvee_{k\in A}X_k(x)=0
+\right\},
+$$
+
+$$
+\Delta_A=R_{\mathrm{grp},A}(-A)-R_{\mathrm{grp},A}(*).
+$$
+
+Thus the full and grouped rival disagree exactly when every retained term passes and at least one removed term fails. Apply the same meaningful-effect, matched-flexibility, anchor-independence, transport, and uncertainty rules used for $\Delta_k$. At bearer level, propagate $M_{-A}$ through the frozen candidate lattice and compare $\mathcal B_{-A}^+$ with $\mathcal B_*^+$; profile disagreement alone need not change a minimal bearer. Strong empirical minimality requires the full model to outperform every preregistered proper submodel, with multiplicity control and matched flexibility. It still does not establish sufficiency against unrelated nonconjunctive theories.
 
 ### Worked teaching sequence: three kinds of necessity
 
@@ -1567,7 +1903,7 @@ Begin by making the word *necessary* less ambiguous.
 |---|---|---|---|
 | Logical necessity | The term appears in the written conjunction, so deleting it changes the formula | Inspection of the theory | Only what the theory says, not whether nature requires it |
 | Incremental empirical necessity | The full model predicts held-out independent anchors better than a declared ablated rival in diagnostic cases | Frozen models, adequate diagnostic coverage, independent anchors, matched flexibility | Relative to the anchor family, population, specification, and rival |
-| Causal necessity | Selectively changing the term's physical realization changes anchors while retained terms remain equivalent | Mechanism intervention, selectivity checks, rescue, boundary and viability preservation | Relative to the realized mechanism and tested domain |
+| Causal necessity | Selectively changing the term's physical realization changes anchors while retained terms remain equivalent | Mechanism intervention, selectivity checks, rescue, preserved $\mathcal P_\Theta$ referent / mapping and viability, plus recomputed $\mathcal B_m^+$ | Relative to the realized mechanism and tested domain |
 
 Use a numerical diagnostic example. Let every component threshold be $.60$. To test $N_2$, suppose one case has upper bound $U_2=.42$ while retained-component lower bounds are $L_V=.73$, $L_1=.80$, and $L_3=.69$. The conservative distance from every relevant decision boundary is:
 
@@ -1575,9 +1911,9 @@ $$
 m_2=\min(.60-.42,\ .73-.60,\ .80-.60,\ .69-.60)=.09.
 $$
 
-This is a genuine $N_2$ diagnostic case: $N_2$ is below threshold and the retained conditions clear theirs. Now suppose weighted diagnostic coverage is only $.05$, while the full model's held-out advantage over the ablated rival is $\Delta_2=.13$ with interval $[.04,.21]$. The case offers meaningful local evidence that $N_2$ adds predictive value, but the population claim must remain narrow because only five percent of the target weight occupies the disagreement region. A large effect does not manufacture coverage.
+This is a genuine $N_2$ diagnostic case: $N_2$ is below threshold and the retained conditions clear theirs. Now preregister a minimum meaningful held-out advantage $\delta_2^{\min}=.05$. Suppose weighted diagnostic coverage is only $.05$, while the full model's advantage over the ablated rival is $\Delta_2=.13$ with interval $[.08,.21]$. The lower bound clears the meaningful-effect gate, so the case offers local evidence that $N_2$ adds incremental predictive value. The population claim must remain narrow because only five percent of the target weight occupies the disagreement region. A large effect does not manufacture coverage.
 
-Contrast weak and strong minimality. With four terms $V,N_1,N_2,N_3$, there are $2^4-1=15$ nonempty removal sets. Four one-at-a-time audits can all favor the full model while a two-term removal reveals joint redundancy. For example, if $N_1$ and $N_3$ are noisy estimators of one deeper recurrent-integration process, each may appear useful when the other remains, yet a matched composite can outperform both. Hierarchical testing should begin with scientifically motivated single removals and coupled sets, control multiplicity, and reserve exhaustive proper-submodel comparison for mature data.
+Contrast weak and strong minimality. With four terms $V,N_1,N_2,N_3$, there are $2^4-1=15$ nonempty removal sets. Four one-at-a-time audits can all favor the full model while a two-term removal reveals set-level redundancy or interaction. That grouped-deletion comparison is distinct from proposing a latent recurrent-integration composite: the composite is a new nonconjunctive rival and tests a revised factorization rather than $M_{-\{1,3\}}$ alone. Hierarchical testing should begin with scientifically motivated single removals and coupled sets, control multiplicity, and reserve exhaustive proper-submodel and revised-factorization comparisons for mature data.
 
 Diagnostic conditioning can also create selection bias. If measurement error or a common cause affects both component scores and anchors, selecting cases because a score falls below threshold can enrich misleading anchor patterns. Safeguards include defining diagnostic membership before revealing held-out anchors, cross-fitting membership rules, probabilistic membership near thresholds, negative controls, and an unconditional sensitivity analysis.
 
@@ -1610,9 +1946,9 @@ Draw the Boolean cube's all-pass and all-fail corners, then circle the four sing
 
 **Materials.** Give every team a twelve-case toy dataset containing component intervals, target-population weights, held-out anchor vectors, two intervention descriptions, and one measure that has been used both to define a component and to score the anchor. Include an anesthesia contrast in which every component, arousal, behavior, and data quality move together.
 
-**Roles and procedure.** The component theorist writes the full and leave-one-out models. The measurement and statistics lead identifies conservative diagnostic cases and estimates margin and coverage. The intervention lead audits minimum target change, equivalence of retained components, boundary and viability preservation, and rescue. The anti-circularity auditor traces every variable through development, calibration, selection, and final test.
+**Roles and procedure.** The component theorist writes the full and leave-one-out models. The measurement and statistics lead identifies conservative diagnostic cases and estimates profile and bearer-output disagreement coverage. The intervention lead audits minimum target change, equivalence of retained components, preservation of the frozen $\mathcal P_\Theta$ referent / mapping and viability, recomputation of $\mathcal B_m^+$, and rescue. The anti-circularity auditor traces every variable through development, calibration, selection, and final test.
 
-At the midpoint, each team receives a hidden complication: the largest diagnostic case is off-manifold; membership was computed after examining anchors; the intervention changes the boundary; or a measure appears in both evidence streams. Teams must revise the status rather than explain the complication away.
+At the midpoint, each team receives a hidden complication: the largest diagnostic case is off-manifold; membership was computed after examining anchors; the intervention destroys autonomy or cross-condition mapping of the frozen $\mathcal P_\Theta$ referent; or a measure appears in both evidence streams. Teams must revise the status rather than explain the complication away. A mere change in recomputed $\mathcal B^+$ membership is instead a bearer-output result to report.
 
 **Deliverable.** Complete Worksheet 4 and attach a one-sentence claim whose scope names the component, anchor family, target population, specification neighborhood, rival, and type of necessity. Another team reviews the claim and marks any word that exceeds the license.
 
@@ -1642,13 +1978,13 @@ For $N_2$, write the exact component profile on which the full model and the $N_
 
 ### Readings
 
-**Required:** Stilwell, *Ablating N\**,* Sections 1-8 and 10, Appendices B and G.
+**Required:** Stilwell, *Ablating N\**, Sections 1-8 and 10, Appendices B and G. Ask: On which exact cases do the full and leave-one-out models disagree, and what evidence must not be dual-used?
 
 **Recommended:** Doerig et al. (2021); Kleiner and Hoel (2021); Yaron et al. (2022); Cogitate Consortium (2025).
 
 \newpage
 
-## Session 9. From Phenomenal Presence to Phenomenal Character
+## Session 9. From Phenomenal Presence to Phenomenal Character {#session-9}
 
 ### Learning objectives
 
@@ -1658,7 +1994,7 @@ Students should be able to explain the two-layer architecture, distinguish causa
 
 Assign *From Phenomenal Presence to Phenomenal Character*, Sections 1-5 and 7-9. Display the existing two-layer inference figure.
 
-![Two-layer inference architecture for presence and character](../papers/from-phenomenal-presence-to-phenomenal-character/inference-architecture.png){width=95%}
+![Figure 5. Two-layer inference architecture for presence and character. Source: Stilwell, *From Phenomenal Presence to Phenomenal Character*, companion-manuscript project figure.](../papers/from-phenomenal-presence-to-phenomenal-character/inference-architecture.png){width=95%}
 
 ### Timed plan
 
@@ -1674,13 +2010,17 @@ Assign *From Phenomenal Presence to Phenomenal Character*, Sections 1-5 and 7-9.
 
 ### Lecture notes
 
-State the limitation that motivates the extension: $V\land N^*$ says whether experience is present, not why a present state feels red rather than green, painful rather than neutral, or continuous rather than stuttering.
+State the limitation that motivates the extension: the bundle profile plus positive-bearer rule supports or withholds a model-relative presence classification; it does not explain why an admitted state feels red rather than green, painful rather than neutral, or continuous rather than stuttering.
 
-The two-layer architecture is:
+The character paper's scientific gate is a preregistered empirical decision, not access to an unknowable ontic set:
 
 $$
-\text{presence gate}=V\land N^*,
+P(S,c;\Theta_P)\in\{0,1\}.
 $$
+
+In the bearer-complete synthesis, a licensed positive implementation sets $\widehat P(S,c;\Theta_P)=1$ only when the boundary outcome is evidentially resolved and $S\in\widehat{\mathcal B}_{\min,\Theta}^+(c)$; indeterminate or unlicensed evidence does not enter the character map. The corresponding unhatted membership remains part of the ontological hypothesis, not a quantity an experiment directly reads.
+
+The second layer is:
 
 $$
 \text{phenomenal character}=Q_\Phi(G_c,\Delta).
@@ -1710,9 +2050,11 @@ Define $G_c$ carefully. It is not a single activation vector, a decoder embeddin
 
 The geometry can be a metric space, pseudometric, directed graph, stratified manifold, or another relational structure. Do not force Euclidean structure when triangle, symmetry, or identity conditions fail.
 
+Use a bounded causal neighborhood and declared transition family rather than silently making every remote possible state constitutive of the current quality. Freeze neighborhood radius, occupancy rule, and timescale inside $\Phi$. Compare a whole-structure version with a locally instantiated-relations version by intervening on remote geometry while preserving the content's local causal neighborhood. If current phenomenal relations change only under the whole-space manipulation, that result bears on which version of the bridge is viable.
+
 Construct the phenomenal target independently. In report-capable anchor participants, use converging similarity judgments, discrimination thresholds, confusion matrices, generalization, adaptation, cross-context matching, and transition judgments. No single report defines the quality space. If anchor measures conflict beyond tolerance, the target geometry is indeterminate.
 
-The bridge $F_\Phi$ maps frozen causal-geometry features to the independently estimated quality structure. Model family, dimensionality, nuisance controls, invariances, and thresholds belong to specification $\Phi$ and are selected within training data. A high in-sample correlation is insufficient.
+The preregistered feature operator $\psi_\Phi(G_c,\Delta)$ exposes the distances, transitions, occupancy, topology, and path features of $G_c$ that the bridge is permitted to use. Its dimensionality and preprocessing are frozen inside specification $\Phi$. The bridge $F_\Phi$ maps those frozen features to the independently estimated quality structure. Model family, nuisance controls, invariances, and thresholds also belong to $\Phi$ and are selected within training data. A high in-sample correlation is insufficient.
 
 A supported bridge should:
 
@@ -1722,6 +2064,15 @@ A supported bridge should:
 4. outperform nuisance models based on stimulus distance, semantics, arousal, or response preparation;
 5. predict how geometry-changing interventions deform independently measured phenomenal relations; and
 6. transport to new systems only under a separate bridge license.
+
+Report specification stability rather than one favored bridge. For a preregistered neighborhood $\mathcal N(\Phi_0)$ varying candidate boundary, grain, causal metric, anchor combination, preprocessing, and bridge family, define the teaching summary
+
+$$
+R_S=\sum_{\Phi'\in\mathcal N(\Phi_0)}w(\Phi')
+\mathbf 1\!\left[O_Q(\Phi')=O_Q(\Phi_0)\right],
+$$
+
+where $O_Q$ is the supported / refuted / indeterminate / unlicensed bridge outcome and the weights are frozen before inspection. $R_S$ is a robustness frequency, not a posterior probability. Low stability makes an apparent support or refutation fragile and can warrant an indeterminate synthesis; incommensurable mappings are reported rather than forced into agreement.
 
 The deformation test is the causal center. An intervention changes $G_c$ in a preregistered direction. The frozen bridge predicts which phenomenal distances should contract, expand, or change transition order. The observed phenomenal deformation is collected independently. Baseline fit and intervention fit are reported separately so a good static correlation cannot hide a failed causal prediction.
 
@@ -1741,7 +2092,9 @@ $$
 
 where $m_c$ is modality stratum, $[q_c]$ relational location, $I_c$ intensity, $A_c$ valence field or vector, and $\Pi_c$ temporal path profile. The tuple is not assumed exhaustive and does not require all modalities to occupy one commensurable Euclidean space.
 
-The bridge outcomes are **supported**, **refuted**, **indeterminate**, and **unlicensed**. A refuted bridge in a positive presence case means the experience is present but this proposed geometry does not explain its differentiation. It does not mean there is no character. Conversely, a beautiful bridge fit cannot rescue an unlicensed presence gate.
+The bridge outcomes are **supported**, **refuted**, **indeterminate**, and **unlicensed**. A refuted bridge under a positive presence classification means presence remains supported under the declared model but this proposed geometry does not explain the tested differentiation. It does not mean that no character exists. Conversely, a beautiful bridge fit cannot rescue an unlicensed presence gate.
+
+State the character paper's direct bridge challenges. Revise or reject $Q_\Phi$ if a selective change in $G_c$ produces no predicted phenomenal change under valid anchors; if phenomenal geometry changes while $G_c$ remains stable across reasonable specifications; if held-out performance collapses or falls to nuisance parity; if a simpler stimulus model wins after causal geometry is controlled; if the bridge fails to transport between systems claimed to have equivalent causal geometries; or if minor reasonable specification changes reverse the bridge status. The response is not to redefine the quality space, intervention, or bridge family after inspection.
 
 ### Worked teaching sequence: constructing and testing the bridge
 
@@ -1754,7 +2107,7 @@ Display the two-layer error matrix before presenting any geometry.
 | Positive | Indeterminate | Presence supported; tested character relation unresolved |
 | Positive | Unlicensed | Presence supported; bridge procedure invalid |
 | Negative prediction | Any | Character attribution is not licensed by this program; do not infer a specific absence of character |
-| Indeterminate | Any | Do not interpret bridge fit or mismatch until presence is resolved |
+| Indeterminate | Any | Representational and bridge evidence may be analyzed provisionally, but no unconditional phenomenal-character attribution is licensed until presence is positive |
 | Unlicensed | Any | Repair the presence assessment before combined phenomenal inference |
 
 The disciplined construction pipeline is:
@@ -1777,6 +2130,8 @@ Use a four-content example. Fit $F_\Phi$ on red, orange, and green; hold blue ou
 Make automorphisms concrete with an unlabeled equilateral triangle. Any permutation of its three vertices preserves every distance, so relational evidence cannot identify an absolute vertex label. Add a validated asymmetry, such as one vertex carrying negative valence or a distinctive transition, and fewer permutations remain. The theory identifies character only up to the symmetries left by all warranted relations. This is constraint, not a verbal solution to the inverted spectrum.
 
 Include pain as a nonvisual case. Intensity, unpleasantness, location, urgency, controllability, and temporal throbbing can dissociate. A one-dimensional pain scale therefore hides structure. $N_3$ asks whether the pain content is recurrently present; $\Pi_c$ distinguishes steady, pulsing, spreading, or anticipatory temporal paths within an admitted episode. A useful character theory may need stratified geometries, directed transitions, and value fields rather than one universal metric space.
+
+Use a modality-extension jigsaw to prevent the color example from becoming the theory by default. An audition group maps pitch, timbre, loudness, and temporal ordering and asks when directed transitions matter. An olfaction group analyzes mixtures, context dependence, and violations of a simple Euclidean geometry. A cross-modal group proposes relations only where independently validated anchors make comparison meaningful; it must not place every modality on one common scale by assertion. Groups submit one appropriate structure, one geometry-changing intervention, one nuisance model, and one relation the available evidence leaves undefined.
 
 ### Display plan
 
@@ -1838,13 +2193,13 @@ State one reason decoding accuracy is weaker than bridge fit and one result that
 
 ### Readings
 
-**Required:** Stilwell, *From Phenomenal Presence to Phenomenal Character*, Sections 1-5 and 7-9.
+**Required:** Stilwell, *From Phenomenal Presence to Phenomenal Character*, Sections 1-5 and 7-9. Ask: What must a held-out deformation test show that a high baseline geometry correlation does not?
 
 **Recommended:** Fleming and Shea (2024); Kriegeskorte and Kievit (2013); Brouwer and Heeger (2009); Clark (1993).
 
 \newpage
 
-## Session 10. Reading Consciousness from the Schematic
+## Session 10. Reading Consciousness from the Schematic {#session-10}
 
 ### Learning objectives
 
@@ -1895,11 +2250,11 @@ $$
 \rangle.
 $$
 
-Boundary qualification supplies the bearer. $V$ supplies realized operation. $N_1$ supplies unity. $N_2$ supplies system-level causal presence. $N_3$ supplies bounded temporal presence. Under the constitutive hypothesis, this role-complete organization is not merely a cause or correlate of $C_0$; it is proposed as the physical form of $C_0$.
+$\mathcal P_\Theta$ qualification supplies a stable profile-test referent; resolved inclusion-minimal $\mathcal B^+$ membership supplies the positive subject bearer. $V$ supplies realized operation. $N_1$ supplies unity. $N_2$ supplies system-level causal presence. $N_3$ supplies bounded temporal presence. Under the constitutive hypothesis, this bearer-complete role organization is not merely a cause or correlate of $C_0$; it is proposed as the physical form of $C_0$.
 
 Use the electrical analogy carefully. An engineer sees more than ink because symbols have learned component semantics, component laws compose, inputs and operating conditions are declared, and counterfactual faults have localized consequences. The diagram alone neither powers the circuit nor validates the component laws. Likewise, an $N^*$ diagram neither experiences nor proves the identity. The actual system must realize the dynamics, and independent evidence must support the constitutive hypothesis.
 
-Define schematic legibility:
+Define schematic legibility. Let $M$ be the structured model or schematic, $o$ the target state to be read out, and $K$ the publicly teachable body of component and representational knowledge:
 
 $$
 \operatorname{Legible}(M,o\mid K)\Longleftrightarrow D\land C\land F\land E.
@@ -1910,14 +2265,16 @@ $$
 - **Counterfactual fault localization ($F$):** licensed changes support differentiated predictions about which aspect fails or changes.
 - **Evidential independence ($E$):** the readout procedure is not counted as evidence that its own constitutive rule is true.
 
-The fault map is central. Boundary failure makes the inference unlicensed. Viability failure removes the operating regime. Selective $N_1$ failure removes unified content for that candidate. Selective $N_2$ failure leaves content causally isolated. Selective $N_3$ failure leaves it temporally evanescent. A change in $G_c$ under an intact presence gate alters predicted character rather than presence. These are differentiated failures, not one generic low score.
+The fault map is central. Failure of the frozen $\mathcal P_\Theta$ referent's autonomy, causal admissibility, or cross-condition mapping makes a component inference unlicensed. Viability failure removes the operating regime. On that frozen referent, selective $N_1$ failure is a profile-level loss of unity, selective $N_2$ failure is profile-level causal isolation, and selective $N_3$ failure is profile-level temporal evanescence. After any such fault, recompute the all-pass set across the frozen candidate lattice: the final bearer-level result may be loss of the former bearer, emergence of a smaller or alternative bearer, or unresolved multiplicity. A change in $G_c$ under an intact presence gate alters predicted character rather than presence. These are differentiated failures, not one generic low score, and $\mathcal P_\Theta$ identity must not be conflated with $\mathcal B^+$ membership.
+
+In the readout $\mathfrak S_{N^*}\Rightarrow\boldsymbol\rho_{C_0}\Rightarrow C_0$, $\mathfrak S_{N^*}$ is the role-annotated schematic presented for interpretation, not the running system itself. The first arrow reconstructs the public role profile; the second applies the exposed constitutive hypothesis. The symbol therefore must not blur representation, causal realization, and candidate bearer.
 
 Teach the three strength levels:
 
 | Position | Claim | Explanatory status |
 |---|---|---|
 | Correlational marker | $N^*$ covaries with consciousness evidence | Useful prediction; organization may be incidental |
-| Black-box law | $V\land N^*$ reliably guarantees $C_0$ | Strong law; the transition remains opaque |
+| Black-box law | Positive-bearer membership built from $V\land N^*$ reliably guarantees $C_0$ | Strong law; the transition remains opaque |
 | Constitutive schematic | $C_0$ is the role-complete organization | The trained reader reconstructs presence and its failure map |
 
 The strong reading is an a posteriori identity claim, not a dictionary definition. Its opponents can understand it perfectly and deny that the identity is true. Structural intelligibility is not confirmation.
@@ -1930,6 +2287,8 @@ Address functionalism. The proposal is a physicalist information-dynamical funct
 
 End with teachability as a standard. Independent investigators should learn the readout rules, agree on held-out cases under the same frozen specification, predict localized failures, and transport the role profile across materially different implementations when causal organization is preserved. If only the author can "see" the identity, it is not schematic legibility.
 
+Track the schematic paper's five empirical payoffs separately: **role-preserving transport** tests whether the public role profile survives a materially different realization; **prospective fault prediction** asks whether distinct component changes forecast distinct failures; **estimator convergence** asks whether independent measures recover the same intermediate roles; **compression** asks whether the role profile reduces causal detail without losing the predictions that distinguish rivals; and **teachability** asks whether independent readers can reconstruct, abstain, and localize faults on held-out cases. Success on one payoff does not establish the others or validate the identity by itself.
+
 ### Worked teaching sequence: from profile to conditional readout
 
 Keep three objects distinct:
@@ -1938,7 +2297,7 @@ Keep three objects distinct:
 - the running causal network is the **realization**;
 - the boundary-qualified candidate system is the possible **bearer**.
 
-Take one held-out profile: boundary unique and stable; $V$ positive; $N_1$ positive with estimator agreement; $N_2$ positive after report and executive removal; $N_3$ positive within the frozen dwell interval. Translate each result into a role vector:
+Take one held-out profile: the $\mathcal P_\Theta$ referent is stable; $V$ is positive; $N_1$ is positive with estimator agreement; $N_2$ is positive after report and executive removal; $N_3$ is positive within the frozen dwell interval; no all-pass proper subsystem remains; and the inclusion-minimal positive bearer is resolved. Translate each result into a role vector:
 
 $$
 \rho(S,c)=\langle
@@ -1950,7 +2309,7 @@ $$
 \rangle.
 $$
 
-At the operational level, the reader has established only that the frozen profile passes. Under the constitutive hypothesis, the reader then infers $C_0$. The phrase **under the constitutive hypothesis** must remain visible. If $N_2$ alone fails, the schematic predicts loss of system-level causal presence, not generic system failure. If the boundary changes, confident fault localization is unavailable because the bearer itself is unstable.
+At the operational level, the reader has established a licensed all-pass profile and a resolved minimal-bearer output. Under the constitutive hypothesis, the reader then infers $C_0$. The phrase **under the constitutive hypothesis** must remain visible. If $N_2$ alone fails on the frozen referent, the schematic predicts a profile-level loss of system-wide causal presence, not generic system failure; the candidate lattice is then recomputed for bearer loss, relocation, or multiplicity. If the $\mathcal P_\Theta$ referent's autonomy or cross-condition mapping changes, confident fault localization is unavailable because the test identity itself is unstable.
 
 Treat $D,C,F,$ and $E$ as a conjunctive minimum for legibility:
 
@@ -1998,11 +2357,11 @@ Label the first arrow **mechanistic interpretation** and the second **exposed id
 
 **Materials.** Supply a one-page component-law sheet, two training cases, and four unseen schematics: a positive profile, a boundary failure, a single-component fault, and a coupled fault in which an $N_3$ intervention also reduces $N_1$. Include one profile whose validation labels were generated from its own component scores.
 
-**Roles and procedure.** A training designer teaches only the frozen meanings of bearer, operation, unity, system-level presence, and temporal presence. Blind readers A and B independently reconstruct the role vector, assign an outcome, localize the fault, and note which step depends on the constitutive identity rather than operational evidence. The adjudicator compares the forms, classifies disagreements, and applies $D$, $C$, $F$, and $E$.
+**Roles and procedure.** A training designer teaches only the frozen meanings of bearer, operation, unity, system-level presence, and temporal presence. Blind readers A and B independently reconstruct the role vector, assign an outcome, localize the fault, and note which step depends on the constitutive identity rather than operational evidence. The adjudicator compares the forms at the correct units: $D$ and $C$ are audited once for the common law sheet and compositional readout; fault-localization resolution $F$ is recorded per licensed profile or contrast; and $E$ is audited per validation stream. A boundary failure in one profile does not make the shared semantics fail, while circular labels can invalidate one validation claim without making the operational profile unreadable.
 
 Readers may abstain when boundary or coupling prevents fault localization. Correct abstention counts as competence. The printed page is a representation; the running system is the realization; the boundary-qualified candidate is the possible bearer. No diagram becomes conscious by depicting the conditions.
 
-**Deliverable.** Submit two independent Worksheet 6 forms and an adjudication table with agreement, disagreement source, calibration, fault specificity, and evidence-independence checks. Calculate simple agreement but do not interpret it as confirmation of the identity.
+**Deliverable.** Submit two independent Worksheet 6 forms plus one trial-level $D/C$ audit, per-profile outcome and $F$-resolution rows, and a per-validation-stream $E$ audit. The adjudication table records agreement, disagreement source, calibration, fault specificity, and evidence independence. Calculate simple agreement but do not interpret it as confirmation of the identity.
 
 **Debrief.** Compare the one-number classifier, black-box law, and constitutive schematic. Reliable prediction may establish a useful marker; compositional roles and fault maps add legibility; independent evidence still bears on whether the identity is true.
 
@@ -2030,13 +2389,13 @@ State the difference between a black-box law and a constitutive schematic, and n
 
 ### Readings
 
-**Required:** Stilwell, *Reading Consciousness from the Schematic*.
+**Required:** Stilwell, *Reading Consciousness from the Schematic*. Ask: Which part of schematic competence is empirical evidence, and which part remains the constitutive identity hypothesis?
 
 **Recommended:** Machamer, Darden, and Craver (2000); Craver (2007); Levine (1983); Chalmers (1995).
 
 \newpage
 
-## Session 11. Biological and Clinical Applications
+## Session 11. Biological and Clinical Applications {#session-11}
 
 ### Learning objectives
 
@@ -2044,7 +2403,7 @@ Students should be able to apply the full inference order to variable human stat
 
 ### Instructor preparation
 
-Assign the worked-case sections of the core, boundary, availability, indeterminacy, and ablation papers. Divide students into clinical, sleep/anesthesia, perceptual, and split-system teams.
+Use a reading jigsaw rather than assigning every application to every student. All students read core Section 14. Assign teams one of: boundary Sections 6.1-6.4; availability Sections 6.1-6.3 and 6.7; indeterminacy Section 5.1; or ablation Sections 9.1-9.4. Each team brings a one-page case-license brief. Divide students into clinical, sleep/anesthesia, perceptual, and split-system teams.
 
 ### Timed plan
 
@@ -2077,9 +2436,9 @@ Use ordinary waking perception only as a calibration case. It should not define 
 
 **Deep NREM sleep.** The model allows sparse, episodic, content-specific, or indeterminate presence. A single negative awakening report cannot establish dreamlessness because memory and timing can fail. Repeated state sampling, perturbational measures, and carefully timed awakening anchors are needed. Different intervals in one night may receive different outputs.
 
-**General anesthesia.** Agents should not be pooled as one mechanism. Some primarily alter thalamocortical organization, some recurrent connectivity, and some neuromodulatory regimes. The model predicts loss of $C_0$ when the bundle collapses, but a valid test must distinguish viability failure, component failure, and unlicensed measurement. Recovery and dreaming-like anesthesia experiences are important near-miss cases.
+**General anesthesia.** Agents should not be pooled as one mechanism. Some primarily alter thalamocortical organization, some recurrent connectivity, and some neuromodulatory regimes. The model predicts loss of $C_0(S,c)$ when a licensed bundle failure removes the specified $S$ from the recomputed positive-bearer set; a system-wide absence claim requires adequate coverage of all live candidates. A valid test must distinguish viability failure, component failure, bearer relocation, and unlicensed measurement. Recovery and dreaming-like anesthesia experiences are important near-miss cases.
 
-**Locked-in syndrome.** Motor report failure is not a consciousness failure. A stable boundary and viable $N^*$ bundle can support a positive prediction when speech and movement are absent. The case is a direct reason for report-independent $N_2$.
+**Locked-in syndrome.** Motor report failure is not a consciousness failure. A stable, inclusion-minimal, resolved bearer with a viable $N^*$ bundle can support a positive prediction when speech and movement are absent. The case is a direct reason for report-independent $N_2$.
 
 **Unresponsive wakefulness syndrome and cognitive motor dissociation.** Behavioral non-response has many possible causes. Task-based fMRI or EEG can reveal command following in some behaviorally unresponsive patients. A positive command-following result supports at least some awareness-relevant capacity but does not automatically reveal continuity or richness. A negative task result is licensed only when hearing, comprehension, arousal, attention, memory, and motor-independent response generation had a fair opportunity to operate. Repeated assessment matters because states fluctuate.
 
@@ -2099,11 +2458,13 @@ Use the following summary matrix as hypotheses, not diagnoses:
 | REM dream | $V+$ under dream regime; $N_1,N_3$ plausible; $N_2$ internal | Retrospective report and memory are displaced |
 | Deep NREM | fluctuating, sparse, or unresolved | One negative awakening report is weak |
 | Adequate anesthesia | multiple component collapse likely | Agent, dose, timing, and covert experience vary |
-| Locked-in syndrome | $V+$ and $N^*$ may remain | Motor silence is not $N_2$ failure |
+| Locked-in syndrome | $V+$ and $N^*$ may remain; positive attribution also requires resolved minimal bearer status | Motor silence is not $N_2$ failure |
 | Unresponsive wakefulness | variable and often unresolved | Negative license and repeated assessment are essential |
 | Blindsight | content-specific bundle may be incomplete | Forced choice is access-like evidence, not decisive presence |
 | Binocular rivalry | bundle should track dominant content | Involuntary markers time content but do not constitute it |
 | Split brain | one, multiple, layered, or unresolved candidates | Anatomy alone does not count subjects |
+
+Treat this matrix as a hypothesis generator, not a clinical guide. Empirical anchors include repeated-assessment evidence in disorders of consciousness (Wannez et al., 2017), covert command-following results (Bodien et al., 2024), perturbational measurement (Casali et al., 2013), and report/no-report contrasts (Tsuchiya et al., 2015; Frassle et al., 2014). None of those studies by itself validates the full Cø / N* component interpretation.
 
 ### Worked teaching sequence: one patient across three windows
 
@@ -2112,8 +2473,8 @@ Use a fictional longitudinal case and make clear that it is a teaching device, n
 | Window | Key observations | Scientific output | Cause profile and next step | Separate action note |
 |---|---|---|---|---|
 | Day 2, low arousal | No command response; hearing not established; heavy artifact; physiology unstable | Unlicensed | Auxiliary route, data quality, and regime fail; stabilize and use a nonauditory, low-demand protocol | Preserve low-burden supportive options; do not treat the negative as absence |
-| Day 9, fluctuating arousal | Valid sensory route; EEG $N_2$ surrogate positive, imaging surrogate negative; boundary stable | Indeterminate | Surrogate discordance $s$ dominates; repeat in matched state and adjudicate routes | Continue reversible assessment and communication opportunities |
-| Day 21, target-specific window | Repeated content-specific imagery modulation; $V,N_1,N_2,N_3$ pass with route controls; no motor output | Positive for the tested command-related content under the model | Track stability, broaden contents, and assess false-positive controls | Offer an appropriate communication confirmation pathway |
+| Day 9, fluctuating arousal | Valid sensory route; EEG $N_2$ surrogate positive, imaging surrogate negative; $\mathcal P_\Theta$ referent stable | Indeterminate | Surrogate discordance $s$ dominates; repeat in matched state and adjudicate routes | Continue reversible assessment and communication opportunities |
+| Day 21, target-specific window | Repeated content-specific imagery modulation; $V,N_1,N_2,N_3$ pass with route controls; a unique inclusion-minimal bearer is resolved under the frozen candidate family; no motor output | Positive for the tested command-related content under the model | Track bearer and component stability, broaden contents, and assess false-positive controls | Offer an appropriate communication confirmation pathway |
 
 The Day 21 result does not establish continuous rich awareness across the day. A target-specific positive and a broader indeterminate state estimate can coexist. Conversely, the Day 2 negative behavior never entered a licensed negative region.
 
@@ -2155,13 +2516,13 @@ Maintain one fixed case worksheet with rows for target, boundary, $V$, $N_1$, $N
 
 **Purpose.** Students integrate boundary, component, evidential, temporal, and ethical analysis without letting clinical urgency distort the scientific label.
 
-**Materials.** Use a three-envelope dossier. Envelope 1 contains bedside behavior, sensory screening, arousal fluctuation, and basic physiology. Envelope 2 adds a technically questionable command-following result and a negative assessment administered during low arousal. Envelope 3 adds repeated no-report, perturbational, and route-control evidence. The data should permit a target-specific positive while broader ongoing status remains unresolved.
+**Materials.** Use the three-stage Appendix H dossier with one exact mapping. **Stage 1 releases Rounds 1-2 together:** context and bedside observations, then sensory-route, candidate, and viability facts. **Stage 2 releases Round 3:** the high-arousal imagery-task evidence, its injury-class validity and auxiliary-demand checks, the component intervals, and the later low-arousal contaminated EEG result. **Stage 3 releases Round 4 only after the Stage-2 scientific classifications are frozen:** asymmetric-loss and low-burden action facts only. The core dossier contains two assessment windows and three targets, not three windows: wakefulness under its narrow stipulated bedside rule, covert command following in the high-arousal trial, and full $C_0$ for the specified content. The separate Day 2 / Day 9 / Day 21 extension remains the three-window longitudinal exercise.
 
 **Roles and procedure.** A boundary specialist freezes candidate and horizon. A component-measure specialist completes $V,N_1,N_2,N_3$ with intervals. A clinical-methods lead audits sensory access, comprehension, timing, task demands, and repeated sampling. An epistemic auditor assigns the four-way outcome and cause profile. An ethics and decision liaison writes a separate recommendation from declared losses and reversibility.
 
-After each envelope, teams must commit to a six-place assessment tuple, identify the dominant uncertainty cause, and request exactly one next measurement. They record whether the new envelope changed the system estimate, the inference license, or only the practical decision. Earlier verdicts may be revised, but not erased.
+After each stage, teams must commit to a six-place assessment tuple for every currently assessable target, identify the dominant uncertainty cause, and request exactly one next measurement. **Not yet assessed** is permitted between releases when a required test has not occurred; it is a workflow marker, not a fifth final scientific outcome. Teams record whether the new evidence changed a task result, the full-model inference license, or only the practical decision. Earlier verdicts may be revised, but not erased.
 
-**Deliverable.** Submit a progressive Worksheet 1 for all three windows, a cause-profile trajectory, a repeated-assessment plan, and a separate action note. Include one target-specific conclusion that coexists with a broader indeterminate result.
+**Deliverable.** Submit a progressive Worksheet 1 for all three release stages, with separate target rows and the two assessment windows kept distinct; add a cause-profile trajectory, repeated-assessment plan, and separate action note. Complete the Day 2 / Day 9 / Day 21 table only when the longitudinal extension is assigned. Include one target-specific conclusion that coexists with a broader indeterminate result.
 
 **Debrief.** Contrast an invalid negative window, a valid but discordant window, and a licensed positive window. More precision cannot repair a task performed through a blocked route; repeated sampling can help with genuine fluctuation. No clinical treatment advice should be inferred from the classroom dossier.
 
@@ -2184,13 +2545,13 @@ Choose one clinical or experimental case and identify the single most likely rou
 
 ### Readings
 
-**Required:** Worked-case sections from all six empirical companion papers.
+**Required:** Core Section 14 for all students; by jigsaw, *Where Is the Conscious Subject?* Sections 6.1-6.4, *Consciousness Without Report* Sections 6.1-6.3 and 6.7, *Indeterminacy as a Scientific Result* Section 5.1, or *Ablating N\** Sections 9.1-9.4. Ask: Which auxiliary failure most threatens a licensed negative in your assigned case?
 
 **Recommended:** Bodien et al. (2024); Wannez et al. (2017); Frassle et al. (2014); Tsuchiya et al. (2015).
 
 \newpage
 
-## Session 12. Nonhuman Animals, Organoids, and Artificial Systems
+## Session 12. Nonhuman Animals, Organoids, and Artificial Systems {#session-12}
 
 ### Learning objectives
 
@@ -2198,7 +2559,7 @@ Students should be able to explain constrained substrate independence, conduct a
 
 ### Instructor preparation
 
-Assign the nonhuman, organoid, and AI applications in the core, boundary, availability, indeterminacy, and ablation papers. Ask students to choose one target system and diagram its actual running architecture or organismic causal organization.
+Use a transport jigsaw. All students read core Section 17. Assign experts one of: boundary Sections 6.5-6.7; availability Sections 6.4 and 6.8; indeterminacy Sections 5.2-5.4; or ablation Sections 9.5-9.6. Ask every student to choose one target system, diagram its actual running architecture or organismic causal organization, and identify which of construct, causal-role, calibration, or boundary preservation is least secure.
 
 ### Timed plan
 
@@ -2218,13 +2579,14 @@ The theory is substrate-independent in form but not permissive in application. A
 
 This position avoids two symmetrical errors. **Neural chauvinism** denies consciousness to any non-neural realization without asking whether the causal role is preserved. **Empty functionalism** grants consciousness to any behavioral or abstract isomorph. Cø / N* requires actual realized organization under a validated mapping.
 
-Teach the three transport bridges:
+Teach the four transport requirements:
 
 1. **Construct preservation:** does the measure still detect the same functional or dynamical property?
 2. **Causal-role preservation:** does that property play the same theoretically relevant role in the new system?
 3. **Calibration preservation:** do thresholds, error rates, and uncertainty rules remain defensible?
+4. **Boundary and regime preservation:** is the mapped target a stable candidate operating under a comparable, interpretable horizon and regime?
 
-Failure of any bridge produces transport indeterminacy or an unlicensed application. Running the same code or formula on a new substrate does not carry the old interpretation.
+Failure of any requirement produces transport indeterminacy or an unlicensed application. Running the same code or formula on a new substrate does not carry the old interpretation.
 
 **Nonhuman animals and infants.** Recipient classes, viability indicators, intervention burdens, and anchors must be species- and stage-appropriate. Failure to learn a human-designed task can reflect ecology, sensory differences, motivation, or training demand. Use homologous causal roles, flexible behavior with known sensory dependencies, motivational tradeoffs, learning and generalization, perturbational predictions, and converging physiological evidence. A mammalian neural marker can be informative in another species only with an explicit bridge.
 
@@ -2234,7 +2596,7 @@ Failure of any bridge produces transport indeterminacy or an unlicensed applicat
 
 The proper tests include state resets, memory substitution, scheduler ablation, message delay, route interruption, service removal, human-in-the-loop removal, latent or token interventions, and matched-controller replacement. Logging services, mirrored replicas, idle subscribers, and fluent language do not automatically add integration or functional diversity.
 
-Use artificial systems first as construct laboratories. They allow precise criterion, mechanism, and measurement ablations and can reveal whether proposed $N_i$ measures behave as intended. This validates the measurement architecture, not consciousness. Phenomenal interpretation still requires independent anchors and transport discipline.
+Use artificial systems first as construct laboratories. They allow precise criterion, mechanism, and measurement ablations and can reveal whether proposed $N_i$ measures behave as intended. This can validate construct separability and measurement behavior, not consciousness by itself. Phenomenal interpretation still requires independent anchors and transport discipline.
 
 Ethical decisions remain separate. An indeterminate animal, organoid, or AI assessment can justify documentation, monitoring, harm minimization, scaling limits, or independent review when potential harm is serious and irreversible. The practical action reflects evidence plus a declared loss structure. It must not be reported as scientific proof of consciousness.
 
@@ -2280,13 +2642,13 @@ Proportional precaution considers severity, reversibility, alternatives, monitor
 
 ### Display plan
 
-Draw a transport bridge with three load-bearing supports: **construct**, **causal role**, and **calibration**. Remove one support and label the result **unlicensed transport**, not negative.
+Draw a transport bridge with four load-bearing supports: **construct**, **causal role**, **calibration**, and **boundary / regime**. Remove one support and label the result **unlicensed transport**, not negative.
 
 ### Slide sequence
 
 1. Substrate independence with teeth
 2. Neural chauvinism and empty functionalism
-3. Three transport bridges
+3. Four transport requirements
 4. Species-appropriate recipient classes
 5. Developmental and ecological demands
 6. Organoid boundary alternatives
@@ -2329,13 +2691,13 @@ Name one feature that must be preserved for cross-substrate mapping and one reas
 
 ### Readings
 
-**Required:** Nonhuman, organoid, and AI application sections across the paper corpus.
+**Required:** Core Section 17 for all students; by jigsaw, *Where Is the Conscious Subject?* Sections 6.5-6.7, *Consciousness Without Report* Sections 6.4 and 6.8, *Indeterminacy as a Scientific Result* Sections 5.2-5.4, or *Ablating N\** Sections 9.5-9.6. Ask: What exactly must transport before this measure can issue a positive or negative result?
 
 **Recommended:** Butlin et al. (2023); Birch et al. (2020); Kagan et al. (2022); Smirnova et al. (2023).
 
 \newpage
 
-## Session 13. Differentiation, Validation, and the Strongest Objections
+## Session 13. Differentiation, Validation, and the Strongest Objections {#session-13}
 
 ### Learning objectives
 
@@ -2343,14 +2705,14 @@ Students should be able to state what is genuinely distinctive about Cø / N*, o
 
 ### Instructor preparation
 
-Assign the theory-comparison and objections sections of all seven papers. Ask each student to prepare the strongest version of one objection, not a rhetorical caricature.
+All students read core Sections 15 and 18. Assign each student one companion paper's relation-to-neighbors and objections sections, plus the named primary source for one exact rival version on the Session 13 version card in Appendix H. Ask students to attach a supporting section or page citation, verify or correct the card, and prepare the strongest objection rather than a rhetorical caricature.
 
 ### Timed plan
 
 | Time | Teaching move |
 |---:|---|
 | 0-16 min | Distinctiveness as risky contrast rather than package novelty |
-| 16-30 min | Validation ladder, dependencies, and maturity levels |
+| 16-30 min | Validation dependencies, branches, and maturity levels |
 | 30-58 min | Collaborative versioned rival-prediction laboratory |
 | 58-73 min | Research-program health board |
 | 73-94 min | Steelmanned objections and progressive versus degenerating revision |
@@ -2374,31 +2736,31 @@ Begin with the obvious challenge: the components are not individually novel. The
 
 This is more than "IIT + GNWT + RPT" because source theories do not jointly force these restrictions. IIT does not ordinarily require separate report-independent broadcast and bounded recurrence. GNWT does not ordinarily require synergy plus a separate character bridge. RPT does not ordinarily require functionally diverse availability. None by itself supplies the boundary-first autonomy procedure, four-outcome precedence policy, diagnostic-set audit, or schematic-legibility standard.
 
-Present a validation ladder. Higher rungs presuppose lower ones:
+Present a validation dependency map, not a single ladder. Conceptual clarity, construct separability, measurement validity, and an adequately resolved boundary are common foundations for empirical attribution. Beyond that foundation, the work branches: case-level bundle attribution, component-necessity audit, transport, character mapping, and schematic competence have different additional dependencies. The following are work packages, not a universal temporal order:
 
 1. **Conceptual clarity:** targets, roles, scope, and exclusions are explicit.
 2. **Construct separability:** measures can distinguish integration, availability, recurrence, and viability in synthetic and benchmark systems.
 3. **Measurement validity:** surrogates track their intended roles rather than activity, report, arousal, or one latent factor.
 4. **Boundary validity:** candidate systems are independently individuated and stable.
-5. **Bundle discrimination:** $V\land N^*$ predicts anchor patterns across states and contents.
-6. **Component necessity:** full models beat proper submodels on adequate diagnostic coverage.
+5. **Bundle discrimination:** $H_*=V\land N^*$ predicts anchor patterns across states and contents, while final positive attribution also requires a resolved bearer and $\mathcal B_{\min,\Theta}^+$ membership.
+6. **Component necessity:** full models beat proper submodels on adequate diagnostic coverage; failure directly challenges the advertised factorization or minimality even when other components and bundle-level source-domain fit survive.
 7. **Causal intervention:** selective perturbation and rescue alter independent anchors as preregistered.
-8. **Transport:** roles and thresholds generalize without favorable retuning.
-9. **Character bridge:** causal geometry predicts held-out phenomenal relations and deformations.
-10. **Schematic competence:** independent investigators can read, fault-localize, and transport the organization.
+8. **Transport:** an already validated source-domain claim preserves construct, causal role, calibration, and boundary mapping without favorable retuning.
+9. **Character bridge:** after a positive presence output, causal geometry predicts held-out phenomenal relations and deformations.
+10. **Schematic competence:** after stable role semantics and independent cases are available, investigators can read, abstain, and fault-localize reproducibly; role-preserving transfer is a stronger extension, not a prerequisite for source-domain competence.
 
-Stress that success at one rung does not automatically establish the next. A synthetic network can validate construct separability without consciousness. A state-level classifier can support bundle discrimination without component necessity. A character bridge can fail while presence remains supported.
+Stress that success in one work package does not automatically establish another. A synthetic network can validate construct separability without consciousness. A state-level classifier can support bundle discrimination without component necessity. Component audit can proceed on diagnostic single-failure cases without first issuing a positive presence verdict for those cases. A failed transport audit narrows scope without defeating a source-domain result, and a character bridge can fail while a positive presence classification remains supported.
 
 Use a discriminating comparison matrix:
 
-| Case | Cø / N* | IIT-style integration sufficiency | GNWT-style access emphasis | RPT-style recurrence sufficiency |
+| Case | Cø / N* | IIT 4.0-oriented intrinsic-structure analysis | GNWT version requiring sustained global ignition or access | RPT version treating local sensory recurrence as sufficient |
 |---|---|---|---|---|
-| High integration, local and unstable | No $C_0$ prediction | Some versions may favor consciousness | No global access | No stable recurrence |
-| Broad report-free reach, low integration | No $C_0$ prediction | Integration requirement fails | Availability may favor consciousness | Recurrence status decides |
-| Stable local loop, low reach | No $C_0$ prediction | Depends on integration | No broad access | Some versions may favor consciousness |
-| Motor report loss with intact bundle | $C_0$ predicted | Depends on causal structure | Report-focused implementations risk false negative | May preserve consciousness |
-| Rich unconscious geometry | No ordinary character attribution without gate | IIT may treat causal structure as phenomenal | Content access may be absent | Recurrence may or may not occur |
-| Full bundle with strong negative anchors | Sufficiency threat | Theory-specific response | Theory-specific response | Theory-specific response |
+| Candidate clears an IIT-specific intrinsic-structure criterion but remains local and temporally unstable | No $C_0$ prediction | May support consciousness if the exact complex and exclusion criteria pass | No global access on the stated version | No stable recurrence |
+| Broad report-free reach with licensed low $N_1$ | No $C_0$ prediction | A low result on the relevant intrinsic-structure criterion counts against this version | May support conscious access if its version-specific global criterion passes | Recurrence status decides |
+| Stable local sensory loop with licensed low reach | No $C_0$ prediction | Depends on the exact intrinsic causal structure | No broad access on the stated version | May support consciousness on the stated sufficiency view |
+| Motor report loss with intact bundle and resolved minimal bearer | $C_0$ predicted | Depends on the causal complex | Motor report loss alone is not disqualifying; the result depends on whether global ignition or access remains | Depends on whether the relevant recurrence remains |
+| Rich representational geometry with failed Cø gate | No ordinary phenomenal-character attribution without a positive gate | Representational geometry alone is insufficient; analysis depends on IIT-specific intrinsic cause-effect structure, complex, and exclusion criteria | Content access may be absent | Recurrence may or may not occur |
+| Resolved minimal positive bearer with strong negative anchors | Sufficiency threat | Theory-specific response | Theory-specific response | Theory-specific response |
 
 The matrix must be tailored to precise versions of rival theories; it is a teaching device, not a substitute for reading them.
 
@@ -2437,21 +2799,21 @@ Use the following comparison protocol:
 5. State prospective observations, validity conditions, and revision rules for both theories.
 6. Score the result without retuning either side.
 
-The sixteen-family landscape remains relevant, but not every family makes a case-level neuroscientific prediction. Higher-order, predictive, attention-schema, embodied, illusionist, panpsychist, and dualist views may disagree at the level of explanandum, constitution, evidence, or metaphysics. Say which level is under comparison rather than forcing all positions into one experimental table.
+The seventeen-row landscape remains relevant, but not every family makes a case-level neuroscientific prediction. Higher-order, predictive, attention-schema, embodied, illusionist, panpsychist, and dualist views may disagree at the level of explanandum, constitution, evidence, or metaphysics. Say which level is under comparison rather than forcing all positions into one experimental table.
 
 Render validation as a branching dependency structure rather than one ladder:
 
 | Branch | Required foundation | Achievement | What branch failure leaves intact |
 |---|---|---|---|
-| Bundle attribution | semantic separability, measurement validity, stable boundary and regime | licensed $V\land N^*$ classification and diagnostic prediction | the philosophical target and untested operationalizations |
-| Component necessity | valid bundle measures, diagnostic coverage, independent anchors | incremental support; selective intervention and rescue can add causal support | other components and the bundle's source-domain possibility |
+| Bundle attribution | semantic separability, measurement validity, stable referent, regime, and positive-bearer rule | licensed $H_*$ profile and, on a resolved bearer domain, $\mathcal B_{\min,\Theta}^+$ attribution | the philosophical target and untested operationalizations |
+| Component necessity | valid bundle measures, diagnostic coverage, independent anchors | incremental support; selective intervention and rescue can add causal support | other components and the bundle's source-domain possibility, but not the exact failed factorization or minimality claim |
 | Transport | a validated source-domain claim plus construct, causal-role, calibration, and boundary mapping | warranted scope extension to a new domain | the source-domain result |
 | Character bridge | positive presence gate plus independently estimated empirical quality structure | supported mapping from causal geometry to character relations | positive presence if the bridge fails |
 | Schematic competence | stable role semantics and independent test cases | teachable readout, calibrated abstention, and fault prediction | empirical truth of the constitutive identity |
 
 Constitutive-identity support is an integrative judgment drawing on several branches, not a final rung reached only after universal transport. Failure propagates selectively. Poor construct separability blocks a component-necessity claim; it need not refute the philosophical target. A failed character bridge leaves a positive presence gate intact. Failed transport narrows domain but does not automatically refute the source-domain result.
 
-Use a maturity rubric for every rung:
+Use a maturity rubric for every branch or work package:
 
 | Level | Meaning |
 |---|---|
@@ -2459,9 +2821,9 @@ Use a maturity rubric for every rung:
 | Construct demonstration | The measure behaves as intended in synthetic or tightly controlled cases |
 | Single-domain support | Frozen predictions succeed in one relevant domain |
 | Replicated support | Independent teams reproduce the diagnostic result |
-| Transported support | Role and calibration survive a materially different domain |
+| Transported support | Construct, causal role, calibration, and boundary / regime survive a materially different domain |
 
-Do not confuse existence of a detailed protocol with evidence that the theory has climbed the ladder.
+Do not confuse existence of a detailed protocol with evidence that the relevant branch has reached empirical maturity.
 
 Turn objections into argument maps. Record premises, hidden assumption, strongest reply, residual pressure, and an adjudicating result. For the access-smuggling objection, for example, the hidden question is whether report-independent causal availability is a weak constitutive role or simply access under another name. The decisive work is a case where the criteria diverge, not a terminological vote.
 
@@ -2469,13 +2831,13 @@ Finally, audit revisions. Progressive revision is predeclared or at least princi
 
 ### Display plan
 
-Draw the validation ladder. On the side write: **No upward inference without the lower license.**
+Draw the branching validation dependency map. On the side write: **Follow only the licenses required by this branch.**
 
 ### Slide sequence
 
 1. What is genuinely distinctive?
 2. More than a hybrid list
-3. The ten-rung validation ladder
+3. The validation dependency map
 4. Comparative near-miss profiles
 5. Hybrid-without-novelty objection
 6. Access and report objection
@@ -2490,7 +2852,7 @@ Draw the validation ladder. On the side write: **No upward inference without the
 
 **Purpose.** Students compare exact theory versions on matched targets and convert advertised distinctiveness into risky prediction rather than package novelty.
 
-**Materials.** Prepare version cards for Cø / N*, IIT, GNWT, RPT, one higher-order theory, one predictive or active-inference account, an attention-schema view, an embodied or enactive account, illusionism, and a fundamentalist view. Each card states explanandum, bearer, necessary and sufficient commitments, report role, temporal requirement, and a source passage. Also provide four near-miss profiles: integrated but isolated, broadly available but reducible, recurrent but local, and full-bundle positive with strong negative anchors.
+**Materials.** Prepare version cards for Cø / N*, IIT, GNWT, RPT, one higher-order theory, one predictive or active-inference account, an attention-schema view, an embodied or enactive account, illusionism, and a fundamentalist view. Each card states explanandum, bearer, necessary and sufficient commitments, report role, temporal requirement, and a source passage. Also provide near-miss profiles: integrated but isolated, broadly available but reducible, recurrent but local, and a resolved minimal positive bearer with strong negative anchors.
 
 **Roles and procedure.** A Cø / N* advocate records its prediction before discussion. An assigned-rival advocate does the same for one exact version. A neutral comparison chair rejects target-mismatched contrasts. A source and evidence auditor checks that claims follow from the version card and identifies the evidence needed to adjudicate. Rotate rivals after one profile.
 
@@ -2502,7 +2864,7 @@ Teams identify ordinary agreement cases, genuine diagnostic disagreement cells, 
 
 ### Collaborative discussion: Research-program health board
 
-Assign program proponent, rival theorist, empirical methodologist, and philosophy-of-science chair. Give groups four failure scenarios: a redundant conjunct, repeated transport failure, unstable thresholds, and licensed negative anchors in a full-bundle case. For each, choose measure repair, scope restriction, factorization change, probabilistic reformulation, addition or removal of a conjunct, or program rejection.
+Assign program proponent, rival theorist, empirical methodologist, and philosophy-of-science chair. Give groups four failure scenarios: a redundant conjunct, repeated transport failure, unstable thresholds, and licensed negative anchors for a resolved minimal positive bearer. For each, choose measure repair, scope restriction, factorization change, probabilistic reformulation, addition or removal of a conjunct, or program rejection.
 
 The deliverable is a public failure-to-revision rule with one recorded dissent. A progressive response narrows or changes the theory in a way that creates sharper future predictions. A degenerating response shifts boundaries or thresholds after inspection, multiplies exceptions, or leaves every future result compatible. Finish by ranking which present vulnerability is greatest and what unique success would most improve the program's standing.
 
@@ -2519,13 +2881,13 @@ State the strongest differentiating claim of Cø / N* and one empirical result t
 
 ### Readings
 
-**Required:** Theory-comparison and objection sections across all seven papers.
+**Required:** Core Sections 15 and 18; one assigned companion paper's comparison and objection sections; and the named primary source for one Appendix H rival-version card. Ask: On which matched target do the two exact versions genuinely disagree?
 
 **Recommended:** Seth and Bayne (2022); Mudrik et al. (2025); Doerig et al. (2021); Cogitate Consortium (2025).
 
 \newpage
 
-## Session 14. Capstone Adversarial Research Design
+## Session 14. Capstone Adversarial Research Design {#session-14}
 
 ### Learning objectives
 
@@ -2533,7 +2895,7 @@ Students should be able to integrate the complete research workflow, design a st
 
 ### Instructor preparation
 
-Launch the capstone at the end of Session 9 and distribute Appendix C then. Assign teams with deliberately mixed theoretical preferences. Use Sessions 10-13 for the first four staged checkpoints and require the complete mock-defense packet before Session 14. In a compressed course, require Checkpoints 1, 3, and 5 and label the others recommended rather than pretending that five reviews fit into two weeks.
+Collect an individual capstone seed after Session 7, form provisional mixed-preference teams after Session 8, and select a track after Session 9. Assign every student the common outcome and independence rules in Appendix C, then jigsaw one protocol or preregistration appendix from the core or a companion paper. Use Sessions 10-13 for staged checkpoints and require the complete mock-defense packet before Session 14. In a compressed course, require Checkpoints 1, 3, and 5 and label the others recommended rather than pretending that five reviews fit into two weeks.
 
 ### Timed plan
 
@@ -2548,25 +2910,26 @@ Launch the capstone at the end of Session 9 and distribute Appendix C then. Assi
 
 ### Lecture notes
 
-The complete workflow is:
+The common foundation freezes the target, candidate family, components, measures, and validity rules. From that shared foundation, the analysis branches as follows:
 
 $$
-\text{target}
-\rightarrow
-\text{candidate boundary}
-\rightarrow
-V
-\rightarrow
-(N_1,N_2,N_3)
-\rightarrow
-\text{conflict and validity gates}
-\rightarrow
-\text{presence output}
-\rightarrow
-\text{component audit}
-\rightarrow
-\text{character bridge, if licensed}.
+\text{frozen common foundation}
+\longrightarrow
+\begin{cases}
+\text{case-level presence output},\\
+\text{diagnostic-set component audit},\\
+\text{transport audit},\\
+\text{schematic-competence audit}.
+\end{cases}
 $$
+
+Only the character branch has the additional gate:
+
+$$
+\text{positive presence output}\rightarrow\text{character bridge}.
+$$
+
+A component audit is not downstream of a positive presence verdict. It compares frozen full and ablated models on diagnostic single-failure cases. Transport begins from a validated source-domain claim. Schematic competence can be assessed once role semantics and independent test cases exist; universal transport is not its prerequisite.
 
 A capstone project should not attempt every element. It should select one tractable point where a result would alter the model. Good projects include:
 
@@ -2595,11 +2958,11 @@ Require every team to state:
 
 A good adversarial question has three properties. First, rival predictions differ before the result. Second, both sides consider the test fair. Third, the outcome cannot be absorbed by moving the boundary, target, threshold, viability criterion, or anchor set after inspection.
 
-Model one example: a recurrent visual content is stabilized locally and remains integrated, but a reversible route intervention prevents modulation of diverse recipients while preserving source-content identity, stimulus representation, measurement quality, and the retained components. The full model predicts loss or degradation of independently constructed presence-relevant anchors when $N_2$ fails. The $N_2$-ablated rival predicts that those held-out anchors remain stable. Measures derived from the interrupted recipient routes cannot also serve as outcome anchors. The study must verify that $N_1$, $N_3$, $V$, and boundary are stable; report and motor pathways cannot be decisive anchors; and the intervention cannot create a new regime.
+Model one example: a recurrent visual content is stabilized locally and remains integrated, but a reversible route intervention prevents modulation of diverse recipients while preserving source-content identity, stimulus representation, measurement quality, and the retained components. The full model predicts loss or degradation of independently constructed presence-relevant anchors when $N_2$ fails. The $N_2$-ablated rival predicts that those held-out anchors remain stable. Measures derived from the interrupted recipient routes cannot also serve as outcome anchors. The study must verify that $N_1$, $N_3$, and $V$ are stable and that the frozen $\mathcal P_\Theta$ referent remains autonomous, causally admissible, and mappable; report and motor measures cannot be the sole decisive anchor or be dual-used as predictor and validator, though independently calibrated reports may contribute to a plural held-out vector; and the intervention cannot create a new regime. The rival bearer sets must then be recomputed rather than assuming that the baseline positive bearer remains positive after a successful $N_2$ failure.
 
 The skeptical panel should ask:
 
-- Could the boundary change?
+- Did the frozen $\mathcal P_\Theta$ referent or its mapping change, and how did the recomputed positive-bearer output change?
 - Is the target narrower than the conclusion?
 - Does the intervention selectively move the intended component?
 - Is any measure used twice?
@@ -2696,13 +3059,13 @@ Write the one result you think would most increase confidence in Cø / N* and th
 
 ### Readings
 
-**Required:** Review all protocols and preregistration appendices in the seven-paper corpus.
+**Required:** Appendix C of this manual and the core paper's preregistration guidance for all students; one assigned protocol or preregistration appendix from the companion corpus. Ask: Which design choice must be frozen to stop the strongest circularity or selectivity failure in your project?
 
 **Recommended:** Melloni et al. (2023); Cogitate Consortium (2025); Yaron et al. (2022).
 
 \newpage
 
-# Part III. Instructor Argument Bank
+# Part III. Instructor Argument Bank {#part-iii}
 
 This section gives compact, classroom-ready arguments for differentiating and evaluating the theory. Each argument includes the claim, its rationale, the evidence needed, and the principal residual pressure. These are arguments for a research program, not declarations that the empirical burden has already been met.
 
@@ -2813,7 +3176,7 @@ The required product is one page containing the exact target, argument, stronges
 
 **Rationale.** A qualifying implementation must realize directionality, effective coupling, temporal grain, dynamic ranges, role structure, and substrate-appropriate viability.
 
-**Validation route.** Establish construct, causal-role, and calibration preservation across substrates; use intervention and replacement tests rather than behavioral imitation alone.
+**Validation route.** Establish construct, causal-role, calibration, and boundary / regime preservation across substrates; use intervention and replacement tests rather than behavioral imitation alone.
 
 **Residual pressure.** Nonbiological viability and cross-substrate phenomenal anchors remain underdeveloped.
 
@@ -2884,9 +3247,9 @@ Teams display only target, rivals, diagnostic region, outcome rules, and revisio
 
 \newpage
 
-# Part IV. Reproducible Course Materials
+# Part IV. Reproducible Course Materials {#part-iv}
 
-## Appendix A. Corpus-to-Course Coverage Audit
+## Appendix A. Corpus-to-Course Coverage Audit {#appendix-a}
 
 This matrix lets the instructor verify that the course incorporates the conceptual contributions of the full paper corpus rather than relying only on the central formula.
 
@@ -2962,12 +3325,12 @@ This matrix lets the instructor verify that the course incorporates the conceptu
 
 \newpage
 
-## Appendix B. Assessment Bank and Answer Guides
+## Appendix B. Assessment Bank and Answer Guides {#appendix-b}
 
 ### Problem Set 1. Concepts and arguments
 
 1. Define minimal phenomenal presence and distinguish it from access consciousness and phenomenal character.
-2. Translate $V\land(N_1\land N_2\land N_3)\Longleftrightarrow C_0$ into two directional claims. Give a threat to each.
+2. Translate the source profile conjecture $V\land(N_1\land N_2\land N_3)\Longleftrightarrow C_0$, then state the bearer-complete refinement using $\operatorname{Resolved}_B$ and $\mathcal B_{\min,\Theta}^+(c)$. Give a genuine threat to each direction of the refined claim.
 3. Explain why a boundary reversal is scientifically important even when neither candidate boundary is yet known to be correct.
 4. Give one example each of activation without availability and availability without current activation.
 5. Explain why the absence of a positive marker is not automatically a negative consciousness result.
@@ -2982,7 +3345,7 @@ This matrix lets the instructor verify that the course incorporates the conceptu
 ### Answer guide for Problem Set 1
 
 1. $C_0$ is the minimal what-it-is-like fact. Access concerns usability for reasoning or control; character concerns what the admitted experience is like.
-2. Sufficiency: the viable bundle guarantees $C_0$; threatened by licensed $V\land N^*\land\neg C_0$. Necessity: $C_0$ requires the viable bundle; threatened by licensed $C_0\land\neg(V\land N^*)$.
+2. Source profile: the viable bundle is proposed as necessary and sufficient. On a resolved bearer domain, sufficiency is threatened by licensed $S\in\mathcal B_{\min,\Theta}^+(c)\land\neg C_0(S,c)$; necessity is threatened by licensed $C_0(S,c)\land S\notin\mathcal B_{\min,\Theta}^+(c)$. An all-pass but nonminimal container is not a sufficiency threat, and unresolved plural minima license neither direction.
 3. It shows that the consciousness result depends on what was counted as the system and therefore requires independent individuation and sensitivity reporting.
 4. Activation without availability: common-drive or arousal recruitment. Availability without activation: an idle recipient shown by nearby, low-burden intervention to be selectively reachable.
 5. A negative requires applicability, sensitivity, adequate quality, satisfied auxiliary demands, a rule-out region, and exclusion of alternative causes of non-detection.
@@ -3004,7 +3367,7 @@ A test is applicable and well executed. Two credible surrogates disagree beyond 
 
 Two disjoint candidates both clear autonomy and role thresholds. Both are stable across specifications. Interrupting either candidate's specific coupling to the other leaves the other's role profile intact; pairwise separability is .89 with $\kappa=.80$. What boundary status is supported? What does it not establish?
 
-#### Case C: $N_2$ aggregation
+#### Case C: N2 aggregation
 
 Five independently calibrated recipient classes have frozen weights (.25, .20, .20, .20, .15). Classes 1, 2, and 4 pass every effect, latency, selectivity, route, and context gate. Class 3 is effect-indeterminate. Class 5 fails route dependence. Let $\alpha=.60$ and $m=3$. The three qualifying effects are sufficiently even to pass $\eta$. Report and executive classes are not among the qualifying three. Is $N_2$ positive, negative, or indeterminate?
 
@@ -3012,9 +3375,9 @@ Five independently calibrated recipient classes have frozen weights (.25, .20, .
 
 A study contains 500 cases. For $N_1$, only four cases have the upper $N_1$ bound below threshold while lower bounds for $V,N_2,N_3$ clear their gates. The full model predicts their anchor patterns slightly better than the ablated model, but the confidence interval spans the minimum meaningful effect. What component status is warranted?
 
-#### Case E: Mechanism selectivity
+#### Case E: Mechanism selectivity and bearer propagation
 
-An intervention lowers $N_3$ by the preregistered amount but also lowers $N_2$ beyond its equivalence margin and changes the selected boundary. Independent anchors decline. What may be inferred?
+An intervention lowers $N_3$ by the preregistered amount but also lowers $N_2$ beyond its equivalence margin. The frozen $\mathcal P_\Theta$ referent remains autonomous and mappable across conditions, while recomputation changes the positive-bearer output. Independent anchors decline. What may be inferred?
 
 #### Case F: Character bridge
 
@@ -3030,9 +3393,9 @@ Presence is positive. The bridge predicts baseline similarity well but fails hel
 
 **D.** Indeterminate and coverage-limited. Very low diagnostic coverage and an interval spanning the effect margin do not establish indispensability.
 
-**E.** The intended selective $N_3$ mechanism ablation is unlicensed; the result may reveal coupling or boundary reorganization. Anchor decline cannot be assigned specifically to $N_3$.
+**E.** No $N_3$-specific inference is licensed because the manipulation produces a coupled $N_2/N_3$ profile change. The change in positive-bearer output is an expected result of lattice recomputation and is reported separately; it does not itself invalidate the mechanism audit because the frozen referent remained admissible and mappable. Anchor decline cannot be assigned specifically to $N_3$. Had the intervention also broken referent autonomy or cross-condition mapping, the component audit would have been unlicensed rather than merely coupled.
 
-**F.** Refuted for the specified bridge and domain. Positive presence remains intact; another character mapping may still succeed.
+**F.** Refuted for the specified bridge and domain. The positive presence classification remains supported; another character mapping may still succeed.
 
 ### Problem Set 3. Essay and oral-exam prompts
 
@@ -3047,14 +3410,39 @@ Presence is positive. The bridge predicts baseline similarity well but fails hel
 
 ### Analytic-writing rubric
 
-| Criterion | Excellent | Competent | Needs revision |
-|---|---|---|---|
-| Target clarity | Exact consciousness target and scope are maintained throughout | Target is stated but occasionally drifts | "Consciousness" is used without qualification |
-| Theory accuracy | Roles, order, and outcome rules are reconstructed correctly | Minor omissions do not change the argument | Major components or licenses are conflated |
-| Rival fairness | Strong, version-specific rival and objection | Rival is recognizable but simplified | Strawman or target mismatch |
-| Evidence discipline | Boundary, validity, anchors, confounds, and transport are addressed | Most licenses are addressed | Evidence is equated with the target |
-| Falsifiability | Concrete result and revision rule are stated | General counterevidence is named | No outcome could change the view |
-| Argument quality | Premises, inference, residual pressure, and conclusion are explicit | Coherent argument with limited residual analysis | Assertion or summary without inference |
+Score each row from 0 to 4 for a 24-point analytic score; convert to the assignment's course weight. A score of 3 is graduate-level proficiency, while 4 requires precision and independent diagnostic insight.
+
+| Criterion | 4 - Complete | 3 - Proficient | 2 - Developing | 0-1 - Insufficient |
+|---|---|---|---|---|
+| Target clarity | Exact target, bearer, scope, and exclusions remain fixed | Target and scope are clear with no consequential drift | Target is stated but shifts once or leaves scope implicit | "Consciousness" is used generically or the target changes the verdict |
+| Theory accuracy | Roles, order, status vocabulary, and limits are reconstructed exactly | Minor omission does not alter the inference | One consequential role or license is incomplete | Components, prediction, evidence, or ontology are conflated |
+| Rival fairness | Exact dated rival version is strengthened and given a genuine diagnostic prediction | Rival is source-supported and recognizable | Rival is simplified or the version is not fixed | Strawman, family label, or target mismatch substitutes for a rival |
+| Evidence discipline | Boundary, validity, anchors, confounds, independence, and transport are prioritized correctly | Principal licenses and limitations are addressed | One major license is listed but not integrated | Evidence, score, or non-detection is equated with the target |
+| Falsifiability | Concrete result, license, and nontrivial revision are prospective for both sides | A discriminating result and revision are stated | Counterevidence is general or only one side must revise | No admissible outcome could change the view |
+| Argument quality | Premises, inference, strongest objection, residual pressure, and conclusion are explicit | Coherent supported argument with a live residual issue | Mostly summary, or a premise/inference link is missing | Assertion, literature list, or conclusion without an argument |
+
+### Exit-ticket quick key and feedback loop
+
+Exit tickets are diagnostic, not miniature essays. Mark each **secure**, **partial**, or **not yet secure** against the minimum evidence below. Begin the next meeting with one anonymous strong response and one repairable response. A class-wide miss triggers the listed retrieval prompt before new material; an individual miss triggers the short repair task without grade penalty. Track recurring misses by concept, not by student, and use the pattern to decide whether an extension activity should be replaced by reteaching.
+
+| Session | Minimum satisfactory evidence | Immediate response when missing |
+|---:|---|---|
+| 1 | Fixes the target as content-indexed minimal phenomenal presence, names a genuinely different rival target, and separates evidence from constitution | Re-sort Cards 1, 3, and 5 with a written target / evidence / constitution column |
+| 2 | Gives one licensed resolved-$\mathcal B_{\min,\Theta}^+$ / $C_0-$ sufficiency threat and one licensed $C_0+$ / resolved positive-bearer nonmembership necessity threat | Reclassify Profiles B and D and state why a failed surrogate, nonminimal container, or unresolved plurality is not yet a counterexample |
+| 3 | Describes a verdict-changing candidate mapping and a consciousness-independent boundary intervention | Complete the candidate-family, held-out-role, and final-boundary sequence in six ordered steps |
+| 4 | Explains that correlation can arise from common drive and freezes a viability indicator before the consciousness outcome | Draw one common-cause graph and write a prospective $V$ failure rule |
+| 5 | Distinguishes current activation from counterfactual availability in both directions and names a route or preparation intervention | Annotate one active-but-unavailable and one idle-but-available recipient in the routing ledger |
+| 6 | Contrasts a causal return path with duration-matched persistence and separates the $N_3$ presence gate from temporal character $\Pi_c$ | Mark the decisive intervention and the two distinct targets on the Session 6 timeline |
+| 7 | Makes indeterminate an evidential-resolution problem and unlicensed a failed-interpretation problem | Apply the four-outcome precedence rule to Tribunal Variants B and C and name different repairs |
+| 8 | States $V=1,N_1=1,N_2=0,N_3=1$ for the $N_2$ diagnostic cell and identifies one prohibited anchor / predictor dual use | Complete one row of the diagnostic-set worksheet and redraw the data split |
+| 9 | Explains why decoding can reflect stimulus or task structure and gives a licensed held-out deformation failure that leaves the presence result supported | Write separate presence and bridge verdicts for Character Variant B |
+| 10 | Gives a stable intermediate role readout plus a counterfactual fault prediction, while separating intelligibility from empirical support | Blindly compare Schematic Profiles B and D with $D,C,F,E$ |
+| 11 | Names a concrete sensitivity, opportunity, route, quality, or auxiliary-demand failure and the control needed for rule-out | Repair the later negative EEG assessment in Packet 1 before permitting any negative conclusion |
+| 12 | Names one transported construct and one calibration or boundary failure that blocks interpretation in the new domain | Complete the construct / causal-role / calibration / boundary ledger for one dossier |
+| 13 | States an exact package-level contrast against a dated rival version and a result that changes a declared commitment | Replace a family slogan with one source-supported prediction pair on Worksheet 2 |
+| 14 | Gives both confidence-increasing and confidence-decreasing results, each with boundary, validity, independence, and revision conditions | Revise the result card so both sides face a prospective nontrivial update |
+
+At the midpoint and after Session 13, give students a one-page progress return listing: concepts secure, one recurrent inference error, one repaired artifact, and one capstone design consequence. This closes the loop between formative evidence and later assessment instead of collecting exit tickets without instructional action.
 
 ### Collaborative work: accountability and assessment
 
@@ -3086,7 +3474,7 @@ Peer reports should be used only when behavior-specific and corroborated by the 
 
 \newpage
 
-## Appendix C. Capstone Preregistration and Rubric
+## Appendix C. Capstone Preregistration and Rubric {#appendix-c}
 
 ### Capstone title and team
 
@@ -3108,6 +3496,19 @@ Before designing the study, each member privately records expected outcomes for 
 - which design decisions require unanimous agreement because they affect fairness between rivals.
 
 Recommended roles are **target and boundary steward**, **construct and measurement lead**, **rival-model advocate**, **license and anti-circularity auditor**, and, when appropriate, **clinical or welfare liaison**. The rival advocate must be able to certify that the final test is fair to the rival before the protocol is frozen. Failure to certify does not give the rival a veto without reasons; the unresolved objection is recorded for panel adjudication.
+
+### Choose a capstone track before completing the template
+
+Every track completes the common core: exact target and scope, serious rivals, independent evidence architecture, project-appropriate outcome rules, robustness, stopping, and revision commitments. A field may be marked **not applicable** only with a scientific justification and a replacement source of diagnostic leverage. The instructor freezes any point reallocation before peer review so teams cannot avoid a difficult criterion after seeing feedback.
+
+| Track | Required emphasis | Conditionally applicable fields | Minimum complete product |
+|---|---|---|---|
+| A. Component or intervention study | Diagnostic region, component operationalization, selectivity, retained-component equivalence, rescue, independent anchors | Transport only if scope crosses a domain | Causal diagram, variable dictionary, diagnostic-coverage plan, and five-status component rules |
+| B. Boundary or transport audit | Candidate generation, autonomy, mapping, minimality, separability, stability; or construct, causal-role, calibration, and boundary preservation across domains | Mechanism intervention when the audit makes a causal claim; full component table only for roles actually transported | Candidate or transport ledger, frozen mappings, reversal cases, and status-specific next studies |
+| C. Character-bridge study | Independently frozen positive presence gate, causal-trajectory geometry, independent quality anchors, nuisance models, held-out contents, and deformation intervention | Full component re-estimation only when the intervention threatens the gate | Two-stream evidence diagram, bridge specification, symmetry report, and four bridge outcomes |
+| D. Schematic, construct, reproducibility, or conceptual audit | Stable semantics, blind readout or exact argument reconstruction, diagnostic cases, rival interpretations, independence, and fault or counterexample predictions | Candidate boundary and intervention only when the object is an empirical system | Training/test separation, scoring and abstention rule, inter-reader or argument audit, and revision threshold |
+
+All tracks add a feasibility note, research-ethics or welfare review when relevant, source-quality check, and data/code management plan. Use "not applicable, because..." rather than inventing a sham intervention or transport claim solely to fill the template.
 
 ### 1. Exact target
 
@@ -3160,7 +3561,8 @@ For $N_2$, additionally state recipient-class calibration, content and matched c
 - Matched sham, energy, timing, and nuisance controls:
 - Minimum intended component change:
 - Equivalence margins for every retained component:
-- Boundary and viability preservation checks:
+- Frozen $\mathcal P_\Theta$ referent / mapping and viability preservation checks:
+- Post-result $\mathcal B_m^+$ recomputation and bearer-output comparison:
 - Rescue or recovery condition:
 - Conditions that make the intervention unlicensed:
 
@@ -3205,9 +3607,20 @@ Use vocabulary appropriate to the project:
 - Reasonable specification neighborhood:
 - Boundary, grain, estimator, threshold, and anchor variants:
 - Multiplicity control:
-- Transport target and three bridge requirements:
+- Transport target and four bridge requirements:
 - Minimum result stability:
 - Maximum acceptable unresolved-output rate:
+
+### 10A. Feasibility, ethics, and data stewardship
+
+- Track-specific fields marked not applicable, with justification:
+- Available sample, apparatus, compute, time, and investigator expertise:
+- Feasibility result that would narrow the project before data collection:
+- Human-subjects, animal-welfare, clinical, or artificial-system governance review, if relevant:
+- Consent, burden, stopping, and risk-minimization plan, if relevant:
+- Source-quality and citation-verification procedure:
+- Data dictionary, file structure, code environment, versioning, access, retention, and de-identification plan:
+- Materials needed for an independent reproduction attempt:
 
 ### 11. Practical action note
 
@@ -3223,7 +3636,7 @@ If the study bears on clinical or welfare decisions, state possible actions, err
 
 ### Staged cross-team review
 
-Recommended sequence: form teams and complete the collaboration charter after Session 9; Checkpoint 1 after Session 10; Checkpoint 2 after Session 11; Checkpoint 3 after Session 12; Checkpoint 4 after Session 13; and Checkpoint 5 before the Session 14 defense. A compressed version retains Checkpoints 1, 3, and 5.
+Recommended sequence: submit individual seeds after Session 7; form provisional teams and compare seeds after Session 8; choose a track and complete the collaboration charter after Session 9; Checkpoint 1 after Session 10; Checkpoint 2 after Session 11; Checkpoint 3 after Session 12; Checkpoint 4 after Session 13; and Checkpoint 5 before the Session 14 defense. A compressed version retains Checkpoints 1, 3, and 5.
 
 | Checkpoint | Team submission | Reviewing team's required response |
 |---|---|---|
@@ -3233,30 +3646,33 @@ Recommended sequence: form teams and complete the collaboration charter after Se
 | 4. Outcome freeze | Four outcomes and revision rules | One unclassified result and one commitment still movable |
 | 5. Mock defense | Complete preregistration | One fatal-unless-repaired judgment and one valuable-even-if-null judgment |
 
-Every team submits a disposition log. Rejected criticism must receive a substantive reason; accepted criticism must produce a visible protocol change. Recommended capstone grade composition is 70% team preregistration under the rubric, 20% individual oral defense with questions assigned unpredictably, and 10% collaboration charter, role records, dissent log, and peer-review disposition.
+Every team submits a disposition log. Rejected criticism must receive a substantive reason; accepted criticism must produce a visible protocol change. Recommended capstone grade composition is 70% team preregistration under the rubric, 20% individual defense, and 10% collaboration charter, role records, dissent log, and peer-review disposition. Publish five question domains in advance, select one or two domains at the defense, allow quiet preparation time, and permit a brief written supplement. For more than six teams, use parallel panels, poster defenses, or prerecorded five-minute presentations with scheduled questions rather than compressing every defense into one plenary block.
 
 ### Capstone rubric
 
 | Dimension | Points | Full-credit standard |
 |---|---:|---|
-| Target and scope | 10 | Exact explanandum, system, content, regime, and excluded claims |
+| Target and scope | 8 | Exact explanandum, system or conceptual object, content, regime, and excluded claims |
 | Rival quality | 10 | Strong rivals with genuinely different prospective predictions |
 | Diagnostic identification | 12 | Correct disagreement set, coverage plan, and uncertainty margin |
-| Boundary discipline | 10 | Independent proposal, stability, minimality, and separability addressed |
-| Construct validity | 12 | Component measures and confounds are explicitly validated |
+| Boundary discipline | 8 | Empirical candidates use independent proposal, stability, minimality, and separability; noncandidate projects justify their scope boundary |
+| Construct validity | 10 | Every operative measure, readout, or argument construct and its confounds are explicitly validated |
 | Anti-circularity | 12 | Evidence splits, anchor independence, and no dual use are enforceable |
-| Intervention selectivity | 10 | Retained components, identity, viability, and rescue are protected |
+| Track-specific diagnostic leverage | 10 | Intervention selectivity and rescue, transport reversal, bridge deformation, or blind fault/counterexample prediction can change the verdict |
 | Outcome discipline | 10 | Project-appropriate outcomes, indeterminate, unlicensed, and special statuses are prospective |
-| Robustness and transport | 8 | Reasonable alternatives and transfer limits are declared |
+| Robustness and transport | 8 | Reasonable alternatives, stability requirements, and transfer limits are declared; transport is tested only when claimed |
+| Feasibility, ethics, and data | 6 | Scope is executable; governance, burden, sources, data structure, code environment, and reproduction materials are addressed as applicable |
 | Revision commitments | 6 | Every declared result has a substantive consequence for the model or protocol |
 
-**Individual oral defense criteria (20% of the overall capstone grade):** accurate reconstruction without teammate prompting; ability to defend the rival fairly; explanation of one validity or independence risk; interpretation of an unanticipated result; and a clear personal revision commitment.
+Score each dimension at one of four anchored levels: **complete and executable** (100% of its points), **substantively sound with a repairable omission** (85%), **developing with a consequential gap** (65%), or **insufficient or internally inconsistent** (0-40%). The grader names the decisive missing element. A justified not-applicable field receives no automatic penalty; its points are reallocated prospectively to the track's diagnostic-leverage, construct, or robustness dimension. An unjustified omission is scored as a gap.
+
+**Individual defense criteria (20% of the overall capstone grade):** accurate reconstruction without teammate prompting; ability to defend the rival fairly; explanation of one validity or independence risk; interpretation of an unanticipated result; and a clear personal revision commitment. The specific sampled domain may vary, but the published domain list, preparation time, and written-supplement option are common to all students.
 
 **Collaboration-record criteria (10%):** completed charter and role rotations; behavior-specific contribution record; preserved dissent; timely cross-team reviews; and a disposition log in which accepted criticism changes the protocol and rejected criticism receives a substantive reason.
 
 \newpage
 
-## Appendix D. Reusable Instructor Worksheets
+## Appendix D. Reusable Instructor Worksheets {#appendix-d}
 
 ### Worksheet 1. Complete case-classification record
 
@@ -3298,6 +3714,9 @@ Every team submits a disposition log. Rejected criticism must receive a substant
 | Specification | Grain, horizon, regime, intervention family |
 | Candidate proposal | Discovery-only method and candidate family |
 | Autonomy | $J_{\mathrm{self}}$, $J_{\mathrm{in}}$, ratio, uncertainty, reliability |
+| Identification assumptions | Intervention support / positivity, consistency, causal-model adequacy, measurement reliability, regime stability |
+| Intervention comparability | Matched internal / external budgets, calibrated distance, sampling parity |
+| Candidate-size comparability | Normalization, dimension-matched null, aggregation rule, ranking-reversal sensitivity |
 | Role completeness | $V,N_1,N_2,N_3$ for every frozen candidate |
 | Minimality | Qualifying proper subsets |
 | Separability | Reciprocal interruption and preservation |
@@ -3387,7 +3806,7 @@ Every team submits a disposition log. Rejected criticism must receive a substant
 
 \newpage
 
-## Appendix E. Collaborative Case Packets
+## Appendix E. Collaborative Case Packets {#appendix-e}
 
 These packets are designed for progressive disclosure. Print each numbered round as a separate envelope; when a round contains several cards, cut those cards apart and distribute them among team members only after the envelope is opened. Do not hand out later rounds at the start. Students initially report the evidence on their current card without interpretation. After all cards in a round are recorded, the team updates Worksheet 8 and commits to a provisional output before the instructor releases the next envelope. After Round 4, teams complete Worksheet 1 for the final case record and Worksheet 7 when an argument or rival comparison is central. Release the instructor key only after the final written commitment.
 
@@ -3419,15 +3838,15 @@ For every packet, teams must state:
 
 **Teaching aims:** $N_2$ operationalization, single-failure profiles, mechanism selectivity, rescue, and incremental necessity.
 
-**Round 1 - baseline card.** In a calibrated recurrent visual preparation, one content passes a stable boundary test, $V$, $N_1$, $N_2$, and $N_3$. A held-out presence-relevant anchor vector was independently validated before the experiment and shares neither sensors, derived features, nor recipient-route measures with the $N_2$ test.
+**Round 1 - baseline card.** In a calibrated recurrent visual preparation, one content has a stable $\mathcal P_\Theta$ referent, passes $V,N_1,N_2,N_3$, and has a resolved inclusion-minimal positive bearer at baseline. A held-out presence-relevant anchor vector was independently validated before the experiment and shares neither sensors, derived features, nor recipient-route measures with the $N_2$ test.
 
 **Round 2 - intervention card.** A reversible pathway intervention reduces content-specific modulation of sensory-comparison, orienting, and value-updating recipients. The intervention leaves source decoding, local activity, energy, and initial feedforward response within equivalence margins.
 
-**Round 3 - retention cards.** Held-out measures show $N_1$ and $N_3$ remain above threshold; $V$ and the candidate boundary remain stable. Report and motor routes were absent from the paradigm. Route mediation and matched-content controls pass.
+**Round 3 - retention cards.** The frozen $N_2$ threshold is $.60$ and the post-intervention upper bound is $.46$. Lower bounds for $V,N_1,$ and $N_3$ meet or exceed their thresholds, their paired-change intervals are contained in the frozen closed equivalence margins, and the frozen $\mathcal P_\Theta$ referent remains autonomous, causally admissible, and mappable across conditions. Report and motor routes were absent from the paradigm. Route mediation and matched-content controls pass. Valid $N_2$ profile-diagnostic cases occupy $.22$ of the declared target distribution. The tested referent therefore leaves the all-pass set, but post-intervention $\mathcal B^+$ fate is underdetermined because the packet supplies no complete candidate lattice or alternative profiles. Teams must state that limit and name the missing evidence.
 
-**Round 4 - anchor and rescue cards.** The independently validated held-out anchor vector declines in the predicted direction. Restoring the pathway rescues both $N_2$ and the anchors without globally increasing every component. The $N_2$-ablated rival predicts stable anchors.
+**Round 4 - anchor and rescue cards.** The independently validated held-out anchor vector declines in the predicted direction. The frozen minimum meaningful risk advantage is $\delta_2^{\min}=.05$; the held-out full-versus-ablated advantage is $\Delta_2=.12$ with interval $[.07,.18]$. Restoring the pathway rescues both $N_2$ and the anchors without globally increasing every component. The $N_2$-ablated rival predicts stable anchors.
 
-**Instructor key.** This is meaningful evidence for the incremental and mechanism-level contribution of $N_2$ in the tested domain, assuming selectivity and anchor independence withstand audit. Because the anchor vector shares no recipient, sensor, or intervention channel with the $N_2$ measure, it does not merely redescribe downstream availability. The result does not by itself prove the full biconditional, metaphysical identity, or $N_2$ necessity across substrates. The strongest rival may invoke an unmeasured common cause or hidden change in content fidelity. The next study uses a second intervention route and independent replication to test measurement-route invariance.
+**Instructor key.** This is meaningful evidence for the incremental and mechanism-level contribution of $N_2$ in the tested domain, assuming selectivity and anchor independence withstand audit. Channel disjointness removes the clearest dual-use route but does not establish full independence. Audit construct genealogy, common causes, shared auxiliary demands, and leave-family-out sensitivity before treating the anchor advantage as component-specific. The tested referent leaves the all-pass set after the successful $N_2$ failure, but the packet does not supply a complete candidate lattice or alternative post-intervention profiles. Bearer loss, replacement, and unresolved multiplicity therefore remain underdetermined; students must name the missing inclusion, profile, mapping, stability, and separability evidence rather than choose one. The result does not by itself prove the full biconditional, metaphysical identity, or $N_2$ necessity across substrates. The strongest rival may invoke an unmeasured common cause or hidden change in content fidelity. The next study uses a second intervention route and independent replication to test measurement-route invariance.
 
 ### Packet 3. The adaptive dyad
 
@@ -3437,11 +3856,11 @@ For every packet, teams must state:
 
 **Round 2 - autonomy cards.** Each agent maintains endogenous state and role completeness when communication is briefly interrupted. The joint dyad is highly coordinated, but much inbound structure comes from the shared memory service. At the one-day horizon, both agents use that memory to resume unfinished tasks.
 
-**Round 3 - replacement cards.** Replacing the shared cache with a generic store preserving latency and content leaves each agent's role profile intact. Removing agent A leaves B intact and vice versa. Interrupting the specific A-B channel does not collapse either candidate, although joint performance declines.
+**Round 3 - replacement cards.** At the one-minute horizon, replacing the shared cache with a generic store preserving latency and content leaves each agent's role profile intact. No matched replacement has yet been run across the one-day horizon. Removing agent A leaves B intact and vice versa. Interrupting the specific A-B channel does not collapse either candidate, although joint performance declines.
 
-**Round 4 - minimality and separability cards.** A and B each qualify and are proper subsets of the larger candidates at the same short-horizon specification. Pairwise separability exceeds the frozen threshold. The long-horizon identity mapping remains uncertain because both agents repeatedly write to and reconstruct state from the shared memory.
+**Round 4 - minimality and separability cards.** A and B each qualify and are proper subsets of the larger candidates at the same short-horizon specification. Each clears the frozen candidate-reliability threshold and the mapped short-horizon boundary outcome is stable across the declared specification neighborhood. Pairwise separability exceeds the frozen threshold. The cross-horizon candidate and boundary mapping remains uncertain because both agents repeatedly write to and reconstruct state from the shared memory; the case does not settle diachronic personal identity.
 
-**Instructor key.** At the short horizon, multiple candidate bearers are supported; the larger dyad loses under inclusion-minimality. This does not establish that either candidate is conscious. At the long horizon, memory may be a constituent or interface depending on replacement and identity-continuity evidence, so the boundary may be nested or indeterminate. Joint intelligence and shared storage are not sufficient for one subject. The next study uses matched memory substitution and state-reset interventions across the longer horizon.
+**Instructor key.** At the short horizon, multiple candidate bearers are supported; the larger dyad loses under inclusion-minimality, and the tested store is enabling at that horizon. This does not establish that either candidate is conscious. At the long horizon, replacement evidence is absent, so memory could prove constituent, interface, or enabling support; the boundary remains indeterminate rather than being assigned by the short-horizon result. Joint intelligence and shared storage are not sufficient for one subject. The next study uses matched memory substitution and state-reset interventions across the longer horizon.
 
 ### Packet 4. The behavioral duplicate
 
@@ -3461,7 +3880,7 @@ For every packet, teams must state:
 
 **Teaching aims:** presence-character separation, independent anchors, deformation prediction, automorphisms, and bridge refutation.
 
-**Round 1 - presence card.** In a human no-report color paradigm, boundary, $V$, $N_1$, $N_2$, and $N_3$ pass for all tested color contents. Presence status is frozen before character analysis.
+**Round 1 - presence card.** In a human no-report color paradigm, a stable $\mathcal P_\Theta$ referent and $V,N_1,N_2,N_3$ pass for all tested color contents; the same inclusion-minimal bearer is resolved across them under a preregistered joint-content rule. The licensed positive presence status is frozen before character analysis.
 
 **Round 2 - baseline geometry cards.** Perturbation-derived V4-like causal geometry predicts baseline low-demand similarity and discrimination relations. The bridge is trained on three colors and correctly places a fourth held-out color. Stimulus wavelength geometry is included as a nuisance model.
 
@@ -3469,7 +3888,7 @@ For every packet, teams must state:
 
 **Round 4 - phenomenal anchor card.** Independently collected low-demand similarity, confusion, and transition measures show no corresponding contraction, with intervals excluding the predicted deformation. The measures remain reliable and were not used to tune the intervention.
 
-**Instructor key.** The frozen geometry-to-quality bridge is refuted for this domain and manipulation. Positive presence remains intact, as does the fact that the experiences have character. A different mapping, additional latent factor, or nongeometric structure may be required. The prohibited inference is "no phenomenal experience occurred." The next study tests an alternative causal geometry or a richer quality structure with the same independence firewall.
+**Instructor key.** The frozen geometry-to-quality bridge is refuted for this domain and manipulation. The positive presence classification remains intact; the failed bridge does not license denial of phenomenal character. A different mapping, additional latent factor, or nongeometric structure may be required. The prohibited inference is "no phenomenal experience occurred." The next study tests an alternative causal geometry or a richer quality structure with the same independence firewall.
 
 ### Packet 6. The consciousness dashboard
 
@@ -3483,26 +3902,37 @@ For every packet, teams must state:
 
 **Round 4 - abstention card.** The dashboard forces every case into positive or negative. It achieves its high accuracy mainly in ordinary waking and deeply anesthetized cases; near-miss and transport cases are rare.
 
-**Instructor key.** The accuracy is circular evidence for the target because the labels repeat the inputs. The tool also fails schematic legibility, diagnostic coverage, and outcome discipline. It may summarize its own component rule reliably, but it has not independently validated consciousness. Redesign requires independent anchor genealogy, frozen outcome rules, component-level readout, fault predictions, diagnostic-case enrichment, and explicit indeterminate and unlicensed outputs. The smallest useful next study is blind fault localization and held-out prediction on near-miss cases with labels independent of the dashboard inputs.
+**Instructor key.** The accuracy is circular evidence for the target because the labels repeat the inputs. The tool also fails schematic legibility and outcome discipline and lacks the diagnostic-set coverage needed to test component necessity. It may summarize its own component rule reliably, but it has not independently validated consciousness. Redesign requires independent anchor genealogy, frozen outcome rules, component-level readout, fault predictions, diagnostic-case enrichment, and explicit indeterminate and unlicensed outputs. The smallest useful next study is blind fault localization and held-out prediction on near-miss cases with labels independent of the dashboard inputs.
 
 \newpage
 
-## Appendix F. Glossary and Notation
+## Appendix F. Glossary and Notation {#appendix-f}
+
+Read every symbol with its declared local scope. Reused letters are not globally identical variables. In particular, $A$ can mean attention in the core contrast or a removed component set in grouped ablation; $C$ can mean a consciousness target or compositional readout; $D$ can mean a decision function or decomposable semantics; and $E$ can mean evidence or evidential independence. The graph uses $\mathsf V_G,\mathsf E_G$ to avoid collision with the validity envelope $\mathcal V$. Observational universe $\Omega$ is not measurement-route robustness $\Omega_k$; preparation burden $\Gamma$ is not profile diagnostic coverage $\Gamma_k$; and admitted character path $\Pi_c$ is not reasonable-specification support $\Pi_k^+$. The locally reused $\alpha$ denotes boundary autonomy, core node-reach fraction, or refined $N_2$ functional-class coverage only in its declared protocol. Availability stability $R_A(c)$ differs from grouped-ablation risk $R_{\mathrm{grp},A}$; recipient indicator $a_k$ differs from mechanism intervention $\iota_k$. Always pair a reused symbol with its prose label on first use.
 
 | Term or symbol | Teaching definition | Guardrail |
 |---|---|---|
 | $C_0$ or Cø | Minimal phenomenal presence | Not report, intelligence, wakefulness, or full character |
 | $C_1$ | Enriched reflective or metacognitive consciousness | Not built into the minimal gate |
+| $B_S$ | Local shorthand for boundary or test-referent status of candidate $S$ | Resolve it into $S\in\mathcal P_\Theta$ for tests versus $S\in\mathcal B_\Theta$ for a positive-bearer output |
+| $R$; $A$ | Overt report; attention or task-directed access in the core contrast | $A$ is redefined locally as a removal set in grouped ablation |
 | $N^*$ | $N_1\land N_2\land N_3$ | A defined bundle; its identity with consciousness is a hypothesis |
+| $H_*(S,c)$ | $V(S)\land N^*(S,c)$ bundle profile on a frozen referent | An all-pass profile is not final subject attribution until inclusion-minimality and positive-boundary rules pass |
 | $V$ | Independently assessed capacity to realize the relevant dynamics | Not biological life alone and not a post hoc rescue clause |
 | $N_1$ | Integration or synergy | Not activity, correlation, or complexity in general |
 | $N_2$ | Counterfactual system-wide availability | Not report, diffusion, anatomical extent, or node count |
 | $N_3$ | Bounded recurrent stability | Not mere lateness, persistence, or memory |
-| $S$ | Boundary-qualified candidate system | Must be frozen before theory-specific scoring |
+| $S$ | Candidate system drawn from the prospectively frozen family | Final status is theory-relative, but outcome-driven redrawing is prohibited |
 | $c$ | Target content or content-bearing state | Results can be content-relative |
 | $g$ | Spatial, functional, and temporal grain | Cross-grain comparisons need a mapping |
 | $\mathcal R$ | Operating regime | State changes can alter validity and boundaries |
 | $\Delta$ | Evaluation horizon or interval | Presence is windowed rather than instantaneous |
+| $\Theta$ | Frozen analysis specification | Collects grain, horizon, regime, estimators, thresholds, mappings, and related choices |
+| $\Omega$ | Declared observational universe | Known omissions must be reported |
+| $\mathcal I$ | Declared intervention family | Conclusions are relative to admissible tested interventions |
+| $\varepsilon$ | Small denominator stabilizer | Numerical convenience, not substantive evidence |
+| $\sigma$ | Minimum endogenous-capacity floor | Prevents a high autonomy ratio from certifying a causally trivial set |
+| $\mathsf V_G,\mathsf E_G$ | Vertex and effective-edge sets of graph $G$ | Distinct from validity envelope $\mathcal V$ and assessment evidence $E$ |
 | Effective connectivity | Directed causal influence among modeled variables | Not anatomy or statistical dependence alone |
 | Synergy | Joint information or causal contribution irreducible to parts | Estimator families require construct validation |
 | Recipient class | Functionally distinct group defined by causal response repertoire | Not an anatomical label or parcel count |
@@ -3512,6 +3942,8 @@ For every packet, teams must state:
 | $C_A$ | Weighted coverage across qualifying recipient classes | Weights cannot simply reward node count |
 | $K_A$ | Number of qualifying recipient classes | Prevents one class from passing alone |
 | $H_A$ | Evenness of effect across qualifying classes | Prevents token threshold crossings around one dominant class |
+| $E_k^*$; $p_k$ | Nonnegative class-level maximum admissible effect magnitude; normalized $w_kE_k^*a_k$ mass over qualifying classes | $E_k^*$ exists before qualification; $a_k$ carries pass status, and weights alone do not define evenness |
+| $R_A$ | Stability of an $N_2$ result across a frozen specification neighborhood | A nominal pass with low stability is fragile |
 | $N_2^{-R}$ | Availability recalculated without report classes | Report remains optional evidence |
 | $N_2^{-E}$ | Availability recalculated without executive classes | Executive uptake cannot be the sole pass route |
 | Validity envelope $\mathcal V$ | Domain in which an evidence-target interpretation is established | A formula does not carry its meaning automatically |
@@ -3525,35 +3957,82 @@ For every packet, teams must state:
 | $J_{\mathrm{self}}$ | Candidate's endogenous causal capacity | Blocks inert independence |
 | $J_{\mathrm{in}}$ | Inbound external imposition on organization | Does not penalize outbound agency |
 | $A_\Theta$ | Ratio of endogenous capacity to endogenous plus inbound dependence | Eligibility for candidacy, not consciousness amount |
+| $M_C$ | Consciousness-linked score in the prohibited retrospective $\arg\max$ selector | Must not choose the bearer that it later classifies |
+| $\mathcal G_\Theta$ | Finite discovery-data candidate family | Proposal is permissive and not certification |
+| $\mathcal P_\Theta$ | Stable causally admissible candidates used as test referents | Requires autonomy, capacity, and candidate reliability; licenses bundle-profile and component tests, not final positive subject attribution |
+| $\mathcal Q_\Theta$ | Role-complete positive candidates | Held-out theory-relative role evaluation follows referent freezing |
+| $\mathcal B_\Theta$ | Final inclusion-minimal positive-boundary set at fixed $\Theta$ | Contains one, several, or no inclusion-minimal all-pass candidates; nesting is a cross-specification mapping result and unresolved is an evidential status, not a set member |
+| $\mathcal B_{\min,\Theta}^+(c)$ | Content-indexed inclusion-minimal all-pass members of $\mathcal P_\Theta$ | Final $C_0(S,c)$ attribution applies only when the bearer relation is resolved; nonseparable plural minima remain indeterminate |
+| $\operatorname{Resolved}_B(c;\Theta)$ | A unique inclusion-minimal positive bearer or a plurality that clears the declared separability rule | A license for subject attribution, not a way to force an unresolved candidate set into one subject |
+| $R_C$ | Reliability of one candidate across resamples and nuisance variants | Not cross-specification boundary stability |
+| $R_B$ | Stability of a selected boundary across reasonable specifications and mappings | A reliable candidate can still have an unstable final boundary |
+| $p_j$; $q_k$ | Candidate-inclusion frequency; complete-boundary-outcome frequency | $p_j$ values need not sum to one and are not posteriors; exhaustive $q_k$ values sum to one |
 | Inclusion-minimality | No qualifying proper subsystem at the same specification | Not fewest nodes or highest score |
 | Separability | Each candidate preserves organization under reciprocal channel interruption | Low separability does not prove one larger subject |
-| Constituent | Specific dynamics are required after generic support replacement | More than remote causal necessity |
+| Constituent | Removal causes role loss and a matched generic replacement fails to restore the role profile | More than remote causal necessity or mere connectedness |
 | Interface | Bounded input or output channel compatible with autonomous role completeness | Causal contact alone does not make it internal |
 | Enabling support | Generic replacement restores the role profile | Time-horizon dependent |
 | Diagnostic set $\mathcal D_k$ | Cases where $X_k$ fails and every retained component passes | Only region where full and leave-one-out conjunctions differ |
-| Diagnostic coverage $\Gamma_k$ | Target-distribution mass in the diagnostic region | A rare corner limits generality |
+| Diagnostic coverage $\Gamma_k$ | Target-distribution mass in the profile-level diagnostic region | Report bearer-output disagreement coverage separately after lattice recomputation |
 | Criterion ablation | Remove a term from the decision rule | Tests incremental prediction, not mechanism |
-| Mechanism ablation | Intervene on a proposed realization | Requires selectivity and preserved identity |
+| Mechanism ablation | Intervene on a proposed realization | Requires selectivity and preservation of the frozen $\mathcal P_\Theta$ referent, not preservation of post-fault $\mathcal B^+$ membership |
+| $\Lambda_k^{\mathrm{sel}}(\iota_k)$ | Selectivity license for component-$k$ mechanism intervention $\iota_k$ | Distinct from recipient indicator $a_k$ and availability latency $L_k$ |
+| $R_{\mathrm{grp},A}$; $\Delta_A$ | Held-out grouped-ablation risk and full-minus-rival advantage for removed set $A$ | Distinct from availability stability $R_A(c)$ |
 | Measurement ablation | Remove an estimator or data route | Tests robustness, not physical necessity |
+| $\Omega_k$ | Fraction of a frozen measurement-route removal family that preserves component status | Not survival of consciousness under physical deletion |
+| $\Pi_k^+$ | Fraction of reasonable frozen specifications whose lower $\Delta_k$ bound clears $\delta_k^{\min}$ | Stability summary, not a posterior probability of necessity |
 | Anchor vector $Y$ | Independent convergent evidence used for model comparison | Not an infallible consciousness oracle |
 | Causally coupled | Components cannot be varied separately within the tested intervention family | Motivates composite modeling or better intervention |
 | Weak minimality | No single component can be removed | Can miss grouped redundancy |
 | Strong minimality | Full model beats every preregistered proper submodel | Still relative to anchors, domain, and rival class |
 | $G_c$ | Content's neighborhood in a causal-trajectory geometry | Not a snapshot or arbitrary latent embedding |
 | $\mathcal Q$ | Independently anchored empirical quality-space structure | Need not be Euclidean or globally commensurable |
+| $P(c)$ | Presence-gate indicator for content-bearing state $c$ | A local gate, not continuous phenomenal richness |
+| $\chi_c$ | Structured character profile of an admitted content | Not supplied by the presence gate alone |
+| $\psi_\Phi$ | Preregistered feature representation extracted from $G_c$ over $\Delta$ | Dimension and preprocessing are frozen inside $\Phi$ |
 | $F_\Phi$ | Frozen bridge from causal-geometry features to quality structure | High in-sample correlation is insufficient |
 | $Q_\Phi$ | Symmetry-qualified phenomenal-character map | Applied only after a positive presence gate |
+| $R_S$ | Stability of the bridge outcome across frozen boundaries, grains, metrics, anchors, preprocessing, and bridge families | A low value makes apparent support or refutation fragile; it is not a posterior |
 | $\operatorname{Aut}(\mathcal Q)$ | Transformations preserving every measured quality relation | Records residual inversion and label underdetermination |
 | $\Pi_c$ | Temporal path features of an admitted character | Distinct from $N_3$'s presence gate |
 | Schematic legibility | Publicly teachable compositional and counterfactual readout | Intelligibility is not proof |
+| $\operatorname{Legible}(M,o\mid K)$ | Whether structured model $M$ supports a public readout of target state $o$ given teachable knowledge $K$ | The readout rule does not validate its own identity claim |
+| $D,C,F,E$ in the legibility test | Decomposable semantics, compositional readout, counterfactual fault localization, evidential independence | Local schematic namespace only |
+| $\mathfrak S_{N^*}$ | Role-annotated $N^*$ schematic or representation presented for readout | Never use the symbol for the running causal organization itself |
 | Role vector $\boldsymbol\rho_{C_0}$ | Bearer, operation, unity, system-level presence, temporal presence | The intermediate explanatory profile |
-| Transport | Preservation of construct, causal role, and calibration across domains | Surface similarity is insufficient |
+| Transport | Preservation of construct, causal role, calibration, and boundary / regime across domains | Surface similarity is insufficient |
+
+### Quantitative on-ramp and formula sheet
+
+The qualitative minimum is the ability to interpret what a formula commits the investigator to, not to derive every estimator. Use these six checks before Session 2:
+
+1. **Conjunction:** $X_1\land\cdots\land X_k=1$ only when every required term passes; strengths do not compensate unless a different aggregate model is explicitly proposed.
+2. **One-sided uncertainty:** a pass requires a lower bound that meets or exceeds the pass threshold; a licensed fail requires an upper bound strictly below the fail threshold. Equality at the threshold counts for the positive rule but not the negative rule; if neither rule applies, the interval is indeterminate.
+3. **Equivalence:** a retained component is preserved when its full uncertainty interval is contained in a preregistered **closed** equivalence margin, with endpoints included. A point estimate inside the margin or a nonsignificant change is not automatically equivalence.
+4. **Held-out testing:** development chooses models, calibration freezes rules, and the final set tests them once. Cross-fitting rotates these roles without allowing the same fold to define and validate one claim.
+5. **Diversity evenness:** with qualification indicator $a_k\in\{0,1\}$, $p_k=w_kE_k^*a_k/\sum_jw_jE_j^*a_j$ and $H_A=-\sum p_k\log p_k/\log K_A$. Equivalently, sum only over $j$ for which $a_j=1$. Weights alone do not define effect evenness.
+6. **Relational invariance:** an automorphism preserves every declared relation in $\mathcal Q$. Evidence identifies a character only up to the transformations that the full anchor structure leaves unchanged.
+
+**Low-stakes diagnostic.** Ask students to (a) classify one pass, fail, and threshold-straddling interval; (b) explain why $p>.05$ does not establish equivalence; (c) identify leakage when one dataset tunes and tests a bridge; and (d) state what an equilateral three-point quality space leaves underdetermined. Students who miss (a) or (b) complete the interval primer before Session 4; those who miss (c) complete the held-out-data primer before Session 8; those who miss (d) complete the relational-geometry primer before Session 9. Calculation of entropy, power, or causal estimands may remain an optional quantitative extension.
 
 \newpage
 
-## Appendix G. Primary Corpus and Selected Contextual Readings
+## Appendix G. Primary Corpus and Selected Contextual Readings {#appendix-g}
 
 ### Primary Cø / N* corpus
+
+**Corpus baseline for this instructor edition:** core Version 2.0, revised July 8, 2026, plus companion-manuscript files present in the project repository on July 18, 2026. Use the linked source files to check later revisions before teaching. Section assignments in this manual follow this baseline and may need remapping if a manuscript changes.
+
+| Corpus item | Baseline date or version | Stable project source |
+|---|---|---|
+| Core model | Version 2.0, July 8, 2026 | [Core PDF](https://github.com/philstilwell/C0/blob/main/public/paper.pdf) |
+| Boundary criterion | July 10, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/main/papers/where-is-the-conscious-subject/manuscript.md) |
+| Availability criterion | July 11, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/main/papers/consciousness-without-report/manuscript.md) |
+| Four-outcome framework | Repository baseline, July 18, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/main/papers/indeterminacy-as-scientific-result/manuscript.md) |
+| Component-necessity audit | July 12, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/main/papers/ablating-n-star/manuscript.md) |
+| Character extension | July 11, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/main/papers/from-phenomenal-presence-to-phenomenal-character/manuscript.md) |
+| Schematic legibility | July 16, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/main/papers/consciousness-in-the-schematic/manuscript.md) |
+| Taxonomy placement source | Retrieved July 9, 2026 | [Closer To Truth consciousness taxonomy](https://loc.closertotruth.com/consciousness-theories) |
 
 Stilwell, P. (2026). *Cø as N\*: A minimal network-dynamics model of phenomenal consciousness* (Version 2.0) [Manuscript].
 
@@ -3565,9 +4044,9 @@ Stilwell, P. (2026). *Indeterminacy as a scientific result: A four-outcome frame
 
 Stilwell, P. (2026). *Ablating N\*: Does every conjunct earn its place? A necessity audit without a consciousness oracle* [Manuscript].
 
-Stilwell, P. (2026). *From phenomenal presence to phenomenal character: A dynamical-geometry extension of the N* model* [Manuscript].
+Stilwell, P. (2026). *From phenomenal presence to phenomenal character: A dynamical-geometry extension of the N\* model* [Manuscript].
 
-Stilwell, P. (2026). *Reading consciousness from the schematic: Structural legibility in the N* model* [Manuscript].
+Stilwell, P. (2026). *Reading consciousness from the schematic: Structural legibility in the N\* model* [Manuscript].
 
 **Project site:** <https://philstilwell.github.io/C0/>
 
@@ -3593,6 +4072,8 @@ Casali, A. G., Gosseries, O., Rosanova, M., et al. (2013). A theoretically based
 
 Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of Consciousness Studies, 2*(3), 200-219.
 
+Clark, A. (1993). *Sensory qualities*. Clarendon Press.
+
 Chow, C. K. (1970). On optimum recognition error and reject tradeoff. *IEEE Transactions on Information Theory, 16*(1), 41-46. <https://doi.org/10.1109/TIT.1970.1054406>
 
 Cogitate Consortium, Ferrante, O., Gorska-Klimowska, U., et al. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature, 642*, 133-142. <https://doi.org/10.1038/s41586-025-08888-1>
@@ -3603,9 +4084,15 @@ Doerig, A., Schurger, A., & Herzog, M. H. (2021). Hard criteria for empirical th
 
 Fleming, S. M., & Shea, N. (2024). Quality space computations for consciousness. *Trends in Cognitive Sciences, 28*(10), 896-906. <https://doi.org/10.1016/j.tics.2024.06.007>
 
+Frankish, K. (2016). Illusionism as a theory of consciousness. *Journal of Consciousness Studies, 23*(11-12), 11-39.
+
 Frassle, S., Sommer, J., Jansen, A., Naber, M., & Einhauser, W. (2014). Binocular rivalry: Frontal activity relates to introspection and action but not to perception. *Journal of Neuroscience, 34*(5), 1738-1747. <https://doi.org/10.1523/JNEUROSCI.4403-13.2014>
 
 Friston, K. J., Fagerholm, E. D., Zarghami, T. S., et al. (2021). Parcels and particles: Markov blankets in the brain. *Network Neuroscience, 5*(1), 211-251. <https://doi.org/10.1162/netn_a_00175>
+
+Goff, P. (2019). *Galileo's error: Foundations for a new science of consciousness*. Pantheon.
+
+Graziano, M. S. A., & Webb, T. W. (2015). The attention schema theory: A mechanistic account of subjective awareness. *Frontiers in Psychology, 6*, 500. <https://doi.org/10.3389/fpsyg.2015.00500>
 
 Kagan, B. J., Kitchen, A. C., Tran, N. T., et al. (2022). In vitro neurons learn and exhibit sentience when embodied in a simulated game-world. *Neuron, 110*(23), 3952-3969.e8. <https://doi.org/10.1016/j.neuron.2022.09.001>
 
@@ -3613,7 +4100,11 @@ Kleiner, J., & Hoel, E. (2021). Falsification and consciousness. *Neuroscience o
 
 Kriegeskorte, N., & Kievit, R. A. (2013). Representational geometry: Integrating cognition, computation, and the brain. *Trends in Cognitive Sciences, 17*(8), 401-412. <https://doi.org/10.1016/j.tics.2013.06.007>
 
+Kronemer, S. I., Aksen, M., Ding, J. Z., Ryu, J. H., Xin, Q., Ding, Z., Prince, J. S., Kwon, H., Khalaf, A., Forman, S., et al. (2022). Human visual consciousness involves large-scale cortical and subcortical networks independent of task report and eye movement activity. *Nature Communications, 13*, 7342. <https://doi.org/10.1038/s41467-022-35117-4>
+
 Lamme, V. A. F. (2006). Towards a true neural stance on consciousness. *Trends in Cognitive Sciences, 10*(11), 494-501. <https://doi.org/10.1016/j.tics.2006.09.001>
+
+Lau, H., & Rosenthal, D. (2011). Empirical support for higher-order theories of conscious awareness. *Trends in Cognitive Sciences, 15*(8), 365-373. <https://doi.org/10.1016/j.tics.2011.05.009>
 
 Levine, J. (1983). Materialism and qualia: The explanatory gap. *Pacific Philosophical Quarterly, 64*(4), 354-361. <https://doi.org/10.1111/j.1468-0114.1983.tb00207.x>
 
@@ -3627,6 +4118,8 @@ Moreno, A., & Mossio, M. (2015). *Biological autonomy: A philosophical and theor
 
 Mudrik, L., Boly, M., Dehaene, S., et al. (2025). Unpacking the complexities of consciousness: Theories and reflections. *Neuroscience and Biobehavioral Reviews, 170*, 106053. <https://doi.org/10.1016/j.neubiorev.2025.106053>
 
+Pitts, M. A., Padwal, J., Fennelly, D., Martinez, A., & Hillyard, S. A. (2014). Gamma band activity and the P3 reflect post-perceptual processes, not visual awareness. *Frontiers in Psychology, 5*, 1078. <https://doi.org/10.3389/fpsyg.2014.01078>
+
 Seth, A. K., & Bayne, T. (2022). Theories of consciousness. *Nature Reviews Neuroscience, 23*(7), 439-452. <https://doi.org/10.1038/s41583-022-00587-4>
 
 Shinkins, B., Thompson, M., Mallett, S., & Perera, R. (2013). Diagnostic accuracy studies: How to report and analyse inconclusive test results. *BMJ, 346*, f2778. <https://doi.org/10.1136/bmj.f2778>
@@ -3635,12 +4128,10 @@ Smirnova, L., Caffo, B. S., Gracias, D. H., et al. (2023). Organoid intelligence
 
 Storm, J. F., Klink, P. C., Aru, J., et al. (2024). An integrative, multiscale view on neural theories of consciousness. *Neuron, 112*(10), 1531-1552. <https://doi.org/10.1016/j.neuron.2024.02.004>
 
+Thompson, E., & Varela, F. J. (2001). Radical embodiment: Neural dynamics and consciousness. *Trends in Cognitive Sciences, 5*(10), 418-425. <https://doi.org/10.1016/S1364-6613(00)01750-2>
+
 Tsuchiya, N., Wilke, M., Frassle, S., & Lamme, V. A. F. (2015). No-report paradigms: Extracting the true neural correlates of consciousness. *Trends in Cognitive Sciences, 19*(12), 757-770. <https://doi.org/10.1016/j.tics.2015.10.002>
 
 Wannez, S., Heine, L., Thonnard, M., et al. (2017). The repetition of behavioral assessments in diagnosis of disorders of consciousness. *Annals of Neurology, 81*(6), 883-889. <https://doi.org/10.1002/ana.24962>
 
 Yaron, I., Melloni, L., Pitts, M., & Mudrik, L. (2022). The ConTraSt database for analysing and comparing empirical studies of consciousness theories. *Nature Human Behaviour, 6*, 593-604. <https://doi.org/10.1038/s41562-021-01284-5>
-
-## Closing instructor note
-
-The deepest pedagogical virtue of this corpus is not the compactness of $V\land N^*\Longleftrightarrow C_0$. It is the insistence that every inference earn its target, bearer, evidence, scope, and revision rule. If students finish the course able to preserve those distinctions while designing a study that could surprise both proponents and critics, the manual has done its job.
