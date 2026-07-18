@@ -15,31 +15,31 @@ lang: en-US
 |---|---|---:|
 | [Preface](#preface) | Purpose, instructor stance, notation, and use of the resource pack | 3 |
 | [Part I. Course Architecture](#part-i) | Theory in one page, theory placement, outcomes, collaboration framework, format, and sequence | 5 |
-| [Part II. Lecture Notes and Teaching Materials](#part-ii) | Fourteen complete graduate-seminar sessions | 17 |
-| [Session 1](#session-1) | The explanandum and the theory landscape | 17 |
-| [Session 2](#session-2) | The core biconditional and network-dynamics model | 22 |
-| [Session 3](#session-3) | Where is the conscious subject? | 29 |
-| [Session 4](#session-4) | Viability and integration: realization and unity | 36 |
-| [Session 5](#session-5) | Consciousness without report: system-wide availability | 41 |
-| [Session 6](#session-6) | Recurrent stability and temporal presence | 48 |
-| [Session 7](#session-7) | What does the evidence license? | 53 |
-| [Session 8](#session-8) | Does every conjunct earn its place? | 59 |
-| [Session 9](#session-9) | From phenomenal presence to phenomenal character | 66 |
-| [Session 10](#session-10) | Reading consciousness from the schematic | 72 |
-| [Session 11](#session-11) | Biological and clinical applications | 77 |
-| [Session 12](#session-12) | Nonhuman animals, organoids, and artificial systems | 82 |
-| [Session 13](#session-13) | Differentiation, validation, and the strongest objections | 87 |
-| [Session 14](#session-14) | Capstone adversarial research design | 93 |
-| [Part III. Instructor Argument Bank](#part-iii) | Nine core arguments, collaborative argument clinics, validation program, and objection matrix | 98 |
-| [Part IV. Reproducible Course Materials](#part-iv) | Instructor-ready assessment and collaboration resources | 104 |
-| [Appendix A](#appendix-a) | Corpus-to-course concept coverage audit | 104 |
-| [Appendix B](#appendix-b) | Problem sets, answer guides, rubrics, and collaborative assessment | 108 |
-| [Appendix C](#appendix-c) | Capstone preregistration, staged peer review, and rubric | 114 |
-| [Appendix D](#appendix-d) | Nine reusable instructor worksheets | 121 |
-| [Appendix E](#appendix-e) | Six progressive-disclosure collaborative case packets | 130 |
-| [Appendix F](#appendix-f) | Glossary and notation guardrails | 134 |
-| [Appendix G](#appendix-g) | Primary corpus and selected contextual readings | 140 |
-| [Appendix H](#appendix-h) | Session-ready synthetic materials, instructor keys, scaling, and accessible delivery alternatives | 143 |
+| [Part II. Lecture Notes and Teaching Materials](#part-ii) | Fourteen complete graduate-seminar sessions | 16 |
+| [Session 1](#session-1) | The explanandum and the theory landscape | 16 |
+| [Session 2](#session-2) | The core biconditional and network-dynamics model | 21 |
+| [Session 3](#session-3) | Where is the conscious subject? | 27 |
+| [Session 4](#session-4) | Viability and integration: realization and unity | 34 |
+| [Session 5](#session-5) | Consciousness without report: system-wide availability | 39 |
+| [Session 6](#session-6) | Recurrent stability and temporal presence | 46 |
+| [Session 7](#session-7) | What does the evidence license? | 51 |
+| [Session 8](#session-8) | Does every conjunct earn its place? | 57 |
+| [Session 9](#session-9) | From phenomenal presence to phenomenal character | 64 |
+| [Session 10](#session-10) | Reading consciousness from the schematic | 70 |
+| [Session 11](#session-11) | Biological and clinical applications | 75 |
+| [Session 12](#session-12) | Nonhuman animals, organoids, and artificial systems | 80 |
+| [Session 13](#session-13) | Differentiation, validation, and the strongest objections | 85 |
+| [Session 14](#session-14) | Capstone adversarial research design | 91 |
+| [Part III. Instructor Argument Bank](#part-iii) | Nine core arguments, collaborative argument clinics, validation program, and objection matrix | 96 |
+| [Part IV. Reproducible Course Materials](#part-iv) | Instructor-ready assessment and collaboration resources | 102 |
+| [Appendix A](#appendix-a) | Corpus-to-course concept coverage audit | 102 |
+| [Appendix B](#appendix-b) | Problem sets, answer guides, rubrics, and collaborative assessment | 105 |
+| [Appendix C](#appendix-c) | Capstone preregistration, staged peer review, and rubric | 110 |
+| [Appendix D](#appendix-d) | Nine reusable instructor worksheets | 116 |
+| [Appendix E](#appendix-e) | Six progressive-disclosure collaborative case packets | 125 |
+| [Appendix F](#appendix-f) | Glossary and notation guardrails | 129 |
+| [Appendix G](#appendix-g) | Primary corpus and selected contextual readings | 135 |
+| [Appendix H](#appendix-h) | Session-ready synthetic materials, instructor keys, scaling, and accessible delivery alternatives | 138 |
 
 \newpage
 

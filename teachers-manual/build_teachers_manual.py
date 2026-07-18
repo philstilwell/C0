@@ -52,6 +52,145 @@ PALE_GRAY = "F4F6F7"
 WHITE = "FFFFFF"
 TEXT = RGBColor(35, 42, 48)
 
+TABLE_WIDTH_INCHES = 6.94
+
+# Audited semantic column profiles. Values are relative weights and are normalized
+# when written to the DOCX grid. Keeping every current signature explicit makes a
+# new or renamed table fail closed until its content-to-width balance is reviewed.
+TABLE_COLUMN_PROFILES: dict[tuple[str, ...], tuple[float, ...]] = {
+    ("Part or session", "Focus", "PDF page"): (30, 62, 8),
+    ("Element", "Role", "Question answered", "Characteristic false positive blocked"): (18, 20, 31, 31),
+    ("Theory family", "What Cø / N* accepts", "What it rejects or tests", "Relation to the model"): (20, 23, 29, 28),
+    ("Item", "Weight", "Purpose"): (30, 10, 60),
+    ("Assessment", "Submission specification", "Schedule and permitted collaboration", "Feedback and revision rule"): (17, 28, 27, 28),
+    ("Course outcome", "Principal instruction and practice", "Direct assessment evidence", "Minimum satisfactory evidence"): (9, 31, 23, 37),
+    ("Meeting", "110-minute core sequence", "Material moved to prework or reference"): (21, 56, 23),
+    ("Role", "Responsibility during the task", "Question the role must answer"): (22, 40, 38),
+    ("Format", "Best use", "Procedure", "Required output"): (18, 20, 41, 21),
+    ("Session", "Central question", "Main paper contribution"): (31, 35, 34),
+    ("Time", "Teaching move"): (18, 82),
+    ("Observation", "Directly supports", "Additional bridge needed for C0", "Rival interpretation to keep live"): (22, 22, 31, 25),
+    ("Target", "Typical evidence", "Common mistake"): (20, 38, 42),
+    ("N1", "N2", "N3", "N*", "Model prediction"): (9, 9, 9, 9, 64),
+    ("Gate", "Estimate and interval", "Validity information", "Status"): (15, 28, 40, 17),
+    ("Candidate", "Jself", "Jin", "AΘ", "Role complete?", "Initial result"): (22, 9, 9, 9, 17, 34),
+    ("Question", "V", "N1"): (22, 39, 39),
+    ("X", "Y", "Z"): (33, 33, 34),
+    ("Estimator family", "What it may reveal", "Main limitation to teach"): (26, 31, 43),
+    ("Tempting proxy", "Counterexample", "What N2 additionally requires"): (22, 39, 39),
+    ("Recipient class", "Weight", "Effect and interval", "Latency", "Selectivity / route / context", "Class result"): (22, 8, 25, 10, 23, 12),
+    ("Architecture", "How the state lasts", "Diagnostic perturbation", "What duration alone misses"): (21, 28, 27, 24),
+    ("Cause", "What it means", "Proper next step"): (23, 34, 43),
+    ("Feature", "Assessment A", "Assessment B"): (19, 33, 48),
+    ("Type", "What is removed", "Inference"): (22, 31, 47),
+    ("Claim", "Meaning", "Evidence required", "Scope of conclusion"): (17, 31, 31, 21),
+    ("Presence result", "Bridge status", "Combined interpretation"): (21, 19, 60),
+    ("Position", "Claim", "Explanatory status"): (23, 36, 41),
+    ("Condition", "Competence question", "Possible partial failure"): (21, 40, 39),
+    ("Case", "Initial component expectation", "Proper caution"): (24, 36, 40),
+    ("Window", "Key observations", "Scientific output", "Cause profile and next step", "Separate action note"): (14, 28, 16, 23, 19),
+    ("Transport and target evidence", "Within-theory four-way result", "Field-level qualifier"): (40, 22, 38),
+    ("Candidate V criterion", "What it captures", "Likely false inclusion or exclusion"): (24, 31, 45),
+    ("Case", "Cø / N*", "IIT 4.0-oriented intrinsic-structure analysis", "GNWT version requiring sustained global ignition or access", "RPT version treating local sensory recurrence as sufficient"): (22, 15, 24, 22, 17),
+    ("Branch", "Required foundation", "Achievement", "What branch failure leaves intact"): (16, 31, 25, 28),
+    ("Level", "Meaning"): (30, 70),
+    ("Feature", "Weak design", "Stronger design"): (18, 30, 52),
+    ("Phase", "Scientific aim", "Success criterion", "What success does not yet establish"): (21, 29, 31, 19),
+    ("Argument", "Collaborative task", "Required artifact", "Validation or differentiation payoff", "Prohibited overreach"): (15, 16, 21, 27, 21),
+    ("Objection", "Best available reply", "Residual pressure to acknowledge"): (20, 45, 35),
+    ("Source", "Concept or commitment", "Primary treatment"): (23, 54, 23),
+    ("Criterion", "4 - Complete", "3 - Proficient", "2 - Developing", "0-1 - Insufficient"): (12, 27, 19, 20, 22),
+    ("Session", "Minimum satisfactory evidence", "Immediate response when missing"): (9, 55, 36),
+    ("Dimension", "Strong", "Adequate", "Needs revision"): (15, 38, 20, 27),
+    ("Track", "Required emphasis", "Conditionally applicable fields", "Minimum complete product"): (14, 38, 21, 27),
+    ("Model", "Prospective prediction", "Expected anchor pattern", "Revision if disfavored"): (15, 30, 29, 26),
+    ("Component", "Estimator family", "Threshold and uncertainty", "Main confound", "Negative control"): (12, 22, 27, 19, 20),
+    ("Partition", "Permitted use", "Prohibited use"): (18, 46, 36),
+    ("Project-appropriate outcome", "Exact rule", "Scientific interpretation", "Next study"): (23, 24, 31, 22),
+    ("Checkpoint", "Team submission", "Reviewing team’s required response"): (18, 31, 51),
+    ("Dimension", "Points", "Full-credit standard"): (24, 8, 68),
+    ("Field", "Entry"): (38, 62),
+    ("Question", "Cø / N*", "Rival theory"): (28, 36, 36),
+    ("Step", "Required record"): (31, 69),
+    ("Question", "Entry"): (40, 60),
+    ("Condition", "Evidence"): (32, 68),
+    ("Evidence round", "Provisional output", "What changed?", "System change or license change?", "Next discriminating evidence"): (13, 18, 17, 27, 25),
+    ("Criticism", "Source role or team", "Fatal, strengthening, or optional", "Accepted?", "Protocol change or reason for rejection"): (17, 15, 22, 12, 34),
+    ("Term or symbol", "Teaching definition", "Guardrail"): (20, 41, 39),
+    ("Corpus item", "Baseline date or version", "Stable project source"): (38, 30, 32),
+    ("Team size", "Assignment rule"): (14, 86),
+    ("Card", "Most direct target", "Possible relevance to C0", "Required bridge", "Strongest alternative", "Licensed conclusion", "Forbidden stronger inference"): (8, 13, 14, 13, 16, 15, 21),
+    ("Card", "Most direct target", "Acceptable licensed conclusion", "Forbidden inference"): (7, 25, 35, 33),
+    ("Profile", "Referent / bearer status", "V", "N1", "N2", "N3", "Additional information"): (8, 20, 13, 13, 13, 13, 20),
+    ("Profile", "Candidate evidence", "Replacement and subset evidence"): (20, 36, 44),
+    ("Synthetic intervention", "RC / mapping status", "V", "N1", "N2", "N3", "Independent anchor change"): (17, 11, 13, 13, 13, 13, 20),
+    ("Intervention", "ΔV", "ΔN2", "ΔN3"): (19, 27, 27, 27),
+    ("Field", "Team entry"): (42, 58),
+    ("Class", "Weight", "Effect", "Latency", "Selective", "Route", "Context"): (15, 10, 17, 10, 12, 26, 10),
+    ("Class", "Type", "Weight", "Effect", "Latency", "Selective", "Route", "Context"): (16, 14, 8, 20, 10, 12, 10, 10),
+    ("Synthetic condition", "Interval", "Fidelity", "V", "N1", "N2", "N3", "Report accuracy"): (16, 12, 12, 12, 12, 12, 12, 12),
+    ("Synthetic condition", "ΔV", "ΔN1", "ΔN2", "RC / mapping status"): (24, 15, 15, 15, 31),
+    ("Row", "Weight", "V", "N1", "N2", "N3", "R*", "R-2", "Additional disclosed fact"): (5, 7, 10, 10, 10, 10, 7, 7, 34),
+    ("", "R", "O", "G", "B"): (12, 22, 22, 22, 22),
+    ("", "R", "O", "G"): (16, 28, 28, 28),
+    ("Baseline phenomenal distances for B: to R, O, G", "Held-out rank accuracy", "Intervention prediction for R-O", "Observed R-O after intervention", "Validity"): (20, 12, 20, 20, 28),
+    ("Trial-level legibility property", "Decision", "Evidence from the blind trial"): (36, 14, 50),
+    ("Window", "Evidence"): (13, 87),
+    ("Card", "Frozen source", "Required passage"): (7, 34, 59),
+    ("Card", "Exact teaching version", "Primary target", "Bearer and central commitment", "Report and time", "Main caution"): (6, 18, 15, 24, 19, 18),
+    ("Card", "Teaching version", "Primary pressure", "Comparison caution"): (6, 30, 34, 30),
+    ("Compact capstone field", "Frozen team entry"): (42, 58),
+    ("Enrollment", "Format"): (14, 86),
+    ("Session", "Core resource in this appendix", "Optional existing packet", "Required worksheet"): (7, 36, 25, 32),
+}
+
+TABLE_CONTEXT_COLUMN_PROFILES: dict[
+    tuple[tuple[str, ...], str], tuple[float, ...]
+] = {
+    (("Field", "Entry"), "Target form of consciousness"): (35, 65),
+}
+
+COMPACT_TABLE_WIDTHS: dict[tuple[str, ...], float] = {
+    ("X", "Y", "Z"): 5.5,
+    ("", "R", "O", "G", "B"): 5.5,
+    ("", "R", "O", "G"): 5.5,
+}
+
+DENSE_TABLE_FONT_SIZES: dict[tuple[str, ...], float] = {
+    ("Synthetic condition", "Interval", "Fidelity", "V", "N1", "N2", "N3", "Report accuracy"): 8.2,
+    ("Row", "Weight", "V", "N1", "N2", "N3", "R*", "R-2", "Additional disclosed fact"): 9.0,
+}
+
+CENTERED_TABLE_COLUMNS: dict[tuple[str, ...], tuple[int, ...]] = {
+    ("Part or session", "Focus", "PDF page"): (2,),
+    ("Item", "Weight", "Purpose"): (1,),
+    ("Course outcome", "Principal instruction and practice", "Direct assessment evidence", "Minimum satisfactory evidence"): (0,),
+    ("N1", "N2", "N3", "N*", "Model prediction"): (0, 1, 2, 3),
+    ("Gate", "Estimate and interval", "Validity information", "Status"): (3,),
+    ("Candidate", "Jself", "Jin", "AΘ", "Role complete?", "Initial result"): (1, 2, 3, 4),
+    ("X", "Y", "Z"): (0, 1, 2),
+    ("Recipient class", "Weight", "Effect and interval", "Latency", "Selectivity / route / context", "Class result"): (1, 2, 3, 5),
+    ("Session", "Minimum satisfactory evidence", "Immediate response when missing"): (0,),
+    ("Dimension", "Points", "Full-credit standard"): (1,),
+    ("Profile", "Referent / bearer status", "V", "N1", "N2", "N3", "Additional information"): (0, 2, 3, 4, 5),
+    ("Synthetic intervention", "RC / mapping status", "V", "N1", "N2", "N3", "Independent anchor change"): (2, 3, 4, 5),
+    ("Intervention", "ΔV", "ΔN2", "ΔN3"): (0, 1, 2, 3),
+    ("Class", "Weight", "Effect", "Latency", "Selective", "Route", "Context"): (1, 2, 3, 4, 6),
+    ("Class", "Type", "Weight", "Effect", "Latency", "Selective", "Route", "Context"): (2, 3, 4, 5, 6, 7),
+    ("Synthetic condition", "Interval", "Fidelity", "V", "N1", "N2", "N3", "Report accuracy"): (1, 2, 3, 4, 5, 6, 7),
+    ("Synthetic condition", "ΔV", "ΔN1", "ΔN2", "RC / mapping status"): (1, 2, 3, 4),
+    ("Row", "Weight", "V", "N1", "N2", "N3", "R*", "R-2", "Additional disclosed fact"): (0, 1, 2, 3, 4, 5, 6, 7),
+    ("", "R", "O", "G", "B"): (0, 1, 2, 3, 4),
+    ("", "R", "O", "G"): (0, 1, 2, 3),
+    ("Baseline phenomenal distances for B: to R, O, G", "Held-out rank accuracy", "Intervention prediction for R-O", "Observed R-O after intervention", "Validity"): (1, 2, 3),
+    ("Trial-level legibility property", "Decision", "Evidence from the blind trial"): (1,),
+    ("Card", "Frozen source", "Required passage"): (0,),
+    ("Card", "Exact teaching version", "Primary target", "Bearer and central commitment", "Report and time", "Main caution"): (0,),
+    ("Card", "Teaching version", "Primary pressure", "Comparison caution"): (0,),
+    ("Enrollment", "Format"): (0,),
+    ("Session", "Core resource in this appendix", "Optional existing packet", "Required worksheet"): (0,),
+}
+
 IMAGE_PATTERN = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 ANCHOR_PATTERN = re.compile(r"\{#([A-Za-z0-9_-]+)\}")
 INTERNAL_LINK_PATTERN = re.compile(r"\]\(#([A-Za-z0-9_-]+)\)")
@@ -232,6 +371,73 @@ def set_run_font(run, name: str, size: float | None = None) -> None:
         fonts.set(qn(f"w:{attribute}"), name)
 
 
+def set_math_run_format(paragraph, size: float, color: str) -> None:
+    """Apply table typography to Office Math runs, which python-docx omits."""
+    half_points = str(round(size * 2))
+    for math_run in paragraph._p.xpath(".//m:r"):
+        run_properties = math_run.find(qn("w:rPr"))
+        if run_properties is None:
+            run_properties = OxmlElement("w:rPr")
+            math_properties = math_run.find(qn("m:rPr"))
+            if math_properties is None:
+                math_run.insert(0, run_properties)
+            else:
+                math_run.insert(math_run.index(math_properties) + 1, run_properties)
+        for property_name in ("sz", "szCs"):
+            property_node = run_properties.find(qn(f"w:{property_name}"))
+            if property_node is None:
+                property_node = OxmlElement(f"w:{property_name}")
+                run_properties.append(property_node)
+            property_node.set(qn("w:val"), half_points)
+        color_node = run_properties.find(qn("w:color"))
+        if color_node is None:
+            color_node = OxmlElement("w:color")
+            run_properties.append(color_node)
+        color_node.set(qn("w:val"), color)
+
+
+SUBSCRIPT_TRANSLATION = str.maketrans("0123456789+-=()", "₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎")
+SUPERSCRIPT_TRANSLATION = str.maketrans("0123456789+-=()", "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾")
+SCRIPT_NORMALIZATION = str.maketrans(
+    "₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾",
+    "0123456789+-=()0123456789+-=()",
+)
+
+
+def office_math_text(element) -> str:
+    """Flatten a small Office Math expression while retaining simple scripts."""
+    if element.tag == qn("m:sSub"):
+        base = element.find(qn("m:e"))
+        subscript = element.find(qn("m:sub"))
+        base_text = office_math_text(base) if base is not None else ""
+        subscript_text = office_math_text(subscript) if subscript is not None else ""
+        translated = subscript_text.translate(SUBSCRIPT_TRANSLATION)
+        suffix = translated if translated != subscript_text or subscript_text.isdigit() else f"_{subscript_text}"
+        return base_text + suffix
+    if element.tag == qn("m:sSup"):
+        base = element.find(qn("m:e"))
+        superscript = element.find(qn("m:sup"))
+        base_text = office_math_text(base) if base is not None else ""
+        superscript_text = office_math_text(superscript) if superscript is not None else ""
+        translated = superscript_text.translate(SUPERSCRIPT_TRANSLATION)
+        suffix = translated if translated != superscript_text or superscript_text.isdigit() else f"^{superscript_text}"
+        return base_text + suffix
+    if element.tag == qn("m:t"):
+        return element.text or ""
+    return "".join(office_math_text(child) for child in element)
+
+
+def flatten_office_math(container) -> None:
+    """Replace math with styled text where compact table typography is essential."""
+    for equation in list(container.xpath(".//m:oMath")):
+        parent = equation.getparent()
+        run = OxmlElement("w:r")
+        text_node = OxmlElement("w:t")
+        text_node.text = office_math_text(equation)
+        run.append(text_node)
+        parent.replace(equation, run)
+
+
 def set_shading(element, fill: str) -> None:
     properties = element.get_or_add_tcPr() if hasattr(element, "get_or_add_tcPr") else element
     shading = properties.find(qn("w:shd"))
@@ -255,6 +461,138 @@ def set_cell_margins(cell, top=70, bottom=70, start=85, end=85) -> None:
             tc_mar.append(node)
         node.set(qn("w:w"), str(value))
         node.set(qn("w:type"), "dxa")
+
+
+def normalized_table_text(cell) -> str:
+    """Return visible cell text, including Office Math runs, for stable profiling."""
+    pieces = [
+        node.text
+        for node in cell._tc.iter()
+        if node.tag in {qn("w:t"), qn("m:t")} and node.text
+    ]
+    text = "".join(pieces).replace("\u00a0", " ").translate(SCRIPT_NORMALIZATION)
+    text = text.replace("_", "").replace("^", "")
+    for dash in ("\u2212", "\u2013", "\u2014"):
+        text = text.replace(dash, "-")
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def table_signature(table) -> tuple[str, ...]:
+    if not table.rows:
+        return ()
+    return tuple(normalized_table_text(cell) for cell in table.rows[0].cells)
+
+
+def table_layout_profile(table) -> tuple[tuple[str, ...], tuple[float, ...], float, float]:
+    signature = table_signature(table)
+    first_record = normalized_table_text(table.cell(1, 0)) if len(table.rows) > 1 else ""
+    weights = TABLE_CONTEXT_COLUMN_PROFILES.get(
+        (signature, first_record), TABLE_COLUMN_PROFILES.get(signature)
+    )
+    if weights is None:
+        raise ValueError(f"Table lacks an audited column-width profile: {signature!r}")
+    if len(weights) != len(table.columns):
+        raise ValueError(
+            f"Table profile has {len(weights)} columns but document has {len(table.columns)}: "
+            f"{signature!r}"
+        )
+    if any(weight <= 0 for weight in weights):
+        raise ValueError(f"Table profile contains a nonpositive width: {signature!r} {weights!r}")
+    total_width = COMPACT_TABLE_WIDTHS.get(signature, TABLE_WIDTH_INCHES)
+    font_size = DENSE_TABLE_FONT_SIZES.get(signature, 9.0)
+    return signature, weights, total_width, font_size
+
+
+def fixed_column_twips(weights: tuple[float, ...], total_width: float) -> list[int]:
+    total_twips = round(total_width * 1440)
+    weight_total = sum(weights)
+    widths = [round(total_twips * weight / weight_total) for weight in weights]
+    widths[-1] += total_twips - sum(widths)
+    return widths
+
+
+def set_fixed_table_columns(table, widths: list[int]) -> None:
+    """Write preferred width, fixed layout, grid widths, and every cell width."""
+    if len(widths) != len(table.columns):
+        raise ValueError("Column-width count does not match the table")
+    table.autofit = False
+    table_properties = table._tbl.tblPr
+    table_width = table_properties.find(qn("w:tblW"))
+    if table_width is None:
+        table_width = OxmlElement("w:tblW")
+        table_properties.append(table_width)
+    table_width.set(qn("w:w"), str(sum(widths)))
+    table_width.set(qn("w:type"), "dxa")
+
+    layout = table_properties.find(qn("w:tblLayout"))
+    if layout is None:
+        layout = OxmlElement("w:tblLayout")
+        table_properties.append(layout)
+    layout.set(qn("w:type"), "fixed")
+
+    grid_columns = table._tbl.tblGrid.gridCol_lst
+    if len(grid_columns) != len(widths):
+        raise ValueError("DOCX table grid does not match the logical column count")
+    for grid_column, width in zip(grid_columns, widths, strict=True):
+        grid_column.set(qn("w:w"), str(width))
+
+    for row in table.rows:
+        if len(row.cells) != len(widths):
+            raise ValueError("Merged table cells require a separately audited width profile")
+        for cell, width in zip(row.cells, widths, strict=True):
+            cell_properties = cell._tc.get_or_add_tcPr()
+            cell_width = cell_properties.find(qn("w:tcW"))
+            if cell_width is None:
+                cell_width = OxmlElement("w:tcW")
+                cell_properties.append(cell_width)
+            cell_width.set(qn("w:w"), str(width))
+            cell_width.set(qn("w:type"), "dxa")
+
+
+def validate_docx_table_layouts(document) -> dict[str, object]:
+    full_width = 0
+    compact = 0
+    dense = 0
+    for index, table in enumerate(document.tables):
+        signature, weights, total_width, _ = table_layout_profile(table)
+        expected = fixed_column_twips(weights, total_width)
+        actual = [
+            int(grid_column.get(qn("w:w")))
+            for grid_column in table._tbl.tblGrid.gridCol_lst
+        ]
+        if actual != expected:
+            raise ValueError(
+                f"Table {index} grid differs from its audited profile: "
+                f"{signature!r}; expected={expected}, actual={actual}"
+            )
+        layout = table._tbl.tblPr.find(qn("w:tblLayout"))
+        if layout is None or layout.get(qn("w:type")) != "fixed":
+            raise ValueError(f"Table {index} is not fixed-layout: {signature!r}")
+        for row in table.rows:
+            for column, cell in enumerate(row.cells):
+                cell_width = cell._tc.get_or_add_tcPr().find(qn("w:tcW"))
+                if (
+                    cell_width is None
+                    or cell_width.get(qn("w:type")) != "dxa"
+                    or int(cell_width.get(qn("w:w"))) != expected[column]
+                ):
+                    raise ValueError(
+                        f"Table {index} cell width differs from its audited grid: {signature!r}"
+                    )
+        if signature in COMPACT_TABLE_WIDTHS:
+            compact += 1
+        else:
+            full_width += 1
+        if signature in DENSE_TABLE_FONT_SIZES:
+            dense += 1
+    return {
+        "audited_tables": len(document.tables),
+        "fixed_layout_tables": len(document.tables),
+        "full_width_tables": full_width,
+        "compact_tables": compact,
+        "dense_table_profiles": dense,
+        "default_width_inches": TABLE_WIDTH_INCHES,
+    }
 
 
 def repeat_table_header(row) -> None:
@@ -549,8 +887,10 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
             style = document.styles[name]
             set_font(style, BODY_FONT, 10.25)
             style.font.color.rgb = TEXT
-            style.paragraph_format.line_spacing = 1.08
-            style.paragraph_format.space_after = Pt(5.5)
+            # The student handout carries dense case materials but should still
+            # keep each session's accessibility note on the session page.
+            style.paragraph_format.line_spacing = 1.06 if audience == "student" else 1.08
+            style.paragraph_format.space_after = Pt(4.5 if audience == "student" else 5.5)
             style.paragraph_format.widow_control = True
 
     title = document.styles["Title"]
@@ -649,11 +989,19 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
 
     for table in document.tables:
         table.alignment = WD_TABLE_ALIGNMENT.CENTER
-        table.autofit = True
         if not table.rows:
             continue
-        is_contents = table.cell(0, 0).text.strip() == "Part or session"
-        header_signature = tuple(cell.text.strip() for cell in table.rows[0].cells)
+        header_signature, column_weights, total_width, table_font_size = table_layout_profile(table)
+        set_fixed_table_columns(table, fixed_column_twips(column_weights, total_width))
+        # Formula-only headers must inherit the navy-band typography. Dense
+        # numerical tables also need ordinary text metrics so adjacent intervals
+        # retain a visible gutter in both Word and LibreOffice output.
+        if header_signature in DENSE_TABLE_FONT_SIZES:
+            flatten_office_math(table._tbl)
+        else:
+            flatten_office_math(table.rows[0]._tr)
+        is_contents = header_signature == ("Part or session", "Focus", "PDF page")
+        centered_columns = set(CENTERED_TABLE_COLUMNS.get(header_signature, ()))
         worksheet_row_heights = {
             ("Field", "Entry"): 0.48,
             ("Question", "Cø / N*", "Rival theory"): 0.62,
@@ -678,8 +1026,6 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
         worksheet_row_height = (
             worksheet_row_heights.get(header_signature) if audience == "instructor" else None
         )
-        if is_contents and len(table.columns) == 3:
-            table.autofit = False
         repeat_table_header(table.rows[0])
         for row_index, row in enumerate(table.rows):
             prevent_row_split(row)
@@ -687,11 +1033,11 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
                 row.height = Inches(worksheet_row_height)
                 row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
             for column_index, cell in enumerate(row.cells):
-                if is_contents and len(row.cells) == 3:
-                    cell.width = (Inches(2.0), Inches(4.25), Inches(0.5))[column_index]
                 cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
                 if is_contents:
                     set_cell_margins(cell, top=28, bottom=28, start=55, end=55)
+                elif header_signature in DENSE_TABLE_FONT_SIZES:
+                    set_cell_margins(cell, top=55, bottom=55, start=40, end=40)
                 else:
                     set_cell_margins(cell)
                 fill = NAVY if row_index == 0 else (PALE_GRAY if row_index % 2 == 0 else WHITE)
@@ -700,8 +1046,15 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
                     paragraph.paragraph_format.space_before = Pt(0)
                     paragraph.paragraph_format.space_after = Pt(0 if is_contents else 2)
                     paragraph.paragraph_format.line_spacing = 0.92 if is_contents else 1.0
+                    if column_index in centered_columns:
+                        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    set_math_run_format(
+                        paragraph,
+                        table_font_size,
+                        WHITE if row_index == 0 else str(TEXT),
+                    )
                     for item in paragraph.runs:
-                        set_run_font(item, DISPLAY_FONT, 7.8 if is_contents else 9.0)
+                        set_run_font(item, DISPLAY_FONT, 7.8 if is_contents else table_font_size)
                         if row_index == 0:
                             item.font.bold = True
                             item.font.color.rgb = RGBColor(255, 255, 255)
@@ -829,6 +1182,7 @@ def validate_artifact(
         alt_text_count = xml.count("descr=")
 
     doc = Document(docx_path)
+    table_layout_report = validate_docx_table_layouts(doc)
     doc_text = "\n".join(node.text or "" for node in doc.element.body.iter(qn("w:t")))
     reader = PdfReader(str(pdf_path))
     page_text = [(page.extract_text() or "") for page in reader.pages]
@@ -913,6 +1267,7 @@ def validate_artifact(
         "pages": len(reader.pages),
         "docx_paragraphs": len(doc.paragraphs),
         "docx_tables": len(doc.tables),
+        "table_layout": table_layout_report,
         "media_count": media_count,
         "alt_text_count": alt_text_count,
         "internal_links": internal_links,

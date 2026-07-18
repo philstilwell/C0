@@ -193,7 +193,7 @@ The repository README now links directly to the manual, student pack, individual
 
 | Field | Verified value |
 |---|---|
-| Build timestamp | 2026-07-18T22:49:15.118470+00:00 |
+| Build timestamp | 2026-07-18T23:39:19.761601+00:00 |
 | Manifest | schema 2, edition 2.1 |
 | Corpus baseline | Core v2.0 (2026-07-08) plus repository companion manuscripts (2026-07-18) |
 | Python | 3.12.13 |
@@ -208,14 +208,14 @@ The repository README now links directly to the manual, student pack, individual
 
 | Artifact | Pages | Bytes | SHA-256 |
 |---|---:|---:|---|
-| Instructor manual PDF | 181 | 4,536,576 | `423280794101eebee66fc35336baf0fd70882ff78a54febe48d1a4cfe221f900` |
-| Instructor manual DOCX | — | 5,839,891 | `1962b4c376b61827c3419f29e4f9247d1c323712bc5e5e688367f5ab12cbddda` |
-| Student base PDF | 27 | 610,483 | `565de788ec73c8269bdc3de0c05a62b76ff0ecf73f98435eae06fe1ca767759b` |
-| Student base DOCX | — | 44,405 | `edbfee0c440718a328cd46a1ff96b8846b81b555d0ea5b92b3fbc6f1fdd70092` |
-| Reveal master PDF | 52 | 357,954 | `aa5ae4503fb546307c8f95fb2e7049f12ee1c3ad0078f676e9692d77116a4c6d` |
-| Reveal master DOCX | — | 25,465 | `cea860e97c17be25a1ae5305927a3743ac124e673c6f10d749a3226737f95187` |
+| Instructor manual PDF | 172 | 4,520,809 | `561dd8a57005863bad562ea2177a3ee318e0219bf25d8a9632af2e619efa7bce` |
+| Instructor manual DOCX | — | 5,849,133 | `7197812b2464e8517bd9ecc419e6bcc8660bf368d96403927d77d6a595bf03b4` |
+| Student base PDF | 22 | 606,025 | `082cf6e340eef1a481cd203d23db1140e8cc49926426b73fdcb0d369f2cd96a9` |
+| Student base DOCX | — | 46,758 | `8a5cd164cad1dc69c672fb2ce48c340058f9a33ece534d6bc8a9263806a0c561` |
+| Reveal master PDF | 52 | 361,958 | `57f31f189f4867da912db79bc06b53e90eb966dc2986e240746412ae1fc3a2fb` |
+| Reveal master DOCX | — | 26,363 | `69be29aae4de4f9633805d54c13cf99504e5694e9b546b8f1fca71dfd9d7acc3` |
 
-The three master PDFs total **260 inspected pages**. The individual reveal directory contains exactly **50 additional one-page PDFs**; every file hash matches its manifest record.
+The three master PDFs total **246 inspected pages**. The individual reveal directory contains exactly **50 additional one-page PDFs**; every file hash matches its manifest record.
 
 ### Audience and content checks
 
@@ -238,14 +238,17 @@ The three master PDFs total **260 inspected pages**. The individual reveal direc
 | PDF tagging | All three master PDFs report `Tagged: yes` |
 | Internal navigation | 27 source anchors resolve; instructor PDF contains 72 link annotations |
 | Fixed contents references | All 27 listed destinations match final PDF page numbers |
+| Table grids | 126/126 tables use audited fixed layouts: 102 instructor, 18 student, and 6 reveal; 121 are full-width and 5 intentionally compact |
 | Fonts | Requested Liberation families present; all font programs embedded and Unicode-mapped |
 | Visible source artifacts | None detected |
 | Blank/near-blank pages | None |
-| Page rendering | 181/181 instructor, 27/27 student, and 52/52 reveal pages rendered at 100 dpi |
-| Edge-ink scan | No ink within 8 px of a page edge; minimum instructor left/top/right/bottom margins were 77/30/49/42 px |
+| Page rendering | 172/172 instructor, 22/22 student, and 52/52 reveal pages rendered at 100 dpi |
+| Edge-ink scan | No ink within 8 px of a page edge; minimum left/top/right/bottom margins were 77/30/49/42 px instructor, 78/30/78/40 px student, and 78/30/78/42 px reveal |
 | Human visual audit | Every rendered page inspected; no clipped text, table, figure, or formula; no unacceptable overlap or stranded heading |
 
-The visual audit found one readable but crowded capstone pipeline. It was replaced with a shorter shared-foundation branch diagram and the affected pages, contents table, and complete PDFs were rebuilt and reinspected. A subsequent worksheet-layout pass placed Worksheets 1–9 on dedicated pages 121–129, added an explanatory introduction above every form, expanded writable rows where appropriate, updated all downstream contents references, and reran the complete visual and integrity audit.
+The visual audit found one readable but crowded capstone pipeline. It was replaced with a shorter shared-foundation branch diagram and the affected pages, contents table, and complete PDFs were rebuilt and reinspected. A subsequent worksheet-layout pass placed Worksheets 1–9 on dedicated pages 116–124, added an explanatory introduction above every form, expanded writable rows where appropriate, updated all downstream contents references, and reran the complete visual and integrity audit.
+
+The final table-width pass reviewed every table rather than relying on automatic sizing. Each table now has an explicit semantic column profile, a fixed DOCX grid, matching cell widths, and a full-width or intentionally compact allocation appropriate to its content. Short labels and numeric fields no longer displace explanatory prose; quantitative columns are centered; dense Office Math cells use consistent table typography; and formerly clipped intervention intervals, causal-routing effects, diagnostic facts, and synthesis results remain visually separated. A final pagination pass kept the Session 9 and 10 accessibility notes with their student-pack sessions instead of stranding them on sparse pages.
 
 ## 5. Residual limitations and recommendations
 

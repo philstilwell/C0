@@ -5,12 +5,12 @@
     "body": "Liberation Serif",
     "display": "Liberation Sans"
   },
-  "generated_at_utc": "2026-07-18T22:49:15.118470+00:00",
+  "generated_at_utc": "2026-07-18T23:39:19.761601+00:00",
   "outputs": {
     "instructor": {
       "files": {
-        "output/doc/teaching-c0-n-star-manual.docx": "1962b4c376b61827c3419f29e4f9247d1c323712bc5e5e688367f5ab12cbddda",
-        "output/pdf/teaching-c0-n-star-manual.pdf": "423280794101eebee66fc35336baf0fd70882ff78a54febe48d1a4cfe221f900"
+        "output/doc/teaching-c0-n-star-manual.docx": "7197812b2464e8517bd9ecc419e6bcc8660bf368d96403927d77d6a595bf03b4",
+        "output/pdf/teaching-c0-n-star-manual.pdf": "561dd8a57005863bad562ea2177a3ee318e0219bf25d8a9632af2e619efa7bce"
       },
       "generated_markdown_sha256": "95584ab01364561c038f662857b0d2ec2c5681d5ceda95388f231cfabfebd090",
       "included_block_ids": [
@@ -124,8 +124,8 @@
     },
     "reveal": {
       "files": {
-        "output/doc/c0-n-star-instructor-controlled-reveal-sheets.docx": "cea860e97c17be25a1ae5305927a3743ac124e673c6f10d749a3226737f95187",
-        "output/pdf/c0-n-star-instructor-controlled-reveal-sheets.pdf": "aa5ae4503fb546307c8f95fb2e7049f12ee1c3ad0078f676e9692d77116a4c6d"
+        "output/doc/c0-n-star-instructor-controlled-reveal-sheets.docx": "69be29aae4de4f9633805d54c13cf99504e5694e9b546b8f1fca71dfd9d7acc3",
+        "output/pdf/c0-n-star-instructor-controlled-reveal-sheets.pdf": "57f31f189f4867da912db79bc06b53e90eb966dc2986e240746412ae1fc3a2fb"
       },
       "generated_markdown_sha256": "21c66eac61062afb9bdd0a11b1cc5fbf98442f936a2a5fb34dda487911dc6f1d",
       "included_block_ids": [
@@ -183,8 +183,8 @@
     },
     "student": {
       "files": {
-        "output/doc/c0-n-star-student-session-resource-pack.docx": "edbfee0c440718a328cd46a1ff96b8846b81b555d0ea5b92b3fbc6f1fdd70092",
-        "output/pdf/c0-n-star-student-session-resource-pack.pdf": "565de788ec73c8269bdc3de0c05a62b76ff0ecf73f98435eae06fe1ca767759b"
+        "output/doc/c0-n-star-student-session-resource-pack.docx": "8a5cd164cad1dc69c672fb2ce48c340058f9a33ece534d6bc8a9263806a0c561",
+        "output/pdf/c0-n-star-student-session-resource-pack.pdf": "082cf6e340eef1a481cd203d23db1140e8cc49926426b73fdcb0d369f2cd96a9"
       },
       "generated_markdown_sha256": "2750b0129a196b1e3902eba93efc75474858a1570e5a8c7ec9e9dc5e6285b6fb",
       "included_block_ids": [
@@ -235,7 +235,7 @@
     "instructor": {
       "alt_text_count": 10,
       "bookmarks": 405,
-      "docx_bytes": 5839891,
+      "docx_bytes": 5849133,
       "docx_paragraphs": 2209,
       "docx_tables": 102,
       "font_report": {
@@ -258,20 +258,28 @@
           "LinuxLibertineGI",
           "OpenSymbol"
         ],
-        "font_programs": 26,
+        "font_programs": 27,
         "tool": "pdffonts"
       },
       "internal_links": 27,
       "media_count": 5,
       "near_blank_pages": [],
-      "pages": 181,
-      "pdf_bytes": 4536576,
-      "pdf_outline_entries": 405
+      "pages": 172,
+      "pdf_bytes": 4520809,
+      "pdf_outline_entries": 405,
+      "table_layout": {
+        "audited_tables": 102,
+        "compact_tables": 3,
+        "default_width_inches": 6.94,
+        "dense_table_profiles": 3,
+        "fixed_layout_tables": 102,
+        "full_width_tables": 99
+      }
     },
     "reveal": {
       "alt_text_count": 0,
       "bookmarks": 51,
-      "docx_bytes": 25465,
+      "docx_bytes": 26363,
       "docx_paragraphs": 119,
       "docx_tables": 6,
       "font_report": {
@@ -289,15 +297,23 @@
           "LinuxLibertineGI",
           "OpenSymbol"
         ],
-        "font_programs": 16,
+        "font_programs": 17,
         "tool": "pdffonts"
       },
       "internal_links": 0,
       "media_count": 0,
       "near_blank_pages": [],
       "pages": 52,
-      "pdf_bytes": 357954,
-      "pdf_outline_entries": 51
+      "pdf_bytes": 361958,
+      "pdf_outline_entries": 51,
+      "table_layout": {
+        "audited_tables": 6,
+        "compact_tables": 0,
+        "default_width_inches": 6.94,
+        "dense_table_profiles": 2,
+        "fixed_layout_tables": 6,
+        "full_width_tables": 6
+      }
     },
     "reveal_sheets": {
       "count": 50,
@@ -317,7 +333,7 @@
     "student": {
       "alt_text_count": 0,
       "bookmarks": 54,
-      "docx_bytes": 44405,
+      "docx_bytes": 46758,
       "docx_paragraphs": 239,
       "docx_tables": 18,
       "font_report": {
@@ -343,9 +359,17 @@
       "internal_links": 0,
       "media_count": 0,
       "near_blank_pages": [],
-      "pages": 27,
-      "pdf_bytes": 610483,
-      "pdf_outline_entries": 54
+      "pages": 22,
+      "pdf_bytes": 606025,
+      "pdf_outline_entries": 54,
+      "table_layout": {
+        "audited_tables": 18,
+        "compact_tables": 2,
+        "default_width_inches": 6.94,
+        "dense_table_profiles": 1,
+        "fixed_layout_tables": 18,
+        "full_width_tables": 16
+      }
     }
   },
   "reveal_sheets": {
@@ -353,350 +377,350 @@
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-03-audit-1-reveal.pdf",
       "session": 3,
-      "sha256": "cad2fb7354a711f5b5f94d679fe7920ca4f0be320ad840dea35c15ff2767314c",
+      "sha256": "98be0ff2f0cbc6d25a9a00653dacd9a885b26d5cf3fa43bc3cdb8ef68a88109b",
       "title": "Reveal Sheet - Session 3 Audit Card 1"
     },
     "session-03-audit-2": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-03-audit-2-reveal.pdf",
       "session": 3,
-      "sha256": "7dbb30787b206200db61394e2431464eb1cd869b3710475c713a70dbf59c6f25",
+      "sha256": "94374c7e67a087c55f3e8baa90f1c394fdd5e210d9360203f5d0f40ff4be096f",
       "title": "Reveal Sheet - Session 3 Audit Card 2"
     },
     "session-03-audit-3": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-03-audit-3-reveal.pdf",
       "session": 3,
-      "sha256": "604dc13a989433f44948b3f433541f7112baacd7bc0ed703e6afd1feec089098",
+      "sha256": "9ef3e4216e02a9e7ca22d8d2e85a3b1f50d6e542676f2657e625addb38bcbf4b",
       "title": "Reveal Sheet - Session 3 Audit Card 3"
     },
     "session-04-complication-1": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-04-complication-1-reveal.pdf",
       "session": 4,
-      "sha256": "4f7df92768b6719b440481b070894008c76c356b4c7cc42305c757b33cf91f8e",
+      "sha256": "cb5a683241ef90d86800a8e61bfda8bee712a9804d7f30dff803927982fffadd",
       "title": "Reveal Sheet - Session 4 Complication Card 1"
     },
     "session-04-complication-2": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-04-complication-2-reveal.pdf",
       "session": 4,
-      "sha256": "a67bbeffc7db9615b87d9a05c98a69cb51d72807b32ae2e54703146abeaea6ea",
+      "sha256": "a4e1fadb49ce94161ef480c818e936c6440e8fc4ddddbaa4f775509312793a18",
       "title": "Reveal Sheet - Session 4 Complication Card 2"
     },
     "session-04-complication-3": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-04-complication-3-reveal.pdf",
       "session": 4,
-      "sha256": "9803bbe53554ff5ebef18e2cf832930a3f90be390f26b8c090bc9abf27d88613",
+      "sha256": "4ea27c253c037893d0884e72c65e34035a51c46ac6864e05e0273e8d1baa8aa1",
       "title": "Reveal Sheet - Session 4 Complication Card 3"
     },
     "session-04-complication-4": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-04-complication-4-reveal.pdf",
       "session": 4,
-      "sha256": "816f1c747a4914983ad752de568bed165958b07fd92772013b7e4029e565a095",
+      "sha256": "aa106e8c088ec7863fbce4c2df4fd0802584d1f785b23be37c643bd7f7bc8f88",
       "title": "Reveal Sheet - Session 4 Complication Card 4"
     },
     "session-04-complication-5": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-04-complication-5-reveal.pdf",
       "session": 4,
-      "sha256": "c1ed840af1df7701588361050c357933c61ba34a02b79cf3dab4de98979eae55",
+      "sha256": "adf103b4714ba78107320bb680d55f1659e893562ef00e0ab74f1622251b8535",
       "title": "Reveal Sheet - Session 4 Complication Card 5"
     },
     "session-06-synthesis": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-06-synthesis-reveal.pdf",
       "session": 6,
-      "sha256": "d0d357203e3b68cecf5efa216271a2376aefceee91ced004e9d12c6a89a5eb5d",
+      "sha256": "095e3950f0223326295ca15b1e1115aac13a3a1a3a96cc227c2a6121eca120e6",
       "title": "Reveal Sheet - Session 6 Complete Synthesis"
     },
     "session-06-team-a": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-06-team-a-reveal.pdf",
       "session": 6,
-      "sha256": "43bdcae490b9d1cd9a3c09523845e45a37e7a902078c6d2c6e1edc5d33bfe76a",
+      "sha256": "6d9aace105c42950b627a6cb497f1abf65d67804d59339748cbb13371ffa4207",
       "title": "Reveal Sheet - Session 6 Team A"
     },
     "session-06-team-b": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-06-team-b-reveal.pdf",
       "session": 6,
-      "sha256": "3489fd75efdca2c6d8baf58488fde3ca84b396656f118d826344ed9e33f5b911",
+      "sha256": "995d64e7a1a1df82a6b01120b2e8dd0f1a5964397de2e817b28264f7881c791d",
       "title": "Reveal Sheet - Session 6 Team B"
     },
     "session-06-team-c": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-06-team-c-reveal.pdf",
       "session": 6,
-      "sha256": "37e6acaeba8dd3b653e8e5de83c2e1ac92e1533261dcce223daf5bc3f34926b9",
+      "sha256": "fca1fc656e96aa5e57a0fc0ec503c0efa4f1e5e08e62f9eae1d52fdc4cdfaa0c",
       "title": "Reveal Sheet - Session 6 Team C"
     },
     "session-06-team-d": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-06-team-d-reveal.pdf",
       "session": 6,
-      "sha256": "82d793dbc8f1df6a0e05ccdb51b749d62d62fd2ba7e633881d63d6964604029c",
+      "sha256": "8b00e817b0aa446c07765e348edd5ce989bb5c06a217a9ac7f001e0368f63407",
       "title": "Reveal Sheet - Session 6 Team D"
     },
     "session-07-variant-a": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-07-variant-a-reveal.pdf",
       "session": 7,
-      "sha256": "ae692758af1bbd6bba77bfd30f675e0e25569f5b95daa2b0f78f02021fad803a",
+      "sha256": "969715dd023f0c141f2f4efe250fc5b5be4787d5d9f85d34e19a1fb5ca49c5a0",
       "title": "Reveal Sheet - Session 7 Variant A"
     },
     "session-07-variant-b": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-07-variant-b-reveal.pdf",
       "session": 7,
-      "sha256": "d71c9d4eae1d2550f41524b13bbec186be5d8a51f2f63810ac2c00871bc9e1b8",
+      "sha256": "ce0854935b468dac7b1ec0868542f954aa09587ad3f069a063c614f7b4904c20",
       "title": "Reveal Sheet - Session 7 Variant B"
     },
     "session-07-variant-c": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-07-variant-c-reveal.pdf",
       "session": 7,
-      "sha256": "d1ffe87ee73a9b972009f1f1a88adee9d1e66b2b3d6a7151fe16a1b35050d2ed",
+      "sha256": "b9736a04f94c68c1f34e7f42c2ca0a11b3e37c23f2ee10ba0b4b94ab627d0e10",
       "title": "Reveal Sheet - Session 7 Variant C"
     },
     "session-07-variant-d": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-07-variant-d-reveal.pdf",
       "session": 7,
-      "sha256": "583f50ded1599a8792dbbb75a6251e4e14c22fe1ff1e0b0039e4491dafbcfbe3",
+      "sha256": "6680b99228e696213d08ee81f257085db11bde2cf37f3dbbc4df3098f6a6d68e",
       "title": "Reveal Sheet - Session 7 Variant D"
     },
     "session-07-variant-e": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-07-variant-e-reveal.pdf",
       "session": 7,
-      "sha256": "d7a8e3c404de09e1e3d9ee35967a4bdb9267a0de5a1226f22d20d9e3f4d87669",
+      "sha256": "8f99e1c022b3920ccb1c7f46ac47f0238924c1bfb39c7760345e9bb666298544",
       "title": "Reveal Sheet - Session 7 Variant E"
     },
     "session-07-variant-f": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-07-variant-f-reveal.pdf",
       "session": 7,
-      "sha256": "842beb5c7bb50cddea7d5fc92a6c6db0c31a981066a4bbd7c9fdf537cf05860e",
+      "sha256": "6aa91fd486469db02c0b5dd35568ac3fda3b7fe98773e93f6b82da2814e1a5c7",
       "title": "Reveal Sheet - Session 7 Variant F"
     },
     "session-08-audit-1": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-08-audit-1-reveal.pdf",
       "session": 8,
-      "sha256": "acdf68f47701a5cf65cbf97d67db58bc09699fcd352bdadb36019748d8440c59",
+      "sha256": "e6be52e0539b7378c82e604a130e3bf1c5f47860e87b8356bd7d92e665d35269",
       "title": "Reveal Sheet - Session 8 Audit Card 1 / Off-Manifold Enrichment"
     },
     "session-08-audit-2": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-08-audit-2-reveal.pdf",
       "session": 8,
-      "sha256": "75c0132dda1e980ea49fc88f87cfbaa172a2213c870f32e27aa0c4dbc33e07a3",
+      "sha256": "91f6733ffe2b450209c356c3e34f4e515448e2503c6ae864daea3da378ba5f03",
       "title": "Reveal Sheet - Session 8 Audit Card 2 / Post-Anchor Selection"
     },
     "session-08-audit-3": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-08-audit-3-reveal.pdf",
       "session": 8,
-      "sha256": "0a84556e2331c805b0572470b683b2732559a082ee4e7aa0c9eaee0abf280e8d",
+      "sha256": "a635f6463836238d3cddafd8ae930dd934ebcb62f9fa611449f7acf74dd8c9de",
       "title": "Reveal Sheet - Session 8 Audit Card 3 / Referent-Mapping Failure"
     },
     "session-08-audit-4": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-08-audit-4-reveal.pdf",
       "session": 8,
-      "sha256": "69accc71a42571ca166732df917fdccecc3150e8870793b627bc907f2fae8e4b",
+      "sha256": "1d27d81e64a59a9e3fef80673a1b3376d55638e8f772d74f1cfd4b2e98ac94d3",
       "title": "Reveal Sheet - Session 8 Audit Card 4 / Dual-Use Outcome"
     },
     "session-08-extension-rows": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-08-extension-rows-reveal.pdf",
       "session": 8,
-      "sha256": "fe83a5cbc27c6464a84e9180e64a0330407b58e94b153dfd49bfb822e1dcd7ae",
+      "sha256": "92d7e33aaaa798607dcda71b274d781e3940496fbf01c1786563f3e58b130a2a",
       "title": "Reveal Sheet - Session 8 Extension Rows 9-12"
     },
     "session-08-mechanism-dossiers": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-08-mechanism-dossiers-reveal.pdf",
       "session": 8,
-      "sha256": "9ccdbf7b653d56be3f612a4abc59ec6c158fe28cf0ff716ec35701562064f289",
+      "sha256": "5adacc1b3e38b3144a0a0f6648f1e9e44334b78e720a43e2bf761e6264036e2b",
       "title": "Reveal Sheet - Session 8 Mechanism Dossiers"
     },
     "session-09-symmetry-extension": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-09-symmetry-extension-reveal.pdf",
       "session": 9,
-      "sha256": "ec334430cf78021e0224fda8b4f26bb2e1f31d06294dfaaba66617474441f905",
+      "sha256": "a936d8c8efc0fa35c064264f703c12b12f24296a8182f9000865903bb247eec1",
       "title": "Reveal Sheet - Session 9 Symmetry Extension"
     },
     "session-09-variant-a": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-09-variant-a-reveal.pdf",
       "session": 9,
-      "sha256": "0693d3a21813068d9a6c29d41a987539450933d90c5e0ab8e47bfd5d9f5a87e6",
+      "sha256": "5d1daebc41ec02d5b701f7792a2d6acff037c370c5984077dbe6e75dd92b89c6",
       "title": "Reveal Sheet - Session 9 Variant A"
     },
     "session-09-variant-b": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-09-variant-b-reveal.pdf",
       "session": 9,
-      "sha256": "c4a31d260f8dbc0f85a064227b6eb82917cf69d936168d7bb2f9bc619a025a9d",
+      "sha256": "8cae5c30ed70d1da6c5b425b7284adfb2ddb965530ecc9db3efe159affa014e9",
       "title": "Reveal Sheet - Session 9 Variant B"
     },
     "session-10-profile-a": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-10-profile-a-reveal.pdf",
       "session": 10,
-      "sha256": "179bbccbbed29eedf6e974f03bf08285e307806f80a0dd94ab81608e33762bc7",
+      "sha256": "9896efa7788cff739484626da4ba22cc13ae455f7f0d3e34bcd9f8fff35ebeb9",
       "title": "Reveal Sheet - Session 10 Profile A"
     },
     "session-10-profile-b": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-10-profile-b-reveal.pdf",
       "session": 10,
-      "sha256": "5f487f3e63acaa417b8028d8b67e3b176caecc6c16a264f4dd810699bee65eb0",
+      "sha256": "84d36528e67b4d8dec736797a7a8c25ac33a2b9f9eb43935a261adba02ca8b11",
       "title": "Reveal Sheet - Session 10 Profile B"
     },
     "session-10-profile-c": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-10-profile-c-reveal.pdf",
       "session": 10,
-      "sha256": "b3c95bb0ed751e5baa514b059f57c6dde541ef1cb1b8f49e626863d5a5ce5c02",
+      "sha256": "72762e77e3758df543db4d7aaa9713b54fd3bd01115689e226061a71389bd8e7",
       "title": "Reveal Sheet - Session 10 Profile C"
     },
     "session-10-profile-d": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-10-profile-d-reveal.pdf",
       "session": 10,
-      "sha256": "52efa2fc4af764759f38eab2da4de663efe28051ff9f0d694bb6585334039f76",
+      "sha256": "ddaf513bdb91b4ab36301bad83b4a6669d5079a15a67bff526475f39b5e7d6b7",
       "title": "Reveal Sheet - Session 10 Profile D"
     },
     "session-10-profile-e": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-10-profile-e-reveal.pdf",
       "session": 10,
-      "sha256": "9e00a6ffc68dead9c7c743284acbab8de2511f1d86fb720260ef6c664a7a5b28",
+      "sha256": "a38f5754297492f07d6949fe9d2dbc398044889426b12711ba4863bd2cd486b2",
       "title": "Reveal Sheet - Session 10 Profile E"
     },
     "session-11-longitudinal-extension": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-11-longitudinal-extension-reveal.pdf",
       "session": 11,
-      "sha256": "ccac16672fc2af12d1cb335ae034f4654e3cf36ba2d0fdaf338c1303ca7c9b5b",
+      "sha256": "123edc29d5faacaa15e1643e832a669cc73c770ddecbd48c9001d7b3bafd5f7a",
       "title": "Reveal Sheet - Session 11 Longitudinal Extension"
     },
     "session-11-stage-2": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-11-stage-2-reveal.pdf",
       "session": 11,
-      "sha256": "3b1efb539cba2c2fb63a3afa80ff5395da41f0e3cd003fee0102e152a2ddf1cf",
+      "sha256": "9e80340e9a1f8b4824cb2a15c1c00a803fe8e609ae8d915895364ab678050772",
       "title": "Reveal Sheet - Session 11 Stage 2 / Round 3"
     },
     "session-11-stage-3": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-11-stage-3-reveal.pdf",
       "session": 11,
-      "sha256": "6562fe6d4d9432748f4ba99cc716c163b7c1bcd6dc6e8d8fe6f4cde57ea40c6f",
+      "sha256": "f024951ddf5f3f376109591f49b1b62b84814db12fdaad448a986804f14353b3",
       "title": "Reveal Sheet - Session 11 Stage 3 / Round 4"
     },
     "session-12-dossier-a": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-12-dossier-a-reveal.pdf",
       "session": 12,
-      "sha256": "ed1f3c0d3b8aeec780a9a18cef941a7a714b3f110abffc252b7b31b190633b9b",
+      "sha256": "6417b25bbd2f158c0c38c56aff0aa9d07871c64622e0cc5e5bbacaa10e060fb2",
       "title": "Reveal Sheet - Session 12 Dossier A / Octopus"
     },
     "session-12-dossier-b": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-12-dossier-b-reveal.pdf",
       "session": 12,
-      "sha256": "369a68d58955c1802f7b9c3494aea797dfd339d9097fa57d575114f0f26ae928",
+      "sha256": "76db3a11105d84b98cb45d55957a98694aec35e2765434186c2e4bcde8b360bc",
       "title": "Reveal Sheet - Session 12 Dossier B / Six-Month Infant"
     },
     "session-12-dossier-c": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-12-dossier-c-reveal.pdf",
       "session": 12,
-      "sha256": "3fd7fea3b7d71382c83cc49d1734deb47088e27e60ff901d60304e9a40331aba",
+      "sha256": "eb317fab38f449796eeedbe3b61887188d7d9041018907ae3b8088ade8092bcf",
       "title": "Reveal Sheet - Session 12 Dossier C / Organoid-Controller Hybrid"
     },
     "session-12-dossier-d": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-12-dossier-d-reveal.pdf",
       "session": 12,
-      "sha256": "3c0a9e3129ea8b95fa3878fa9b99aeb6229e60133b123d5fc7f964370e55c6f2",
+      "sha256": "f821be54c5933f6a90572dbfd059f7364dd7177ee516cb92cf18e157eb4b333c",
       "title": "Reveal Sheet - Session 12 Dossier D / Tool-Using Artificial Agent"
     },
     "session-13-profile-a": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-13-profile-a-reveal.pdf",
       "session": 13,
-      "sha256": "1c8fde07ad2b6704eca65e3a8c9390c699a50a5e8dc8d1566e06ea19ace248da",
+      "sha256": "867dcecfd443e4e4a99e4ce976586f9b301ce1e398f9f1184fff5dfa99310d33",
       "title": "Reveal Sheet - Session 13 Profile A / IIT Contrast"
     },
     "session-13-profile-b": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-13-profile-b-reveal.pdf",
       "session": 13,
-      "sha256": "b6b6b1fa3d7ca82816218adf1a435fb215c75f5a3663124314f6eeb0e21c16f7",
+      "sha256": "765684a9b48962ed8155b3d78a7abe84fc6f0df32ef0cac4ab47300775db097c",
       "title": "Reveal Sheet - Session 13 Profile B / GNWT Contrast"
     },
     "session-13-profile-c": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-13-profile-c-reveal.pdf",
       "session": 13,
-      "sha256": "7deab37801771520be81350a14eeee9da0dd56dccbc1f93305e6907487fde8f6",
+      "sha256": "f67b49ef68e8a43dad10c9da682b29572aacc96f903ea55a82639457579dcf8c",
       "title": "Reveal Sheet - Session 13 Profile C / RPT Contrast"
     },
     "session-13-profile-d": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-13-profile-d-reveal.pdf",
       "session": 13,
-      "sha256": "f7084c1b1982cfc9a45440cbf9a9475d03d31fe8fb02d133e9dd84ce427cdd84",
+      "sha256": "202cd9104322e54aa6814c8c11c312f35cb8f91da50a1bd31d0484612ba29f55",
       "title": "Reveal Sheet - Session 13 Profile D / Higher-Order Contrast"
     },
     "session-13-profile-e": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-13-profile-e-reveal.pdf",
       "session": 13,
-      "sha256": "95fa0680eff752c0237f069be869421096a0bacc1601abf2d7665c8df5e4eb61",
+      "sha256": "bd8520e1a424ae74df43187307af898e6a1e1158c6e412646a98cdcc6d820f92",
       "title": "Reveal Sheet - Session 13 Profile E / Full-Bundle Challenge"
     },
     "session-14-result-1": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-14-result-1-reveal.pdf",
       "session": 14,
-      "sha256": "3b5919f96ccd964c37590b4c31bfe439e50b29a374029ee9b64fd24e0ea17772",
+      "sha256": "b595db7c27abee3ca9a4255afb2d9f30ec8100166280bb904b964f0606b6fcc8",
       "title": "Reveal Sheet - Session 14 Result Card 1"
     },
     "session-14-result-2": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-14-result-2-reveal.pdf",
       "session": 14,
-      "sha256": "1b6f5f63cfdf1520d350ad4859df00e2adf167b6bcf6407e5cddc11938dfbee5",
+      "sha256": "8554f18fc6ce6cbdcf164904fe40ce9a4cc4eca492a5aca9b666377f84f4bdc0",
       "title": "Reveal Sheet - Session 14 Result Card 2"
     },
     "session-14-result-3": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-14-result-3-reveal.pdf",
       "session": 14,
-      "sha256": "a22676cc0f34a4c4ebf8cd30c29934cf1d4bd611b60cbba1dee84b8a5207bc44",
+      "sha256": "8792da5db44d865e143cb9c813c3e3e37caee594734d0b43a60657963812fbb4",
       "title": "Reveal Sheet - Session 14 Result Card 3"
     },
     "session-14-result-4": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-14-result-4-reveal.pdf",
       "session": 14,
-      "sha256": "42dddbbef094edf19a7e71c54552e5f2cb054c17054ce799b29f3263ed4d5fbb",
+      "sha256": "a45dde9188fd26427925b22a2877dd108b55b4f60fc66a35a3c9173fd07c71c5",
       "title": "Reveal Sheet - Session 14 Result Card 4"
     },
     "session-14-result-5": {
       "pages": 1,
       "path": "output/pdf/reveals/c0-n-star-session-14-result-5-reveal.pdf",
       "session": 14,
-      "sha256": "4e05aefac6bac499a159a7c0c75c24b55acfab852fd0bec05c0787f40a372f22",
+      "sha256": "b988c8656eace51ad1de8abd4a0eeb77d2808eadfb37afff76a62101b31c1dfb",
       "title": "Reveal Sheet - Session 14 Result Card 5"
     }
   },
@@ -708,10 +732,10 @@
     "papers/from-phenomenal-presence-to-phenomenal-character/inference-architecture.png": "ae8b0006d448e190b0f0385823f92dfe993e94f998b9192b04090feabcc7caad",
     "papers/where-is-the-conscious-subject/boundary-first-workflow.png": "5beb853f9180b341bd49087e295fadf0edc72567c07f77c6b45421f89456f323",
     "teachers-manual/README.md": "eafbf76fb9e9b456974ac15feafddfecb7331c9cc0827dfb69cb5d2333f81f71",
-    "teachers-manual/build_teachers_manual.py": "12311e423daf77ed3ff7b8b0466bbc221ecc8256f1dc2a25eb3d38147bd0a91a",
+    "teachers-manual/build_teachers_manual.py": "e49d975ca5e4eede3da9d0950e2db49ffe66a1df5bd6a562cec3fb7e93808348",
     "teachers-manual/requirements-teachers-manual.txt": "2d2cfcf730a433d8b5e3b37cdde8eb2af3f67f2ceec91d6d32daabca7d6b0319",
     "teachers-manual/session-resource-pack.md": "456176d40127bd0e6893748099ac17ef9a6868da93d4e62332f162608e0e2ec5",
-    "teachers-manual/teachers-manual.md": "5945bdc4bbd5c4652a86f2de8e3e1ad5be65465864010c3327d599ac3e8fd994"
+    "teachers-manual/teachers-manual.md": "ea61831a9e3a28cb39e6dcab4fe62c35dfdd2957eb5876e5e0bb4560e9ec33af"
   },
   "tools": {
     "libreoffice": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
