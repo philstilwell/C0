@@ -73,23 +73,31 @@ test("server-renders the seven-paper research constellation", async () => {
 });
 
 test("server-renders the paired teaching collection", async () => {
-  const [teachingResponse, homeResponse, constellationResponse] = await Promise.all([
+  const [teachingResponse, homeResponse, constellationResponse, manifestText] = await Promise.all([
     render("/teaching/"),
     render(),
     render("/constellation/"),
+    readFile(new URL("../output/student-textbook-build-manifest.json", import.meta.url), "utf8"),
   ]);
+  const textbookRelease = JSON.parse(manifestText).release;
   assert.equal(teachingResponse.status, 200);
   const [teaching, home, constellation] = await Promise.all([
     teachingResponse.text(),
     homeResponse.text(),
     constellationResponse.text(),
   ]);
+  const teachingText = teaching
+    .replaceAll("<!-- -->", "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ");
   assert.match(teaching, /Teaching Cø \/ N\*: A Graduate Instructor/);
   assert.match(teaching, /Instructor edition/);
   assert.match(teaching, /Learning Cø \/ N\*: A Student Textbook of Phenomenal Presence/);
   assert.match(teaching, /FOR STUDENTS · AVAILABLE NOW/);
   assert.match(teaching, /teaching\/instructor-manual\/2\.1\/teaching-c0-n-star-instructor-manual\.pdf/);
-  assert.match(teaching, /teaching\/student-textbook\/1\.0\/learning-c0-n-star-student-textbook\.pdf/);
+  assert.ok(teaching.includes(textbookRelease.pdf.public_url));
+  assert.ok(teachingText.includes(`Student edition ${textbookRelease.edition}`));
+  assert.ok(teachingText.includes(`${textbookRelease.pdf.pages} pages`));
   assert.match(teaching, /Student session resource pack/);
   assert.match(teaching, /companion to/);
   assert.match(teaching, /not a replacement for/);
@@ -114,16 +122,22 @@ test("ships an exact public copy of instructor manual edition 2.1", async () => 
   assert.equal(digest(releaseManual), expectedDigest);
 });
 
-test("ships an exact public copy of student textbook edition 1.0", async () => {
+test("ships the manifest-declared public student textbook release exactly", async () => {
+  const manifest = JSON.parse(
+    await readFile(new URL("../output/student-textbook-build-manifest.json", import.meta.url), "utf8"),
+  );
+  const release = manifest.release.pdf;
   const [publicTextbook, releaseTextbook] = await Promise.all([
-    readFile(new URL("../public/teaching/student-textbook/1.0/learning-c0-n-star-student-textbook.pdf", import.meta.url)),
+    readFile(new URL(`../${release.public_path}`, import.meta.url)),
     readFile(new URL("../output/pdf/learning-c0-n-star-student-textbook.pdf", import.meta.url)),
   ]);
   const digest = (value) => createHash("sha256").update(value).digest("hex");
-  const expectedDigest = "8d0ba2c9bfe55e99736c602c4607d7fe5d4c30dc8da422c12fb261d2d982d04f";
   assert.ok(publicTextbook.length > 2_500_000);
-  assert.equal(digest(publicTextbook), expectedDigest);
-  assert.equal(digest(releaseTextbook), expectedDigest);
+  assert.equal(publicTextbook.length, release.bytes);
+  assert.equal(digest(publicTextbook), release.sha256);
+  assert.equal(digest(releaseTextbook), release.sha256);
+  assert.equal(manifest.outputs[release.public_path], release.sha256);
+  assert.equal(manifest.outputs["output/pdf/learning-c0-n-star-student-textbook.pdf"], release.sha256);
 });
 
 test("uses the supplied five-color palette for the student textbook card", async () => {
@@ -132,6 +146,7 @@ test("uses the supplied five-color palette for the student textbook card", async
   assert.match(css, /\.student-text-card > p \{ color: #3b2317; \}/);
   assert.match(css, /\.student-text-card \.course-text-meta \{ color: #8a5c39; \}/);
   assert.match(css, /border-top: 1px solid #aa9062/);
+  assert.match(css, /\.student-text-card a:focus-visible, \.teaching-secondary-action:focus-visible \{ outline-color: #601d1f; \}/);
 });
 
 test("ships an exact public copy of the key-free student resource pack", async () => {

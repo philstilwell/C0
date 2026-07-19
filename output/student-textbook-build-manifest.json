@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-07-19T03:54:30.961453+00:00",
+  "built_at_utc": "2026-07-19T06:14:43.375787+00:00",
   "corpus_baseline": "July 18, 2026",
   "corpus_sources": {
     "papers/ablating-n-star/manuscript.md": "a03f7f612aad044d7e59443c797f107f596f323245f6f45fee6ee3be97e9531a",
@@ -10,11 +10,12 @@
     "papers/where-is-the-conscious-subject/manuscript.md": "035802e80babad63319e8ad8f3ce54403bec9028952a077f0c8303fda9d4d7ec",
     "public/paper.pdf": "a0fffb89a12ab722b6472c2c0e32f2344c6fbda7ac999ca47a9fb1d2616b524d"
   },
-  "edition": "1.0",
+  "edition": "1.1",
   "outputs": {
-    "output/doc/learning-c0-n-star-student-textbook.docx": "ce91fdd83600f1226b1c872ea06dfe2a1b4d59e491a8070d889f15f8695fd0ab",
-    "output/pdf/learning-c0-n-star-student-textbook.pdf": "8d0ba2c9bfe55e99736c602c4607d7fe5d4c30dc8da422c12fb261d2d982d04f",
-    "student-textbook/student-textbook.md": "09442e64fff81fd5462a92c37290ff38ca048cd391bf31bbeb2eda4939e9e3ce"
+    "output/doc/learning-c0-n-star-student-textbook.docx": "bb1d47be7549b5a9221e60329a334d6759534cf562cddf6f63ca818ac85e4964",
+    "output/pdf/learning-c0-n-star-student-textbook.pdf": "cb58b0052d50b39a4edc7012d268a47fe47342c34b9141f5a1063f511150223c",
+    "public/teaching/student-textbook/1.1/learning-c0-n-star-student-textbook.pdf": "cb58b0052d50b39a4edc7012d268a47fe47342c34b9141f5a1063f511150223c",
+    "student-textbook/student-textbook.md": "6c33ee84242118f5ae329e08200165a82a743f5939141bc8b7536a2f6606a130"
   },
   "palette": {
     "burgundy": "#601D1F",
@@ -26,27 +27,149 @@
   "qa": {
     "docx": {
       "chapter_headings": [
-        "Chapter 1 \u2014 The Explanandum and the Theory Landscape",
-        "Chapter 2 \u2014 The Core Biconditional and Network-Dynamics Model",
-        "Chapter 3 \u2014 Where Is the Conscious Subject?",
-        "Chapter 4 \u2014 Viability and Integration: Realization and Unity",
-        "Chapter 5 \u2014 Consciousness Without Report: System-Wide Availability",
-        "Chapter 6 \u2014 Recurrent Stability and Temporal Presence",
-        "Chapter 7 \u2014 What Does the Evidence License?",
-        "Chapter 8 \u2014 Does Every Conjunct Earn Its Place?",
-        "Chapter 9 \u2014 From Phenomenal Presence to Phenomenal Character",
-        "Chapter 10 \u2014 Reading Consciousness from the Schematic",
-        "Chapter 11 \u2014 Biological and Clinical Applications",
-        "Chapter 12 \u2014 Nonhuman Animals, Organoids, and Artificial Systems",
-        "Chapter 13 \u2014 Differentiation, Validation, and the Strongest Objections",
-        "Chapter 14 \u2014 Capstone Adversarial Research Design"
+        "Chapter 1 - The Explanandum and the Theory Landscape",
+        "Chapter 2 - The Core Biconditional and Network-Dynamics Model",
+        "Chapter 3 - Where Is the Conscious Subject?",
+        "Chapter 4 - Viability and Integration: Realization and Unity",
+        "Chapter 5 - Consciousness Without Report: System-Wide Availability",
+        "Chapter 6 - Recurrent Stability and Temporal Presence",
+        "Chapter 7 - What Does the Evidence License?",
+        "Chapter 8 - Does Every Conjunct Earn Its Place?",
+        "Chapter 9 - From Phenomenal Presence to Phenomenal Character",
+        "Chapter 10 - Reading Consciousness from the Schematic",
+        "Chapter 11 - Biological and Clinical Applications",
+        "Chapter 12 - Nonhuman Animals, Organoids, and Artificial Systems",
+        "Chapter 13 - Differentiation, Validation, and the Strongest Objections",
+        "Chapter 14 - Capstone Adversarial Research Design"
       ],
-      "paragraphs": 2788,
+      "extended_statistics": {
+        "characters": 392205,
+        "characters_with_spaces": 455967,
+        "lines": 5700,
+        "pages": 230,
+        "paragraphs": 4290,
+        "words": 64315
+      },
+      "metadata": {
+        "author": "Phil Stilwell",
+        "language": "en-US",
+        "subject": "Accessible graduate student textbook for the C\u00f8 / N* theory of phenomenal presence",
+        "title": "Learning C\u00f8 / N*: A Student Textbook of Phenomenal Presence"
+      },
+      "paragraphs": 2695,
       "sections": 1,
-      "tables_fixed": 27
+      "tables_fixed": 80,
+      "worksheet_page_breaks": {
+        "A. Collaboration charter": true,
+        "B. Select one capstone branch": true,
+        "Blank notation translation": true,
+        "C. Exact target and scope": true,
+        "Cover record": true,
+        "D. Boundary and viability record": true,
+        "E. Full and rival models": true,
+        "Empirical-claim annotation sheet": true,
+        "F. Construct and measurement validity": true,
+        "G. Intervention and selectivity": true,
+        "H. Causal diagram audit": true,
+        "I. Negative controls and falsification criteria": true,
+        "J. Anchor-independence ledger": true,
+        "K. Quantitative and reproducibility plan": true,
+        "L. Outcome vocabulary and pattern plan": true,
+        "M. Transport audit, if applicable": true,
+        "N. Phenomenal-character bridge, if applicable": true,
+        "O. Schematic-competence audit, if applicable": true,
+        "P. Ethics, feasibility, and practical action": true,
+        "Q. Red-team disposition log": true,
+        "R. Final preregistration audit checklist": true,
+        "Reading-record template": true,
+        "Worksheet A2 - Role-rotation matrix": true,
+        "Worksheet A3 - Governance and fairness continuation": true,
+        "Worksheet B1 - Science-action separation": true,
+        "Worksheet B2 - Empirical-claim license continuation": true,
+        "Worksheet C1 - Common-question record": true,
+        "Worksheet C2 - Symmetry audit": true,
+        "Worksheet C3 - Objection map": true,
+        "Worksheet C4 - Diagnostic-case record": true,
+        "Worksheet C5 - Disagreement contract": true,
+        "Worksheet C6 - Fair-comparison rehearsal record": true,
+        "Worksheet C6b - Peer review and advocate approvals": true,
+        "Worksheet Capstone C2 - Claim-license continuation": true,
+        "Worksheet Cover 2 - Provenance and inspection record": true,
+        "Worksheet D2 - Boundary and viability decisions": true,
+        "Worksheet D3 - Bearer resolution and viability decisions": true,
+        "Worksheet E2 - Diagnostic predictions": true,
+        "Worksheet F2 - Measurement decision rules": true,
+        "Worksheet G2 - Preservation, selectivity, and rescue": true,
+        "Worksheet H2 - Causal-path audit questions": true,
+        "Worksheet I2 - Falsification commitments": true,
+        "Worksheet J2 - Data partition and blinding plan": true,
+        "Worksheet K2 - Missingness, simulation, and reproducibility": true,
+        "Worksheet L2 - Outcome-to-revision record": true,
+        "Worksheet M2 - Transport result and scope limit": true,
+        "Worksheet N2 - Held-out deformation and bridge result": true,
+        "Worksheet O2 - Blind outcomes, competence, and limits": true,
+        "Worksheet P2 - Outcome-to-action record": true,
+        "Worksheet R1b - Final preregistration audit checklist continuation": true,
+        "Worksheet R2 - Checklist exceptions and N/A rationales": true,
+        "Worksheet R3 - Final claims and unresolved items": true
+      }
+    },
+    "palette_contrast": {
+      "checks": [
+        {
+          "background": "#FFFDF8",
+          "foreground": "#3B2317",
+          "minimum": 7.0,
+          "ratio": 14.36,
+          "use": "body text on paper"
+        },
+        {
+          "background": "#FFFDF8",
+          "foreground": "#601D1F",
+          "minimum": 7.0,
+          "ratio": 12.2,
+          "use": "title text on paper"
+        },
+        {
+          "background": "#FBE4AA",
+          "foreground": "#601D1F",
+          "minimum": 7.0,
+          "ratio": 9.91,
+          "use": "heading text on pale gold"
+        },
+        {
+          "background": "#3B2317",
+          "foreground": "#FBE4AA",
+          "minimum": 7.0,
+          "ratio": 11.66,
+          "use": "table-header text"
+        },
+        {
+          "background": "#FBE4AA",
+          "foreground": "#8A5C39",
+          "minimum": 4.5,
+          "ratio": 4.57,
+          "use": "secondary heading text"
+        },
+        {
+          "background": "#AA9062",
+          "foreground": "#3B2317",
+          "minimum": 4.5,
+          "ratio": 4.78,
+          "use": "body text on sandstone"
+        }
+      ],
+      "standard": "WCAG 2.x contrast-ratio calculation"
     },
     "pdf": {
       "empty_pages": [],
+      "figure_accessibility": {
+        "figures": 0,
+        "limitation": "The structural check verifies Alt or ActualText on Figure tags; rendered-page review must still confirm that decorative rules were not mis-tagged as figures.",
+        "missing_alternative_text": 0,
+        "pages": [],
+        "release_gate": "hard failure"
+      },
       "fonts": {
         "all_embedded": true,
         "available": true,
@@ -209,7 +332,7 @@
           },
           {
             "embedded": true,
-            "name": "BBAAAA+LiberationSerif-Italic",
+            "name": "BBAAAA+LiberationSerif",
             "subset": true,
             "type": "TrueType"
           },
@@ -221,25 +344,82 @@
           },
           {
             "embedded": true,
-            "name": "DBAAAA+LiberationSerif-BoldItalic",
+            "name": "DBAAAA+LiberationSerif",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "EBAAAA+LiberationSerif-BoldItalic",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "FBAAAA+LiberationSerif-Italic",
             "subset": true,
             "type": "TrueType"
           }
         ]
       },
       "intentionally_open_pages": [
-        170
+        160,
+        164,
+        165,
+        166,
+        170,
+        173,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        186,
+        188,
+        189,
+        190,
+        191,
+        193,
+        194,
+        195,
+        196,
+        197,
+        201,
+        202,
+        203,
+        205,
+        206,
+        207,
+        208,
+        209,
+        211,
+        212,
+        213,
+        217,
+        218
       ],
       "language": "en-US",
-      "outline_entries": 443,
-      "pages": 178,
+      "metadata": {
+        "author": "Phil Stilwell",
+        "subject": "Accessible graduate student textbook for the C\u00f8 / N* theory of phenomenal presence",
+        "title": "Learning C\u00f8 / N*: A Student Textbook of Phenomenal Presence"
+      },
+      "outline_entries": 478,
+      "page_geometry_points": [
+        0.0,
+        0.0,
+        504.0,
+        720.0
+      ],
+      "pages": 230,
       "pdfinfo": {
         "Author": "Phil Stilwell",
-        "CreationDate": "Sat Jul 18 23:54:27 2026 EDT",
+        "CreationDate": "Sun Jul 19 02:14:39 2026 EDT",
         "Creator": "Writer",
         "Custom Metadata": "no",
         "Encrypted": "no",
-        "File size": "2559843 bytes",
+        "File size": "2983998 bytes",
         "Form": "none",
         "JavaScript": "no",
         "Keywords": "consciousness, phenomenal, presence, N*, student, textbook, integration, availability, recurrence, thought, experiments, collaborative, learning",
@@ -248,7 +428,7 @@
         "PDF version": "1.7",
         "Page rot": "0",
         "Page size": "504 x 720 pts",
-        "Pages": "178",
+        "Pages": "230",
         "Producer": "LibreOfficeDev 26.8.0.0.alpha0 (AARCH64)",
         "Subject": "Accessible graduate student textbook for the C\u00f8 / N* theory of phenomenal presence",
         "Suspects": "no",
@@ -256,8 +436,98 @@
         "Title": "Learning C\u00f8 / N*: A Student Textbook of Phenomenal Presence",
         "UserProperties": "no"
       },
+      "raw_markup": {
+        "patterns_checked": [
+          "raw page break",
+          "raw TeX environment",
+          "raw TeX command",
+          "Markdown heading marker",
+          "Markdown code marker",
+          "unrendered math delimiter"
+        ],
+        "status": "passed"
+      },
+      "rotation_degrees": 0,
       "sparse_pages": [],
-      "tagged": true
+      "tagged": true,
+      "unicode_dash_policy": {
+        "policy": "ASCII hyphens only; Unicode dash variants are rejected",
+        "rejected_codepoints": [
+          "U+058A",
+          "U+1806",
+          "U+2010",
+          "U+2011",
+          "U+2012",
+          "U+2013",
+          "U+2014",
+          "U+2015",
+          "U+2043",
+          "U+2E17",
+          "U+FE58",
+          "U+FE63",
+          "U+FF0D"
+        ],
+        "status": "passed"
+      },
+      "worksheet_pages": {
+        "distinct_start_pages": true,
+        "limitation": "This verifies a separate physical start page, not that every worksheet's writing space fits on exactly one page; rendered-page review remains required.",
+        "method": "outline destination plus extracted-text leading-position check",
+        "pages": {
+          "A. Collaboration charter": 181,
+          "B. Select one capstone branch": 184,
+          "Blank notation translation": 160,
+          "C. Exact target and scope": 185,
+          "Cover record": 179,
+          "D. Boundary and viability record": 187,
+          "E. Full and rival models": 190,
+          "Empirical-claim annotation sheet": 165,
+          "F. Construct and measurement validity": 192,
+          "G. Intervention and selectivity": 194,
+          "H. Causal diagram audit": 196,
+          "I. Negative controls and falsification criteria": 198,
+          "J. Anchor-independence ledger": 200,
+          "K. Quantitative and reproducibility plan": 202,
+          "L. Outcome vocabulary and pattern plan": 204,
+          "M. Transport audit, if applicable": 206,
+          "N. Phenomenal-character bridge, if applicable": 208,
+          "O. Schematic-competence audit, if applicable": 210,
+          "P. Ethics, feasibility, and practical action": 212,
+          "Q. Red-team disposition log": 214,
+          "R. Final preregistration audit checklist": 215,
+          "Reading-record template": 230,
+          "Worksheet A2 - Role-rotation matrix": 182,
+          "Worksheet A3 - Governance and fairness continuation": 183,
+          "Worksheet B1 - Science-action separation": 164,
+          "Worksheet B2 - Empirical-claim license continuation": 166,
+          "Worksheet C1 - Common-question record": 168,
+          "Worksheet C2 - Symmetry audit": 170,
+          "Worksheet C3 - Objection map": 172,
+          "Worksheet C4 - Diagnostic-case record": 173,
+          "Worksheet C5 - Disagreement contract": 174,
+          "Worksheet C6 - Fair-comparison rehearsal record": 176,
+          "Worksheet C6b - Peer review and advocate approvals": 177,
+          "Worksheet Capstone C2 - Claim-license continuation": 186,
+          "Worksheet Cover 2 - Provenance and inspection record": 180,
+          "Worksheet D2 - Boundary and viability decisions": 188,
+          "Worksheet D3 - Bearer resolution and viability decisions": 189,
+          "Worksheet E2 - Diagnostic predictions": 191,
+          "Worksheet F2 - Measurement decision rules": 193,
+          "Worksheet G2 - Preservation, selectivity, and rescue": 195,
+          "Worksheet H2 - Causal-path audit questions": 197,
+          "Worksheet I2 - Falsification commitments": 199,
+          "Worksheet J2 - Data partition and blinding plan": 201,
+          "Worksheet K2 - Missingness, simulation, and reproducibility": 203,
+          "Worksheet L2 - Outcome-to-revision record": 205,
+          "Worksheet M2 - Transport result and scope limit": 207,
+          "Worksheet N2 - Held-out deformation and bridge result": 209,
+          "Worksheet O2 - Blind outcomes, competence, and limits": 211,
+          "Worksheet P2 - Outcome-to-action record": 213,
+          "Worksheet R1b - Final preregistration audit checklist continuation": 216,
+          "Worksheet R2 - Checklist exceptions and N/A rationales": 217,
+          "Worksheet R3 - Final claims and unresolved items": 218
+        }
+      }
     },
     "source": {
       "chapters": {
@@ -270,9 +540,21 @@
             "Plain language": 1,
             "Why it matters": 2
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 1,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 1,
+            "Research-status note": 1,
+            "Source note": 1
+          },
+          "thought_experiment_headings": 2,
           "title": "The Explanandum and the Theory Landscape",
-          "words": 3664
+          "words": 3693
         },
         "10": {
           "analogy_limit_annotations": 3,
@@ -283,9 +565,21 @@
             "Plain language": 1,
             "Why it matters": 2
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 2,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 2
+          },
+          "thought_experiment_headings": 2,
           "title": "Reading Consciousness from the Schematic",
-          "words": 3778
+          "words": 3827
         },
         "11": {
           "analogy_limit_annotations": 3,
@@ -296,12 +590,24 @@
             "Plain language": 2,
             "Why it matters": 2
           },
-          "thought_experiment_mentions": 3,
+          "practice_headings": {
+            "Collaborative work": 1,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 1
+          },
+          "thought_experiment_headings": 3,
           "title": "Biological and Clinical Applications",
-          "words": 3517
+          "words": 3566
         },
         "12": {
-          "analogy_limit_annotations": 3,
+          "analogy_limit_annotations": 4,
           "annotations": {
             "Checkpoint": 2,
             "Do not infer": 2,
@@ -309,9 +615,21 @@
             "Plain language": 2,
             "Why it matters": 2
           },
-          "thought_experiment_mentions": 3,
+          "practice_headings": {
+            "Collaborative work": 2,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 1
+          },
+          "thought_experiment_headings": 3,
           "title": "Nonhuman Animals, Organoids, and Artificial Systems",
-          "words": 3558
+          "words": 3658
         },
         "13": {
           "analogy_limit_annotations": 3,
@@ -322,9 +640,21 @@
             "Plain language": 2,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 2,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 1,
+            "Source note": 0
+          },
+          "thought_experiment_headings": 2,
           "title": "Differentiation, Validation, and the Strongest Objections",
-          "words": 3244
+          "words": 3317
         },
         "14": {
           "analogy_limit_annotations": 3,
@@ -335,9 +665,21 @@
             "Plain language": 2,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 2,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 1
+          },
+          "thought_experiment_headings": 2,
           "title": "Capstone Adversarial Research Design",
-          "words": 3145
+          "words": 3438
         },
         "2": {
           "analogy_limit_annotations": 2,
@@ -348,9 +690,21 @@
             "Plain language": 3,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 3,
+          "practice_headings": {
+            "Collaborative work": 1,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 2
+          },
+          "thought_experiment_headings": 2,
           "title": "The Core Biconditional and Network-Dynamics Model",
-          "words": 3576
+          "words": 3623
         },
         "3": {
           "analogy_limit_annotations": 2,
@@ -361,9 +715,21 @@
             "Plain language": 1,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 1,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 1
+          },
+          "thought_experiment_headings": 2,
           "title": "Where Is the Conscious Subject?",
-          "words": 3722
+          "words": 3850
         },
         "4": {
           "analogy_limit_annotations": 2,
@@ -374,9 +740,21 @@
             "Plain language": 1,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 1,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 1
+          },
+          "thought_experiment_headings": 2,
           "title": "Viability and Integration: Realization and Unity",
-          "words": 3437
+          "words": 3512
         },
         "5": {
           "analogy_limit_annotations": 2,
@@ -387,35 +765,71 @@
             "Plain language": 1,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 3,
+          "practice_headings": {
+            "Collaborative work": 1,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 1
+          },
+          "thought_experiment_headings": 2,
           "title": "Consciousness Without Report: System-Wide Availability",
-          "words": 4153
+          "words": 4178
         },
         "6": {
           "analogy_limit_annotations": 2,
           "annotations": {
             "Checkpoint": 1,
             "Do not infer": 2,
-            "Method note": 2,
+            "Method note": 3,
             "Plain language": 2,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 2,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 2
+          },
+          "thought_experiment_headings": 2,
           "title": "Recurrent Stability and Temporal Presence",
-          "words": 3626
+          "words": 3699
         },
         "7": {
           "analogy_limit_annotations": 2,
           "annotations": {
             "Checkpoint": 1,
             "Do not infer": 2,
-            "Method note": 1,
+            "Method note": 2,
             "Plain language": 1,
             "Why it matters": 2
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 2,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 2
+          },
+          "thought_experiment_headings": 2,
           "title": "What Does the Evidence License?",
-          "words": 3639
+          "words": 3985
         },
         "8": {
           "analogy_limit_annotations": 2,
@@ -426,9 +840,21 @@
             "Plain language": 2,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 2,
+          "practice_headings": {
+            "Collaborative work": 2,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 2
+          },
+          "thought_experiment_headings": 2,
           "title": "Does Every Conjunct Earn Its Place?",
-          "words": 3803
+          "words": 3946
         },
         "9": {
           "analogy_limit_annotations": 3,
@@ -439,9 +865,21 @@
             "Plain language": 2,
             "Why it matters": 1
           },
-          "thought_experiment_mentions": 3,
+          "practice_headings": {
+            "Collaborative work": 2,
+            "Counterexample challenge": 1,
+            "Exit ticket": 1,
+            "Individual transfer": 1,
+            "Quick checks": 1
+          },
+          "research_callouts": {
+            "Context note": 0,
+            "Research-status note": 0,
+            "Source note": 2
+          },
+          "thought_experiment_headings": 2,
           "title": "From Phenomenal Presence to Phenomenal Character",
-          "words": 3814
+          "words": 3875
         }
       },
       "corpus_items_named": [
@@ -453,25 +891,418 @@
         "From Phenomenal Presence to Phenomenal Character",
         "Reading Consciousness from the Schematic"
       ],
-      "total_words": 59808
+      "research_callout_totals": {
+        "Context note": 1,
+        "Research-status note": 2,
+        "Source note": 19
+      },
+      "total_words": 65371,
+      "unicode_dash_policy": {
+        "policy": "ASCII hyphens only; Unicode dash variants are rejected",
+        "rejected_codepoints": [
+          "U+058A",
+          "U+1806",
+          "U+2010",
+          "U+2011",
+          "U+2012",
+          "U+2013",
+          "U+2014",
+          "U+2015",
+          "U+2043",
+          "U+2E17",
+          "U+FE58",
+          "U+FE63",
+          "U+FF0D"
+        ],
+        "status": "passed"
+      },
+      "worksheets": [
+        {
+          "introduction_words": 56,
+          "kind": "standalone worksheet",
+          "level": 2,
+          "source_line": 4400,
+          "title": "Blank notation translation"
+        },
+        {
+          "introduction_words": 44,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4513,
+          "title": "Worksheet B1 - Science-action separation"
+        },
+        {
+          "introduction_words": 42,
+          "kind": "standalone worksheet",
+          "level": 2,
+          "source_line": 4525,
+          "title": "Empirical-claim annotation sheet"
+        },
+        {
+          "introduction_words": 34,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4542,
+          "title": "Worksheet B2 - Empirical-claim license continuation"
+        },
+        {
+          "introduction_words": 40,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4570,
+          "title": "Worksheet C1 - Common-question record"
+        },
+        {
+          "introduction_words": 39,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4611,
+          "title": "Worksheet C2 - Symmetry audit"
+        },
+        {
+          "introduction_words": 39,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4653,
+          "title": "Worksheet C3 - Objection map"
+        },
+        {
+          "introduction_words": 42,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4672,
+          "title": "Worksheet C4 - Diagnostic-case record"
+        },
+        {
+          "introduction_words": 46,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4692,
+          "title": "Worksheet C5 - Disagreement contract"
+        },
+        {
+          "introduction_words": 36,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4722,
+          "title": "Worksheet C6 - Fair-comparison rehearsal record"
+        },
+        {
+          "introduction_words": 35,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4736,
+          "title": "Worksheet C6b - Peer review and advocate approvals"
+        },
+        {
+          "introduction_words": 44,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 4754,
+          "title": "Cover record"
+        },
+        {
+          "introduction_words": 34,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4769,
+          "title": "Worksheet Cover 2 - Provenance and inspection record"
+        },
+        {
+          "introduction_words": 43,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 4782,
+          "title": "A. Collaboration charter"
+        },
+        {
+          "introduction_words": 17,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4796,
+          "title": "Worksheet A2 - Role-rotation matrix"
+        },
+        {
+          "introduction_words": 30,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4808,
+          "title": "Worksheet A3 - Governance and fairness continuation"
+        },
+        {
+          "introduction_words": 52,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 4821,
+          "title": "B. Select one capstone branch"
+        },
+        {
+          "introduction_words": 46,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 4842,
+          "title": "C. Exact target and scope"
+        },
+        {
+          "introduction_words": 33,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4859,
+          "title": "Worksheet Capstone C2 - Claim-license continuation"
+        },
+        {
+          "introduction_words": 42,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 4874,
+          "title": "D. Boundary and viability record"
+        },
+        {
+          "introduction_words": 36,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4890,
+          "title": "Worksheet D2 - Boundary and viability decisions"
+        },
+        {
+          "introduction_words": 35,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4904,
+          "title": "Worksheet D3 - Bearer resolution and viability decisions"
+        },
+        {
+          "introduction_words": 43,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 4917,
+          "title": "E. Full and rival models"
+        },
+        {
+          "introduction_words": 39,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4931,
+          "title": "Worksheet E2 - Diagnostic predictions"
+        },
+        {
+          "introduction_words": 39,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 4949,
+          "title": "F. Construct and measurement validity"
+        },
+        {
+          "introduction_words": 42,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4966,
+          "title": "Worksheet F2 - Measurement decision rules"
+        },
+        {
+          "introduction_words": 46,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 4984,
+          "title": "G. Intervention and selectivity"
+        },
+        {
+          "introduction_words": 40,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 4996,
+          "title": "Worksheet G2 - Preservation, selectivity, and rescue"
+        },
+        {
+          "introduction_words": 42,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5011,
+          "title": "H. Causal diagram audit"
+        },
+        {
+          "introduction_words": 24,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5021,
+          "title": "Worksheet H2 - Causal-path audit questions"
+        },
+        {
+          "introduction_words": 42,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5034,
+          "title": "I. Negative controls and falsification criteria"
+        },
+        {
+          "introduction_words": 45,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5056,
+          "title": "Worksheet I2 - Falsification commitments"
+        },
+        {
+          "introduction_words": 56,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5069,
+          "title": "J. Anchor-independence ledger"
+        },
+        {
+          "introduction_words": 29,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5089,
+          "title": "Worksheet J2 - Data partition and blinding plan"
+        },
+        {
+          "introduction_words": 40,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5101,
+          "title": "K. Quantitative and reproducibility plan"
+        },
+        {
+          "introduction_words": 27,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5116,
+          "title": "Worksheet K2 - Missingness, simulation, and reproducibility"
+        },
+        {
+          "introduction_words": 46,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5133,
+          "title": "L. Outcome vocabulary and pattern plan"
+        },
+        {
+          "introduction_words": 38,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5158,
+          "title": "Worksheet L2 - Outcome-to-revision record"
+        },
+        {
+          "introduction_words": 42,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5171,
+          "title": "M. Transport audit, if applicable"
+        },
+        {
+          "introduction_words": 27,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5185,
+          "title": "Worksheet M2 - Transport result and scope limit"
+        },
+        {
+          "introduction_words": 50,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5200,
+          "title": "N. Phenomenal-character bridge, if applicable"
+        },
+        {
+          "introduction_words": 25,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5214,
+          "title": "Worksheet N2 - Held-out deformation and bridge result"
+        },
+        {
+          "introduction_words": 44,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5230,
+          "title": "O. Schematic-competence audit, if applicable"
+        },
+        {
+          "introduction_words": 22,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5247,
+          "title": "Worksheet O2 - Blind outcomes, competence, and limits"
+        },
+        {
+          "introduction_words": 51,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5266,
+          "title": "P. Ethics, feasibility, and practical action"
+        },
+        {
+          "introduction_words": 37,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5283,
+          "title": "Worksheet P2 - Outcome-to-action record"
+        },
+        {
+          "introduction_words": 59,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5294,
+          "title": "Q. Red-team disposition log"
+        },
+        {
+          "introduction_words": 43,
+          "kind": "Appendix D workbook page",
+          "level": 2,
+          "source_line": 5309,
+          "title": "R. Final preregistration audit checklist"
+        },
+        {
+          "introduction_words": 33,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5330,
+          "title": "Worksheet R1b - Final preregistration audit checklist continuation"
+        },
+        {
+          "introduction_words": 41,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5351,
+          "title": "Worksheet R2 - Checklist exceptions and N/A rationales"
+        },
+        {
+          "introduction_words": 38,
+          "kind": "worksheet heading",
+          "level": 3,
+          "source_line": 5362,
+          "title": "Worksheet R3 - Final claims and unresolved items"
+        },
+        {
+          "introduction_words": 48,
+          "kind": "standalone worksheet",
+          "level": 2,
+          "source_line": 5687,
+          "title": "Reading-record template"
+        }
+      ]
     },
     "styling": {
       "callout_paragraphs": {
         "Checkpoint.": 22,
+        "Context note.": 1,
         "Do not infer.": 31,
-        "Method note.": 19,
+        "Materials.": 2,
+        "Method note.": 21,
         "Plain language.": 25,
-        "Source note:": 0,
-        "Where the analogy breaks.": 34,
+        "Research-status note.": 2,
+        "Source note.": 19,
+        "Where the analogy breaks.": 35,
         "Why it matters.": 20
       },
       "chapters_styled": 14,
       "tables": [
         {
           "column_width_percentages": [
-            14.62,
-            45.2,
-            40.18
+            13.76,
+            46.74,
+            39.49
           ],
           "index": 1,
           "signature": [
@@ -618,11 +1449,21 @@
         },
         {
           "column_width_percentages": [
+            76.0
+          ],
+          "index": 12,
+          "minimum_body_row_height_inches": 4.25,
+          "signature": [
+            "Transition diagram workspace"
+          ]
+        },
+        {
+          "column_width_percentages": [
             27.13,
             34.89,
             37.98
           ],
-          "index": 12,
+          "index": 13,
           "signature": [
             "Candidate criterion",
             "What it captures",
@@ -631,11 +1472,11 @@
         },
         {
           "column_width_percentages": [
-            18.88,
-            46.67,
-            34.45
+            17.46,
+            47.56,
+            34.98
           ],
-          "index": 13,
+          "index": 14,
           "signature": [
             "Branch",
             "Main achievement",
@@ -644,11 +1485,26 @@
         },
         {
           "column_width_percentages": [
+            16.43,
+            22.14,
+            16.1,
+            45.33
+          ],
+          "index": 15,
+          "signature": [
+            "Selected branch",
+            "Required common workbook sections",
+            "Additional branch module",
+            "Branch-specific output to preserve"
+          ]
+        },
+        {
+          "column_width_percentages": [
             15,
             34,
             51
           ],
-          "index": 14,
+          "index": 16,
           "signature": [
             "Symbol or term",
             "Student reading",
@@ -661,7 +1517,7 @@
             37,
             39
           ],
-          "index": 15,
+          "index": 17,
           "signature": [
             "Symbol or term",
             "Student reading",
@@ -674,7 +1530,7 @@
             48.21,
             34.27
           ],
-          "index": 16,
+          "index": 18,
           "signature": [
             "Term",
             "Student reading",
@@ -687,7 +1543,7 @@
             42.56,
             39.27
           ],
-          "index": 17,
+          "index": 19,
           "signature": [
             "Symbol or term",
             "Student reading",
@@ -700,7 +1556,7 @@
             37,
             36
           ],
-          "index": 18,
+          "index": 20,
           "signature": [
             "Symbol or term",
             "Student reading",
@@ -709,11 +1565,72 @@
         },
         {
           "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 21,
+          "minimum_body_row_height_inches": 0.5,
+          "signature": [
+            "Translation field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 22,
+          "minimum_body_row_height_inches": 0.85,
+          "signature": [
+            "Science-action field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 23,
+          "minimum_body_row_height_inches": 0.48,
+          "signature": [
+            "Empirical-claim field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 24,
+          "minimum_body_row_height_inches": 0.48,
+          "signature": [
+            "Empirical-claim field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 25,
+          "minimum_body_row_height_inches": 0.58,
+          "signature": [
+            "Comparison field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
             38,
             31,
             31
           ],
-          "index": 19,
+          "index": 26,
+          "minimum_body_row_height_inches": 0.62,
           "signature": [
             "Question",
             "Theory A",
@@ -722,84 +1639,351 @@
         },
         {
           "column_width_percentages": [
-            14,
-            17,
-            17,
-            17,
-            11,
-            24
+            32,
+            68
           ],
-          "index": 20,
+          "index": 27,
+          "minimum_body_row_height_inches": 0.6,
           "signature": [
-            "Candidate",
-            "Endogenous capacity",
-            "External dependence",
-            "Role completeness",
-            "Stability",
-            "Included in frozen family?"
+            "Argument-map field",
+            "Response"
           ]
         },
         {
           "column_width_percentages": [
-            16.98,
-            21.64,
-            17.79,
-            16.98,
-            26.61
+            32,
+            68
           ],
-          "index": 21,
+          "index": 28,
+          "minimum_body_row_height_inches": 0.55,
           "signature": [
-            "Diagnostic case",
-            "Full-model prediction",
-            "Rival prediction",
-            "Why they differ",
-            "Observation that adjudicates"
+            "Diagnostic-case field",
+            "Response"
           ]
         },
         {
           "column_width_percentages": [
-            12,
-            20,
-            14,
-            14,
-            14,
-            14,
-            12
+            32,
+            68
           ],
-          "index": 22,
+          "index": 29,
+          "minimum_body_row_height_inches": 0.48,
           "signature": [
-            "Construct",
-            "Operational definition",
-            "Estimator",
-            "Calibration domain",
-            "Validity envelope",
-            "Main confound",
-            "Stress test"
+            "Disagreement-contract field",
+            "Response"
           ]
         },
         {
           "column_width_percentages": [
-            29.92,
-            24.3,
-            21.47,
-            24.3
+            32,
+            68
           ],
-          "index": 23,
+          "index": 30,
+          "minimum_body_row_height_inches": 0.58,
           "signature": [
-            "Control",
-            "Confound it detects",
-            "Expected pattern",
-            "Failure consequence"
+            "Rehearsal record",
+            "Team entry"
           ]
         },
         {
           "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 31,
+          "minimum_body_row_height_inches": 0.85,
+          "signature": [
+            "Reviewer record",
+            "Entry"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 32,
+          "minimum_body_row_height_inches": 0.58,
+          "signature": [
+            "Cover field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 33,
+          "minimum_body_row_height_inches": 0.7,
+          "signature": [
+            "Project-provenance field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 34,
+          "minimum_body_row_height_inches": 0.62,
+          "signature": [
+            "Collaboration field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            14,
+            30,
+            56
+          ],
+          "index": 35,
+          "minimum_body_row_height_inches": 0.78,
+          "signature": [
+            "Checkpoint",
+            "Chair/facilitator",
+            "Other role assignments or changes"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 36,
+          "minimum_body_row_height_inches": 0.72,
+          "signature": [
+            "Governance and fairness field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 37,
+          "minimum_body_row_height_inches": 0.72,
+          "signature": [
+            "Branch-decision field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 38,
+          "minimum_body_row_height_inches": 0.55,
+          "signature": [
+            "Target-and-scope field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 39,
+          "minimum_body_row_height_inches": 0.7,
+          "signature": [
+            "Claim-license field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 40,
+          "minimum_body_row_height_inches": 0.72,
+          "signature": [
+            "Candidate-record field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 41,
+          "minimum_body_row_height_inches": 0.7,
+          "signature": [
+            "Boundary-decision field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 42,
+          "minimum_body_row_height_inches": 0.75,
+          "signature": [
+            "Bearer-and-viability field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            24,
             38,
-            18,
-            18,
-            26
+            38
           ],
-          "index": 24,
+          "index": 43,
+          "minimum_body_row_height_inches": 0.62,
+          "signature": [
+            "Matched-model field",
+            "Full model",
+            "Primary rival"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 44,
+          "minimum_body_row_height_inches": 0.68,
+          "signature": [
+            "Diagnostic-prediction field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 45,
+          "minimum_body_row_height_inches": 0.62,
+          "signature": [
+            "Diagnostic-program field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 46,
+          "minimum_body_row_height_inches": 0.62,
+          "signature": [
+            "Construct-record field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 47,
+          "minimum_body_row_height_inches": 0.45,
+          "signature": [
+            "Measurement-rule field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 48,
+          "minimum_body_row_height_inches": 0.65,
+          "signature": [
+            "Intervention-specification field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 49,
+          "minimum_body_row_height_inches": 0.6,
+          "signature": [
+            "Selectivity-and-rescue field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            76.0
+          ],
+          "index": 50,
+          "minimum_body_row_height_inches": 4.5,
+          "signature": [
+            "Causal diagram - draw here or attach a labeled page"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 51,
+          "minimum_body_row_height_inches": 0.65,
+          "signature": [
+            "Causal-audit field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 52,
+          "minimum_body_row_height_inches": 0.68,
+          "signature": [
+            "Control-record field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 53,
+          "minimum_body_row_height_inches": 0.7,
+          "signature": [
+            "Falsification-commitment field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 54,
+          "minimum_body_row_height_inches": 0.48,
+          "signature": [
+            "Anchor registry",
+            "Identity, source, and genealogy"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            34,
+            17,
+            17,
+            32
+          ],
+          "index": 55,
+          "minimum_body_row_height_inches": 0.46,
           "signature": [
             "Dependency question",
             "Anchor 1",
@@ -809,49 +1993,382 @@
         },
         {
           "column_width_percentages": [
-            25.38,
-            15.01,
-            17.99,
-            15.01,
-            26.61
+            32,
+            68
           ],
-          "index": 25,
+          "index": 56,
+          "minimum_body_row_height_inches": 0.68,
           "signature": [
-            "Observed pattern",
-            "License checks",
-            "Scientific outcome",
-            "Claim affected",
-            "Required revision or next study"
+            "Partition-and-blinding field",
+            "Response"
           ]
         },
         {
           "column_width_percentages": [
-            16,
-            17,
-            18,
-            14,
-            16,
-            19
+            32,
+            68
           ],
-          "index": 26,
+          "index": 57,
+          "minimum_body_row_height_inches": 0.58,
           "signature": [
-            "Reviewer concern",
-            "Category",
-            "Team response",
-            "Change made",
-            "Accepted by reviewer?",
-            "Residual limitation"
+            "Quantitative-plan field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 58,
+          "minimum_body_row_height_inches": 0.58,
+          "signature": [
+            "Reproducibility-plan field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 59,
+          "minimum_body_row_height_inches": 0.7,
+          "signature": [
+            "Branch-status field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 60,
+          "minimum_body_row_height_inches": 0.72,
+          "signature": [
+            "Outcome-record field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 61,
+          "minimum_body_row_height_inches": 0.65,
+          "signature": [
+            "Transport-bridge field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 62,
+          "minimum_body_row_height_inches": 0.7,
+          "signature": [
+            "Transport-decision field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 63,
+          "minimum_body_row_height_inches": 0.62,
+          "signature": [
+            "Character-bridge foundation field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 64,
+          "minimum_body_row_height_inches": 0.65,
+          "signature": [
+            "Character-bridge result field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 65,
+          "minimum_body_row_height_inches": 0.58,
+          "signature": [
+            "Schematic-trial design field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 66,
+          "minimum_body_row_height_inches": 0.62,
+          "signature": [
+            "Schematic-trial outcome field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 67,
+          "minimum_body_row_height_inches": 0.6,
+          "signature": [
+            "Ethics-and-feasibility field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            18,
+            82
+          ],
+          "index": 68,
+          "minimum_body_row_height_inches": 1.2,
+          "signature": [
+            "Scientific outcome",
+            "Proportional practical action and rationale"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 69,
+          "minimum_body_row_height_inches": 0.8,
+          "signature": [
+            "Red-team record field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            82,
+            6,
+            6,
+            6
+          ],
+          "index": 70,
+          "minimum_body_row_height_inches": 0.38,
+          "signature": [
+            "Audit item",
+            "Yes",
+            "No",
+            "N/A"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            82,
+            6,
+            6,
+            6
+          ],
+          "index": 71,
+          "minimum_body_row_height_inches": 0.38,
+          "signature": [
+            "Audit item",
+            "Yes",
+            "No",
+            "N/A"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            20,
+            40,
+            40
+          ],
+          "index": 72,
+          "minimum_body_row_height_inches": 0.8,
+          "signature": [
+            "Checklist item",
+            "No consequence or N/A rationale",
+            "Replacement diagnostic leverage or required repair"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 73,
+          "minimum_body_row_height_inches": 1.0,
+          "signature": [
+            "Final-claim field",
+            "Response"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            16.54,
+            42.33,
+            41.13
+          ],
+          "index": 74,
+          "signature": [
+            "Checkpoint",
+            "Team deliverable",
+            "Review team must provide"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            30.0,
+            12.0,
+            58.0
+          ],
+          "index": 75,
+          "signature": [
+            "Dimension",
+            "Weight",
+            "What strong work makes visible"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            30.0,
+            12.0,
+            58.0
+          ],
+          "index": 76,
+          "signature": [
+            "Level",
+            "Anchor",
+            "Typical evidence in the submission"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            20,
+            43,
+            37
+          ],
+          "index": 77,
+          "signature": [
+            "Collaboration dimension",
+            "Auditable evidence",
+            "Indicator requiring revision"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            34.77,
+            36.43,
+            28.79
+          ],
+          "index": 78,
+          "signature": [
+            "Corpus item",
+            "Baseline date or version",
+            "Verification source"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            32,
+            68
+          ],
+          "index": 79,
+          "minimum_body_row_height_inches": 0.48,
+          "signature": [
+            "Reading-record field",
+            "Response"
           ]
         }
+      ],
+      "worksheet_headings": [
+        "Blank notation translation",
+        "Worksheet B1 - Science-action separation",
+        "Empirical-claim annotation sheet",
+        "Worksheet B2 - Empirical-claim license continuation",
+        "Worksheet C1 - Common-question record",
+        "Worksheet C2 - Symmetry audit",
+        "Worksheet C3 - Objection map",
+        "Worksheet C4 - Diagnostic-case record",
+        "Worksheet C5 - Disagreement contract",
+        "Worksheet C6 - Fair-comparison rehearsal record",
+        "Worksheet C6b - Peer review and advocate approvals",
+        "Cover record",
+        "Worksheet Cover 2 - Provenance and inspection record",
+        "A. Collaboration charter",
+        "Worksheet A2 - Role-rotation matrix",
+        "Worksheet A3 - Governance and fairness continuation",
+        "B. Select one capstone branch",
+        "C. Exact target and scope",
+        "Worksheet Capstone C2 - Claim-license continuation",
+        "D. Boundary and viability record",
+        "Worksheet D2 - Boundary and viability decisions",
+        "Worksheet D3 - Bearer resolution and viability decisions",
+        "E. Full and rival models",
+        "Worksheet E2 - Diagnostic predictions",
+        "F. Construct and measurement validity",
+        "Worksheet F2 - Measurement decision rules",
+        "G. Intervention and selectivity",
+        "Worksheet G2 - Preservation, selectivity, and rescue",
+        "H. Causal diagram audit",
+        "Worksheet H2 - Causal-path audit questions",
+        "I. Negative controls and falsification criteria",
+        "Worksheet I2 - Falsification commitments",
+        "J. Anchor-independence ledger",
+        "Worksheet J2 - Data partition and blinding plan",
+        "K. Quantitative and reproducibility plan",
+        "Worksheet K2 - Missingness, simulation, and reproducibility",
+        "L. Outcome vocabulary and pattern plan",
+        "Worksheet L2 - Outcome-to-revision record",
+        "M. Transport audit, if applicable",
+        "Worksheet M2 - Transport result and scope limit",
+        "N. Phenomenal-character bridge, if applicable",
+        "Worksheet N2 - Held-out deformation and bridge result",
+        "O. Schematic-competence audit, if applicable",
+        "Worksheet O2 - Blind outcomes, competence, and limits",
+        "P. Ethics, feasibility, and practical action",
+        "Worksheet P2 - Outcome-to-action record",
+        "Q. Red-team disposition log",
+        "R. Final preregistration audit checklist",
+        "Worksheet R1b - Final preregistration audit checklist continuation",
+        "Worksheet R2 - Checklist exceptions and N/A rationales",
+        "Worksheet R3 - Final claims and unresolved items",
+        "Reading-record template"
       ]
     }
   },
-  "schema": 1,
+  "release": {
+    "edition": "1.1",
+    "pdf": {
+      "bytes": 2983998,
+      "pages": 230,
+      "public_path": "public/teaching/student-textbook/1.1/learning-c0-n-star-student-textbook.pdf",
+      "public_url": "/teaching/student-textbook/1.1/learning-c0-n-star-student-textbook.pdf",
+      "sha256": "cb58b0052d50b39a4edc7012d268a47fe47342c34b9141f5a1063f511150223c"
+    },
+    "public_publish_mode": "replaced-by-explicit-override",
+    "replacement_override_env": "C0_TEXTBOOK_ALLOW_PUBLIC_REPLACE"
+  },
+  "schema": 2,
   "sources": {
-    "student-textbook/drafts/chapters-01-05.md": "55046211f655e66d59283b80251a8855763c5c3c984160b338f2c18189b9267b",
-    "student-textbook/drafts/chapters-06-10.md": "2104b5bc49544544d6ee9ea5a038ae290c01f2119d2ff579d890a048ded12a55",
-    "student-textbook/drafts/chapters-11-14-and-backmatter.md": "6aa9f76b5dffb3d6ad0d4e1ea60082410c47ef3a810ecc92801d932c520a4e51",
-    "student-textbook/frontmatter.md": "ef0f4f63897378728b9ce1a75aa672afa9fc559b3320cae56e41f2ce4cb4e4f1"
+    "student-textbook/drafts/chapters-01-05.md": "07d71572235bba43109c9e69967d38ceac624ccbb7c57db4374edc7aaf3705f1",
+    "student-textbook/drafts/chapters-06-10.md": "9497d8ca58e26f6cdbc21e096eeede089253028dc5b051401f9263db170697bf",
+    "student-textbook/drafts/chapters-11-14-and-backmatter.md": "364b511e62e15c3895fe849d3d8c2069de4f34901a99fd63875861333a9ee41d",
+    "student-textbook/frontmatter.md": "2319a1c37bde49895828d8a927d95a3c5612e43f41c2abaea10940415711d716"
   },
   "title": "Learning C\u00f8 / N*: A Student Textbook of Phenomenal Presence",
   "tools": {

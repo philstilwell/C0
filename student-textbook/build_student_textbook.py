@@ -20,6 +20,7 @@ import subprocess
 import sys
 import tempfile
 import zipfile
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
@@ -61,10 +62,19 @@ PDF_OUT = PROJECT / "output" / "pdf" / "learning-c0-n-star-student-textbook.pdf"
 MANIFEST_OUT = PROJECT / "output" / "student-textbook-build-manifest.json"
 
 TITLE = "Learning Cø / N*: A Student Textbook of Phenomenal Presence"
-EDITION = "1.0"
+EDITION = "1.1"
 CORPUS_BASELINE = "July 18, 2026"
 BODY_FONT = os.environ.get("C0_TEXTBOOK_BODY_FONT", "Liberation Serif")
 DISPLAY_FONT = os.environ.get("C0_TEXTBOOK_DISPLAY_FONT", "Liberation Sans")
+PUBLIC_PDF_OUT = (
+    PROJECT
+    / "public"
+    / "teaching"
+    / "student-textbook"
+    / EDITION
+    / PDF_OUT.name
+)
+ALLOW_PUBLIC_REPLACE_ENV = "C0_TEXTBOOK_ALLOW_PUBLIC_REPLACE"
 
 # Exact samples from the user-supplied five-swatch image.
 BURGUNDY = "601D1F"
@@ -99,7 +109,7 @@ EXPECTED_CHAPTERS = {
 }
 
 CHAPTER_PATTERN = re.compile(
-    r"^#\s+Chapter\s+(\d+)\s*(?:[—–:-])\s*(.+?)\s*$", re.MULTILINE
+    r"^#\s+Chapter\s+(\d+)\s+-\s+(.+?)\s*$", re.MULTILINE
 )
 FORBIDDEN_PATTERNS = {
     "instructor key": re.compile(r"\binstructor\s+key\b", re.I),
@@ -109,6 +119,64 @@ FORBIDDEN_PATTERNS = {
     "provided solution": re.compile(r"\b(?:correct|model)\s+answer\s*:", re.I),
     "placeholder": re.compile(r"\b(?:TODO|TBD|FIXME|lorem ipsum)\b", re.I),
 }
+
+# The document/PDF production policy uses ASCII hyphens only. Reject Unicode
+# dash variants because they are visually confusable and layout-sensitive.
+UNSAFE_UNICODE_DASHES = {
+    "\u058a": "ARMENIAN HYPHEN",
+    "\u1806": "MONGOLIAN TODO SOFT HYPHEN",
+    "\u2010": "HYPHEN",
+    "\u2011": "NON-BREAKING HYPHEN",
+    "\u2012": "FIGURE DASH",
+    "\u2013": "EN DASH",
+    "\u2014": "EM DASH",
+    "\u2015": "HORIZONTAL BAR",
+    "\u2043": "HYPHEN BULLET",
+    "\u2e17": "DOUBLE OBLIQUE HYPHEN",
+    "\ufe58": "SMALL EM DASH",
+    "\ufe63": "SMALL HYPHEN-MINUS",
+    "\uff0d": "FULLWIDTH HYPHEN-MINUS",
+}
+
+SOURCE_CALLOUT_PATTERNS = {
+    "Source note": re.compile(r"^\*\*Source note\.\*\*\s+\S.*$", re.I | re.M),
+    "Context note": re.compile(r"^\*\*Context note\.\*\*\s+\S.*$", re.I | re.M),
+    "Research-status note": re.compile(
+        r"^\*\*Research-status note\.\*\*\s+\S.*$", re.I | re.M
+    ),
+}
+
+THOUGHT_EXPERIMENT_HEADING = re.compile(
+    r"^###\s+Thought experiment:\s+\S.+\s*$", re.I | re.M
+)
+PRACTICE_HEADING_PATTERNS = {
+    "Quick checks": re.compile(r"^###\s+Quick checks\s*$", re.I | re.M),
+    "Individual transfer": re.compile(
+        r"^###\s+Individual(?:\s+transfer(?:\s+task)?)?(?::\s*.+)?\s*$",
+        re.I | re.M,
+    ),
+    "Collaborative work": re.compile(
+        r"^###\s+Collaborative\s+(?:exercise(?:\s+and\s+discussion)?|discussion)"
+        r"(?::\s*.+)?\s*$",
+        re.I | re.M,
+    ),
+    "Counterexample challenge": re.compile(
+        r"^###\s+Counterexample challenge\s*$", re.I | re.M
+    ),
+    "Exit ticket": re.compile(r"^###\s+Exit ticket\s*$", re.I | re.M),
+}
+
+STANDALONE_WORKSHEET_HEADINGS = {
+    "Blank notation translation",
+    "Empirical-claim annotation sheet",
+    "Reading-record template",
+}
+FORCED_PAGE_BREAK_HEADINGS = {
+    "2. Reconstruct before criticizing",
+    "4. Distinguish kinds of disagreement",
+    "Discussion norms for difficult topics",
+}
+APPENDIX_D_SECTION = re.compile(r"^(?:Cover(?:\s+record)?|[A-R]\.\s+\S.+)$", re.I)
 
 
 def run(*args: str, cwd: Path | None = None) -> subprocess.CompletedProcess[str]:
@@ -153,6 +221,167 @@ def word_count(text: str) -> int:
     return len(re.findall(r"\b[\wÀ-ÖØ-öø-ÿ*øØ]+(?:[-’'][\wÀ-ÖØ-öø-ÿ*]+)*\b", without_code))
 
 
+def env_flag(name: str) -> bool:
+    return os.environ.get(name, "").strip().casefold() in {"1", "true", "yes", "on"}
+
+
+def normalize_heading(text: str) -> str:
+    text = text.strip().rstrip("#").strip()
+    text = text.replace("\\*", "*")
+    text = re.sub(r"[*_`]", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def unsafe_unicode_dash_report(text: str, *, artifact: str) -> dict[str, object]:
+    findings: list[dict[str, object]] = []
+    for character, name in UNSAFE_UNICODE_DASHES.items():
+        for match in re.finditer(re.escape(character), text):
+            findings.append(
+                {
+                    "name": name,
+                    "codepoint": f"U+{ord(character):04X}",
+                    "line": text.count("\n", 0, match.start()) + 1,
+                }
+            )
+    if findings:
+        preview = ", ".join(
+            f"{item['codepoint']} {item['name']} at line {item['line']}"
+            for item in findings[:6]
+        )
+        raise ValueError(f"{artifact} contains unsafe Unicode dash characters: {preview}")
+    return {
+        "status": "passed",
+        "rejected_codepoints": [
+            f"U+{ord(character):04X}" for character in UNSAFE_UNICODE_DASHES
+        ],
+        "policy": "ASCII hyphens only; Unicode dash variants are rejected",
+    }
+
+
+def relative_luminance(hex_color: str) -> float:
+    channels = [int(hex_color[index : index + 2], 16) / 255 for index in (0, 2, 4)]
+    linear = [
+        channel / 12.92
+        if channel <= 0.04045
+        else ((channel + 0.055) / 1.055) ** 2.4
+        for channel in channels
+    ]
+    return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+
+
+def contrast_ratio(foreground: str, background: str) -> float:
+    lighter, darker = sorted(
+        (relative_luminance(foreground), relative_luminance(background)), reverse=True
+    )
+    return (lighter + 0.05) / (darker + 0.05)
+
+
+def validate_palette_contrast() -> dict[str, object]:
+    checks = (
+        ("body text on paper", ESPRESSO, PAPER, 7.0),
+        ("title text on paper", BURGUNDY, PAPER, 7.0),
+        ("heading text on pale gold", BURGUNDY, PALE_GOLD, 7.0),
+        ("table-header text", PALE_GOLD, ESPRESSO, 7.0),
+        ("secondary heading text", UMBER, PALE_GOLD, 4.5),
+        ("body text on sandstone", ESPRESSO, SANDSTONE, 4.5),
+    )
+    results = []
+    for label, foreground, background, minimum in checks:
+        ratio = contrast_ratio(foreground, background)
+        if ratio + 1e-9 < minimum:
+            raise ValueError(
+                f"Palette contrast failure for {label}: {ratio:.2f}:1 < {minimum:.1f}:1"
+            )
+        results.append(
+            {
+                "use": label,
+                "foreground": f"#{foreground}",
+                "background": f"#{background}",
+                "ratio": round(ratio, 2),
+                "minimum": minimum,
+            }
+        )
+    return {"standard": "WCAG 2.x contrast-ratio calculation", "checks": results}
+
+
+def worksheet_registry(markdown: str) -> list[dict[str, object]]:
+    headings = list(re.finditer(r"^(#{1,6})\s+(.+?)\s*$", markdown, re.M))
+    records: list[dict[str, object]] = []
+    in_appendix_d = False
+    for index, match in enumerate(headings):
+        level = len(match.group(1))
+        title = normalize_heading(match.group(2))
+        if level == 1:
+            in_appendix_d = title == "Appendix D - Student Capstone Workbook"
+
+        kind: str | None = None
+        if level == 2 and title in STANDALONE_WORKSHEET_HEADINGS:
+            kind = "standalone worksheet"
+        elif level == 3 and title.casefold().startswith("worksheet"):
+            kind = "worksheet heading"
+        elif level == 2 and in_appendix_d and APPENDIX_D_SECTION.fullmatch(title):
+            kind = "Appendix D workbook page"
+        if kind is None:
+            continue
+
+        next_start = headings[index + 1].start() if index + 1 < len(headings) else len(markdown)
+        following = markdown[match.end() : next_start]
+        lines = following.splitlines()
+        while lines and (not lines[0].strip() or lines[0].strip() == r"\newpage"):
+            lines.pop(0)
+        introductory_lines: list[str] = []
+        for line in lines:
+            stripped = line.strip()
+            if not stripped:
+                break
+            if re.match(r"^(?:[-+*]\s|\d+[.)]\s|>|\||```|~~~)", stripped):
+                break
+            introductory_lines.append(stripped)
+        introduction = " ".join(introductory_lines)
+        intro_words = word_count(re.sub(r"[*_`]", "", introduction))
+        records.append(
+            {
+                "title": title,
+                "level": level,
+                "kind": kind,
+                "source_line": markdown.count("\n", 0, match.start()) + 1,
+                "introduction_words": intro_words,
+            }
+        )
+
+    duplicate_titles = sorted(
+        title
+        for title in {record["title"] for record in records}
+        if sum(record["title"] == title for record in records) > 1
+    )
+    if duplicate_titles:
+        raise ValueError(f"Worksheet headings are not unique: {duplicate_titles}")
+    weak_introductions = [
+        record for record in records if int(record["introduction_words"]) < 8
+    ]
+    if weak_introductions:
+        details = ", ".join(
+            f"{record['title']} (line {record['source_line']})"
+            for record in weak_introductions
+        )
+        raise ValueError(f"Worksheet needs an introductory explanation of at least 8 words: {details}")
+
+    appendix_d_records = [
+        record for record in records if record["kind"] == "Appendix D workbook page"
+    ]
+    appendix_d_labels = {
+        "Cover" if str(record["title"]).casefold().startswith("cover") else str(record["title"])[0].upper()
+        for record in appendix_d_records
+    }
+    expected_appendix_d_labels = {"Cover", *(chr(code) for code in range(ord("A"), ord("R") + 1))}
+    if appendix_d_labels != expected_appendix_d_labels:
+        raise ValueError(
+            "Appendix D must register Cover plus Sections A-R as worksheet pages; "
+            f"found labels {sorted(appendix_d_labels)}"
+        )
+    return records
+
+
 def assemble_source() -> str:
     missing = [
         path
@@ -182,10 +411,16 @@ def chapter_sections(markdown: str) -> dict[int, tuple[str, str]]:
 
 
 def validate_source(markdown: str) -> dict[str, object]:
+    dash_qa = unsafe_unicode_dash_report(markdown, artifact="Assembled Markdown")
+    if not re.search(
+        rf'^date:\s*["\']Student edition {re.escape(EDITION)}\b', markdown, re.I | re.M
+    ):
+        raise ValueError(f"Front matter does not identify Student edition {EDITION}")
+
     sections = chapter_sections(markdown)
     if set(sections) != set(EXPECTED_CHAPTERS):
         raise ValueError(
-            f"Expected chapters 1–14 exactly; found {sorted(sections)}"
+            f"Expected chapters 1-14 exactly; found {sorted(sections)}"
         )
 
     chapter_qa: dict[str, object] = {}
@@ -216,11 +451,13 @@ def validate_source(markdown: str) -> dict[str, object]:
             raise ValueError("Chapter 14 needs a forward-looking final section")
 
         analogy_limits = len(re.findall(r"\*\*Where the analogy breaks\.\*\*", body, re.I))
-        thought_experiments = len(re.findall(r"thought experiment", body, re.I))
+        thought_experiments = len(THOUGHT_EXPERIMENT_HEADING.findall(body))
         if analogy_limits < 2:
             raise ValueError(f"Chapter {number} needs at least two analogy-limit annotations")
         if thought_experiments < 2:
-            raise ValueError(f"Chapter {number} needs at least two thought experiments")
+            raise ValueError(
+                f"Chapter {number} needs at least two exact Thought experiment headings"
+            )
 
         annotations = {
             label: len(re.findall(rf"\*\*{re.escape(label)}\.\*\*", body, re.I))
@@ -237,23 +474,39 @@ def validate_source(markdown: str) -> dict[str, object]:
         if deficient:
             raise ValueError(f"Chapter {number} lacks required annotations: {', '.join(deficient)}")
 
-        studio = body.split("## Practice studio", 1)[1]
-        for marker in (
-            "Quick check",
-            "Individual",
-            "Collaborative",
-            "Counterexample",
-            "Exit ticket",
-        ):
-            if marker.casefold() not in studio.casefold():
-                raise ValueError(f"Chapter {number} practice studio lacks {marker!r}")
+        studio_match = re.search(r"^##\s+Practice studio\s*$", body, re.I | re.M)
+        if studio_match is None:
+            raise ValueError(f"Chapter {number} has no exact Practice studio heading")
+        studio_tail = body[studio_match.end() :]
+        next_h2 = re.search(r"^##\s+", studio_tail, re.M)
+        studio = studio_tail[: next_h2.start()] if next_h2 else studio_tail
+        practice_headings: dict[str, int] = {}
+        for label, pattern in PRACTICE_HEADING_PATTERNS.items():
+            count = len(pattern.findall(studio))
+            if count < 1:
+                raise ValueError(
+                    f"Chapter {number} Practice studio needs at least one exact {label} heading; "
+                    f"found {count}"
+                )
+            practice_headings[label] = count
+
+        research_callouts = {
+            label: len(pattern.findall(body))
+            for label, pattern in SOURCE_CALLOUT_PATTERNS.items()
+        }
+        if sum(research_callouts.values()) < 1:
+            raise ValueError(
+                f"Chapter {number} needs at least one Source, Context, or Research-status note"
+            )
 
         chapter_qa[str(number)] = {
             "title": title,
             "words": words,
             "analogy_limit_annotations": analogy_limits,
-            "thought_experiment_mentions": thought_experiments,
+            "thought_experiment_headings": thought_experiments,
             "annotations": annotations,
+            "research_callouts": research_callouts,
+            "practice_headings": practice_headings,
         }
 
     for label, pattern in FORBIDDEN_PATTERNS.items():
@@ -263,10 +516,11 @@ def validate_source(markdown: str) -> dict[str, object]:
             raise ValueError(f"Forbidden student-edition content ({label}) at line {line}")
 
     required_backmatter = (
-        "Appendix A — Notation at a Glance",
-        "Appendix B — How to Read an Empirical Claim",
-        "Appendix C — How to Argue Fairly Across Theories",
-        "Appendix D — Student Capstone Workbook",
+        "Appendix A - Notation at a Glance",
+        "Appendix B - How to Read an Empirical Claim",
+        "Appendix C - How to Argue Fairly Across Theories",
+        "Appendix D - Student Capstone Workbook",
+        "Appendix E - Capstone Assessment Guide",
         "Glossary",
         "References and Source Trail",
     )
@@ -293,10 +547,25 @@ def validate_source(markdown: str) -> dict[str, object]:
     total_words = word_count(markdown)
     if total_words < 48_000:
         raise ValueError(f"Textbook is too short for a full treatment: {total_words} words")
+    research_callout_totals = {
+        label: sum(
+            int(chapter["research_callouts"][label])
+            for chapter in chapter_qa.values()
+        )
+        for label in SOURCE_CALLOUT_PATTERNS
+    }
+    for label in ("Context note", "Research-status note"):
+        if research_callout_totals[label] < 1:
+            raise ValueError(f"The textbook needs at least one recognized {label}")
+
+    worksheets = worksheet_registry(markdown)
     return {
         "total_words": total_words,
         "chapters": chapter_qa,
         "corpus_items_named": list(corpus_coverage_tokens),
+        "research_callout_totals": research_callout_totals,
+        "worksheets": worksheets,
+        "unicode_dash_policy": dash_qa,
     }
 
 
@@ -333,6 +602,24 @@ def set_shading(element, fill: str) -> None:
         properties.append(shd)
     shd.set(qn("w:fill"), fill)
     shd.set(qn("w:val"), "clear")
+
+
+def set_cell_border(cell, color: str, *, size: int = 10) -> None:
+    """Draw a complete cell outline, including for otherwise blank writing areas."""
+    tc_pr = cell._tc.get_or_add_tcPr()
+    borders = tc_pr.find(qn("w:tcBorders"))
+    if borders is None:
+        borders = OxmlElement("w:tcBorders")
+        tc_pr.append(borders)
+    for edge in ("top", "left", "bottom", "right"):
+        node = borders.find(qn(f"w:{edge}"))
+        if node is None:
+            node = OxmlElement(f"w:{edge}")
+            borders.append(node)
+        node.set(qn("w:val"), "single")
+        node.set(qn("w:sz"), str(size))
+        node.set(qn("w:space"), "0")
+        node.set(qn("w:color"), color)
 
 
 def set_paragraph_left_border(paragraph, color: str, size: int = 18, space: int = 10) -> None:
@@ -381,6 +668,25 @@ def prevent_row_split(row) -> None:
     if cant_split is None:
         cant_split = OxmlElement("w:cantSplit")
         tr_pr.append(cant_split)
+
+
+def keep_final_table_rows_together(table) -> None:
+    """Prevent a table's final body row from becoming a one-row continuation."""
+    if len(table.rows) < 3:
+        return
+    for cell in table.rows[-2].cells:
+        for paragraph in cell.paragraphs:
+            paragraph.paragraph_format.keep_with_next = True
+
+
+def keep_table_together(table) -> None:
+    """Keep a compact semantic table on one page when its full height permits."""
+    if len(table.rows) < 2:
+        return
+    for row in table.rows[:-1]:
+        for cell in row.cells:
+            for paragraph in cell.paragraphs:
+                paragraph.paragraph_format.keep_with_next = True
 
 
 def normalized_cell_text(cell) -> str:
@@ -490,6 +796,29 @@ def semantic_column_weights(table, signature: tuple[str, ...]) -> list[float] | 
     }
     if signature in exact_profiles:
         return exact_profiles[signature]
+    if len(signature) == 2 and signature[1] in {
+        "Response",
+        "Entry",
+        "Team entry",
+        "Identity, source, and genealogy",
+    }:
+        return [32, 68]
+    if signature == ("Scientific outcome", "Proportional practical action and rationale"):
+        return [18, 82]
+    if signature == ("Matched-model field", "Full model", "Primary rival"):
+        return [24, 38, 38]
+    if signature == ("Checkpoint", "Chair/facilitator", "Other role assignments or changes"):
+        return [14, 30, 56]
+    if signature == ("Collaboration dimension", "Auditable evidence", "Indicator requiring revision"):
+        return [20, 43, 37]
+    if signature == ("Audit item", "Yes", "No", "N/A"):
+        return [82, 6, 6, 6]
+    if signature == (
+        "Checklist item",
+        "No consequence or N/A rationale",
+        "Replacement diagnostic leverage or required repair",
+    ):
+        return [20, 40, 40]
     if (
         len(signature) == 6
         and signature[0] == "Recipient class"
@@ -499,7 +828,7 @@ def semantic_column_weights(table, signature: tuple[str, ...]) -> list[float] | 
     if signature == ("Question", "Theory A", "Theory B"):
         return [38, 31, 31]
     if signature == ("Dependency question", "Anchor 1", "Anchor 2", "Corrective action"):
-        return [38, 18, 18, 26]
+        return [34, 17, 17, 32]
     if signature == ("Symbol or term", "Student reading", "Guardrail"):
         if "Resolved" in all_text:
             return [24, 37, 39]
@@ -508,6 +837,108 @@ def semantic_column_weights(table, signature: tuple[str, ...]) -> list[float] | 
         if "C0 or Cø" in all_text or "minimal phenomenal presence" in all_text:
             return [15, 34, 51]
     return None
+
+
+def worksheet_minimum_body_row_height(signature: tuple[str, ...]) -> float | None:
+    """Give fillable worksheet tables practical handwriting space."""
+    two_column_profiles: dict[str, float] = {
+        "Translation field": 0.50,
+        "Science-action field": 0.85,
+        "Empirical-claim field": 0.48,
+        "Comparison field": 0.58,
+        "Argument-map field": 0.60,
+        "Diagnostic-case field": 0.55,
+        "Disagreement-contract field": 0.48,
+        "Rehearsal record": 0.58,
+        "Reviewer record": 0.85,
+        "Cover field": 0.58,
+        "Project-provenance field": 0.70,
+        "Collaboration field": 0.62,
+        "Governance and fairness field": 0.72,
+        "Branch-decision field": 0.72,
+        "Target-and-scope field": 0.55,
+        "Claim-license field": 0.70,
+        "Candidate-record field": 0.72,
+        "Boundary-decision field": 0.70,
+        "Bearer-and-viability field": 0.75,
+        "Diagnostic-prediction field": 0.68,
+        "Diagnostic-program field": 0.62,
+        "Construct-record field": 0.62,
+        "Measurement-rule field": 0.45,
+        "Intervention-specification field": 0.65,
+        "Selectivity-and-rescue field": 0.60,
+        "Causal-audit field": 0.65,
+        "Control-record field": 0.68,
+        "Falsification-commitment field": 0.70,
+        "Anchor registry": 0.48,
+        "Partition-and-blinding field": 0.68,
+        "Quantitative-plan field": 0.58,
+        "Reproducibility-plan field": 0.58,
+        "Branch-status field": 0.70,
+        "Outcome-record field": 0.72,
+        "Transport-bridge field": 0.65,
+        "Transport-decision field": 0.70,
+        "Character-bridge foundation field": 0.62,
+        "Character-bridge result field": 0.65,
+        "Schematic-trial design field": 0.58,
+        "Schematic-trial outcome field": 0.62,
+        "Ethics-and-feasibility field": 0.60,
+        "Red-team record field": 0.80,
+        "Final-claim field": 1.00,
+        "Reading-record field": 0.48,
+    }
+    if len(signature) == 2 and signature[0] in two_column_profiles:
+        return two_column_profiles[signature[0]]
+    profiles: dict[tuple[str, ...], float] = {
+        ("Transition diagram workspace",): 4.25,
+        ("Causal diagram - draw here or attach a labeled page",): 4.50,
+        ("Question", "Theory A", "Theory B"): 0.62,
+        ("Checkpoint", "Chair/facilitator", "Other role assignments or changes"): 0.78,
+        ("Matched-model field", "Full model", "Primary rival"): 0.62,
+        ("Scientific outcome", "Proportional practical action and rationale"): 1.20,
+        ("Audit item", "Yes", "No", "N/A"): 0.38,
+        (
+            "Candidate",
+            "Endogenous capacity",
+            "External dependence",
+            "Role completeness",
+            "Stability",
+            "Included in frozen family?",
+        ): 0.62,
+        (
+            "Diagnostic case",
+            "Full-model prediction",
+            "Rival prediction",
+            "Why they differ",
+            "Observation that adjudicates",
+        ): 0.68,
+        (
+            "Construct",
+            "Operational definition",
+            "Estimator",
+            "Calibration domain",
+            "Validity envelope",
+            "Main confound",
+            "Stress test",
+        ): 0.55,
+        (
+            "Control",
+            "Confound it detects",
+            "Expected pattern",
+            "Failure consequence",
+        ): 0.58,
+        ("Dependency question", "Anchor 1", "Anchor 2", "Corrective action"): 0.46,
+        (
+            "Observed pattern",
+            "License checks",
+            "Study disposition",
+            "Branch-specific output(s)",
+            "Claim affected",
+            "Required revision or next study",
+        ): 0.42,
+        ("Checklist item", "No consequence or N/A rationale", "Replacement diagnostic leverage or required repair"): 0.80,
+    }
+    return profiles.get(signature)
 
 
 def set_fixed_table_columns(table, weights: list[float], total_inches: float = 5.44) -> None:
@@ -713,18 +1144,25 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
         "Why it matters.": (CREAM, UMBER),
         "Do not infer.": (BLUSH, BURGUNDY),
         "Method note.": (MUSHROOM, ESPRESSO),
+        "Materials.": (MUSHROOM, ESPRESSO),
         "Checkpoint.": (PALE_GOLD, UMBER),
         "Where the analogy breaks.": (MUSHROOM, SANDSTONE),
-        "Source note:": (CREAM, SANDSTONE),
+        "Source note.": (CREAM, SANDSTONE),
+        "Context note.": (PALE_GOLD, UMBER),
+        "Research-status note.": (BLUSH, BURGUNDY),
     }
     callout_counts = {label: 0 for label in callout_specs}
+    worksheet_headings: list[str] = []
     chapter_count = 0
+    in_appendix_d = False
+    in_contextual_readings = False
     for paragraph in document.paragraphs:
         next_sibling = paragraph._p.getnext()
         if next_sibling is not None and next_sibling.tag == qn("w:tbl"):
             paragraph.paragraph_format.keep_with_next = True
         text = paragraph.text.strip()
         if paragraph.style.name == "Heading 1":
+            in_appendix_d = normalize_heading(text) == "Appendix D - Student Capstone Workbook"
             set_shading(paragraph._p, PALE_GOLD if text.startswith("Chapter ") else CREAM)
             set_paragraph_left_border(paragraph, BURGUNDY, size=26, space=12)
             paragraph.paragraph_format.left_indent = Inches(0.14)
@@ -733,8 +1171,25 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
             paragraph.paragraph_format.space_after = Pt(14)
             if text.startswith("Chapter "):
                 chapter_count += 1
-        if paragraph.style.name == "Heading 2" and text == "Empirical-claim annotation sheet":
+        normalized_text = normalize_heading(text)
+        if normalized_text in FORCED_PAGE_BREAK_HEADINGS:
             paragraph.paragraph_format.page_break_before = True
+        if paragraph.style.name == "Heading 2":
+            in_contextual_readings = normalized_text == "Selected contextual readings"
+        is_worksheet = (
+            paragraph.style.name == "Heading 2"
+            and normalized_text in STANDALONE_WORKSHEET_HEADINGS
+        ) or (
+            paragraph.style.name == "Heading 3"
+            and normalized_text.casefold().startswith("worksheet")
+        ) or (
+            paragraph.style.name == "Heading 2"
+            and in_appendix_d
+            and APPENDIX_D_SECTION.fullmatch(normalized_text) is not None
+        )
+        if is_worksheet:
+            paragraph.paragraph_format.page_break_before = True
+            worksheet_headings.append(normalized_text)
         if paragraph.style.name == "Block Text":
             set_shading(paragraph._p, CREAM)
             set_paragraph_left_border(paragraph, BURGUNDY)
@@ -751,16 +1206,14 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
                 for run in paragraph.runs:
                     set_run_font(run, BODY_FONT, 9.9)
                 break
-        if text.startswith(("[Source note:", "[Context note:", "[Research-status note:")) and text.endswith("]"):
-            set_shading(paragraph._p, CREAM)
-            set_paragraph_left_border(paragraph, SANDSTONE, size=12, space=8)
-            paragraph.paragraph_format.left_indent = Inches(0.16)
-            paragraph.paragraph_format.right_indent = Inches(0.12)
-            for run in paragraph.runs:
-                set_run_font(run, BODY_FONT, 9.2)
-                run.font.italic = True
         if paragraph._p.xpath(".//w:drawing"):
             paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        if in_contextual_readings and not paragraph.style.name.startswith("Heading"):
+            paragraph.paragraph_format.space_after = Pt(1.5)
+            paragraph.paragraph_format.line_spacing = 0.98
+            paragraph.paragraph_format.keep_together = True
+            for run in paragraph.runs:
+                set_run_font(run, BODY_FONT, 9.2)
         for run in paragraph.runs:
             if run.font.name is None:
                 set_run_font(run, BODY_FONT)
@@ -768,6 +1221,15 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
     # Keep the final pair of items together so a lone objective or key term is
     # not stranded, while still allowing a substantial list to paginate well.
     paragraphs = document.paragraphs
+    for paragraph_index, paragraph in enumerate(paragraphs):
+        if not paragraph.text.strip().startswith("Where the analogy breaks."):
+            continue
+        for previous_index in range(paragraph_index - 1, -1, -1):
+            previous = paragraphs[previous_index]
+            if previous.text.strip():
+                previous.paragraph_format.keep_with_next = True
+                break
+
     index = 0
     while index < len(paragraphs):
         if not paragraphs[index]._p.xpath(".//w:numPr"):
@@ -785,8 +1247,39 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
             for item in group[:-1]:
                 item.paragraph_format.keep_with_next = True
         elif 1 < len(group) <= 8 and sum(len(item.text) for item in group) <= 1000:
+            for item in group[:-1]:
+                item.paragraph_format.keep_with_next = True
+        index = end
+
+    # Consecutive thought-experiment stages are one reasoning sequence. Keep a
+    # compact sequence together, or at minimum prevent a terminal stage from
+    # appearing alone on the following page.
+    stage_pattern = re.compile(r"^Stage\s+\d+\.", re.I)
+    index = 0
+    while index < len(paragraphs):
+        if not stage_pattern.match(paragraphs[index].text.strip()):
+            index += 1
+            continue
+        end = index
+        while end < len(paragraphs) and stage_pattern.match(paragraphs[end].text.strip()):
+            paragraphs[end].paragraph_format.keep_together = True
+            end += 1
+        group = paragraphs[index:end]
+        if 1 < len(group) <= 6 and sum(len(item.text) for item in group) <= 1600:
+            for item in group[:-1]:
+                item.paragraph_format.keep_with_next = True
+        elif len(group) > 1:
             group[-2].paragraph_format.keep_with_next = True
         index = end
+
+    for paragraph_index, paragraph in enumerate(paragraphs):
+        if not paragraph.text.strip().startswith("The thought experiment highlights"):
+            continue
+        for previous_index in range(paragraph_index - 1, -1, -1):
+            previous = paragraphs[previous_index]
+            if previous.text.strip():
+                previous.paragraph_format.keep_with_next = True
+                break
 
     # A short setup line belongs with the first substantive item it introduces.
     # This blocks page bottoms such as a section heading plus one lead sentence,
@@ -813,14 +1306,41 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
     # Key-term definitions are compact reference units; splitting one across
     # pages makes a chapter review harder to scan and can create one-line widows.
     in_key_terms = False
+    current_chapter_number: int | None = None
+    compact_end_chapters = {8, 10, 13}
     for paragraph in paragraphs:
         text = paragraph.text.strip()
+        if paragraph.style.name == "Heading 1":
+            chapter_match = re.match(r"Chapter\s+(\d+)\b", text)
+            current_chapter_number = int(chapter_match.group(1)) if chapter_match else None
         if paragraph.style.name == "Heading 2":
             in_key_terms = text == "Key terms"
+            if current_chapter_number in compact_end_chapters and text in {
+                "Key terms",
+                "Looking ahead",
+            }:
+                paragraph.paragraph_format.space_before = Pt(8)
+                paragraph.paragraph_format.space_after = Pt(3)
             continue
         if paragraph.style.name == "Heading 1":
             in_key_terms = False
         if in_key_terms and text:
+            paragraph.paragraph_format.keep_together = True
+            if current_chapter_number in compact_end_chapters:
+                paragraph.paragraph_format.space_after = Pt(1.5)
+                paragraph.paragraph_format.line_spacing = 0.98
+                for run in paragraph.runs:
+                    set_run_font(run, BODY_FONT, 9.4)
+
+    in_chapter_summary = False
+    for paragraph in paragraphs:
+        text = paragraph.text.strip()
+        if paragraph.style.name == "Heading 2":
+            in_chapter_summary = normalize_heading(text) == "Chapter summary"
+            continue
+        if paragraph.style.name.startswith("Heading"):
+            in_chapter_summary = False
+        if in_chapter_summary and text:
             paragraph.paragraph_format.keep_together = True
 
     # LibreOffice does not consistently preserve inherited widow control.
@@ -845,15 +1365,28 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
         if not any(signature):
             continue
         weights = semantic_column_weights(table, signature) or content_aware_column_weights(table)
+        minimum_body_row_height = worksheet_minimum_body_row_height(signature)
+        is_causal_drawing_box = len(signature) == 1 and signature[0] in {
+            "Transition diagram workspace",
+            "Causal diagram - draw here or attach a labeled page",
+        }
         set_fixed_table_columns(table, weights)
         table.alignment = WD_TABLE_ALIGNMENT.CENTER
         repeat_table_header(table.rows[0])
         for row_index, row in enumerate(table.rows):
             prevent_row_split(row)
+            if row_index > 0 and minimum_body_row_height is not None:
+                row.height = Inches(minimum_body_row_height)
+                row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
             for cell in row.cells:
                 cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
                 set_cell_margins(cell, top=60, bottom=60, start=70, end=70)
-                set_shading(cell._tc, ESPRESSO if row_index == 0 else (CREAM if row_index % 2 == 0 else PAPER))
+                body_fill = CREAM if is_causal_drawing_box else (
+                    CREAM if row_index % 2 == 0 else PAPER
+                )
+                set_shading(cell._tc, ESPRESSO if row_index == 0 else body_fill)
+                if is_causal_drawing_box:
+                    set_cell_border(cell, SANDSTONE, size=12)
                 for paragraph in cell.paragraphs:
                     paragraph.paragraph_format.space_before = Pt(0)
                     paragraph.paragraph_format.space_after = Pt(2)
@@ -865,13 +1398,21 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
                         )
                         if row_index == 0:
                             run.font.bold = True
-        table_profiles.append(
-            {
-                "index": table_index,
-                "signature": list(signature),
-                "column_width_percentages": [round(value, 2) for value in weights],
-            }
-        )
+        keep_final_table_rows_together(table)
+        if signature == (
+            "Strategy",
+            "Post-intervention component record",
+            "Mapping, validity, and anchor record",
+        ):
+            keep_table_together(table)
+        table_profile = {
+            "index": table_index,
+            "signature": list(signature),
+            "column_width_percentages": [round(value, 2) for value in weights],
+        }
+        if minimum_body_row_height is not None:
+            table_profile["minimum_body_row_height_inches"] = minimum_body_row_height
+        table_profiles.append(table_profile)
 
     for section in document.sections[1:]:
         if section.start_type == WD_SECTION.NEW_PAGE:
@@ -881,6 +1422,7 @@ def style_document(raw_docx: Path, destination: Path) -> dict[str, object]:
     return {
         "chapters_styled": chapter_count,
         "callout_paragraphs": callout_counts,
+        "worksheet_headings": worksheet_headings,
         "tables": table_profiles,
     }
 
@@ -962,10 +1504,115 @@ def pdf_font_report(pdf_path: Path, pdffonts: str | None) -> dict[str, object]:
     return {"available": True, "all_embedded": True, "fonts": records}
 
 
-def validate_docx(docx_path: Path) -> dict[str, object]:
+def docx_text_statistics(docx_path: Path) -> dict[str, int]:
+    word_namespace = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    math_namespace = "http://schemas.openxmlformats.org/officeDocument/2006/math"
+    with zipfile.ZipFile(docx_path) as archive:
+        root = ET.fromstring(archive.read("word/document.xml"))
+    text_tags = {f"{{{word_namespace}}}t", f"{{{math_namespace}}}t"}
+    paragraphs: list[str] = []
+    for paragraph in root.iter(f"{{{word_namespace}}}p"):
+        text = "".join(node.text or "" for node in paragraph.iter() if node.tag in text_tags)
+        paragraphs.append(re.sub(r"\s+", " ", text).strip())
+    normalized = "\n".join(paragraphs)
+    with_spaces = " ".join(part for part in paragraphs if part)
+    return {
+        "pages": 0,
+        "words": word_count(normalized),
+        "paragraphs": len(paragraphs),
+        "characters": len(re.sub(r"\s+", "", normalized)),
+        "characters_with_spaces": len(with_spaces),
+        "lines": max(1, math.ceil(len(with_spaces) / 80)),
+        "tables": sum(1 for _ in root.iter(f"{{{word_namespace}}}tbl")),
+    }
+
+
+def update_docx_extended_properties(docx_path: Path, *, pages: int) -> dict[str, int]:
+    statistics = docx_text_statistics(docx_path)
+    statistics["pages"] = pages
+    property_names = {
+        "Pages": statistics["pages"],
+        "Words": statistics["words"],
+        "Paragraphs": statistics["paragraphs"],
+        "Characters": statistics["characters"],
+        "CharactersWithSpaces": statistics["characters_with_spaces"],
+        "Lines": statistics["lines"],
+    }
+    namespace = "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties"
+    ET.register_namespace("", namespace)
+    temporary = docx_path.with_name(f".{docx_path.name}.{os.getpid()}.metadata")
+    try:
+        with zipfile.ZipFile(docx_path, "r") as source, zipfile.ZipFile(
+            temporary, "w"
+        ) as destination:
+            for info in source.infolist():
+                data = source.read(info.filename)
+                if info.filename == "docProps/app.xml":
+                    root = ET.fromstring(data)
+                    for name, value in property_names.items():
+                        node = root.find(f"{{{namespace}}}{name}")
+                        if node is None:
+                            node = ET.SubElement(root, f"{{{namespace}}}{name}")
+                        node.text = str(value)
+                    data = ET.tostring(root, encoding="utf-8", xml_declaration=True)
+                destination.writestr(info, data)
+        os.replace(temporary, docx_path)
+    finally:
+        temporary.unlink(missing_ok=True)
+    return statistics
+
+
+def read_docx_extended_properties(docx_path: Path) -> dict[str, int]:
+    namespace = "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties"
+    with zipfile.ZipFile(docx_path) as archive:
+        root = ET.fromstring(archive.read("docProps/app.xml"))
+    result: dict[str, int] = {}
+    for key, name in (
+        ("pages", "Pages"),
+        ("words", "Words"),
+        ("paragraphs", "Paragraphs"),
+        ("characters", "Characters"),
+        ("characters_with_spaces", "CharactersWithSpaces"),
+        ("lines", "Lines"),
+    ):
+        node = root.find(f"{{{namespace}}}{name}")
+        if node is None or not (node.text or "").isdigit():
+            raise ValueError(f"DOCX extended properties lack a numeric {name} value")
+        result[key] = int(node.text or "0")
+    return result
+
+
+def validate_docx(
+    docx_path: Path,
+    *,
+    expected_pages: int,
+    expected_worksheet_headings: Iterable[str],
+) -> dict[str, object]:
     if not zipfile.is_zipfile(docx_path):
         raise ValueError("DOCX output is not a valid OPC/ZIP container")
+    with zipfile.ZipFile(docx_path) as archive:
+        bad_member = archive.testzip()
+        if bad_member:
+            raise ValueError(f"DOCX contains a corrupt member: {bad_member}")
     document = Document(docx_path)
+    core = document.core_properties
+    expected_core = {
+        "title": TITLE,
+        "author": "Phil Stilwell",
+        "subject": "Accessible graduate student textbook for the Cø / N* theory of phenomenal presence",
+        "language": "en-US",
+    }
+    found_core = {
+        "title": core.title,
+        "author": core.author,
+        "subject": core.subject,
+        "language": core.language,
+    }
+    if found_core != expected_core:
+        raise ValueError(f"DOCX core metadata mismatch: {found_core}")
+    if f"Student edition {EDITION}" not in (core.comments or ""):
+        raise ValueError("DOCX description does not contain the current edition")
+
     chapter_headings = [
         paragraph.text.strip()
         for paragraph in document.paragraphs
@@ -983,21 +1630,175 @@ def validate_docx(docx_path: Path) -> dict[str, object]:
         if len(table._tbl.tblGrid) != len(table.columns):
             raise ValueError("DOCX table grid does not match its column count")
         fixed_tables += 1
+
+    expected_worksheets = list(expected_worksheet_headings)
+    worksheet_breaks: dict[str, bool] = {}
+    worksheet_occurrences: dict[str, int] = {}
+    for paragraph in document.paragraphs:
+        title = normalize_heading(paragraph.text)
+        if title not in expected_worksheets:
+            continue
+        worksheet_occurrences[title] = worksheet_occurrences.get(title, 0) + 1
+        worksheet_breaks[title] = paragraph.paragraph_format.page_break_before is True
+    worksheet_failures = [
+        title
+        for title in expected_worksheets
+        if worksheet_occurrences.get(title) != 1 or not worksheet_breaks.get(title, False)
+    ]
+    if worksheet_failures:
+        raise ValueError(
+            "DOCX worksheet headings must occur once with a direct page break: "
+            + ", ".join(worksheet_failures)
+        )
+
+    computed_statistics = docx_text_statistics(docx_path)
+    computed_statistics["pages"] = expected_pages
+    stored_statistics = read_docx_extended_properties(docx_path)
+    comparable = {
+        key: value
+        for key, value in computed_statistics.items()
+        if key != "tables"
+    }
+    if stored_statistics != comparable:
+        raise ValueError(
+            f"DOCX extended statistics are stale: stored={stored_statistics}, "
+            f"computed={comparable}"
+        )
     return {
         "chapter_headings": chapter_headings,
         "paragraphs": len(document.paragraphs),
         "tables_fixed": fixed_tables,
         "sections": len(document.sections),
+        "metadata": found_core,
+        "extended_statistics": stored_statistics,
+        "worksheet_page_breaks": worksheet_breaks,
     }
 
 
+def outline_destinations(reader: PdfReader, items=None) -> list[tuple[str, int]]:
+    results: list[tuple[str, int]] = []
+    for item in reader.outline if items is None else items:
+        if isinstance(item, list):
+            results.extend(outline_destinations(reader, item))
+            continue
+        title = getattr(item, "title", None)
+        if title is None:
+            continue
+        try:
+            page_number = reader.get_destination_page_number(item) + 1
+        except Exception as exc:
+            raise ValueError(f"Could not resolve PDF outline destination {title!r}") from exc
+        results.append((normalize_heading(str(title)), page_number))
+    return results
+
+
+def validate_pdf_worksheet_starts(
+    reader: PdfReader, page_text: list[str], expected_headings: Iterable[str]
+) -> dict[str, object]:
+    destinations = outline_destinations(reader)
+    by_title: dict[str, list[int]] = {}
+    for title, page_number in destinations:
+        by_title.setdefault(title, []).append(page_number)
+    pages: dict[str, int] = {}
+    for expected in expected_headings:
+        matches = by_title.get(expected, [])
+        if len(matches) != 1:
+            raise ValueError(
+                f"Worksheet outline entry {expected!r} resolves to pages {matches}; expected one"
+            )
+        page_number = matches[0]
+        leading_text = re.sub(r"\s+", " ", page_text[page_number - 1]).strip()[:650]
+        if expected not in normalize_heading(leading_text):
+            raise ValueError(
+                f"Worksheet {expected!r} is not near the start of PDF page {page_number}"
+            )
+        pages[expected] = page_number
+    if len(set(pages.values())) != len(pages):
+        raise ValueError(f"Worksheet headings do not begin on distinct PDF pages: {pages}")
+    return {
+        "method": "outline destination plus extracted-text leading-position check",
+        "distinct_start_pages": True,
+        "pages": pages,
+        "limitation": (
+            "This verifies a separate physical start page, not that every worksheet's "
+            "writing space fits on exactly one page; rendered-page review remains required."
+        ),
+    }
+
+
+def pdf_figure_accessibility_report(reader: PdfReader) -> dict[str, object]:
+    root = reader.trailer["/Root"]
+    struct_root = root.get("/StructTreeRoot")
+    if struct_root is None:
+        return {"figures": 0, "missing_alternative_text": 0, "pages": []}
+    page_ids = {
+        getattr(page.indirect_reference, "idnum", None): index + 1
+        for index, page in enumerate(reader.pages)
+    }
+    total = 0
+    missing_pages: list[int | None] = []
+
+    def visit(value, inherited_page=None) -> None:
+        nonlocal total
+        if value is None or isinstance(value, (int, float, str)):
+            return
+        if isinstance(value, list):
+            for child in value:
+                visit(child, inherited_page)
+            return
+        try:
+            node = value.get_object()
+        except AttributeError:
+            node = value
+        if not hasattr(node, "get"):
+            return
+        page_reference = node.get("/Pg") or inherited_page
+        if str(node.get("/S") or "") == "/Figure":
+            total += 1
+            if not node.get("/Alt") and not node.get("/ActualText"):
+                page_id = getattr(page_reference, "idnum", None)
+                missing_pages.append(page_ids.get(page_id))
+        visit(node.get("/K"), page_reference)
+
+    visit(struct_root.get_object().get("/K"))
+    known_pages = sorted({page for page in missing_pages if page is not None})
+    report = {
+        "figures": total,
+        "missing_alternative_text": len(missing_pages),
+        "pages": known_pages,
+        "release_gate": "hard failure",
+        "limitation": (
+            "The structural check verifies Alt or ActualText on Figure tags; rendered-page "
+            "review must still confirm that decorative rules were not mis-tagged as figures."
+        ),
+    }
+    if missing_pages:
+        raise ValueError(
+            f"PDF contains {len(missing_pages)} Figure tags without alternative text "
+            f"(pages {known_pages})"
+        )
+    return report
+
+
 def validate_pdf(
-    pdf_path: Path, pdfinfo: str | None, pdffonts: str | None
+    pdf_path: Path,
+    pdfinfo: str | None,
+    pdffonts: str | None,
+    *,
+    expected_worksheet_headings: Iterable[str],
 ) -> dict[str, object]:
     reader = PdfReader(str(pdf_path))
     if len(reader.pages) < 100:
         raise ValueError(f"PDF is unexpectedly short at {len(reader.pages)} pages")
     page_text = [(page.extract_text() or "").strip() for page in reader.pages]
+    worksheet_pages = validate_pdf_worksheet_starts(
+        reader, page_text, expected_worksheet_headings
+    )
+    worksheet_start_pages = set(worksheet_pages["pages"].values())
+    outline_start_pages = {page for _, page in outline_destinations(reader)}
+    structural_context_pages = outline_start_pages | {
+        page - 1 for page in outline_start_pages if page > 1
+    }
     empty_pages = [index + 1 for index, text in enumerate(page_text) if not text]
     intentionally_open_pages = [
         index + 1
@@ -1009,6 +1810,8 @@ def validate_pdf(
             or text.count("☐") >= 8
             or text.count("□") >= 8
             or "Final claim the team is willing to risk" in text
+            or index + 1 in worksheet_start_pages
+            or index + 1 in structural_context_pages
         )
     ]
     sparse_pages = [
@@ -1021,9 +1824,28 @@ def validate_pdf(
     if empty_pages:
         raise ValueError(f"PDF contains empty pages: {empty_pages}")
     if sparse_pages:
-        raise ValueError(f"PDF contains materially sparse pages: {sparse_pages}")
+        sparse_previews = {
+            page: re.sub(r"\s+", " ", page_text[page - 1])[:500]
+            for page in sparse_pages
+        }
+        raise ValueError(
+            f"PDF contains materially sparse pages: {sparse_pages}; "
+            f"text previews: {sparse_previews}"
+        )
 
     full_text = "\n".join(page_text)
+    dash_qa = unsafe_unicode_dash_report(full_text, artifact="Extracted PDF text")
+    raw_markup_patterns = {
+        "raw page break": re.compile(r"\\(?:newpage|pagebreak)\b"),
+        "raw TeX environment": re.compile(r"\\(?:begin|end)\{"),
+        "raw TeX command": re.compile(r"\\(?:frac|operatorname)\{"),
+        "Markdown heading marker": re.compile(r"^#{1,6}\s", re.M),
+        "Markdown code marker": re.compile(r"`"),
+        "unrendered math delimiter": re.compile(r"\$"),
+    }
+    leaked_markup = [label for label, pattern in raw_markup_patterns.items() if pattern.search(full_text)]
+    if leaked_markup:
+        raise ValueError(f"PDF contains raw source markup: {leaked_markup}")
     normalized_full_text = re.sub(r"\s+", " ", full_text)
     for number, title in EXPECTED_CHAPTERS.items():
         if f"Chapter {number}" not in normalized_full_text or title not in normalized_full_text:
@@ -1031,7 +1853,7 @@ def validate_pdf(
 
     outline = flatten_outline(reader.outline)
     missing_outline = [
-        f"Chapter {number} — {title}"
+        f"Chapter {number} - {title}"
         for number, title in EXPECTED_CHAPTERS.items()
         if not any(item.startswith(f"Chapter {number}") for item in outline)
     ]
@@ -1039,12 +1861,43 @@ def validate_pdf(
         raise ValueError(f"PDF outline is missing chapter entries: {missing_outline}")
 
     root = reader.trailer["/Root"]
-    marked = bool(root.get("/MarkInfo", {}).get("/Marked", False))
-    language = root.get("/Lang")
-    if not marked:
+    mark_info = root.get("/MarkInfo")
+    marked = bool(mark_info and mark_info.get_object().get("/Marked", False))
+    language = str(root.get("/Lang") or "")
+    if not marked or "/StructTreeRoot" not in root:
         raise ValueError("PDF is not tagged")
-    if not language:
-        raise ValueError("PDF has no document language")
+    if language != "en-US":
+        raise ValueError(f"PDF document language is {language!r}, expected 'en-US'")
+
+    metadata = reader.metadata
+    metadata_report = {
+        "title": metadata.title if metadata else None,
+        "author": metadata.author if metadata else None,
+        "subject": metadata.subject if metadata else None,
+    }
+    if metadata_report != {
+        "title": TITLE,
+        "author": "Phil Stilwell",
+        "subject": "Accessible graduate student textbook for the Cø / N* theory of phenomenal presence",
+    }:
+        raise ValueError(f"PDF metadata mismatch: {metadata_report}")
+
+    expected_box = (0.0, 0.0, 504.0, 720.0)
+    geometry_failures: list[int] = []
+    rotation_failures: list[int] = []
+    for index, page in enumerate(reader.pages, start=1):
+        media_box = tuple(float(value) for value in page.mediabox)
+        crop_box = tuple(float(value) for value in page.cropbox)
+        if any(abs(found - expected) > 0.1 for found, expected in zip(media_box, expected_box)):
+            geometry_failures.append(index)
+        elif any(abs(found - expected) > 0.1 for found, expected in zip(crop_box, expected_box)):
+            geometry_failures.append(index)
+        if (page.rotation or 0) % 360 != 0:
+            rotation_failures.append(index)
+    if geometry_failures:
+        raise ValueError(f"PDF pages have unexpected geometry: {geometry_failures}")
+    if rotation_failures:
+        raise ValueError(f"PDF pages have unexpected rotation: {rotation_failures}")
 
     info_report: dict[str, str] = {}
     if pdfinfo:
@@ -1060,7 +1913,14 @@ def validate_pdf(
         "intentionally_open_pages": intentionally_open_pages,
         "outline_entries": len(outline),
         "tagged": marked,
-        "language": str(language),
+        "language": language,
+        "metadata": metadata_report,
+        "page_geometry_points": list(expected_box),
+        "rotation_degrees": 0,
+        "raw_markup": {"status": "passed", "patterns_checked": list(raw_markup_patterns)},
+        "unicode_dash_policy": dash_qa,
+        "worksheet_pages": worksheet_pages,
+        "figure_accessibility": pdf_figure_accessibility_report(reader),
         "pdfinfo": info_report,
         "fonts": pdf_font_report(pdf_path, pdffonts),
     }
@@ -1076,9 +1936,39 @@ def tool_version(executable: str, *args: str) -> str:
 
 def publish(staged: Path, destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
-    temporary = destination.with_name(destination.name + ".publishing")
-    shutil.copy2(staged, temporary)
-    os.replace(temporary, destination)
+    temporary = destination.with_name(f".{destination.name}.{os.getpid()}.publishing")
+    try:
+        shutil.copy2(staged, temporary)
+        os.replace(temporary, destination)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def public_publish_preflight(staged: Path, destination: Path) -> str:
+    if destination.exists():
+        if sha256(destination) == sha256(staged):
+            return "unchanged-identical"
+        if not env_flag(ALLOW_PUBLIC_REPLACE_ENV):
+            raise FileExistsError(
+                f"Versioned public release already exists with different bytes: {destination}. "
+                "Bump EDITION for a new release, or deliberately set "
+                f"{ALLOW_PUBLIC_REPLACE_ENV}=1 to replace this edition."
+            )
+        mode = "replaced-by-explicit-override"
+    else:
+        mode = "created"
+    return mode
+
+
+def publish_public_immutable(staged: Path, destination: Path, *, expected_mode: str) -> None:
+    current_mode = public_publish_preflight(staged, destination)
+    if current_mode != expected_mode:
+        raise RuntimeError(
+            "Versioned public release changed after preflight: "
+            f"expected {expected_mode}, found {current_mode}"
+        )
+    if current_mode != "unchanged-identical":
+        publish(staged, destination)
 
 
 def build() -> None:
@@ -1107,13 +1997,55 @@ def build() -> None:
             staged_docx = work_dir / DOCX_OUT.name
             pandoc_docx(pandoc, staged_markdown, raw_docx)
             style_qa = style_document(raw_docx, staged_docx)
-            docx_qa = validate_docx(staged_docx)
+            expected_worksheets = [
+                str(record["title"]) for record in source_qa["worksheets"]
+            ]
+            if style_qa["worksheet_headings"] != expected_worksheets:
+                raise ValueError(
+                    "Styled worksheet registry differs from source registry: "
+                    f"source={expected_worksheets}, styled={style_qa['worksheet_headings']}"
+                )
 
+            # A preliminary conversion supplies the page count for the DOCX
+            # extended properties. Those properties do not affect layout; the
+            # final conversion below verifies that the count remains stable.
             staged_pdf = convert_pdf(soffice, staged_docx, work_dir)
-            pdf_qa = validate_pdf(staged_pdf, pdfinfo, pdffonts)
+            preliminary_pages = len(PdfReader(str(staged_pdf)).pages)
+            updated_docx_statistics = update_docx_extended_properties(
+                staged_docx, pages=preliminary_pages
+            )
+            staged_pdf.unlink()
+            staged_pdf = convert_pdf(soffice, staged_docx, work_dir)
+            pdf_qa = validate_pdf(
+                staged_pdf,
+                pdfinfo,
+                pdffonts,
+                expected_worksheet_headings=expected_worksheets,
+            )
+            if pdf_qa["pages"] != preliminary_pages:
+                raise ValueError(
+                    "PDF page count changed after updating DOCX statistics: "
+                    f"{preliminary_pages} -> {pdf_qa['pages']}"
+                )
+            docx_qa = validate_docx(
+                staged_docx,
+                expected_pages=int(pdf_qa["pages"]),
+                expected_worksheet_headings=expected_worksheets,
+            )
+            if docx_qa["extended_statistics"] != {
+                key: value
+                for key, value in updated_docx_statistics.items()
+                if key != "tables"
+            }:
+                raise ValueError("DOCX statistics changed unexpectedly during validation")
+
+            palette_qa = validate_palette_contrast()
+            pdf_digest = sha256(staged_pdf)
+            pdf_bytes = staged_pdf.stat().st_size
+            public_publish_mode = public_publish_preflight(staged_pdf, PUBLIC_PDF_OUT)
 
             manifest = {
-                "schema": 1,
+                "schema": 2,
                 "title": TITLE,
                 "edition": EDITION,
                 "built_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -1136,13 +2068,27 @@ def build() -> None:
                 "outputs": {
                     str(ASSEMBLED_SOURCE.relative_to(PROJECT)): sha256(staged_markdown),
                     str(DOCX_OUT.relative_to(PROJECT)): sha256(staged_docx),
-                    str(PDF_OUT.relative_to(PROJECT)): sha256(staged_pdf),
+                    str(PDF_OUT.relative_to(PROJECT)): pdf_digest,
+                    str(PUBLIC_PDF_OUT.relative_to(PROJECT)): pdf_digest,
+                },
+                "release": {
+                    "edition": EDITION,
+                    "pdf": {
+                        "public_path": str(PUBLIC_PDF_OUT.relative_to(PROJECT)),
+                        "public_url": "/" + str(PUBLIC_PDF_OUT.relative_to(PROJECT / "public")),
+                        "pages": pdf_qa["pages"],
+                        "bytes": pdf_bytes,
+                        "sha256": pdf_digest,
+                    },
+                    "public_publish_mode": public_publish_mode,
+                    "replacement_override_env": ALLOW_PUBLIC_REPLACE_ENV,
                 },
                 "qa": {
                     "source": source_qa,
                     "styling": style_qa,
                     "docx": docx_qa,
                     "pdf": pdf_qa,
+                    "palette_contrast": palette_qa,
                 },
                 "tools": {
                     "python": sys.version.splitlines()[0],
@@ -1161,10 +2107,16 @@ def build() -> None:
             publish(staged_docx, DOCX_OUT)
             publish(staged_pdf, PDF_OUT)
             publish(staged_manifest, MANIFEST_OUT)
+            publish_public_immutable(
+                staged_pdf,
+                PUBLIC_PDF_OUT,
+                expected_mode=public_publish_mode,
+            )
 
             print(ASSEMBLED_SOURCE)
             print(DOCX_OUT)
             print(PDF_OUT)
+            print(PUBLIC_PDF_OUT)
             print(MANIFEST_OUT)
         finally:
             shutil.rmtree(work_dir, ignore_errors=True)

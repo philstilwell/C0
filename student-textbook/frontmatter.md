@@ -2,7 +2,7 @@
 title: "Learning Cø / N*"
 subtitle: "A Student Textbook of Phenomenal Presence"
 author: "Phil Stilwell"
-date: "Student edition 1.0 · July 2026"
+date: "Student edition 1.1 · July 2026"
 lang: en-US
 ---
 
@@ -70,18 +70,21 @@ The annotation labels perform different jobs.
 | **Method note** | Identifies a validity, measurement, or design requirement. | How could this requirement be checked independently? |
 | **Checkpoint** | Pauses the exposition for active reconstruction. | Can I explain the claim without copying the paragraph? |
 | **Where the analogy breaks** | Prevents a useful comparison from silently becoming an identity claim. | Which features of the target are absent from the analogy? |
+| **Source note** | Identifies which paper or papers in the primary corpus support a claim or synthesis. | Is this statement in one source, or is it the textbook's cross-paper synthesis? |
+| **Context note** | Points to external, version-specific literature needed for a fair comparison. | Which dated theory or empirical result is being invoked? |
+| **Research-status note** | Distinguishes a proposal, rationale, or method from an established empirical result. | What has been formulated, and what has actually been validated? |
 
 Annotations are not decorative summaries. They model the inferential discipline that the theory requires. When you write your own notes, try using the same labels. In particular, add a **Do not infer** line whenever a result could easily be overstated.
 
 ## A four-pass study method
 
-**Pass 1 — Locate the question.** Read the opening puzzle, chapter map, and section headings. Write one sentence naming the problem the chapter is trying to solve.
+**Pass 1 - Locate the question.** Read the opening puzzle, chapter map, and section headings. Write one sentence naming the problem the chapter is trying to solve.
 
-**Pass 2 — Reconstruct the claim.** Read the exposition. Translate every formula into prose. Draw the relevant system, causal routes, temporal loop, or evidential workflow.
+**Pass 2 - Reconstruct the claim.** Read the exposition. Translate every formula into prose. Draw the relevant system, causal routes, temporal loop, or evidential workflow.
 
-**Pass 3 — Apply pressure.** Work through the thought experiments and rival comparisons. Ask whether the model has classified the case because of evidence or because of a hidden assumption.
+**Pass 3 - Apply pressure.** Work through the thought experiments and rival comparisons. Ask whether the model has classified the case because of evidence or because of a hidden assumption.
 
-**Pass 4 — Produce something.** Complete at least one practice-studio task. Understanding becomes visible when you can generate a new case, prediction, objection, or experimental design.
+**Pass 4 - Produce something.** Complete at least one practice-studio task. Understanding becomes visible when you can generate a new case, prediction, objection, or experimental design.
 
 ## Working with others
 

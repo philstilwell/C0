@@ -245,6 +245,7 @@ footer p { margin: 0 0 5px; font-size: 12px; } footer small { color: #656c70; fo
 .footer-links { display: flex; gap: 24px; font-size: 10px; font-weight: 650; }.footer-links a:hover { color: var(--presence); }
 
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--broadcast); outline-offset: 3px; }
+.student-text-card a:focus-visible, .teaching-secondary-action:focus-visible { outline-color: #601d1f; }
 
 @media (max-width: 820px) {
   .topbar .nav-links a:not(.nav-paper):not(.nav-teaching) { display: none; }

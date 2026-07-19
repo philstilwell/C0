@@ -1,10 +1,10 @@
-# Chapter 11 — Biological and Clinical Applications
+# Chapter 11 - Biological and Clinical Applications
 
 ## Opening puzzle: the silent patient
 
 A patient opens her eyes but does not follow commands. On Monday, an auditory imagery task produces no usable signal; the recording is noisy and no one has confirmed that she can hear the instructions. On Thursday, during a higher-arousal period, a motor-imagery pattern appears repeatedly even though she still makes no movement. On Sunday, the pattern disappears during a low-arousal recording. Has consciousness appeared, vanished, and returned? Was it present all week? Or has the study not yet earned any of those conclusions?
 
-The puzzle is difficult because behavior, measurement quality, physiological state, and phenomenal presence can all vary—and they need not vary together. Cø / N* asks us to separate them. Here **Cø** means minimal phenomenal presence: there is something it is like for the candidate system during the specified interval. **N\*** is the conjunction $N_1\land N_2\land N_3$: integration or synergy, system-wide causal availability, and recurrent stability. **V** is a separate viability condition. The theory's core hypothesis is conditional and exposed to failure:
+The puzzle is difficult because behavior, measurement quality, physiological state, and phenomenal presence can all vary - and they need not vary together. Cø / N* asks us to separate them. Here **Cø** means minimal phenomenal presence: there is something it is like for the candidate system during the specified interval. **N\*** is the conjunction $N_1\land N_2\land N_3$: integration or synergy, system-wide causal availability, and recurrent stability. **V** is a separate viability condition. The theory's core hypothesis is conditional and exposed to failure:
 
 $$
 C_0(S,c,\tau) \leftrightarrow V(S,\tau)\land N_1(S,c,\tau)\land N_2(S,c,\tau)\land N_3(S,c,\tau).
@@ -80,7 +80,7 @@ Imagine a reversible intervention that blocks all voluntary muscles and speech w
 
 **Stage 1.** Before any alternative communication channel is available, what would a behavior-only test conclude?
 
-**Stage 2.** A brain–computer interface later reveals reliable answers to novel questions. Which earlier inference changes: the patient's state, the evidence, or both?
+**Stage 2.** A brain-computer interface later reveals reliable answers to novel questions. Which earlier inference changes: the patient's state, the evidence, or both?
 
 **Stage 3.** Suppose the interface itself requires substantial executive control. What narrower claim can it support, and what broader claims remain open?
 
@@ -186,7 +186,9 @@ Think of a university that divides into two campuses. Each campus may handle adm
 
 ## 8. Evidence and limits
 
-Cø / N* turns clinical and biological cases into structured hypotheses. Repeated assessment, task-based neuroimaging, perturbational measures, and no-report contrasts can provide anchors. They do not independently validate the complete theory. A measure may support one work package—such as boundary stability, availability, or bundle discrimination—without establishing constitutive identity.
+Cø / N* turns clinical and biological cases into structured hypotheses. Repeated assessment, task-based neuroimaging, perturbational measures, and no-report contrasts can provide anchors. They do not independently validate the complete theory. A measure may support one work package - such as boundary stability, availability, or bundle discrimination - without establishing constitutive identity.
+
+**Source note.** This chapter synthesizes the core model with *Indeterminacy as a Scientific Result* and uses clinical context from Wannez et al. (2017), Bodien et al. (2024), and Casali et al. (2013). These external studies motivate measurement and repeated-assessment problems; they do not validate the full Cø / N* identity claim.
 
 ### Fair rival comparison
 
@@ -212,7 +214,7 @@ Clinical action introduces another layer. A scientific result combines evidence 
 
 ### Individual transfer
 
-Choose one case—REM dreaming, deep non-REM sleep, locked-in syndrome, cognitive motor dissociation, blindsight, rivalry, or split brain. Complete a one-page inference record with these fields: target; candidate; grain; regime; interval; boundary status; $V$; $N_1$; $N_2$; $N_3$; strongest anchor; strongest confound; current four-way result; smallest next study; and one conclusion the evidence does not license.
+Choose one case - REM dreaming, deep non-REM sleep, locked-in syndrome, cognitive motor dissociation, blindsight, rivalry, or split brain. Complete a one-page inference record with these fields: target; candidate; grain; regime; interval; boundary status; $V$; $N_1$; $N_2$; $N_3$; strongest anchor; strongest confound; current four-way result; smallest next study; and one conclusion the evidence does not license.
 
 ### Collaborative exercise: evolving multidisciplinary case conference
 
@@ -266,13 +268,15 @@ Clinical cases remain within one familiar biological species and institutional s
 
 \newpage
 
-# Chapter 12 — Nonhuman Animals, Organoids, and Artificial Systems
+# Chapter 12 - Nonhuman Animals, Organoids, and Artificial Systems
 
 ## Opening puzzle: the same score in three worlds
 
-An adult human, an octopus, and a neuron–computer organoid hybrid receive the same numerical score on a perturbational-complexity measure. A tool-using artificial agent receives a mathematically similar score from a network analysis. May we carry the human interpretation across all four cases?
+An adult human, an octopus, and a neuron-computer organoid hybrid receive the same numerical score on a perturbational-complexity measure. A tool-using artificial agent receives a mathematically similar score from a network analysis. May we carry the human interpretation across all four cases?
 
 Numerical equality feels objective, but the meaning of a number depends on what was measured, what causal role the measured feature plays, how the test was calibrated, and which system the score belongs to. A thermometer reading of 38 can mean a fever in degrees Celsius, an ordinary afternoon in degrees Fahrenheit, or nothing at all if the sensor is measuring a circuit board. Cross-substrate consciousness research faces the same interpretive problem, amplified by the absence of a universal gold standard.
+
+**Where the analogy breaks.** Temperature scales have mature conversion rules and independently understood physical quantities. Consciousness measures lack an agreed cross-substrate reference standard, so matching values cannot be converted by a simple formula.
 
 **Plain language.** “Substrate-independent” does not mean “anything with the right-looking score qualifies.” It means that biology is not required by definition if the relevant causal organization can be shown in another material.
 
@@ -295,9 +299,9 @@ Cø / N* is stated in causal-dynamical terms. It does not define phenomenal pres
 The theory therefore occupies a middle position between two errors:
 
 - **Neural chauvinism:** denying phenomenal presence to any non-neural system without asking whether the same relevant causal roles are realized.
-- **Empty functionalism:** granting phenomenal presence whenever an abstract diagram, behavior, or input–output function resembles a conscious case.
+- **Empty functionalism:** granting phenomenal presence whenever an abstract diagram, behavior, or input-output function resembles a conscious case.
 
-The proposed organization must be actually realized in the running system. Investigators must preserve relevant directionality, effective coupling, temporal grain, recurrent organization, recipient structure, operating ranges, and a substrate-appropriate form of viability. **Effective connectivity** means modeled directed influence—how changing one part would change another—not merely an anatomical link or statistical correlation.
+The proposed organization must be actually realized in the running system. Investigators must preserve relevant directionality, effective coupling, temporal grain, recurrent organization, recipient structure, operating ranges, and a substrate-appropriate form of viability. **Effective connectivity** means modeled directed influence - how changing one part would change another - not merely an anatomical link or statistical correlation.
 
 Imagine moving a musical score from piano to string quartet. The melody can survive a change of instrument, but only if the new arrangement preserves the relevant relations of pitch, timing, harmony, and phrasing. Copying the page numbers or matching the total number of notes would not be enough.
 
@@ -323,11 +327,11 @@ Do thresholds, error rates, rule-in regions, rule-out regions, and uncertainty e
 
 ### 2.4 Boundary and regime preservation
 
-Which target system receives the attribution, at what grain and horizon? For an organoid, candidates may include tissue alone, tissue plus electrodes, or tissue plus an adaptive controller. For an AI service, candidates may include one model call, the model plus context, an agent loop, a distributed service, or a human–machine team. The mapping must also survive relevant operating-regime differences.
+Which target system receives the attribution, at what grain and horizon? For an organoid, candidates may include tissue alone, tissue plus electrodes, or tissue plus an adaptive controller. For an AI service, candidates may include one model call, the model plus context, an agent loop, a distributed service, or a human-machine team. The mapping must also survive relevant operating-regime differences.
 
 **Method note.** Transport is a license condition, not a fifth consciousness outcome. First ask whether the source interpretation can be applied. Only then use the ordinary positive, negative, indeterminate, or unlicensed rules on target evidence.
 
-A transport bridge resembles an actual bridge with four load-bearing supports. A roadway may look intact from above, yet removal of one pier makes crossing unsafe. Likewise, construct similarity without calibration—or calibration without a stable boundary—does not license the inference.
+A transport bridge resembles an actual bridge with four load-bearing supports. A roadway may look intact from above, yet removal of one pier makes crossing unsafe. Likewise, construct similarity without calibration - or calibration without a stable boundary - does not license the inference.
 
 **Where the analogy breaks.** Physical bridge failure is often binary and directly observable. Transport supports admit degrees, uncertainty, and interacting failures; investigators may need to report which support is weakest rather than declare one dramatic collapse.
 
@@ -392,7 +396,7 @@ An organoid produces adaptive responses only when a digital controller stores th
 
 ## 5. Artificial systems: inspect the running architecture
 
-Product labels such as “large language model,” “agent,” or “multi-agent system” are too coarse. A deployed service may include a base model, prompt, current context, retrieval system, persistent memory, scheduler, tool interfaces, evaluators, other models, monitoring software, and human operators. Different subsets may form candidates at different horizons—or none may meet the boundary criteria.
+Product labels such as “large language model,” “agent,” or “multi-agent system” are too coarse. A deployed service may include a base model, prompt, current context, retrieval system, persistent memory, scheduler, tool interfaces, evaluators, other models, monitoring software, and human operators. Different subsets may form candidates at different horizons - or none may meet the boundary criteria.
 
 A stateless model call can perform a complex transformation while lacking persistence across calls. An agent loop can add recurrence, memory, and wide availability yet remain externally scripted. A multi-agent service may contain several semi-autonomous candidates, one larger workspace-like candidate, or a collection held together only by a scheduler.
 
@@ -423,7 +427,7 @@ An AI assistant seems consistent across a day. It uses a base model, retrieval s
 
 **Stage 2.** Over a day, replacing persistent memory destroys goal continuity while replacing the scheduler with a matched scheduler does not. How should the candidate boundary change?
 
-**Stage 3.** A human operator selects every goal and repairs every failure. Does the larger human–machine assembly meet autonomy and role-completeness conditions? What intervention would bear on that question?
+**Stage 3.** A human operator selects every goal and repairs every failure. Does the larger human-machine assembly meet autonomy and role-completeness conditions? What intervention would bear on that question?
 
 **Stage 4.** The system verbally claims to be conscious after a prompt requests such a claim. How much evidential weight should that carry without content-specific causal and calibration evidence?
 
@@ -447,11 +451,13 @@ The choice affects the core inference because $V$ is independently required. It 
 
 Transport can fail in several informative ways. The construct may not survive; the causal role may differ; thresholds may lack calibration; or the candidate boundary may remain unresolved. These are not equivalent and should be recorded separately.
 
-When transport is licensed, target evidence can still be positive, negative, or indeterminate under Cø / N*. When transport fails, the target application is unlicensed. In addition, a theory-conditional positive can coexist with field-level model indeterminacy if serious rival theories interpret the preserved organization differently.
+When transport is licensed, target evidence can still be positive, negative, or indeterminate under Cø / N*. When the transport required for a particular source-domain interpretation fails, that interpretation is unlicensed in the target domain. The target is not thereby negative: independently validated target-domain measures or another licensed bridge may remain available. In addition, a theory-conditional positive can coexist with field-level model indeterminacy if serious rival theories interpret the preserved organization differently.
 
 This layered reporting protects two facts at once: a theory can issue a clear prediction, and the broader field may remain divided about its interpretation.
 
 The principal limitation is that cross-substrate validation is young and case-specific. A detailed protocol is not evidence that a bridge has already been built. Source-domain support, replication, and held-out transport must be distinguished. The farther a target is from the calibration domain, the more explicit the mapping burden becomes.
+
+**Source note.** The transport framework combines the boundary and indeterminacy papers with comparative context from Birch et al. (2020), Butlin et al. (2023), and Kagan et al. (2022). Those contextual sources motivate candidate cases and precautions; none supplies a finished transport license for this theory.
 
 ### Fair rival comparison
 
@@ -480,7 +486,7 @@ But action and evidence must remain separate. A laboratory might limit a potenti
 
 ### Individual transfer
 
-Choose one target: cephalopod, corvid, infant, organoid, organoid–controller hybrid, stateless language model, tool-using agent, or multi-agent service. Draw the actual causal organization rather than the product label. Identify a source-domain measure, the proposed mapping $T$, one tolerance that must be frozen, the weakest transport support, one boundary alternative, and the smallest study that could discriminate it.
+Choose one target: cephalopod, corvid, infant, organoid, organoid-controller hybrid, stateless language model, tool-using agent, or multi-agent service. Draw the actual causal organization rather than the product label. Identify a source-domain measure, the proposed mapping $T$, one tolerance that must be frozen, the weakest transport support, one boundary alternative, and the smallest study that could discriminate it.
 
 ### Collaborative exercise: cross-substrate transport jigsaw
 
@@ -542,7 +548,7 @@ Complete the sentence: “The strongest transport claim I can currently license 
 Transport asks whether a claim travels. The next chapter asks whether the theory itself earns confidence: what distinguishes Cø / N* from neighboring theories, what evidence validates each branch of the program, and which objections remain genuinely dangerous?
 
 \newpage
-# Chapter 13 — Differentiation, Validation, and the Strongest Objections
+# Chapter 13 - Differentiation, Validation, and the Strongest Objections
 
 ## Opening puzzle: a theory made of familiar parts
 
@@ -637,7 +643,7 @@ The following comparisons identify pressure points, not final verdicts.
 
 ### Integrated information approaches
 
-IIT-style theories emphasize intrinsic causal structure, complexes, integration, and exclusion. In this vocabulary, a **complex** is the candidate substrate selected by the theory's maximally irreducible cause–effect criterion; **exclusion** requires a definite substrate and grain rather than treating every overlapping candidate as a simultaneous experience. Cø / N* overlaps in treating reducible organization as insufficient, but it adds separate requirements for functionally diverse availability and bounded recurrence. A candidate that clears an IIT-specific intrinsic-structure criterion while remaining local or temporally unstable may therefore divide the theories. Fair comparison requires the exact IIT formulation, its complex-selection rule, and matched boundaries (Albantakis et al., 2023).
+IIT-style theories emphasize intrinsic causal structure, complexes, integration, and exclusion. In this vocabulary, a **complex** is the candidate substrate selected by the theory's maximally irreducible cause-effect criterion; **exclusion** requires a definite substrate and grain rather than treating every overlapping candidate as a simultaneous experience. Cø / N* overlaps in treating reducible organization as insufficient, but it adds separate requirements for functionally diverse availability and bounded recurrence. A candidate that clears an IIT-specific intrinsic-structure criterion while remaining local or temporally unstable may therefore divide the theories. Fair comparison requires the exact IIT formulation, its complex-selection rule, and matched boundaries (Albantakis et al., 2023).
 
 ### Global workspace and global neuronal workspace approaches
 
@@ -649,11 +655,11 @@ RPT versions often treat recurrent sensory processing as central and, on some fo
 
 ### Higher-order theories
 
-Higher-order theories connect consciousness to a suitable representation of a first-order state. Cø / N* does not require explicit metarepresentation for minimal presence. A system satisfying N* without a licensed higher-order state could differentiate them—but only if the higher-order theory really targets the same minimal explanandum (Lau & Rosenthal, 2011).
+Higher-order theories connect consciousness to a suitable representation of a first-order state. Cø / N* does not require explicit metarepresentation for minimal presence. A system satisfying N* without a licensed higher-order state could differentiate them - but only if the higher-order theory really targets the same minimal explanandum (Lau & Rosenthal, 2011).
 
 ### Predictive, active-inference, embodied, and enactive approaches
 
-These families often emphasize hierarchical prediction, action-oriented regulation, embodiment, or organism–environment coupling. Cø / N* can include predictive and bodily dynamics inside its components and candidate boundary, but it does not currently make them separate universal conjuncts. Evidence that affective regulation or organismic coupling is repeatedly necessary in otherwise diagnostic cases could motivate revision.
+These families often emphasize hierarchical prediction, action-oriented regulation, embodiment, or organism-environment coupling. Cø / N* can include predictive and bodily dynamics inside its components and candidate boundary, but it does not currently make them separate universal conjuncts. Evidence that affective regulation or organismic coupling is repeatedly necessary in otherwise diagnostic cases could motivate revision.
 
 ### Attention-schema, illusionist, and fundamentalist views
 
@@ -671,12 +677,14 @@ The common foundation includes conceptual clarity, construct separability, measu
 |---|---|---|
 | Bundle attribution | Licensed $V\land N^*$ profile and positive-bearer result for a case | The target concept or untested operationalizations |
 | Component necessity | Full model beats proper submodels on diagnostic cases | Other components and some bundle-level findings |
-| Causal intervention | Selective perturbation and rescue alter independent anchors | Correlational construct evidence |
+| Boundary audit | Prospectively generated candidates survive autonomy, mapping, minimality, and separability tests | Component constructs evaluated on other licensed referents |
 | Transport | Source-domain interpretation survives a new domain | The source-domain result |
 | Character bridge | Causal geometry predicts held-out phenomenal relations after the presence gate | Presence classification |
 | Schematic competence | Trained readers reconstruct, abstain, and fault-localize reproducibly | Empirical truth of the identity claim |
 
-Failure propagates selectively. If the character bridge fails, the presence gate may remain viable. If one component proves redundant, the exact factorization must change, but the other constructs may retain value. If transport to organoids fails, a human source-domain result is not automatically erased.
+Selective causal intervention is a cross-cutting strategy rather than a seventh branch: it can test a component, boundary, transport mapping, or character bridge when its selectivity and licenses are adequate. Failure propagates selectively. If the character bridge fails, the presence gate may remain viable. If one component proves redundant, the exact factorization must change, but the other constructs may retain value. If transport to organoids fails, a human source-domain result is not automatically erased.
+
+**Research-status note.** The seven-paper corpus specifies a coordinated validation program, not a completed validation record. Each branch below remains at the maturity level supported by its own frozen evidence; progress in one branch does not upgrade another automatically.
 
 This map resembles a house with a common foundation and several wings. A cracked conservatory does not show that the kitchen is unsupported, but a failed foundation threatens every wing that depends on it.
 
@@ -756,7 +764,7 @@ Good objections identify a route by which the theory could appear successful wit
 
 **Residual pressure.** Results remain anchor-relative. No finite anchor set eliminates the other-minds problem or every theoretical assumption.
 
-**Checkpoint.** Choose the objection you think creates the greatest empirical risk. What result—not merely argument—would sharpen it?
+**Checkpoint.** Choose the objection you think creates the greatest empirical risk. What result - not merely argument - would sharpen it?
 
 ## 6. Revision rules: change that increases constraint
 
@@ -864,7 +872,7 @@ The final chapter turns evaluation into design. You will build an adversarial ca
 \newpage
 
 
-# Chapter 14 — Capstone Adversarial Research Design
+# Chapter 14 - Capstone Adversarial Research Design
 
 ## Opening puzzle: the study that cannot lose
 
@@ -889,14 +897,16 @@ By the end of this chapter, you should be able to:
 
 ## 1. Choose a branch, not “consciousness in general”
 
-The common foundation freezes the target, candidate family, constructs, measures, and validity rules. From that frozen foundation, choose one branch:
+The common foundation freezes the target, candidate family, constructs, measures, and validity rules. From that frozen foundation, choose one of six branches:
 
-- case-level presence output;
+- case-level presence classification;
 - component-necessity audit;
-- transport audit; or
+- boundary audit;
+- transport audit;
+- phenomenal-character bridge; or
 - schematic-competence audit.
 
-Only a character project has the additional gate:
+A phenomenal-character project has the additional gate:
 
 $$
 \text{positive presence output}\longrightarrow\text{phenomenal-character bridge}.
@@ -907,10 +917,23 @@ A capstone should not attempt every branch. Good projects find one point where a
 - an $N_2$ diagnostic case that preserves $V,N_1,N_3$;
 - a feedforward but duration-matched adversary for $N_3$;
 - a grouped ablation asking whether $N_1$ and $N_3$ are jointly redundant;
-- a boundary intervention in a biological–digital hybrid;
+- a boundary intervention in a biological-digital hybrid;
 - transport of one validated surrogate across species;
 - a geometry-changing intervention for the character bridge; or
 - a blinded reproducibility study of schematic readout.
+
+Use the common workbook sections that provide genuine diagnostic leverage for the selected branch. A field may be marked **not applicable** only with a scientific justification and a replacement source of diagnostic leverage; it may not be skipped merely because it is difficult.
+
+| Selected branch | Required common workbook sections | Additional branch module | Branch-specific output to preserve |
+|---|---|---|---|
+| Case-level presence | Cover, A-F, I-L, P-R | none | Study disposition plus $V,N_1,N_2,N_3$ and bearer statuses |
+| Component necessity | Cover, A-G, I-L, P-R | none | Study disposition plus five-status result for every audited component |
+| Boundary audit | Cover, A-E, H-L, P-R | none | Study disposition plus candidate, minimality, separability, and bearer-license results |
+| Transport audit | Cover, A-F, J-L, P-R | M | Study disposition plus transport license and target-domain result |
+| Phenomenal character | Cover, A-F, J-L, N, P-R | N | Study disposition plus presence gate and four bridge outcomes |
+| Schematic competence | Cover, A-F, J-L, O, P-R | O | Study disposition plus separate $D,C,F,E$ statuses, competence result, and identity-confirmation limit |
+
+**Source note.** This capstone architecture integrates the complete seven-paper corpus. The branch modules preserve the fact that bearer resolution, component necessity, transport, phenomenal character, and schematic competence have different success conditions and different failure implications.
 
 **Why it matters.** “Does anesthesia eliminate consciousness?” is usually too broad. “Does selective recurrent-feedback interruption remove a specified auditory content while preserving $V,N_1,N_2$ in this candidate and interval?” exposes a narrower and more interpretable contrast.
 
@@ -964,7 +987,7 @@ For each model, state:
 6. license conditions; and
 7. revisions under every outcome.
 
-A weak rival is one chosen to lose—for example, “the null theory says nothing matters.” A serious rival explains ordinary cases and disagrees only in a diagnostic region.
+A weak rival is one chosen to lose - for example, “the null theory says nothing matters.” A serious rival explains ordinary cases and disagrees only in a diagnostic region.
 
 ### Worked example: interrupting availability
 
@@ -1096,6 +1119,8 @@ Useful roles include:
 - **Statistics and reproducibility lead:** specifies effects, equivalence, coverage, missingness, code, and data structure.
 - **Independence and licensing auditor:** tracks evidence partitions, dual use, precedence, and transport.
 
+At each checkpoint, one of these members also serves as the **rotating chair/facilitator**. The chair manages time, applies the charter's predeclared deadlock procedure, and ensures that dissent and accessibility needs are recorded. The chair does not receive unilateral authority to alter targets, thresholds, rival descriptions, or result language.
+
 Blinding, scripted analysis, version control, and locked stopping rules can reduce result-driven negotiation. The rival need not endorse Cø / N*. The fairness agreement says only that the test would bear on the declared contrast if its validity conditions pass.
 
 ## 9. From every outcome to a next commitment
@@ -1140,15 +1165,17 @@ Write a 300-word capstone seed containing: exact target; primary candidate; full
 
 ### Collaborative exercise: adversarial preregistration studio
 
-Form teams using the five roles listed in Section 8 and record the project in Appendix D, sections C–L. Complete the following sequence:
+Form teams using the five roles listed in Section 8, rotate the chair, and begin with Appendix D's Cover, A, and B worksheets. During the studio, complete the scientifically applicable parts of C-L. After the common-core review, complete any applicable branch module M-O; do not force irrelevant fields or leave them blank without justification. Complete the following sequence:
 
-1. **Minutes 0–8:** freeze target, models, and the diagnostic cell.
-2. **Minutes 8–18:** draw the causal diagram and freeze candidate, grain, regime, and interval.
-3. **Minutes 18–28:** specify measures, anchors, selectivity, equivalence, negative controls, and rescue.
-4. **Minutes 28–35:** complete the four-way outcome-to-revision table.
-5. **Minutes 35–42:** exchange plans with a red team.
+1. **Minutes 0-8:** freeze target, models, and the diagnostic cell.
+2. **Minutes 8-18:** draw the causal diagram and freeze candidate, grain, regime, and interval.
+3. **Minutes 18-28:** specify measures, anchors, selectivity, equivalence, negative controls, and rescue.
+4. **Minutes 28-35:** complete the four-way outcome-to-revision table.
+5. **Minutes 35-42:** exchange plans with a red team.
 
 The red team must identify one circularity route, one selectivity or validity failure, and one result the plan cannot currently classify. The original team must visibly revise at least one challenged field while preserving an audit trail. The rival representative signs a fairness statement or records the unresolved reason for withholding agreement.
+
+Before final submission, every team also completes the universally required ethics/action, red-team, and final-audit worksheets P-R.
 
 **Discussion prompts.** Which criticism was fatal, repairable before data, or a limitation to report? Did the team ever try to redefine the target? What result would still be ambiguous after all controls, and why?
 
@@ -1198,7 +1225,7 @@ You now have the conceptual and methodological vocabulary to engage the Cø / N*
 \newpage
 
 
-# Appendix A — Notation at a Glance
+# Appendix A - Notation at a Glance
 
 Notation is useful only when it reduces ambiguity. Read every symbol with its local prose label, especially when a letter is reused in different papers. Your first task is not calculation; it is identifying what a symbol commits the investigator to measure, hold fixed, or refrain from inferring.
 
@@ -1256,7 +1283,7 @@ This is the compact source profile conjecture. It suppresses bearer selection. E
 | Anchor vector $Y$ | held-out convergent evidence for model comparison | not an infallible consciousness oracle |
 | Surrogate conflict | credible measures disagree beyond a preregistered tolerance | check before aggregation |
 | Cause profile | structured record of evidence, surrogate, model, boundary, and transport limitations | not another consciousness score |
-| Validity envelope $\mathcal V$ | domain in which an evidence–target interpretation has support | a formula does not carry meaning automatically |
+| Validity envelope $\mathcal V$ | domain in which an evidence-target interpretation has support | a formula does not carry meaning automatically |
 
 For one assessment, $\mathcal A=\langle S,C,T,E,M,\mathcal V\rangle$ records the candidate, target, test, evidence, model, and validity envelope. Its indeterminacy cause profile is $P_R(\mathcal A)=\langle e,s,m,b,t\rangle$: evidence scarcity, surrogate discordance, model dependence, boundary/grain sensitivity, and transport uncertainty. Neither tuple is a consciousness score.
 
@@ -1292,23 +1319,25 @@ For one assessment, $\mathcal A=\langle S,C,T,E,M,\mathcal V\rangle$ records the
 
 ## Blank notation translation
 
-For any equation in the corpus, complete this record before calculating:
+Use this worksheet to translate an equation into an auditable scientific claim before calculating. Complete every field from the frozen source or protocol; if a value is unspecified, write **not specified** rather than inventing it. The final line is the guardrail: a correctly computed quantity still cannot license more than its construct and evidence bridge support.
 
-- **Equation:** ________________________________________________
-- **Target quantity:** _________________________________________
-- **Candidate system:** ________________________________________
-- **Content/state:** ___________________________________________
-- **Grain and interval:** ______________________________________
-- **Operating regime:** ________________________________________
-- **Frozen parameters:** _______________________________________
-- **Observed inputs:** _________________________________________
-- **Output type:** _____________________________________________
-- **License conditions:** ______________________________________
-- **What the equation does not establish:** ____________________
+| Translation field | Response |
+|---|---|
+| Equation |  |
+| Target quantity |  |
+| Candidate system |  |
+| Content/state |  |
+| Grain and interval |  |
+| Operating regime |  |
+| Frozen parameters |  |
+| Observed inputs |  |
+| Output type |  |
+| License conditions |  |
+| What the equation does not establish |  |
 
 \newpage
 
-# Appendix B — How to Read an Empirical Claim
+# Appendix B - How to Read an Empirical Claim
 
 An empirical claim has more structure than “the score increased” or “the theory was supported.” Use the following sequence whenever you read a paper, hear a presentation, or write your own result.
 
@@ -1402,57 +1431,82 @@ A claim with no disfavoring outcome is not yet an exposed empirical claim. Recor
 
 Scientific results inform decisions but do not determine them alone. A practical action combines evidence with values, losses, reversibility, burden, and alternatives. Mark each premise accordingly.
 
-**Scientific premise:** ________________________________________
+### Worksheet B1 - Science-action separation
 
-**Value or loss premise:** _____________________________________
+Use this record whenever a scientific result informs a practical recommendation. State the evidence premise and value/loss premise separately, then explain why the action does not change the scientific classification. The guardrail prevents precaution or urgency from being counted as new target evidence.
 
-**Recommended action:** ________________________________________
-
-**Why the action does not change the scientific label:** _______
+| Science-action field | Response |
+|---|---|
+| Scientific premise |  |
+| Value or loss premise |  |
+| Recommended action |  |
+| Why the action does not change the scientific label |  |
 
 \newpage
 
 ## Empirical-claim annotation sheet
 
-Use this one-page record when reading a paper, evaluating a result card, or preparing a seminar claim. Complete the target and evidence fields before writing the strongest conclusion; then add the tempting overstatement and the next study that would discriminate it.
+Use this two-part record when reading a paper, evaluating a result card, or preparing a seminar claim. Complete the source, target, and observation fields before moving to the license continuation; the split prevents a compressed response from hiding a missing inferential bridge.
 
-- **Source and location:** ______________________________________
-- **Exact quoted or paraphrased claim:** ________________________
-- **Target:** __________________________________________________
-- **Bearer:** __________________________________________________
-- **Population/domain:** ________________________________________
-- **Content, regime, and interval:** ____________________________
-- **Comparison:** ______________________________________________
-- **Branch of the research program:** ___________________________
-- **Observation/manipulation:** _________________________________
-- **Estimator and uncertainty:** ________________________________
-- **Construct-validity support:** _______________________________
-- **Boundary status:** _________________________________________
-- **Independent anchor genealogy:** _____________________________
-- **Primary alternative explanation:** __________________________
-- **Negative control:** _________________________________________
-- **Four-way outcome licensed:** ________________________________
-- **Strongest conclusion:** ____________________________________
-- **Tempting but unlicensed conclusion:** _______________________
-- **Next discriminating study:** ________________________________
+| Empirical-claim field | Response |
+|---|---|
+| Source and location |  |
+| Exact quoted or paraphrased claim |  |
+| Target |  |
+| Bearer |  |
+| Population/domain |  |
+| Content, regime, and interval |  |
+| Comparison |  |
+| Branch of the research program |  |
+| Observation/manipulation |  |
+| Estimator and uncertainty |  |
+
+### Worksheet B2 - Empirical-claim license continuation
+
+Continue the same claim record by auditing validity, boundary, anchor independence, alternatives, and the strongest licensed conclusion. Keep both pages together in the submission and repeat the source citation here if they are separated.
+
+| Empirical-claim field | Response |
+|---|---|
+| Source and location repeated |  |
+| Construct-validity support |  |
+| Boundary status |  |
+| Independent anchor genealogy |  |
+| Primary alternative explanation |  |
+| Negative control |  |
+| Four-way outcome licensed |  |
+| Strongest conclusion |  |
+| Tempting but unlicensed conclusion |  |
+| Next discriminating study |  |
 
 \newpage
 
-# Appendix C — How to Argue Fairly Across Theories
+# Appendix C - How to Argue Fairly Across Theories
 
 Fair argument is not timid argument. It is exact enough that disagreement bears on the strongest available version of a claim. Use this appendix when leading a seminar, writing a comparative essay, or preparing an adversarial study.
 
+This appendix uses six records in sequence: C1 matches the question, C2 audits symmetry, C3 preserves objections and replies, C4 builds a diagnostic case, C5 freezes a disagreement contract, and C6 rehearses the comparison with peer review. Treat this page as the route map; each record begins on its own page so it can be completed, exchanged, and retained independently.
+
 ## 1. State the common question
 
-Two theories can use the word “consciousness” while targeting different phenomena. Before comparing them, write:
+Two theories can use the word “consciousness” while targeting different phenomena. Resolve the target relationship before comparing them.
 
-- Theory A's explanandum: ______________________________________
-- Theory B's explanandum: ______________________________________
-- Shared target, if any: _______________________________________
-- Bridge needed to compare them: _______________________________
-- What a direct comparison would leave out: ____________________
+### Worksheet C1 - Common-question record
+
+Use this record to determine whether two theories answer the same question before comparing their predictions. Complete it with exact versions and source passages. If no shared target or defensible bridge exists, record that limit instead of forcing a verdict.
+
+| Comparison field | Response |
+|---|---|
+| Theory A exact version and source passage |  |
+| Theory A's explanandum |  |
+| Theory B exact version and source passage |  |
+| Theory B's explanandum |  |
+| Shared target, if any |  |
+| Bridge needed to compare them |  |
+| What a direct comparison would leave out |  |
 
 If the targets cannot be matched, compare how the theories choose targets rather than pretending they make opposing case-level predictions.
+
+\newpage
 
 ## 2. Reconstruct before criticizing
 
@@ -1476,7 +1530,11 @@ Do not make a rival easier to defeat by replacing it with a family label.
 
 If you demand a precise boundary from one theory, demand it from the other. If one view may appeal to measurement error, specify when the rival may do so. If a failed prediction triggers revision rather than rejection for your preferred theory, allow the same option under equally constraining rules for its competitor.
 
-Complete the symmetry audit:
+The next worksheet makes those burdens visible side by side.
+
+### Worksheet C2 - Symmetry audit
+
+Use this table after both theory versions have been reconstructed. Apply the same burden to favorable, disfavoring, indeterminate, and invalidating results on both sides. A blank cell signals an unresolved fairness problem, not permission to improvise after the data.
 
 | Question | Theory A | Theory B |
 |---|---|---|
@@ -1487,6 +1545,8 @@ Complete the symmetry audit:
 | What invalidates the test? |  |  |
 | Which revisions are allowed? |  |  |
 | When would revision become degenerating? |  |  |
+
+\newpage
 
 ## 4. Distinguish kinds of disagreement
 
@@ -1505,42 +1565,77 @@ Label the level before offering evidence. A neural intervention may adjudicate a
 
 ## 5. Steelman, reply, and preserve residual pressure
 
-Use a five-part argument map:
-
-- **Strongest objection:** ______________________________________
-- **Premises:** _________________________________________________
-- **Hidden assumption:** ________________________________________
-- **Strongest reply:** __________________________________________
-- **Residual pressure after reply:** ____________________________
-- **Observation that would adjudicate:** ________________________
-
-A reply that leaves no residual pressure is often too quick. The point is not to manufacture a draw; it is to identify which part of the objection has and has not been answered.
+Preserve the strongest objection, the best reply, and any pressure that survives the reply. Cite the source or advocate behind the objection, and distinguish a repaired premise from a merely renamed problem.
 
 ## 6. Use diagnostic cases, not only intuitive cases
 
-Ordinary waking perception is compatible with many theories. A fair comparison seeks a near miss on which their commitments diverge while nuisance factors remain controlled. Record:
-
-- agreement case: ______________________________________________
-- diagnostic near miss: ________________________________________
-- why predictions diverge: _____________________________________
-- shared validity conditions: __________________________________
-- theory-specific validity conditions: __________________________
-- observation favoring A: ______________________________________
-- observation favoring B: ______________________________________
-- result neither can yet interpret: _____________________________
+Ordinary waking perception is compatible with many theories. A fair comparison seeks a near miss on which their commitments diverge while nuisance factors remain controlled.
 
 ## 7. Disagree in a way that improves the next study
 
+End the comparison with a prospective research commitment rather than a vote. The next three records separate the objection, diagnostic case, and disagreement contract so each can be exchanged and reviewed independently.
+
+### Worksheet C3 - Objection map
+
+Use this form to preserve the strongest objection, the best reply, and any pressure that survives the reply. Cite the source or advocate behind the objection. The guardrail is to distinguish a repaired premise from a merely renamed problem.
+
+Use a six-part argument map:
+
+| Argument-map field | Response |
+|---|---|
+| Objection source or advocate |  |
+| Strongest objection |  |
+| Premises |  |
+| Hidden assumption |  |
+| Strongest reply |  |
+| Residual pressure after reply |  |
+| Observation that would adjudicate |  |
+
+A reply that leaves no residual pressure is often too quick. The point is not to manufacture a draw; it is to identify which part of the objection has and has not been answered.
+
+\newpage
+
+### Worksheet C4 - Diagnostic-case record
+
+Use this record to move from a shared success case to a controlled disagreement case. Freeze the validity conditions before predicting the observations. If both versions still agree, the case is not diagnostic and should not be reported as a theory test.
+
+Record:
+
+| Diagnostic-case field | Response |
+|---|---|
+| Agreement case |  |
+| Diagnostic near miss |  |
+| Theory A's prediction |  |
+| Theory B's prediction |  |
+| Why predictions diverge |  |
+| Shared validity conditions |  |
+| Theory-specific validity conditions |  |
+| Observation favoring A |  |
+| Observation favoring B |  |
+| Result neither can yet interpret |  |
+
+\newpage
+
+### Worksheet C5 - Disagreement contract
+
+Use this contract at the end of a comparison to convert disagreement into a prospective research commitment. Each advocate should approve the description of their own view or record a specific objection. Agreement is not required, but hidden target drift and asymmetric escape rules are prohibited.
+
 End a debate with a **disagreement contract** rather than a vote:
 
-- We agree that the target is: _________________________________
-- We agree that the present evidence shows: ____________________
-- We disagree about: ___________________________________________
-- The disagreement is primarily semantic / metaphysical / constitutive / mechanistic / measurement / scope / policy.
-- Evidence that would move Theory A's advocate: _________________
-- Evidence that would move Theory B's advocate: _________________
-- One fair study both sides would support: ______________________
-- One unresolved fairness concern: ______________________________
+| Disagreement-contract field | Response |
+|---|---|
+| Agreed target |  |
+| What the present evidence shows |  |
+| Remaining disagreement |  |
+| Primary level: semantic / metaphysical / constitutive / mechanistic / measurement / scope / policy |  |
+| Evidence that would move Theory A's advocate |  |
+| Evidence that would move Theory B's advocate |  |
+| One fair study both sides would support |  |
+| One unresolved fairness concern |  |
+| Theory A advocate approval or specific objection |  |
+| Theory B advocate approval or specific objection |  |
+
+\newpage
 
 ## Discussion norms for difficult topics
 
@@ -1552,53 +1647,109 @@ End a debate with a **disagreement contract** rather than a vote:
 - Cite the strongest accessible source for a theory version, not only a secondary caricature.
 - Correct your own side's overstatement before exploiting an opponent's imprecision.
 
-## Fair-comparison rehearsal
+### Worksheet C6 - Fair-comparison rehearsal record
 
-Choose two exact theory versions and form groups of four: one advocate per theory, one target-matching auditor, and one recorder. In six minutes, agree on a single diagnostic case and write four lines:
+Use this collaborative worksheet to test whether a proposed comparison is recognizable and risky to both sides. Complete the team record before exchanging it. The exercise succeeds through a fair diagnostic contrast, not through majority agreement.
 
-1. the shared question or the explicit bridge between different questions;
-2. each theory's prospective prediction;
-3. the validity condition either advocate could fairly invoke; and
-4. the result that would leave the comparison unresolved.
+Choose two exact theory versions and form groups of four: one advocate per theory, one target-matching auditor, and one recorder. In six minutes, agree on one diagnostic case and complete the five-field team record.
 
-Swap the four-line record with another group. The reviewing group may reject it only by naming a mismatched target, a caricatured commitment, an asymmetric license, or a nondiagnostic case. Return one accepted correction and one residual disagreement. This rehearsal is successful when both advocates regard the revised test as risky, not when the class reaches a vote.
+| Rehearsal record | Team entry |
+|---|---|
+| Shared question or explicit bridge between different questions |  |
+| Theory A's prospective prediction |  |
+| Theory B's prospective prediction |  |
+| Validity condition either advocate could fairly invoke |  |
+| Result that would leave the comparison unresolved |  |
+
+### Worksheet C6b - Peer review and advocate approvals
+
+Exchange the completed C6 team record with another group, then preserve the reviewer's correction, residual disagreement, and both advocates' judgments on this continuation page. A specific objection is an acceptable result; silence is not approval.
+
+Swap the five-line team record with another group. The reviewing group may reject it only by naming a mismatched target, a caricatured commitment, an asymmetric license, or a nondiagnostic case. Return one accepted correction and one residual disagreement. This rehearsal is successful when both advocates regard the revised test as risky, not when the class reaches a vote.
+
+| Reviewer record | Entry |
+|---|---|
+| Accepted correction |  |
+| Residual disagreement |  |
+| Theory A advocate: recognizable and risky? Approval or objection |  |
+| Theory B advocate: recognizable and risky? Approval or objection |  |
 
 \newpage
 
-# Appendix D — Student Capstone Workbook
+# Appendix D - Student Capstone Workbook
 
 This workbook is intentionally key-free. It does not tell you which theory to favor or which result to expect. Its purpose is to make your commitments visible before data can reward one interpretation. Complete it in stages, retain every version, and mark amendments made after any critical data inspection.
 
 ## Cover record
 
-- **Project title:** ____________________________________________
-- **Team members and roles:** __________________________________
-- **Primary theorist:** _________________________________________
-- **Rival representative:** ____________________________________
-- **Causal-design lead:** ______________________________________
-- **Statistics/reproducibility lead:** __________________________
-- **Independence/licensing auditor:** ___________________________
-- **Version number and date:** __________________________________
-- **Critical data inspected?** Yes / No
-- **If yes, what was visible?** _________________________________
+Use this page to identify the project, its current version, and the people responsible for each intellectual role. Update it at every checkpoint rather than replacing the prior copy. The rotating chair is a temporary facilitation duty, not a sixth authority over scientific decisions.
+
+| Cover field | Response |
+|---|---|
+| Project title |  |
+| Team members |  |
+| Primary theorist |  |
+| Rival representative |  |
+| Causal-design lead |  |
+| Statistics/reproducibility lead |  |
+| Independence/licensing auditor |  |
+| Chair/facilitator for this checkpoint |  |
+
+### Worksheet Cover 2 - Provenance and inspection record
+
+Continue the cover record by locating every frozen artifact and declaring what critical information has already been seen. Keep prior versions rather than overwriting them so reviewers can reconstruct when each commitment was made.
+
+| Project-provenance field | Response |
+|---|---|
+| Registration location |  |
+| Data location |  |
+| Code and environment location |  |
+| Version number and date |  |
+| Critical data inspected? Yes / No |  |
+| If yes, what was visible? |  |
 
 ## A. Collaboration charter
 
-- Which decisions require unanimous agreement? _________________
-- Which decisions may be resolved by the chair? _______________
-- How will minority views be preserved? ________________________
-- Who has authority to stop an invalid analysis? ______________
-- How will authorship and contribution be recorded? ____________
-- What is the response deadline for disputed changes? __________
-- Where will the versioned disagreement log be stored? _________
+Use this worksheet before selecting measures or inspecting critical data. Record how roles rotate, how every member can participate, and how disagreement and missed work will remain visible. The charter governs process; it cannot authorize post hoc changes to a frozen scientific rule.
 
-**Fairness statement from the rival representative:**
+| Collaboration field | Response |
+|---|---|
+| Each member's private prior expectation and storage location |  |
+| Accessibility and participation plan |  |
+| Missed-work and redistribution procedure |  |
+| Behavior-specific contribution log location |  |
+| Decisions requiring unanimous agreement |  |
+| Decisions the chair may resolve |  |
+| Method for preserving minority views |  |
 
-> If the declared validity and license conditions pass, the proposed contrast would / would not fairly test the rival because: ____________________________________________
+### Worksheet A2 - Role-rotation matrix
 
-Signature or recorded objection: _______________________________
+Record the actual chair and role changes at each checkpoint rather than merely promising to rotate them.
+
+| Checkpoint | Chair/facilitator | Other role assignments or changes |
+|---|---|---|
+| 1 - question and branch |  |  |
+| 2 - design and measures |  |  |
+| 3 - frozen protocol |  |  |
+| 4 - analysis review |  |  |
+| 5 - interpretation and submission |  |  |
+
+### Worksheet A3 - Governance and fairness continuation
+
+Continue the collaboration charter by freezing authority, authorship, response, and fairness rules. The rival representative must either sign the fairness rationale or record a specific objection; silence is not approval.
+
+| Governance and fairness field | Response |
+|---|---|
+| Authority to stop an invalid analysis |  |
+| Authorship and contribution record |  |
+| Response deadline for disputed changes |  |
+| Versioned disagreement-log location |  |
+| Rival representative's fairness rationale |  |
+| Rival signature or recorded objection |  |
 
 ## B. Select one capstone branch
+
+Use this worksheet to choose the one branch whose success and failure conditions the project can test well. Consult Chapter 14's routing table, mark the applicable workbook sections, and justify every **not applicable** field by naming replacement diagnostic leverage. Do not choose a branch simply because its data are easiest to obtain.
 
 Check one primary branch:
 
@@ -1609,160 +1760,250 @@ Check one primary branch:
 - [ ] Phenomenal-character bridge
 - [ ] Schematic-competence audit
 
-Why is this branch tractable within the available time, data, skills, and ethics constraints?
-
-________________________________________________________________
-
-Which neighboring branch is explicitly out of scope?
-
-________________________________________________________________
+| Branch-decision field | Response |
+|---|---|
+| Why this branch is tractable within the available time, data, skills, and ethics constraints |  |
+| Neighboring branch placed out of scope, with rationale |  |
+| Applicable common sections |  |
+| Scientifically justified N/A sections and replacement diagnostic leverage |  |
+| Required branch module (M, N, or O) |  |
 
 ## C. Exact target and scope
 
-- **Target property or explanandum:** ___________________________
-- **What the target is not:** __________________________________
-- **Unit of analysis:** _________________________________________
-- **Content or contrast $c$:** _________________________________
-- **Candidate system $S$ or candidate family:** ________________
-- **Observational universe $\Omega$:** __________________________
-- **Spatial/functional/temporal grain $g$:** ____________________
-- **Operating regime $\mathcal R$:** ____________________________
-- **Interval or horizon $\tau/\Delta$:** ________________________
-- **Population or substrate:** _________________________________
-- **Primary exclusions:** ______________________________________
-- **Strongest conclusion the design could license:** ___________
-- **Broader conclusion it cannot license:** _____________________
+Use this worksheet to define the smallest claim the study can genuinely adjudicate. Freeze the bearer, content, grain, regime, interval, and excluded claims together. If a branch does not concern empirical phenomenal presence, state its own exact conceptual or competence target rather than borrowing Cø language.
+
+| Target-and-scope field | Response |
+|---|---|
+| Target property or explanandum |  |
+| What the target is not |  |
+| Unit of analysis |  |
+| Content or contrast $c$ |  |
+| Candidate system $S$ or candidate family |  |
+| Observational universe $\Omega$ |  |
+| Spatial/functional/temporal grain $g$ |  |
+| Operating regime $\mathcal R$ |  |
+| Interval or horizon $\tau/\Delta$ |  |
+| Population or substrate |  |
+
+### Worksheet Capstone C2 - Claim-license continuation
+
+Continue the exact-target record by freezing exclusions and the strongest claim the completed design could license. State the required conditions and final-report wording prospectively so broader language cannot appear after an attractive result.
+
+| Claim-license field | Response |
+|---|---|
+| Target property or explanandum repeated |  |
+| Primary exclusions |  |
+| Strongest conclusion the design could license |  |
+| Conditions required for that conclusion |  |
+| Broader conclusion it cannot license |  |
+| Exact scope language for the final report |  |
+| Observation or failure that would force a narrower claim |  |
+| Rival reviewer confirmation or specific target-drift objection |  |
 
 ## D. Boundary and viability record
 
-List prospectively generated candidates:
+Use this worksheet to generate candidates independently of the desired consciousness verdict and to define viability without circular rescue. Retain excluded candidates and failed tests in the ledger. For a justified noncandidate project, explain the scope boundary that replaces a bearer audit.
 
-| Candidate | Endogenous capacity | External dependence | Role completeness | Stability | Included in frozen family? |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
+Complete one vertical record per prospectively generated candidate. Duplicate this page before writing when the candidate family contains more than one member; never erase an excluded candidate.
 
-- **Primary boundary rule:** ___________________________________
-- **Inclusion-minimality test:** ________________________________
-- **Separability test:** ________________________________________
-- **Boundary-change trigger:** _________________________________
-- **Cross-horizon mapping:** ___________________________________
-- **Frozen candidate referent preserved after intervention?** __________________
-- **Recomputed post-intervention positive-bearer set:** _________________________
-- **Bearer-resolution result:** ________________________________
-- **Resulting subject-attribution license:** ____________________
-- **Independent viability definition:** ________________________
-- **Viability estimator and validity evidence:** _______________
-- **Nonconscious benchmark that could expose overinclusion:** ___
-- **Rule if boundary or viability changes during intervention:** _
+| Candidate-record field | Response |
+|---|---|
+| Candidate label and scope |  |
+| Independent discovery basis |  |
+| Endogenous capacity |  |
+| External dependence |  |
+| Role completeness |  |
+| Stability across the frozen horizon |  |
+| Included in frozen family? If not, exact exclusion rule |  |
+
+### Worksheet D2 - Boundary and viability decisions
+
+Continue the boundary record on this page after completing the candidate table. Use the fields to freeze minimality, separability, mapping, and viability decisions. Do not remove a candidate merely because its retained presence profile is inconvenient.
+
+| Boundary-decision field | Response |
+|---|---|
+| Primary boundary rule |  |
+| Inclusion-minimality test |  |
+| Separability test |  |
+| Boundary-change trigger |  |
+| Cross-horizon mapping |  |
+| Frozen candidate referent preserved after intervention? |  |
+| Recomputed post-intervention positive-bearer set |  |
+
+### Worksheet D3 - Bearer resolution and viability decisions
+
+Continue D2 by turning the candidate comparison into an explicit bearer license and an independently testable viability rule. Preserve a nonconscious benchmark and the action required if intervention changes either the boundary or viability status.
+
+| Bearer-and-viability field | Response |
+|---|---|
+| Bearer-resolution result |  |
+| Resulting subject-attribution license |  |
+| Independent viability definition |  |
+| Viability estimator and validity evidence |  |
+| Nonconscious benchmark that could expose overinclusion |  |
+| Rule if boundary or viability changes during intervention |  |
 
 ## E. Full and rival models
 
-### Full model
+Use this worksheet to reconstruct the full claim and its strongest serious rival at matched target, grain, and interval. Cite an exact version for each and freeze allowed pre-data revisions. The diagnostic rows must contain a case on which the models actually disagree.
 
-- **Formal or verbal claim:** __________________________________
-- **Necessary commitments:** ___________________________________
-- **Sufficient commitments:** __________________________________
-- **Expected ordinary success case:** ___________________________
-- **Allowed revisions before data:** ____________________________
+| Matched-model field | Full model | Primary rival |
+|---|---|---|
+| Exact name/version and source passage |  |  |
+| Target match or bridge |  |  |
+| Formal or verbal claim |  |  |
+| Necessary commitments |  |  |
+| Sufficient commitments |  |  |
+| Expected ordinary success case |  |  |
+| Allowed revisions before data |  |  |
 
-### Primary rival
+### Worksheet E2 - Diagnostic predictions
 
-- **Exact name/version and source:** ____________________________
-- **Target match or bridge:** __________________________________
-- **Formal or verbal claim:** __________________________________
-- **Necessary commitments:** ___________________________________
-- **Sufficient commitments:** __________________________________
-- **Expected ordinary success case:** ___________________________
-- **Allowed revisions before data:** ____________________________
+Continue the model comparison by recording cases in which the frozen versions diverge. Use one vertical record per case and duplicate this page for additional cases. Ordinary agreement cases can calibrate measures, but they cannot establish incremental theoretical value.
 
-### Diagnostic predictions
+| Diagnostic-prediction field | Response |
+|---|---|
+| Diagnostic case |  |
+| Full-model prediction |  |
+| Rival prediction |  |
+| Why the predictions differ |  |
+| Observation that adjudicates |  |
+| Contribution to diagnostic coverage |  |
 
-| Diagnostic case | Full-model prediction | Rival prediction | Why they differ | Observation that adjudicates |
-|---|---|---|---|---|
-|  |  |  |  |  |
-|  |  |  |  |  |
-
-- **Minimum diagnostic coverage:** _____________________________
-- **Plan if coverage is below minimum:** ________________________
+| Diagnostic-program field | Response |
+|---|---|
+| Minimum diagnostic coverage |  |
+| Plan if coverage is below minimum |  |
 
 ## F. Construct and measurement validity
 
-Complete one row for every primary component and anchor.
+Use this worksheet to connect every operative construct to an estimator, calibration domain, and known failure mode. Complete only the rows required by the selected branch, but justify omissions. A precise number from outside its validity envelope remains unlicensed.
 
-| Construct | Operational definition | Estimator | Calibration domain | Validity envelope | Main confound | Stress test |
-|---|---|---|---|---|---|---|
-| $V$ |  |  |  |  |  |  |
-| $N_1$ |  |  |  |  |  |  |
-| $N_2$ |  |  |  |  |  |  |
-| $N_3$ |  |  |  |  |  |  |
-| Primary anchor |  |  |  |  |  |  |
-| Secondary anchor |  |  |  |  |  |  |
+Complete one copy for every operative construct and adjudicating anchor, including $V$, each required $N_k$, and every primary anchor. Duplicate this page before writing; a single compressed row cannot carry a construct-validity argument.
 
-- **Rule-in threshold and justification:** ______________________
-- **Rule-out threshold and justification:** _____________________
-- **Equality-at-threshold rule:** _______________________________
-- **Primary uncertainty interval:** _____________________________
-- **Specification neighborhood:** _______________________________
-- **Fragility criterion:** ______________________________________
-- **Missingness mechanisms considered:** ________________________
-- **Data-quality failure rule:** ________________________________
+| Construct-record field | Response |
+|---|---|
+| Construct or anchor and branch role |  |
+| Operational definition |  |
+| Estimator and scoring procedure |  |
+| Calibration domain and data |  |
+| Validity envelope and transport limit |  |
+| Main confound |  |
+| Stress test or negative control |  |
+| Required omission or replacement evidence, if not applicable |  |
+
+### Worksheet F2 - Measurement decision rules
+
+Continue the validity record by freezing thresholds, uncertainty, fragility, and data-quality rules for one named construct-estimator pair. Duplicate this page for every operative measure. These choices determine when an estimator may speak; they must not be tuned to preserve a desired classification.
+
+| Measurement-rule field | Response |
+|---|---|
+| Construct and estimator identity |  |
+| Rule-in threshold |  |
+| Rule-in justification |  |
+| Rule-out threshold |  |
+| Rule-out justification |  |
+| Equality-at-threshold rule |  |
+| Primary uncertainty interval |  |
+| Specification neighborhood |  |
+| Fragility criterion |  |
+| Missingness mechanisms considered |  |
+| Data-quality failure rule |  |
 
 ## G. Intervention and selectivity
 
-- **Intended intervention or decisive observation:** ____________
-- **Target component/construct:** _______________________________
-- **Proposed realization:** ____________________________________
-- **Dose, timing, and route:** __________________________________
-- **Minimum meaningful target effect:** ________________________
-- **Retained components:** _____________________________________
-- **Closed equivalence margin for each retained component:** ____
-- **Candidate-boundary preservation check:** ____________________
-- **Viability preservation check:** _____________________________
-- **Content-identity preservation check:** ______________________
-- **Operating-regime preservation check:** ______________________
-- **Selectivity failure rule:** _________________________________
-- **Pathway-specific rescue, if feasible:** _____________________
+Use this worksheet when the branch makes a causal claim or depends on a decisive perturbation. Predeclare the intended path, retained conditions, equivalence margins, and rescue logic. For a viability-targeting intervention, distinguish failure of the viability gate from failure of the estimator's validity and candidate mapping.
+
+| Intervention-specification field | Response |
+|---|---|
+| Intended intervention or decisive observation |  |
+| Target component or construct |  |
+| Proposed realization |  |
+| Dose, timing, and route |  |
+| Minimum meaningful target effect |  |
+
+### Worksheet G2 - Preservation, selectivity, and rescue
+
+Continue the intervention record by freezing what must remain equivalent, what would invalidate selectivity, and what rescue would identify the intended pathway. Use full-width records so a long equivalence margin or boundary condition cannot be squeezed into a token answer.
+
+| Selectivity-and-rescue field | Response |
+|---|---|
+| Retained components |  |
+| Closed equivalence margin for each retained component |  |
+| Candidate-boundary preservation check |  |
+| Viability preservation check |  |
+| Content-identity preservation check |  |
+| Operating-regime preservation check |  |
+| Selectivity failure rule |  |
+| Pathway-specific rescue, or reason it is infeasible |  |
 
 ## H. Causal diagram audit
 
-Attach a diagram containing intervention, target component, retained components, boundary, viability, anchors, report/task paths, common causes, measurement channels, and selection into the diagnostic set. Then answer:
+Use this worksheet to make alternative causal paths visible before interpreting an effect. Attach the diagram, then answer each audit question from the graph rather than from the hoped-for narrative. A missing or uncertain arrow must remain visible in the inference limit.
 
-- Can the intervention reach an anchor outside the target path? __
-- Can a common cause move predictor and anchor? _________________
-- Can diagnostic selection create collider bias? _______________
-- Can the intervention change bearer, content, regime, or $V$? __
-- Which arrow is least well supported? __________________________
-- Which measured variable would most reduce that uncertainty? ___
+Draw or attach a diagram containing intervention, target component, retained components, boundary, viability, anchors, report/task paths, common causes, measurement channels, and selection into the diagnostic set.
+
+| Causal diagram - draw here or attach a labeled page |
+|---|
+|  |
+
+### Worksheet H2 - Causal-path audit questions
+
+Answer every question from the frozen graph rather than from the hoped-for narrative. If the answer differs by branch or regime, preserve the alternatives.
+
+| Causal-audit field | Response |
+|---|---|
+| Can the intervention reach an anchor outside the target path? |  |
+| Can a common cause move predictor and anchor? |  |
+| Can diagnostic selection create collider bias? |  |
+| Can the intervention change bearer, content, regime, or $V$? |  |
+| Which arrow is least well supported? |  |
+| Which measured variable would most reduce that uncertainty? |  |
 
 ## I. Negative controls and falsification criteria
 
-| Control | Confound it detects | Expected pattern | Failure consequence |
-|---|---|---|---|
-| Sham intervention |  |  |  |
-| Content control |  |  |  |
-| Route control |  |  |  |
-| Duration/intensity match |  |  |  |
-| Sensor/preprocessing control |  |  |  |
-| Boundary/viability control |  |  |  |
+Use this worksheet to state how confounds would reveal themselves and what observations would challenge, suspend, or leave the claim untouched. Tailor controls to the branch and document any infeasible control. A failed control cannot be relabeled as a negative theory result.
 
-Complete all four statements:
+Audit each required control type, then complete one vertical record per implemented or infeasible control. Duplicate this page as needed.
 
-- **A licensed observation that would favor the full model:** ___
-- **A licensed observation that would disfavor the full model:** _
-- **A result that would remain indeterminate:** _________________
-- **A failure that would make the inference unlicensed:** _______
+- [ ] Sham intervention
+- [ ] Content control
+- [ ] Route control
+- [ ] Duration/intensity match
+- [ ] Sensor/preprocessing control
+- [ ] Boundary/viability control
+- [ ] Other branch-specific control
 
-What repeated result would force removal, combination, narrowing, probabilistic reformulation, or rejection of the favored claim?
+| Control-record field | Response |
+|---|---|
+| Control name and branch role |  |
+| Confound it detects |  |
+| Expected pattern if the control passes |  |
+| Failure consequence |  |
+| Feasible? If not, reason and inferential cost |  |
 
-________________________________________________________________
+### Worksheet I2 - Falsification commitments
 
-What result would *not* falsify the theory because it bears only on an operationalization or transport bridge?
+Continue the control audit by stating one licensed result in every direction and one failure that silences the test. Then state the repeated evidence that would force substantive revision. Do not count operational or bridge failure as direct refutation of a claim it never licensed.
 
-________________________________________________________________
+| Falsification-commitment field | Response |
+|---|---|
+| Licensed observation favoring the full model |  |
+| Licensed observation disfavoring the full model |  |
+| Result that remains indeterminate |  |
+| Failure that makes the inference unlicensed |  |
+| Repeated result forcing removal, combination, narrowing, probabilistic reformulation, or rejection |  |
+| Result that does not falsify the theory because it bears only on an operationalization or transport bridge |  |
 
 ## J. Anchor-independence ledger
+
+Use this worksheet to trace every path by which a component estimate and an adjudicating anchor might share data, labels, preprocessing, or theory assumptions. Record corrective action before final testing. An unavoidable overlap must weaken the conclusion and receive a leave-channel-out analysis where possible. Duplicate the dependency table when the study uses more than two anchors.
+
+| Anchor registry | Identity, source, and genealogy |
+|---|---|
+| Anchor 1 |  |
+| Anchor 2 |  |
+| Additional anchor or continuation-page reference |  |
 
 | Dependency question | Anchor 1 | Anchor 2 | Corrective action |
 |---|---|---|---|
@@ -1774,124 +2015,361 @@ ________________________________________________________________
 | Interpretation derived from tested theory? |  |  |  |
 | Common cause likely? |  |  |  |
 
-- **Development data:** ________________________________________
-- **Calibration data:** ________________________________________
-- **Final adjudication data:** _________________________________
-- **Cross-fitting or held-out plan:** ____________________________
-- **Who remains blind to which data:** __________________________
+### Worksheet J2 - Data partition and blinding plan
+
+Continue the independence ledger by freezing which records may inform development, calibration, and final adjudication. Name people or roles, not only datasets, when blinding is part of the license.
+
+| Partition-and-blinding field | Response |
+|---|---|
+| Development data |  |
+| Calibration data |  |
+| Final adjudication data |  |
+| Cross-fitting or held-out plan |  |
+| Who remains blind to which data |  |
 
 ## K. Quantitative and reproducibility plan
 
-- **Primary estimand:** _________________________________________
-- **Primary statistical model:** ________________________________
-- **Minimum meaningful effect:** ________________________________
-- **Equivalence margins:** ______________________________________
-- **Expected diagnostic coverage:** _____________________________
-- **Sample-size or precision rationale:** _______________________
-- **Multiplicity plan:** ________________________________________
-- **Missing-data rule:** ________________________________________
-- **Exclusion rule:** ___________________________________________
-- **Stopping rule:** ____________________________________________
-- **Sensitivity analyses:** ____________________________________
-- **Simulation scenarios:** ____________________________________
-- **Recovery success criterion:** _______________________________
-- **Variable dictionary location:** _____________________________
-- **Analysis code or pseudocode location:** _____________________
-- **Software and version lock:** ________________________________
-- **File naming and data provenance plan:** _____________________
-- **Confirmatory versus exploratory labels:** ___________________
+Use this worksheet to make the estimand, uncertainty rules, missingness, stopping, code, and provenance reproducible. Freeze confirmatory choices before critical data inspection and label later analyses exploratory. Numerical detail is useful only when it corresponds to a scientifically justified decision.
 
-## L. Four-way outcome-to-revision table
+| Quantitative-plan field | Response |
+|---|---|
+| Primary estimand |  |
+| Primary statistical model |  |
+| Minimum meaningful effect |  |
+| Equivalence margins |  |
+| Expected diagnostic coverage |  |
+| Sample-size or precision rationale |  |
+| Multiplicity plan |  |
+| Sensitivity analyses |  |
 
-| Observed pattern | License checks | Scientific outcome | Claim affected | Required revision or next study |
-|---|---|---|---|---|
-| Preregistered favorable pattern |  |  |  |  |
-| Preregistered rival-favorable pattern |  |  |  |  |
-| Threshold-straddling evidence |  |  |  |  |
-| Credible anchor conflict |  |  |  |  |
-| Low diagnostic coverage |  |  |  |  |
-| Selectivity failure |  |  |  |  |
-| Boundary reversal |  |  |  |  |
-| Transport failure |  |  |  |  |
-| Adequate-equivalence null |  |  |  |  |
+### Worksheet K2 - Missingness, simulation, and reproducibility
+
+Continue the quantitative plan by freezing data-loss rules, stopping, recovery tests, software, and provenance. Every location must be specific enough for a reviewer to find the record.
+
+| Reproducibility-plan field | Response |
+|---|---|
+| Missing-data rule and mechanisms |  |
+| Exclusion rule |  |
+| Stopping rule |  |
+| Simulation scenarios |  |
+| Recovery success criterion |  |
+| Variable dictionary location |  |
+| Analysis code or pseudocode location |  |
+| Software and version lock |  |
+| File naming and data provenance plan |  |
+| Confirmatory versus exploratory labels |  |
+
+## L. Outcome vocabulary and pattern plan
+
+Use this worksheet before writing any outcome-to-revision record. Freeze both levels of conclusion: the study-level disposition and every special component, bridge, boundary, transport, or competence status required by the selected branch. This order prevents a branch output from being invented after an observed pattern is seen.
+
+| Branch-status field | Response |
+|---|---|
+| Selected branch |  |
+| Required branch output vocabulary |  |
+| Definition and decision rule for each branch status |  |
+| Mapping from branch status to study-level disposition |  |
+| Rule preventing collapse of component or bridge results into a generic label |  |
+
+Prepare a separate L2 record for every applicable pattern:
+
+- [ ] Preregistered favorable pattern
+- [ ] Preregistered rival-favorable pattern
+- [ ] Threshold-straddling evidence
+- [ ] Credible anchor conflict
+- [ ] Low diagnostic coverage
+- [ ] Selectivity failure
+- [ ] Boundary reversal
+- [ ] Transport failure
+- [ ] Adequate-equivalence null
+- [ ] Other unanticipated pattern
+
+### Worksheet L2 - Outcome-to-revision record
+
+Complete one vertical record for each pattern selected above and duplicate this page as needed. Every record must preserve the study disposition and branch-specific output separately, and every abstaining or license-failure outcome must still name a next commitment.
+
+| Outcome-record field | Response |
+|---|---|
+| Observed or prospective pattern |  |
+| License checks |  |
+| Study disposition |  |
+| Branch-specific output or status |  |
+| Claim affected |  |
+| Required revision or next study |  |
 
 ## M. Transport audit, if applicable
 
-- **Validated source-domain claim:** ____________________________
-- **Target-domain realization:** ________________________________
-- **Declared mapping $T$:** ____________________________________
-- **Construct preservation evidence:** __________________________
-- **Causal-role preservation evidence:** ________________________
-- **Calibration preservation evidence:** ________________________
-- **Boundary/regime preservation evidence:** ____________________
-- **Frozen tolerances:** ________________________________________
-- **Smallest observation that breaks the bridge:** ______________
-- **Scope left intact if transport fails:** ______________________
+Use this module only when a source-domain interpretation is carried to a target domain. Test construct, causal-role, calibration, and boundary/regime preservation separately. A failed bridge unlicenses that transported interpretation; it does not make the target negative or erase the source result.
 
-## N. Ethics, feasibility, and practical action
+| Transport-bridge field | Response |
+|---|---|
+| Validated source-domain claim |  |
+| Target-domain realization |  |
+| Declared mapping $T$ |  |
+| Construct preservation evidence |  |
+| Causal-role preservation evidence |  |
+| Calibration preservation evidence |  |
+| Boundary/regime preservation evidence |  |
 
-- **Participants or systems affected:** _________________________
-- **Burden and risk:** __________________________________________
-- **Potential benefit:** ________________________________________
-- **Reversibility:** ____________________________________________
-- **Alternatives:** _____________________________________________
-- **Consent or oversight requirements:** ________________________
-- **Data privacy and stewardship:** _____________________________
-- **Stopping condition for welfare or safety:** _________________
-- **Scientific result stated separately:** ______________________
-- **Value/loss assumptions:** ___________________________________
-- **Proportional action under each outcome:** ___________________
+### Worksheet M2 - Transport result and scope limit
 
-## O. Red-team disposition log
+Complete the transport decision only after the four preservation records above. The transport license and the separate target-domain result answer different questions and must receive separate justifications.
 
-| Reviewer concern | Category | Team response | Change made | Accepted by reviewer? | Residual limitation |
-|---|---|---|---|---|---|
-|  | circularity / validity / selectivity / boundary / statistics / transport / ethics |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
+- **Transport license:** [ ] licensed  [ ] indeterminate  [ ] unlicensed
+- **Target-domain result:** [ ] positive  [ ] negative  [ ] indeterminate  [ ] unlicensed
 
-## P. Final preregistration audit checklist
+| Transport-decision field | Response |
+|---|---|
+| Frozen tolerances |  |
+| Smallest observation that breaks the bridge |  |
+| Transport-license justification |  |
+| Target-domain-result justification |  |
+| Scope left intact if transport fails |  |
 
-Mark **yes**, **no**, or **not applicable**. Any “no” requires a written consequence.
+## N. Phenomenal-character bridge, if applicable
 
-- [ ] The target is narrower than “consciousness in general.”
-- [ ] The candidate family was generated without the desired verdict.
-- [ ] Grain, regime, and interval are explicit.
-- [ ] Viability is defined independently.
-- [ ] Full and rival models address a matched target.
-- [ ] At least one diagnostic case makes their predictions differ.
-- [ ] Diagnostic coverage has a minimum criterion.
-- [ ] Component estimators have construct-validity evidence.
-- [ ] Rule-in, rule-out, equality, and conflict rules are frozen.
-- [ ] Uncertainty and specification fragility are handled prospectively.
-- [ ] Retained components have equivalence margins.
-- [ ] Intervention selectivity has a failure rule.
-- [ ] Boundary, viability, content, and regime changes are monitored.
-- [ ] At least one major negative control is present.
-- [ ] A rescue is included or its infeasibility is explained.
-- [ ] Component-construction measures and adjudicating anchors are separate; any unavoidable overlap is declared, tested leave-channel-out, and reflected in the conclusion's strength.
-- [ ] Development, calibration, and adjudication roles are separated.
-- [ ] Missingness, exclusions, multiplicity, and stopping are specified.
-- [ ] Simulated-data recovery or analysis rehearsal is planned.
-- [ ] Favorable, disfavoring, indeterminate, and unlicensed outcomes are all defined.
-- [ ] Every outcome maps to a next commitment.
-- [ ] Transport claims have four-part bridge evidence.
-- [ ] Scientific status and practical action are separate.
-- [ ] Rival representatives had symmetric input.
-- [ ] Amendments and disagreements remain visible.
-- [ ] At least one result would force a nontrivial revision.
+Use this module only after freezing an independently supported positive presence gate for the tested contents. Keep causal-trajectory geometry and phenomenal-quality anchors in separate evidence streams, then test the bridge on held-out contents and a geometry-changing intervention. Failure here bears on the character extension, not automatically on minimal phenomenal presence.
 
-**Unresolved “no” items and consequence for inference:**
+| Character-bridge foundation field | Response |
+|---|---|
+| Frozen presence-gate rule and result |  |
+| Contents admitted by the gate |  |
+| Causal-trajectory object $G_c$ |  |
+| Independent quality-space object $\mathcal Q$ |  |
+| Frozen bridge $F_\Phi$ |  |
+| Development, calibration, and held-out partitions |  |
+| Nuisance models and invariances |  |
 
-________________________________________________________________
+### Worksheet N2 - Held-out deformation and bridge result
 
-**Final claim the team is willing to risk:**
+Continue the character audit with the held-out prediction and geometry-changing intervention. Preserve the independently observed anchor change and the presence-gate retest before classifying the bridge.
 
-________________________________________________________________
+- **Bridge outcome:** [ ] supported  [ ] refuted  [ ] indeterminate  [ ] unlicensed
 
-**Final claim the team refuses to make:**
+| Character-bridge result field | Response |
+|---|---|
+| Held-out relational prediction |  |
+| Geometry-changing intervention and predicted deformation |  |
+| Anchor change observed independently |  |
+| Presence gate preserved after intervention? |  |
+| Bridge-outcome justification |  |
+| Symmetry or underdetermination that remains |  |
+| Scope left intact if the bridge fails |  |
 
-________________________________________________________________
+## O. Schematic-competence audit, if applicable
+
+Use this module to test whether trained readers can reconstruct and fault-localize a public role-annotated model under blind conditions. Freeze the interpretation manual, trial-level unit, abstention rules, and scoring before reveal. Competence or legibility does not establish that the underlying consciousness identity is true.
+
+| Schematic-trial design field | Response |
+|---|---|
+| Public schematic and interpretation manual |  |
+| Declared reader population and training |  |
+| Blind trial-level unit |  |
+| Bearer-definition decision and evidence |  |
+| Operational/causal-readout decision and evidence |  |
+| Coverage/unity decision and evidence |  |
+| Fault-localization prediction |  |
+| Explanation/teaching criterion |  |
+| Permitted abstention and ambiguity rules |  |
+| Inter-rater reliability criterion |  |
+
+### Worksheet O2 - Blind outcomes, competence, and limits
+
+Complete the outcome statuses only after the held-out fault is revealed. A licensed competence result does not confirm the underlying consciousness identity.
+
+- **Trial license:** [ ] licensed  [ ] unlicensed
+- **Conjunctive competence:** [ ] supported  [ ] not supported  [ ] indeterminate
+
+| Schematic-trial outcome field | Response |
+|---|---|
+| Held-out fault outcome |  |
+| $D$ decomposable-semantics status and evidence |  |
+| $C$ compositional-readout status and evidence |  |
+| $F$ fault-localization status and evidence |  |
+| $E$ evidential-independence status and evidence |  |
+| Conjunctive competence justification |  |
+| Trial-license justification |  |
+| Identity-confirmation status or explicit limit |  |
+| Claim the trial cannot license |  |
+
+## P. Ethics, feasibility, and practical action
+
+Use this worksheet to state burdens, oversight, and value/loss assumptions separately from the scientific result. Complete it for every project affecting people, animals, biological tissue, or systems with plausible welfare or safety stakes. Precaution may be justified under uncertainty, but it must not be counted as evidence for the target.
+
+| Ethics-and-feasibility field | Response |
+|---|---|
+| Participants or systems affected |  |
+| Burden and risk |  |
+| Potential benefit |  |
+| Reversibility |  |
+| Alternatives |  |
+| Consent or oversight requirements |  |
+| Data privacy and stewardship |  |
+| Stopping condition for welfare or safety |  |
+| Scientific result stated separately |  |
+| Value/loss assumptions |  |
+
+### Worksheet P2 - Outcome-to-action record
+
+For each possible scientific outcome, state a proportional action and its value/loss rationale without changing the scientific label. Use the full response area to record reversibility, burden, uncertainty, and the condition that would change the action.
+
+| Scientific outcome | Proportional practical action and rationale |
+|---|---|
+| Favorable |  |
+| Disfavoring |  |
+| Indeterminate |  |
+| Unlicensed |  |
+
+## Q. Red-team disposition log
+
+Use this worksheet to preserve every substantive criticism and its disposition. Accepted criticisms must produce a visible protocol change; rejected criticisms require a reason that another reviewer can audit. Prepare and retain at least five copies before review, use one concern per record, duplicate additional copies as needed, and never delete a record because the team reached consensus later.
+
+Category: [ ] circularity  [ ] validity  [ ] selectivity  [ ] boundary  [ ] statistics  [ ] transport  [ ] ethics  [ ] other
+
+| Red-team record field | Response |
+|---|---|
+| Concern number, reviewer, and date |  |
+| Reviewer concern |  |
+| Team response |  |
+| Change made |  |
+| Accepted by reviewer? Yes / No / Partly, with reason |  |
+| Residual limitation |  |
+
+## R. Final preregistration audit checklist
+
+Use this worksheet only after every applicable common and branch module is complete. Mark **yes**, **no**, or **not applicable**; justify each N/A scientifically and identify replacement diagnostic leverage. Any unresolved **no** requires a written consequence for interpretation before the protocol is frozen.
+
+| Audit item | Yes | No | N/A |
+|---|:---:|:---:|:---:|
+| The target is narrower than “consciousness in general.” | [ ] | [ ] | [ ] |
+| The candidate family was generated without the desired verdict. | [ ] | [ ] | [ ] |
+| Grain, regime, and interval are explicit. | [ ] | [ ] | [ ] |
+| Viability is defined independently. | [ ] | [ ] | [ ] |
+| Full and rival models address a matched target. | [ ] | [ ] | [ ] |
+| At least one diagnostic case makes their predictions differ. | [ ] | [ ] | [ ] |
+| Diagnostic coverage has a minimum criterion. | [ ] | [ ] | [ ] |
+| Component estimators have construct-validity evidence. | [ ] | [ ] | [ ] |
+| Rule-in, rule-out, equality, and conflict rules are frozen. | [ ] | [ ] | [ ] |
+| Uncertainty and specification fragility are handled prospectively. | [ ] | [ ] | [ ] |
+| Retained components have equivalence margins. | [ ] | [ ] | [ ] |
+| Intervention selectivity has a failure rule. | [ ] | [ ] | [ ] |
+| Boundary, viability, content, and regime changes are monitored. | [ ] | [ ] | [ ] |
+| At least one major negative control is present. | [ ] | [ ] | [ ] |
+
+### Worksheet R1b - Final preregistration audit checklist continuation
+
+Continue the checklist with the remaining outcome, branch, action, governance, and revision commitments. Mark every item; carry every **no** or **N/A** into R2 rather than squeezing a rationale into the checkbox table.
+
+| Audit item | Yes | No | N/A |
+|---|:---:|:---:|:---:|
+| A rescue is included or its infeasibility is explained. | [ ] | [ ] | [ ] |
+| Component-construction measures and adjudicating anchors are separate; unavoidable overlap is declared, tested leave-channel-out, and reflected in conclusion strength. | [ ] | [ ] | [ ] |
+| Development, calibration, and adjudication roles are separated. | [ ] | [ ] | [ ] |
+| Missingness, exclusions, multiplicity, and stopping are specified. | [ ] | [ ] | [ ] |
+| Simulated-data recovery or analysis rehearsal is planned. | [ ] | [ ] | [ ] |
+| Favorable, disfavoring, indeterminate, and unlicensed outcomes are all defined. | [ ] | [ ] | [ ] |
+| Every outcome maps to a next commitment. | [ ] | [ ] | [ ] |
+| Transport claims have four-part bridge evidence. | [ ] | [ ] | [ ] |
+| A character project freezes the presence gate, independent quality anchors, held-out bridge, invariances, and deformation intervention. | [ ] | [ ] | [ ] |
+| A schematic project freezes the manual, trial-level unit, blind fault test, abstention rule, and competence outputs. | [ ] | [ ] | [ ] |
+| Scientific status and practical action are separate. | [ ] | [ ] | [ ] |
+| Rival representatives had symmetric input. | [ ] | [ ] | [ ] |
+| Amendments and disagreements remain visible. | [ ] | [ ] | [ ] |
+| At least one result would force a nontrivial revision. | [ ] | [ ] | [ ] |
+
+### Worksheet R2 - Checklist exceptions and N/A rationales
+
+Use one row for every **no** or **N/A** selected in the checklist. A no requires an inferential consequence and repair; an N/A requires a scientific rationale plus replacement diagnostic leverage. Duplicate this page when four rows do not suffice.
+
+| Checklist item | No consequence or N/A rationale | Replacement diagnostic leverage or required repair |
+|---|---|---|
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+### Worksheet R3 - Final claims and unresolved items
+
+Use this final page only after the checklist and exception log have been reviewed by a rival representative or red team. The final claims define the strongest conclusion the team will risk and the overreach it explicitly refuses.
+
+| Final-claim field | Response |
+|---|---|
+| Unresolved items and their consequence for inference |  |
+| Final claim the team is willing to risk |  |
+| Final claim the team refuses to make |  |
+
+\newpage
+
+# Appendix E - Capstone Assessment Guide
+
+This guide makes the assessment standard visible without supplying a preferred theory verdict or result. Use it to plan work, request useful peer review, and check that every team member can defend the complete design. Unless the course specifies otherwise, the capstone grade is 70% team preregistration, 20% individual defense, and 10% collaboration record.
+
+## Five staged checkpoints
+
+Preserve each submitted version and the reviewing team's response. A compressed course may retain Checkpoints 1, 3, and 5, but it should not skip the evidence-architecture or final-defense functions.
+
+| Checkpoint | Team deliverable | Review team must provide |
+|---|---|---|
+| 1. Target and rivals | Exact target, exclusions, selected branch, and strongest rival | One target-drift risk and one stronger rival formulation |
+| 2. Diagnostic region | Disagreement set, expected coverage, candidate boundary, and branch routing | One ordinary agreement case and one possible boundary or scope reversal |
+| 3. Evidence architecture | Measures, anchors, partitions, intervention or decisive observation, and controls | One circularity route and one selectivity, validity, or bridge failure |
+| 4. Outcome freeze | Study dispositions, branch-specific outputs, and revision rules | One unclassified result and one commitment that remains movable |
+| 5. Mock defense | Complete versioned preregistration and disposition log | One fatal-unless-repaired judgment and one valuable-even-if-null judgment |
+
+## Team-preregistration rubric
+
+The following dimensions apply at the level required by the selected branch. A scientifically justified N/A receives no automatic penalty when its weight is reallocated prospectively to diagnostic leverage, construct validity, or robustness; an unjustified omission is a gap.
+
+| Dimension | Weight | What strong work makes visible |
+|---|---:|---|
+| Target and scope | 8 | Exact explanandum or competence target, bearer or conceptual object, content, regime, interval, and excluded claims |
+| Rival quality | 10 | Strong exact versions with genuinely different prospective predictions |
+| Diagnostic identification | 12 | Correct disagreement set, coverage plan, uncertainty margin, and branch-appropriate leverage |
+| Boundary discipline | 8 | Independent candidate proposal, stability, minimality, and separability, or a justified scope boundary for noncandidate work |
+| Construct validity | 10 | Operational definitions, validation evidence, confounds, and validity envelopes for every operative measure |
+| Anti-circularity | 12 | Enforceable evidence partitions, anchor independence, declared overlap, and no hidden dual use |
+| Branch-specific diagnostic leverage | 10 | Selective intervention and rescue, boundary/transport reversal, bridge deformation, or blind fault/counterexample prediction |
+| Outcome discipline | 10 | Prospective study disposition plus all special component, bridge, boundary, transport, or competence statuses |
+| Robustness and transport | 8 | Reasonable alternative specifications, stability rules, and transfer limits; transport tested only when claimed |
+| Feasibility, ethics, and data | 6 | Executable scope, governance, burden, sources, data structure, code environment, and reproduction materials as applicable |
+| Revision commitments | 6 | Every declared result has a substantive consequence for the model, branch, or protocol |
+
+## Four performance levels
+
+| Level | Anchor | Typical evidence in the submission |
+|---|---|---|
+| Complete and executable | 100% of dimension points | All required choices are frozen, internally consistent, auditable, and ready to implement |
+| Substantively sound with a repairable omission | 85% | The central design is correct, but one bounded omission can be repaired without changing the claim |
+| Developing with a consequential gap | 65% | A missing license, control, bridge, or decision rule could change the interpretation |
+| Insufficient or internally inconsistent | 0-40% | The target, rival, evidence architecture, or outcome rules cannot jointly support the proposed inference |
+
+The assessor should name the decisive missing element rather than relying on a global impression. A polished document cannot compensate for a circular test, mismatched rival, or unclassifiable outcome.
+
+## Individual defense
+
+Each student should be ready to answer one or two questions from five published domains after quiet preparation time, with a brief written supplement permitted:
+
+1. reconstruct the target, selected branch, and full model without teammate prompting;
+2. state the strongest rival fairly and identify the diagnostic disagreement;
+3. explain one construct-validity, selectivity, boundary, transport, or independence risk;
+4. classify an unanticipated result at both study and branch-specific levels; and
+5. state a personal revision commitment if the favored interpretation loses.
+
+Strong performance is accurate, fair to the rival, explicit about uncertainty, and able to connect a result to a nontrivial next commitment. The defense evaluates individual understanding, not confidence or speaking speed.
+
+## Collaboration record
+
+The record should include the completed charter, role-rotation matrix, contribution log, accessibility and redistribution plan, preserved dissent, timely cross-team reviews, and the red-team disposition log. Accepted criticism should produce a visible protocol change; rejected criticism should receive a substantive reason. Collaboration quality is judged from auditable behavior and intellectual fairness, not from equal word counts or the absence of disagreement.
+
+| Collaboration dimension | Auditable evidence | Indicator requiring revision |
+|---|---|---|
+| Role rotation | Dated matrix showing actual chair and role changes | One member repeatedly controls the same high-authority role without a documented access reason |
+| Contribution visibility | Behavior-specific log linked to versions and decisions | Credit rests on impressions, word counts, or unrecorded labor |
+| Accessibility and redistribution | Agreed participation plan plus dated responses to missed work | Barriers or absences silently become lower intellectual authority |
+| Preserved disagreement | Minority views remain in the versioned log with their evidential consequences | Consensus language erases a substantive objection |
+| Cross-team review | Timely review artifacts identify a target, validity, or inference risk | Peer review supplies praise without a testable criticism |
+| Red-team response | Every accepted concern changes the protocol; every rejection gives a reason | A criticism disappears after discussion without a disposition |
+| Individual accountability | Each member can defend the target, rival, evidence architecture, and one revision rule | The submission depends on one spokesperson or hidden division of understanding |
 
 \newpage
 
@@ -1969,17 +2447,19 @@ ________________________________________________________________
 
 **N-star ($N^*$):** The conjunction $N_1\land N_2\land N_3$: integration, system-wide causal availability, and recurrent stability.
 
+**Necessity threat:** A well-supported $C_0$ case for which the recomputed frozen positive-bearer set excludes the candidate under the same target, regime, and interval.
+
 **Negative:** A licensed rule-out for the exact target based on valid, sensitive, adequate evidence. It is not simply a failed positive test.
 
 **Negative control:** A condition designed to reveal a specific confound because the target-specific effect should not appear there.
 
 **Operating regime:** Relevant state conditions such as arousal, task, drug, developmental stage, temperature, or computational mode.
 
-**Phenomenal character:** What an experience is like—its qualitative organization—rather than the bare fact that experience is present.
+**Phenomenal character:** What an experience is like - its qualitative organization - rather than the bare fact that experience is present.
 
 **Positive:** A licensed attribution of the exact target under declared model and evidence rules. It is not certainty.
 
-**Positive bearer:** A candidate that clears the role profile and the declared inclusion-minimality and separability conditions needed for final attribution.
+**Positive bearer:** An inclusion-minimal all-pass candidate in the frozen positive-bearer set. Final attribution additionally requires a resolved bearer relation: either a unique retained bearer or a plurality that satisfies the declared pairwise-separability rule.
 
 **Precaution:** A practical response to possible harm under uncertainty. It combines evidence with loss, value, and reversibility assumptions and is not itself evidence of consciousness.
 
@@ -2023,7 +2503,20 @@ ________________________________________________________________
 
 # References and Source Trail
 
-This textbook follows a seven-paper project. The list below records the role each paper plays in the shared research architecture. It deliberately avoids invented dates, journal names, volume numbers, or publication claims. Consult the PDFs distributed with the course for their exact internal reference lists and version information.
+This textbook follows a seven-paper project by Phil Stilwell. The student-edition baseline is the core Version 2.0, revised July 8, 2026, plus the companion manuscript files present in repository commit `400f44a745e5425232a62f7a71487552fdfa9a0d` on July 18, 2026. The project-paper links below are pinned to that commit, and the machine-readable build manifest records each corpus file's SHA-256 digest. Check the current project before quoting a later revision. The taxonomy link is a dated retrieval rather than an immutable snapshot. Chapter source notes identify the principal paper or synthesis used locally.
+
+| Corpus item | Baseline date or version | Verification source |
+|---|---|---|
+| Core model | Version 2.0, July 8, 2026 | [Core PDF](https://github.com/philstilwell/C0/blob/400f44a745e5425232a62f7a71487552fdfa9a0d/public/paper.pdf) |
+| Boundary criterion | July 10, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/400f44a745e5425232a62f7a71487552fdfa9a0d/papers/where-is-the-conscious-subject/manuscript.md) |
+| Availability criterion | July 11, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/400f44a745e5425232a62f7a71487552fdfa9a0d/papers/consciousness-without-report/manuscript.md) |
+| Four-outcome framework | Repository baseline, July 18, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/400f44a745e5425232a62f7a71487552fdfa9a0d/papers/indeterminacy-as-scientific-result/manuscript.md) |
+| Component-necessity audit | July 12, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/400f44a745e5425232a62f7a71487552fdfa9a0d/papers/ablating-n-star/manuscript.md) |
+| Character extension | July 11, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/400f44a745e5425232a62f7a71487552fdfa9a0d/papers/from-phenomenal-presence-to-phenomenal-character/manuscript.md) |
+| Schematic legibility | July 16, 2026 | [Source manuscript](https://github.com/philstilwell/C0/blob/400f44a745e5425232a62f7a71487552fdfa9a0d/papers/consciousness-in-the-schematic/manuscript.md) |
+| Taxonomy placement source | Retrieved July 9, 2026 | [Closer To Truth consciousness taxonomy](https://loc.closertotruth.com/consciousness-theories) |
+
+**Project site:** <https://philstilwell.github.io/C0/>
 
 ## 1. *Cø as N\*: A Minimal Network-Dynamics Model of Phenomenal Consciousness*
 
@@ -2035,7 +2528,7 @@ This textbook follows a seven-paper project. The list below records the role eac
 
 **Role in the project:** the scope and bearer condition. It argues that candidate systems should be generated from independent signs of causal autonomy, frozen prospectively, assessed for role completeness, and filtered through inclusion-minimality and separability before final subject attribution. It distinguishes constituents, interfaces, and enabling supports and permits plural or unresolved boundary outcomes.
 
-**Use this source when:** a claim depends on where the system begins and ends, especially for split brains, brain–body loops, coupled agents, organoid–controller hybrids, or distributed artificial systems.
+**Use this source when:** a claim depends on where the system begins and ends, especially for split brains, brain-body loops, coupled agents, organoid-controller hybrids, or distributed artificial systems.
 
 ## 3. *Consciousness Without Report: What System-Wide Availability Actually Requires*
 
@@ -2049,17 +2542,17 @@ This textbook follows a seven-paper project. The list below records the role eac
 
 **Use this source when:** a test is invalid, conflicting, underpowered, out of domain, or ethically urgent; when interpreting abstention rates; or when defining outcome precedence.
 
-## 5. *From Phenomenal Presence to Phenomenal Character: A Dynamical-Geometry Extension of the N\* Model*
-
-**Role in the project:** the second-layer account of what experience is like. After a positive presence gate, it proposes mapping content-specific causal-trajectory geometry to independently anchored relations in an empirical quality space. It requires held-out tests, geometry-changing interventions, invariance analysis, and explicit transport licenses.
-
-**Use this source when:** moving from whether experience is present to how color, sound, pain, valence, temporal flow, or cross-modal unity might be structured.
-
-## 6. *Ablating N\*: Does Every Conjunct Earn Its Place?*
+## 5. *Ablating N\*: Does Every Conjunct Earn Its Place?*
 
 **Role in the project:** the component-necessity audit. It explains why a conjunct does not earn necessity merely by covarying with the others. It compares the full model with leave-one-out and grouped rivals on diagnostic cases, separates criterion, mechanism, and measurement ablations, protects held-out anchor independence, and allows indispensable, redundant, causally coupled, indeterminate, and unlicensed outcomes.
 
 **Use this source when:** designing selective interventions, testing minimality, interpreting nulls, measuring diagnostic coverage, or deciding whether failure calls for component removal, combination, or better operationalization.
+
+## 6. *From Phenomenal Presence to Phenomenal Character: A Dynamical-Geometry Extension of the N\* Model*
+
+**Role in the project:** the second-layer account of what experience is like. After a positive presence gate, it proposes mapping content-specific causal-trajectory geometry to independently anchored relations in an empirical quality space. It requires held-out tests, geometry-changing interventions, invariance analysis, and explicit transport licenses.
+
+**Use this source when:** moving from whether experience is present to how color, sound, pain, valence, temporal flow, or cross-modal unity might be structured.
 
 ## 7. *Reading Consciousness from the Schematic: Structural Legibility in the N\* Model*
 
@@ -2071,53 +2564,72 @@ This textbook follows a seven-paper project. The list below records the role eac
 
 The core paper states the risky identity hypothesis. The boundary paper fixes the candidate system to which it applies. The availability paper makes one conjunct experimentally sharper without defining it by report. The indeterminacy paper governs what evidence licenses. The ablation paper asks whether every conjunct is truly needed. The character paper extends the project beyond bare presence. The schematic paper asks what would make the whole architecture structurally intelligible. No single companion paper independently establishes the core identity, and success in one work package does not automatically validate the rest.
 
+## Primary manuscript references
+
+Stilwell, P. (2026). *Cø as N\*: A minimal network-dynamics model of phenomenal consciousness* (Version 2.0) [Manuscript].
+
+Stilwell, P. (2026). *Where is the conscious subject? A dynamical criterion for system boundaries* [Manuscript].
+
+Stilwell, P. (2026). *Consciousness without report: What system-wide availability actually requires* [Manuscript].
+
+Stilwell, P. (2026). *Indeterminacy as a scientific result: A four-outcome framework for consciousness attribution* [Manuscript].
+
+Stilwell, P. (2026). *Ablating N\*: Does every conjunct earn its place? A necessity audit without a consciousness oracle* [Manuscript].
+
+Stilwell, P. (2026). *From phenomenal presence to phenomenal character: A dynamical-geometry extension of the N\* model* [Manuscript].
+
+Stilwell, P. (2026). *Reading consciousness from the schematic: Structural legibility in the N\* model* [Manuscript].
+
 ## Selected contextual readings
 
 These readings place empirical examples and rival families in context. Their inclusion does not imply that they endorse Cø / N*.
 
 Albantakis, L., Barbosa, L., Findlay, G., et al. (2023). Integrated information theory (IIT) 4.0: Formulating the properties of phenomenal existence in physical terms. *PLOS Computational Biology, 19*(10), e1011465. <https://doi.org/10.1371/journal.pcbi.1011465>
 
-Birch, J., Schnell, A. K., & Clayton, N. S. (2020). Dimensions of animal consciousness. *Trends in Cognitive Sciences, 24*(10), 789–801. <https://doi.org/10.1016/j.tics.2020.07.007>
+Birch, J., Schnell, A. K., & Clayton, N. S. (2020). Dimensions of animal consciousness. *Trends in Cognitive Sciences, 24*(10), 789-801. <https://doi.org/10.1016/j.tics.2020.07.007>
 
-Bodien, Y. G., Allanson, J., Cardone, P., et al. (2024). Cognitive motor dissociation in disorders of consciousness. *New England Journal of Medicine, 391*(7), 598–608. <https://doi.org/10.1056/NEJMoa2400645>
+Bodien, Y. G., Allanson, J., Cardone, P., et al. (2024). Cognitive motor dissociation in disorders of consciousness. *New England Journal of Medicine, 391*(7), 598-608. <https://doi.org/10.1056/NEJMoa2400645>
 
 Butlin, P., Long, R., Elmoznino, E., et al. (2023). *Consciousness in artificial intelligence: Insights from the science of consciousness*. arXiv. <https://doi.org/10.48550/arXiv.2308.08708>
 
 Casali, A. G., Gosseries, O., Rosanova, M., et al. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. *Science Translational Medicine, 5*(198), 198ra105. <https://doi.org/10.1126/scitranslmed.3006294>
 
-Frankish, K. (2016). Illusionism as a theory of consciousness. *Journal of Consciousness Studies, 23*(11–12), 11–39.
+Frankish, K. (2016). Illusionism as a theory of consciousness. *Journal of Consciousness Studies, 23*(11-12), 11-39.
 
-Frässle, S., Sommer, J., Jansen, A., Naber, M., & Einhäuser, W. (2014). Binocular rivalry: Frontal activity relates to introspection and action but not to perception. *Journal of Neuroscience, 34*(5), 1738–1747. <https://doi.org/10.1523/JNEUROSCI.4403-13.2014>
+Frässle, S., Sommer, J., Jansen, A., Naber, M., & Einhäuser, W. (2014). Binocular rivalry: Frontal activity relates to introspection and action but not to perception. *Journal of Neuroscience, 34*(5), 1738-1747. <https://doi.org/10.1523/JNEUROSCI.4403-13.2014>
 
 Graziano, M. S. A., & Webb, T. W. (2015). The attention schema theory: A mechanistic account of subjective awareness. *Frontiers in Psychology, 6*, 500. <https://doi.org/10.3389/fpsyg.2015.00500>
 
-Kagan, B. J., Kitchen, A. C., Tran, N. T., et al. (2022). In vitro neurons learn and exhibit sentience when embodied in a simulated game-world. *Neuron, 110*(23), 3952–3969.e8. <https://doi.org/10.1016/j.neuron.2022.09.001>
+Kagan, B. J., Kitchen, A. C., Tran, N. T., et al. (2022). In vitro neurons learn and exhibit sentience when embodied in a simulated game-world. *Neuron, 110*(23), 3952-3969.e8. <https://doi.org/10.1016/j.neuron.2022.09.001>
 
-Lamme, V. A. F. (2006). Towards a true neural stance on consciousness. *Trends in Cognitive Sciences, 10*(11), 494–501. <https://doi.org/10.1016/j.tics.2006.09.001>
+Lamme, V. A. F. (2006). Towards a true neural stance on consciousness. *Trends in Cognitive Sciences, 10*(11), 494-501. <https://doi.org/10.1016/j.tics.2006.09.001>
 
-Lau, H., & Rosenthal, D. (2011). Empirical support for higher-order theories of conscious awareness. *Trends in Cognitive Sciences, 15*(8), 365–373. <https://doi.org/10.1016/j.tics.2011.05.009>
+Lau, H., & Rosenthal, D. (2011). Empirical support for higher-order theories of conscious awareness. *Trends in Cognitive Sciences, 15*(8), 365-373. <https://doi.org/10.1016/j.tics.2011.05.009>
 
-Mashour, G. A., Roelfsema, P. R., Changeux, J.-P., & Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. *Neuron, 105*(5), 776–798. <https://doi.org/10.1016/j.neuron.2020.01.026>
+Mashour, G. A., Roelfsema, P. R., Changeux, J.-P., & Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. *Neuron, 105*(5), 776-798. <https://doi.org/10.1016/j.neuron.2020.01.026>
 
 Smirnova, L., Caffo, B. S., Gracias, D. H., et al. (2023). Organoid intelligence (OI): The new frontier in biocomputing and intelligence-in-a-dish. *Frontiers in Science, 1*, 1017235. <https://doi.org/10.3389/fsci.2023.1017235>
 
-Thompson, E., & Varela, F. J. (2001). Radical embodiment: Neural dynamics and consciousness. *Trends in Cognitive Sciences, 5*(10), 418–425. <https://doi.org/10.1016/S1364-6613(00)01750-2>
+Thompson, E., & Varela, F. J. (2001). Radical embodiment: Neural dynamics and consciousness. *Trends in Cognitive Sciences, 5*(10), 418-425. <https://doi.org/10.1016/S1364-6613(00)01750-2>
 
-Tsuchiya, N., Wilke, M., Frässle, S., & Lamme, V. A. F. (2015). No-report paradigms: Extracting the true neural correlates of consciousness. *Trends in Cognitive Sciences, 19*(12), 757–770. <https://doi.org/10.1016/j.tics.2015.10.002>
+Tsuchiya, N., Wilke, M., Frässle, S., & Lamme, V. A. F. (2015). No-report paradigms: Extracting the true neural correlates of consciousness. *Trends in Cognitive Sciences, 19*(12), 757-770. <https://doi.org/10.1016/j.tics.2015.10.002>
 
-Wannez, S., Heine, L., Thonnard, M., et al. (2017). The repetition of behavioral assessments in diagnosis of disorders of consciousness. *Annals of Neurology, 81*(6), 883–889. <https://doi.org/10.1002/ana.24962>
+Wannez, S., Heine, L., Thonnard, M., et al. (2017). The repetition of behavioral assessments in diagnosis of disorders of consciousness. *Annals of Neurology, 81*(6), 883-889. <https://doi.org/10.1002/ana.24962>
 
 ## Reading-record template
 
-For each source you use, record:
+Use this worksheet for every primary or contextual source that materially affects an argument or capstone decision. Record the exact location, target, evidence, remaining burden, and inferential limit before importing the claim. The guardrail is traceability: a citation should let another reader reconstruct what the source actually supports.
 
-- **Paper title:** ______________________________________________
-- **Section or page:** _________________________________________
-- **Claim in your own words:** __________________________________
-- **Exact target and scope:** __________________________________
-- **Role in the seven-paper program:** __________________________
-- **Evidence offered:** _________________________________________
-- **Evidence still required:** __________________________________
-- **Strongest objection acknowledged:** _________________________
-- **One prohibited inference:** _________________________________
-- **How it changes your capstone:** ______________________________
+| Reading-record field | Response |
+|---|---|
+| Paper title, author, year, and exact version |  |
+| Stable link, DOI, or repository location |  |
+| Section, page, figure, or passage |  |
+| Claim in your own words |  |
+| Exact target, population, regime, and scope |  |
+| Role in the seven-paper program or rival comparison |  |
+| Evidence actually offered |  |
+| Evidence still required |  |
+| Strongest objection or limitation acknowledged |  |
+| One prohibited inference |  |
+| How it changes the capstone or argument |  |

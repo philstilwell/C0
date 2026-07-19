@@ -1,8 +1,8 @@
-# Chapter 1 — The Explanandum and the Theory Landscape
+# Chapter 1 - The Explanandum and the Theory Landscape
 
 ## Opening puzzle: one word, six questions
 
-A patient opens her eyes and moves through ordinary sleep–wake cycles, but she does not follow spoken commands. A brain scan later suggests that she may have performed a requested imagery task. Is she conscious?
+A patient opens her eyes and moves through ordinary sleep-wake cycles, but she does not follow spoken commands. A brain scan later suggests that she may have performed a requested imagery task. Is she conscious?
 
 The question feels urgent, yet it is not precise enough to answer. We might be asking whether she is awake, whether there is anything it is like to be her, whether she heard the request, whether she could use its content to guide a plan, whether she knew that she heard it, or what the heard voice sounded like. Those questions are connected, but they are not interchangeable. A result that bears directly on one may provide only indirect evidence about another.
 
@@ -27,7 +27,7 @@ The word *consciousness* does several jobs in ordinary and scientific language. 
 
 1. **Wakefulness or arousal.** Is the organism in a globally responsive operating state rather than, for example, deep anesthesia or coma?
 2. **Minimal phenomenal presence, Cø.** Is there anything it is like for the candidate system to undergo the state?
-3. **Content presence.** Is a particular content—this tone, this red patch, this ache—phenomenally present?
+3. **Content presence.** Is a particular content - this tone, this red patch, this ache - phenomenally present?
 4. **Access and report.** Can the content guide reasoning, memory, deliberate action, or overt response?
 5. **Reflective consciousness, C₁.** Does the system represent, monitor, or own its own state?
 6. **Phenomenal character.** What is the experience like, and how are its qualities related?
@@ -81,9 +81,9 @@ A credible witness can strongly support the claim that an event occurred. The wi
 
 **Checkpoint.** Rewrite the claim “the stimulus was consciously seen because it was decoded” as two statements: the direct result and the missing bridge premise.
 
-## 3. What Cø / N* claims—and what it postpones
+## 3. What Cø / N* claims - and what it postpones
 
-Cø / N* proposes that minimal phenomenal presence is tied to a realized network-dynamical profile. In later chapters, the profile will be unpacked into viability ($V$), integration or synergy ($N_1$), report-independent system-wide availability ($N_2$), and recurrent stability ($N_3$). The bundle $N^*$ abbreviates $N_1\land N_2\land N_3$: all three components together.
+Cø / N* proposes that minimal phenomenal presence is tied to a realized network-dynamical profile. In later chapters, the profile will be unpacked into viability ($V$), $N_1$ integration or synergy, $N_2$ report-independent system-wide availability, and $N_3$ recurrent stability. The bundle $N^*$ abbreviates $N_1\land N_2\land N_3$: all three components together.
 
 At this stage, the important point is the theory's division of labor. The research program contains seven linked papers:
 
@@ -95,7 +95,7 @@ At this stage, the important point is the theory's division of labor. The resear
 - *From Phenomenal Presence to Phenomenal Character* adds a separately testable bridge to qualitative structure; and
 - _Reading Consciousness from the Schematic_ asks what would make the model compositionally and counterfactually intelligible.
 
-[Source note: This division of labor follows the corpus map and the roles stated across the seven-paper Cø / N* research program.]
+**Source note.** This division of labor follows the corpus map and the roles stated across the seven-paper Cø / N* research program.
 
 The core target is deliberately narrow. Report, attention, executive control, intelligence, autobiographical memory, and self-modeling may enrich experience or serve as evidence. They are not silently inserted as necessary constituents of Cø. Phenomenal character is not denied; it is addressed through an additional bridge only after presence is admitted.
 
@@ -113,7 +113,7 @@ The best short classification is that Cø / N* is a **physicalist, information-d
 - **Network theory:** the relevant relations occur among causally interacting elements at a declared grain.
 - **Of minimal phenomenal presence:** the initial target is not report, self-reflection, or full phenomenal character.
 
-The model is not unrestricted functionalism. A static lookup table or behavioral duplicate does not pass merely because its input–output mapping looks right. Effective causal coupling, temporal grain, operating regime, and substrate-appropriate viability remain essential.
+The model is not unrestricted functionalism. A static lookup table or behavioral duplicate does not pass merely because its input-output mapping looks right. Effective causal coupling, temporal grain, operating regime, and substrate-appropriate viability remain essential.
 
 In one broad taxonomy, its primary home is **materialist computational and functional theory**. Its secondary home is **information-based theory**, with cross-references to **neurobiological** and **first-order** approaches. It is realist rather than illusionist, conditionally substrate-independent rather than panpsychist, and only weakly adjacent to electromagnetic or synchrony theories. Those labels locate the program; they do not replace tests.
 
@@ -141,7 +141,7 @@ Here is a fair comparison by theoretical pressure rather than slogan:
 
 This table does not settle which theory is correct. It states prospective disagreement points. Exact comparison requires an exact, dated version. “GNWT” or “IIT” names a changing research family, not a single timeless prediction.
 
-[Context note: Starting points for exact versions include Albantakis et al. (2023) on IIT 4.0, Mashour et al. (2020) on GNWT, Lamme (2006) on recurrent processing, Lau and Rosenthal (2011) on higher-order theory, Graziano and Webb (2015) on attention-schema theory, Frankish (2016) on illusionism, and Thompson and Varela (2001) on embodied dynamics. The selected readings at the end of the book provide full citations.]
+**Context note.** Starting points for exact versions include Albantakis et al. (2023) on IIT 4.0, Mashour et al. (2020) on GNWT, Lamme (2006) on recurrent processing, Lau and Rosenthal (2011) on higher-order theory, Graziano and Webb (2015) on attention-schema theory, Frankish (2016) on illusionism, and Thompson and Varela (2001) on embodied dynamics. The selected readings at the end of the book provide full citations.
 
 **Why it matters.** A hybrid vocabulary is not yet a hybrid theory. Cø / N* becomes distinctive only where its conjunction, boundary order, report-independent availability criterion, four-outcome evidence policy, and component audits yield predictions or methods that neighbors do not.
 
@@ -158,7 +158,7 @@ Each laboratory announces, “We found the neural basis of consciousness.”
 Stage the comparison:
 
 1. Ask what target and sufficiency claim each announcement assumes.
-2. Imagine a case that passes U but fails A and R. How would IIT, a workspace theory, RPT, and Cø / N* describe its relevance?
+2. Imagine a case that passes U but fails A and R. Choose one dated operational version of IIT, workspace theory, and RPT, then compare each with Cø / N*. If the case packet does not determine a version's prediction, mark it **underdetermined** and name the missing rule rather than issuing a family-wide verdict.
 3. Now imagine that all three measurements pass, but they were calculated over different node sets and time windows. What has actually been shown?
 4. Specify one result on which two frozen theory versions would disagree. If you cannot, is the difference empirical, methodological, or verbal?
 
@@ -184,7 +184,7 @@ Several limits should remain visible:
 - Every system-level measure depends on the chosen bearer, grain, time window, and intervention model.
 - A theory can survive a failed surrogate if the measure was invalid, but repeated measurement failure reduces scientific usefulness.
 
-[Research-status note: The conditional and adversarial stance follows the source papers. Later chapters draw especially on *Where Is the Conscious Subject?*, *Indeterminacy as a Scientific Result*, and “Ablating N*: Does Every Conjunct Earn Its Place?”.]
+**Research-status note.** The conditional and adversarial stance follows the source papers. Later chapters draw especially on *Where Is the Conscious Subject?*, *Indeterminacy as a Scientific Result*, and “Ablating N*: Does Every Conjunct Earn Its Place?”.
 
 **Checkpoint.** For any consciousness result you encounter, write four lines: target, candidate bearer, evidence, and possible revision condition.
 
@@ -194,7 +194,7 @@ Several limits should remain visible:
 
 1. Give a one-sentence distinction between wakefulness and phenomenal presence.
 2. Why can a report be evidence for Cø without being constitutive of Cø?
-3. What does the asterisk in $N^*$ abbreviate?
+3. What does $N^*$ denote, and what are its three conjuncts?
 4. Name one feature Cø / N* assigns to a richer layer rather than the minimal gate.
 5. Why must a comparison name a particular version of a rival theory?
 6. What scientific advantage does a mid-level claim gain by postponing phenomenal character?
@@ -266,7 +266,7 @@ Choose two theory families from the landscape and write one sentence beginning �
 
 \newpage
 
-# Chapter 2 — The Core Biconditional and Network-Dynamics Model
+# Chapter 2 - The Core Biconditional and Network-Dynamics Model
 
 ## Opening puzzle: three excellent scores and no verdict
 
@@ -311,11 +311,11 @@ $S$ is the candidate system, $c$ the content-bearing state, $\mathcal R$ the ope
 
 The displayed formula hides a crucial bearer step. A whole system may pass only because it contains a smaller system that also passes. The theory therefore distinguishes:
 
-1. a **causally admissible test referent** in a frozen family $\mathcal P_\Theta$;
+1. a **causally admissible test referent** in a frozen underlying family $\mathcal P_{\Theta,\mathrm{ont}}$;
 2. its underlying all-pass profile $H_*^{\mathrm{ont}}$; and
 3. inclusion-minimal positive bearers in $\mathcal B^+_{\min,\Theta,\mathrm{ont}}(c)$.
 
-The tag “ont” marks the underlying theoretical property. When the ontic/evidential contrast matters, estimates carry hats, such as $\widehat N_2$. Operational sections sometimes suppress hats for readability, but they identify estimates and decision statuses explicitly in prose.
+The tag “ont” marks an underlying theoretical property or relation. Thus $\mathcal P_{\Theta,\mathrm{ont}}$ is the causally admissible family specified by the frozen boundary rule at the underlying level, while $\widehat{\mathcal P}_\Theta$ is its evidence-relative estimate. The shorter $\mathcal P_\Theta$ is used when this contrast is not at issue. Other estimates likewise carry hats, such as $\widehat N_2$. Operational sections sometimes suppress hats for readability, but they identify estimates and decision statuses explicitly in prose.
 
 Define the underlying profile:
 
@@ -333,7 +333,7 @@ $$
 \{S\in\mathcal P_{\Theta,\mathrm{ont}}:H_*^{\mathrm{ont}}(S,c)=1\}.
 $$
 
-When the bearer relation is resolved—either one stable minimum exists or several minima pass a declared separability rule—the fuller hypothesis is:
+When the bearer relation is resolved - either one stable minimum exists or several minima pass a declared separability rule - the fuller hypothesis is:
 
 $$
 \operatorname{Resolved}_B(c;\Theta)\Rightarrow
@@ -343,7 +343,7 @@ $$
 
 **Plain language.** First identify stable systems that can be tested. Next ask which of them genuinely passes every role. Finally remove a larger candidate if a qualifying proper subsystem does the same work at the same specification. Only then does the model issue a positive subject-level prediction.
 
-[Source note: The bearer-complete formulation is a synthesis convention drawn from the core paper, *Where Is the Conscious Subject?*, and “Ablating N*: Does Every Conjunct Earn Its Place?”. It makes explicit a step that the compact core formula suppresses.]
+**Source note.** The bearer-complete formulation is a synthesis convention drawn from the core paper, *Where Is the Conscious Subject?*, and “Ablating N*: Does Every Conjunct Earn Its Place?”. It makes explicit a step that the compact core formula suppresses.
 
 Because $\mathcal B^+(c)$ is content-indexed, it first identifies a bearer for one content or episode. Positive results for $c_i$ and $c_j$ do not by themselves establish one co-conscious or persisting subject; that requires a stable mapped bearer or a preregistered joint-content rule.
 
@@ -458,7 +458,7 @@ Here $H$ is a proposed cross-module backbone, $\operatorname{PC}$ is a participa
 
 The conjunction also imposes **noncompensation**. Suppose pedagogical normalized values are $N_1=.98$, $N_2=.95$, and $N_3=.20$. Their mean is .71, which might pass an average threshold. Under the conjunctive theory, the low $N_3$ cannot be repaired by excellence elsewhere. This is a substantive theoretical bet, not a theorem of statistics.
 
-**Why it matters.** Disagreement cases—especially profiles in which exactly one component fails—are far more informative than ordinary cases in which every measure rises and falls together.
+**Why it matters.** Disagreement cases - especially profiles in which exactly one component fails - are far more informative than ordinary cases in which every measure rises and falls together.
 
 ## 5. Four levels of claim
 
@@ -475,7 +475,7 @@ Viability illustrates the same distinction. The underlying $V$ may be true or fa
 
 **Do not infer.** “The model does not predict Cø here” is not the same sentence as “the experiment directly observed the absence of experience.” The former is a conditional model verdict.
 
-[Source note: The four-level separation and conflict policy synthesize the core paper with *Indeterminacy as a Scientific Result*.]
+**Source note.** The four-level separation and conflict policy synthesize the core paper with *Indeterminacy as a Scientific Result*.
 
 ## 6. A fair comparison with additive and single-factor rivals
 
@@ -546,7 +546,7 @@ Use this frozen case packet. For each numeric component, the pass gate is a lowe
 | A | stable mapping; no qualifying proper subset; one minimum; separation not needed; $V$ passed | $N_1=.76\ [.70,.82]$; $N_2=.73\ [.66,.80]$; $N_3=.81\ [.74,.88]$; independent anchor supports Cø |
 | B | stable $\mathcal P_\Theta$ referent; bearer set must be recomputed; $V$ passed | $N_1=.72\ [.65,.79]$; $N_2=.42\ [.35,.49]$; $N_3=.79\ [.72,.86]$; route-family coverage adequate |
 | C | stable proposed referent; minimality record complete; $V$ not assessed | $N_1=.78\ [.71,.85]$; $N_2=.71\ [.64,.78]$; $N_3=.75\ [.67,.83]$; power log for viability channels is missing |
-| D | stable proposed referent; $V$ passed | $N_1$ estimator 1 $=.74\ [.68,.80]$; estimator 2 $=.43\ [.36,.50]$; $N_2=.74\ [.66,.82]$; $N_3=.77\ [.70,.84]$; both $N_1$ estimators were credible and preregistered |
+| D | stable proposed referent; $V$ passed | $N_1$ estimator 1 $=.74\ [.68,.80]$; $N_1$ estimator 2 $=.43\ [.36,.50]$; $N_2=.74\ [.66,.82]$; $N_3=.77\ [.70,.84]$; both $N_1$ estimators were credible and preregistered |
 | E | candidate match is $14/20=.70$ across conditions; $V$ passed | $N_1=.75\ [.69,.81]$; $N_2=.72\ [.65,.79]$; $N_3=.76\ [.68,.84]$; no validated cross-condition remapping is available |
 
 Experts meet briefly across teams to agree on the minimum information their column needs, then return to teach their home teams. Do not infer a solution from a profile letter; apply the frozen precedence rules.
@@ -595,7 +595,7 @@ Sketch two nested candidate systems around the same all-pass component profile. 
 
 \newpage
 
-# Chapter 3 — Where Is the Conscious Subject?
+# Chapter 3 - Where Is the Conscious Subject?
 
 ## Opening puzzle: changing the answer by drawing a circle
 
@@ -637,7 +637,7 @@ $$
 S^{\mathrm{post}}=\arg\max_{S\subseteq\Omega}M_C(S).
 $$
 
-$\Omega$ is the declared observational universe. The formula asks which subset $S$ maximizes score $M_C$. Used retrospectively, it is circular: the score chooses the bearer and then validates that same bearer. The search can also capitalize on noise and analyst flexibility.
+$\Omega$ is the declared observational universe. The formula asks which subset $S$ has the highest score. Used retrospectively, it is circular: the score chooses the bearer and then validates that same bearer. The search can also capitalize on noise and analyst flexibility.
 
 **Do not infer.** A high integration set, a statistical community, or a Markov blanket may nominate a candidate. It does not prove that the candidate is a subject.
 
@@ -688,7 +688,7 @@ A_\Theta(S)=
 {J_{\mathrm{self}}(S)+J_{\mathrm{in}}(S)+\varepsilon}.
 $$
 
-$A_\Theta$ is an autonomy ratio, and $\varepsilon$ prevents division by zero. A candidate needs both a sufficiently high ratio and an absolute endogenous-capacity floor $J_{\mathrm{self}}\geq\sigma$. Without the floor, an almost inert system could look highly autonomous because both numerator and external influence are tiny.
+$A_\Theta$ is an autonomy ratio, and $\varepsilon$ prevents division by zero. The stabilizer $\varepsilon$ is fixed prospectively relative to the calibrated scale of $d$; it is a numerical convenience, not a tunable penalty for changing candidate rankings. A candidate needs both a sufficiently high ratio and an absolute endogenous-capacity floor $J_{\mathrm{self}}\geq\sigma$. Without the floor, an almost inert system could look highly autonomous because both numerator and external influence are tiny.
 
 The estimands compare future-trajectory distributions. Let $P_S^\Delta(\cdot\mid x,e)$ describe the distribution of $S$'s trajectory over horizon $\Delta$ when internal state is set to $x$ and external context to $e$. Then:
 
@@ -722,7 +722,7 @@ A boat's trajectory reflects both its engine and the river. Testing the engine b
 
 ## 4. Role completeness and inclusion-minimality
 
-Once stable referents are frozen, held-out evidence evaluates the four roles. A candidate is **role-complete** only if the same candidate passes $V,N_1,N_2,$ and $N_3$ under the same specification. An indeterminate role remains indeterminate; the boundary is not redrawn until a passing profile appears.
+Once stable referents are frozen, held-out evidence evaluates the four roles. A candidate is **role-complete** only if the same candidate passes $V,N_1,N_2,$ and $N_3$ under the same specification. An indeterminate role remains indeterminate. The frozen candidate family is never redrawn in response to a role result; any new candidate proposal begins a separately versioned, prospectively tested analysis.
 
 Among role-complete candidates at one grain and horizon, apply inclusion-minimality:
 
@@ -732,7 +732,7 @@ $$
 
 This is set-theoretic minimality, not “fewest nodes wins.” A candidate is removed only when it contains a qualifying proper subsystem under the same specification. Two candidates that overlap without a subset relation can both remain provisionally. Candidates at different grains or horizons require an explicit mapping; they should not be forced into a single subset contest.
 
-Why use minimality? Without it, every larger container of a passing system—brain plus scanner, organism plus room, model plus data center—could inherit positive status. Minimality blocks this inflation. Yet it is not sacred. If it repeatedly discards independently validated larger organization at a mapped scale, the rule itself should be revised.
+Why use minimality? Without it, every larger container of a passing system - brain plus scanner, organism plus room, model plus data center - could inherit positive status. Minimality blocks this inflation. Yet it is not sacred. If it repeatedly discards independently validated larger organization at a mapped scale, the rule itself should be revised.
 
 Positive-bearer stability is different from candidate reliability. $R_C(S)$ asks how reliably a proposal clears causal-admissibility requirements across resamples and nuisance variants. $R_B(S)$ asks how stable final boundary membership is across reasonable grains, horizons, estimators, thresholds, and mappings. A candidate can be reliably measurable within one specification and unstable as the final bearer across specifications.
 
@@ -814,7 +814,7 @@ Different traditions supply useful candidate proposals:
 
 Cø / N* can borrow discovery tools from these approaches while withholding final subject status. Its distinctive wager is that consciousness-independent causal admissibility should precede theory-relative role completeness and minimality.
 
-This order has costs. Interventions may be impractical, causal estimates depend on models, and autonomy can vary with horizon. An IIT advocate may argue that the conscious complex must be selected through the very intrinsic causal property proposed to constitute consciousness; separating boundary from theory could then miss the intended entity. An enactivist may argue that fast replacement tests understate organism-scale constitution. A fair comparison asks which rule predicts stable held-out units in benchmark systems and which yields informative, reproducible consciousness tests—not which boundary feels intuitive.
+This order has costs. Interventions may be impractical, causal estimates depend on models, and autonomy can vary with horizon. An IIT advocate may argue that the conscious complex must be selected through the very intrinsic causal property proposed to constitute consciousness; separating boundary from theory could then miss the intended entity. An enactivist may argue that fast replacement tests understate organism-scale constitution. A fair comparison asks which rule predicts stable held-out units in benchmark systems and which yields informative, reproducible consciousness tests - not which boundary feels intuitive.
 
 ## 8. Evidence and limits
 
@@ -829,19 +829,19 @@ Further limits include:
 - separability evidence may be asymmetric or technologically inaccessible; and
 - the episode-boundary criterion does not settle diachronic personal identity.
 
-[Source note: The workflow, autonomy estimands, replacement test, boundary outputs, and failure conditions are developed in *Where Is the Conscious Subject?*.]
+**Source note.** The workflow, autonomy estimands, replacement test, boundary outputs, and failure conditions are developed in *Where Is the Conscious Subject?*.
 
-Uncertainty is part of the result. Let $p_j$ be the weighted frequency with which mapped candidate class $[S_j]$ appears across the preregistered specification neighborhood. Because one specification may select several candidates, the $p_j$ values need not sum to one and are not posterior probabilities. Let $q_k$ record the weighted frequency of each complete mapped boundary outcome—one candidate, two candidates, none, or unresolved. When those outcomes are exhaustive, the $q_k$ values do sum to one. Candidate frequencies and complete-outcome frequencies answer different stability questions.
+Uncertainty is part of the result. Let $p_j$ be the weighted frequency with which mapped candidate class $[S_j]$ appears across the preregistered specification neighborhood. Because one specification may select several candidates, the $p_j$ values need not sum to one and are not posterior probabilities. Let $q_k$ record the weighted frequency of each complete mapped boundary outcome - one candidate, two candidates, none, or unresolved. When those outcomes are exhaustive, the $q_k$ values do sum to one. Candidate frequencies and complete-outcome frequencies answer different stability questions.
 
 ### Frozen case cards for the hearing
 
-Use the same thresholds for all three cards: $A_\Theta\geq.70$, $J_{\mathrm{self}}\geq.10$, mapped-unit retention at least $.85$, and pairwise separability at least $.80$. Treat the displayed numbers as exact only for this logic exercise.
+Use the same thresholds for all three cards: $A_\Theta\geq.70$, $J_{\mathrm{self}}\geq.10$, mapped-unit retention at least $.85$, and pairwise separability at least $.80$. For this logic exercise, set $\varepsilon=.001$ on the calibrated scale of $d$ and treat the displayed numbers as exact. The resulting autonomy values are supplied so the hearing tests boundary logic rather than arithmetic ambiguity.
 
 | Card | Candidate evidence | Replacement, minimality, and separability evidence |
 |---|---|---|
-| Split system | left: $J_{\mathrm{self}}=.32$, $J_{\mathrm{in}}=.10$, all roles pass; right: $.30$, $.08$, all roles pass; whole: $.64$, $.25$, all roles pass | left and right are qualifying proper subsets of the whole; cross-coupling interruption preserves both profiles; $\operatorname{Sep}=.86$; mappings are stable |
-| Tool-using agent | model call: $.07$, $.01$, $N_2$ fails; model-plus-memory: $.26$, $.08$, all roles pass; full service: $.55$, $.18$, all roles pass | generic tool replacement preserves the model-plus-memory profile; scheduler removal breaks generic support but patterned replacement restores it; model-plus-memory is a proper subset of the service |
-| Organoid–controller hybrid | organoid: $.13$, $.07$, two role bounds straddle; controller: $.18$, $.11$, $N_1$ fails; hybrid: $.38$, $.16$, all point estimates exceed gates | only $.72$ of mapped units can be matched after the hybrid intervention; generic interface replacement was not attempted; separability interval is $[.61,.84]$ |
+| Split system | left: $J_{\mathrm{self}}=.32$, $J_{\mathrm{in}}=.10$, $A_\Theta=.760$, all roles pass; right: $.30$, $.08$, $A_\Theta=.787$, all roles pass; whole: $.64$, $.25$, $A_\Theta=.718$, all roles pass | left and right are qualifying proper subsets of the whole; cross-coupling interruption preserves both profiles; $\operatorname{Sep}=.86$; mappings are stable |
+| Tool-using agent | model call: $.07$, $.01$, $A_\Theta=.864$, $N_2$ fails and the capacity floor fails; model-plus-memory: $.26$, $.08$, $A_\Theta=.762$, all roles pass; full service: $.55$, $.18$, $A_\Theta=.752$, all roles pass | generic tool replacement preserves the model-plus-memory profile; scheduler removal breaks generic support but patterned replacement restores it; model-plus-memory is a proper subset of the service |
+| Organoid-controller hybrid | organoid: $.13$, $.07$, $A_\Theta=.647$, two role bounds straddle; controller: $.18$, $.11$, $A_\Theta=.619$, $N_1$ fails; hybrid: $.38$, $.16$, $A_\Theta=.702$, all point estimates exceed gates | only $.72$ of mapped units can be matched after the hybrid intervention; generic interface replacement was not attempted; separability interval is $[.61,.84]$ |
 
 Each team must first classify causal admissibility, then role completeness, then minimality and separability. A number above a threshold cannot repair a failed mapping or missing identification step.
 
@@ -859,7 +859,7 @@ Each team must first classify causal admissibility, then role completeness, then
 
 ### Individual transfer task: boundary docket
 
-Choose a brain–computer interface, a life-supported patient, an organoid–controller hybrid, a two-person coordination system, or a tool-using artificial agent. Produce a one-page docket containing the observational universe, two or three candidates, grain, horizon, regime, proposed internal and external interventions, required causal assumptions, size normalization, mapping rule, replacement test, and possible boundary statuses. Do not compute a consciousness score.
+Choose a brain-computer interface, a life-supported patient, an organoid-controller hybrid, a two-person coordination system, or a tool-using artificial agent. Produce a one-page docket containing the observational universe, two or three candidates, grain, horizon, regime, proposed internal and external interventions, required causal assumptions, size normalization, mapping rule, replacement test, and possible boundary statuses. Do not compute a consciousness score.
 
 ### Collaborative exercise and discussion: Boundary Adjudication Hearing
 
@@ -872,7 +872,7 @@ Teams of four assign these roles:
 
 Assign each team one frozen case card at a common horizon. Pair teams for reciprocal hearings. Presenters have three minutes to defend a preferred candidate. Auditors may ask only causal and methodological questions: What is imposed from outside? Which contrast has support? Can generic replacement restore the profile? Does a qualifying proper subsystem remain? What mapping holds across the intervention? What would distinguish one bearer from two?
 
-The presenting team must issue “one,” “several,” “none in the tested family,” or “boundary-indeterminate,” followed by a sentence stating what the result does not show. Then reclassify the same case at a longer horizon. Discuss whether changing the horizon is principled because it was declared in advance or opportunistic because it follows an adverse score.
+The presenting team must issue “one,” “several,” “none in the tested family,” or “boundary-indeterminate,” followed by a sentence stating what the result does not show. Then list which quantities would have to be re-estimated at a longer horizon. Write two conditional reclassifications: one in which generic support ceases to suffice and one in which it remains sufficient. Do not issue a longer-horizon verdict from the present card. Discuss whether changing the horizon is principled because it was declared in advance or opportunistic because it follows an adverse score.
 
 ### Counterexample challenge
 
@@ -913,7 +913,7 @@ Once a candidate is fixed, the first two gates ask different questions. Chapter 
 
 \newpage
 
-# Chapter 4 — Viability and Integration: Realization and Unity
+# Chapter 4 - Viability and Integration: Realization and Unity
 
 ## Opening puzzle: two systems that look impressive for opposite reasons
 
@@ -939,14 +939,14 @@ By the end of this chapter, you should be able to:
 
 ## 1. What $N_1$ is meant to contribute
 
-The theory uses $N_1$ as a **unity condition**. A content should not be merely a list of independent local events. At least some subset $U$ of the fixed candidate $S$ must carry or realize information jointly in a way that is not reducible to the parts considered independently:
+The theory uses $N_1$ as a **unity condition**. A content should not be merely a list of independent local events. At least some subset $U$ of the fixed candidate $S$ that causally participates in realizing content $c$ must carry or realize information jointly in a way that is not reducible to the parts considered independently:
 
 $$
-\exists U\subseteq S\quad\text{such that}\quad
-\operatorname{Synergy}_\Delta(U)\geq\tau_1.
+\exists U\subseteq S\text{ supporting }c\quad\text{such that}\quad
+\operatorname{Synergy}_\Delta(U;c)\geq\tau_1.
 $$
 
-$\exists$ means “there exists,” $\Delta$ is the declared time window, and $\tau_1$ is a preregistered decision threshold for the chosen operational family. The equation states a role and a decision form. It does not declare one universal synergy measure or one natural numerical boundary for experience.
+$\exists$ means “there exists,” $\Delta$ is the declared time window, and $\tau_1$ is a preregistered decision threshold for the chosen operational family. “Supporting $c$” means that $U$ participates causally in realizing the content under test; unrelated synergy elsewhere in $S$ does not satisfy $N_1(S,c)$. The equation states a role and a decision form. It does not declare one universal synergy measure or one natural numerical boundary for experience.
 
 Four distinctions prevent inflated interpretations.
 
@@ -1095,11 +1095,11 @@ A nonsignificant difference is not evidence of equivalence. The entire uncertain
 
 Final positive-bearer membership must be recomputed after manipulation. Requiring the bearer to remain positive would be circular because a successful $N_1$ failure is supposed to remove it from the all-pass set. What must remain stable is the causally admissible referent and its mapping across conditions.
 
-[Source note: This logic follows the component-specific program in “Ablating N*: Does Every Conjunct Earn Its Place?” and the viability/integration treatment in the core paper.]
+**Source note.** This logic follows the component-specific program in “Ablating N*: Does Every Conjunct Earn Its Place?” and the viability/integration treatment in the core paper.
 
 ## 7. Fair comparison with IIT and other unity views
 
-IIT and Cø / N* both take unity and irreducible causal organization seriously. The overlap should not be denied. The difference is that IIT 4.0 embeds intrinsic information and irreducible cause–effect structure in a broader axiomatic identity, including its own account of complexes and phenomenal structure. Cø / N* extracts a unity pressure as $N_1$, requires an independently disciplined boundary sequence, and refuses to treat integration as sufficient without availability, recurrence, and viability.
+IIT and Cø / N* both take unity and irreducible causal organization seriously. The overlap should not be denied. The difference is that IIT 4.0 embeds intrinsic information and irreducible cause-effect structure in a broader axiomatic identity, including its own account of complexes and phenomenal structure. Cø / N* extracts a unity pressure as $N_1$, requires an independently disciplined boundary sequence, and refuses to treat integration as sufficient without availability, recurrence, and viability.
 
 This makes a clear disagreement possible: a fixed, highly integrated candidate that lacks diverse availability or bounded recurrence may receive different predictions from exact frozen versions. But a fair comparison cannot use a generic “IIT score,” nor assume that every synergy estimator implements IIT. Conversely, Cø / N* cannot claim superiority simply because a conjunction blocks more cases. Extra gates must add held-out discrimination rather than adjustable complexity.
 
@@ -1149,13 +1149,13 @@ Use this frozen design record. Every gate is $.60$; retained-component change mu
 
 | Strategy | Post-intervention component record | Mapping, validity, and anchor record |
 |---|---|---|
-| Phase jitter | $N_1=.43\ [.36,.50]$; $\Delta N_1=[-.39,-.22]$; $\Delta V=[-.03,.02]$; $\Delta N_2=[-.05,.01]$; $\Delta N_3=[-.04,.03]$ | mapping $.93$; source fidelity passes; independent anchor changes $[.10,.22]$ in the preregistered direction |
-| Gain suppression | $N_1=.45\ [.38,.52]$; $\Delta N_1=[-.37,-.20]$; $\Delta V=[-.12,-.05]$; $\Delta N_2=[-.16,-.09]$; $\Delta N_3=[-.10,-.04]$ | mapping $.91$; signal-quality control passes; no pathway-specific rescue |
-| Common-source removal | $N_1$ estimator A $=.46\ [.39,.53]$; estimator B $=.69\ [.62,.76]$; estimator A gives $\Delta N_1=[-.36,-.19]$; retained-component changes lie within $[-.05,.05]$ | mapping $.88$; both $N_1$ estimators were credible and frozen; anchor interval straddles zero |
+| Phase jitter | $N_1=.43\ [.36,.50]$, $\Delta N_1=[-.39,-.22]$; $V=.81\ [.75,.87]$, $\Delta V=[-.03,.02]$; $N_2=.74\ [.68,.80]$, $\Delta N_2=[-.05,.01]$; $N_3=.79\ [.72,.86]$, $\Delta N_3=[-.04,.03]$ | mapping $.93$; source fidelity passes; independent anchor changes $[.10,.22]$ in the preregistered direction |
+| Gain suppression | $N_1=.45\ [.38,.52]$, $\Delta N_1=[-.37,-.20]$; $V=.64\ [.58,.70]$, $\Delta V=[-.12,-.05]$; $N_2=.58\ [.52,.64]$, $\Delta N_2=[-.16,-.09]$; $N_3=.63\ [.57,.69]$, $\Delta N_3=[-.10,-.04]$ | mapping $.91$; signal-quality control passes; no pathway-specific rescue |
+| Common-source removal | $N_1$ estimator A $=.46\ [.39,.53]$, estimator B $=.69\ [.62,.76]$, estimator A $\Delta N_1=[-.36,-.19]$; $V=.82\ [.76,.88]$, $\Delta V=[-.03,.03]$; $N_2=.76\ [.70,.82]$, $\Delta N_2=[-.04,.02]$; $N_3=.80\ [.74,.86]$, $\Delta N_3=[-.05,.01]$ | mapping $.88$; both $N_1$ estimators were credible and frozen; anchor interval straddles zero |
 
 Halfway through, another team selects one declared complication: a second credible $N_1$ surrogate remains high; mapped-unit retention falls to $.72$; $\Delta N_2=[-.23,-.11]$; the anchor changes only on report trials; or pathway-specific rescue restores the pre-intervention pattern. Classify the result as selective, nonselective, causally coupled, indeterminate, unlicensed, or strengthened, and defend the classification without changing the frozen margins. A single nonselective result is not enough for the “causally coupled” label.
 
-Discussion: What kind of unity would a positive $N_1$ result establish—statistical, causal, computational, or phenomenological? Teams must preserve one dissent and name a result that would justify combining $N_1$ with $N_3$.
+Discussion: What kind of unity would a positive $N_1$ result establish - statistical, causal, computational, or phenomenological? Teams must preserve one dissent and name a result that would justify combining $N_1$ with $N_3$.
 
 ### Counterexample challenge
 
@@ -1194,11 +1194,11 @@ Chapter 5 turns to $N_2$. Its central challenge is to define “system-wide avai
 
 ### Transition notebook: from unity to reach
 
-Construct two systems that have the same licensed $N_1$ result. In one, the integrated content can selectively alter several functionally different recipient classes; in the other, it remains inside one tightly coupled module. Working in pairs, list which observations are held fixed and which causal intervention would separate the systems. Finish with two verdicts—one about unity and one about availability—without letting either stand in for the other. Chapter 5 will supply the route, latency, diversity, and reduced-family rules needed to refine the second verdict.
+Construct two systems that have the same licensed $N_1$ result. In one, the integrated content can selectively alter several functionally different recipient classes; in the other, it remains inside one tightly coupled module. Working in pairs, list which observations are held fixed and which causal intervention would separate the systems. Finish with two verdicts - one about unity and one about availability - without letting either stand in for the other. Chapter 5 will supply the route, latency, diversity, and reduced-family rules needed to refine the second verdict.
 
 \newpage
 
-# Chapter 5 — Consciousness Without Report: System-Wide Availability
+# Chapter 5 - Consciousness Without Report: System-Wide Availability
 
 ## Opening puzzle: the silent switchboard
 
@@ -1281,7 +1281,7 @@ Translate the case in stages:
 
 1. Why does inactivity fail to establish unavailability in the first city?
 2. Which preparation-burden condition separates the cities?
-3. What would count as content selectivity—a fire-specific response rather than a general loud-noise reaction?
+3. What would count as content selectivity - a fire-specific response rather than a general loud-noise reaction?
 4. How would route interruption distinguish the alarm's causal role from a simultaneous public siren?
 5. Where does the analogy stop helping when the “recipients” are neural populations rather than agents who understand messages?
 
@@ -1343,7 +1343,7 @@ C_A=\sum_k w_ka_k,
 K_A=\sum_k a_k.
 $$
 
-For the positive aggregate, every class not positively qualified contributes zero. Its separate ledger status—negative, indeterminate, or unlicensed—must nevertheless be retained; those statuses are not interchangeable in the final verdict.
+For the positive aggregate, every class not positively qualified contributes zero. Its separate ledger status - negative, indeterminate, or unlicensed - must nevertheless be retained; those statuses are not interchangeable in the final verdict.
 
 Coverage prevents a tiny fraction of the candidate's declared functional repertoire from carrying the result. Class count prevents one dominant class from being relabeled into several subclasses. But coverage and count can still hide concentration: one class may carry nearly all meaningful effect while others barely cross threshold.
 
@@ -1401,7 +1401,7 @@ $$
 
 The superscripts mean “with report recipients removed” and “with executive recipients removed.” Weights are renormalized within each frozen reduced family. A positive $N_2$ result must survive both.
 
-This test guards against two forms of smuggling. A system might look global only because a report-preparation class has many downstream connections. Or several executive subtypes—working memory, conflict monitoring, planning, and report—might dominate the taxonomy. Removing these families asks whether diverse nonreport and nonexecutive causal reach remains.
+This test guards against two forms of smuggling. A system might look global only because a report-preparation class has many downstream connections. Or several executive subtypes - working memory, conflict monitoring, planning, and report - might dominate the taxonomy. Removing these families asks whether diverse nonreport and nonexecutive causal reach remains.
 
 Removal need not mean permanent lesion. Researchers can design tasks without overt report, exploit natural motor dissociations, transiently interrupt channels, or estimate a reduced-family model while preserving arousal and generic support. Each strategy has limitations. No-report designs can change attention or task set; lesions can alter the operating regime; modeling depends on causal assumptions.
 
@@ -1421,7 +1421,7 @@ $N_2$ intentionally stands near access consciousness and global-workspace theori
 
 The proposed distinction is that standard access often emphasizes availability for reasoning, deliberate control, working memory, and report. $N_2$ admits a weaker and broader functional repertoire: sensory comparison, orienting, value updating, homeostatic adjustment, and visuomotor control can qualify without executive uptake. Whether this is genuinely distinct must be demonstrated through disagreement cases, not asserted.
 
-For a fair GNWT comparison, freeze an exact version—for example, one requiring a particular global neuronal workspace ignition or executive-access pattern. Then seek a case in which content-specific posterior, subcortical, affective, or orienting reach passes $N_2$ while that GNWT requirement does not. Cø / N* may predict positive availability; the frozen GNWT version may not. Motor report loss alone is insufficient, because contemporary workspace theories need not equate workspace with overt movement.
+For a fair GNWT comparison, freeze an exact version - for example, one requiring a particular global neuronal workspace ignition or executive-access pattern. Then seek a case in which content-specific posterior, subcortical, affective, or orienting reach passes $N_2$ while that GNWT requirement does not. Cø / N* may predict positive availability; the frozen GNWT version may not. Motor report loss alone is insufficient, because contemporary workspace theories need not equate workspace with overt movement.
 
 If careful operationalization makes both theories predict the same cases, the difference may be explanatory or terminological rather than diagnostic. If $N_2$ always requires executive recipients in practice, its advertised separation fails and the theory must say so.
 
@@ -1431,7 +1431,7 @@ If careful operationalization makes both theories predict the same cases, the di
 
 A component verdict can be:
 
-- **Positive:** the test is licensed and every required recipient, aggregate, reduced-family, uncertainty, and stability rule passes.
+- **Positive:** the assessment is licensed; every class counted as qualifying passes all five recipient gates; and the coverage, class-count, evenness, reduced-family, uncertainty, and stability rules pass. Other frozen classes may remain negative or indeterminate, but they remain visible in the ledger.
 - **Negative:** a direction-specific confidence bound decisively fails a frozen gate under adequate test conditions.
 - **Indeterminate:** valid evidence straddles a threshold, credible surrogates conflict, route-family coverage is incomplete, class count remains possible but unresolved, or specification stability is too low.
 - **Unlicensed:** the referent, content contrast, taxonomy, intervention, regime, source fidelity, or transport interpretation fails.
@@ -1452,7 +1452,7 @@ Other direct challenges include:
 
 Practical limits are substantial. Content interventions can be difficult or ethically constrained. Route interruption may disrupt arousal or the bearer. Recipient functions are partly theory-laden. Counterfactual claims require causal-model assumptions. Yet these difficulties are preferable to treating widespread activation as self-interpreting.
 
-[Source note: The six distinctions, recipient gates, aggregate rules, reduced-family tests, stability requirement, and direct challenge patterns are developed in *Consciousness Without Report*.]
+**Source note.** The six distinctions, recipient gates, aggregate rules, reduced-family tests, stability requirement, and direct challenge patterns are developed in *Consciousness Without Report*.
 
 ## Practice studio
 

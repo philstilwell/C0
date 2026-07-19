@@ -1,4 +1,4 @@
-# Chapter 6 — Recurrent Stability and Temporal Presence
+# Chapter 6 - Recurrent Stability and Temporal Presence
 
 **Opening puzzle.** Imagine two devices that receive the same brief signal. In Device R, the signal enters a network whose later activity feeds back into earlier processing. If the network is nudged away from its current state, it tends to return toward a content-specific pattern before eventually moving on. In Device F, the signal passes through a one-way chain of slow components. The activity lasts just as long, and a graph of average activation looks nearly identical, but nothing later makes a causal difference to anything earlier. If both devices retain the signal for 240 milliseconds, have they achieved the same kind of temporal organization?
 
@@ -63,13 +63,15 @@ The bounds are operational hypotheses, not constants discovered once for every s
 
 Candidate estimators include survival time within a preregistered trajectory region, return toward a content-specific attractor after a small perturbation, recurrent effective connectivity, a hidden-state plateau, and pathway-dependent recovery. Each estimator carries assumptions. Autocorrelation may confuse recurrence with slow decay. Effective-connectivity estimates may depend heavily on model choice. Attractor language may oversimplify trajectories that are metastable without settling into a fixed basin. Therefore, multiple estimators should be compared, and credible disagreement should produce an indeterminate component assessment rather than a convenient average.
 
+**Method note.** Metastable return without an identifiable loop may be evaluated as an alternative $N_3$ surrogate, but it must not be silently treated as evidence for the stronger recurrent-topology claim. Investigators must freeze the surrogate's causal role, intervention signature, and agreement rule in advance. If a loop-based estimator and a metastability estimator disagree beyond the declared tolerance, the $N_3$ result is conflicted or indeterminate; the favorable measure cannot simply replace the other after inspection.
+
 Onset and offset signals require the same role analysis. Late activity may reflect report or memory, while absence of one familiar late component does not establish absence of every recurrent route. If loop-based and metastable-surrogate estimators disagree beyond tolerance, return a conflicted or indeterminate assessment rather than selecting the favorable estimator after inspection.
 
-[Source note: The bounded-dwell formulation and the recurrence-versus-persistence distinction are developed in “Cø as N*” and audited in “Ablating N*: Does Every Conjunct Earn Its Place?”. The source manuscripts present the bounds as testable operational commitments, not established universal constants.]
+**Source note.** The bounded-dwell formulation and the recurrence-versus-persistence distinction are developed in “Cø as N*” and audited in “Ablating N*: Does Every Conjunct Earn Its Place?”. The source manuscripts present the bounds as testable operational commitments, not established universal constants.
 
 ## 3. Timing the intervention without changing the question
 
-A perturbation can be technically successful and inferentially useless. Suppose content identity first becomes measurable around 60 milliseconds, candidate recurrent stabilization occupies approximately 110–220 milliseconds, working-memory maintenance begins around 260 milliseconds, and report preparation begins around 340 milliseconds. An intervention delivered at 50 milliseconds may prevent the content from forming. An intervention delivered at 370 milliseconds may disrupt only the report. Neither result selectively tests whether recurrence maintained phenomenal presence.
+A perturbation can be technically successful and inferentially useless. Suppose content identity first becomes measurable around 60 milliseconds, candidate recurrent stabilization occupies approximately 110-220 milliseconds, working-memory maintenance begins around 260 milliseconds, and report preparation begins around 340 milliseconds. An intervention delivered at 50 milliseconds may prevent the content from forming. An intervention delivered at 370 milliseconds may disrupt only the report. Neither result selectively tests whether recurrence maintained phenomenal presence.
 
 A licensed $N_3$ perturbation should target a return pathway or its effective gain during a preregistered stabilization interval. It should preserve:
 
@@ -108,7 +110,7 @@ The point is not to guess the intended answer. It is to discover how many assump
 
 ## 4. Temporal presence is not temporal character
 
-$N_3$ asks whether a content is maintained through an appropriate interval. It does not yet say how the experience unfolds within that interval. The character extension uses a temporal path profile, written $\Pi_c$, for features such as direction, rate, curvature, order, dwell pattern, and hysteresis—path dependence in which the current state depends on how it was reached—in a quality structure.
+$N_3$ asks whether a content is maintained through an appropriate interval. It does not yet say how the experience unfolds within that interval. The character extension uses a temporal path profile, written $\Pi_c$, for features such as direction, rate, curvature, order, dwell pattern, and hysteresis - path dependence in which the current state depends on how it was reached - in a quality structure.
 
 Two episodes can both pass $N_3$ while differing markedly in temporal character. A pain may be steady or throbbing. A melody may rise or fall. Apparent motion may feel smooth or stuttering. A color may fade evenly or flicker. These differences concern the path an admitted content traces, not whether the content crosses the presence gate at all.
 
@@ -156,7 +158,7 @@ Other outcomes are less decisive. A global anesthetic that reduces recurrence, i
 
 **Method note.** Write the strongest conclusion the design earns, then remove any word that implies a broader domain, stronger kind of necessity, or more selective intervention than the evidence supports.
 
-[Source note: The separation of early encoding, recurrent stabilization, working memory, and report is developed in “Cø as N*” and “Ablating N*: Does Every Conjunct Earn Its Place?”. The contrast with RPT is a family-level orientation; an actual experiment must freeze an exact rival version.]
+**Source note.** The separation of early encoding, recurrent stabilization, working memory, and report is developed in “Cø as N*” and “Ablating N*: Does Every Conjunct Earn Its Place?”. The contrast with RPT is a family-level orientation; an actual experiment must freeze an exact rival version.
 
 ## Practice studio
 
@@ -221,11 +223,11 @@ Give the same apparent recurrence effect to two assessment teams. Team A has a v
 
 \newpage
 
-# Chapter 7 — What Does the Evidence License?
+# Chapter 7 - What Does the Evidence License?
 
 **Opening puzzle.** Two assessments produce the same score: $.72$. The positive threshold is $.70$. In the first assessment, the measure has been validated for the patient’s injury class, the sensory route is intact, data-quality checks pass, and two partly independent measures agree. In the second, the measure was calibrated only in healthy adults, the patient has unresolved hearing loss, muscle activity contaminates the signal, and a credible imaging measure points in the opposite direction. Should the identical numbers receive identical interpretations?
 
-If a test is treated as a score-producing machine, the answer may seem obvious: both pass. If a test is treated as an inference whose validity conditions can fail, the answer changes. A number has evidential meaning only within a declared target, system, method, model, and validity envelope. The Cø / N* research program therefore uses four scientific outcomes—positive, negative, indeterminate, and unlicensed—and checks applicability and quality before interpreting evidential strength.
+If a test is treated as a score-producing machine, the answer may seem obvious: both pass. If a test is treated as an inference whose validity conditions can fail, the answer changes. A number has evidential meaning only within a declared target, system, method, model, and validity envelope. The Cø / N* research program therefore uses four scientific outcomes - positive, negative, indeterminate, and unlicensed - and checks applicability and quality before interpreting evidential strength.
 
 **Plain language.** The state of a system and the state of our evidence are different things. A system may be conscious or nonconscious when our present assessment cannot responsibly settle the matter.
 
@@ -251,9 +253,9 @@ $$
 \mathcal A=\langle S,C,T,E,M,\mathcal V\rangle.
 $$
 
-$S$ is the candidate system. $C$ is the target form of consciousness—for example, minimal phenomenal presence during a specified episode rather than wakefulness, reportability, or rich self-awareness. $T$ is the test or battery. $E$ is the available evidence. $M$ is the inferential model connecting evidence to the target. $\mathcal V$ is the **validity envelope**: the populations, substrates, tasks, boundaries, recording conditions, and auxiliary capacities for which that interpretation has support.
+$S$ is the candidate system. $C$ is the target form of consciousness - for example, minimal phenomenal presence during a specified episode rather than wakefulness, reportability, or rich self-awareness. $T$ is the test or battery. $E$ is the available evidence. $M$ is the inferential model connecting evidence to the target. $\mathcal V$ is the **validity envelope**: the populations, substrates, tasks, boundaries, recording conditions, and auxiliary capacities for which that interpretation has support.
 
-The tuple matters because conclusions tend to expand in ordinary language. Evidence of one moment of command following can be redescribed as continuous rich awareness. A signal measured in cortex can be treated as a verdict about a whole brain–body system. A measure validated in adult mammalian brains can be exported to an artificial network because its numerical range looks familiar. Each step changes one element of $\mathcal A$ without announcing the change.
+The tuple matters because conclusions tend to expand in ordinary language. Evidence of one moment of command following can be redescribed as continuous rich awareness. A signal measured in cortex can be treated as a verdict about a whole brain-body system. A measure validated in adult mammalian brains can be exported to an artificial network because its numerical range looks familiar. Each step changes one element of $\mathcal A$ without announcing the change.
 
 **Why it matters.** A precise answer to the wrong assessment question is not a precise answer to the right one. Indexing the claim makes target substitutions visible.
 
@@ -263,7 +265,7 @@ The tuple matters because conclusions tend to expand in ordinary language. Evide
 
 The validity envelope should be prospective and inspectable. It records whether the required sensory route was available, whether the candidate boundary is stable, whether the procedure transfers to the substrate, whether auxiliary capacities such as comprehension were needed, and whether the model was validated at the chosen grain. A study conducted outside the envelope may still generate useful data. What it cannot do is inherit the original interpretation without a transport argument.
 
-[Source note: *Indeterminacy as a Scientific Result* introduces the assessment tuple to prevent target, system, and validity conditions from being silently widened after a result is known.]
+**Source note.** *Indeterminacy as a Scientific Result* introduces the assessment tuple to prevent target, system, and validity conditions from being silently widened after a result is known.
 
 ## 2. Four outcomes and a precedence rule
 
@@ -276,6 +278,8 @@ The decision rule $D(\mathcal A)$ can be expressed as five ordered branches:
 5. **Indeterminate** otherwise.
 
 Here $a$ means applicability, $q$ means execution and data quality, $c$ means unresolved conflict among credible surrogates, and $L$ is a validated evidence grade or score. $\operatorname{LB}(L)$ and $\operatorname{UB}(L)$ are lower and upper uncertainty bounds. $\tau_+$ is the rule-in threshold; $\tau_-$ is the rule-out threshold. Because the positive rule uses $\geq$ and the negative rule uses $<$, equality at $\tau_+$ passes the rule-in boundary, whereas equality at $\tau_-$ does not license rule-out.
+
+**Method note.** This interval rule is a conservative teaching extension, not a quotation of a universal source formula. The source framework can be written with a scalar score and calibrated rule-in and rule-out thresholds. Here a positive requires the lower uncertainty bound to meet the rule-in threshold, while a negative requires the upper uncertainty bound to fall strictly below the rule-out threshold. An empirical protocol must justify and preregister its own interval construction and equality rules rather than inherit these classroom conventions automatically.
 
 The order is the intellectual heart of the rule. First ask whether the assessment applies. Next ask whether it was executed adequately. Then ask whether credible surrogate measures conflict. Model-family and boundary disagreement are reported separately through $O_M$ and $O_B$, rather than folded into the scalar conflict flag $c$. Only after those checks may the score enter a threshold rule. A high number does not repair failed applicability or poor data quality.
 
@@ -346,6 +350,8 @@ This yields a useful asymmetry. Indeterminate evidence may become decisive throu
 
 A neural measure predicts reports in awake adult humans with strong held-out accuracy. A team applies the same numerical pipeline to a synthetic agent built from unfamiliar components. The agent’s score falls deep in the human positive range. The team has no evidence that the measured feature plays the same causal role, that the candidate boundary is comparable, or that the agent’s internal timing lies within the measure’s validity range.
 
+**Stage 0.** Before inspecting the agent score, state the exact source-domain claim being transported: target, candidate, construct, calibration population, validity envelope, thresholds, and strongest licensed conclusion. A number cannot be transported responsibly until the interpretation attached to it has been frozen.
+
 **Stage 1.** Classify the human result and the agent result separately. Do not assume that a shared number has a shared meaning.
 
 **Stage 2.** Build a cause profile for the agent assessment.
@@ -396,7 +402,7 @@ For example, imagine an indeterminate patient assessment. A short, low-burden al
 
 This distinction matters in animal welfare, organoid research, artificial systems, and clinical care. It allows protective action without corrupting the scientific record. It also prevents a negative practical recommendation from masquerading as evidence of absence.
 
-[Source note: *Indeterminacy as a Scientific Result* treats science–action separation as a guardrail. The paper’s contribution is methodological; it does not supply calibrated probabilities or one universal policy threshold.]
+**Source note.** *Indeterminacy as a Scientific Result* treats science-action separation as a guardrail. The paper’s contribution is methodological; it does not supply calibrated probabilities or one universal policy threshold.
 
 ## 8. Evidence, limits, and rival approaches
 
@@ -406,7 +412,7 @@ Bayesian approaches can represent uncertainty continuously, but a precise poster
 
 Evidence supports this framework if independent reviewers apply it reliably, cause profiles predict efficient repair strategies, coverage and unresolved rates improve calibration and transparency, and preregistration reduces opportunistic reclassification. Evidence weakens it if the categories cannot be distinguished, add no predictive or practical value, or become asymmetrical escape routes for favored theories.
 
-The framework’s strongest protection against misuse is prospective commitment. Freeze applicability criteria, quality rules, conflict handling, thresholds, model and boundary families, quarantine rules, and failure budgets before inspecting critical outcomes. When a result is adverse, the response should be the one already attached to that cause—not an improvised new category.
+The framework’s strongest protection against misuse is prospective commitment. Freeze applicability criteria, quality rules, conflict handling, thresholds, model and boundary families, quarantine rules, and failure budgets before inspecting critical outcomes. When a result is adverse, the response should be the one already attached to that cause - not an improvised new category.
 
 ## Practice studio
 
@@ -422,18 +428,29 @@ The framework’s strongest protection against misuse is prospective commitment.
 
 ### Individual transfer task: Audit a published or hypothetical test
 
-Choose one consciousness indicator or create a carefully specified hypothetical one. Write its assessment tuple. Define its positive and negative license conditions, validity envelope, quality rule, conflict rule, and thresholds. Construct four cases—one for each scientific outcome—without changing the target. For every unresolved case, provide a cause profile and the smallest credible repair. End by identifying one way the framework itself could be misused to protect the test from falsification.
+Choose one consciousness indicator or create a carefully specified hypothetical one. Write its assessment tuple. Define its positive and negative license conditions, validity envelope, quality rule, conflict rule, and thresholds. Construct four cases - one for each scientific outcome - without changing the target. For every unresolved case, provide a cause profile and the smallest credible repair. End by identifying one way the framework itself could be misused to protect the test from falsification.
 
 ### Collaborative exercise: Evidence tribunal
 
-Teams of four receive the same case but different evidence packets.
+**Materials and frozen rule.** All cases are synthetic. The positive threshold is $\tau_+=.70$ and the negative threshold is $\tau_-=.30$. Applicability and execution quality must pass before an interval is interpreted, and credible surrogate conflict takes precedence over either threshold. Every packet concerns the same severe-injury patient, the same stable patient-level referent, and minimal phenomenal presence during one specified 30-second trial.
+
+Assign one packet to each team:
+
+- **Packet A:** applicability and quality pass; $L=.78[.73,.83]$; two independently validated surrogates agree; the candidate referent is stable and the positive bearer is resolved.
+- **Packet B:** applicability and quality pass; $L=.55[.47,.63]$; there is no credible surrogate conflict.
+- **Packet C:** recording quality and injury-class calibration pass; $L=.18[.12,.24]$; severe hearing loss remains unresolved even though the task uses auditory commands.
+- **Packet D:** applicability passes with sensitivity $.93$ in this injury class; quality, sensory route, detection opportunity, auxiliary capacities, and candidate stability pass; $L=.19[.13,.25]$.
+
+For a separate action decision, a reversible visual communication trial costs one teaching-loss unit, while missing genuine command following costs 20. The packet supplies no probability of genuine command following. Teams must therefore state any decision assumption after freezing the scientific outcome; the action recommendation may not alter that outcome.
+
+Teams of four use these roles:
 
 - The **positive advocate** presents the strongest admissible rule-in argument.
 - The **negative advocate** presents the strongest admissible rule-out argument.
 - The **validity officer** audits target, applicability, execution quality, boundary, auxiliary demands, and transport before either argument is weighed.
-- The **chair and recorder** applies the frozen precedence rule, records dissent, and separates the scientific verdict from the action recommendation.
+- The **chair-recorder** applies the frozen precedence rule, records dissent, and separates the scientific verdict from the action recommendation.
 
-After the first verdict, teams exchange packets but retain their roles. In the second round, every participant must argue a different outcome from the one they initially favored, using only evidence that passes the validity officer’s audit. The final product is a comparison table showing which changed fact—not which rhetorical style—changed the license.
+After the first verdict, teams exchange packets and rotate roles. In the second round, every participant must defend a different outcome from the one initially favored, using only evidence that passes the validity officer's audit. The final product is a comparison table with packet, applicability, quality, conflict status, interval relation, scientific outcome, cause-profile emphasis, smallest repair, prohibited inference, and separate action recommendation. The table must show which changed fact, not which rhetorical style, changed the license.
 
 ### Collaborative discussion: Does abstention expose or protect a theory?
 
@@ -469,7 +486,7 @@ The four-outcome framework tells us what a body of evidence licenses. It does no
 
 \newpage
 
-# Chapter 8 — Does Every Conjunct Earn Its Place?
+# Chapter 8 - Does Every Conjunct Earn Its Place?
 
 **Opening puzzle.** A security system opens a vault only when four indicators are positive: electricity is available, the keycard is valid, the fingerprint matches, and the code is correct. In every recorded success, all four indicators are positive. In every recorded failure, all four are negative because the building lost power during emergency drills. The four-indicator rule predicts the dataset perfectly. So does the keycard alone. So does the fingerprint alone. So do many two-indicator rules. Has the dataset shown that each indicator is necessary?
 
@@ -505,11 +522,11 @@ The word *necessary* can name three claims.
 
 **Analogy: ingredients in a recipe.** A printed bread recipe may list salt. Removing the word “salt” changes the recipe. A taste test may show that the original predicts preferred loaves better than a no-salt recipe. A controlled baking experiment may show that salt changes gluten behavior while flour, water, yeast, temperature, and proofing are held stable. These correspond roughly to logical inclusion, empirical value, and causal contribution.
 
-**Where the analogy breaks.** Recipe goals are chosen and multidimensional; phenomenal presence is not a flavor score. Ingredients also interact, and removing one can change the whole process—precisely the problem that makes selective mechanism ablation difficult. The analogy clarifies levels of necessity but does not provide a consciousness anchor.
+**Where the analogy breaks.** Recipe goals are chosen and multidimensional; phenomenal presence is not a flavor score. Ingredients also interact, and removing one can change the whole process - precisely the problem that makes selective mechanism ablation difficult. The analogy clarifies levels of necessity but does not provide a consciousness anchor.
 
 This distinction prevents common overclaims. A lesion that reduces behavior does not automatically show causal necessity for phenomenal presence. A leave-one-out model that predicts worse does not show metaphysical necessity against every imaginable theory. And a component’s appearance in the definition cannot be cited as empirical evidence for its own indispensability.
 
-[Source note: “Ablating N*: Does Every Conjunct Earn Its Place?” develops this three-way distinction and treats component necessity as a held-out, anchor-relative audit rather than an automatic consequence of the conjunction.]
+**Source note.** “Ablating N*: Does Every Conjunct Earn Its Place?” develops this three-way distinction and treats component necessity as a held-out, anchor-relative audit rather than an automatic consequence of the conjunction.
 
 ## 2. The diagnostic-set result
 
@@ -613,7 +630,7 @@ The word *ablation* often hides important differences.
 
 A **criterion ablation** removes a term from the decision rule. It asks whether the term adds held-out predictive discrimination. No physical system must be damaged.
 
-A **mechanism ablation** changes a proposed physical realization. It asks about causal contribution, but only if the manipulation selectively changes the target component while preserving retained components, viability, referent identity, and mapping.
+A **mechanism ablation** changes a proposed physical realization. For a target in $\{N_1,N_2,N_3\}$, it asks about causal contribution only if the manipulation selectively changes that target while preserving retained components, viability, referent identity, and mapping. A $V$-targeted mechanism audit requires the separate logic stated below.
 
 A **measurement ablation** removes a sensor, estimator, feature family, or preprocessing route. It asks whether the component classification is robust to measurement choices. It says nothing directly about what would happen if the physical component were deleted.
 
@@ -626,7 +643,9 @@ $$
 (\Delta s_0,\Delta s_1,\Delta s_2,\Delta s_3),
 $$
 
-where the four scores correspond to $(V,N_1,N_2,N_3)$. A selectivity license requires the full uncertainty interval for the target reduction to meet the preregistered direction and magnitude, $\Delta s_k\leq-\eta_k$; every retained change interval must lie inside its equivalence band; and every retained post-intervention lower bound must still clear its gate. Viability and the frozen candidate referent’s autonomy and cross-condition mapping must also remain licensed. Positive-bearer membership is deliberately not a condition of selectivity; it is an outcome to recompute.
+where the four scores correspond to $(V,N_1,N_2,N_3)$. For $k\in\{1,2,3\}$, a selectivity license requires the full uncertainty interval for the target reduction to meet the preregistered direction and magnitude, $\Delta s_k\leq-\eta_k$; every retained change interval must lie inside its equivalence band; every retained post-intervention lower bound must still clear its gate; and $V$ must remain above its gate. The validity of the measurements and the frozen candidate referent's autonomy and cross-condition mapping must also remain licensed. Positive-bearer membership is deliberately not a condition of selectivity; it is an outcome to recompute.
+
+A $V$-targeted audit must distinguish two questions that the phrase "viability remains licensed" can otherwise blur. The first is whether the $V$ gate passes; the second is whether the $V$ estimator, candidate mapping, anchor battery, and operating-regime interpretation remain valid. In a diagnostic $V$ case, the gate may fail while those assessment licenses remain intact. If reducing $V$ also destroys the validity envelope or makes the referent unmappable, the mechanism result is unlicensed rather than evidence that $V$ is causally necessary. Criterion-level comparison of the full rule with a $V$-ablated rival remains possible on independently valid cases, but it does not inherit causal status from the label "viability intervention."
 
 For a preregistered scalar summary $g(Y)$ of the independent anchors, $\psi_k$ is the target-versus-control anchor contrast among licensed diagnostic cases. It is an evidential-anchor contrast, not an average treatment effect on directly observed consciousness.
 
@@ -701,7 +720,7 @@ Evidence favors a conjunct when diagnostic cases exist, the full model gains sta
 
 An empty diagnostic set is not evidence for necessity. It is underidentification. A globally disruptive manipulation is not a clean falsifier. It is a coupled or unlicensed test. A failed operationalization may motivate a better estimator, but repeated post hoc replacement of estimators after adverse outcomes undermines the research program. Prospective revision criteria are therefore as important as favorable results.
 
-[Source note: The exact diagnostic-set theorem, the anti-circularity firewall, and the five statuses come from “Ablating N*: Does Every Conjunct Earn Its Place?”. The bearer-level propagation described here follows a cross-paper synthesis with *Where Is the Conscious Subject?*.]
+**Source note.** The exact diagnostic-set theorem, the anti-circularity firewall, and the five statuses come from “Ablating N*: Does Every Conjunct Earn Its Place?”. The bearer-level propagation described here follows a cross-paper synthesis with *Where Is the Conscious Subject?*.
 
 ## Practice studio
 
@@ -764,7 +783,7 @@ The component audit concerns whether the model earns a gate for phenomenal prese
 
 \newpage
 
-# Chapter 9 — From Phenomenal Presence to Phenomenal Character
+# Chapter 9 - From Phenomenal Presence to Phenomenal Character
 
 **Opening puzzle.** Suppose two visual states both satisfy every licensed Cø / N* presence condition. One is an experience of red; the other is an experience of green. The presence model says that both episodes are there for the candidate system. It does not yet explain their difference. Now suppose a machine-learning model produces a beautiful two-dimensional plot in which red and green stimuli form separate clusters. Has the plot explained why the experiences differ?
 
@@ -790,7 +809,7 @@ The guiding question is not “Can we draw the states?” but “Can a frozen ca
 
 Let $P(S,c;\Theta_P)$ be the preregistered empirical presence decision for system $S$, content $c$, and frozen presence specification $\Theta_P$. The value $P=1$ represents a licensed positive result. Negative, indeterminate, or unlicensed results do not enter an ordinary phenomenal-character attribution in this framework. For a nonpositive presence result, write $\chi(S,c)=\bot_P$. The symbol means “character attribution not licensed by the presence gate”; it does not mean a zero vector, blank quale, or measured absence of quality.
 
-In the bearer-complete version of Cø / N*, a positive implementation requires an evidentially resolved boundary and membership in the estimated inclusion-minimal positive-bearer set. This is an evidence-relative decision. Researchers do not directly observe ontic membership—the mind-independent bearer relation posited by the theory; they estimate it under declared rules.
+In the bearer-complete version of Cø / N*, a positive implementation requires an evidentially resolved boundary and membership in the estimated inclusion-minimal positive-bearer set. This is an evidence-relative decision. Researchers do not directly observe ontic membership - the mind-independent bearer relation posited by the theory; they estimate it under declared rules.
 
 The second layer can be written:
 
@@ -820,7 +839,7 @@ The first says that equally present states can differ in character. The second s
 
 **Where the analogy breaks.** Museum admission is an institutional rule, while the presence gate is an empirical and constitutive hypothesis. A visitor exists independently of the ticket, whereas the theory concerns whether a physical organization is phenomenally present at all. The analogy only separates gating from differentiation.
 
-[Source note: *From Phenomenal Presence to Phenomenal Character* makes the two non-implications explicit and treats bridge outcomes as modular with respect to the presence result.]
+**Source note.** *From Phenomenal Presence to Phenomenal Character* makes the two non-implications explicit and treats bridge outcomes as modular with respect to the presence result.
 
 ## 2. What a causal-trajectory geometry contains
 
@@ -919,9 +938,9 @@ $$
 
 $\operatorname{Aut}(\mathcal Q)$ is the set of automorphisms: transformations that preserve all warranted relations in the quality structure. The brackets mean that the character is identified only up to those surviving symmetries.
 
-An unlabeled equilateral triangle makes the point vivid. Any permutation of its three vertices preserves all pairwise distances. Purely relational evidence cannot say which vertex has an absolute name. Add a validated asymmetry—perhaps one vertex has a distinctive negative valence or directed transition—and fewer permutations remain.
+An unlabeled equilateral triangle makes the point vivid. Any permutation of its three vertices preserves all pairwise distances. Purely relational evidence cannot say which vertex has an absolute name. Add a validated asymmetry - perhaps one vertex has a distinctive negative valence or directed transition - and fewer permutations remain.
 
-This is a disciplined response to inverted-spectrum concerns. A global red–green swap that preserves every measured relation remains underdetermined. The theory should not assign an absolute label by assertion. Additional asymmetrical anchors can shrink the equivalence class, but only if they are independently warranted.
+This is a disciplined response to inverted-spectrum concerns. A global red-green swap that preserves every measured relation remains underdetermined. The theory should not assign an absolute label by assertion. Additional asymmetrical anchors can shrink the equivalence class, but only if they are independently warranted.
 
 **Analogy: rotating a constellation chart.** A chart can be rotated while preserving distances and shapes among stars. If no “up” direction is independently marked, the orientation is underdetermined. A coastline or compass direction breaks the symmetry. Likewise, relational character evidence fixes only what its validated asymmetries can distinguish.
 
@@ -967,7 +986,7 @@ A successful bridge would not by itself solve the “hard problem” or prove th
 
 Evidence directly challenges the bridge if selective changes in $G_c$ fail to produce predicted phenomenal changes, phenomenal geometry changes while $G_c$ remains stable across reasonable specifications, held-out performance falls to nuisance parity, a simpler stimulus model wins after causal controls, claimed transport fails, or small reasonable specification changes reverse status. The response should be revision or rejection of $Q_\Phi$, not post hoc redefinition of the geometry or anchors.
 
-[Source note: The character paper presents causal deformation and symmetry-qualified attribution as central safeguards against merely renaming an embedding. It explicitly leaves open whether valence, meaning, or bodily urgency require richer structures.]
+**Source note.** The character paper presents causal deformation and symmetry-qualified attribution as central safeguards against merely renaming an embedding. It explicitly leaves open whether valence, meaning, or bodily urgency require richer structures.
 
 ## Practice studio
 
@@ -983,9 +1002,11 @@ Evidence directly challenges the bridge if selective changes in $G_c$ fail to pr
 
 ### Individual transfer task: Design a character bridge
 
-Choose a domain other than simple color. Define four or more contents, a perturbation family, the causal relations included in $G_c$, the independent phenomenal anchors, one held-out content, and a geometry-changing intervention. Select an appropriate structure—metric, pseudometric, directed graph, ordinal relation, or stratified space—and justify it. Name at least three nuisance models and two invariances. Finish with outcome rules for supported, refuted, indeterminate, and unlicensed bridge results.
+Choose a domain other than simple color. Define four or more contents, a perturbation family, the causal relations included in $G_c$, the independent phenomenal anchors, one held-out content, and a geometry-changing intervention. Select an appropriate structure - metric, pseudometric, directed graph, ordinal relation, or stratified space - and justify it. Name at least three nuisance models and two invariances. Finish with outcome rules for supported, refuted, indeterminate, and unlicensed bridge results.
 
 ### Collaborative exercise: Build and try to break a bridge
+
+**Materials.** Use Session 9, "Character-Bridge Break Test," in the companion *Student Session Resource Pack*. The student materials supply a frozen positive presence gate, baseline causal and phenomenal relations, a held-out content, and a nuisance comparison. Use only the instructor-assigned card when it is released; keep every unreleased classroom item inaccessible until the team freezes its prediction and bridge rules.
 
 Teams use four roles:
 
@@ -994,7 +1015,7 @@ Teams use four roles:
 - The **bridge analyst** freezes training, validation, held-out, null, invariance, and deformation predictions.
 - The **leakage and nuisance auditor** searches for stimulus structure, report reuse, task difficulty, attention, arousal, preprocessing freedom, and response preparation.
 
-The team must lock a positive presence result and may not reopen it to improve the character fit. It then exchanges its bridge specification with another team, which designs the strongest valid mismatch by varying only declared intervention or nuisance relations—never by inventing convenient outcome data—and one harmless coordinate transformation. The original team revises only according to prospective rules. The final two-stream diagram must show where causal and phenomenal evidence first meet and what remains true under each possible bridge outcome.
+The team must lock a positive presence result and may not reopen it to improve the character fit. It then exchanges its bridge specification with another team, which designs the strongest valid mismatch by varying only declared intervention or nuisance relations - never by inventing convenient outcome data - and one harmless coordinate transformation. The original team revises only according to prospective rules. The final two-stream diagram must show where causal and phenomenal evidence first meet and what remains true under each possible bridge outcome.
 
 ### Collaborative discussion: Does relational prediction explain character?
 
@@ -1019,22 +1040,26 @@ Phenomenal presence and phenomenal character require two linked but modular laye
 - **Character bridge $F_\Phi$:** a frozen mapping from causal features to independently anchored phenomenal relations.
 - **Deformation test:** an intervention test in which a predicted change in causal geometry is compared with an independently measured phenomenal change.
 - **Equivalence class $[q_c]$:** character location identified only up to surviving symmetries.
-- **Phenomenal character:** what a present episode is like—its relational location, modality, intensity, valence, and temporal path.
+- **Phenomenal character:** what a present episode is like - its relational location, modality, intensity, valence, and temporal path.
 - **Phenomenal quality structure $\mathcal Q$:** independently estimated relations among experiences in anchor cases.
 - **Presence gate $P$:** the separately validated decision that licenses ordinary phenomenal-character attribution.
 - **Specification $\Phi$:** the frozen boundary, causal geometry, anchors, bridge family, controls, splits, invariances, and thresholds.
 
 ## Looking ahead
 
-If the presence and character models become sufficiently reliable, researchers may be able to read a structured role profile from a schematic. Chapter 10 asks what that claim would mean—and why readability would still fall short of proof.
+If the presence and character models become sufficiently reliable, researchers may be able to read a structured role profile from a schematic. Chapter 10 asks what that claim would mean - and why readability would still fall short of proof.
 
 ### Transition notebook: from bridge to schematic
 
 Draw three boxes labeled **causal organization**, **phenomenal relations**, and **phenomenal presence**. Add only the arrows licensed by this chapter, and mark where independent evidence enters. Exchange diagrams with a partner, who removes one arrow or validation stream. State whether the change defeats a character prediction, the presence gate, the constitutive interpretation, or only confidence in the study. Bring the revised diagram to Chapter 10; it will become the starting point for separating a readable representation, its running realization, and the identity claim applied to it.
 
+| Transition diagram workspace |
+|---|
+|  |
+
 \newpage
 
-# Chapter 10 — Reading Consciousness from the Schematic
+# Chapter 10 - Reading Consciousness from the Schematic
 
 **Opening puzzle.** A trained engineer looks at an electrical schematic and says, “With the source connected, this switch closed, and these component values, the motor will turn.” A novice sees ink, lines, and unfamiliar symbols. The motor’s motion is not pictured inside the ink, yet the engineer can derive it from learned component meanings, operating conditions, and counterfactual dependencies. Suppose Cø / N* survives demanding empirical tests. Could a trained researcher inspect a role-annotated causal schematic and read phenomenal presence from it in a comparably structured way?
 
@@ -1080,7 +1105,7 @@ $$
 
 The first arrow is mechanistic interpretation: use public component meanings and results to reconstruct a role profile. The second arrow applies the exposed constitutive identity hypothesis. That second arrow must remain visible. Hiding it inside a label such as “consciousness score” turns a substantive claim into an apparent measurement fact.
 
-[Source note: *Reading Consciousness from the Schematic* frames the schematic as a representation from which a trained reader reconstructs an intermediate role profile. It repeatedly distinguishes this explanatory achievement from validation of the identity.]
+**Source note.** *Reading Consciousness from the Schematic* frames the schematic as a representation from which a trained reader reconstructs an intermediate role profile. It repeatedly distinguishes this explanatory achievement from validation of the identity.
 
 ## 2. The role vector makes the theory inspectable
 
@@ -1111,7 +1136,7 @@ These meanings should not be defined by repeating “consciousness.” Integrati
 
 This role vector also makes limitations visible. It addresses minimal presence, not necessarily attention, introspection, autobiographical selfhood, report, intelligence, or full character. The character extension adds a second readout after the gate. A change in $G_c$ with the presence roles intact may change predicted character rather than presence.
 
-**Analogy: a medical pathway rather than a single lab value.** A clinician may interpret several independently meaningful findings—circulation, oxygenation, organ function, and causal response—to reconstruct a physiological state. The interpretation is more informative than a one-number score because different failures suggest different mechanisms and responses.
+**Analogy: a medical pathway rather than a single lab value.** A clinician may interpret several independently meaningful findings - circulation, oxygenation, organ function, and causal response - to reconstruct a physiological state. The interpretation is more informative than a one-number score because different failures suggest different mechanisms and responses.
 
 **Where the analogy breaks.** Medical states often have mature reference standards, long validation histories, and intervention outcomes that consciousness science lacks. The analogy illustrates compositional and fault-localizing explanation, not equal evidential maturity.
 
@@ -1250,11 +1275,11 @@ A researcher can observe that a system realizes the proposed organization withou
 
 ### Functionalism and implementation
 
-The proposal is a physicalist information-dynamical functionalism, not unrestricted input–output equivalence. Static lookup tables, behaviorally equivalent scripts, and merely isomorphic diagrams do not automatically qualify. Effective causal realization, correct grain, stable boundary, timing, and viability do real work. A materially different implementation may qualify only if the public role profile and its counterfactual organization transport.
+The proposal is a physicalist information-dynamical functionalism, not unrestricted input-output equivalence. Static lookup tables, behaviorally equivalent scripts, and merely isomorphic diagrams do not automatically qualify. Effective causal realization, correct grain, stable boundary, timing, and viability do real work. A materially different implementation may qualify only if the public role profile and its counterfactual organization transport.
 
 **Why it matters.** The strongest objections do not show that the schematic is meaningless. They locate disagreements about operational independence, causal realization, and constitutive identity. A theory becomes easier to test when opponents can say exactly which arrow they reject.
 
-[Source note: The schematic paper treats the zombie and external-observation objections as challenges to the constitutive identity, not as reasons to abandon public causal description. Its conclusion remains explicitly conditional.]
+**Source note.** The schematic paper treats the zombie and external-observation objections as challenges to the constitutive identity, not as reasons to abandon public causal description. Its conclusion remains explicitly conditional.
 
 ## 8. Evidence, limits, and rival explanatory ideals
 
@@ -1264,7 +1289,7 @@ Evidence favors schematic legibility when independent readers learn stable meani
 
 Evidence for legibility is not yet evidence for the identity. The constitutive claim additionally faces the full empirical program: sufficiency challenges from licensed all-pass cases with strong independent evidence against presence, necessity challenges from well-supported conscious cases outside the positive-bearer set, component audits, rival comparisons, and transport tests. Structural intelligibility can coexist with empirical failure.
 
-The analogy to electrical schematics has a strict limit. Mature electrical models are embedded in well-confirmed theory and measurement practices. Cø / N* is a new, adversarial research program. The analogy sets a standard—public semantics, composition, counterfactuals, fault localization, and independent validation—rather than awarding the model the authority of engineering.
+The analogy to electrical schematics has a strict limit. Mature electrical models are embedded in well-confirmed theory and measurement practices. Cø / N* is a new, adversarial research program. The analogy sets a standard - public semantics, composition, counterfactuals, fault localization, and independent validation - rather than awarding the model the authority of engineering.
 
 ## Practice studio
 
@@ -1283,6 +1308,8 @@ The analogy to electrical schematics has a strict limit. Mature electrical model
 Design five unseen profiles: one licensed all-pass case, one boundary failure, one selective $N_1$ failure, one selective $N_2$ or $N_3$ failure, and one coupled fault. For each, specify the representation, claimed physical realization, candidate lattice, component evidence, uncertainty status, and expected role-level readout. Write no consciousness verdict into the component labels. Then create a scoring rubric that separately assesses semantic reconstruction, composition, fault localization, bearer recomputation, abstention, and identification of the constitutive step.
 
 ### Collaborative exercise: Blind schematic-readout trial
+
+**Materials.** Use Session 10, "Blind Schematic Readout," in the companion *Student Session Resource Pack*. Study only the common component-law sheet and training cases before the blind round. The adjudicator or instructor distributes each unseen profile separately after readers have committed their forms; keep every unreleased classroom item inaccessible until adjudication.
 
 Work in groups of four:
 
@@ -1306,7 +1333,7 @@ Complete the distinction: “The first arrow from $\mathfrak S_{N^*}$ to $\bolds
 
 ## Chapter summary
 
-Schematic legibility separates the representation, running causal realization, and possible bearer. A trained reader reconstructs a five-part role profile—bearer, realized operation, unity, system-level causal presence, and temporal presence—before applying the exposed constitutive hypothesis. This differs from both a correlational marker and an opaque predictive law. Strong legibility requires decomposable semantics, compositional readout, differentiated fault localization, and evidential independence. Faults must be interpreted first at the profile level and then propagated through the candidate lattice. Teachability, agreement, transport, compression, and fault prediction are empirical achievements, but none alone proves that the role-complete organization is phenomenal presence. The electrical analogy names a scientific ideal, not an attained evidential parity.
+Schematic legibility separates the representation, running causal realization, and possible bearer. A trained reader reconstructs a five-part role profile - bearer, realized operation, unity, system-level causal presence, and temporal presence - before applying the exposed constitutive hypothesis. This differs from both a correlational marker and an opaque predictive law. Strong legibility requires decomposable semantics, compositional readout, differentiated fault localization, and evidential independence. Faults must be interpreted first at the profile level and then propagated through the candidate lattice. Teachability, agreement, transport, compression, and fault prediction are empirical achievements, but none alone proves that the role-complete organization is phenomenal presence. The electrical analogy names a scientific ideal, not an attained evidential parity.
 
 ## Key terms
 

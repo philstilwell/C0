@@ -41,6 +41,26 @@ jobs:
           cmp output/pdf/teaching-c0-n-star-manual.pdf out/teaching/instructor-manual/2.1/teaching-c0-n-star-instructor-manual.pdf
           cmp output/pdf/c0-n-star-student-session-resource-pack.pdf out/teaching/student-materials/2.1/c0-n-star-student-session-resource-pack.pdf
           grep -q '/C0/teaching/instructor-manual/2.1/teaching-c0-n-star-instructor-manual.pdf' out/teaching/index.html
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import { createHash } from 'node:crypto';
+          import { readFile } from 'node:fs/promises';
+          const manifest = JSON.parse(await readFile('output/student-textbook-build-manifest.json', 'utf8'));
+          const release = manifest.release.pdf;
+          const exportedPath = `out/${release.public_path.replace(/^public\//, '')}`;
+          const [releasePdf, publicPdf, exportedPdf, teachingHtml] = await Promise.all([
+            readFile('output/pdf/learning-c0-n-star-student-textbook.pdf'),
+            readFile(release.public_path),
+            readFile(exportedPath),
+            readFile('out/teaching/index.html', 'utf8'),
+          ]);
+          const digest = (value) => createHash('sha256').update(value).digest('hex');
+          assert.equal(releasePdf.length, release.bytes);
+          assert.equal(digest(releasePdf), release.sha256);
+          assert.equal(digest(publicPdf), release.sha256);
+          assert.equal(digest(exportedPdf), release.sha256);
+          assert.ok(teachingHtml.includes(`/C0${release.public_url}`));
+          NODE
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload static site

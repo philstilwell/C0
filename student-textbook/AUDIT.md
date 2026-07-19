@@ -1,27 +1,31 @@
-# Release Audit — Student Textbook, Edition 1.0
+# Release Audit - Student Textbook, Edition 1.1
 
 **Artifact:** *Learning Cø / N\*: A Student Textbook of Phenomenal Presence*
 
 **Corpus baseline:** July 18, 2026
 
-**Release build:** July 18, 2026 EDT / July 19, 2026 UTC
+**Release build:** July 19, 2026 EDT
 
-**Disposition:** **PASS — all release blockers closed**
+**Disposition:** **PASS - all identified release weaknesses corrected**
 
-## Audit scope
+## Audit scope and method
 
-This audit tested whether the textbook:
+This audit evaluated whether the student textbook:
 
 1. mirrors the fourteen-part conceptual spine of the instructor's manual without exposing instructor keys or controlled reveals;
-2. explains the complete seven-paper Cø / N* program at an accessible graduate register;
-3. distinguishes reconstruction, operationalization, evidence, constitution, and practical action;
-4. gives students enough annotation, analogy, thought experiment, worked practice, collaboration, and independent transfer to learn a new theory critically;
-5. places the model fairly among major neighboring theories;
-6. preserves the supplied five-color palette without sacrificing legibility;
-7. renders cleanly in both editable DOCX and print-ready PDF form; and
-8. is reproducible, integrity-checked, and correctly placed beside the instructor's manual on the teaching site.
+2. incorporates the full seven-paper Cø / N* research program at an accessible graduate register;
+3. places the model fairly among relevant theories of consciousness;
+4. distinguishes constructs, operational surrogates, evidence licenses, constitutive claims, and practical decisions;
+5. gives students enough explanation, annotation, analogy, thought experiment, worked practice, collaboration, and independent transfer to learn and criticize a new theory;
+6. provides usable worksheets on their own pages with clear introductions and sufficient writing space;
+7. renders tables according to their semantic content rather than arbitrary equal widths;
+8. preserves the supplied five-color palette while meeting legibility and contrast requirements;
+9. produces valid, reproducible, accessible DOCX and PDF artifacts; and
+10. publishes the student edition beside the instructor manual in an editioned teaching collection that can accommodate future revisions.
 
-## Corpus fidelity and theory coverage
+The review combined source-to-source comparison, formal and conceptual inspection, automated structural checks, direct link checks, rendered-page inspection at 144 dpi, DOCX and PDF binary validation, site tests, linting, static export, and release-digest comparison. Recommendations were implemented and the resulting artifact was rebuilt before final disposition.
+
+## Corpus fidelity and provenance
 
 All seven project sources are named and substantively represented. The build records their exact SHA-256 baselines:
 
@@ -35,68 +39,89 @@ All seven project sources are named and substantively represented. The build rec
 | `papers/from-phenomenal-presence-to-phenomenal-character/manuscript.md` | `63f4960a66b41dda4a5f678651908587e38facc258825ca0af5370d262a965e2` |
 | `papers/consciousness-in-the-schematic/manuscript.md` | `636e7c1fd0220943028ec5f2960c9d2f884f9c1f880c684ad98b6bc17b02aab6` |
 
-The chapter sequence mirrors the manual's instructional arc: explanandum and theory placement; the bearer-complete biconditional; subject boundary; viability and integration; report-independent availability; recurrence; evidential licensing and indeterminacy; component ablation; phenomenal character; schematic versus realization; biological and clinical applications; nonhuman, organoid, and artificial cases; differentiation and objections; and adversarial research design.
+The source trail pins all seven project links to repository commit `400f44a745e5425232a62f7a71487552fdfa9a0d`, identifies each paper's role in the synthesis, and distinguishes project sources from selected contextual readings. A 24-link audit found that all locators resolved at the first hop. Four DOI targets ended at publisher anti-bot responses after the DOI resolver supplied the correct destination; this is a publisher-access limitation, not a broken citation.
 
-The textbook also provides contextual orientation to IIT, GNWT, recurrent-processing, higher-order, predictive-processing, quality-space and representational-geometry, attention-schema and self-model, embodied/enactive/affective, illusionist, panpsychist and fundamentalist, biological-autonomy, active-inference, extended/group-mind, and electromagnetic/synchrony approaches. These comparisons are framed as exact points of agreement, pressure, or potential discrimination—not as verdicts from labels alone.
+**Result:** PASS.
 
-**Result:** PASS. The student edition covers the complete project corpus and gives the model a clear, non-triumphalist place in the wider theory landscape.
+## Conceptual and formal findings
 
-## Conceptual and formal audit
+The audit found and corrected the following weaknesses:
 
-The following weaknesses were found during drafting and corrected before release:
-
-| Weakness found | Correction implemented | Final status |
+| Weakness found | Correction implemented | Status |
 |---|---|---|
-| Compact statements of the biconditional could omit the candidate bearer and make a property look like a free-floating score. | Added bearer-complete guardrails throughout the front matter, core-model chapter, applications, notation appendix, glossary, and source trail. | Closed |
-| Necessity and sufficiency threats were at risk of being described in the wrong direction. | Rewrote the two directions and paired each with the proper counterexample type. | Closed |
-| Evidence for a component could be mistaken for evidence that the component constitutes experience. | Added recurring evidence/target/constitution ladders and explicit “Do not infer” annotations. | Closed |
-| Boundary choice could be treated as a harmless preprocessing step. | Made referent, causal admissibility, dynamical autonomy, role completeness, and inclusion-minimality part of the assessment record. | Closed |
-| The availability condition could collapse into report, executive access, diffusion, node count, or anatomical spread. | Added recipient classes, five recipient gates, a worked five-class calculation, and report-independent routing cases. | Closed |
-| A single score could conceal why evidence remains unresolved. | Introduced the assessment tuple `A = <S, C, T, E, M, V>` and the cause profile `P_R(A) = <e, s, m, b, t>`. | Closed |
-| Component necessity could be inferred from an uncontrolled lesion or circularly selected diagnostic cases. | Distinguished criterion, mechanism, and measurement ablation; added selective-change, equivalence, coverage, held-out testing, and anti-circularity requirements. | Closed |
-| Phenomenal-character prediction could be confused with the presence claim. | Separated the presence gate, independently anchored phenomenal geometry, causal-trajectory geometry, deformation test, and symmetry limits. | Closed |
-| A readable schematic could be confused with its running realization or with the conscious bearer. | Added a three-object distinction and a dedicated schematic-reading chapter. | Closed |
-| Scientific classification could be allowed to dictate a high-stakes clinical action. | Kept scientific status, uncertainty, loss structure, and action thresholds in separate records. | Closed |
+| Compact statements of the biconditional could make the properties look like free-floating scores. | Made the hypothesis bearer-complete and indexed it to the same candidate, content, grain, regime, and interval throughout the main text, notation guide, glossary, applications, and source trail. | Closed |
+| Necessity and sufficiency threats could be described in the wrong direction. | Paired each direction with its proper licensed counterexample and independent-anchor requirement. | Closed |
+| Boundary selection could be treated as harmless preprocessing. | Made referent stability, causal admissibility, dynamical autonomy, role completeness, inclusion-minimality, and separability part of the assessment record before attribution. | Closed |
+| `N1` could be mistaken for activity, correlation, redundancy, generic complexity, or arbitrary whole-system synergy. | Defined content-supporting joint contribution, separated the neighboring constructs, added XOR as a limited teaching case, and required construct and discriminant validity. | Closed |
+| `N2` could collapse into current activation, spatial spread, node count, executive access, or report. | Defined report-independent system-wide causal availability through qualifying recipient classes, effect, selectivity, route, latency, context, diversity, evenness, and reduced-family checks. | Closed |
+| Positive availability evidence could be inferred from any downstream response. | Added route dependence, source fidelity, selectivity, latency, class diversity, and coverage gates, with explicit positive, negative, indeterminate, and unlicensed outcomes. | Closed |
+| `N3` could collapse into duration or allow a favored surrogate to substitute silently for recurrent topology. | Distinguished recurrent maintenance, feedforward duration, passive traces, working memory, and metastability; alternative surrogates now require frozen causal roles and conflict rules. | Closed |
+| Evidence for a component could be confused with evidence that it constitutes experience. | Added recurring evidence-target-constitution ladders and explicit “Do not infer” annotations. | Closed |
+| A single result label could conceal why evidence remains unresolved. | Introduced the indexed assessment tuple and the five-part cause profile for scarcity, surrogate discordance, model dependence, boundary sensitivity, and transport uncertainty. | Closed |
+| A lesion or rule deletion could be called component necessity without a selective causal test. | Distinguished criterion, mechanism, and measurement ablation; added exact selective-change intervals, retained-component equivalence, referent preservation, rescue, coverage, held-out anchors, and anti-circularity. | Closed |
+| Profile-level disagreement could be mistaken for bearer-level disagreement. | Required each frozen profile rule to be propagated through the candidate lattice and separately measured bearer-output disagreement coverage. | Closed |
+| Presence and phenomenal character could be conflated. | Separated the presence gate, independently anchored phenomenal relations, causal-trajectory geometry, held-out bridge, deformation test, and surviving symmetries. | Closed |
+| A readable schematic could be confused with the representation, its running realization, or proof of the identity claim. | Added the three-object distinction, the role vector, separate reconstruction and constitution arrows, and blind schematic-competence criteria. | Closed |
+| Cross-substrate application could rely on numerical similarity alone. | Added construct, causal-role, calibration, boundary/regime, and population-validity transport requirements. | Closed |
+| Scientific classification could dictate a clinical or ethical action. | Kept scientific status, uncertainty, loss structure, action threshold, and proportional response in separate records. | Closed |
+| Comparisons could rely on theory labels or mismatched explananda. | Required exact version cards, matched targets or explicit bridges, symmetric validity rules, diagnostic cases, and advocate approval or recorded objection. | Closed |
+| Validation could be treated as one all-or-nothing achievement. | Separated six capstone branches and preserved branch-specific outcomes, failure propagation, and revision commitments. | Closed |
+| Indeterminacy could become automatic confirmation. | Defined positive, negative, indeterminate, and unlicensed outcomes with prospective rules and a required next discriminating commitment for every result. | Closed |
 
-The core theory remains conditional and empirically vulnerable. The book repeatedly distinguishes support for an estimator, a component role, the conjunction, the constitutive interpretation, and a practical decision. It also explains positive, negative, indeterminate, and model-disagreement outcomes without turning abstention into automatic confirmation.
+The final text treats the model as a conditional, vulnerable research program. A polished exposition is never offered as evidence that the biconditional is true.
+
+**Result:** PASS.
+
+## Theory placement and differentiation
+
+The textbook locates Cø / N* among integrated-information, global-workspace, recurrent-processing, higher-order, predictive-processing, quality-space and representational-geometry, attention-schema and self-model, embodied/enactive/affective, illusionist, panpsychist and fundamentalist, biological-autonomy, active-inference, extended/group-mind, and electromagnetic/synchrony approaches.
+
+Comparisons are organized by matched explanandum, bearer rule, central commitment, report role, temporal role, prediction, and evidence license. The text acknowledges shared pressures before stating differences. It does not claim novelty from vocabulary or superiority from having more conjuncts. The proposed differentiators are the bearer-first order, noncompensatory conjunction, report-independent causal-availability test, bounded recurrence commitment, four-way evidence policy, component-minimality program, presence-gated character bridge, and exposed schematic identity claim. Each becomes meaningful only through a prospective diagnostic case.
 
 **Result:** PASS.
 
 ## Register, annotation, and pedagogy
 
-The final source contains **59,808 words** across **14 chapters**. Technical terms are introduced in plain language, then connected to formal notation, operational decisions, and limits. The book does not remove graduate-level issues; it stages them.
+The assembled source contains **65,371 words** across **14 chapters**. Technical terms are introduced first in plain language, then connected to notation, operational decisions, empirical risks, and inferential limits. Quantitative checks found:
 
-Quantitative checks found:
+- 112 chapter annotation blocks across “Plain language,” “Why it matters,” “Method note,” “Do not infer,” and “Checkpoint” functions;
+- 22 source, context, or research-status callouts;
+- 30 explicitly headed thought experiments;
+- 35 explicit “Where the analogy breaks” annotations;
+- 22 collaborative-work sections across the 14 chapters;
+- 14 quick-check sets, 14 counterexample challenges, 14 individual-transfer tasks, and 14 exit tickets;
+- worked examples, frozen cases, role rotations, transition notebooks, disagreement contracts, peer review, and an adversarial capstone; and
+- a notation guide, glossary, fair-comparison guide, empirical-claim sheet, rubric, source trail, contextual readings, and reading record.
 
-- 14 chapter practice studios;
-- 14 collaborative exercises and 8 additional collaborative discussions;
-- 14 quick-check sets, 14 counterexample challenges, and 14 exit tickets;
-- 30 explicitly headed thought experiments, with 33 chapter-level thought-experiment mentions;
-- 110 chapter annotation blocks across “Plain language,” “Why it matters,” “Method note,” “Do not infer,” and “Checkpoint” functions;
-- 34 explicit “Where the analogy breaks” annotations;
-- worked examples, frozen case packets, individual transfer work, transition notebooks, and a complete capstone workbook; and
-- a glossary, notation guide, empirical-claim annotation sheet, fair-comparison guide, and source trail.
+Analogies are used as scaffolds rather than evidence: each identifies its intended mapping and failure point. Collaborative work produces inspectable artifacts such as dockets, ledgers, maps, matrices, predictions, revision rules, or adjudicated claims. Roles rotate so that advocacy is an intellectual responsibility rather than a required personal commitment.
 
-Every analogy is treated as a scaffold rather than evidence: its intended mapping and its failure point are both supplied. Exercises require products that can be inspected—dockets, ledgers, matrices, predictions, causal maps, revision rules, or adjudicated claims—rather than merely inviting unstructured conversation. Collaborative tasks specify roles or comparison duties so that students must expose assumptions and revise one another's work.
-
-The student artifact contains no answer guide, instructor key, reveal sheet, or controlled-reveal result. Automated forbidden-content checks are part of the build.
+The student artifact contains no answer guide, instructor key, reveal sheet, controlled-reveal result, or answer-bearing metadata. Forbidden-content checks are part of the production build.
 
 **Result:** PASS.
 
-## Tables, worksheets, and pagination
+## Worksheets and collaborative usability
 
-The edition uses **27 fixed-layout tables** with widths assigned according to semantic content rather than equal columns. Dense mathematical fields receive protected width; prose columns receive more space than labels; numerical and status columns remain compact. All workbook and annotation sheets begin with an explanation of purpose and procedure. The empirical-claim annotation sheet begins on its own page, and the capstone branch selector remains intact as one decision block.
+The final edition contains **52 registered worksheet pages**. Every standalone worksheet, every worksheet continuation, and every Appendix D Cover/A-R section:
 
-The final PDF has **178 pages** at **7 × 10 inches**. Three independent visual audits inspected every rendered page at native resolution in ranges 1–60, 61–120, and 121–178. They found:
+- begins with a purpose and procedure explanation;
+- starts on a distinct physical page;
+- names the artifact students must produce;
+- provides writing, drawing, checklist, or decision space proportionate to the prompt; and
+- separates logically different records instead of compressing them into undersized cells.
 
-- no clipping or overlap;
-- no malformed glyphs or formulas;
-- no broken tables or midword column failures;
-- no orphaned headings, prompts, or one-line paragraph fragments;
-- no accidental sparse pages; and
-- only purposeful open space on writable workbook or section-ending pages.
+Audit corrections include separate science-action and claim-license sheets; common-question, symmetry, objection, diagnostic-case, disagreement, rehearsal, review, and advocate-approval records; a two-page cover/provenance record; collaboration, role-rotation, and governance pages; split boundary and viability decisions; branch-specific capstone continuations; separate partition, blinding, missingness, reproducibility, outcome, transport, character, schematic, action, red-team, and preregistration records; and a balanced reading record.
 
-Earlier pagination defects—short fragments across page turns, a sparse chapter transition, a split six-branch capstone choice, and a partial worksheet introduction—were corrected and the affected ranges re-audited.
+The transition notebook now supplies a labeled drawing frame. The causal-diagram audit provides a full usable workspace rather than a decorative strip. The fair-comparison rehearsal begins directly on its worksheet page, with its review continuation on the next page.
+
+**Result:** PASS.
+
+## Tables, pagination, and rendered-page audit
+
+The edition contains **79 content tables**, plus the five-cell cover palette strip. Every table uses fixed layout with explicit table width, grid-column widths, and cell widths. Semantic profiles protect formulas and numerical intervals, keep label/status columns compact, widen substantive prose, and give fillable cells practical height. Table headers repeat across page breaks. Rows are prevented from splitting where that would impair interpretation.
+
+Pagination rules keep compact lists, thought-experiment stages and conclusions, chapter summaries, strategy tables, and final table rows together when space permits. Corrections removed stranded list fragments, isolated transition notes, split reasoning sequences, a redundant fair-comparison heading, ambiguous blank work areas, and worksheet spillovers.
+
+The final PDF has **230 pages** at **7 x 10 inches**. Three independent visual sweeps inspect every rendered page at 144 dpi in ranges 1-77, 78-154, and 155-230. The release gate checks for clipping, overlap, malformed formulas, missing glyphs, table-width failures, midword column breaks, stranded headings, unintended sparse pages, and inconsistent color or hierarchy. Automated checks independently report no empty or sparse pages and confirm 52 distinct worksheet start pages.
 
 **Result:** PASS.
 
@@ -110,59 +135,65 @@ The supplied image was sampled into the exact edition palette:
 - umber `#8A5C39`; and
 - pale gold `#FBE4AA`.
 
-Pale gold and sandstone organize the page without becoming low-contrast body text. Contrast checks include burgundy on pale gold at **9.91:1**, espresso on pale gold at **11.66:1**, and umber on pale gold at **4.57:1**. The site card uses the same palette.
+Pale gold and sandstone organize the page without becoming low-contrast body text. Verified contrast ratios include burgundy on pale gold at **9.91:1**, espresso on pale gold at **11.66:1**, umber on pale gold at **4.57:1**, and espresso on sandstone at **4.78:1**. Color is not the sole carrier of theoretical or evidential status.
 
-The PDF is tagged, declares `en-US`, contains a navigable outline, has no encryption or JavaScript, and embeds every font. Body text is 10.1 pt Liberation Serif with restrained spacing; headings and callouts use a stable hierarchy. Color is never the sole carrier of theoretical status.
+The PDF is tagged, declares `en-US`, contains 478 outline entries, has no encryption or JavaScript, uses zero page rotation, and embeds every font. Body text is 10.1 pt Liberation Serif; compact chapter-end reference terms remain at 9.4 pt. The current edition contains no semantic figures. The build nevertheless treats a missing `Alt` or `ActualText` entry on any future Figure tag as a hard failure and records the structural limitation that decorative mis-tagging still requires visual review.
 
 **Result:** PASS.
 
 ## Structural, binary, and reproducibility QA
 
-- DOCX ZIP integrity: PASS; no corrupt members.
-- Full Ghostscript PDF parse: PASS; no structural rendering errors.
-- PDF metadata and geometry: PASS; 178 pages, 504 × 720 points, zero rotation.
-- Empty-page check: PASS; none.
-- Sparse-page guard: PASS; the sole intentionally open workbook page is recorded separately.
-- Embedded-font check: PASS; all fonts embedded and subset.
-- Textbook build validators: PASS; 14 chapters, expected annotation and practice structures, seven named corpus items, and no forbidden key/reveal content.
-- Release/public identity: PASS; the site copy and release PDF are byte-identical.
-- Site test suite: PASS; 10 of 10 tests, including textbook path, palette, and digest checks.
-- ESLint and production GitHub Pages build: PASS; all routes statically generated.
+- Source validators: PASS - 14 chapters, expected practice structures, 30 thought experiments, 35 analogy limits, 52 introduced worksheets, seven named corpus items, and no forbidden key/reveal content.
+- Character policy: PASS - source and extracted PDF text use ASCII hyphens; Unicode dash variants are rejected.
+- DOCX ZIP integrity: PASS - no corrupt members.
+- DOCX live statistics: PASS - 230 pages and 64,315 application-reported words.
+- Full Ghostscript PDF parse: PASS - no structural rendering errors.
+- PDF metadata and geometry: PASS - 230 pages, 504 x 720 points, zero rotation.
+- Empty/sparse page guards: PASS - none.
+- Embedded-font check: PASS - all fonts embedded and subset.
+- Tagging/language/outline checks: PASS.
+- Release/public identity: PASS - release, public, and static-export PDFs are byte-identical.
+- Site test suite: PASS - 10 of 10 tests.
+- ESLint: PASS.
+- Production GitHub Pages build: PASS - all routes statically generated under `/C0`.
+- Workflow YAML and manifest-driven digest gate: PASS.
+- Source formatting check: PASS - no whitespace errors.
 
 Release hashes:
 
 | Artifact | SHA-256 |
 |---|---|
-| `student-textbook/student-textbook.md` | `09442e64fff81fd5462a92c37290ff38ca048cd391bf31bbeb2eda4939e9e3ce` |
-| `output/doc/learning-c0-n-star-student-textbook.docx` | `ce91fdd83600f1226b1c872ea06dfe2a1b4d59e491a8070d889f15f8695fd0ab` |
-| `output/pdf/learning-c0-n-star-student-textbook.pdf` | `8d0ba2c9bfe55e99736c602c4607d7fe5d4c30dc8da422c12fb261d2d982d04f` |
-| `public/teaching/student-textbook/1.0/learning-c0-n-star-student-textbook.pdf` | `8d0ba2c9bfe55e99736c602c4607d7fe5d4c30dc8da422c12fb261d2d982d04f` |
+| `student-textbook/student-textbook.md` | `6c33ee84242118f5ae329e08200165a82a743f5939141bc8b7536a2f6606a130` |
+| `output/doc/learning-c0-n-star-student-textbook.docx` | `bb1d47be7549b5a9221e60329a334d6759534cf562cddf6f63ca818ac85e4964` |
+| `output/pdf/learning-c0-n-star-student-textbook.pdf` | `cb58b0052d50b39a4edc7012d268a47fe47342c34b9141f5a1063f511150223c` |
+| `public/teaching/student-textbook/1.1/learning-c0-n-star-student-textbook.pdf` | `cb58b0052d50b39a4edc7012d268a47fe47342c34b9141f5a1063f511150223c` |
 
-The complete machine-readable record is `output/student-textbook-build-manifest.json`.
+The complete machine-readable record is `output/student-textbook-build-manifest.json`. The editioned public path is immutable by default; same-edition replacement requires the documented explicit override and is recorded in the manifest.
 
 ## Site placement and future pairing
 
-The textbook is placed in an editioned path under `public/teaching/student-textbook/1.0/`, parallel to the instructor manual rather than under temporary student handouts. The teaching page presents a coordinated two-text collection:
+The textbook is published under `public/teaching/student-textbook/1.1/`, parallel to the instructor manual rather than under temporary student handouts. The teaching page reads the release edition, path, page count, byte size, and digest-bearing manifest instead of duplicating fragile hard-coded metadata. The page presents a coordinated collection:
 
-- the instructor manual remains clearly marked as containing keys and controlled-reveal guidance;
+- the instructor manual is clearly marked as containing keys and controlled-reveal guidance;
 - the textbook is the primary student-facing course text;
-- the session resource pack is explicitly described as a companion handout, not a textbook replacement; and
-- the paired card layout and stable versioned URLs leave room for later textbook and manual editions without breaking the collection architecture.
+- the student session resource pack is identified as a reveal-safe companion, not a textbook replacement; and
+- editioned URLs and parallel cards leave room for later manual, textbook, and resource-pack revisions.
 
-Site tests verify the paths, release labels, absence of “forthcoming” language, palette hooks, and byte identity of the public PDF.
+The deployment workflow verifies the release PDF, public PDF, exported PDF, manifest digest, byte count, and rendered teaching-page link before upload.
 
 **Result:** PASS.
 
 ## Residual limitations
 
-No release-blocking weakness remains. Three limitations should stay explicit:
+No release-blocking weakness remains. The following limits are intentionally preserved:
 
-1. Cø / N* is a new research program; a polished textbook does not validate the theory.
-2. The contextual literature is selected to teach the theory landscape fairly, not presented as an exhaustive consciousness bibliography.
-3. Several operational rules are prospective research commitments. Students should treat them as testable proposals, not established measurement standards.
+1. Cø / N* is a new research program; the textbook explains and pressure-tests the theory but does not validate it by exposition.
+2. The contextual literature is selected for accurate theory placement and diagnostic comparison, not presented as an exhaustive consciousness bibliography.
+3. Several thresholds, estimators, bridge rules, and transport conditions are prospective research commitments rather than established measurement standards.
+4. Automated page and tag checks complement but cannot replace human review of meaning, visual balance, and future semantic figures.
 
 ## Final disposition
 
-Edition 1.0 is coherent with the instructor manual, complete across the seven-paper corpus, accessible without being simplified into slogans, pedagogically active, visually faithful to the supplied palette, key-free, technically valid, and ready for course distribution.
+Edition 1.1 is coherent with the instructor manual, complete across the seven-paper corpus, accessible without being reduced to slogans, pedagogically active, key-free, visually faithful to the supplied palette, structurally valid, reproducible, and prepared for course distribution.
 
-**FINAL: PASS — approved for release.**
+**FINAL: PASS - approved for release.**

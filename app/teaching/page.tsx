@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+import textbookBuild from "@/output/student-textbook-build-manifest.json";
 
 const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const manualHref = `${assetBase}/teaching/instructor-manual/2.1/teaching-c0-n-star-instructor-manual.pdf`;
-const textbookHref = `${assetBase}/teaching/student-textbook/1.0/learning-c0-n-star-student-textbook.pdf`;
+const textbookEdition = textbookBuild.release.edition;
+const textbookPages = textbookBuild.release.pdf.pages;
+const textbookSizeMb = (textbookBuild.release.pdf.bytes / 1_000_000).toFixed(1);
+const textbookHref = `${assetBase}${textbookBuild.release.pdf.public_url}`;
 const studentMaterialsHref = `${assetBase}/teaching/student-materials/2.1/c0-n-star-student-session-resource-pack.pdf`;
 const philPapersHref = "https://philpapers.org/rec/STITCE-4";
 
@@ -67,7 +71,7 @@ export default function TeachingPage() {
           </p>
           <div className="teaching-hero-actions">
             <a className="teaching-primary-action" href={manualHref} target="_blank" rel="noreferrer">Open manual (PDF · 4.5 MB) <span>↗</span></a>
-            <a className="teaching-secondary-action" href={textbookHref} target="_blank" rel="noreferrer">Open student textbook (PDF · 2.5 MB) <span>↗</span></a>
+            <a className="teaching-secondary-action" href={textbookHref} target="_blank" rel="noreferrer">Open student textbook (PDF · {textbookSizeMb} MB) <span>↗</span></a>
           </div>
         </div>
         <aside className="teaching-hero-ledger" aria-label="Course collection at a glance">
@@ -111,9 +115,9 @@ export default function TeachingPage() {
             <div className="course-text-status"><span aria-hidden="true" /> FOR STUDENTS · AVAILABLE NOW</div>
             <h3>Learning Cø / N*: A Student Textbook of Phenomenal Presence</h3>
             <p>A graduate-accessible companion to the manual, with annotated explanations, worked examples, analogies and their limits, thought experiments, collaborative exercises, counterexample challenges, and a complete adversarial capstone workbook.</p>
-            <div className="course-text-meta">Student edition 1.0 · July 2026 · 178 pages · PDF, 2.5 MB</div>
+            <div className="course-text-meta">Student edition {textbookEdition} · July 2026 · {textbookPages} pages · PDF, {textbookSizeMb} MB</div>
             <div className="course-text-actions">
-              <a href={textbookHref} target="_blank" rel="noreferrer">Open textbook (PDF · 2.5 MB) <span>↗</span></a>
+              <a href={textbookHref} target="_blank" rel="noreferrer">Open textbook (PDF · {textbookSizeMb} MB) <span>↗</span></a>
             </div>
             <div className="textbook-plan" aria-label="Textbook relationship to the instructor manual">
               <div><span>01</span><p><strong>Shared spine</strong> Fourteen aligned chapters and stable terminology.</p></div>
@@ -170,7 +174,7 @@ export default function TeachingPage() {
         <h2>Plan with the instructor architecture. Learn and test the theory with the student companion.</h2>
         <div className="teaching-closing-actions">
           <a className="teaching-primary-action" href={manualHref} target="_blank" rel="noreferrer">Open the manual (PDF · 4.5 MB) <span>↗</span></a>
-          <a className="teaching-secondary-action" href={textbookHref} target="_blank" rel="noreferrer">Open the textbook (PDF · 2.5 MB) <span>↗</span></a>
+          <a className="teaching-secondary-action" href={textbookHref} target="_blank" rel="noreferrer">Open the textbook (PDF · {textbookSizeMb} MB) <span>↗</span></a>
         </div>
       </section>
 
