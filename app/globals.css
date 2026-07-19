@@ -433,6 +433,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .teaching-primary-action { display: inline-flex; align-items: center; gap: 30px; padding: 16px 18px 16px 21px; border-radius: 4px; background: var(--broadcast); color: #1a0c02; font-size: 13px; font-weight: 800; transition: transform .2s ease, background .2s ease; }
 .teaching-primary-action:hover { transform: translateY(-2px); background: #ffb66f; }
 .teaching-primary-action span { font-size: 17px; }
+.teaching-secondary-action { display: inline-flex; align-items: center; gap: 30px; padding: 15px 17px 15px 20px; border: 1px solid #aa9062; border-radius: 4px; background: #fbe4aa; color: #3b2317; font-size: 13px; font-weight: 800; transition: transform .2s ease, background .2s ease; }
+.teaching-secondary-action:hover { transform: translateY(-2px); background: #aa9062; }
+.teaching-secondary-action span { font-size: 17px; }
 .teaching-text-action { padding-bottom: 5px; border-bottom: 1px solid #656b6e; color: #ece9e1; font-size: 13px; }
 .teaching-hero-ledger { position: relative; z-index: 1; display: flex; min-width: 0; padding: 82px clamp(30px, 5vw, 78px); flex-direction: column; justify-content: center; border-left: 1px solid var(--line); background: rgba(10,13,16,.54); }
 .teaching-hero-ledger > span { color: var(--broadcast); font: 700 10px var(--mono); letter-spacing: .14em; }
@@ -447,30 +450,34 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .teaching-section-heading > div > span, .course-architecture-copy > span { color: #555d60; }
 .teaching-section-heading h2, .course-architecture-copy h2 { margin: 14px 0 0; font-size: clamp(40px, 5.2vw, 74px); line-height: .98; letter-spacing: -.055em; }
 .teaching-section-heading > p { max-width: 570px; margin: 0; color: #535b5d; font-size: 14px; line-height: 1.75; }
-.course-text-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(310px, .8fr); max-width: 1450px; margin: 0 auto; border-top: 1px solid #aeb1ac; border-left: 1px solid #aeb1ac; }
+.course-text-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 1450px; margin: 0 auto; border-top: 1px solid #aeb1ac; border-left: 1px solid #aeb1ac; }
 .course-text-card { position: relative; display: flex; min-height: 660px; padding: clamp(28px, 4vw, 57px); flex-direction: column; border-right: 1px solid #aeb1ac; border-bottom: 1px solid #aeb1ac; overflow: hidden; }
 .course-text-card::after { content: ""; position: absolute; right: -90px; bottom: -90px; width: 260px; height: 260px; border: 1px solid currentColor; border-radius: 50%; opacity: .12; }
 .instructor-text-card { background: #171112; color: #ff9f94; }
-.student-text-card { background: rgba(255,253,247,.46); color: #5b4c91; }
+.student-text-card { background: #fbe4aa; color: #601d1f; }
 .course-text-status { position: relative; z-index: 1; display: flex; align-items: center; gap: 9px; color: currentColor; }
 .course-text-status > span { width: 8px; height: 8px; border-radius: 50%; background: var(--viability); box-shadow: 0 0 13px rgba(183,238,72,.48); }
-.course-text-status.forthcoming > span { background: #8d839f; box-shadow: none; }
+.student-text-card .course-text-status > span { background: #601d1f; box-shadow: none; }
 .course-text-card h3 { position: relative; z-index: 1; max-width: 800px; margin: 38px 0 24px; color: #22282a; font: 400 clamp(31px, 3vw, 48px)/1.03 var(--serif); letter-spacing: -.042em; }
 .instructor-text-card h3 { color: #fff8ee; }
+.student-text-card h3 { color: #601d1f; }
 .course-text-card > p { position: relative; z-index: 1; max-width: 780px; margin: 0; color: #596264; font-size: 14px; line-height: 1.72; }
 .instructor-text-card > p { color: #d5bbb6; }
+.student-text-card > p { color: #3b2317; }
 .course-text-meta { position: relative; z-index: 1; margin: 27px 0 0; color: #555d60; font: 650 10px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .instructor-text-card .course-text-meta { color: #bd928c; }
+.student-text-card .course-text-meta { color: #8a5c39; }
 .course-text-actions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 22px; margin: 35px 0 0; }
 .course-text-actions a { display: inline-flex; align-items: center; gap: 17px; padding: 11px 0 5px; border-bottom: 1px solid currentColor; font: 700 10px var(--mono); letter-spacing: .03em; text-transform: uppercase; }
+.student-text-card .course-text-actions a { color: #601d1f; }
 .instructor-warning { position: relative; z-index: 1; margin-top: auto; padding: 18px 19px; border: 1px solid rgba(255,157,67,.3); background: rgba(255,157,67,.07); }
 .instructor-warning strong { color: var(--broadcast); font: 700 9px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
 .instructor-warning p { margin: 8px 0 0; color: #d9beb8; font-size: 11px; line-height: 1.65; }
-.textbook-plan { position: relative; z-index: 1; margin-top: auto; border-top: 1px solid rgba(61,65,67,.2); }
-.textbook-plan > div { display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 15px 0; border-bottom: 1px solid rgba(61,65,67,.17); }
-.textbook-plan span { color: #625c6b; font: 700 9px var(--mono); }
-.textbook-plan p { margin: 0; color: #5d6567; font-size: 11px; line-height: 1.55; }
-.textbook-plan strong { color: #292f31; }
+.textbook-plan { position: relative; z-index: 1; margin-top: auto; border-top: 1px solid #aa9062; }
+.textbook-plan > div { display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 15px 0; border-bottom: 1px solid #aa9062; }
+.textbook-plan span { color: #8a5c39; font: 700 9px var(--mono); }
+.textbook-plan p { margin: 0; color: #3b2317; font-size: 11px; line-height: 1.55; }
+.textbook-plan strong { color: #601d1f; }
 .course-supplement { display: grid; grid-template-columns: minmax(290px, .75fr) minmax(300px, 1fr) auto; gap: clamp(24px, 4vw, 65px); align-items: center; max-width: 1450px; margin: 22px auto 0; padding: 27px clamp(24px, 3.5vw, 48px); border: 1px solid #aeb1ac; background: rgba(255,253,247,.62); color: #3f664e; }
 .course-supplement h3 { margin: 13px 0 0; color: #202628; font: 400 27px/1.05 var(--serif); letter-spacing: -.035em; }
 .course-supplement > p { margin: 0; color: #50595b; font-size: 12px; line-height: 1.65; }

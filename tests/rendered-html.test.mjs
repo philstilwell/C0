@@ -72,7 +72,7 @@ test("server-renders the seven-paper research constellation", async () => {
   assert.match(html, /The paper begins by narrowing the explanandum/);
 });
 
-test("server-renders a future-ready teaching hub", async () => {
+test("server-renders the paired teaching collection", async () => {
   const [teachingResponse, homeResponse, constellationResponse] = await Promise.all([
     render("/teaching/"),
     render(),
@@ -86,14 +86,17 @@ test("server-renders a future-ready teaching hub", async () => {
   ]);
   assert.match(teaching, /Teaching Cø \/ N\*: A Graduate Instructor/);
   assert.match(teaching, /Instructor edition/);
-  assert.match(teaching, /Student textbook/);
-  assert.match(teaching, /In development/);
+  assert.match(teaching, /Learning Cø \/ N\*: A Student Textbook of Phenomenal Presence/);
+  assert.match(teaching, /FOR STUDENTS · AVAILABLE NOW/);
   assert.match(teaching, /teaching\/instructor-manual\/2\.1\/teaching-c0-n-star-instructor-manual\.pdf/);
+  assert.match(teaching, /teaching\/student-textbook\/1\.0\/learning-c0-n-star-student-textbook\.pdf/);
   assert.match(teaching, /Student session resource pack/);
-  assert.match(teaching, /course supplement, not the forthcoming student textbook/);
+  assert.match(teaching, /companion to/);
+  assert.match(teaching, /not a replacement for/);
   assert.match(teaching, /teaching\/student-materials\/2\.1\/c0-n-star-student-session-resource-pack\.pdf/);
   assert.match(teaching, /Contains answer guides, assessment keys, and controlled-reveal guidance/);
   assert.match(teaching, /philpapers\.org\/rec\/STITCE-4/);
+  assert.doesNotMatch(teaching, /FORTHCOMING|In development|student textbook forthcoming/i);
   assert.doesNotMatch(teaching, /href=["']#["']/);
   assert.match(home, /href=["']\/teaching\//);
   assert.match(constellation, /href=["']\/teaching\//);
@@ -109,6 +112,26 @@ test("ships an exact public copy of instructor manual edition 2.1", async () => 
   assert.ok(publicManual.length > 4_000_000);
   assert.equal(digest(publicManual), expectedDigest);
   assert.equal(digest(releaseManual), expectedDigest);
+});
+
+test("ships an exact public copy of student textbook edition 1.0", async () => {
+  const [publicTextbook, releaseTextbook] = await Promise.all([
+    readFile(new URL("../public/teaching/student-textbook/1.0/learning-c0-n-star-student-textbook.pdf", import.meta.url)),
+    readFile(new URL("../output/pdf/learning-c0-n-star-student-textbook.pdf", import.meta.url)),
+  ]);
+  const digest = (value) => createHash("sha256").update(value).digest("hex");
+  const expectedDigest = "8d0ba2c9bfe55e99736c602c4607d7fe5d4c30dc8da422c12fb261d2d982d04f";
+  assert.ok(publicTextbook.length > 2_500_000);
+  assert.equal(digest(publicTextbook), expectedDigest);
+  assert.equal(digest(releaseTextbook), expectedDigest);
+});
+
+test("uses the supplied five-color palette for the student textbook card", async () => {
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  assert.match(css, /\.student-text-card \{ background: #fbe4aa; color: #601d1f; \}/);
+  assert.match(css, /\.student-text-card > p \{ color: #3b2317; \}/);
+  assert.match(css, /\.student-text-card \.course-text-meta \{ color: #8a5c39; \}/);
+  assert.match(css, /border-top: 1px solid #aa9062/);
 });
 
 test("ships an exact public copy of the key-free student resource pack", async () => {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const manualHref = `${assetBase}/teaching/instructor-manual/2.1/teaching-c0-n-star-instructor-manual.pdf`;
+const textbookHref = `${assetBase}/teaching/student-textbook/1.0/learning-c0-n-star-student-textbook.pdf`;
 const studentMaterialsHref = `${assetBase}/teaching/student-materials/2.1/c0-n-star-student-session-resource-pack.pdf`;
 const philPapersHref = "https://philpapers.org/rec/STITCE-4";
 
@@ -31,11 +32,11 @@ const manualContents = [
 export const metadata: Metadata = {
   title: "Teaching Cø / N* — Graduate Course Resources",
   description:
-    "Graduate teaching resources for the Cø / N* theory of phenomenal consciousness: an audited instructor manual now, with a student textbook forthcoming.",
+    "Graduate teaching resources for the Cø / N* theory of phenomenal consciousness: an audited instructor manual and its accessible student textbook.",
   openGraph: {
     title: "Teaching Cø / N* — Graduate Course Resources",
     description:
-      "An audited fourteen-session instructor manual, with a student-facing textbook planned as its companion.",
+      "A paired fourteen-session instructor manual and student textbook for critical, evidence-led study of Cø / N*.",
   },
 };
 
@@ -51,7 +52,7 @@ export default function TeachingPage() {
         <div className="nav-links teaching-nav-links">
           <a href={`${assetBase}/`}>Interactive model</a>
           <a href={`${assetBase}/constellation/`}>Research</a>
-          <a className="nav-paper" href={manualHref} target="_blank" rel="noreferrer">Instructor manual ↗</a>
+          <a className="nav-paper" href={textbookHref} target="_blank" rel="noreferrer">Student textbook ↗</a>
         </div>
       </nav>
 
@@ -61,23 +62,23 @@ export default function TeachingPage() {
           <h1>Teach a new theory without teaching it as <i>settled.</i></h1>
           <p className="teaching-lede">
             The Cø / N* course collection is built for precise reconstruction, fair comparison with rival
-            theories, and evidence that could force revision. The instructor manual is available now; a
-            student textbook will join it here.
+            theories, and evidence that could force revision. Its instructor manual and student textbook
+            now provide two coordinated routes through the same fourteen-part sequence.
           </p>
           <div className="teaching-hero-actions">
             <a className="teaching-primary-action" href={manualHref} target="_blank" rel="noreferrer">Open manual (PDF · 4.5 MB) <span>↗</span></a>
-            <a className="teaching-text-action" href="#course-texts">See the course collection</a>
+            <a className="teaching-secondary-action" href={textbookHref} target="_blank" rel="noreferrer">Open student textbook (PDF · 2.5 MB) <span>↗</span></a>
           </div>
         </div>
-        <aside className="teaching-hero-ledger" aria-label="Instructor manual at a glance">
-          <span>INSTRUCTOR EDITION 2.1</span>
+        <aside className="teaching-hero-ledger" aria-label="Course collection at a glance">
+          <span>COORDINATED COURSE COLLECTION</span>
           <dl>
             <div><dt>Sessions</dt><dd>14</dd></div>
-            <div><dt>Research papers</dt><dd>7</dd></div>
-            <div><dt>Pages</dt><dd>169</dd></div>
+            <div><dt>Course texts</dt><dd>2</dd></div>
+            <div><dt>Source papers</dt><dd>7</dd></div>
             <div><dt>Release</dt><dd>July 2026</dd></div>
           </dl>
-          <p>Lecture notes, collaborative work, staged evidence, assessment, and instructor keys in one audited course architecture.</p>
+          <p>Aligned instructor guidance and student exposition, with collaborative work, staged evidence, exercises, and adversarial validation.</p>
         </aside>
       </header>
 
@@ -87,7 +88,7 @@ export default function TeachingPage() {
             <span>01 / COURSE TEXTS</span>
             <h2 id="course-texts-heading">One course. Two audiences.</h2>
           </div>
-          <p>The collection keeps instructor guidance and student exposition distinct. The forthcoming textbook is planned around the manual&apos;s sequence, vocabulary, notation, and cases.</p>
+          <p>The collection keeps instructor guidance and student exposition distinct while aligning their sequence, vocabulary, notation, cases, and learning outcomes.</p>
         </div>
 
         <div className="course-text-grid" id="course-texts">
@@ -107,14 +108,17 @@ export default function TeachingPage() {
           </article>
 
           <article className="course-text-card student-text-card">
-            <div className="course-text-status forthcoming"><span aria-hidden="true" /> FOR STUDENTS · FORTHCOMING</div>
-            <h3>Student textbook</h3>
-            <p>A graduate-accessible companion text is in development. It will supply the student-facing exposition for the manual&apos;s fourteen-session sequence and will be listed here when ready.</p>
-            <div className="course-text-meta">In development · Publication date to be announced</div>
-            <div className="textbook-plan" aria-label="Planned textbook relationship to the manual">
-              <div><span>01</span><p><strong>Shared spine</strong> Fourteen aligned sessions and stable cross-references.</p></div>
-              <div><span>02</span><p><strong>Student-facing</strong> Accessible exposition without instructor keys.</p></div>
-              <div><span>03</span><p><strong>Same discipline</strong> Conditional claims, rival comparisons, and revision pressure.</p></div>
+            <div className="course-text-status"><span aria-hidden="true" /> FOR STUDENTS · AVAILABLE NOW</div>
+            <h3>Learning Cø / N*: A Student Textbook of Phenomenal Presence</h3>
+            <p>A graduate-accessible companion to the manual, with annotated explanations, worked examples, analogies and their limits, thought experiments, collaborative exercises, counterexample challenges, and a complete adversarial capstone workbook.</p>
+            <div className="course-text-meta">Student edition 1.0 · July 2026 · 178 pages · PDF, 2.5 MB</div>
+            <div className="course-text-actions">
+              <a href={textbookHref} target="_blank" rel="noreferrer">Open textbook (PDF · 2.5 MB) <span>↗</span></a>
+            </div>
+            <div className="textbook-plan" aria-label="Textbook relationship to the instructor manual">
+              <div><span>01</span><p><strong>Shared spine</strong> Fourteen aligned chapters and stable terminology.</p></div>
+              <div><span>02</span><p><strong>Student-facing</strong> Accessible annotations without instructor keys.</p></div>
+              <div><span>03</span><p><strong>Active inquiry</strong> Analogies, thought experiments, collaborative work, and revision pressure.</p></div>
             </div>
           </article>
         </div>
@@ -124,7 +128,7 @@ export default function TeachingPage() {
             <div className="course-text-status"><span aria-hidden="true" /> FOR STUDENT DISTRIBUTION · AVAILABLE NOW</div>
             <h3 id="student-materials-heading">Student session resource pack</h3>
           </div>
-          <p>A key-free, reveal-safe base pack for the current fourteen-session course. This is a course supplement, not the forthcoming student textbook.</p>
+          <p>A key-free, reveal-safe handout for the fourteen-session course. It supports staged classroom activities and is a companion to—not a replacement for—the student textbook.</p>
           <a href={studentMaterialsHref} target="_blank" rel="noreferrer">Open student materials (PDF · 0.6 MB) <span>↗</span></a>
         </article>
       </section>
@@ -163,10 +167,10 @@ export default function TeachingPage() {
 
       <section className="teaching-closing">
         <p>READY FOR COURSE DESIGN</p>
-        <h2>Begin with the instructor architecture. The companion student text will appear here when it is ready.</h2>
+        <h2>Plan with the instructor architecture. Learn and test the theory with the student companion.</h2>
         <div className="teaching-closing-actions">
           <a className="teaching-primary-action" href={manualHref} target="_blank" rel="noreferrer">Open the manual (PDF · 4.5 MB) <span>↗</span></a>
-          <a className="teaching-text-action" href={`${assetBase}/constellation/`}>Explore the research constellation</a>
+          <a className="teaching-secondary-action" href={textbookHref} target="_blank" rel="noreferrer">Open the textbook (PDF · 2.5 MB) <span>↗</span></a>
         </div>
       </section>
 
@@ -174,7 +178,7 @@ export default function TeachingPage() {
         <div className="footer-mark">Cø<span>/N*</span></div>
         <div>
           <p>Graduate teaching resources for a testable theory of phenomenal presence.</p>
-          <small>Instructor manual available · Student textbook forthcoming</small>
+          <small>Instructor manual available · Student textbook available</small>
         </div>
         <div className="footer-links">
           <a href="#top">Back to top ↑</a>

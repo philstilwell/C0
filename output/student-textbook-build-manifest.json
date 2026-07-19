@@ -1,0 +1,864 @@
+{
+  "built_at_utc": "2026-07-19T03:54:30.961453+00:00",
+  "corpus_baseline": "July 18, 2026",
+  "corpus_sources": {
+    "papers/ablating-n-star/manuscript.md": "a03f7f612aad044d7e59443c797f107f596f323245f6f45fee6ee3be97e9531a",
+    "papers/consciousness-in-the-schematic/manuscript.md": "636e7c1fd0220943028ec5f2960c9d2f884f9c1f880c684ad98b6bc17b02aab6",
+    "papers/consciousness-without-report/manuscript.md": "5cfd2f65957650be6630924603ba0286a6b11cf7653194e115cbcdc03682d318",
+    "papers/from-phenomenal-presence-to-phenomenal-character/manuscript.md": "63f4960a66b41dda4a5f678651908587e38facc258825ca0af5370d262a965e2",
+    "papers/indeterminacy-as-scientific-result/manuscript.md": "029010b41c326d1bce6859119f69404946ad9b0964112c5b63f10f9b7c4fc396",
+    "papers/where-is-the-conscious-subject/manuscript.md": "035802e80babad63319e8ad8f3ce54403bec9028952a077f0c8303fda9d4d7ec",
+    "public/paper.pdf": "a0fffb89a12ab722b6472c2c0e32f2344c6fbda7ac999ca47a9fb1d2616b524d"
+  },
+  "edition": "1.0",
+  "outputs": {
+    "output/doc/learning-c0-n-star-student-textbook.docx": "ce91fdd83600f1226b1c872ea06dfe2a1b4d59e491a8070d889f15f8695fd0ab",
+    "output/pdf/learning-c0-n-star-student-textbook.pdf": "8d0ba2c9bfe55e99736c602c4607d7fe5d4c30dc8da422c12fb261d2d982d04f",
+    "student-textbook/student-textbook.md": "09442e64fff81fd5462a92c37290ff38ca048cd391bf31bbeb2eda4939e9e3ce"
+  },
+  "palette": {
+    "burgundy": "#601D1F",
+    "espresso": "#3B2317",
+    "pale_gold": "#FBE4AA",
+    "sandstone": "#AA9062",
+    "umber": "#8A5C39"
+  },
+  "qa": {
+    "docx": {
+      "chapter_headings": [
+        "Chapter 1 \u2014 The Explanandum and the Theory Landscape",
+        "Chapter 2 \u2014 The Core Biconditional and Network-Dynamics Model",
+        "Chapter 3 \u2014 Where Is the Conscious Subject?",
+        "Chapter 4 \u2014 Viability and Integration: Realization and Unity",
+        "Chapter 5 \u2014 Consciousness Without Report: System-Wide Availability",
+        "Chapter 6 \u2014 Recurrent Stability and Temporal Presence",
+        "Chapter 7 \u2014 What Does the Evidence License?",
+        "Chapter 8 \u2014 Does Every Conjunct Earn Its Place?",
+        "Chapter 9 \u2014 From Phenomenal Presence to Phenomenal Character",
+        "Chapter 10 \u2014 Reading Consciousness from the Schematic",
+        "Chapter 11 \u2014 Biological and Clinical Applications",
+        "Chapter 12 \u2014 Nonhuman Animals, Organoids, and Artificial Systems",
+        "Chapter 13 \u2014 Differentiation, Validation, and the Strongest Objections",
+        "Chapter 14 \u2014 Capstone Adversarial Research Design"
+      ],
+      "paragraphs": 2788,
+      "sections": 1,
+      "tables_fixed": 27
+    },
+    "pdf": {
+      "empty_pages": [],
+      "fonts": {
+        "all_embedded": true,
+        "available": true,
+        "fonts": [
+          {
+            "embedded": true,
+            "name": "BAAAAA+LiberationSerif-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "CAAAAA+LiberationSerif-BoldItalic",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "DAAAAA+LiberationSerif-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "EAAAAA+LiberationSerif-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "FAAAAA+LiberationSans-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "GAAAAA+LiberationSerif",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "HAAAAA+LiberationSerif-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "IAAAAA+LiberationSerif-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "JAAAAA+LiberationSerif-Italic",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "KAAAAA+LiberationSerif-Italic",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "LAAAAA+LiberationSerif",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "MAAAAA+LiberationSerif-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "NAAAAA+LiberationSerif",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "OAAAAA+LiberationSerif-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "PAAAAA+OpenSymbol",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "QAAAAA+LiberationSans-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "RAAAAA+LiberationSans",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "SAAAAA+OpenSymbol",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "TAAAAA+LinuxLibertineGI",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "UAAAAA+LiberationSerif-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "VAAAAA+LiberationSerif-Italic",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "WAAAAA+DejaVuSerif-Italic",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "XAAAAA+LiberationSerif-Italic",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "YAAAAA+LiberationSans-Bold",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "ZAAAAA+LiberationSans",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "ABAAAA+DejaVuSans-Oblique",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "BBAAAA+LiberationSerif-Italic",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "CBAAAA+DejaVuSans",
+            "subset": true,
+            "type": "TrueType"
+          },
+          {
+            "embedded": true,
+            "name": "DBAAAA+LiberationSerif-BoldItalic",
+            "subset": true,
+            "type": "TrueType"
+          }
+        ]
+      },
+      "intentionally_open_pages": [
+        170
+      ],
+      "language": "en-US",
+      "outline_entries": 443,
+      "pages": 178,
+      "pdfinfo": {
+        "Author": "Phil Stilwell",
+        "CreationDate": "Sat Jul 18 23:54:27 2026 EDT",
+        "Creator": "Writer",
+        "Custom Metadata": "no",
+        "Encrypted": "no",
+        "File size": "2559843 bytes",
+        "Form": "none",
+        "JavaScript": "no",
+        "Keywords": "consciousness, phenomenal, presence, N*, student, textbook, integration, availability, recurrence, thought, experiments, collaborative, learning",
+        "Metadata Stream": "yes",
+        "Optimized": "no",
+        "PDF version": "1.7",
+        "Page rot": "0",
+        "Page size": "504 x 720 pts",
+        "Pages": "178",
+        "Producer": "LibreOfficeDev 26.8.0.0.alpha0 (AARCH64)",
+        "Subject": "Accessible graduate student textbook for the C\u00f8 / N* theory of phenomenal presence",
+        "Suspects": "no",
+        "Tagged": "yes",
+        "Title": "Learning C\u00f8 / N*: A Student Textbook of Phenomenal Presence",
+        "UserProperties": "no"
+      },
+      "sparse_pages": [],
+      "tagged": true
+    },
+    "source": {
+      "chapters": {
+        "1": {
+          "analogy_limit_annotations": 2,
+          "annotations": {
+            "Checkpoint": 2,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 1,
+            "Why it matters": 2
+          },
+          "thought_experiment_mentions": 2,
+          "title": "The Explanandum and the Theory Landscape",
+          "words": 3664
+        },
+        "10": {
+          "analogy_limit_annotations": 3,
+          "annotations": {
+            "Checkpoint": 2,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 1,
+            "Why it matters": 2
+          },
+          "thought_experiment_mentions": 2,
+          "title": "Reading Consciousness from the Schematic",
+          "words": 3778
+        },
+        "11": {
+          "analogy_limit_annotations": 3,
+          "annotations": {
+            "Checkpoint": 2,
+            "Do not infer": 3,
+            "Method note": 2,
+            "Plain language": 2,
+            "Why it matters": 2
+          },
+          "thought_experiment_mentions": 3,
+          "title": "Biological and Clinical Applications",
+          "words": 3517
+        },
+        "12": {
+          "analogy_limit_annotations": 3,
+          "annotations": {
+            "Checkpoint": 2,
+            "Do not infer": 2,
+            "Method note": 2,
+            "Plain language": 2,
+            "Why it matters": 2
+          },
+          "thought_experiment_mentions": 3,
+          "title": "Nonhuman Animals, Organoids, and Artificial Systems",
+          "words": 3558
+        },
+        "13": {
+          "analogy_limit_annotations": 3,
+          "annotations": {
+            "Checkpoint": 2,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 2,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 2,
+          "title": "Differentiation, Validation, and the Strongest Objections",
+          "words": 3244
+        },
+        "14": {
+          "analogy_limit_annotations": 3,
+          "annotations": {
+            "Checkpoint": 1,
+            "Do not infer": 2,
+            "Method note": 2,
+            "Plain language": 2,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 2,
+          "title": "Capstone Adversarial Research Design",
+          "words": 3145
+        },
+        "2": {
+          "analogy_limit_annotations": 2,
+          "annotations": {
+            "Checkpoint": 1,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 3,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 3,
+          "title": "The Core Biconditional and Network-Dynamics Model",
+          "words": 3576
+        },
+        "3": {
+          "analogy_limit_annotations": 2,
+          "annotations": {
+            "Checkpoint": 1,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 1,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 2,
+          "title": "Where Is the Conscious Subject?",
+          "words": 3722
+        },
+        "4": {
+          "analogy_limit_annotations": 2,
+          "annotations": {
+            "Checkpoint": 1,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 1,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 2,
+          "title": "Viability and Integration: Realization and Unity",
+          "words": 3437
+        },
+        "5": {
+          "analogy_limit_annotations": 2,
+          "annotations": {
+            "Checkpoint": 2,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 1,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 3,
+          "title": "Consciousness Without Report: System-Wide Availability",
+          "words": 4153
+        },
+        "6": {
+          "analogy_limit_annotations": 2,
+          "annotations": {
+            "Checkpoint": 1,
+            "Do not infer": 2,
+            "Method note": 2,
+            "Plain language": 2,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 2,
+          "title": "Recurrent Stability and Temporal Presence",
+          "words": 3626
+        },
+        "7": {
+          "analogy_limit_annotations": 2,
+          "annotations": {
+            "Checkpoint": 1,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 1,
+            "Why it matters": 2
+          },
+          "thought_experiment_mentions": 2,
+          "title": "What Does the Evidence License?",
+          "words": 3639
+        },
+        "8": {
+          "analogy_limit_annotations": 2,
+          "annotations": {
+            "Checkpoint": 1,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 2,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 2,
+          "title": "Does Every Conjunct Earn Its Place?",
+          "words": 3803
+        },
+        "9": {
+          "analogy_limit_annotations": 3,
+          "annotations": {
+            "Checkpoint": 2,
+            "Do not infer": 2,
+            "Method note": 1,
+            "Plain language": 2,
+            "Why it matters": 1
+          },
+          "thought_experiment_mentions": 3,
+          "title": "From Phenomenal Presence to Phenomenal Character",
+          "words": 3814
+        }
+      },
+      "corpus_items_named": [
+        "C\u00f8 as N*",
+        "Where Is the Conscious Subject?",
+        "Consciousness Without Report",
+        "Indeterminacy as a Scientific Result",
+        "Ablating N*",
+        "From Phenomenal Presence to Phenomenal Character",
+        "Reading Consciousness from the Schematic"
+      ],
+      "total_words": 59808
+    },
+    "styling": {
+      "callout_paragraphs": {
+        "Checkpoint.": 22,
+        "Do not infer.": 31,
+        "Method note.": 19,
+        "Plain language.": 25,
+        "Source note:": 0,
+        "Where the analogy breaks.": 34,
+        "Why it matters.": 20
+      },
+      "chapters_styled": 14,
+      "tables": [
+        {
+          "column_width_percentages": [
+            14.62,
+            45.2,
+            40.18
+          ],
+          "index": 1,
+          "signature": [
+            "Annotation",
+            "What it does",
+            "Question to ask yourself"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            12.0,
+            58.0,
+            30.0
+          ],
+          "index": 2,
+          "signature": [
+            "Chapter",
+            "Central question",
+            "Main product"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            15.45,
+            30.73,
+            53.82
+          ],
+          "index": 3,
+          "signature": [
+            "Element",
+            "Short role",
+            "What it is meant to exclude"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            25.38,
+            32.26,
+            42.36
+          ],
+          "index": 4,
+          "signature": [
+            "Theory family",
+            "Pressure C\u00f8 / N* accepts",
+            "Point of difference to test"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            12.0,
+            30.0,
+            58.0
+          ],
+          "index": 5,
+          "signature": [
+            "Gate",
+            "Main role",
+            "What it is meant to exclude"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            11,
+            28,
+            61
+          ],
+          "index": 6,
+          "signature": [
+            "Profile",
+            "Boundary and viability record",
+            "Component and anchor evidence"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            14.11,
+            42.94,
+            42.94
+          ],
+          "index": 7,
+          "signature": [
+            "Card",
+            "Candidate evidence",
+            "Replacement, minimality, and separability evidence"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            33.33,
+            33.33,
+            33.33
+          ],
+          "index": 8,
+          "signature": [
+            "X",
+            "Y",
+            "Z"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            26.58,
+            31.6,
+            41.81
+          ],
+          "index": 9,
+          "signature": [
+            "Estimator family",
+            "Possible contribution",
+            "Characteristic limitation"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            18,
+            46,
+            36
+          ],
+          "index": 10,
+          "signature": [
+            "Strategy",
+            "Post-intervention component record",
+            "Mapping, validity, and anchor record"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            20,
+            7,
+            22,
+            20,
+            16,
+            15
+          ],
+          "index": 11,
+          "signature": [
+            "Recipient class",
+            "w k",
+            "Effect and interval",
+            "Latency interval",
+            "S / R / C",
+            "Status"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            27.13,
+            34.89,
+            37.98
+          ],
+          "index": 12,
+          "signature": [
+            "Candidate criterion",
+            "What it captures",
+            "A likely error"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            18.88,
+            46.67,
+            34.45
+          ],
+          "index": 13,
+          "signature": [
+            "Branch",
+            "Main achievement",
+            "What failure need not destroy"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            15,
+            34,
+            51
+          ],
+          "index": 14,
+          "signature": [
+            "Symbol or term",
+            "Student reading",
+            "Guardrail"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            24,
+            37,
+            39
+          ],
+          "index": 15,
+          "signature": [
+            "Symbol or term",
+            "Student reading",
+            "Guardrail"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            17.52,
+            48.21,
+            34.27
+          ],
+          "index": 16,
+          "signature": [
+            "Term",
+            "Student reading",
+            "Guardrail"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            18.17,
+            42.56,
+            39.27
+          ],
+          "index": 17,
+          "signature": [
+            "Symbol or term",
+            "Student reading",
+            "Guardrail"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            27,
+            37,
+            36
+          ],
+          "index": 18,
+          "signature": [
+            "Symbol or term",
+            "Student reading",
+            "Guardrail"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            38,
+            31,
+            31
+          ],
+          "index": 19,
+          "signature": [
+            "Question",
+            "Theory A",
+            "Theory B"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            14,
+            17,
+            17,
+            17,
+            11,
+            24
+          ],
+          "index": 20,
+          "signature": [
+            "Candidate",
+            "Endogenous capacity",
+            "External dependence",
+            "Role completeness",
+            "Stability",
+            "Included in frozen family?"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            16.98,
+            21.64,
+            17.79,
+            16.98,
+            26.61
+          ],
+          "index": 21,
+          "signature": [
+            "Diagnostic case",
+            "Full-model prediction",
+            "Rival prediction",
+            "Why they differ",
+            "Observation that adjudicates"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            12,
+            20,
+            14,
+            14,
+            14,
+            14,
+            12
+          ],
+          "index": 22,
+          "signature": [
+            "Construct",
+            "Operational definition",
+            "Estimator",
+            "Calibration domain",
+            "Validity envelope",
+            "Main confound",
+            "Stress test"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            29.92,
+            24.3,
+            21.47,
+            24.3
+          ],
+          "index": 23,
+          "signature": [
+            "Control",
+            "Confound it detects",
+            "Expected pattern",
+            "Failure consequence"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            38,
+            18,
+            18,
+            26
+          ],
+          "index": 24,
+          "signature": [
+            "Dependency question",
+            "Anchor 1",
+            "Anchor 2",
+            "Corrective action"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            25.38,
+            15.01,
+            17.99,
+            15.01,
+            26.61
+          ],
+          "index": 25,
+          "signature": [
+            "Observed pattern",
+            "License checks",
+            "Scientific outcome",
+            "Claim affected",
+            "Required revision or next study"
+          ]
+        },
+        {
+          "column_width_percentages": [
+            16,
+            17,
+            18,
+            14,
+            16,
+            19
+          ],
+          "index": 26,
+          "signature": [
+            "Reviewer concern",
+            "Category",
+            "Team response",
+            "Change made",
+            "Accepted by reviewer?",
+            "Residual limitation"
+          ]
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "sources": {
+    "student-textbook/drafts/chapters-01-05.md": "55046211f655e66d59283b80251a8855763c5c3c984160b338f2c18189b9267b",
+    "student-textbook/drafts/chapters-06-10.md": "2104b5bc49544544d6ee9ea5a038ae290c01f2119d2ff579d890a048ded12a55",
+    "student-textbook/drafts/chapters-11-14-and-backmatter.md": "6aa9f76b5dffb3d6ad0d4e1ea60082410c47ef3a810ecc92801d932c520a4e51",
+    "student-textbook/frontmatter.md": "ef0f4f63897378728b9ce1a75aa672afa9fc559b3320cae56e41f2ce4cb4e4f1"
+  },
+  "title": "Learning C\u00f8 / N*: A Student Textbook of Phenomenal Presence",
+  "tools": {
+    "libreoffice": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+    "pandoc": "pandoc 3.9.0.2",
+    "pypdf": "6.10.0",
+    "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+    "python_docx": "1.2.0"
+  }
+}
