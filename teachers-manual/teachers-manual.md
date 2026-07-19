@@ -28,18 +28,18 @@ lang: en-US
 | [Session 10](#session-10) | Reading consciousness from the schematic | 70 |
 | [Session 11](#session-11) | Biological and clinical applications | 75 |
 | [Session 12](#session-12) | Nonhuman animals, organoids, and artificial systems | 80 |
-| [Session 13](#session-13) | Differentiation, validation, and the strongest objections | 85 |
-| [Session 14](#session-14) | Capstone adversarial research design | 91 |
-| [Part III. Instructor Argument Bank](#part-iii) | Nine core arguments, collaborative argument clinics, validation program, and objection matrix | 96 |
-| [Part IV. Reproducible Course Materials](#part-iv) | Instructor-ready assessment and collaboration resources | 102 |
-| [Appendix A](#appendix-a) | Corpus-to-course concept coverage audit | 102 |
-| [Appendix B](#appendix-b) | Problem sets, answer guides, rubrics, and collaborative assessment | 105 |
-| [Appendix C](#appendix-c) | Capstone preregistration, staged peer review, and rubric | 110 |
-| [Appendix D](#appendix-d) | Nine reusable instructor worksheets | 116 |
-| [Appendix E](#appendix-e) | Six progressive-disclosure collaborative case packets | 125 |
-| [Appendix F](#appendix-f) | Glossary and notation guardrails | 129 |
-| [Appendix G](#appendix-g) | Primary corpus and selected contextual readings | 135 |
-| [Appendix H](#appendix-h) | Session-ready synthetic materials, instructor keys, scaling, and accessible delivery alternatives | 138 |
+| [Session 13](#session-13) | Differentiation, validation, and the strongest objections | 84 |
+| [Session 14](#session-14) | Capstone adversarial research design | 90 |
+| [Part III. Instructor Argument Bank](#part-iii) | Nine core arguments, collaborative argument clinics, validation program, and objection matrix | 95 |
+| [Part IV. Reproducible Course Materials](#part-iv) | Instructor-ready assessment and collaboration resources | 101 |
+| [Appendix A](#appendix-a) | Corpus-to-course concept coverage audit | 101 |
+| [Appendix B](#appendix-b) | Problem sets, answer guides, rubrics, and collaborative assessment | 104 |
+| [Appendix C](#appendix-c) | Capstone preregistration, staged peer review, and rubric | 109 |
+| [Appendix D](#appendix-d) | Nine reusable instructor worksheets | 115 |
+| [Appendix E](#appendix-e) | Six progressive-disclosure collaborative case packets | 124 |
+| [Appendix F](#appendix-f) | Glossary and notation guardrails | 128 |
+| [Appendix G](#appendix-g) | Primary corpus and selected contextual readings | 133 |
+| [Appendix H](#appendix-h) | Session-ready synthetic materials, instructor keys, scaling, and accessible delivery alternatives | 136 |
 
 \newpage
 
@@ -756,7 +756,7 @@ Give one sufficiency threat and one necessity threat. For each, name one conditi
 
 ### Learning objectives
 
-Students should be able to explain why every system-level measure is boundary-relative, reconstruct the Dynamical Subject Criterion, distinguish constituents from enabling supports, and assign one of the five boundary statuses.
+Students should be able to explain why every system-level measure is boundary-relative, reconstruct the Dynamical Subject Criterion, distinguish constituents from enabling supports, classify a same-specification result as unique, multiple, none, or boundary-indeterminate, and reserve nested structure for a mapped cross-grain or cross-horizon comparison.
 
 ### Instructor preparation
 
@@ -944,7 +944,7 @@ Label the forbidden arrow from final consciousness score back to candidate selec
 8. Role completeness
 9. Inclusion-minimality
 10. Constituent, interface, enabling support
-11. Five boundary outputs
+11. Same-specification outputs and mapped nesting
 12. Split brain and distributed AI
 
 ### Collaborative exercise: Boundary adjudication hearing
@@ -1126,9 +1126,9 @@ Beside them write: **$V$ licenses the regime; $N_1$ tests unity.**
 
 **Purpose.** Students learn why component necessity is identified in disagreement regions, not by showing that all measures decline together in anesthesia or injury.
 
-**Design challenge.** Teams must engineer the profile $V=1,N_1=0,N_2=1,N_3=1$ without using global suppression. The model reconstructer defines which aspect of joint structure is removed. The intervention engineer chooses a manipulation of cross-module timing, effective coupling, or causal coordination. The validity auditor specifies common-input, source-fidelity, SNR, task-demand, and measurement-route controls. The rival advocate states the predictions of the full theory, the $N_1$-ablated model, and one nonconjunctive rival.
+**Design challenge.** Using the supplied Session 4 intervention table, teams identify whether any manipulation licenses the profile $V=1,N_1=0,N_2=1,N_3=1$ without global suppression, then complete the single-failure study canvas. The model reconstructer states which aspect of joint structure each intervention changes. The intervention engineer audits target change, retained-component equivalence, and rescue. The validity auditor checks common input, source fidelity, SNR, task demand, referent stability, and measurement routes. The rival advocate states the predictions of the full theory, the $N_1$-ablated model, and one nonconjunctive rival.
 
-**Constraint cards.** Midway through the exercise, give each team one complication: $N_2$ falls slightly; the boundary splits; a second $N_1$ surrogate remains high; recurrence appears slower; or the anchor changes only during report trials. Teams must apply any preregistered contingency; otherwise they classify the current result as coupled, indeterminate, or unlicensed and may version a wider equivalence margin only for a new confirmatory study. They may not repair the current verdict by changing a margin after seeing the complication.
+**Controlled cards.** Midway through the exercise, release one of the five Appendix H cards: a second credible $N_1$ surrogate remains high; frozen-referent reliability falls and cross-condition mapping fails; $N_2$ falls outside its equivalence margin; the anchor change occurs only on report trials; or pathway-specific rescue restores $N_1$ and the anchors while retained gates remain equivalent. Teams must apply the frozen contingency and classify the result as selective, coupled, indeterminate, unlicensed, or strengthened as appropriate. They may version a wider equivalence margin only for a new confirmatory study, never to repair the current verdict after seeing a card.
 
 **Deliverable.** Produce a single-failure study canvas with manipulation, intended mechanism, retained-gate checks, equivalence margins, independent anchors, rescue condition, rival predictions, outcome rules, and one reason the study might remain inconclusive. Another team performs a five-minute selectivity audit.
 
@@ -1331,7 +1331,7 @@ $$
 
 **Purpose.** Students operationalize report-independent availability and learn why node count, coactivation, copying, and potential connectivity are inadequate substitutes.
 
-**Architectures.** Architecture A copies every token to one hundred identical logging processes. Architecture B routes one content to five modules with independently demonstrated sensory comparison, value updating, memory indexing, conflict monitoring, and action-selection repertoires. Architecture C is a compact biological circuit with only twelve measured nodes but four causally distinct recipient families. Assign one architecture, not all three, to each team and provide a partially completed ledger; the class compares architectures during debrief.
+**Architectures.** Architecture A copies every token to one hundred identical logging processes. Architecture B routes one content to five supplied classes: sensory comparison, value updating, memory indexing, conflict monitoring, and report preparation. The last three are executive, and report preparation is both report and executive, so the reduced-family checks expose access-smuggling. Architecture C is a compact biological circuit with only twelve measured nodes but four causally distinct recipient families. Assign one architecture, not all three, to each team and provide a partially completed ledger; the class compares architectures during debrief.
 
 **Roles and procedure.** The recipient-taxonomy lead decides which recipients are genuinely functionally distinct. The intervention lead specifies target-content and matched-control perturbations. The route auditor designs mediation, interruption, latency, and alternative-path tests. The report-exclusion lead recalculates the aggregate after removing report and executive classes and checks preparation burden. Teams then draw a routing graph that marks actual effects, idle reachability, common-drive paths, and invalid recipients.
 
@@ -1944,11 +1944,11 @@ Draw the Boolean cube's all-pass and all-fail corners, then circle the four sing
 
 **Purpose.** Students distinguish logical inclusion, incremental empirical value, and selective causal necessity, then determine whether an apparently successful ablation study has examined cases on which its models disagree.
 
-**Materials.** Give every team a twelve-case toy dataset containing component intervals, target-population weights, held-out anchor vectors, two intervention descriptions, and one measure that has been used both to define a component and to score the anchor. Include an anesthesia contrast in which every component, arousal, behavior, and data quality move together.
+**Materials and release order.** Begin with Rows 1-8 of the Appendix H toy dataset. After teams freeze a criterion-level verdict, release Rows 9-12 and require a revised verdict. After that claim is frozen, release mechanism Dossiers M1 and M2; after the mechanism verdict is frozen, release one midpoint audit card. Do not distribute later rows, dossiers, or the dual-use-anchor complication at the start. Use an ordinary anesthesia contrast in the debrief to show why simultaneous movement of every component, arousal, behavior, and data quality is nondiagnostic for individual conjuncts.
 
-**Roles and procedure.** The component theorist writes the full and leave-one-out models. The measurement and statistics lead identifies conservative diagnostic cases and estimates profile and bearer-output disagreement coverage. The intervention lead audits minimum target change, equivalence of retained components, preservation of the frozen $\mathcal P_\Theta$ referent / mapping and viability, recomputation of $\mathcal B_m^+$, and rescue. The anti-circularity auditor traces every variable through development, calibration, selection, and final test.
+**Roles and procedure.** The component theorist writes the full and leave-one-out models. The measurement and statistics lead identifies conservative diagnostic cases and estimates **profile-level** diagnostic coverage. Because the packet supplies no complete candidate lattice or alternative post-intervention profiles, the team must mark bearer-output disagreement coverage as not estimable and specify the lattice, inclusion, mapping, stability, and separability data it would require. The intervention lead audits minimum target change, equivalence of retained components, preservation of the frozen $\mathcal P_\Theta$ referent / mapping and viability, recomputation requirements for $\mathcal B_m^+$, and rescue. The anti-circularity auditor traces every variable through development, calibration, selection, and final test.
 
-At the midpoint, each team receives a hidden complication: the largest diagnostic case is off-manifold; membership was computed after examining anchors; the intervention destroys autonomy or cross-condition mapping of the frozen $\mathcal P_\Theta$ referent; or a measure appears in both evidence streams. Teams must revise the status rather than explain the complication away. A mere change in recomputed $\mathcal B^+$ membership is instead a bearer-output result to report.
+After the criterion and mechanism verdicts are separately committed, each team receives one hidden audit card: the largest diagnostic case is off-manifold; membership was computed after examining anchors; the intervention destroys autonomy or cross-condition mapping of the frozen $\mathcal P_\Theta$ referent; or a measure appears in both evidence streams. Teams must revise the affected status rather than explain the complication away. A mere change in recomputed $\mathcal B^+$ membership would instead be a bearer-output result, but the supplied packet does not license choosing among loss, replacement, or multiplicity.
 
 **Deliverable.** Complete Worksheet 4 and attach a one-sentence claim whose scope names the component, anchor family, target population, specification neighborhood, rival, and type of necessity. Another team reviews the claim and marks any word that exceeds the license.
 
@@ -2170,7 +2170,7 @@ followed by a bridge trained on anchors and tested on held-out contents and inte
 
 Teams record the frozen positive presence result and may not reopen it to improve the bridge. They then fit only the permitted training relation, predict the held-out neighborhood and intervention deformation, and classify the bridge as supported, refuted, indeterminate, or unlicensed. A strong baseline correlation without held-out or causal success is not support.
 
-**Deliverable.** Submit Worksheet 5 plus a two-stream diagram showing that causal and phenomenal evidence meet only at $F_\Phi$. State what remains intact if the bridge fails and list the surviving automorphisms.
+**Deliverable.** Submit Worksheet 5 plus a two-stream diagram showing that causal and phenomenal evidence meet only at $F_\Phi$. State what remains intact if the bridge fails. List the surviving automorphisms only when the optional symmetry extension is assigned.
 
 **Debrief.** Ask each nuisance auditor to explain how an impressive colored embedding can be circular or stimulus-driven. Then compare the coherent and mismatch cases without changing the positive presence judgment in either.
 
@@ -2355,7 +2355,7 @@ Label the first arrow **mechanistic interpretation** and the second **exposed id
 
 **Purpose.** Students test schematic legibility as a teachable competence rather than an author's claim that the model is intuitively clear.
 
-**Materials.** Supply a one-page component-law sheet, two training cases, and four unseen schematics: a positive profile, a boundary failure, a single-component fault, and a coupled fault in which an $N_3$ intervention also reduces $N_1$. Include one profile whose validation labels were generated from its own component scores.
+**Materials.** Supply a one-page component-law sheet, two training cases, and four unseen core schematics: a positive profile, a boundary failure, a single-component fault, and a coupled fault in which an $N_3$ intervention also reduces $N_1$. Release the circular-label Profile E only as an extension after both readers have locked their core A-D forms.
 
 **Roles and procedure.** A training designer teaches only the frozen meanings of bearer, operation, unity, system-level presence, and temporal presence. Blind readers A and B independently reconstruct the role vector, assign an outcome, localize the fault, and note which step depends on the constitutive identity rather than operational evidence. The adjudicator compares the forms at the correct units: $D$ and $C$ are audited once for the common law sheet and compositional readout; fault-localization resolution $F$ is recorded per licensed profile or contrast; and $E$ is audited per validation stream. A boundary failure in one profile does not make the shared semantics fail, while circular labels can invalidate one validation claim without making the operational profile unreadable.
 
@@ -2522,7 +2522,7 @@ Maintain one fixed case worksheet with rows for target, boundary, $V$, $N_1$, $N
 
 After each stage, teams must commit to a six-place assessment tuple for every currently assessable target, identify the dominant uncertainty cause, and request exactly one next measurement. **Not yet assessed** is permitted between releases when a required test has not occurred; it is a workflow marker, not a fifth final scientific outcome. Teams record whether the new evidence changed a task result, the full-model inference license, or only the practical decision. Earlier verdicts may be revised, but not erased.
 
-**Deliverable.** Submit a progressive Worksheet 1 for all three release stages, with separate target rows and the two assessment windows kept distinct; add a cause-profile trajectory, repeated-assessment plan, and separate action note. Complete the Day 2 / Day 9 / Day 21 table only when the longitudinal extension is assigned. Include one target-specific conclusion that coexists with a broader indeterminate result.
+**Deliverable.** Update Worksheet 8 after each release stage, with separate target rows and the two assessment windows kept distinct. After the final assigned release, transfer each final licensed target result to a separate Worksheet 1; add a cause-profile trajectory, repeated-assessment plan, and separate action note. Complete the Day 2 / Day 9 / Day 21 table only when the longitudinal extension is assigned. Include one target-specific conclusion that coexists with a broader indeterminate result.
 
 **Debrief.** Contrast an invalid negative window, a valid but discordant window, and a licensed positive window. More precision cannot repair a task performed through a blocked route; repeated sampling can help with genuine fluctuation. No clinical treatment advice should be inferred from the classroom dossier.
 
@@ -2664,7 +2664,7 @@ Draw a transport bridge with four load-bearing supports: **construct**, **causal
 
 **Materials.** Give every group one human-validated measure and one target dossier: octopus, infant, organoid-controller hybrid, or tool-using artificial agent. Each dossier includes apparently favorable similarities and at least one ecological, causal, or calibration mismatch.
 
-**Roles and procedure.** The construct specialist asks whether the target variable means the same thing. The causal-role specialist identifies homologous or analogous difference-making. The calibration specialist audits thresholds, error rates, and anchor relations. The boundary specialist evaluates tissue-only, hybrid, service-level, or organism-level candidates across two horizons. The ethics and action specialist applies proportional precaution without changing the scientific result.
+**Roles and procedure.** The construct specialist asks whether the target variable means the same thing. The causal-role specialist identifies homologous or analogous difference-making. The calibration specialist audits thresholds, error rates, and anchor relations. The boundary specialist evaluates the tissue-only, hybrid, service-level, or organism-level candidate at the dossier's declared horizon. Only teams assigned the B/D extension compare short and long horizons and audit the cross-horizon mapping. The ethics and action specialist applies proportional precaution without changing the scientific result.
 
 After twelve minutes in substrate teams, students meet same-role specialists from other substrates and compare failure modes. They then return to revise the original ledger. Every team records three separate fields: transport license, the within-theory four-way result, and any field-level model-indeterminacy qualifier.
 
@@ -3365,7 +3365,7 @@ A test is applicable and well executed. Two credible surrogates disagree beyond 
 
 #### Case B: Boundary status
 
-Two disjoint candidates both clear autonomy and role thresholds. Both are stable across specifications. Interrupting either candidate's specific coupling to the other leaves the other's role profile intact; pairwise separability is .89 with $\kappa=.80$. What boundary status is supported? What does it not establish?
+Two disjoint candidates both clear autonomy and role thresholds. At the same frozen grain and horizon, neither contains a qualifying proper subsystem, so both remain in the inclusion-minimal boundary family. Both are stable across specifications. Interrupting either candidate's specific coupling to the other leaves the other's role profile intact; pairwise separability is .89 with $\kappa=.80$. What boundary status is supported? What does it not establish?
 
 #### Case C: N2 aggregation
 
@@ -3720,21 +3720,21 @@ Use this grid before asking which theory a case favors. Students must compare ma
 
 Use this form whenever the identity, scale, or persistence of the candidate system is contestable. Complete candidate discovery and identification assumptions before inspecting consciousness-linked component outcomes. If a reasonable specification changes the result, record the reversal rather than selecting the favorable boundary.
 
-| Step | Required record |
-|---|---|
-| Observational universe | Included variables, known omissions, interfaces |
-| Specification | Grain, horizon, regime, intervention family |
-| Candidate proposal | Discovery-only method and candidate family |
-| Autonomy | $J_{\mathrm{self}}$, $J_{\mathrm{in}}$, ratio, uncertainty, reliability |
-| Identification assumptions | Intervention support / positivity, consistency, causal-model adequacy, measurement reliability, regime stability |
-| Intervention comparability | Matched internal / external budgets, calibrated distance, sampling parity |
-| Candidate-size comparability | Normalization, dimension-matched null, aggregation rule, ranking-reversal sensitivity |
-| Role completeness | $V,N_1,N_2,N_3$ for every frozen candidate |
-| Minimality | Qualifying proper subsets |
-| Separability | Reciprocal interruption and preservation |
-| Replacement | Constituent, interface, or support |
-| Stability | Cross-specification mapping and result |
-| Boundary status | Unique, multiple, nested, none, or indeterminate |
+| Step | What to include | Team record |
+|---|---|---|
+| Observational universe | Included variables, known omissions, interfaces |  |
+| Specification | Grain, horizon, regime, intervention family |  |
+| Candidate proposal | Discovery-only method and candidate family |  |
+| Autonomy | $J_{\mathrm{self}}$, $J_{\mathrm{in}}$, ratio, uncertainty, reliability |  |
+| Identification assumptions | Intervention support / positivity, consistency, causal-model adequacy, measurement reliability, regime stability |  |
+| Intervention comparability | Matched internal / external budgets, calibrated distance, sampling parity |  |
+| Candidate-size comparability | Normalization, dimension-matched null, aggregation rule, ranking-reversal sensitivity |  |
+| Role completeness | $V,N_1,N_2,N_3$ for every frozen candidate |  |
+| Minimality | Qualifying proper subsets |  |
+| Separability | Reciprocal interruption and preservation |  |
+| Replacement | Constituent, interface, or support |  |
+| Stability | Cross-specification mapping and result |  |
+| Boundary status | Unique, multiple, none, or indeterminate at one specification; nested only across mapped grains or horizons |  |
 
 \newpage
 
@@ -3784,14 +3784,14 @@ Use this form only after the presence gate has produced a licensed positive resu
 
 Use this checklist to assess whether a model can be reconstructed, applied, criticized, and fault-localized by readers who did not design it. Evaluate each condition on held-out material under frozen role definitions. Schematic legibility supports public teachability and error diagnosis; it does not by itself confirm the theory.
 
-| Condition | Evidence |
-|---|---|
-| Decomposable semantics | Roles are stable and do not repeat the outcome label |
-| Compositional readout | Intermediate organization profile can be reconstructed |
-| Counterfactual fault localization | Different changes yield different predicted failures |
-| Evidential independence | Readout is not used to validate its own identity claim |
-| Teachability | Independent readers agree on held-out cases |
-| Transport | The role profile survives materially different realizations when appropriate |
+| Condition | Standard to inspect | Decision and case-specific evidence |
+|---|---|---|
+| Decomposable semantics | Roles are stable and do not repeat the outcome label |  |
+| Compositional readout | Intermediate organization profile can be reconstructed |  |
+| Counterfactual fault localization | Different changes yield different predicted failures |  |
+| Evidential independence | Readout is not used to validate its own identity claim |  |
+| Teachability | Independent readers agree on held-out cases |  |
+| Transport | The role profile survives materially different realizations when appropriate |  |
 
 \newpage
 
@@ -3864,7 +3864,7 @@ For every packet, teams must state:
 
 **Round 2 - route and boundary cards.** Auditory brainstem responses are present. In the high-arousal imagery window, an independent cortical speech-discrimination check passes; the route is not reverified in the later low-arousal window. A discovery-only connectivity analysis nominates a thalamocortical candidate that remains stable across two grains. Physiological viability is adequate in high-arousal windows and poor in low-arousal windows.
 
-**Round 3 - component cards.** During one high-arousal window, an imagery classifier exceeds its healthy-control threshold on two artifact-free, cross-validated runs out of ten. Its preregistered task-level positive rule is at least two qualifying runs with familywise false-positive probability below $.05$. $N_1$ and $N_3$ surrogates are above threshold but have wide intervals. A content-specific $N_2$ perturbation was not performed. During a later window, an EEG assessment is negative but contaminated by muscle artifact and administered after arousal declines.
+**Round 3 - component cards.** During one high-arousal window, an imagery classifier exceeds its healthy-control threshold on two artifact-free, cross-validated runs out of ten. Its preregistered task-level positive rule is at least two qualifying runs with familywise false-positive probability below $.05$. The $N_1$ point estimate is $.64$ with interval $[.56,.72]$ against threshold $.60$, and the $N_3$ point estimate is $.54$ with interval $[.44,.64]$ against threshold $.50$: both point estimates exceed threshold, but both intervals straddle. A content-specific $N_2$ perturbation was not performed. During a later window, an EEG assessment is negative but contaminated by muscle artifact and administered after arousal declines.
 
 **Round 4 - validity and action cards.** The imagery classifier has good specificity but modest sensitivity in this injury class. Hearing demand was satisfied for the high-arousal imagery window but not for the later negative EEG window. A low-burden visual communication trial is available. Missing genuine command following carries a high cost; an unnecessary trial carries a low cost.
 
@@ -4039,6 +4039,12 @@ Read every symbol with its declared local scope. Reused letters are not globally
 | Transport | Preservation of construct, causal role, calibration, and boundary / regime across domains | Surface similarity is insufficient |
 
 ### Quantitative on-ramp and formula sheet
+
+#### Teaching conventions and source fidelity
+
+The companion papers sometimes state schematic point-score rules where this manual needs interval decisions. The four-outcome paper writes scalar rule-in and rule-out cases as $L\geq\tau_+$ and $L\leq\tau_-$. The manual's default classroom extension instead requires $\operatorname{LB}(L)\geq\tau_+$ for a positive and $\operatorname{UB}(L)<\tau_-$ for a negative, leaving exact equality at the rule-out threshold indeterminate unless a calibrated protocol preregisters an inclusive boundary. This conservative intervalization is a teaching convention, not a quotation of the source formula.
+
+Likewise, the ablation paper's conservative approximate diagnostic region requires retained-component lower bounds **strictly above** their thresholds. Session 8 preserves that strict rule. Other component-pass exercises use the manual-wide lower-bound-at-or-above convention unless they expressly declare a stricter diagnostic-set rule. Instructors should surface this difference rather than silently treating the formulas as identical, and empirical work must preregister whichever calibrated equality rule it uses.
 
 The qualitative minimum is the ability to interpret what a formula commits the investigator to, not to derive every estimator. Use these six checks before Session 2:
 

@@ -19,11 +19,11 @@ The simulator includes paper-derived cases, condition-level perturbations, a rep
 
 The audited edition 2.1 teaching package is available in three audience-safe forms:
 
-- `output/pdf/teaching-c0-n-star-manual.pdf` - complete instructor manual with lecture notes, collaborative exercises, assessment materials, and keys;
-- `output/pdf/c0-n-star-student-session-resource-pack.pdf` - key-free, reveal-safe student base pack; and
-- `output/pdf/reveals/` - 50 individually distributable evidence releases for staged classroom activities.
+- [Instructor manual](output/pdf/teaching-c0-n-star-manual.pdf) - complete instructor manual with lecture notes, collaborative exercises, assessment materials, and keys;
+- [Student base pack](output/pdf/c0-n-star-student-session-resource-pack.pdf) - key-free, reveal-safe student materials; and
+- [Individual reveal directory](output/pdf/reveals/) - 50 independently generated, distributable evidence releases for staged classroom activities.
 
-See `teachers-manual/README.md` for build requirements, release safeguards, and the controlled-reveal distribution policy. See `teachers-manual/AUDIT.md` for the conceptual, formal, pedagogical, accessibility, and artifact audit.
+See the [teacher-manual build guide](teachers-manual/README.md) for build requirements, release safeguards, and the controlled-reveal distribution policy. See the [full audit](teachers-manual/AUDIT.md) for the conceptual, formal, pedagogical, accessibility, and artifact review.
 
 ## Local development
 

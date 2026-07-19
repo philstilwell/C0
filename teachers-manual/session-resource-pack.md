@@ -224,7 +224,7 @@ Each extension audit card blocks the original boundary verdict: Cards 1 and 2 ma
 
 ### Frozen Rules and Baseline
 
-All cases are synthetic. The baseline frozen $\mathcal P_\Theta$ referent has $R_C=.91$ and a separately passing cross-condition mapping; $V=.80[.75,.85]$, $N_1=.78[.72,.84]$, $N_2=.74[.68,.80]$, and $N_3=.69[.62,.76]$. Use the Session 2 thresholds. A retained gate is equivalent only when its full paired-change interval is contained in the closed margin $[-.08,.08]$ and its post-intervention lower bound meets or exceeds threshold. The intervention must lower $N_1$ by at least $.20$.
+All cases are synthetic. The baseline frozen $\mathcal P_\Theta$ referent has $R_C=.91$ and a separately passing cross-condition mapping; $V=.80[.75,.85]$, $N_1=.78[.72,.84]$, $N_2=.74[.68,.80]$, and $N_3=.69[.62,.76]$. Use the Session 2 thresholds. All change intervals below are paired changes from the matched baseline. A retained gate is equivalent only when its full paired-change interval is contained in the closed margin $[-.08,.08]$ and its post-intervention lower bound meets or exceeds threshold. The target-component license requires the complete $\Delta N_1$ interval to be at or below $-.20$.
 
 ### Student Materials
 
@@ -238,11 +238,11 @@ All cases are synthetic. The baseline frozen $\mathcal P_\Theta$ referent has $R
 
 Use these paired-change intervals for the retained-gate equivalence decision:
 
-| Intervention | $\Delta V$ | $\Delta N_2$ | $\Delta N_3$ |
-|---|---|---|---|
-| I | $[-.04,.02]$ | $[-.07,.01]$ | $[-.07,.01]$ |
-| II | $[-.34,-.22]$ | $[-.44,-.30]$ | $[-.45,-.31]$ |
-| III | $[-.05,.01]$ | $[-.04,.02]$ | $[-.05,.03]$ |
+| Intervention | $\Delta V$ | $\Delta N_1$ | $\Delta N_2$ | $\Delta N_3$ |
+|---|---|---|---|---|
+| I | $[-.04,.02]$ | $[-.43,-.27]$ | $[-.07,.01]$ | $[-.07,.01]$ |
+| II | $[-.34,-.22]$ | $[-.46,-.30]$ | $[-.44,-.30]$ | $[-.45,-.31]$ |
+| III | $[-.05,.01]$ | $[-.11,-.03]$ | $[-.04,.02]$ | $[-.05,.03]$ |
 <!-- audience:student end id=session-04-base-a -->
 
 <!-- audience:reveal begin id=session-04-complication-1 -->
@@ -295,7 +295,7 @@ Complete this single-failure study canvas:
 <!-- audience:instructor begin id=session-04-key -->
 ### Instructor Key
 
-- **Intervention I** is the only licensed selective candidate in the base table. It supplies local causal evidence for $N_1$ relative to the independent anchors if the intervention and anchor genealogy survive audit.
+- **Intervention I** is the only licensed selective candidate in the base table: its paired $\Delta N_1$ interval clears the minimum target reduction while every retained-component interval remains inside its equivalence margin. It supplies local causal evidence for $N_1$ relative to the independent anchors if the intervention and anchor genealogy survive audit.
 - **Intervention II** is global suppression. It cannot identify $N_1$ necessity.
 - **Intervention III** reduces correlation or common drive without crossing the $N_1$ gate. It is a useful control, not an $N_1$ ablation.
 - Complication 1 makes $N_1$ and the audit indeterminate through surrogate conflict.
@@ -411,6 +411,7 @@ The trial and all results are synthetic.
 - Working-memory maintenance begins: 260 ms.
 - Report preparation begins: 340 ms.
 - $N_3$ threshold: $.50$.
+- Minimum intended $N_3$ reduction: $\eta_3=.20$; the complete paired $\Delta N_3$ interval must be at or below $-.20$.
 - Initial content fidelity must have a lower bound of at least $.70$.
 - Candidate reliability must satisfy $R_C\geq.80$, and cross-condition mapping validity must separately pass.
 - Retained $V,N_1,N_2$ gates use the Session 2 thresholds. For a selectivity claim, each full paired-change interval must be contained in the closed margin $[-.08,.08]$ and its post-intervention lower bound must meet or exceed threshold.
@@ -425,8 +426,8 @@ Baseline: content fidelity $.84[.79,.89]$, $V=.80[.75,.85]$, $N_1=.73[.67,.79]$,
 <!-- audience:reveal begin id=session-06-team-a -->
 ### Reveal Sheet - Session 6 Team A
 
-- **Early interruption, 55-85 ms:** fidelity $.40[.34,.46]$; $V=.79[.73,.85]$; $N_1=.51[.45,.57]$; $N_2=.48[.42,.54]$; $N_3=.31[.25,.37]$; report accuracy $.33[.27,.39]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.29,-.15]$, and $\Delta N_2=[-.28,-.16]$; $R_C=.88$ and mapping passes.
-- **Target return-path cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.39[.33,.45]$; report accuracy $.58[.51,.65]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, and $\Delta N_2=[-.06,.02]$; $R_C=.90$ and mapping passes.
+- **Early interruption, 55-85 ms:** fidelity $.40[.34,.46]$; $V=.79[.73,.85]$; $N_1=.51[.45,.57]$; $N_2=.48[.42,.54]$; $N_3=.31[.25,.37]$; report accuracy $.33[.27,.39]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.29,-.15]$, $\Delta N_2=[-.28,-.16]$, and $\Delta N_3=[-.43,-.31]$; $R_C=.88$ and mapping passes.
+- **Target return-path cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.39[.33,.45]$; report accuracy $.58[.51,.65]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, $\Delta N_2=[-.06,.02]$, and $\Delta N_3=[-.35,-.23]$; $R_C=.90$ and mapping passes.
 
 Classify both conditions and state which causal comparison these two rows can and cannot identify.
 <!-- audience:reveal end id=session-06-team-a -->
@@ -434,8 +435,8 @@ Classify both conditions and state which causal comparison these two rows can an
 <!-- audience:reveal begin id=session-06-team-b -->
 ### Reveal Sheet - Session 6 Team B
 
-- **Target return-path cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.39[.33,.45]$; report accuracy $.58[.51,.65]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, and $\Delta N_2=[-.06,.02]$; $R_C=.90$ and mapping passes.
-- **Late report-path cut, 360-390 ms:** fidelity $.83[.78,.88]$; $V=.80[.74,.86]$; $N_1=.72[.66,.78]$; $N_2=.69[.63,.75]$; $N_3=.66[.60,.72]$; report accuracy $.29[.23,.35]$. Paired changes are $\Delta V=[-.03,.03]$, $\Delta N_1=[-.05,.03]$, and $\Delta N_2=[-.05,.03]$; $R_C=.91$ and mapping passes. The paired change in report accuracy is $[-.65,-.49]$.
+- **Target return-path cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.39[.33,.45]$; report accuracy $.58[.51,.65]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, $\Delta N_2=[-.06,.02]$, and $\Delta N_3=[-.35,-.23]$; $R_C=.90$ and mapping passes.
+- **Late report-path cut, 360-390 ms:** fidelity $.83[.78,.88]$; $V=.80[.74,.86]$; $N_1=.72[.66,.78]$; $N_2=.69[.63,.75]$; $N_3=.66[.60,.72]$; report accuracy $.29[.23,.35]$. Paired changes are $\Delta V=[-.03,.03]$, $\Delta N_1=[-.05,.03]$, $\Delta N_2=[-.05,.03]$, and $\Delta N_3=[-.06,.02]$; $R_C=.91$ and mapping passes. The paired change in report accuracy is $[-.65,-.49]$.
 
 Classify both conditions and state which causal comparison these two rows can and cannot identify.
 <!-- audience:reveal end id=session-06-team-b -->
@@ -443,8 +444,8 @@ Classify both conditions and state which causal comparison these two rows can an
 <!-- audience:reveal begin id=session-06-team-c -->
 ### Reveal Sheet - Session 6 Team C
 
-- **Target return-path cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.39[.33,.45]$; report accuracy $.58[.51,.65]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, and $\Delta N_2=[-.06,.02]$; $R_C=.90$ and mapping passes.
-- **Sham, 145-180 ms:** fidelity $.83[.78,.88]$; $V=.80[.74,.86]$; $N_1=.72[.66,.78]$; $N_2=.69[.63,.75]$; $N_3=.67[.61,.73]$; report accuracy $.84[.78,.90]$. Paired changes are $\Delta V=[-.03,.03]$, $\Delta N_1=[-.05,.03]$, and $\Delta N_2=[-.05,.03]$; $R_C=.91$ and mapping passes.
+- **Target return-path cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.39[.33,.45]$; report accuracy $.58[.51,.65]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, $\Delta N_2=[-.06,.02]$, and $\Delta N_3=[-.35,-.23]$; $R_C=.90$ and mapping passes.
+- **Sham, 145-180 ms:** fidelity $.83[.78,.88]$; $V=.80[.74,.86]$; $N_1=.72[.66,.78]$; $N_2=.69[.63,.75]$; $N_3=.67[.61,.73]$; report accuracy $.84[.78,.90]$. Paired changes are $\Delta V=[-.03,.03]$, $\Delta N_1=[-.05,.03]$, $\Delta N_2=[-.05,.03]$, and $\Delta N_3=[-.05,.03]$; $R_C=.91$ and mapping passes.
 
 Classify both conditions and state which causal comparison these two rows can and cannot identify.
 <!-- audience:reveal end id=session-06-team-c -->
@@ -452,8 +453,8 @@ Classify both conditions and state which causal comparison these two rows can an
 <!-- audience:reveal begin id=session-06-team-d -->
 ### Reveal Sheet - Session 6 Team D
 
-- **Target return-path cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.39[.33,.45]$; report accuracy $.58[.51,.65]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, and $\Delta N_2=[-.06,.02]$; $R_C=.90$ and mapping passes.
-- **Pathway rescue after target cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.65[.59,.71]$; report accuracy $.82[.76,.88]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, and $\Delta N_2=[-.06,.02]$; $R_C=.90$ and mapping passes.
+- **Target return-path cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.39[.33,.45]$; report accuracy $.58[.51,.65]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, $\Delta N_2=[-.06,.02]$, and $\Delta N_3=[-.35,-.23]$; $R_C=.90$ and mapping passes.
+- **Pathway rescue after target cut, 145-180 ms:** fidelity $.82[.77,.87]$; $V=.79[.73,.85]$; $N_1=.71[.65,.77]$; $N_2=.68[.62,.74]$; $N_3=.65[.59,.71]$; report accuracy $.82[.76,.88]$. Paired changes are $\Delta V=[-.04,.02]$, $\Delta N_1=[-.06,.02]$, $\Delta N_2=[-.06,.02]$, and $\Delta N_3=[-.07,.01]$; $R_C=.90$ and mapping passes.
 
 Classify both conditions and state which causal comparison these two rows can and cannot identify.
 <!-- audience:reveal end id=session-06-team-d -->
@@ -473,13 +474,13 @@ Release only after all teams record their partial-evidence limits.
 
 Paired-change intervals for the retained components are:
 
-| Synthetic condition | $\Delta V$ | $\Delta N_1$ | $\Delta N_2$ | $R_C$ / mapping status |
-|---|---|---|---|---:|
-| Early interruption | $[-.04,.02]$ | $[-.29,-.15]$ | $[-.28,-.16]$ | $.88$ / pass |
-| Target return-path cut | $[-.04,.02]$ | $[-.06,.02]$ | $[-.06,.02]$ | $.90$ / pass |
-| Late report-path cut | $[-.03,.03]$ | $[-.05,.03]$ | $[-.05,.03]$ | $.91$ / pass |
-| Sham | $[-.03,.03]$ | $[-.05,.03]$ | $[-.05,.03]$ | $.91$ / pass |
-| Pathway rescue after target cut | $[-.04,.02]$ | $[-.06,.02]$ | $[-.06,.02]$ | $.90$ / pass |
+| Synthetic condition | $\Delta V$ | $\Delta N_1$ | $\Delta N_2$ | $\Delta N_3$ | $R_C$ / mapping status |
+|---|---|---|---|---|---:|
+| Early interruption | $[-.04,.02]$ | $[-.29,-.15]$ | $[-.28,-.16]$ | $[-.43,-.31]$ | $.88$ / pass |
+| Target return-path cut | $[-.04,.02]$ | $[-.06,.02]$ | $[-.06,.02]$ | $[-.35,-.23]$ | $.90$ / pass |
+| Late report-path cut | $[-.03,.03]$ | $[-.05,.03]$ | $[-.05,.03]$ | $[-.06,.02]$ | $.91$ / pass |
+| Sham | $[-.03,.03]$ | $[-.05,.03]$ | $[-.05,.03]$ | $[-.05,.03]$ | $.91$ / pass |
+| Pathway rescue after target cut | $[-.04,.02]$ | $[-.06,.02]$ | $[-.06,.02]$ | $[-.07,.01]$ | $.90$ / pass |
 
 For the late report-path cut, the paired change in report accuracy is $[-.65,-.49]$; this is a stipulated synthetic teaching interval, not an empirical estimate.
 
@@ -495,7 +496,7 @@ Submit an annotated timeline or ordered event list, the licensed $N_3$ test, ret
 ### Instructor Key
 
 - **Early interruption:** unlicensed as a selective $N_3$ test because content formation and other gates fail.
-- **Target return-path cut:** licensed synthetic $N_3$ single-failure candidate. Under the model it produces a negative prediction for the specified interval, not direct observation of absent experience.
+- **Target return-path cut:** licensed synthetic $N_3$ single-failure candidate. Its complete paired $\Delta N_3$ interval clears $-\eta_3$ while retained-component intervals remain equivalent. Under the model it produces a negative prediction for the specified interval, not direct observation of absent experience.
 - **Late report-path cut:** demonstrates report impairment with intact $N_3$; it is a negative control for the claim that all late activity is phenomenal recurrence.
 - **Sham:** validates timing and delivery controls.
 - **Rescue:** strengthens pathway-specific causal interpretation.
@@ -593,7 +594,7 @@ For every variant, the low-burden communication trial is favored only under an e
 The dataset is synthetic and audits $N_2$.
 
 - Every component threshold is $.60$.
-- A conservative diagnostic case has $U_2<.60$ and lower bounds for $V,N_1,N_3$ at or above $.60$.
+- A conservative diagnostic case has $U_2<.60$ and lower bounds for $V,N_1,N_3$ strictly above $.60$, matching the ablation paper's conservative diagnostic-region rule.
 - Minimum meaningful held-out risk improvement is $.05$.
 - Diagnostic coverage is the sum of target-population weights for valid diagnostic cases.
 - Coverage of at least $.15$ is adequate for this exercise.
@@ -787,7 +788,7 @@ Accept "indeterminate" only if the student identifies an actual validity or inte
 
 ### Component-Law Sheet
 
-All profiles are synthetic. Use Session 2 thresholds and the following role translations:
+All profiles are synthetic. Use Session 2 thresholds and the following role translations. Any unbracketed scalar is stipulated to be an exact teaching value for this exercise and is compared directly with its threshold; real studies require uncertainty intervals.
 
 - stable $\mathcal P_\Theta$ membership -> licensed profile-test referent;
 - resolved inclusion-minimal $\mathcal B^+$ membership -> positive subject bearer;
@@ -900,7 +901,7 @@ Before requesting Stage 2, submit all Stage-1 rows, identify which targets are m
 <!-- audience:reveal begin id=session-11-stage-2 -->
 ### Reveal Sheet - Session 11 Stage 2 / Round 3
 
-**Component and validity card.** During one high-arousal window, an imagery classifier exceeds its healthy-control threshold on two artifact-free, cross-validated runs out of ten. Its frozen task-level positive rule is at least two qualifying runs with familywise false-positive probability below $.05$. The classifier has good specificity but modest sensitivity in this injury class, and hearing demand was satisfied for this high-arousal window. $N_1=.59[.51,.67]$ against threshold $.60$ and $N_3=.48[.40,.56]$ against threshold $.50$, so both intervals straddle. A content-specific $N_2$ perturbation was not performed. During a later low-arousal window, an EEG assessment is negative but contaminated by muscle artifact; hearing was not reverified for that later window.
+**Component and validity card.** During one high-arousal window, an imagery classifier exceeds its healthy-control threshold on two artifact-free, cross-validated runs out of ten. Its frozen task-level positive rule is at least two qualifying runs with familywise false-positive probability below $.05$; the preregistered familywise probability for the observed two-run pattern is $.032$. The classifier has good specificity but modest sensitivity in this injury class, and hearing demand was satisfied for this high-arousal window. $N_1=.59[.51,.67]$ against threshold $.60$ and $N_3=.48[.40,.56]$ against threshold $.50$, so both intervals straddle. A content-specific $N_2$ perturbation was not performed. During a later low-arousal window, an EEG assessment is negative but contaminated by muscle artifact; hearing was not reverified for that later window.
 
 Before requesting Stage 3, freeze the Stage-2 scientific outcomes, the strongest permitted conclusion, and one forbidden inference for each target. Do not infer the contents of the action card.
 <!-- audience:reveal end id=session-11-stage-2 -->
@@ -1238,7 +1239,7 @@ Forbid moving thresholds, targets, boundaries, or anchors after seeing the card.
 | 5 | Architectures A-C | Packet 2 as later comparison | recipient ledger in resource |
 | 6 | temporal intervention table | Packet 4 as artificial extension | annotated timeline |
 | 7 | Tribunal Variants A-F | Packet 1 | Worksheets 1 and 8 |
-| 8 | twelve-row diagnostic dataset | Packet 2 | Worksheet 4 |
+| 8 | staged Rows 1-8, Rows 9-12, mechanism dossiers, then one audit card | Packet 2 | Worksheet 4 |
 | 9 | Character Variants A-B | Packet 5 | Worksheet 5 |
 | 10 | Schematic Profiles A-E | Packet 6 | Worksheet 6 |
 | 11 | Packet 1 release order | Packet 1 | Worksheets 1 and 8 |

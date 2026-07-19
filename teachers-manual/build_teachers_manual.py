@@ -6,10 +6,12 @@ from __future__ import annotations
 from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime, timezone
+import fcntl
 import hashlib
 import json
 import os
 from pathlib import Path
+import platform
 import re
 import shutil
 import subprocess
@@ -17,13 +19,15 @@ import sys
 import tempfile
 from zipfile import ZipFile
 
+import docx
 from docx import Document
 from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_ROW_HEIGHT_RULE, WD_TABLE_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
-from pypdf import PdfReader, PdfWriter
+import pypdf
+from pypdf import PdfReader
 
 
 HERE = Path(__file__).resolve().parent
@@ -41,6 +45,15 @@ STUDENT_STEM = "c0-n-star-student-session-resource-pack"
 REVEAL_STEM = "c0-n-star-instructor-controlled-reveal-sheets"
 EDITION = "2.1"
 CORPUS_BASELINE = "Core v2.0 (2026-07-08) plus repository companion manuscripts (2026-07-18)"
+CORPUS_SOURCES = (
+    PROJECT / "public" / "paper.pdf",
+    PROJECT / "papers" / "where-is-the-conscious-subject" / "manuscript.md",
+    PROJECT / "papers" / "consciousness-without-report" / "manuscript.md",
+    PROJECT / "papers" / "indeterminacy-as-scientific-result" / "manuscript.md",
+    PROJECT / "papers" / "ablating-n-star" / "manuscript.md",
+    PROJECT / "papers" / "from-phenomenal-presence-to-phenomenal-character" / "manuscript.md",
+    PROJECT / "papers" / "consciousness-in-the-schematic" / "manuscript.md",
+)
 
 BODY_FONT = os.environ.get("C0_BODY_FONT", "Liberation Serif")
 DISPLAY_FONT = os.environ.get("C0_DISPLAY_FONT", "Liberation Sans")
@@ -111,9 +124,9 @@ TABLE_COLUMN_PROFILES: dict[tuple[str, ...], tuple[float, ...]] = {
     ("Dimension", "Points", "Full-credit standard"): (24, 8, 68),
     ("Field", "Entry"): (38, 62),
     ("Question", "Cø / N*", "Rival theory"): (28, 36, 36),
-    ("Step", "Required record"): (31, 69),
+    ("Step", "What to include", "Team record"): (20, 47, 33),
     ("Question", "Entry"): (40, 60),
-    ("Condition", "Evidence"): (32, 68),
+    ("Condition", "Standard to inspect", "Decision and case-specific evidence"): (25, 42, 33),
     ("Evidence round", "Provisional output", "What changed?", "System change or license change?", "Next discriminating evidence"): (13, 18, 17, 27, 25),
     ("Criticism", "Source role or team", "Fatal, strengthening, or optional", "Accepted?", "Protocol change or reason for rejection"): (17, 15, 22, 12, 34),
     ("Term or symbol", "Teaching definition", "Guardrail"): (20, 41, 39),
@@ -124,12 +137,12 @@ TABLE_COLUMN_PROFILES: dict[tuple[str, ...], tuple[float, ...]] = {
     ("Profile", "Referent / bearer status", "V", "N1", "N2", "N3", "Additional information"): (8, 20, 13, 13, 13, 13, 20),
     ("Profile", "Candidate evidence", "Replacement and subset evidence"): (20, 36, 44),
     ("Synthetic intervention", "RC / mapping status", "V", "N1", "N2", "N3", "Independent anchor change"): (17, 11, 13, 13, 13, 13, 20),
-    ("Intervention", "ΔV", "ΔN2", "ΔN3"): (19, 27, 27, 27),
+    ("Intervention", "ΔV", "ΔN1", "ΔN2", "ΔN3"): (18, 20.5, 20.5, 20.5, 20.5),
     ("Field", "Team entry"): (42, 58),
     ("Class", "Weight", "Effect", "Latency", "Selective", "Route", "Context"): (15, 10, 17, 10, 12, 26, 10),
     ("Class", "Type", "Weight", "Effect", "Latency", "Selective", "Route", "Context"): (16, 14, 8, 20, 10, 12, 10, 10),
     ("Synthetic condition", "Interval", "Fidelity", "V", "N1", "N2", "N3", "Report accuracy"): (16, 12, 12, 12, 12, 12, 12, 12),
-    ("Synthetic condition", "ΔV", "ΔN1", "ΔN2", "RC / mapping status"): (24, 15, 15, 15, 31),
+    ("Synthetic condition", "ΔV", "ΔN1", "ΔN2", "ΔN3", "RC / mapping status"): (18, 16, 16, 16, 16, 18),
     ("Row", "Weight", "V", "N1", "N2", "N3", "R*", "R-2", "Additional disclosed fact"): (5, 7, 10, 10, 10, 10, 7, 7, 34),
     ("", "R", "O", "G", "B"): (12, 22, 22, 22, 22),
     ("", "R", "O", "G"): (16, 28, 28, 28),
@@ -158,6 +171,7 @@ COMPACT_TABLE_WIDTHS: dict[tuple[str, ...], float] = {
 
 DENSE_TABLE_FONT_SIZES: dict[tuple[str, ...], float] = {
     ("Synthetic condition", "Interval", "Fidelity", "V", "N1", "N2", "N3", "Report accuracy"): 8.2,
+    ("Synthetic condition", "ΔV", "ΔN1", "ΔN2", "ΔN3", "RC / mapping status"): 8.2,
     ("Row", "Weight", "V", "N1", "N2", "N3", "R*", "R-2", "Additional disclosed fact"): 9.0,
 }
 
@@ -174,11 +188,11 @@ CENTERED_TABLE_COLUMNS: dict[tuple[str, ...], tuple[int, ...]] = {
     ("Dimension", "Points", "Full-credit standard"): (1,),
     ("Profile", "Referent / bearer status", "V", "N1", "N2", "N3", "Additional information"): (0, 2, 3, 4, 5),
     ("Synthetic intervention", "RC / mapping status", "V", "N1", "N2", "N3", "Independent anchor change"): (2, 3, 4, 5),
-    ("Intervention", "ΔV", "ΔN2", "ΔN3"): (0, 1, 2, 3),
+    ("Intervention", "ΔV", "ΔN1", "ΔN2", "ΔN3"): (0, 1, 2, 3, 4),
     ("Class", "Weight", "Effect", "Latency", "Selective", "Route", "Context"): (1, 2, 3, 4, 6),
     ("Class", "Type", "Weight", "Effect", "Latency", "Selective", "Route", "Context"): (2, 3, 4, 5, 6, 7),
     ("Synthetic condition", "Interval", "Fidelity", "V", "N1", "N2", "N3", "Report accuracy"): (1, 2, 3, 4, 5, 6, 7),
-    ("Synthetic condition", "ΔV", "ΔN1", "ΔN2", "RC / mapping status"): (1, 2, 3, 4),
+    ("Synthetic condition", "ΔV", "ΔN1", "ΔN2", "ΔN3", "RC / mapping status"): (1, 2, 3, 4, 5),
     ("Row", "Weight", "V", "N1", "N2", "N3", "R*", "R-2", "Additional disclosed fact"): (0, 1, 2, 3, 4, 5, 6, 7),
     ("", "R", "O", "G", "B"): (0, 1, 2, 3, 4),
     ("", "R", "O", "G"): (0, 1, 2, 3),
@@ -194,6 +208,9 @@ CENTERED_TABLE_COLUMNS: dict[tuple[str, ...], tuple[int, ...]] = {
 IMAGE_PATTERN = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 ANCHOR_PATTERN = re.compile(r"\{#([A-Za-z0-9_-]+)\}")
 INTERNAL_LINK_PATTERN = re.compile(r"\]\(#([A-Za-z0-9_-]+)\)")
+CONTENTS_ROW_PATTERN = re.compile(
+    r"^\|\s*\[([^\]]+)\]\(#([A-Za-z0-9_-]+)\)\s*\|.*\|\s*(\d+)\s*\|$"
+)
 AUDIENCE_MARKER_PATTERN = re.compile(
     r"^<!-- audience:(shared|student|reveal|instructor) (begin|end) id=([a-z0-9-]+) -->$"
 )
@@ -250,6 +267,47 @@ EXPECTED_REVEAL_IDS = (
     "session-14-result-4",
     "session-14-result-5",
 )
+EXPECTED_STUDENT_BLOCK_IDS = tuple(
+    block_id
+    for session in range(1, 15)
+    for block_id in (
+        ((f"session-{session:02d}-base",) if session in {1, 2, 3, 5, 7} else (
+            f"session-{session:02d}-base-a",
+        ))
+        + (() if session in {1, 2, 5} else (f"session-{session:02d}-base-b",))
+        + (f"session-{session:02d}-access",)
+    )
+)
+EXPECTED_INSTRUCTOR_BLOCK_IDS = (
+    "appendix-h-intro",
+    *(f"session-{session:02d}-key" for session in range(1, 15)),
+    "instructor-preparation-and-closing",
+)
+EXPECTED_AUDIENCE_BY_ID = {
+    "common-use-rules": "shared",
+    **{block_id: "student" for block_id in EXPECTED_STUDENT_BLOCK_IDS},
+    **{block_id: "reveal" for block_id in EXPECTED_REVEAL_IDS},
+    **{block_id: "instructor" for block_id in EXPECTED_INSTRUCTOR_BLOCK_IDS},
+}
+_expected_block_order = ["appendix-h-intro", "common-use-rules"]
+for _session in range(1, 15):
+    if _session in {1, 2, 3, 5, 7}:
+        _expected_block_order.append(f"session-{_session:02d}-base")
+    else:
+        _expected_block_order.append(f"session-{_session:02d}-base-a")
+    _expected_block_order.extend(
+        block_id
+        for block_id in EXPECTED_REVEAL_IDS
+        if block_id.startswith(f"session-{_session:02d}-")
+    )
+    if _session not in {1, 2, 5}:
+        _expected_block_order.append(f"session-{_session:02d}-base-b")
+    _expected_block_order.extend(
+        (f"session-{_session:02d}-key", f"session-{_session:02d}-access")
+    )
+_expected_block_order.append("instructor-preparation-and-closing")
+EXPECTED_BLOCK_ORDER = tuple(_expected_block_order)
+del _expected_block_order, _session
 
 
 @dataclass(frozen=True)
@@ -266,6 +324,13 @@ class RevealSpec:
     block_id: str
     session: int
     title: str
+
+
+@dataclass(frozen=True)
+class ContentsReference:
+    label: str
+    anchor: str
+    printed_page: int
 
 
 def run(*args: str, cwd: Path | None = None) -> subprocess.CompletedProcess[str]:
@@ -306,14 +371,92 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def normalized_docx_content_sha256(path: Path) -> str:
+    """Hash DOCX member content while excluding volatile core timestamps."""
+    digest = hashlib.sha256()
+    with ZipFile(path) as archive:
+        for name in sorted(archive.namelist()):
+            if name == "docProps/core.xml" or name.endswith("/"):
+                continue
+            digest.update(name.encode("utf-8"))
+            digest.update(b"\0")
+            digest.update(archive.read(name))
+            digest.update(b"\0")
+    return digest.hexdigest()
+
+
+def normalized_pdf_content_sha256(path: Path) -> str:
+    """Hash page geometry, drawing streams, text, links, and outline without PDF IDs/dates."""
+    reader = PdfReader(str(path))
+    digest = hashlib.sha256()
+    page_by_id = {
+        page.indirect_reference.idnum: index
+        for index, page in enumerate(reader.pages)
+        if page.indirect_reference is not None
+    }
+    for index, page in enumerate(reader.pages):
+        digest.update(f"page:{index}:{tuple(float(v) for v in page.mediabox)}".encode("utf-8"))
+        digest.update((page.extract_text() or "").encode("utf-8"))
+        contents = page.get_contents()
+        if contents is not None:
+            digest.update(contents.get_data())
+        for annotation in page.get("/Annots") or []:
+            item = annotation.get_object()
+            digest.update(str(item.get("/Subtype") or "").encode("utf-8"))
+            digest.update(str(item.get("/Rect") or "").encode("utf-8"))
+            destination = item.get("/Dest")
+            if isinstance(destination, list) and destination:
+                target_id = getattr(destination[0], "idnum", None)
+                digest.update(f"dest:{page_by_id.get(target_id)}".encode("utf-8"))
+    digest.update(json.dumps(flatten_outline_pages(reader), ensure_ascii=False).encode("utf-8"))
+    return digest.hexdigest()
+
+
+def normalized_content_sha256(path: Path) -> str:
+    if path.suffix.lower() == ".docx":
+        return normalized_docx_content_sha256(path)
+    if path.suffix.lower() == ".pdf":
+        return normalized_pdf_content_sha256(path)
+    raise ValueError(f"No normalized-content digest is defined for {path}")
+
+
+def font_file_report(soffice: str) -> dict[str, object]:
+    """Record the exact bundled font programs used by the LibreOffice runtime."""
+    executable = Path(soffice).resolve()
+    search_root = executable.parents[2] if len(executable.parents) > 2 else executable.parent
+    records: dict[str, object] = {}
+    for role, family in (("body", BODY_FONT), ("display", DISPLAY_FONT)):
+        family_stem = family.replace(" ", "")
+        candidates = sorted(
+            path
+            for path in search_root.glob(
+                f"native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/**/{family_stem}-*.ttf"
+            )
+            if path.is_file()
+        )
+        if not candidates:
+            return {
+                "checked": False,
+                "reason": f"Bundled font files not found for {family!r} under {search_root}",
+            }
+        records[role] = {
+            "family": family,
+            "files": [
+                {"path": str(path), "sha256": sha256(path)} for path in candidates
+            ],
+        }
+    return {"checked": True, "files": records}
+
+
 def source_inputs() -> list[Path]:
-    """Return every local input whose bytes can affect or document this build."""
+    """Return all build inputs and audited corpus dependencies for this release."""
     inputs = [
         MANUAL_SOURCE,
         RESOURCE_SOURCE,
         BUILD_SCRIPT,
         HERE / "README.md",
         HERE / "requirements-teachers-manual.txt",
+        *CORPUS_SOURCES,
     ]
     for source in (MANUAL_SOURCE, RESOURCE_SOURCE):
         text = source.read_text(encoding="utf-8")
@@ -323,6 +466,40 @@ def source_inputs() -> list[Path]:
                 continue
             inputs.append((HERE / clean_target).resolve())
     return sorted(set(inputs))
+
+
+def contents_references() -> list[ContentsReference]:
+    """Parse the printed instructor contents table and its internal targets."""
+    references: list[ContentsReference] = []
+    for line in MANUAL_SOURCE.read_text(encoding="utf-8").splitlines():
+        match = CONTENTS_ROW_PATTERN.fullmatch(line)
+        if match:
+            label, anchor, page = match.groups()
+            references.append(ContentsReference(label, anchor, int(page)))
+    if len(references) != 27:
+        raise ValueError(f"Instructor contents inventory must contain 27 rows; found {len(references)}")
+    if len({reference.anchor for reference in references}) != len(references):
+        raise ValueError("Instructor contents inventory contains a duplicate anchor")
+    return references
+
+
+def validate_worksheet_introductions() -> int:
+    """Require an explanatory paragraph immediately after each worksheet heading."""
+    lines = MANUAL_SOURCE.read_text(encoding="utf-8").splitlines()
+    verified = 0
+    for number in range(1, 10):
+        prefix = f"### Worksheet {number}."
+        positions = [index for index, line in enumerate(lines) if line.startswith(prefix)]
+        if len(positions) != 1:
+            raise ValueError(f"Worksheet {number} heading count is {len(positions)}; expected one")
+        for line in lines[positions[0] + 1 :]:
+            if not line.strip():
+                continue
+            if line.startswith(("|", "#", "\\newpage")):
+                raise ValueError(f"Worksheet {number} lacks an introductory explanation")
+            verified += 1
+            break
+    return verified
 
 
 def validate_sources(inputs: list[Path]) -> dict[str, int]:
@@ -340,10 +517,14 @@ def validate_sources(inputs: list[Path]) -> dict[str, int]:
     if unresolved:
         raise ValueError(f"Internal links lack explicit targets: {unresolved}")
     audience_blocks = parse_audience_blocks()
+    references = contents_references()
     return {
         "source_files": len(inputs),
+        "corpus_source_files": len(CORPUS_SOURCES),
         "explicit_anchors": len(anchors),
         "internal_link_targets": len(INTERNAL_LINK_PATTERN.findall(combined)),
+        "contents_references": len(references),
+        "worksheet_introductions": validate_worksheet_introductions(),
         "local_figures": sum(path.suffix.lower() in {".png", ".jpg", ".jpeg", ".svg"} for path in inputs),
         "audience_blocks": len(audience_blocks),
         "controlled_reveal_blocks": sum(block.audience == "reveal" for block in audience_blocks),
@@ -690,11 +871,27 @@ def parse_audience_blocks() -> list[AudienceBlock]:
         block.markdown for block in blocks if block.audience in {"shared", "student"}
     )
     reveal = "\n".join(block.markdown for block in blocks if block.audience == "reveal")
+    actual_audience_by_id = {block.block_id: block.audience for block in blocks}
+    if actual_audience_by_id != EXPECTED_AUDIENCE_BY_ID:
+        missing = sorted(set(EXPECTED_AUDIENCE_BY_ID) - set(actual_audience_by_id))
+        unexpected = sorted(set(actual_audience_by_id) - set(EXPECTED_AUDIENCE_BY_ID))
+        changed = sorted(
+            block_id
+            for block_id in set(actual_audience_by_id) & set(EXPECTED_AUDIENCE_BY_ID)
+            if actual_audience_by_id[block_id] != EXPECTED_AUDIENCE_BY_ID[block_id]
+        )
+        raise ValueError(
+            "Audience block inventory differs from the audited release: "
+            f"missing={missing}, unexpected={unexpected}, audience_changed={changed}"
+        )
+    actual_order = tuple(block.block_id for block in blocks)
+    if actual_order != EXPECTED_BLOCK_ORDER:
+        raise ValueError("Audience block order differs from the audited release")
     key_blocks = [block for block in blocks if block.block_id.startswith("session-") and block.block_id.endswith("-key")]
     access_blocks = [block for block in blocks if block.block_id.startswith("session-") and block.block_id.endswith("-access")]
-    if len(key_blocks) != 14 or joined.count("### Instructor Key") != 14:
+    if len(key_blocks) != 14 or any(block.audience != "instructor" for block in key_blocks) or joined.count("### Instructor Key") != 14:
         raise ValueError("Audience source must contain exactly 14 session answer-key blocks")
-    if len(access_blocks) != 14:
+    if len(access_blocks) != 14 or any(block.audience != "student" for block in access_blocks):
         raise ValueError("Audience source must contain exactly 14 student accessibility blocks")
     if base.count("## Session ") != 14:
         raise ValueError("Student-base audience must contain exactly 14 session headings")
@@ -817,7 +1014,72 @@ def pandoc_docx(pandoc: str, sources: list[Path], destination: Path) -> None:
     run(*command, cwd=HERE)
 
 
-def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
+def localize_contents_bookmarks(document: Document) -> int:
+    """Collapse contents targets onto their heading paragraphs for PDF conversion."""
+    body = document.element.body
+    paragraphs = list(body.iter(qn("w:p")))
+    starts = {
+        node.get(qn("w:name")): node
+        for node in body.iter(qn("w:bookmarkStart"))
+        if node.get(qn("w:name"))
+    }
+    ends = {
+        node.get(qn("w:id")): node
+        for node in body.iter(qn("w:bookmarkEnd"))
+        if node.get(qn("w:id"))
+    }
+
+    localized = 0
+    for reference in contents_references():
+        start = starts.get(reference.anchor)
+        if start is None:
+            raise ValueError(f"DOCX lacks contents bookmark target: {reference.anchor}")
+        end = ends.get(start.get(qn("w:id")))
+        if end is None:
+            raise ValueError(f"DOCX bookmark has no end marker: {reference.anchor}")
+
+        heading = None
+        candidates = []
+        if start.getparent() is body:
+            candidate = start.getnext()
+            while candidate is not None:
+                if candidate.tag == qn("w:p"):
+                    candidates.append(candidate)
+                candidate = candidate.getnext()
+        else:
+            start_paragraph = start
+            while start_paragraph is not None and start_paragraph.tag != qn("w:p"):
+                start_paragraph = start_paragraph.getparent()
+            if start_paragraph is None:
+                raise ValueError(f"DOCX bookmark has no paragraph context: {reference.anchor}")
+            start_index = paragraphs.index(start_paragraph)
+            candidates = paragraphs[start_index + 1 :]
+        for candidate in candidates:
+            style = candidate.find(f"{qn('w:pPr')}/{qn('w:pStyle')}")
+            style_name = style.get(qn("w:val")) if style is not None else ""
+            if style_name in {"Heading1", "Heading2"}:
+                heading = candidate
+                break
+        if heading is None:
+            raise ValueError(f"DOCX bookmark is not followed by a heading: {reference.anchor}")
+
+        start.getparent().remove(start)
+        end.getparent().remove(end)
+        insert_at = 1 if heading.find(qn("w:pPr")) is not None else 0
+        heading.insert(insert_at, start)
+        heading.append(end)
+        localized += 1
+    return localized
+
+
+def style_document(
+    raw_docx: Path,
+    destination: Path,
+    *,
+    audience: str,
+    single_reveal: bool = False,
+    document_title: str | None = None,
+) -> None:
     document = Document(raw_docx)
     if audience == "instructor":
         title_text = "Teaching Cø / N*: A Graduate Instructor's Manual"
@@ -837,7 +1099,7 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
     else:
         raise ValueError(f"Unknown document audience: {audience}")
 
-    document.core_properties.title = title_text
+    document.core_properties.title = document_title or title_text
     document.core_properties.subject = subject_text
     document.core_properties.author = "Phil Stilwell"
     document.core_properties.last_modified_by = "Cø / N* teacher-manual build"
@@ -863,7 +1125,7 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
         section.right_margin = Inches(0.78)
         section.header_distance = Inches(0.28)
         section.footer_distance = Inches(0.3)
-        section.different_first_page_header_footer = True
+        section.different_first_page_header_footer = not single_reveal
 
         header = section.header.paragraphs[0]
         header.text = header_text
@@ -879,8 +1141,14 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
             set_run_font(item, DISPLAY_FONT, 8)
             item.font.color.rgb = RGBColor(90, 99, 107)
 
-        section.first_page_header.paragraphs[0].text = ""
-        section.first_page_footer.paragraphs[0].text = ""
+        if not single_reveal:
+            section.first_page_header.paragraphs[0].text = ""
+            section.first_page_footer.paragraphs[0].text = ""
+
+    if audience == "instructor":
+        localized = localize_contents_bookmarks(document)
+        if localized != len(contents_references()):
+            raise ValueError("Not every instructor contents bookmark was localized")
 
     for name in ("Normal", "Body Text", "First Paragraph", "Compact"):
         if name in document.styles:
@@ -944,8 +1212,46 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
         block.paragraph_format.space_after = Pt(7)
 
     worksheet_intro_pending = False
+    compact_session_12 = False
+    compact_appendix_f = False
+    compact_resource_session_4 = False
+    compact_student_session_10 = False
     for paragraph in document.paragraphs:
         text = paragraph.text.strip()
+        if paragraph.style.name == "Heading 2":
+            if audience == "instructor":
+                if text.startswith("Session 12."):
+                    compact_session_12 = True
+                elif compact_session_12:
+                    compact_session_12 = False
+                if text.startswith("Appendix F."):
+                    compact_appendix_f = True
+                elif compact_appendix_f:
+                    compact_appendix_f = False
+                if text.startswith("Session 4 Resource."):
+                    compact_resource_session_4 = True
+                elif compact_resource_session_4:
+                    compact_resource_session_4 = False
+            if audience == "student":
+                if text.startswith("Session 10 Resource."):
+                    compact_student_session_10 = True
+                elif compact_student_session_10:
+                    compact_student_session_10 = False
+        if (
+            paragraph.style.name not in {"Heading 1", "Heading 2", "Heading 3", "Heading 4"}
+            and (
+                compact_session_12
+                or compact_appendix_f
+                or compact_resource_session_4
+                or compact_student_session_10
+            )
+        ):
+            paragraph.paragraph_format.line_spacing = (
+                1.02 if compact_resource_session_4 or compact_student_session_10 else 1.04
+            )
+            paragraph.paragraph_format.space_after = Pt(
+                3.5 if compact_resource_session_4 or compact_student_session_10 else 4
+            )
         if (
             audience == "instructor"
             and paragraph.style.name == "Heading 3"
@@ -959,12 +1265,14 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
             worksheet_intro_pending = False
         if (
             audience == "reveal"
+            and not single_reveal
             and paragraph.style.name == "Heading 2"
             and text.startswith("Reveal Sheet -")
         ):
             paragraph.paragraph_format.page_break_before = True
+        session_heading = re.match(r"^Session (\d+)(?:\.|\s)", text)
         if paragraph.style.name == "Heading 2" and (
-            (text.startswith("Session ") and not text.startswith("Session 1."))
+            (session_heading is not None and int(session_heading.group(1)) != 1)
             or (text.startswith("Appendix ") and not text.startswith("Appendix A."))
         ):
             paragraph.paragraph_format.page_break_before = True
@@ -992,6 +1300,9 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
         if not table.rows:
             continue
         header_signature, column_weights, total_width, table_font_size = table_layout_profile(table)
+        compact_student_canvas = audience == "student" and header_signature == ("Field", "Team entry")
+        if compact_student_canvas:
+            table_font_size = 8.5
         set_fixed_table_columns(table, fixed_column_twips(column_weights, total_width))
         # Formula-only headers must inherit the navy-band typography. Dense
         # numerical tables also need ordinary text metrics so adjacent intervals
@@ -1005,9 +1316,9 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
         worksheet_row_heights = {
             ("Field", "Entry"): 0.48,
             ("Question", "Cø / N*", "Rival theory"): 0.62,
-            ("Step", "Required record"): 0.42,
+            ("Step", "What to include", "Team record"): 0.42,
             ("Question", "Entry"): 0.48,
-            ("Condition", "Evidence"): 0.72,
+            ("Condition", "Standard to inspect", "Decision and case-specific evidence"): 0.72,
             (
                 "Evidence round",
                 "Provisional output",
@@ -1036,6 +1347,10 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
                 cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
                 if is_contents:
                     set_cell_margins(cell, top=28, bottom=28, start=55, end=55)
+                elif header_signature == ("Term or symbol", "Teaching definition", "Guardrail"):
+                    set_cell_margins(cell, top=45, bottom=45, start=75, end=75)
+                elif compact_student_canvas:
+                    set_cell_margins(cell, top=32, bottom=32, start=70, end=70)
                 elif header_signature in DENSE_TABLE_FONT_SIZES:
                     set_cell_margins(cell, top=55, bottom=55, start=40, end=40)
                 else:
@@ -1044,8 +1359,12 @@ def style_document(raw_docx: Path, destination: Path, *, audience: str) -> None:
                 set_shading(cell._tc, fill)
                 for paragraph in cell.paragraphs:
                     paragraph.paragraph_format.space_before = Pt(0)
-                    paragraph.paragraph_format.space_after = Pt(0 if is_contents else 2)
-                    paragraph.paragraph_format.line_spacing = 0.92 if is_contents else 1.0
+                    paragraph.paragraph_format.space_after = Pt(
+                        0 if is_contents or compact_student_canvas else 2
+                    )
+                    paragraph.paragraph_format.line_spacing = (
+                        0.92 if is_contents else (0.94 if compact_student_canvas else 1.0)
+                    )
                     if column_index in centered_columns:
                         paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     set_math_run_format(
@@ -1128,6 +1447,112 @@ def flatten_outline_pages(reader: PdfReader, items=None) -> list[tuple[str, int]
     return destinations
 
 
+def outline_page_for_label(outline: list[tuple[str, int]], label: str) -> int:
+    matches = [
+        page
+        for title, page in outline
+        if title == label or title.startswith(f"{label}.")
+    ]
+    if len(matches) != 1:
+        raise ValueError(f"Expected one outline destination for {label!r}; found {matches}")
+    return matches[0]
+
+
+def annotation_destination_page(reader: PdfReader, annotation) -> int | None:
+    annotation = annotation.get_object()
+    destination = annotation.get("/Dest")
+    if destination is None:
+        action = annotation.get("/A")
+        if action is not None and action.get_object().get("/S") == "/GoTo":
+            destination = action.get_object().get("/D")
+    if not isinstance(destination, list) or not destination:
+        return None
+    target = destination[0]
+    target_id = getattr(target, "idnum", None)
+    if target_id is None:
+        return None
+    page_by_id = {
+        page.indirect_reference.idnum: index
+        for index, page in enumerate(reader.pages)
+        if page.indirect_reference is not None
+    }
+    return page_by_id.get(target_id)
+
+
+def validate_contents_pdf(reader: PdfReader) -> dict[str, object]:
+    """Validate printed page numbers and live PDF links for all contents rows."""
+    references = contents_references()
+    outline = flatten_outline_pages(reader)
+    contents_page = outline_page_for_label(outline, "Contents")
+    page = reader.pages[contents_page]
+    chunks: list[tuple[str, float, float]] = []
+
+    def collect(text, _cm, tm, _font, _size) -> None:
+        clean = text.strip()
+        if clean:
+            chunks.append((clean, float(tm[4]), float(tm[5])))
+
+    page.extract_text(visitor_text=collect)
+    annotations = [
+        annotation
+        for annotation in (page.get("/Annots") or [])
+        if annotation.get_object().get("/Subtype") == "/Link"
+    ]
+    verified: dict[str, int] = {}
+    for reference in references:
+        expected_page = outline_page_for_label(outline, reference.label)
+        if reference.printed_page != expected_page + 1:
+            raise ValueError(
+                f"Printed contents page for {reference.label!r} is {reference.printed_page}; "
+                f"outline destination is {expected_page + 1}"
+            )
+        positions = [
+            (x, y)
+            for text, x, y in chunks
+            if text == reference.label
+            or (
+                reference.label.startswith("Part ")
+                and len(text) >= 20
+                and reference.label.startswith(text)
+            )
+        ]
+        if len(positions) != 1:
+            raise ValueError(f"Could not locate one contents label on the PDF page: {reference.label}")
+        x, y = positions[0]
+        matching_links = []
+        for annotation in annotations:
+            rect = annotation.get_object().get("/Rect")
+            if rect is None:
+                continue
+            x1, y1, x2, y2 = (float(value) for value in rect)
+            if x1 - 1 <= x <= x2 + 1 and y1 - 1 <= y <= y2 + 1:
+                matching_links.append(annotation_destination_page(reader, annotation))
+        if expected_page not in matching_links:
+            raise ValueError(
+                f"Contents link for {reference.label!r} does not resolve to page {expected_page + 1}; "
+                f"found={matching_links}"
+            )
+        verified[reference.anchor] = expected_page + 1
+    return {
+        "printed_references": len(references),
+        "live_links_verified": len(verified),
+        "destinations": verified,
+    }
+
+
+def validate_worksheet_pages(page_text: list[str]) -> dict[str, int]:
+    pages: dict[str, int] = {}
+    for number in range(1, 10):
+        token = f"Worksheet {number}."
+        matches = [index + 1 for index, text in enumerate(page_text) if token in text]
+        if len(matches) != 1:
+            raise ValueError(f"Worksheet {number} occurs on PDF pages {matches}; expected one")
+        pages[str(number)] = matches[0]
+    if len(set(pages.values())) != 9:
+        raise ValueError(f"Worksheets do not occupy nine distinct pages: {pages}")
+    return pages
+
+
 def pdf_font_report(pdf_path: Path) -> dict[str, object]:
     pdffonts = shutil.which("pdffonts")
     if not pdffonts:
@@ -1188,6 +1613,15 @@ def validate_artifact(
     page_text = [(page.extract_text() or "") for page in reader.pages]
     text = "\n".join(page_text)
     outline_titles = flatten_outline(reader.outline)
+    root = reader.trailer["/Root"]
+    mark_info = root.get("/MarkInfo")
+    marked = bool(mark_info and mark_info.get_object().get("/Marked"))
+    language = str(root.get("/Lang") or "")
+    tagged = "/StructTreeRoot" in root and marked
+    if not tagged or language != "en-US":
+        raise ValueError(
+            f"PDF accessibility catalog is incomplete: tagged={tagged}, language={language!r}"
+        )
 
     searchable = f"{doc_text}\n{text}"
     normalized_doc_text = re.sub(r"\s+", " ", doc_text)
@@ -1203,6 +1637,8 @@ def validate_artifact(
             raise ValueError(f"Instructor edition should contain 5 figures; found {media_count}")
         if internal_links < 20:
             raise ValueError(f"Instructor edition should contain internal navigation links; found {internal_links}")
+        contents_report = validate_contents_pdf(reader)
+        worksheet_pages = validate_worksheet_pages(page_text)
     elif audience == "student":
         required = ("Student Use Guide", "Session 1 Resource", "Session 14 Resource")
         minimum_pages = 20
@@ -1261,6 +1697,15 @@ def validate_artifact(
     near_blank_pages = [index + 1 for index, value in enumerate(page_text) if len(value.strip()) < 12]
     if near_blank_pages:
         raise ValueError(f"PDF contains near-blank pages: {near_blank_pages}")
+    sparse_pages = []
+    if audience in {"instructor", "student"}:
+        sparse_pages = [
+            index + 1
+            for index, value in enumerate(page_text)
+            if index > 0 and len(value.strip()) < 400
+        ]
+        if sparse_pages:
+            raise ValueError(f"PDF contains materially sparse continuation pages: {sparse_pages}")
     return {
         "docx_bytes": docx_path.stat().st_size,
         "pdf_bytes": pdf_path.stat().st_size,
@@ -1274,84 +1719,105 @@ def validate_artifact(
         "bookmarks": bookmarks,
         "pdf_outline_entries": len(outline_titles),
         "near_blank_pages": near_blank_pages,
+        "sparse_continuation_pages": sparse_pages,
+        "tagged": tagged,
+        "language": language,
+        **({"contents": contents_report, "worksheet_pages": worksheet_pages} if audience == "instructor" else {}),
         "font_report": pdf_font_report(pdf_path),
     }
 
 
-def split_reveal_pdf(
-    master_pdf: Path,
+def build_individual_reveal_pdfs(
+    pandoc: str,
+    soffice: str,
     reveal_blocks: list[AudienceBlock],
+    work_dir: Path,
     destination_dir: Path,
 ) -> list[dict[str, object]]:
-    """Split the validated master into one independently distributable PDF per reveal."""
+    """Build each reveal independently so tagging and language are preserved."""
     specs = [reveal_spec(block) for block in reveal_blocks]
-    reader = PdfReader(str(master_pdf))
-    outline = flatten_outline_pages(reader)
-    page_by_title: dict[str, int] = {}
-    for title, page in outline:
-        if title in page_by_title:
-            raise ValueError(f"Duplicate PDF outline title prevents safe reveal splitting: {title}")
-        page_by_title[title] = page
-
-    missing = [spec.title for spec in specs if spec.title not in page_by_title]
-    if missing:
-        raise ValueError(f"Reveal master lacks outline destinations for: {missing}")
-    starts = [page_by_title[spec.title] for spec in specs]
-    if starts != sorted(starts) or len(starts) != len(set(starts)):
-        raise ValueError("Reveal outline destinations are not strictly increasing")
-
     destination_dir.mkdir(parents=True, exist_ok=False)
+    reveal_work = work_dir / "individual-reveal-work"
+    reveal_work.mkdir(parents=True, exist_ok=False)
     metadata: list[dict[str, object]] = []
     all_titles = [spec.title for spec in specs]
-    for index, spec in enumerate(specs):
-        start = starts[index]
-        end = starts[index + 1] if index + 1 < len(starts) else len(reader.pages)
-        if end <= start:
-            raise ValueError(f"Reveal {spec.block_id} has an empty PDF page range")
+    for block, spec in zip(reveal_blocks, specs, strict=True):
         filename = f"c0-n-star-{spec.block_id}-reveal.pdf"
         output = destination_dir / filename
-        writer = PdfWriter()
-        for page_index in range(start, end):
-            writer.add_page(reader.pages[page_index])
-        writer.add_outline_item(spec.title, 0)
-        writer.add_metadata(
-            {
-                "/Title": spec.title,
-                "/Author": "Phil Stilwell",
-                "/Subject": "Key-free instructor-controlled Cø / N* evidence release",
-                "/Keywords": f"Cø; N*; controlled reveal; Session {spec.session}",
-            }
+        source = reveal_work / f"{spec.block_id}.md"
+        source.write_text(
+            "---\nlang: en-US\n---\n\n"
+            + re.sub(r"^### Reveal Sheet", "## Reveal Sheet", block.markdown, count=1)
+            + "\n",
+            encoding="utf-8",
         )
-        with output.open("wb") as handle:
-            writer.write(handle)
+        raw_docx = reveal_work / f"{spec.block_id}-raw.docx"
+        styled_docx = reveal_work / f"{Path(filename).stem}.docx"
+        pandoc_docx(pandoc, [source], raw_docx)
+        style_document(
+            raw_docx,
+            styled_docx,
+            audience="reveal",
+            single_reveal=True,
+            document_title=spec.title,
+        )
+        generated_pdf = convert_pdf(soffice, styled_docx, reveal_work)
+        os.replace(generated_pdf, output)
 
-        split_reader = PdfReader(str(output))
-        page_text = [(page.extract_text() or "") for page in split_reader.pages]
+        reveal_reader = PdfReader(str(output))
+        if len(reveal_reader.pages) != 1:
+            raise ValueError(
+                f"Reveal sheet must be exactly one page: {spec.block_id} has {len(reveal_reader.pages)}"
+            )
+        page_text = [(page.extract_text() or "") for page in reveal_reader.pages]
         normalized = re.sub(r"\s+", " ", "\n".join(page_text))
         if normalized.count(spec.title) != 1:
-            raise ValueError(f"Split reveal lacks its unique heading: {spec.block_id}")
+            raise ValueError(f"Individual reveal lacks its unique heading: {spec.block_id}")
         leaked_titles = [
             title for title in all_titles if title != spec.title and title in normalized
         ]
         if leaked_titles:
             raise ValueError(
-                f"Split reveal {spec.block_id} contains another release heading: {leaked_titles}"
+                f"Individual reveal {spec.block_id} contains another release heading: {leaked_titles}"
             )
         if "Instructor Key" in normalized or "Instructor Preparation Crosswalk" in normalized:
-            raise ValueError(f"Split reveal contains instructor-only content: {spec.block_id}")
+            raise ValueError(f"Individual reveal contains instructor-only content: {spec.block_id}")
         near_blank = [number + 1 for number, value in enumerate(page_text) if len(value.strip()) < 12]
         if near_blank:
-            raise ValueError(f"Split reveal contains near-blank pages: {spec.block_id} {near_blank}")
+            raise ValueError(f"Individual reveal contains near-blank pages: {spec.block_id} {near_blank}")
         if output.stat().st_size < 5_000:
-            raise ValueError(f"Split reveal PDF is unexpectedly small: {output}")
+            raise ValueError(f"Individual reveal PDF is unexpectedly small: {output}")
+        root = reveal_reader.trailer["/Root"]
+        mark_info = root.get("/MarkInfo")
+        marked = bool(mark_info and mark_info.get_object().get("/Marked"))
+        tagged = "/StructTreeRoot" in root and marked
+        language = str(root.get("/Lang") or "")
+        if not tagged or language != "en-US":
+            raise ValueError(
+                f"Individual reveal accessibility metadata failed: {spec.block_id}; "
+                f"tagged={tagged}, language={language!r}"
+            )
+        document_info = reveal_reader.metadata
+        if document_info is None or document_info.title != spec.title:
+            raise ValueError(f"Individual reveal title metadata failed: {spec.block_id}")
+        if document_info.author != "Phil Stilwell" or not document_info.subject:
+            raise ValueError(f"Individual reveal author/subject metadata failed: {spec.block_id}")
+        outline_titles = flatten_outline(reveal_reader.outline)
+        if outline_titles != [spec.title]:
+            raise ValueError(f"Individual reveal outline failed: {spec.block_id} {outline_titles}")
+        font_report = pdf_font_report(output)
         metadata.append(
             {
                 "block_id": spec.block_id,
                 "session": spec.session,
                 "title": spec.title,
-                "pages": len(split_reader.pages),
+                "pages": 1,
                 "filename": filename,
                 "sha256": sha256(output),
+                "tagged": tagged,
+                "language": language,
+                "outline_entries": len(outline_titles),
+                "fonts_embedded": font_report.get("all_embedded"),
             }
         )
     return metadata
@@ -1407,11 +1873,20 @@ def verify_published_release(manifest: dict[str, object]) -> None:
         if sha256(path) != expected:
             raise ValueError(f"Published manifest has a stale source hash: {relative}")
 
+    for relative, expected in manifest["corpus_sources"].items():
+        path = PROJECT / relative
+        if sha256(path) != expected:
+            raise ValueError(f"Published manifest has a stale corpus hash: {relative}")
+
     for output in manifest["outputs"].values():
         for relative, expected in output["files"].items():
             path = PROJECT / relative
             if not path.is_file() or sha256(path) != expected:
                 raise ValueError(f"Published artifact hash mismatch: {relative}")
+        for relative, expected in output["normalized_content_sha256"].items():
+            path = PROJECT / relative
+            if normalized_content_sha256(path) != expected:
+                raise ValueError(f"Published normalized-content mismatch: {relative}")
 
     reveal_inventory = manifest["reveal_sheets"]
     expected_paths: set[Path] = set()
@@ -1429,7 +1904,7 @@ def verify_published_release(manifest: dict[str, object]) -> None:
         raise ValueError("Published manifest bytes do not describe the verified release")
 
 
-def build() -> None:
+def build_release() -> None:
     if sys.version_info < (3, 10):
         raise RuntimeError("Python 3.10 or later is required")
     inputs = source_inputs()
@@ -1477,15 +1952,25 @@ def build() -> None:
             staged[label] = (styled_docx, staged_pdf)
 
         staged_reveal_dir = work_dir / "reveal-sheets"
-        reveal_sheet_metadata = split_reveal_pdf(
-            staged["reveal"][1], reveal_blocks, staged_reveal_dir
+        reveal_sheet_metadata = build_individual_reveal_pdfs(
+            pandoc, soffice, reveal_blocks, work_dir, staged_reveal_dir
         )
         qa["reveal_sheets"] = {
             "count": len(reveal_sheet_metadata),
             "total_pages": sum(record["pages"] for record in reveal_sheet_metadata),
+            "every_sheet_one_page": all(record["pages"] == 1 for record in reveal_sheet_metadata),
             "every_heading_verified": True,
             "every_sheet_key_free": True,
-            "font_embedding_inherited_from_validated_master": True,
+            "every_sheet_tagged": all(record["tagged"] for record in reveal_sheet_metadata),
+            "every_sheet_language_en_us": all(
+                record["language"] == "en-US" for record in reveal_sheet_metadata
+            ),
+            "every_sheet_fonts_embedded": all(
+                record["fonts_embedded"] for record in reveal_sheet_metadata
+            ),
+            "every_sheet_outline_verified": all(
+                record["outline_entries"] == 1 for record in reveal_sheet_metadata
+            ),
         }
 
         final_paths = {
@@ -1498,11 +1983,26 @@ def build() -> None:
             "edition": EDITION,
             "generated_at_utc": datetime.now(timezone.utc).isoformat(),
             "corpus_baseline": CORPUS_BASELINE,
+            "corpus_sources": {
+                str(path.relative_to(PROJECT)): sha256(path) for path in CORPUS_SOURCES
+            },
             "fonts": {"body": BODY_FONT, "display": DISPLAY_FONT},
+            "font_files": font_file_report(soffice),
             "tools": {
                 "python": sys.version.split()[0],
+                "python_docx": docx.__version__,
+                "pypdf": pypdf.__version__,
                 "pandoc": tool_output(pandoc, "--version").splitlines()[0],
                 "libreoffice": tool_output(soffice, "--version").splitlines()[0],
+                "platform": platform.platform(),
+                "machine": platform.machine(),
+            },
+            "reproducibility": {
+                "scope": "semantic-and-layout reproducibility; container timestamps, PDF IDs, and release timestamps may vary",
+                "normalized_content_digests_exclude": [
+                    "DOCX core timestamps",
+                    "PDF metadata dates and document IDs",
+                ],
             },
             "sources": {str(path.relative_to(PROJECT)): sha256(path) for path in inputs},
             "outputs": {},
@@ -1515,6 +2015,10 @@ def build() -> None:
                     str(destination.relative_to(PROJECT)): sha256(staged_path)
                     for staged_path, destination in zip(staged_paths, final)
                 },
+                "normalized_content_sha256": {
+                    str(destination.relative_to(PROJECT)): normalized_content_sha256(staged_path)
+                    for staged_path, destination in zip(staged_paths, final)
+                },
                 "included_block_ids": provenance[label],
                 "generated_markdown_sha256": sha256(generated_sources[label]),
             }
@@ -1525,6 +2029,10 @@ def build() -> None:
                 "pages": record["pages"],
                 "path": str((PDF_DIR / "reveals" / record["filename"]).relative_to(PROJECT)),
                 "sha256": record["sha256"],
+                "tagged": record["tagged"],
+                "language": record["language"],
+                "outline_entries": record["outline_entries"],
+                "fonts_embedded": record["fonts_embedded"],
             }
             for record in reveal_sheet_metadata
         }
@@ -1548,6 +2056,23 @@ def build() -> None:
         print(MANIFEST_OUT)
     finally:
         shutil.rmtree(work_dir, ignore_errors=True)
+
+
+def build() -> None:
+    """Serialize release builds so concurrent publishers cannot mix artifacts."""
+    lock_dir = PROJECT / "tmp" / "docs"
+    lock_dir.mkdir(parents=True, exist_ok=True)
+    lock_path = lock_dir / "teachers-manual-build.lock"
+    with lock_path.open("a+", encoding="utf-8") as lock_handle:
+        try:
+            fcntl.flock(lock_handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            raise RuntimeError("Another teacher-manual build is already running") from exc
+        try:
+            build_release()
+        finally:
+            fcntl.flock(lock_handle.fileno(), fcntl.LOCK_UN)
+    lock_path.unlink(missing_ok=True)
 
 
 if __name__ == "__main__":
