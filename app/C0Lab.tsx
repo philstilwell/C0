@@ -318,6 +318,7 @@ export function C0Lab() {
           <a href="#lab">Run the model</a>
           <a href="#logic">Read the logic</a>
           <a href={`${assetBase}/constellation/`}>Constellation</a>
+          <a className="nav-teaching" href={`${assetBase}/teaching/`}>Teaching</a>
           <a className="nav-paper" href={`${assetBase}/paper.pdf`}>Paper ↗</a>
         </div>
       </nav>
@@ -580,6 +581,17 @@ export function C0Lab() {
         <p className="bridge-note">Cø / N* does not claim that any source theory is sufficient by itself. Its novelty is the conjunction, the viability gate, the conflict policy, and the explicit biconditional failure structure.</p>
       </section>
 
+      <section className="teaching-bridge-section" aria-labelledby="teaching-bridge-heading">
+        <div>
+          <span className="section-index">06 / GRADUATE TEACHING</span>
+          <h2 id="teaching-bridge-heading">Teach the model. Test every commitment.</h2>
+        </div>
+        <div className="teaching-bridge-copy">
+          <p>A fourteen-session instructor manual turns the seven-paper research program into lecture notes, comparative theory placement, collaborative inquiry, staged evidence, assessment, and adversarial research design.</p>
+          <a className="primary-action" href={`${assetBase}/teaching/`}>Explore teaching resources <span>→</span></a>
+        </div>
+      </section>
+
       <footer>
         <div className="footer-mark">Cø<span>/N*</span></div>
         <div>
@@ -589,6 +601,7 @@ export function C0Lab() {
         <div className="footer-links">
           <a href="#top">Back to top ↑</a>
           <a href={`${assetBase}/constellation/`}>Research constellation</a>
+          <a href={`${assetBase}/teaching/`}>Teaching resources</a>
           <a href={`${assetBase}/paper.pdf`}>Read the paper ↗</a>
         </div>
       </footer>

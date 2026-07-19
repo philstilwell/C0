@@ -17,7 +17,9 @@ The simulator includes paper-derived cases, condition-level perturbations, a rep
 
 ## Graduate teacher's manual
 
-The audited edition 2.1 teaching package is available in three audience-safe forms:
+The public [Teaching & Learning hub](https://philstilwell.github.io/C0/teaching/) presents the audited instructor manual now and reserves a distinct student-facing place for the forthcoming companion textbook.
+
+The edition 2.1 teaching package is maintained in three audience-safe forms:
 
 - [Instructor manual](output/pdf/teaching-c0-n-star-manual.pdf) - complete instructor manual with lecture notes, collaborative exercises, assessment materials, and keys;
 - [Student base pack](output/pdf/c0-n-star-student-session-resource-pack.pdf) - key-free, reveal-safe student materials; and

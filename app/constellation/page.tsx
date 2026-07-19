@@ -138,6 +138,7 @@ export default function ConstellationPage() {
         <div className="nav-links constellation-nav-links">
           <a href="#map">Research map</a>
           <a href="#how-they-fit">How they fit</a>
+          <a className="nav-teaching" href={`${assetBase}/teaching/`}>Teaching</a>
           <a className="nav-paper" href={`${assetBase}/paper.pdf`}>Core paper ↗</a>
         </div>
       </nav>
@@ -290,6 +291,7 @@ export default function ConstellationPage() {
         <div className="footer-links">
           <a href="#top">Back to top ↑</a>
           <a href={`${assetBase}/`}>Interactive model</a>
+          <a href={`${assetBase}/teaching/`}>Teaching resources</a>
         </div>
       </footer>
     </main>

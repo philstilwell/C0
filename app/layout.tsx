@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     template: "%s | Cø / N*",
   },
   description:
-    "Explore the N* model: viability, integration, broadcast availability, and recurrent stability as a testable conjunction for minimal phenomenal presence.",
+    "Explore the Cø / N* model through an interactive lab, a seven-paper research constellation, and graduate teaching resources.",
   authors: [{ name: "Phil Stilwell" }],
   openGraph: {
     title: "Cø / N* — Phenomenal Presence Lab",
-    description: "Make a theory of minimal phenomenal consciousness move.",
+    description: "Explore, test, research, and teach a theory of minimal phenomenal consciousness.",
     type: "website",
   },
   icons: {

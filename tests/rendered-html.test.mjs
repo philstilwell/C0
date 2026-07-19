@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile, stat } from "node:fs/promises";
 import test from "node:test";
 
@@ -69,6 +70,57 @@ test("server-renders the seven-paper research constellation", async () => {
   assert.match(html, /papers\/consciousness-in-the-schematic\.pdf/);
   assert.match(html, /THE EXPLANATION/);
   assert.match(html, /The paper begins by narrowing the explanandum/);
+});
+
+test("server-renders a future-ready teaching hub", async () => {
+  const [teachingResponse, homeResponse, constellationResponse] = await Promise.all([
+    render("/teaching/"),
+    render(),
+    render("/constellation/"),
+  ]);
+  assert.equal(teachingResponse.status, 200);
+  const [teaching, home, constellation] = await Promise.all([
+    teachingResponse.text(),
+    homeResponse.text(),
+    constellationResponse.text(),
+  ]);
+  assert.match(teaching, /Teaching Cø \/ N\*: A Graduate Instructor/);
+  assert.match(teaching, /Instructor edition/);
+  assert.match(teaching, /Student textbook/);
+  assert.match(teaching, /In development/);
+  assert.match(teaching, /teaching\/instructor-manual\/2\.1\/teaching-c0-n-star-instructor-manual\.pdf/);
+  assert.match(teaching, /Student session resource pack/);
+  assert.match(teaching, /course supplement, not the forthcoming student textbook/);
+  assert.match(teaching, /teaching\/student-materials\/2\.1\/c0-n-star-student-session-resource-pack\.pdf/);
+  assert.match(teaching, /Contains answer guides, assessment keys, and controlled-reveal guidance/);
+  assert.match(teaching, /philpapers\.org\/rec\/STITCE-4/);
+  assert.doesNotMatch(teaching, /href=["']#["']/);
+  assert.match(home, /href=["']\/teaching\//);
+  assert.match(constellation, /href=["']\/teaching\//);
+});
+
+test("ships an exact public copy of instructor manual edition 2.1", async () => {
+  const [publicManual, releaseManual] = await Promise.all([
+    readFile(new URL("../public/teaching/instructor-manual/2.1/teaching-c0-n-star-instructor-manual.pdf", import.meta.url)),
+    readFile(new URL("../output/pdf/teaching-c0-n-star-manual.pdf", import.meta.url)),
+  ]);
+  const digest = (value) => createHash("sha256").update(value).digest("hex");
+  const expectedDigest = "d52f8ee5450e92ebfe1e9e52e37832c5eb32400e7bc387a79ea99184c1eb7dc6";
+  assert.ok(publicManual.length > 4_000_000);
+  assert.equal(digest(publicManual), expectedDigest);
+  assert.equal(digest(releaseManual), expectedDigest);
+});
+
+test("ships an exact public copy of the key-free student resource pack", async () => {
+  const [publicPack, releasePack] = await Promise.all([
+    readFile(new URL("../public/teaching/student-materials/2.1/c0-n-star-student-session-resource-pack.pdf", import.meta.url)),
+    readFile(new URL("../output/pdf/c0-n-star-student-session-resource-pack.pdf", import.meta.url)),
+  ]);
+  const digest = (value) => createHash("sha256").update(value).digest("hex");
+  const expectedDigest = "7a2020017f1d24600f3f82b06a0e6544a4c3f4a54646835dc7116b824dca34aa";
+  assert.ok(publicPack.length > 600_000);
+  assert.equal(digest(publicPack), expectedDigest);
+  assert.equal(digest(releasePack), expectedDigest);
 });
 
 test("ships the Gemini-derived favicon assets", async () => {
