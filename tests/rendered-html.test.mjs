@@ -98,6 +98,7 @@ test("server-renders the paired teaching collection", async () => {
   assert.ok(teaching.includes(textbookRelease.pdf.public_url));
   assert.ok(teachingText.includes(`Student edition ${textbookRelease.edition}`));
   assert.ok(teachingText.includes(`${textbookRelease.pdf.pages} pages`));
+  assert.match(teaching, /https:\/\/philpapers\.org\/rec\/STILCX/);
   assert.match(teaching, /Student session resource pack/);
   assert.match(teaching, /companion to/);
   assert.match(teaching, /not a replacement for/);

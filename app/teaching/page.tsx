@@ -8,7 +8,8 @@ const textbookPages = textbookBuild.release.pdf.pages;
 const textbookSizeMb = (textbookBuild.release.pdf.bytes / 1_000_000).toFixed(1);
 const textbookHref = `${assetBase}${textbookBuild.release.pdf.public_url}`;
 const studentMaterialsHref = `${assetBase}/teaching/student-materials/2.1/c0-n-star-student-session-resource-pack.pdf`;
-const philPapersHref = "https://philpapers.org/rec/STITCE-4";
+const manualPhilPapersHref = "https://philpapers.org/rec/STITCE-4";
+const textbookPhilPapersHref = "https://philpapers.org/rec/STILCX";
 
 const manualContents = [
   {
@@ -103,7 +104,7 @@ export default function TeachingPage() {
             <div className="course-text-meta">Edition 2.1 · July 2026 · 169 pages · PDF, 4.5 MB</div>
             <div className="course-text-actions">
               <a href={manualHref} target="_blank" rel="noreferrer">Open manual (PDF · 4.5 MB) <span>↗</span></a>
-              <a href={philPapersHref} target="_blank" rel="noreferrer">View PhilPapers record <span>↗</span></a>
+              <a href={manualPhilPapersHref} target="_blank" rel="noreferrer">View PhilPapers record <span>↗</span></a>
             </div>
             <aside className="instructor-warning">
               <strong>Instructor edition</strong>
@@ -118,6 +119,7 @@ export default function TeachingPage() {
             <div className="course-text-meta">Student edition {textbookEdition} · July 2026 · {textbookPages} pages · PDF, {textbookSizeMb} MB</div>
             <div className="course-text-actions">
               <a href={textbookHref} target="_blank" rel="noreferrer">Open textbook (PDF · {textbookSizeMb} MB) <span>↗</span></a>
+              <a href={textbookPhilPapersHref} target="_blank" rel="noreferrer">View PhilPapers record <span>↗</span></a>
             </div>
             <div className="textbook-plan" aria-label="Textbook relationship to the instructor manual">
               <div><span>01</span><p><strong>Shared spine</strong> Fourteen aligned chapters and stable terminology.</p></div>
